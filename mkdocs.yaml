@@ -21,5 +21,5 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-site_url: https://legendary-carnival-q4316me.pages.github.io
+site_url: https://alliander-opensource.github.io/cgmes-profiles/
 repo_url: https://github.com/alliander-opensource/cgmes-profiles
