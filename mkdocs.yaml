@@ -1,0 +1,25 @@
+site_name: "ENTSO-E &mdash; CGMES CoreEquipmentProfile"
+theme:
+  name: material
+  palette:
+    scheme: default
+    primary: green
+    accent: deep orange
+  features:
+    - content.tabs.link
+    - navigation.sections
+  logo: assets/alliander_logo_wit.png
+  language: en
+plugins:
+  - search
+docs_dir: _docs
+site_dir: docs
+markdown_extensions:
+  - pymdownx.betterem
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+site_url: https://legendary-carnival-q4316me.pages.github.io
+repo_url: https://github.com/alliander-opensource/cgmes-profiles
