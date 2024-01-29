@@ -14,8 +14,8 @@ $ gen-doc -d _docs/'PROFILE_DIR' --diagram-type mermaid_class_diagram --template
 ```shell
 $ grep -E '^# (Slot|Type): ' *.md -l | xargs rm
 ```
-6. Generate the static HTML website:
+5. Generate the static HTML website:
 ```shell
 $ mkdocs build
 ```
-7. The index pages of the profiles have some references to LinkML types that we need to remove manually. Running `mkdocs build` again tells you what the dead references are. Remove these entries from the classes table in `index.md` and build again.
+6. The index pages of the profiles have some references to LinkML types that we need to remove manually. Running `mkdocs build` again tells you what the dead references are. Remove these entries from the classes table in `index.md` and build again.
