@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cgmes-profiles"
+version = "0.3.0"
+description = "ENTSO-E CGMES profiles represented as LinkML schemas."
+authors = ["Bart Kleijngeld <bartkl@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+linkml = "^1.6.9"
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

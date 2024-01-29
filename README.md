@@ -8,11 +8,11 @@ $ rm _docs/'PROFILE_DIR'/*.md
 ```
 3. Generate the static Markdown files for each profile.
 ```shell
-$ gen-doc -d _docs/'PROFILE_DIR' --diagram-type er_diagram --template-directory _templates/ --use-slot-uris /path/to/your_schema.yaml
+$ gen-doc -d _docs/'PROFILE_DIR' --diagram-type mermaid_class_diagram --template-directory _templates/ --use-slot-uris /path/to/your_schema.yaml
 ```
-4. Delete slot and type pages, since these cause problems and don't provide us anything meaningful for the CGMES profiles. A handy way of doing this:
+4. Delete slot and type pages, since these cause problems and don't provide us anything meaningful for the CGMES profiles. A handy way of doing this is to navigate to the profile directory and then run:
 ```shell
-$ grep -e '^# Slot: ' -e '^# Type: ' *.md -l | xargs rm
+$ grep -E '^# (Slot|Type): ' *.md -l | xargs rm
 ```
 5. CIM primitive types are standard classes for which pages are created also, but since we map these types onto LinkML primitive types, we can remove these pages too. Most were overwritten by LinkML native types already, but you need to delete some manually, like `DateTime.md` and `MonthDay.md`.
 6. Generate the static HTML website:

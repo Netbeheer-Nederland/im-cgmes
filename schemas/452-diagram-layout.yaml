@@ -1,0 +1,718 @@
+id: http://iec.ch/TC57/ns/CIM/DiagramLayout-EU#Package_DiagramLayoutProfile
+name: DiagramLayoutProfile
+description: This vocabulary is describing the diagram layout profile from IEC 61970-453.
+title: Diagram Layout Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  dl: http://iec.ch/TC57/ns/CIM/DiagramLayout-EU#
+  this: http://iec.ch/TC57/ns/CIM/DiagramLayout-EU#Package_DiagramLayoutProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  Diagram:
+    class_uri: cim:Diagram
+    attributes:
+      orientation:
+        slot_uri: cim:Diagram.orientation
+        range: OrientationKind
+        multivalued: false
+        required: true
+        description: "Coordinate system orientation of the diagram. A positive orientation\
+          \ gives standard \u201Cright-hand\u201D orientation, with negative orientation\
+          \ indicating a \u201Cleft-hand\u201D orientation. For 2D diagrams, a positive\
+          \ orientation will result in X values increasing from left to right and\
+          \ Y values increasing from bottom to top. A negative orientation gives the\
+          \ \u201Cleft-hand\u201D orientation (favoured by computer graphics displays)\
+          \ with X values increasing from left to right and Y values increasing from\
+          \ top to bottom."
+      x1InitialView:
+        slot_uri: cim:Diagram.x1InitialView
+        range: float
+        multivalued: false
+        required: false
+        description: X coordinate of the first corner of the initial view.
+      x2InitialView:
+        slot_uri: cim:Diagram.x2InitialView
+        range: float
+        multivalued: false
+        required: false
+        description: X coordinate of the second corner of the initial view.
+      y1InitialView:
+        slot_uri: cim:Diagram.y1InitialView
+        range: float
+        multivalued: false
+        required: false
+        description: Y coordinate of the first corner of the initial view.
+      y2InitialView:
+        slot_uri: cim:Diagram.y2InitialView
+        range: float
+        multivalued: false
+        required: false
+        description: Y coordinate of the second corner of the initial view.
+      DiagramElements:
+        slot_uri: cim:Diagram.DiagramElements
+        range: DiagramObject
+        multivalued: true
+        required: false
+        description: A diagram is made up of multiple diagram objects.
+      DiagramStyle:
+        slot_uri: cim:Diagram.DiagramStyle
+        range: DiagramStyle
+        multivalued: false
+        required: false
+        description: A Diagram may have a DiagramStyle.
+    is_a: IdentifiedObject
+    description: The diagram being exchanged. The coordinate system is a standard
+      Cartesian coordinate system and the orientation attribute defines the orientation.
+      The initial view related attributes can be used to specify an initial view with
+      the x,y coordinates of the diagonal points.
+  Float:
+    class_uri: cim:Float
+    description: A floating point number. The range is unspecified and not limited.
+  DiagramObject:
+    class_uri: cim:DiagramObject
+    attributes:
+      Diagram:
+        slot_uri: cim:DiagramObject.Diagram
+        range: Diagram
+        multivalued: false
+        required: true
+        description: A diagram object is part of a diagram.
+      drawingOrder:
+        slot_uri: cim:DiagramObject.drawingOrder
+        range: integer
+        multivalued: false
+        required: false
+        description: The drawing order of this element. The higher the number, the
+          later the element is drawn in sequence. This is used to ensure that elements
+          that overlap are rendered in the correct order.
+      isPolygon:
+        slot_uri: cim:DiagramObject.isPolygon
+        range: boolean
+        multivalued: false
+        required: false
+        description: Defines whether or not the diagram objects points define the
+          boundaries of a polygon or the routing of a polyline. If this value is true
+          then a receiving application should consider the first and last points to
+          be connected.
+      offsetX:
+        slot_uri: cim:DiagramObject.offsetX
+        range: float
+        multivalued: false
+        required: false
+        description: 'The offset in the X direction. This is used for defining the
+          offset from centre for rendering an icon (the default is that a single point
+          specifies the centre of the icon).
+
+
+          The offset is in per-unit with 0 indicating there is no offset from the
+          horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the
+          left and 0.5 indicates an offset of 50% to the right.'
+      offsetY:
+        slot_uri: cim:DiagramObject.offsetY
+        range: float
+        multivalued: false
+        required: false
+        description: 'The offset in the Y direction. This is used for defining the
+          offset from centre for rendering an icon (the default is that a single point
+          specifies the centre of the icon).
+
+
+          The offset is in per-unit with 0 indicating there is no offset from the
+          vertical centre of the icon.  The offset direction is dependent on the orientation
+          of the diagram, with -0.5 and 0.5 indicating an offset of +/- 50% on the
+          vertical axis.'
+      rotation:
+        slot_uri: cim:DiagramObject.rotation
+        range: AngleDegrees
+        multivalued: false
+        required: false
+        description: 'Sets the angle of rotation of the diagram object.  Zero degrees
+          is pointing to the top of the diagram.  Rotation is clockwise.  DiagramObject.rotation=0
+          has the following meaning: The connection point of an element which has
+          one terminal is pointing to the top side of the diagram. The connection
+          point "From side" of an element which has more than one terminal is pointing
+          to the top side of the diagram.
+
+          DiagramObject.rotation=90 has the following meaning: The connection point
+          of an element which has one terminal is pointing to the right hand side
+          of the diagram. The connection point "From side" of an element which has
+          more than one terminal is pointing to the right hand side of the diagram.'
+      IdentifiedObject:
+        slot_uri: cim:DiagramObject.IdentifiedObject
+        range: IdentifiedObject
+        multivalued: false
+        required: false
+        description: The domain object to which this diagram object is associated.
+      DiagramObjectPoints:
+        slot_uri: cim:DiagramObject.DiagramObjectPoints
+        range: DiagramObjectPoint
+        multivalued: true
+        required: false
+        description: A diagram object can have 0 or more points to reflect its layout
+          position, routing (for polylines) or boundary (for polygons).
+      VisibilityLayers:
+        slot_uri: cim:DiagramObject.VisibilityLayers
+        range: VisibilityLayer
+        multivalued: true
+        required: false
+        description: A diagram object can be part of multiple visibility layers.
+      DiagramObjectStyle:
+        slot_uri: cim:DiagramObject.DiagramObjectStyle
+        range: DiagramObjectStyle
+        multivalued: false
+        required: false
+        description: A diagram object has a style associated that provides a reference
+          for the style used in the originating system.
+    is_a: IdentifiedObject
+    description: An object that defines one or more points in a given space. This
+      object can be associated with anything that specializes IdentifiedObject. For
+      single line diagrams such objects typically include such items as analog values,
+      breakers, disconnectors, power transformers, and transmission lines.
+  Integer:
+    class_uri: cim:Integer
+    description: An integer number. The range is unspecified and not limited.
+  Boolean:
+    class_uri: cim:Boolean
+    description: A type with the value space "true" and "false".
+  AngleDegrees:
+    class_uri: cim:AngleDegrees
+    attributes:
+      value:
+        slot_uri: cim:AngleDegrees.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:AngleDegrees.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:AngleDegrees.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Measurement of angle in degrees.
+  DiagramObjectGluePoint:
+    class_uri: cim:DiagramObjectGluePoint
+    attributes:
+      DiagramObjectPoints:
+        slot_uri: cim:DiagramObjectGluePoint.DiagramObjectPoints
+        range: DiagramObjectPoint
+        multivalued: true
+        required: true
+        description: A diagram object glue point is associated with 2 or more object
+          points that are considered to be 'glued' together.
+    description: This is used for grouping diagram object points from different diagram
+      objects that are considered to be glued together in a diagram even if they are
+      not at the exact same coordinates.
+  DiagramObjectPoint:
+    class_uri: cim:DiagramObjectPoint
+    attributes:
+      DiagramObject:
+        slot_uri: cim:DiagramObjectPoint.DiagramObject
+        range: DiagramObject
+        multivalued: false
+        required: true
+        description: The diagram object with which the points are associated.
+      DiagramObjectGluePoint:
+        slot_uri: cim:DiagramObjectPoint.DiagramObjectGluePoint
+        range: DiagramObjectGluePoint
+        multivalued: false
+        required: false
+        description: The 'glue' point to which this point is associated.
+      sequenceNumber:
+        slot_uri: cim:DiagramObjectPoint.sequenceNumber
+        range: integer
+        multivalued: false
+        required: false
+        description: The sequence position of the point, used for defining the order
+          of points for diagram objects acting as a polyline or polygon with more
+          than one point. The attribute shall be a positive value.
+      xPosition:
+        slot_uri: cim:DiagramObjectPoint.xPosition
+        range: float
+        multivalued: false
+        required: true
+        description: The X coordinate of this point.
+      yPosition:
+        slot_uri: cim:DiagramObjectPoint.yPosition
+        range: float
+        multivalued: false
+        required: true
+        description: The Y coordinate of this point.
+      zPosition:
+        slot_uri: cim:DiagramObjectPoint.zPosition
+        range: float
+        multivalued: false
+        required: false
+        description: The Z coordinate of this point.
+    description: A point in a given space defined by 3 coordinates and associated
+      to a diagram object.  The coordinates may be positive or negative as the origin
+      does not have to be in the corner of a diagram.
+  DiagramObjectStyle:
+    class_uri: cim:DiagramObjectStyle
+    attributes:
+      StyledObjects:
+        slot_uri: cim:DiagramObjectStyle.StyledObjects
+        range: DiagramObject
+        multivalued: true
+        required: false
+        description: A style can be assigned to multiple diagram objects.
+    is_a: IdentifiedObject
+    description: A reference to a style used by the originating system for a diagram
+      object.  A diagram object style describes information such as line thickness,
+      shape such as circle or rectangle etc, and colour.
+  DiagramStyle:
+    class_uri: cim:DiagramStyle
+    attributes:
+      Diagram:
+        slot_uri: cim:DiagramStyle.Diagram
+        range: Diagram
+        multivalued: true
+        required: false
+        description: A DiagramStyle can be used by many Diagrams.
+    is_a: IdentifiedObject
+    description: The diagram style refers to a style used by the originating system
+      for a diagram.  A diagram style describes information such as schematic, geographic,
+      etc.
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      DiagramObjects:
+        slot_uri: cim:IdentifiedObject.DiagramObjects
+        range: DiagramObject
+        multivalued: true
+        required: false
+        description: The diagram objects that are associated with the domain object.
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+      name:
+        slot_uri: cim:IdentifiedObject.name
+        range: string
+        multivalued: false
+        required: true
+        description: The name is any free human readable and possibly non unique text
+          naming the object.
+      description:
+        slot_uri: cim:IdentifiedObject.description
+        range: string
+        multivalued: false
+        required: false
+        description: The description is a free human readable text describing or naming
+          the object. It may be non unique and may not correlate to a naming hierarchy.
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  String:
+    class_uri: cim:String
+    description: A string consisting of a sequence of characters. The character encoding
+      is UTF-8. The string length is unspecified and unlimited.
+  TextDiagramObject:
+    class_uri: cim:TextDiagramObject
+    attributes:
+      text:
+        slot_uri: cim:TextDiagramObject.text
+        range: string
+        multivalued: false
+        required: true
+        description: The text that is displayed by this text diagram object.
+    is_a: DiagramObject
+    description: A diagram object for placing free-text or text derived from an associated
+      domain object.
+  VisibilityLayer:
+    class_uri: cim:VisibilityLayer
+    attributes:
+      VisibleObjects:
+        slot_uri: cim:VisibilityLayer.VisibleObjects
+        range: DiagramObject
+        multivalued: true
+        required: true
+        description: A visibility layer can contain one or more diagram objects.
+      drawingOrder:
+        slot_uri: cim:VisibilityLayer.drawingOrder
+        range: integer
+        multivalued: false
+        required: false
+        description: The drawing order for this layer.  The higher the number, the
+          later the layer and the objects within it are rendered.
+    is_a: IdentifiedObject
+    description: 'Layers are typically used for grouping diagram objects according
+      to themes and scales. Themes are used to display or hide certain information
+      (e.g., lakes, borders), while scales are used for hiding or displaying information
+      depending on the current zoom level (hide text when it is too small to be read,
+      or when it exceeds the screen size). This is also called de-cluttering.
+
+      CIM based graphics exchange supports an m:n relationship between diagram objects
+      and layers. The importing system shall convert an m:n case into an appropriate
+      1:n representation if the importing system does not support m:n.'
+  Date:
+    class_uri: cim:Date
+    description: Date as "yyyy-mm-dd", which conforms with ISO 8601. UTC time zone
+      is specified as "yyyy-mm-ddZ". A local timezone relative UTC is specified as
+      "yyyy-mm-dd(+/-)hh:mm".
+enums:
+  OrientationKind:
+    permissible_values:
+      positive:
+        meaning: cim:OrientationKind.positive
+      negative:
+        meaning: cim:OrientationKind.negative
+    enum_uri: http://iec.ch/TC57/CIM100#OrientationKind
+  UnitSymbol:
+    permissible_values:
+      none:
+        meaning: cim:UnitSymbol.none
+      m:
+        meaning: cim:UnitSymbol.m
+      kg:
+        meaning: cim:UnitSymbol.kg
+      s:
+        meaning: cim:UnitSymbol.s
+      A:
+        meaning: cim:UnitSymbol.A
+      K:
+        meaning: cim:UnitSymbol.K
+      mol:
+        meaning: cim:UnitSymbol.mol
+      cd:
+        meaning: cim:UnitSymbol.cd
+      deg:
+        meaning: cim:UnitSymbol.deg
+      rad:
+        meaning: cim:UnitSymbol.rad
+      sr:
+        meaning: cim:UnitSymbol.sr
+      Gy:
+        meaning: cim:UnitSymbol.Gy
+      Bq:
+        meaning: cim:UnitSymbol.Bq
+      degC:
+        meaning: cim:UnitSymbol.degC
+      Sv:
+        meaning: cim:UnitSymbol.Sv
+      F:
+        meaning: cim:UnitSymbol.F
+      C:
+        meaning: cim:UnitSymbol.C
+      S:
+        meaning: cim:UnitSymbol.S
+      H:
+        meaning: cim:UnitSymbol.H
+      V:
+        meaning: cim:UnitSymbol.V
+      ohm:
+        meaning: cim:UnitSymbol.ohm
+      J:
+        meaning: cim:UnitSymbol.J
+      N:
+        meaning: cim:UnitSymbol.N
+      Hz:
+        meaning: cim:UnitSymbol.Hz
+      lx:
+        meaning: cim:UnitSymbol.lx
+      lm:
+        meaning: cim:UnitSymbol.lm
+      Wb:
+        meaning: cim:UnitSymbol.Wb
+      T:
+        meaning: cim:UnitSymbol.T
+      W:
+        meaning: cim:UnitSymbol.W
+      Pa:
+        meaning: cim:UnitSymbol.Pa
+      m2:
+        meaning: cim:UnitSymbol.m2
+      m3:
+        meaning: cim:UnitSymbol.m3
+      mPers:
+        meaning: cim:UnitSymbol.mPers
+      mPers2:
+        meaning: cim:UnitSymbol.mPers2
+      m3Pers:
+        meaning: cim:UnitSymbol.m3Pers
+      mPerm3:
+        meaning: cim:UnitSymbol.mPerm3
+      kgm:
+        meaning: cim:UnitSymbol.kgm
+      kgPerm3:
+        meaning: cim:UnitSymbol.kgPerm3
+      m2Pers:
+        meaning: cim:UnitSymbol.m2Pers
+      WPermK:
+        meaning: cim:UnitSymbol.WPermK
+      JPerK:
+        meaning: cim:UnitSymbol.JPerK
+      ppm:
+        meaning: cim:UnitSymbol.ppm
+      rotPers:
+        meaning: cim:UnitSymbol.rotPers
+      radPers:
+        meaning: cim:UnitSymbol.radPers
+      WPerm2:
+        meaning: cim:UnitSymbol.WPerm2
+      JPerm2:
+        meaning: cim:UnitSymbol.JPerm2
+      SPerm:
+        meaning: cim:UnitSymbol.SPerm
+      KPers:
+        meaning: cim:UnitSymbol.KPers
+      PaPers:
+        meaning: cim:UnitSymbol.PaPers
+      JPerkgK:
+        meaning: cim:UnitSymbol.JPerkgK
+      VA:
+        meaning: cim:UnitSymbol.VA
+      VAr:
+        meaning: cim:UnitSymbol.VAr
+      cosPhi:
+        meaning: cim:UnitSymbol.cosPhi
+      Vs:
+        meaning: cim:UnitSymbol.Vs
+      V2:
+        meaning: cim:UnitSymbol.V2
+      As:
+        meaning: cim:UnitSymbol.As
+      A2:
+        meaning: cim:UnitSymbol.A2
+      A2s:
+        meaning: cim:UnitSymbol.A2s
+      VAh:
+        meaning: cim:UnitSymbol.VAh
+      Wh:
+        meaning: cim:UnitSymbol.Wh
+      VArh:
+        meaning: cim:UnitSymbol.VArh
+      VPerHz:
+        meaning: cim:UnitSymbol.VPerHz
+      HzPers:
+        meaning: cim:UnitSymbol.HzPers
+      character:
+        meaning: cim:UnitSymbol.character
+      charPers:
+        meaning: cim:UnitSymbol.charPers
+      kgm2:
+        meaning: cim:UnitSymbol.kgm2
+      dB:
+        meaning: cim:UnitSymbol.dB
+      WPers:
+        meaning: cim:UnitSymbol.WPers
+      lPers:
+        meaning: cim:UnitSymbol.lPers
+      dBm:
+        meaning: cim:UnitSymbol.dBm
+      h:
+        meaning: cim:UnitSymbol.h
+      min:
+        meaning: cim:UnitSymbol.min
+      Q:
+        meaning: cim:UnitSymbol.Q
+      Qh:
+        meaning: cim:UnitSymbol.Qh
+      ohmm:
+        meaning: cim:UnitSymbol.ohmm
+      APerm:
+        meaning: cim:UnitSymbol.APerm
+      V2h:
+        meaning: cim:UnitSymbol.V2h
+      A2h:
+        meaning: cim:UnitSymbol.A2h
+      Ah:
+        meaning: cim:UnitSymbol.Ah
+      count:
+        meaning: cim:UnitSymbol.count
+      ft3:
+        meaning: cim:UnitSymbol.ft3
+      m3Perh:
+        meaning: cim:UnitSymbol.m3Perh
+      gal:
+        meaning: cim:UnitSymbol.gal
+      Btu:
+        meaning: cim:UnitSymbol.Btu
+      l:
+        meaning: cim:UnitSymbol.l
+      lPerh:
+        meaning: cim:UnitSymbol.lPerh
+      lPerl:
+        meaning: cim:UnitSymbol.lPerl
+      gPerg:
+        meaning: cim:UnitSymbol.gPerg
+      molPerm3:
+        meaning: cim:UnitSymbol.molPerm3
+      molPermol:
+        meaning: cim:UnitSymbol.molPermol
+      molPerkg:
+        meaning: cim:UnitSymbol.molPerkg
+      sPers:
+        meaning: cim:UnitSymbol.sPers
+      HzPerHz:
+        meaning: cim:UnitSymbol.HzPerHz
+      VPerV:
+        meaning: cim:UnitSymbol.VPerV
+      APerA:
+        meaning: cim:UnitSymbol.APerA
+      VPerVA:
+        meaning: cim:UnitSymbol.VPerVA
+      rev:
+        meaning: cim:UnitSymbol.rev
+      kat:
+        meaning: cim:UnitSymbol.kat
+      JPerkg:
+        meaning: cim:UnitSymbol.JPerkg
+      m3Uncompensated:
+        meaning: cim:UnitSymbol.m3Uncompensated
+      m3Compensated:
+        meaning: cim:UnitSymbol.m3Compensated
+      WPerW:
+        meaning: cim:UnitSymbol.WPerW
+      therm:
+        meaning: cim:UnitSymbol.therm
+      onePerm:
+        meaning: cim:UnitSymbol.onePerm
+      m3Perkg:
+        meaning: cim:UnitSymbol.m3Perkg
+      Pas:
+        meaning: cim:UnitSymbol.Pas
+      Nm:
+        meaning: cim:UnitSymbol.Nm
+      NPerm:
+        meaning: cim:UnitSymbol.NPerm
+      radPers2:
+        meaning: cim:UnitSymbol.radPers2
+      JPerm3:
+        meaning: cim:UnitSymbol.JPerm3
+      VPerm:
+        meaning: cim:UnitSymbol.VPerm
+      CPerm3:
+        meaning: cim:UnitSymbol.CPerm3
+      CPerm2:
+        meaning: cim:UnitSymbol.CPerm2
+      FPerm:
+        meaning: cim:UnitSymbol.FPerm
+      HPerm:
+        meaning: cim:UnitSymbol.HPerm
+      JPermol:
+        meaning: cim:UnitSymbol.JPermol
+      JPermolK:
+        meaning: cim:UnitSymbol.JPermolK
+      CPerkg:
+        meaning: cim:UnitSymbol.CPerkg
+      GyPers:
+        meaning: cim:UnitSymbol.GyPers
+      WPersr:
+        meaning: cim:UnitSymbol.WPersr
+      WPerm2sr:
+        meaning: cim:UnitSymbol.WPerm2sr
+      katPerm3:
+        meaning: cim:UnitSymbol.katPerm3
+      d:
+        meaning: cim:UnitSymbol.d
+      anglemin:
+        meaning: cim:UnitSymbol.anglemin
+      anglesec:
+        meaning: cim:UnitSymbol.anglesec
+      ha:
+        meaning: cim:UnitSymbol.ha
+      tonne:
+        meaning: cim:UnitSymbol.tonne
+      bar:
+        meaning: cim:UnitSymbol.bar
+      mmHg:
+        meaning: cim:UnitSymbol.mmHg
+      M:
+        meaning: cim:UnitSymbol.M
+      kn:
+        meaning: cim:UnitSymbol.kn
+      Mx:
+        meaning: cim:UnitSymbol.Mx
+      G:
+        meaning: cim:UnitSymbol.G
+      Oe:
+        meaning: cim:UnitSymbol.Oe
+      Vh:
+        meaning: cim:UnitSymbol.Vh
+      WPerA:
+        meaning: cim:UnitSymbol.WPerA
+      onePerHz:
+        meaning: cim:UnitSymbol.onePerHz
+      VPerVAr:
+        meaning: cim:UnitSymbol.VPerVAr
+      ohmPerm:
+        meaning: cim:UnitSymbol.ohmPerm
+      kgPerJ:
+        meaning: cim:UnitSymbol.kgPerJ
+      JPers:
+        meaning: cim:UnitSymbol.JPers
+    enum_uri: http://iec.ch/TC57/CIM100#UnitSymbol
+  UnitMultiplier:
+    permissible_values:
+      y:
+        meaning: cim:UnitMultiplier.y
+      z:
+        meaning: cim:UnitMultiplier.z
+      a:
+        meaning: cim:UnitMultiplier.a
+      f:
+        meaning: cim:UnitMultiplier.f
+      p:
+        meaning: cim:UnitMultiplier.p
+      n:
+        meaning: cim:UnitMultiplier.n
+      micro:
+        meaning: cim:UnitMultiplier.micro
+      m:
+        meaning: cim:UnitMultiplier.m
+      c:
+        meaning: cim:UnitMultiplier.c
+      d:
+        meaning: cim:UnitMultiplier.d
+      none:
+        meaning: cim:UnitMultiplier.none
+      da:
+        meaning: cim:UnitMultiplier.da
+      h:
+        meaning: cim:UnitMultiplier.h
+      k:
+        meaning: cim:UnitMultiplier.k
+      M:
+        meaning: cim:UnitMultiplier.M
+      G:
+        meaning: cim:UnitMultiplier.G
+      T:
+        meaning: cim:UnitMultiplier.T
+      P:
+        meaning: cim:UnitMultiplier.P
+      E:
+        meaning: cim:UnitMultiplier.E
+      Z:
+        meaning: cim:UnitMultiplier.Z
+      Y:
+        meaning: cim:UnitMultiplier.Y
+    enum_uri: http://iec.ch/TC57/CIM100#UnitMultiplier

@@ -21,5 +21,7 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+extra_css:
+  - stylesheets/extra.css
 site_url: https://alliander-opensource.github.io/cgmes-profiles/
 repo_url: https://github.com/alliander-opensource/cgmes-profiles
