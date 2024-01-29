@@ -1,0 +1,3857 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/Diagram/">
+      
+      
+        <link rel="prev" href="../AngleDegrees/">
+      
+      
+        <link rel="next" href="../DiagramLayoutProfile/">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.19">
+    
+    
+      
+        <title>Diagram - ENTSO-E &mdash; CGMES Profiles</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-orange">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#diagram" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ENTSO-E &amp;mdash; CGMES Profiles" class="md-header__button md-logo" aria-label="ENTSO-E &mdash; CGMES Profiles" data-md-component="logo">
+      
+  <img src="../../assets/alliander_logo_wit.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ENTSO-E &mdash; CGMES Profiles
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Diagram
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/alliander-opensource/cgmes-profiles" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      CGMES Profiles
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../" class="md-tabs__link md-tabs__link--active">
+        452 &mdash; Diagram Layout
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/" class="md-tabs__link">
+        453 &mdash; Core Equipment
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ENTSO-E &amp;mdash; CGMES Profiles" class="md-nav__button md-logo" aria-label="ENTSO-E &mdash; CGMES Profiles" data-md-component="logo">
+      
+  <img src="../../assets/alliander_logo_wit.png" alt="logo">
+
+    </a>
+    ENTSO-E &mdash; CGMES Profiles
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/alliander-opensource/cgmes-profiles" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        CGMES Profiles
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          452 &mdash; Diagram Layout
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          452 &mdash; Diagram Layout
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        Diagram Layout Vocabulary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AngleDegrees/" class="md-nav__link">
+        AngleDegrees
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Diagram
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Diagram
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usages" class="md-nav__link">
+    Usages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    Identifier and Mapping Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    Mappings
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramLayoutProfile/" class="md-nav__link">
+        DiagramLayoutProfile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramObject/" class="md-nav__link">
+        DiagramObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramObjectGluePoint/" class="md-nav__link">
+        DiagramObjectGluePoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramObjectPoint/" class="md-nav__link">
+        DiagramObjectPoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramObjectStyle/" class="md-nav__link">
+        DiagramObjectStyle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DiagramStyle/" class="md-nav__link">
+        DiagramStyle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../IdentifiedObject/" class="md-nav__link">
+        IdentifiedObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../OrientationKind/" class="md-nav__link">
+        OrientationKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TextDiagramObject/" class="md-nav__link">
+        TextDiagramObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UnitMultiplier/" class="md-nav__link">
+        UnitMultiplier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UnitSymbol/" class="md-nav__link">
+        UnitSymbol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VisibilityLayer/" class="md-nav__link">
+        VisibilityLayer
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          453 &mdash; Core Equipment
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          453 &mdash; Core Equipment
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/" class="md-nav__link">
+        Core Equipment Vocabulary
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ACDCConverter/" class="md-nav__link">
+        ACDCConverter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ACDCConverterDCTerminal/" class="md-nav__link">
+        ACDCConverterDCTerminal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ACDCTerminal/" class="md-nav__link">
+        ACDCTerminal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ACLineSegment/" class="md-nav__link">
+        ACLineSegment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ActivePower/" class="md-nav__link">
+        ActivePower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ActivePowerLimit/" class="md-nav__link">
+        ActivePowerLimit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerCurrentFlow/" class="md-nav__link">
+        ActivePowerPerCurrentFlow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerFrequency/" class="md-nav__link">
+        ActivePowerPerFrequency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/AngleDegrees/" class="md-nav__link">
+        AngleDegrees
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ApparentPower/" class="md-nav__link">
+        ApparentPower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ApparentPowerLimit/" class="md-nav__link">
+        ApparentPowerLimit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/AsynchronousMachine/" class="md-nav__link">
+        AsynchronousMachine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/AuxiliaryEquipment/" class="md-nav__link">
+        AuxiliaryEquipment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BaseVoltage/" class="md-nav__link">
+        BaseVoltage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BasicIntervalSchedule/" class="md-nav__link">
+        BasicIntervalSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BatteryUnit/" class="md-nav__link">
+        BatteryUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Bay/" class="md-nav__link">
+        Bay
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BoundaryPoint/" class="md-nav__link">
+        BoundaryPoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Breaker/" class="md-nav__link">
+        Breaker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BusNameMarker/" class="md-nav__link">
+        BusNameMarker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/BusbarSection/" class="md-nav__link">
+        BusbarSection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CAESPlant/" class="md-nav__link">
+        CAESPlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Capacitance/" class="md-nav__link">
+        Capacitance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Clamp/" class="md-nav__link">
+        Clamp
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CogenerationPlant/" class="md-nav__link">
+        CogenerationPlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CombinedCyclePlant/" class="md-nav__link">
+        CombinedCyclePlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Conductance/" class="md-nav__link">
+        Conductance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConductingEquipment/" class="md-nav__link">
+        ConductingEquipment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Conductor/" class="md-nav__link">
+        Conductor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConformLoad/" class="md-nav__link">
+        ConformLoad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConformLoadGroup/" class="md-nav__link">
+        ConformLoadGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConformLoadSchedule/" class="md-nav__link">
+        ConformLoadSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConnectivityNode/" class="md-nav__link">
+        ConnectivityNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ConnectivityNodeContainer/" class="md-nav__link">
+        ConnectivityNodeContainer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Connector/" class="md-nav__link">
+        Connector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ControlArea/" class="md-nav__link">
+        ControlArea
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ControlAreaGeneratingUnit/" class="md-nav__link">
+        ControlAreaGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ControlAreaTypeKind/" class="md-nav__link">
+        ControlAreaTypeKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CoreEquipmentProfile/" class="md-nav__link">
+        CoreEquipmentProfile
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CsConverter/" class="md-nav__link">
+        CsConverter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Currency/" class="md-nav__link">
+        Currency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CurrentFlow/" class="md-nav__link">
+        CurrentFlow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CurrentLimit/" class="md-nav__link">
+        CurrentLimit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CurrentTransformer/" class="md-nav__link">
+        CurrentTransformer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Curve/" class="md-nav__link">
+        Curve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CurveData/" class="md-nav__link">
+        CurveData
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/CurveStyle/" class="md-nav__link">
+        CurveStyle
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Cut/" class="md-nav__link">
+        Cut
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCBaseTerminal/" class="md-nav__link">
+        DCBaseTerminal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCBreaker/" class="md-nav__link">
+        DCBreaker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCBusbar/" class="md-nav__link">
+        DCBusbar
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCChopper/" class="md-nav__link">
+        DCChopper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCConductingEquipment/" class="md-nav__link">
+        DCConductingEquipment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCConverterOperatingModeKind/" class="md-nav__link">
+        DCConverterOperatingModeKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCConverterUnit/" class="md-nav__link">
+        DCConverterUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCDisconnector/" class="md-nav__link">
+        DCDisconnector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCEquipmentContainer/" class="md-nav__link">
+        DCEquipmentContainer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCGround/" class="md-nav__link">
+        DCGround
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCLine/" class="md-nav__link">
+        DCLine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCLineSegment/" class="md-nav__link">
+        DCLineSegment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCNode/" class="md-nav__link">
+        DCNode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCPolarityKind/" class="md-nav__link">
+        DCPolarityKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCSeriesDevice/" class="md-nav__link">
+        DCSeriesDevice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCShunt/" class="md-nav__link">
+        DCShunt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCSwitch/" class="md-nav__link">
+        DCSwitch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DCTerminal/" class="md-nav__link">
+        DCTerminal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DateTime/" class="md-nav__link">
+        DateTime
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DayType/" class="md-nav__link">
+        DayType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/DisconnectingCircuitBreaker/" class="md-nav__link">
+        DisconnectingCircuitBreaker
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Disconnector/" class="md-nav__link">
+        Disconnector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EarthFaultCompensator/" class="md-nav__link">
+        EarthFaultCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EnergyArea/" class="md-nav__link">
+        EnergyArea
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EnergyConnection/" class="md-nav__link">
+        EnergyConnection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EnergyConsumer/" class="md-nav__link">
+        EnergyConsumer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EnergySchedulingType/" class="md-nav__link">
+        EnergySchedulingType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EnergySource/" class="md-nav__link">
+        EnergySource
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Equipment/" class="md-nav__link">
+        Equipment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquipmentContainer/" class="md-nav__link">
+        EquipmentContainer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquivalentBranch/" class="md-nav__link">
+        EquivalentBranch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquivalentEquipment/" class="md-nav__link">
+        EquivalentEquipment
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquivalentInjection/" class="md-nav__link">
+        EquivalentInjection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquivalentNetwork/" class="md-nav__link">
+        EquivalentNetwork
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/EquivalentShunt/" class="md-nav__link">
+        EquivalentShunt
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ExternalNetworkInjection/" class="md-nav__link">
+        ExternalNetworkInjection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/FaultIndicator/" class="md-nav__link">
+        FaultIndicator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/FossilFuel/" class="md-nav__link">
+        FossilFuel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Frequency/" class="md-nav__link">
+        Frequency
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/FuelType/" class="md-nav__link">
+        FuelType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Fuse/" class="md-nav__link">
+        Fuse
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GeneratingUnit/" class="md-nav__link">
+        GeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GeneratorControlSource/" class="md-nav__link">
+        GeneratorControlSource
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GeographicalRegion/" class="md-nav__link">
+        GeographicalRegion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GrossToNetActivePowerCurve/" class="md-nav__link">
+        GrossToNetActivePowerCurve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Ground/" class="md-nav__link">
+        Ground
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GroundDisconnector/" class="md-nav__link">
+        GroundDisconnector
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/GroundingImpedance/" class="md-nav__link">
+        GroundingImpedance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroEnergyConversionKind/" class="md-nav__link">
+        HydroEnergyConversionKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroGeneratingUnit/" class="md-nav__link">
+        HydroGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroPlantStorageKind/" class="md-nav__link">
+        HydroPlantStorageKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroPowerPlant/" class="md-nav__link">
+        HydroPowerPlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroPump/" class="md-nav__link">
+        HydroPump
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/HydroTurbineKind/" class="md-nav__link">
+        HydroTurbineKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/IdentifiedObject/" class="md-nav__link">
+        IdentifiedObject
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Inductance/" class="md-nav__link">
+        Inductance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Jumper/" class="md-nav__link">
+        Jumper
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Junction/" class="md-nav__link">
+        Junction
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Length/" class="md-nav__link">
+        Length
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LimitKind/" class="md-nav__link">
+        LimitKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Line/" class="md-nav__link">
+        Line
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LinearShuntCompensator/" class="md-nav__link">
+        LinearShuntCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LoadArea/" class="md-nav__link">
+        LoadArea
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LoadBreakSwitch/" class="md-nav__link">
+        LoadBreakSwitch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LoadGroup/" class="md-nav__link">
+        LoadGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/LoadResponseCharacteristic/" class="md-nav__link">
+        LoadResponseCharacteristic
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Money/" class="md-nav__link">
+        Money
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/MonthDay/" class="md-nav__link">
+        MonthDay
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NonConformLoad/" class="md-nav__link">
+        NonConformLoad
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NonConformLoadGroup/" class="md-nav__link">
+        NonConformLoadGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NonConformLoadSchedule/" class="md-nav__link">
+        NonConformLoadSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensator/" class="md-nav__link">
+        NonlinearShuntCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensatorPoint/" class="md-nav__link">
+        NonlinearShuntCompensatorPoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/NuclearGeneratingUnit/" class="md-nav__link">
+        NuclearGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/OperationalLimit/" class="md-nav__link">
+        OperationalLimit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/OperationalLimitDirectionKind/" class="md-nav__link">
+        OperationalLimitDirectionKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/OperationalLimitSet/" class="md-nav__link">
+        OperationalLimitSet
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/OperationalLimitType/" class="md-nav__link">
+        OperationalLimitType
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PerCent/" class="md-nav__link">
+        PerCent
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PetersenCoil/" class="md-nav__link">
+        PetersenCoil
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseCode/" class="md-nav__link">
+        PhaseCode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChanger/" class="md-nav__link">
+        PhaseTapChanger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerAsymmetrical/" class="md-nav__link">
+        PhaseTapChangerAsymmetrical
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerLinear/" class="md-nav__link">
+        PhaseTapChangerLinear
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerNonLinear/" class="md-nav__link">
+        PhaseTapChangerNonLinear
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerSymmetrical/" class="md-nav__link">
+        PhaseTapChangerSymmetrical
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTable/" class="md-nav__link">
+        PhaseTapChangerTable
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTablePoint/" class="md-nav__link">
+        PhaseTapChangerTablePoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTabular/" class="md-nav__link">
+        PhaseTapChangerTabular
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PhotoVoltaicUnit/" class="md-nav__link">
+        PhotoVoltaicUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PostLineSensor/" class="md-nav__link">
+        PostLineSensor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PotentialTransformer/" class="md-nav__link">
+        PotentialTransformer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsConnection/" class="md-nav__link">
+        PowerElectronicsConnection
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsUnit/" class="md-nav__link">
+        PowerElectronicsUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsWindUnit/" class="md-nav__link">
+        PowerElectronicsWindUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerSystemResource/" class="md-nav__link">
+        PowerSystemResource
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerTransformer/" class="md-nav__link">
+        PowerTransformer
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/PowerTransformerEnd/" class="md-nav__link">
+        PowerTransformerEnd
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ProtectedSwitch/" class="md-nav__link">
+        ProtectedSwitch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RatioTapChanger/" class="md-nav__link">
+        RatioTapChanger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTable/" class="md-nav__link">
+        RatioTapChangerTable
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTablePoint/" class="md-nav__link">
+        RatioTapChangerTablePoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Reactance/" class="md-nav__link">
+        Reactance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ReactiveCapabilityCurve/" class="md-nav__link">
+        ReactiveCapabilityCurve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ReactivePower/" class="md-nav__link">
+        ReactivePower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RealEnergy/" class="md-nav__link">
+        RealEnergy
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegularIntervalSchedule/" class="md-nav__link">
+        RegularIntervalSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegularTimePoint/" class="md-nav__link">
+        RegularTimePoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegulatingCondEq/" class="md-nav__link">
+        RegulatingCondEq
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegulatingControl/" class="md-nav__link">
+        RegulatingControl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegulatingControlModeKind/" class="md-nav__link">
+        RegulatingControlModeKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RegulationSchedule/" class="md-nav__link">
+        RegulationSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ReportingGroup/" class="md-nav__link">
+        ReportingGroup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Resistance/" class="md-nav__link">
+        Resistance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RotatingMachine/" class="md-nav__link">
+        RotatingMachine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/RotationSpeed/" class="md-nav__link">
+        RotationSpeed
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SVCControlMode/" class="md-nav__link">
+        SVCControlMode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Season/" class="md-nav__link">
+        Season
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SeasonDayTypeSchedule/" class="md-nav__link">
+        SeasonDayTypeSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Seconds/" class="md-nav__link">
+        Seconds
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Sensor/" class="md-nav__link">
+        Sensor
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SeriesCompensator/" class="md-nav__link">
+        SeriesCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ShuntCompensator/" class="md-nav__link">
+        ShuntCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SolarGeneratingUnit/" class="md-nav__link">
+        SolarGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SolarPowerPlant/" class="md-nav__link">
+        SolarPowerPlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/StaticVarCompensator/" class="md-nav__link">
+        StaticVarCompensator
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/StationSupply/" class="md-nav__link">
+        StationSupply
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SubGeographicalRegion/" class="md-nav__link">
+        SubGeographicalRegion
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SubLoadArea/" class="md-nav__link">
+        SubLoadArea
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Substation/" class="md-nav__link">
+        Substation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SurgeArrester/" class="md-nav__link">
+        SurgeArrester
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Susceptance/" class="md-nav__link">
+        Susceptance
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Switch/" class="md-nav__link">
+        Switch
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SwitchSchedule/" class="md-nav__link">
+        SwitchSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SynchronousMachine/" class="md-nav__link">
+        SynchronousMachine
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/SynchronousMachineKind/" class="md-nav__link">
+        SynchronousMachineKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TapChanger/" class="md-nav__link">
+        TapChanger
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TapChangerControl/" class="md-nav__link">
+        TapChangerControl
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TapChangerTablePoint/" class="md-nav__link">
+        TapChangerTablePoint
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TapSchedule/" class="md-nav__link">
+        TapSchedule
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Terminal/" class="md-nav__link">
+        Terminal
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/ThermalGeneratingUnit/" class="md-nav__link">
+        ThermalGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TieFlow/" class="md-nav__link">
+        TieFlow
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/TransformerEnd/" class="md-nav__link">
+        TransformerEnd
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/UnitMultiplier/" class="md-nav__link">
+        UnitMultiplier
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/UnitSymbol/" class="md-nav__link">
+        UnitSymbol
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/Voltage/" class="md-nav__link">
+        Voltage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/VoltageLevel/" class="md-nav__link">
+        VoltageLevel
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/VoltageLimit/" class="md-nav__link">
+        VoltageLimit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/VoltagePerReactivePower/" class="md-nav__link">
+        VoltagePerReactivePower
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/VsCapabilityCurve/" class="md-nav__link">
+        VsCapabilityCurve
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/VsConverter/" class="md-nav__link">
+        VsConverter
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/WaveTrap/" class="md-nav__link">
+        WaveTrap
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/WindGenUnitKind/" class="md-nav__link">
+        WindGenUnitKind
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/WindGeneratingUnit/" class="md-nav__link">
+        WindGeneratingUnit
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/WindPowerPlant/" class="md-nav__link">
+        WindPowerPlant
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../453%20%26mdash%3B%20Core%20Equipment/WindingConnection/" class="md-nav__link">
+        WindingConnection
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usages" class="md-nav__link">
+    Usages
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    Identifier and Mapping Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    Mappings
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="diagram">Diagram</h1>
+<p><em>The diagram being exchanged. The coordinate system is a standard Cartesian coordinate system and the orientation attribute defines the orientation. The initial view related attributes can be used to specify an initial view with the x,y coordinates of the diagonal points.</em></p>
+<p><strong>URI</strong>: <a href="http://iec.ch/TC57/CIM100#Diagram">cim:Diagram</a><br />
+<strong>Type</strong>: Class</p>
+<pre class="mermaid"><code> classDiagram
+    class Diagram
+      IdentifiedObject &lt;|-- Diagram
+
+      Diagram : IdentifiedObject.description
+
+      Diagram : Diagram.DiagramElements
+
+          Diagram --&gt; DiagramObject : Diagram.DiagramElements
+
+      Diagram : IdentifiedObject.DiagramObjects
+
+          Diagram --&gt; DiagramObject : IdentifiedObject.DiagramObjects
+
+      Diagram : Diagram.DiagramStyle
+
+          Diagram --&gt; DiagramStyle : Diagram.DiagramStyle
+
+      Diagram : IdentifiedObject.mRID
+
+      Diagram : IdentifiedObject.name
+
+      Diagram : Diagram.orientation
+
+          Diagram --&gt; OrientationKind : Diagram.orientation
+
+      Diagram : Diagram.x1InitialView
+
+      Diagram : Diagram.x2InitialView
+
+      Diagram : Diagram.y1InitialView
+
+      Diagram : Diagram.y2InitialView
+
+</code></pre>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../IdentifiedObject/">IdentifiedObject</a><ul>
+<li><strong>Diagram</strong></li>
+</ul>
+</li>
+</ul>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>URI</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>orientation</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.orientation">cim:Diagram.orientation</a></td>
+<td>1..1 <br />  <a href="../OrientationKind/">OrientationKind</a></td>
+<td>Coordinate system orientation of the diagram</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>x1InitialView</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.x1InitialView">cim:Diagram.x1InitialView</a></td>
+<td>0..1 <br />  float</td>
+<td>X coordinate of the first corner of the initial view</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>x2InitialView</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.x2InitialView">cim:Diagram.x2InitialView</a></td>
+<td>0..1 <br />  float</td>
+<td>X coordinate of the second corner of the initial view</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>y1InitialView</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.y1InitialView">cim:Diagram.y1InitialView</a></td>
+<td>0..1 <br />  float</td>
+<td>Y coordinate of the first corner of the initial view</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>y2InitialView</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.y2InitialView">cim:Diagram.y2InitialView</a></td>
+<td>0..1 <br />  float</td>
+<td>Y coordinate of the second corner of the initial view</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>DiagramElements</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.DiagramElements">cim:Diagram.DiagramElements</a></td>
+<td>0..* <br />  <a href="../DiagramObject/">DiagramObject</a></td>
+<td>A diagram is made up of multiple diagram objects</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>DiagramStyle</td>
+<td><a href="http://iec.ch/TC57/CIM100#Diagram.DiagramStyle">cim:Diagram.DiagramStyle</a></td>
+<td>0..1 <br />  <a href="../DiagramStyle/">DiagramStyle</a></td>
+<td>A Diagram may have a DiagramStyle</td>
+<td>direct</td>
+</tr>
+<tr>
+<td>DiagramObjects</td>
+<td><a href="http://iec.ch/TC57/CIM100#IdentifiedObject.DiagramObjects">cim:IdentifiedObject.DiagramObjects</a></td>
+<td>0..* <br />  <a href="../DiagramObject/">DiagramObject</a></td>
+<td>The diagram objects that are associated with the domain object</td>
+<td><a href="../IdentifiedObject/">IdentifiedObject</a></td>
+</tr>
+<tr>
+<td>mRID</td>
+<td><a href="http://iec.ch/TC57/CIM100#IdentifiedObject.mRID">cim:IdentifiedObject.mRID</a></td>
+<td>1..1 <br />  string</td>
+<td>Master resource identifier issued by a model authority</td>
+<td><a href="../IdentifiedObject/">IdentifiedObject</a></td>
+</tr>
+<tr>
+<td>name</td>
+<td><a href="http://iec.ch/TC57/CIM100#IdentifiedObject.name">cim:IdentifiedObject.name</a></td>
+<td>1..1 <br />  string</td>
+<td>The name is any free human readable and possibly non unique text naming the o...</td>
+<td><a href="../IdentifiedObject/">IdentifiedObject</a></td>
+</tr>
+<tr>
+<td>description</td>
+<td><a href="http://iec.ch/TC57/CIM100#IdentifiedObject.description">cim:IdentifiedObject.description</a></td>
+<td>0..1 <br />  string</td>
+<td>The description is a free human readable text describing or naming the object</td>
+<td><a href="../IdentifiedObject/">IdentifiedObject</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../DiagramObject/">DiagramObject</a></td>
+<td>Diagram</td>
+<td>range</td>
+<td><a href="./">Diagram</a></td>
+</tr>
+<tr>
+<td><a href="../DiagramStyle/">DiagramStyle</a></td>
+<td>Diagram</td>
+<td>range</td>
+<td><a href="./">Diagram</a></td>
+</tr>
+<tr>
+<td><a href="../TextDiagramObject/">TextDiagramObject</a></td>
+<td>Diagram</td>
+<td>range</td>
+<td><a href="./">Diagram</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: http://iec.ch/TC57/ns/CIM/DiagramLayout-EU#Package_DiagramLayoutProfile</li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>cim:Diagram</td>
+</tr>
+<tr>
+<td>native</td>
+<td>this:Diagram</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+    
+  </body>
+</html>

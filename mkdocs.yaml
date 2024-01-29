@@ -1,4 +1,4 @@
-site_name: "ENTSO-E &mdash; CGMES CoreEquipmentProfile"
+site_name: "ENTSO-E &mdash; CGMES Profiles"
 theme:
   name: material
   palette:
@@ -7,7 +7,7 @@ theme:
     accent: deep orange
   features:
     - content.tabs.link
-    - navigation.sections
+    - navigation.tabs
   logo: assets/alliander_logo_wit.png
   language: en
 plugins:

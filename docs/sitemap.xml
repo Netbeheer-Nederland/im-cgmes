@@ -1,1023 +1,1113 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ACDCConverter/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ACDCConverterDCTerminal/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/AngleDegrees/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ACDCTerminal/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/Diagram/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ACLineSegment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramLayoutProfile/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ActivePower/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObject/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ActivePowerLimit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectGluePoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ActivePowerPerCurrentFlow/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectPoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ActivePowerPerFrequency/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectStyle/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/AngleDegrees/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramStyle/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ApparentPower/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/IdentifiedObject/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ApparentPowerLimit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/OrientationKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/AsynchronousMachine/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/TextDiagramObject/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/AuxiliaryEquipment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/UnitMultiplier/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BaseVoltage/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/UnitSymbol/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BasicIntervalSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/VisibilityLayer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BatteryUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Bay/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCConverter/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BoundaryPoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCConverterDCTerminal/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Breaker/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCTerminal/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BusNameMarker/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACLineSegment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/BusbarSection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePower/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CAESPlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerLimit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Capacitance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerCurrentFlow/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Clamp/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerFrequency/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CogenerationPlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AngleDegrees/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CombinedCyclePlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ApparentPower/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Conductance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ApparentPowerLimit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConductingEquipment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AsynchronousMachine/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Conductor/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AuxiliaryEquipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConformLoad/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BaseVoltage/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConformLoadGroup/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BasicIntervalSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConformLoadSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BatteryUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConnectivityNode/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Bay/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ConnectivityNodeContainer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BoundaryPoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Connector/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Breaker/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ControlArea/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BusNameMarker/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ControlAreaGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BusbarSection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ControlAreaTypeKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CAESPlant/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CoreEquipmentProfile/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Capacitance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CsConverter/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Clamp/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Currency/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CogenerationPlant/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CurrentFlow/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CombinedCyclePlant/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CurrentLimit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Conductance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CurrentTransformer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConductingEquipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Curve/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Conductor/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CurveData/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoad/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/CurveStyle/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoadGroup/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Cut/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoadSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCBaseTerminal/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConnectivityNode/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCBreaker/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConnectivityNodeContainer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCBusbar/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Connector/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCChopper/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlArea/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCConductingEquipment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlAreaGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCConverterOperatingModeKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlAreaTypeKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCConverterUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CoreEquipmentProfile/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCDisconnector/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CsConverter/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCEquipmentContainer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Currency/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCGround/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentFlow/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCLine/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentLimit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCLineSegment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentTransformer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCNode/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Curve/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCPolarityKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurveData/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCSeriesDevice/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurveStyle/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCShunt/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Cut/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCSwitch/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBaseTerminal/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DCTerminal/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBreaker/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DayType/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBusbar/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/DisconnectingCircuitBreaker/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCChopper/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Disconnector/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConductingEquipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EarthFaultCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConverterOperatingModeKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EnergyArea/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConverterUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EnergyConnection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCDisconnector/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EnergyConsumer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCEquipmentContainer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EnergySchedulingType/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCGround/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EnergySource/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCLine/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Equipment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCLineSegment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquipmentContainer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCNode/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquivalentBranch/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCPolarityKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquivalentEquipment/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCSeriesDevice/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquivalentInjection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCShunt/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquivalentNetwork/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCSwitch/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/EquivalentShunt/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCTerminal/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ExternalNetworkInjection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DateTime/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/FaultIndicator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DayType/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/FossilFuel/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DisconnectingCircuitBreaker/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Frequency/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Disconnector/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/FuelType/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EarthFaultCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Fuse/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyArea/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyConnection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GeneratorControlSource/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyConsumer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GeographicalRegion/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergySchedulingType/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GrossToNetActivePowerCurve/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergySource/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Ground/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Equipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GroundDisconnector/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquipmentContainer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/GroundingImpedance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentBranch/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroEnergyConversionKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentEquipment/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentInjection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroPlantStorageKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentNetwork/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroPowerPlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentShunt/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroPump/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ExternalNetworkInjection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/HydroTurbineKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FaultIndicator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/IdentifiedObject/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FossilFuel/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Inductance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Frequency/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Jumper/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FuelType/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Junction/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Fuse/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Length/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LimitKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeneratorControlSource/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Line/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeographicalRegion/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LinearShuntCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GrossToNetActivePowerCurve/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LoadArea/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Ground/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LoadBreakSwitch/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GroundDisconnector/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LoadGroup/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GroundingImpedance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/LoadResponseCharacteristic/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroEnergyConversionKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Money/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NonConformLoad/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPlantStorageKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NonConformLoadGroup/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPowerPlant/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NonConformLoadSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPump/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NonlinearShuntCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroTurbineKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NonlinearShuntCompensatorPoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/IdentifiedObject/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/NuclearGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Inductance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/OperationalLimit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Jumper/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/OperationalLimitDirectionKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Junction/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/OperationalLimitSet/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Length/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/OperationalLimitType/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LimitKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PerCent/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Line/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PetersenCoil/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LinearShuntCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseCode/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadArea/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChanger/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadBreakSwitch/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerAsymmetrical/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadGroup/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerLinear/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadResponseCharacteristic/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerNonLinear/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Money/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerSymmetrical/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/MonthDay/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerTable/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoad/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerTablePoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoadGroup/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhaseTapChangerTabular/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoadSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PhotoVoltaicUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PostLineSensor/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensatorPoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PotentialTransformer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NuclearGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerElectronicsConnection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerElectronicsUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitDirectionKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerElectronicsWindUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitSet/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerSystemResource/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitType/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerTransformer/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PerCent/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/PowerTransformerEnd/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PetersenCoil/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ProtectedSwitch/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseCode/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RatioTapChanger/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChanger/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RatioTapChangerTable/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerAsymmetrical/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RatioTapChangerTablePoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerLinear/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Reactance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerNonLinear/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ReactiveCapabilityCurve/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerSymmetrical/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ReactivePower/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTable/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RealEnergy/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTablePoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegularIntervalSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTabular/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegularTimePoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhotoVoltaicUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegulatingCondEq/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PostLineSensor/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegulatingControl/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PotentialTransformer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegulatingControlModeKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsConnection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RegulationSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ReportingGroup/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsWindUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Resistance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerSystemResource/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RotatingMachine/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerTransformer/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/RotationSpeed/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerTransformerEnd/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SVCControlMode/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ProtectedSwitch/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Season/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChanger/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SeasonDayTypeSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTable/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Seconds/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTablePoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Sensor/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Reactance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SeriesCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReactiveCapabilityCurve/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ShuntCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReactivePower/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SolarGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RealEnergy/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SolarPowerPlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegularIntervalSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/StaticVarCompensator/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegularTimePoint/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/StationSupply/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingCondEq/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SubGeographicalRegion/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingControl/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SubLoadArea/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingControlModeKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Substation/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulationSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SurgeArrester/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReportingGroup/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Susceptance/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Resistance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Switch/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RotatingMachine/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SwitchSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RotationSpeed/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SynchronousMachine/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SVCControlMode/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/SynchronousMachineKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Season/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TapChanger/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SeasonDayTypeSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TapChangerControl/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Seconds/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TapChangerTablePoint/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Sensor/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TapSchedule/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SeriesCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Terminal/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ShuntCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/ThermalGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SolarGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TieFlow/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SolarPowerPlant/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/TransformerEnd/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/StaticVarCompensator/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/UnitMultiplier/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/StationSupply/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/UnitSymbol/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SubGeographicalRegion/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/Voltage/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SubLoadArea/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/VoltageLevel/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Substation/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/VoltageLimit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SurgeArrester/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/VoltagePerReactivePower/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Susceptance/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/VsCapabilityCurve/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Switch/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/VsConverter/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SwitchSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/WaveTrap/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SynchronousMachine/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/WindGenUnitKind/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SynchronousMachineKind/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/WindGeneratingUnit/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChanger/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/WindPowerPlant/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChangerControl/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://legendary-carnival-q4316me.pages.github.io/WindingConnection/</loc>
-         <lastmod>2024-01-26</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChangerTablePoint/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapSchedule/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Terminal/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ThermalGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TieFlow/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TransformerEnd/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/UnitMultiplier/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/UnitSymbol/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Voltage/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltageLevel/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltageLimit/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltagePerReactivePower/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VsCapabilityCurve/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VsConverter/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WaveTrap/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindGenUnitKind/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindGeneratingUnit/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindPowerPlant/</loc>
+         <lastmod>2024-01-29</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindingConnection/</loc>
+         <lastmod>2024-01-29</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
