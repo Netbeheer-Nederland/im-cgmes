@@ -2,1112 +2,3762 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://alliander-opensource.github.io/cgmes-profiles/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/AngleDegrees/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ACDCConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/Diagram/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ACDCConverterDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramLayoutProfile/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObject/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ACLineSegment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectGluePoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ActivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectPoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ActivePowerLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramObjectStyle/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ActivePowerPerCurrentFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/DiagramStyle/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ActivePowerPerFrequency/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/IdentifiedObject/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/OrientationKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ApparentPower/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/TextDiagramObject/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ApparentPowerLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/UnitMultiplier/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/AsynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/UnitSymbol/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/AuxiliaryEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/452%20%26mdash%3B%20Diagram%20Layout/VisibilityLayer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BaseVoltage/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BasicIntervalSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCConverter/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BatteryUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCConverterDCTerminal/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Bay/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACDCTerminal/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BoundaryPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ACLineSegment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Breaker/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePower/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BusNameMarker/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerLimit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/BusbarSection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerCurrentFlow/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CAESPlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ActivePowerPerFrequency/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Capacitance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AngleDegrees/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Clamp/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ApparentPower/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CogenerationPlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ApparentPowerLimit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CombinedCyclePlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AsynchronousMachine/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Conductance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/AuxiliaryEquipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BaseVoltage/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Conductor/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BasicIntervalSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConformLoad/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BatteryUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConformLoadGroup/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Bay/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConformLoadSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BoundaryPoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConnectivityNode/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Breaker/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ConnectivityNodeContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BusNameMarker/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Connector/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/BusbarSection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ControlArea/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CAESPlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ControlAreaGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Capacitance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ControlAreaTypeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Clamp/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CoreEquipmentProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CogenerationPlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CombinedCyclePlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Currency/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Conductance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CurrentFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConductingEquipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CurrentLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Conductor/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CurrentTransformer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoad/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Curve/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoadGroup/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CurveData/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConformLoadSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/CurveStyle/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConnectivityNode/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Cut/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ConnectivityNodeContainer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCBaseTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Connector/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCBreaker/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlArea/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCBusbar/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlAreaGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCChopper/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ControlAreaTypeKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CoreEquipmentProfile/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCConverterOperatingModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CsConverter/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCConverterUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Currency/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCDisconnector/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentFlow/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCEquipmentContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentLimit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCGround/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurrentTransformer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCLine/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Curve/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCLineSegment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurveData/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCNode/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/CurveStyle/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCPolarityKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Cut/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCSeriesDevice/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBaseTerminal/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCShunt/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBreaker/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCBusbar/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCChopper/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DateTime/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConductingEquipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DayType/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConverterOperatingModeKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/DisconnectingCircuitBreaker/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCConverterUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Disconnector/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCDisconnector/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EarthFaultCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCEquipmentContainer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EnergyArea/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCGround/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EnergyConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCLine/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EnergyConsumer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCLineSegment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EnergySchedulingType/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCNode/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EnergySource/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCPolarityKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCSeriesDevice/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquipmentContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCShunt/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquivalentBranch/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCSwitch/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquivalentEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DCTerminal/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquivalentInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DateTime/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquivalentNetwork/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DayType/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/EquivalentShunt/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/DisconnectingCircuitBreaker/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ExternalNetworkInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Disconnector/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/FaultIndicator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EarthFaultCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/FossilFuel/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyArea/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Frequency/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyConnection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/FuelType/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergyConsumer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Fuse/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergySchedulingType/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EnergySource/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GeneratorControlSource/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Equipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GeographicalRegion/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquipmentContainer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GrossToNetActivePowerCurve/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentBranch/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Ground/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentEquipment/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GroundDisconnector/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentInjection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/GroundingImpedance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentNetwork/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroEnergyConversionKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/EquivalentShunt/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ExternalNetworkInjection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroPlantStorageKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FaultIndicator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroPowerPlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FossilFuel/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroPump/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Frequency/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/HydroTurbineKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/FuelType/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Fuse/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Inductance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Jumper/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeneratorControlSource/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Junction/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GeographicalRegion/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Length/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GrossToNetActivePowerCurve/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LimitKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Ground/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Line/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GroundDisconnector/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LinearShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/GroundingImpedance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LoadArea/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroEnergyConversionKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LoadBreakSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LoadGroup/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPlantStorageKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/LoadResponseCharacteristic/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPowerPlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Money/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroPump/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/MonthDay/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/HydroTurbineKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NonConformLoad/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/IdentifiedObject/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NonConformLoadGroup/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Inductance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NonConformLoadSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Jumper/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NonlinearShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Junction/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NonlinearShuntCompensatorPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Length/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/NuclearGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LimitKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/OperationalLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Line/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/OperationalLimitDirectionKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LinearShuntCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/OperationalLimitSet/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadArea/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/OperationalLimitType/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadBreakSwitch/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PerCent/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadGroup/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PetersenCoil/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/LoadResponseCharacteristic/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseCode/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Money/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/MonthDay/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerAsymmetrical/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoad/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerLinear/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoadGroup/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerNonLinear/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonConformLoadSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerSymmetrical/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerTable/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NonlinearShuntCompensatorPoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerTablePoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/NuclearGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhaseTapChangerTabular/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PhotoVoltaicUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitDirectionKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PostLineSensor/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitSet/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PotentialTransformer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/OperationalLimitType/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerElectronicsConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PerCent/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerElectronicsUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PetersenCoil/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerElectronicsWindUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseCode/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChanger/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerTransformer/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerAsymmetrical/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/PowerTransformerEnd/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerLinear/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ProtectedSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerNonLinear/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RatioTapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerSymmetrical/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RatioTapChangerTable/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTable/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RatioTapChangerTablePoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTablePoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Reactance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhaseTapChangerTabular/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ReactiveCapabilityCurve/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PhotoVoltaicUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ReactivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PostLineSensor/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RealEnergy/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PotentialTransformer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegularIntervalSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsConnection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegularTimePoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegulatingCondEq/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerElectronicsWindUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegulatingControl/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerSystemResource/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegulatingControlModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerTransformer/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RegulationSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/PowerTransformerEnd/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ReportingGroup/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ProtectedSwitch/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Resistance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChanger/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RotatingMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTable/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/RotationSpeed/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RatioTapChangerTablePoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SVCControlMode/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Reactance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Season/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReactiveCapabilityCurve/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SeasonDayTypeSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReactivePower/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Seconds/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RealEnergy/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Sensor/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegularIntervalSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SeriesCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegularTimePoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingCondEq/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SolarGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingControl/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SolarPowerPlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulatingControlModeKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/StaticVarCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RegulationSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/StationSupply/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ReportingGroup/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SubGeographicalRegion/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Resistance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SubLoadArea/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RotatingMachine/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Substation/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/RotationSpeed/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SurgeArrester/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SVCControlMode/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Susceptance/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Season/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Switch/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SeasonDayTypeSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SwitchSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Seconds/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Sensor/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/SynchronousMachineKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SeriesCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ShuntCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TapChangerControl/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SolarGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TapChangerTablePoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SolarPowerPlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TapSchedule/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/StaticVarCompensator/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/StationSupply/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/ThermalGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SubGeographicalRegion/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TieFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SubLoadArea/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/TransformerEnd/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Substation/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SurgeArrester/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Susceptance/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/Voltage/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Switch/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/VoltageLevel/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SwitchSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/VoltageLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SynchronousMachine/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/VoltagePerReactivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/SynchronousMachineKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/VsCapabilityCurve/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChanger/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/VsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChangerControl/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/WaveTrap/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapChangerTablePoint/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/WindGenUnitKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TapSchedule/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/WindGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Terminal/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/WindPowerPlant/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/ThermalGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Core%20Equipment/WindingConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TieFlow/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/TransformerEnd/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/UnitMultiplier/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/Diagram/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/UnitSymbol/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramLayoutProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/Voltage/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramObject/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltageLevel/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramObjectGluePoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltageLimit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramObjectPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VoltagePerReactivePower/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramObjectStyle/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VsCapabilityCurve/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/DiagramStyle/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/VsConverter/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WaveTrap/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/OrientationKind/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindGenUnitKind/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/TextDiagramObject/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindGeneratingUnit/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindPowerPlant/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://alliander-opensource.github.io/cgmes-profiles/453%20%26mdash%3B%20Core%20Equipment/WindingConnection/</loc>
-         <lastmod>2024-01-29</lastmod>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Diagram%20Layout/VisibilityLayer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ACDCConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ActivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ApparentPower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Area/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AsynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AsynchronousMachineDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AsynchronousMachineEquivalentCircuit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AsynchronousMachineTimeConstantReactance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/AsynchronousMachineUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/CSCDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/CSCUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/CrossCompoundTurbineGovernorDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/CsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DiscExcContIEEEDEC1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DiscExcContIEEEDEC2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DiscExcContIEEEDEC3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DiscontinuousExcitationControlDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DiscontinuousExcitationControlUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DroopSignalFeedbackKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DynamicsFunctionBlock/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/DynamicsProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/EnergyConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/EnergyConsumer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC4A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC5A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC6A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAC8B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcANS/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR3/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR4/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR5/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcAVR7/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcBBC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcCZ/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcDC1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcDC2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcDC3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcDC3A1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcELIN1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcELIN2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcHU/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC4A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC5A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC6A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC7B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEAC8B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEDC1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEDC2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEDC3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEDC4B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST1AUELselectorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST4B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST5B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST6B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcIEEEST7B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcNI/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcOEX3T/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcPIC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcREXS/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcREXSFeedbackSignalKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcRQB/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcSCRX/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcSEXS/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcSK/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST3A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST4B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST6B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST6BOELselectorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST7B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST7BOELselectorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcST7BUELselectorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcitationSystemDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ExcitationSystemUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/FrancisGovernorControlKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Frequency/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GenICompensationForGenJ/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GenericNonLinearLoadModelKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovCT1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovCT2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGAST/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGAST1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGAST2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGAST3/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGAST4/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovGASTWD/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydro1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydro2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydro3/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydro4/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydro4ModelKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroDD/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroFrancis/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroIEEE0/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroIEEE2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroPID/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroPID2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroPelton/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroR/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroWEH/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovHydroWPID/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteam0/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteam1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteam2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamBB/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamCC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamEU/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamFV2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamFV3/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamFV4/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamIEEE1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/GovSteamSGO/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/HVDCDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/IfdBaseKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/InputSignalKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Length/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadAggregate/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadComposite/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadGenericNonLinear/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadMotor/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadStatic/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/LoadUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/MechLoad1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/MechanicalLoadDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/MechanicalLoadUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcLim2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcLimIEEE/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcLimX1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcLimX2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcitationLimiterDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/OverexcitationLimiterUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArControllerType1Dynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArControllerType1UserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArControllerType2Dynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArControllerType2UserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArType1IEEEPFController/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArType1IEEEVArController/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArType2Common1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArType2IEEEPFController/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PFVArType2IEEEVArController/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PU/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PowerElectronicsConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PowerSystemStabilizerDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PowerSystemStabilizerUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/ProprietaryParameterDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Pss1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Pss1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Pss2B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Pss2ST/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Pss5/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssELIN2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssIEEE1A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssIEEE2B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssIEEE3B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssIEEE4B/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssPTIST1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssPTIST3/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssRQB/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssSB4/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssSH/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssSK/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssSTAB2A/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/PssWECC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RegulatingCondEq/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RemoteInputSignal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RemoteSignalKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RotatingMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RotatingMachineDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/RotorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SVCUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Seconds/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/StaticLoadModelKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/StaticVarCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/StaticVarCompensatorDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineDetailed/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineEquivalentCircuit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineModelKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineSimplified/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineTimeConstantReactance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/SynchronousMachineUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Temperature/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/TurbLCFB1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/TurbineGovernorDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/TurbineGovernorUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/TurbineLoadControllerDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/TurbineLoadControllerUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcLim2Simplified/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcLimIEEE1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcLimIEEE2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcLimX1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcLimX2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcitationLimiterDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnderexcitationLimiterUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VAdjIEEE/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VCompIEEEType1/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VCompIEEEType2/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VSCDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VSCUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VoltageAdjusterDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VoltageAdjusterUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VoltageCompensatorDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VoltageCompensatorUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VolumeFlowRate/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/VsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindAeroConstIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindAeroOneDimIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindAeroTwoDimIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContCurrLimIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContPType3IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContPType4aIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContPType4bIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContPitchAngleIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContQIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContQLimIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContQPQULimIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindContRotorRIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindDynamicsLookupTable/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenTurbineType1aIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenTurbineType1bIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenTurbineType2IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenType3IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenType3aIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenType3bIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindGenType4IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindLookupTableFunctionKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindMechIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPitchContPowerIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantDynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantFreqPcontrolIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantQcontrolModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantReactiveControlIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindPlantUserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindProtectionIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindQcontrolModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindRefFrameRotIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType1or2Dynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType1or2IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType3IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType3or4Dynamics/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType3or4IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType4IEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType4aIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindTurbineType4bIEC/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindType1or2UserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindType3or4UserDefined/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Dynamics/WindUVRTQcontrolModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/BaseVoltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Bay/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/BoundaryPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/ConnectivityNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/ConnectivityNodeContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Connector/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/EnergySchedulingType/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/EquipmentBoundaryProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/EquipmentContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/GeographicalRegion/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Junction/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Line/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/SubGeographicalRegion/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Substation/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/Voltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Equipment%20Boundary/VoltageLevel/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/CoordinateSystem/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/GeographicalLocationProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/Location/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/PositionPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/ServiceLocation/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/Status/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/StreetAddress/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/StreetDetail/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/TownDetail/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Geographical%20Location/WorkLocation/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Accumulator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AccumulatorLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AccumulatorLimitSet/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AccumulatorReset/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AccumulatorValue/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Analog/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AnalogControl/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AnalogLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AnalogLimitSet/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/AnalogValue/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Command/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Control/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Discrete/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/DiscreteValue/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/IOPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Limit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/LimitSet/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Measurement/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/MeasurementValue/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/MeasurementValueQuality/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/MeasurementValueSource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/OperationProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/PerCent/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/PhaseCode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Quality61850/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/RaiseLowerCommand/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/SetPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Source/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/StringMeasurement/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/StringMeasurementValue/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/Validity/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/ValueAliasSet/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Operation/ValueToAlias/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ACLineSegment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ActivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/AsynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/BusbarSection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Conductance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Conductor/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Connector/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/CurrentFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EarthFaultCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EnergyConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EnergySource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EquivalentBranch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EquivalentEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/EquivalentInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ExternalNetworkInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/GroundingImpedance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Length/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/LinearShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/MutualCoupling/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/NonlinearShuntCompensatorPoint/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PU/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PerCent/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PetersenCoil/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PetersenCoilModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PowerTransformer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/PowerTransformerEnd/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Reactance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/RegulatingCondEq/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Resistance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/RotatingMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/SeriesCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ShortCircuitProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ShortCircuitRotorKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/ShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Susceptance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/SynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Temperature/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/TransformerEnd/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Short%20Circuit/Voltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ACDCConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ActivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/CsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/CurrentFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/DCTopologicalIsland/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/DCTopologicalNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ReactivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/ShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/StateVariablesProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvPowerFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvShuntCompensatorSections/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvStatus/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvTapStep/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/SvVoltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/Switch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/TapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/TopologicalIsland/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/TopologicalNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/Voltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/State%20Variables/VsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ACDCConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ACDCConverterDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ActivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ActivePowerLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/AngleDegrees/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/AngleRadians/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ApparentPower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ApparentPowerLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/AsynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/AsynchronousMachineKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/BatteryStateKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/BatteryUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Breaker/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ConductingEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ConformLoad/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ControlArea/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/CsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/CsOperatingModeKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/CsPpccControlKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/CurrentFlow/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/CurrentLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/DCBaseTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/DCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/DisconnectingCircuitBreaker/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Disconnector/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/EnergyConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/EnergyConsumer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/EnergySource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Equipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/EquivalentEquipment/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/EquivalentInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ExternalNetworkInjection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Fuse/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/GeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/GroundDisconnector/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/HydroGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Jumper/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/LinearShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/LoadBreakSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/NonConformLoad/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/NonlinearShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/NuclearGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/OperationalLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PU/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PerCent/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChangerAsymmetrical/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChangerLinear/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChangerNonLinear/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChangerSymmetrical/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PhaseTapChangerTabular/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PowerElectronicsConnection/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PowerElectronicsUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/PowerSystemResource/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ProtectedSwitch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/RatioTapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ReactivePower/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/RealEnergy/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/RegulatingCondEq/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/RegulatingControl/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Resistance/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/RotatingMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ShuntCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/SolarGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/StaticVarCompensator/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/StationSupply/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/SteadyStateHypothesisProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Switch/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/SynchronousMachine/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/SynchronousMachineOperatingMode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/TapChanger/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/TapChangerControl/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/ThermalGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/UnitMultiplier/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/UnitSymbol/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/Voltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/VoltageLimit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/VsConverter/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/VsPpccControlKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/VsQpccControlKind/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Steady%20State%20Hypothesis/WindGeneratingUnit/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/ACDCConverterDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/ACDCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/BaseVoltage/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/ConnectivityNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/ConnectivityNodeContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/DCBaseTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/DCEquipmentContainer/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/DCNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/DCTerminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/DCTopologicalNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/IdentifiedObject/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/ReportingGroup/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/Terminal/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/TopologicalNode/</loc>
+         <lastmod>2024-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://alliander-opensource.github.io/cgmes-profiles/Topology/TopologyProfile/</loc>
+         <lastmod>2024-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

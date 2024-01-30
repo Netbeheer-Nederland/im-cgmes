@@ -1,0 +1,1700 @@
+id: http://iec.ch/TC57/ns/CIM/ShortCircuit-EU#Package_ShortCircuitProfile
+name: ShortCircuitProfile
+description: This vocabulary is describing the short circuit profile from IEC 61970-600-2.
+title: Short Circuit Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  sc: http://iec.ch/TC57/ns/CIM/ShortCircuit-EU#
+  this: http://iec.ch/TC57/ns/CIM/ShortCircuit-EU#Package_ShortCircuitProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  ACDCTerminal:
+    class_uri: cim:ACDCTerminal
+    is_a: IdentifiedObject
+    description: An electrical connection point (AC or DC) to a piece of conducting
+      equipment. Terminals are connected at physical connection points called connectivity
+      nodes.
+  ACLineSegment:
+    class_uri: cim:ACLineSegment
+    attributes:
+      b0ch:
+        slot_uri: cim:ACLineSegment.b0ch
+        range: Susceptance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) susceptance, uniformly distributed,
+          of the entire line section.
+      g0ch:
+        slot_uri: cim:ACLineSegment.g0ch
+        range: Conductance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) conductance, uniformly distributed,
+          of the entire line section.
+      r0:
+        slot_uri: cim:ACLineSegment.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Zero sequence series resistance of the entire line section.
+      shortCircuitEndTemperature:
+        slot_uri: cim:ACLineSegment.shortCircuitEndTemperature
+        range: Temperature
+        multivalued: false
+        required: true
+        description: Maximum permitted temperature at the end of SC for the calculation
+          of minimum short-circuit currents. Used for short circuit data exchange
+          according to IEC 60909.
+      x0:
+        slot_uri: cim:ACLineSegment.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Zero sequence series reactance of the entire line section.
+    is_a: Conductor
+    description: 'A wire or combination of wires, with consistent electrical characteristics,
+      building a single electrical system, used to carry alternating current between
+      points in the power system.
+
+      For symmetrical, transposed three phase lines, it is sufficient to use attributes
+      of the line segment, which describe impedances and admittances for the entire
+      length of the segment.  Additionally impedances can be computed by using length
+      and associated per length impedances.
+
+      The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same
+      BaseVoltage.nominalVoltage. However, boundary lines may have slightly different
+      BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference
+      in general requires use of an equivalent branch.'
+  Susceptance:
+    class_uri: cim:Susceptance
+    attributes:
+      value:
+        slot_uri: cim:Susceptance.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Susceptance.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Susceptance.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Imaginary part of admittance.
+  Conductance:
+    class_uri: cim:Conductance
+    attributes:
+      value:
+        slot_uri: cim:Conductance.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Conductance.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Conductance.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Factor by which voltage must be multiplied to give corresponding
+      power lost from a circuit. Real part of admittance.
+  Resistance:
+    class_uri: cim:Resistance
+    attributes:
+      value:
+        slot_uri: cim:Resistance.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Resistance.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Resistance.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Resistance (real part of impedance).
+  Temperature:
+    class_uri: cim:Temperature
+    attributes:
+      multiplier:
+        slot_uri: cim:Temperature.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Temperature.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      value:
+        slot_uri: cim:Temperature.value
+        range: float
+        multivalued: false
+        required: false
+    description: Value of temperature in degrees Celsius.
+  Reactance:
+    class_uri: cim:Reactance
+    attributes:
+      value:
+        slot_uri: cim:Reactance.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Reactance.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Reactance.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Reactance (imaginary part of impedance), at rated frequency.
+  AsynchronousMachine:
+    class_uri: cim:AsynchronousMachine
+    attributes:
+      converterFedDrive:
+        slot_uri: cim:AsynchronousMachine.converterFedDrive
+        range: boolean
+        multivalued: false
+        required: true
+        description: Indicates whether the machine is a converter fed drive. Used
+          for short circuit data exchange according to IEC 60909.
+      efficiency:
+        slot_uri: cim:AsynchronousMachine.efficiency
+        range: PerCent
+        multivalued: false
+        required: true
+        description: Efficiency of the asynchronous machine at nominal operation as
+          a percentage. Indicator for converter drive motors. Used for short circuit
+          data exchange according to IEC 60909.
+      iaIrRatio:
+        slot_uri: cim:AsynchronousMachine.iaIrRatio
+        range: float
+        multivalued: false
+        required: true
+        description: Ratio of locked-rotor current to the rated current of the motor
+          (Ia/Ir). Used for short circuit data exchange according to IEC 60909.
+      polePairNumber:
+        slot_uri: cim:AsynchronousMachine.polePairNumber
+        range: integer
+        multivalued: false
+        required: true
+        description: Number of pole pairs of stator. Used for short circuit data exchange
+          according to IEC 60909.
+      ratedMechanicalPower:
+        slot_uri: cim:AsynchronousMachine.ratedMechanicalPower
+        range: ActivePower
+        multivalued: false
+        required: true
+        description: Rated mechanical power (Pr in IEC 60909-0). Used for short circuit
+          data exchange according to IEC 60909.
+      reversible:
+        slot_uri: cim:AsynchronousMachine.reversible
+        range: boolean
+        multivalued: false
+        required: true
+        description: Indicates for converter drive motors if the power can be reversible.
+          Used for short circuit data exchange according to IEC 60909.
+      rxLockedRotorRatio:
+        slot_uri: cim:AsynchronousMachine.rxLockedRotorRatio
+        range: float
+        multivalued: false
+        required: false
+        description: Locked rotor ratio (R/X). Used for short circuit data exchange
+          according to IEC 60909.
+    is_a: RotatingMachine
+    description: A rotating machine whose shaft rotates asynchronously with the electrical
+      field.  Also known as an induction machine with no external connection to the
+      rotor windings, e.g. squirrel-cage induction machine.
+  PerCent:
+    class_uri: cim:PerCent
+    attributes:
+      value:
+        slot_uri: cim:PerCent.value
+        range: float
+        multivalued: false
+        required: false
+        description: Normally 0 to 100 on a defined base.
+      unit:
+        slot_uri: cim:PerCent.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:PerCent.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Percentage on a defined base.   For example, specify as 100 to indicate
+      at the defined base.
+  ActivePower:
+    class_uri: cim:ActivePower
+    attributes:
+      value:
+        slot_uri: cim:ActivePower.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:ActivePower.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:ActivePower.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: Product of RMS value of the voltage and the RMS value of the in-phase
+      component of the current.
+  BusbarSection:
+    class_uri: cim:BusbarSection
+    attributes:
+      ipMax:
+        slot_uri: cim:BusbarSection.ipMax
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: "Maximum allowable peak short-circuit current of busbar (Ipmax\
+          \ in IEC 60909-0). \nMechanical limit of the busbar in the substation itself.\
+          \ Used for short circuit data exchange according to IEC 60909."
+    is_a: Connector
+    description: "A conductor, or group of conductors, with negligible impedance,\
+      \ that serve to connect other conducting equipment within a single substation.\
+      \ \nVoltage measurements are typically obtained from voltage transformers that\
+      \ are connected to busbar sections. A bus bar section may have many physical\
+      \ terminals but for analysis is modelled with exactly one logical terminal."
+  CurrentFlow:
+    class_uri: cim:CurrentFlow
+    attributes:
+      value:
+        slot_uri: cim:CurrentFlow.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:CurrentFlow.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:CurrentFlow.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: 'Electrical current with sign convention: positive flow is out of
+      the conducting equipment into the connectivity node. Can be both AC and DC.'
+  ConductingEquipment:
+    class_uri: cim:ConductingEquipment
+    is_a: Equipment
+    description: The parts of the AC power system that are designed to carry current
+      or that are conductively connected through terminals.
+  Conductor:
+    class_uri: cim:Conductor
+    is_a: ConductingEquipment
+    description: Combination of conducting material with consistent electrical characteristics,
+      building a single electrical system, used to carry current between points in
+      the power system.
+  Connector:
+    class_uri: cim:Connector
+    is_a: ConductingEquipment
+    description: A conductor, or group of conductors, with negligible impedance, that
+      serve to connect other conducting equipment within a single substation and are
+      modelled with a single logical terminal.
+  EarthFaultCompensator:
+    class_uri: cim:EarthFaultCompensator
+    attributes:
+      r:
+        slot_uri: cim:EarthFaultCompensator.r
+        range: Resistance
+        multivalued: false
+        required: false
+        description: Nominal resistance of device.
+    is_a: ConductingEquipment
+    description: A conducting equipment used to represent a connection to ground which
+      is typically used to compensate earth faults.   An earth fault compensator device
+      modelled with a single terminal implies a second terminal solidly connected
+      to ground.  If two terminals are modelled, the ground is not assumed and normal
+      connection rules apply.
+  EnergyConnection:
+    class_uri: cim:EnergyConnection
+    is_a: ConductingEquipment
+    description: A connection of energy generation or consumption on the power system
+      model.
+  EnergySource:
+    class_uri: cim:EnergySource
+    attributes:
+      r:
+        slot_uri: cim:EnergySource.r
+        range: Resistance
+        multivalued: false
+        required: false
+        description: Positive sequence Thevenin resistance.
+      r0:
+        slot_uri: cim:EnergySource.r0
+        range: Resistance
+        multivalued: false
+        required: false
+        description: Zero sequence Thevenin resistance.
+      rn:
+        slot_uri: cim:EnergySource.rn
+        range: Resistance
+        multivalued: false
+        required: false
+        description: Negative sequence Thevenin resistance.
+      x:
+        slot_uri: cim:EnergySource.x
+        range: Reactance
+        multivalued: false
+        required: false
+        description: Positive sequence Thevenin reactance.
+      x0:
+        slot_uri: cim:EnergySource.x0
+        range: Reactance
+        multivalued: false
+        required: false
+        description: Zero sequence Thevenin reactance.
+      xn:
+        slot_uri: cim:EnergySource.xn
+        range: Reactance
+        multivalued: false
+        required: false
+        description: Negative sequence Thevenin reactance.
+    is_a: EnergyConnection
+    description: A generic equivalent for an energy supplier on a transmission or
+      distribution voltage level.
+  Equipment:
+    class_uri: cim:Equipment
+    is_a: PowerSystemResource
+    description: The parts of a power system that are physical devices, electronic
+      or mechanical.
+  EquivalentBranch:
+    class_uri: cim:EquivalentBranch
+    attributes:
+      negativeR12:
+        slot_uri: cim:EquivalentBranch.negativeR12
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Negative sequence series resistance from terminal sequence  1
+          to terminal sequence 2. Used for short circuit data exchange according to
+          IEC 60909.
+
+          EquivalentBranch is a result of network reduction prior to the data exchange.'
+      negativeR21:
+        slot_uri: cim:EquivalentBranch.negativeR21
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Negative sequence series resistance from terminal sequence 2
+          to terminal sequence 1. Used for short circuit data exchange according to
+          IEC 60909.
+
+          EquivalentBranch is a result of network reduction prior to the data exchange.'
+      negativeX12:
+        slot_uri: cim:EquivalentBranch.negativeX12
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Negative sequence series reactance from terminal sequence  1
+          to terminal sequence 2. Used for short circuit data exchange according to
+          IEC 60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      negativeX21:
+        slot_uri: cim:EquivalentBranch.negativeX21
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Negative sequence series reactance from terminal sequence 2
+          to terminal sequence 1. Used for short circuit data exchange according to
+          IEC 60909.
+
+          Usage: EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      positiveR12:
+        slot_uri: cim:EquivalentBranch.positiveR12
+        range: Resistance
+        multivalued: false
+        required: true
+        description: "Positive sequence series resistance from terminal sequence \
+          \ 1 to terminal sequence 2 . Used for short circuit data exchange according\
+          \ to IEC 60909. \nEquivalentBranch is a result of network reduction prior\
+          \ to the data exchange."
+      positiveR21:
+        slot_uri: cim:EquivalentBranch.positiveR21
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Positive sequence series resistance from terminal sequence 2
+          to terminal sequence 1. Used for short circuit data exchange according to
+          IEC 60909.
+
+          EquivalentBranch is a result of network reduction prior to the data exchange.'
+      positiveX12:
+        slot_uri: cim:EquivalentBranch.positiveX12
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Positive sequence series reactance from terminal sequence  1
+          to terminal sequence 2. Used for short circuit data exchange according to
+          IEC 60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      positiveX21:
+        slot_uri: cim:EquivalentBranch.positiveX21
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Positive sequence series reactance from terminal sequence 2
+          to terminal sequence 1. Used for short circuit data exchange according to
+          IEC 60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      zeroR12:
+        slot_uri: cim:EquivalentBranch.zeroR12
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Zero sequence series resistance from terminal sequence  1 to
+          terminal sequence 2. Used for short circuit data exchange according to IEC
+          60909.
+
+          EquivalentBranch is a result of network reduction prior to the data exchange.'
+      zeroR21:
+        slot_uri: cim:EquivalentBranch.zeroR21
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Zero sequence series resistance from terminal sequence  2 to
+          terminal sequence 1. Used for short circuit data exchange according to IEC
+          60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      zeroX12:
+        slot_uri: cim:EquivalentBranch.zeroX12
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Zero sequence series reactance from terminal sequence  1 to
+          terminal sequence 2. Used for short circuit data exchange according to IEC
+          60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+      zeroX21:
+        slot_uri: cim:EquivalentBranch.zeroX21
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Zero sequence series reactance from terminal sequence 2 to terminal
+          sequence 1. Used for short circuit data exchange according to IEC 60909.
+
+          Usage : EquivalentBranch is a result of network reduction prior to the data
+          exchange.'
+    is_a: EquivalentEquipment
+    description: The class represents equivalent branches. In cases where a transformer
+      phase shift is modelled and the EquivalentBranch is spanning the same nodes,
+      the impedance quantities for the EquivalentBranch shall consider the needed
+      phase shift.
+  EquivalentEquipment:
+    class_uri: cim:EquivalentEquipment
+    is_a: ConductingEquipment
+    description: The class represents equivalent objects that are the result of a
+      network reduction. The class is the base for equivalent objects of different
+      types.
+  EquivalentInjection:
+    class_uri: cim:EquivalentInjection
+    attributes:
+      r:
+        slot_uri: cim:EquivalentInjection.r
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Positive sequence resistance. Used to represent Extended-Ward
+          (IEC 60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+      r0:
+        slot_uri: cim:EquivalentInjection.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Zero sequence resistance. Used to represent Extended-Ward (IEC
+          60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+      r2:
+        slot_uri: cim:EquivalentInjection.r2
+        range: Resistance
+        multivalued: false
+        required: true
+        description: 'Negative sequence resistance. Used to represent Extended-Ward
+          (IEC 60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+      x:
+        slot_uri: cim:EquivalentInjection.x
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Positive sequence reactance. Used to represent Extended-Ward
+          (IEC 60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+      x0:
+        slot_uri: cim:EquivalentInjection.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Zero sequence reactance. Used to represent Extended-Ward (IEC
+          60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+      x2:
+        slot_uri: cim:EquivalentInjection.x2
+        range: Reactance
+        multivalued: false
+        required: true
+        description: 'Negative sequence reactance. Used to represent Extended-Ward
+          (IEC 60909).
+
+          Usage : Extended-Ward is a result of network reduction prior to the data
+          exchange.'
+    is_a: EquivalentEquipment
+    description: This class represents equivalent injections (generation or load).  Voltage
+      regulation is allowed only at the point of connection.
+  ExternalNetworkInjection:
+    class_uri: cim:ExternalNetworkInjection
+    attributes:
+      ikSecond:
+        slot_uri: cim:ExternalNetworkInjection.ikSecond
+        range: boolean
+        multivalued: false
+        required: false
+        description: Indicates whether initial symmetrical short-circuit current and
+          power have been calculated according to IEC (Ik").  Used only if short circuit
+          calculations are done according to superposition method.
+      maxInitialSymShCCurrent:
+        slot_uri: cim:ExternalNetworkInjection.maxInitialSymShCCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: true
+        description: Maximum initial symmetrical short-circuit currents (Ik" max)
+          in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according
+          to IEC 60909.
+      maxR0ToX0Ratio:
+        slot_uri: cim:ExternalNetworkInjection.maxR0ToX0Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Maximum ratio of zero sequence resistance of Network Feeder to
+          its zero sequence reactance (R(0)/X(0) max). Used for short circuit data
+          exchange according to IEC 60909.
+      maxR1ToX1Ratio:
+        slot_uri: cim:ExternalNetworkInjection.maxR1ToX1Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Maximum ratio of positive sequence resistance of Network Feeder
+          to its positive sequence reactance (R(1)/X(1) max). Used for short circuit
+          data exchange according to IEC 60909.
+      maxZ0ToZ1Ratio:
+        slot_uri: cim:ExternalNetworkInjection.maxZ0ToZ1Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Maximum ratio of zero sequence impedance to its positive sequence
+          impedance (Z(0)/Z(1) max). Used for short circuit data exchange according
+          to IEC 60909.
+      minInitialSymShCCurrent:
+        slot_uri: cim:ExternalNetworkInjection.minInitialSymShCCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: true
+        description: Minimum initial symmetrical short-circuit currents (Ik" min)
+          in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according
+          to IEC 60909.
+      minR0ToX0Ratio:
+        slot_uri: cim:ExternalNetworkInjection.minR0ToX0Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Indicates whether initial symmetrical short-circuit current and
+          power have been calculated according to IEC (Ik"). Used for short circuit
+          data exchange according to IEC 6090.
+      minR1ToX1Ratio:
+        slot_uri: cim:ExternalNetworkInjection.minR1ToX1Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Minimum ratio of positive sequence resistance of Network Feeder
+          to its positive sequence reactance (R(1)/X(1) min). Used for short circuit
+          data exchange according to IEC 60909.
+      minZ0ToZ1Ratio:
+        slot_uri: cim:ExternalNetworkInjection.minZ0ToZ1Ratio
+        range: float
+        multivalued: false
+        required: true
+        description: Minimum ratio of zero sequence impedance to its positive sequence
+          impedance (Z(0)/Z(1) min). Used for short circuit data exchange according
+          to IEC 60909.
+      voltageFactor:
+        slot_uri: cim:ExternalNetworkInjection.voltageFactor
+        range: PU
+        multivalued: false
+        required: false
+        description: Voltage factor in pu, which was used to calculate short-circuit
+          current Ik" and power Sk".  Used only if short circuit calculations are
+          done according to superposition method.
+    is_a: RegulatingCondEq
+    description: This class represents the external network and it is used for IEC
+      60909 calculations.
+  PU:
+    class_uri: cim:PU
+    attributes:
+      value:
+        slot_uri: cim:PU.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:PU.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:PU.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Per Unit - a positive or negative value referred to a defined base.
+      Values typically range from -10 to +10.
+  GroundingImpedance:
+    class_uri: cim:GroundingImpedance
+    attributes:
+      x:
+        slot_uri: cim:GroundingImpedance.x
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Reactance of device.
+    is_a: EarthFaultCompensator
+    description: A fixed impedance device used for grounding.
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  LinearShuntCompensator:
+    class_uri: cim:LinearShuntCompensator
+    attributes:
+      b0PerSection:
+        slot_uri: cim:LinearShuntCompensator.b0PerSection
+        range: Susceptance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) susceptance per section.
+      g0PerSection:
+        slot_uri: cim:LinearShuntCompensator.g0PerSection
+        range: Conductance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) conductance per section.
+    is_a: ShuntCompensator
+    description: A linear shunt compensator has banks or sections with equal admittance
+      values.
+  MutualCoupling:
+    class_uri: cim:MutualCoupling
+    attributes:
+      b0ch:
+        slot_uri: cim:MutualCoupling.b0ch
+        range: Susceptance
+        multivalued: false
+        required: true
+        description: Zero sequence mutual coupling shunt (charging) susceptance, uniformly
+          distributed, of the entire line section.
+      distance11:
+        slot_uri: cim:MutualCoupling.distance11
+        range: Length
+        multivalued: false
+        required: true
+        description: Distance to the start of the coupled region from the first line's
+          terminal having sequence number equal to 1.
+      distance12:
+        slot_uri: cim:MutualCoupling.distance12
+        range: Length
+        multivalued: false
+        required: true
+        description: Distance to the end of the coupled region from the first line's
+          terminal with sequence number equal to 1.
+      distance21:
+        slot_uri: cim:MutualCoupling.distance21
+        range: Length
+        multivalued: false
+        required: true
+        description: Distance to the start of coupled region from the second line's
+          terminal with sequence number equal to 1.
+      distance22:
+        slot_uri: cim:MutualCoupling.distance22
+        range: Length
+        multivalued: false
+        required: true
+        description: Distance to the end of coupled region from the second line's
+          terminal with sequence number equal to 1.
+      g0ch:
+        slot_uri: cim:MutualCoupling.g0ch
+        range: Conductance
+        multivalued: false
+        required: true
+        description: Zero sequence mutual coupling shunt (charging) conductance, uniformly
+          distributed, of the entire line section.
+      r0:
+        slot_uri: cim:MutualCoupling.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Zero sequence branch-to-branch mutual impedance coupling, resistance.
+      x0:
+        slot_uri: cim:MutualCoupling.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Zero sequence branch-to-branch mutual impedance coupling, reactance.
+      Second_Terminal:
+        slot_uri: cim:MutualCoupling.Second_Terminal
+        range: Terminal
+        multivalued: false
+        required: true
+        description: The starting terminal for the calculation of distances along
+          the second branch of the mutual coupling.
+      First_Terminal:
+        slot_uri: cim:MutualCoupling.First_Terminal
+        range: Terminal
+        multivalued: false
+        required: true
+        description: The starting terminal for the calculation of distances along
+          the first branch of the mutual coupling.  Normally MutualCoupling would
+          only be used for terminals of AC line segments.  The first and second terminals
+          of a mutual coupling should point to different AC line segments.
+    is_a: IdentifiedObject
+    description: This class represents the zero sequence line mutual coupling.
+  Length:
+    class_uri: cim:Length
+    attributes:
+      value:
+        slot_uri: cim:Length.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Length.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Length.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Unit of length. It shall be a positive value or zero.
+  NonlinearShuntCompensatorPoint:
+    class_uri: cim:NonlinearShuntCompensatorPoint
+    attributes:
+      b0:
+        slot_uri: cim:NonlinearShuntCompensatorPoint.b0
+        range: Susceptance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) susceptance per section.
+      g0:
+        slot_uri: cim:NonlinearShuntCompensatorPoint.g0
+        range: Conductance
+        multivalued: false
+        required: true
+        description: Zero sequence shunt (charging) conductance per section.
+    description: A non linear shunt compensator bank or section admittance value.
+      The number of NonlinearShuntCompenstorPoint instances associated with a NonlinearShuntCompensator
+      shall be equal to ShuntCompensator.maximumSections. ShuntCompensator.sections
+      shall only be set to one of the NonlinearShuntCompenstorPoint.sectionNumber.
+      There is no interpolation between NonlinearShuntCompenstorPoint-s.
+  PetersenCoil:
+    class_uri: cim:PetersenCoil
+    attributes:
+      mode:
+        slot_uri: cim:PetersenCoil.mode
+        range: PetersenCoilModeKind
+        multivalued: false
+        required: true
+        description: The mode of operation of the Petersen coil.
+      nominalU:
+        slot_uri: cim:PetersenCoil.nominalU
+        range: Voltage
+        multivalued: false
+        required: true
+        description: The nominal voltage for which the coil is designed.
+      offsetCurrent:
+        slot_uri: cim:PetersenCoil.offsetCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: The offset current that the Petersen coil controller is operating
+          from the resonant point.  This is normally a fixed amount for which the
+          controller is configured and could be positive or negative.  Typically 0
+          to 60 A depending on voltage and resonance conditions.
+      positionCurrent:
+        slot_uri: cim:PetersenCoil.positionCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: The control current used to control the Petersen coil also known
+          as the position current.  Typically in the range of 20 mA to 200 mA.
+      xGroundMax:
+        slot_uri: cim:PetersenCoil.xGroundMax
+        range: Reactance
+        multivalued: false
+        required: true
+        description: The maximum reactance.
+      xGroundMin:
+        slot_uri: cim:PetersenCoil.xGroundMin
+        range: Reactance
+        multivalued: false
+        required: true
+        description: The minimum reactance.
+      xGroundNominal:
+        slot_uri: cim:PetersenCoil.xGroundNominal
+        range: Reactance
+        multivalued: false
+        required: true
+        description: The nominal reactance.  This is the operating point (normally
+          over compensation) that is defined based on the resonance point in the healthy
+          network condition.  The impedance is calculated based on nominal voltage
+          divided by position current.
+    is_a: EarthFaultCompensator
+    description: A variable impedance device normally used to offset line charging
+      during single line faults in an ungrounded section of network.
+  Voltage:
+    class_uri: cim:Voltage
+    attributes:
+      value:
+        slot_uri: cim:Voltage.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Voltage.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Voltage.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: Electrical voltage, can be both AC and DC.
+  PowerSystemResource:
+    class_uri: cim:PowerSystemResource
+    is_a: IdentifiedObject
+    description: A power system resource (PSR) can be an item of equipment such as
+      a switch, an equipment container containing many individual items of equipment
+      such as a substation, or an organisational entity such as sub-control area.
+      Power system resources can have measurements associated.
+  PowerTransformer:
+    class_uri: cim:PowerTransformer
+    attributes:
+      beforeShCircuitHighestOperatingCurrent:
+        slot_uri: cim:PowerTransformer.beforeShCircuitHighestOperatingCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: The highest operating current (Ib in IEC 60909-0) before short
+          circuit (depends on network configuration and relevant reliability philosophy).
+          It is used for calculation of the impedance correction factor KT defined
+          in IEC 60909-0.
+      beforeShCircuitHighestOperatingVoltage:
+        slot_uri: cim:PowerTransformer.beforeShCircuitHighestOperatingVoltage
+        range: Voltage
+        multivalued: false
+        required: false
+        description: The highest operating voltage (Ub in IEC 60909-0) before short
+          circuit. It is used for calculation of the impedance correction factor KT
+          defined in IEC 60909-0. This is worst case voltage on the low side winding
+          (3.7.1 of IEC 60909:2001). Used to define operating conditions.
+      beforeShortCircuitAnglePf:
+        slot_uri: cim:PowerTransformer.beforeShortCircuitAnglePf
+        range: AngleDegrees
+        multivalued: false
+        required: false
+        description: The angle of power factor before short circuit (phib in IEC 60909-0).
+          It is used for calculation of the impedance correction factor KT defined
+          in IEC 60909-0. This is the worst case power factor. Used to define operating
+          conditions.
+      highSideMinOperatingU:
+        slot_uri: cim:PowerTransformer.highSideMinOperatingU
+        range: Voltage
+        multivalued: false
+        required: false
+        description: The minimum operating voltage (uQmin in IEC 60909-0) at the high
+          voltage side (Q side) of the unit transformer of the power station unit.
+          A value well established from long-term operating experience of the system.
+          It is used for calculation of the impedance correction factor KG defined
+          in IEC 60909-0.
+      isPartOfGeneratorUnit:
+        slot_uri: cim:PowerTransformer.isPartOfGeneratorUnit
+        range: boolean
+        multivalued: false
+        required: true
+        description: Indicates whether the machine is part of a power station unit.
+          Used for short circuit data exchange according to IEC 60909.  It has an
+          impact on how the correction factors are calculated for transformers, since
+          the transformer is not necessarily part of a synchronous machine and generating
+          unit. It is not always possible to derive this information from the model.
+          This is why the attribute is necessary.
+      operationalValuesConsidered:
+        slot_uri: cim:PowerTransformer.operationalValuesConsidered
+        range: boolean
+        multivalued: false
+        required: false
+        description: It is used to define if the data (other attributes related to
+          short circuit data exchange) defines long term operational conditions or
+          not. Used for short circuit data exchange according to IEC 60909.
+    is_a: ConductingEquipment
+    description: 'An electrical device consisting of  two or more coupled windings,
+      with or without a magnetic core, for introducing mutual coupling between electric
+      circuits. Transformers can be used to control voltage and phase shift (active
+      power flow).
+
+      A power transformer may be composed of separate transformer tanks that need
+      not be identical.
+
+      A power transformer can be modelled with or without tanks and is intended for
+      use in both balanced and unbalanced representations.   A power transformer typically
+      has two terminals, but may have one (grounding), three or more terminals.
+
+      The inherited association ConductingEquipment.BaseVoltage should not be used.  The
+      association from TransformerEnd to BaseVoltage should be used instead.'
+  AngleDegrees:
+    class_uri: cim:AngleDegrees
+    attributes:
+      value:
+        slot_uri: cim:AngleDegrees.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:AngleDegrees.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:AngleDegrees.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Measurement of angle in degrees.
+  PowerTransformerEnd:
+    class_uri: cim:PowerTransformerEnd
+    attributes:
+      b0:
+        slot_uri: cim:PowerTransformerEnd.b0
+        range: Susceptance
+        multivalued: false
+        required: true
+        description: Zero sequence magnetizing branch susceptance.
+      phaseAngleClock:
+        slot_uri: cim:PowerTransformerEnd.phaseAngleClock
+        range: integer
+        multivalued: false
+        required: true
+        description: Terminal voltage phase angle displacement where 360 degrees are
+          represented with clock hours. The valid values are 0 to 11. For example,
+          for the secondary side end of a transformer with vector group code of 'Dyn11',
+          specify the connection kind as wye with neutral and specify the phase angle
+          of the clock as 11.  The clock value of the transformer end number specified
+          as 1, is assumed to be zero.  Note the transformer end number is not assumed
+          to be the same as the terminal sequence number.
+      g0:
+        slot_uri: cim:PowerTransformerEnd.g0
+        range: Conductance
+        multivalued: false
+        required: true
+        description: Zero sequence magnetizing branch conductance (star-model).
+      r0:
+        slot_uri: cim:PowerTransformerEnd.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Zero sequence series resistance (star-model) of the transformer
+          end.
+      x0:
+        slot_uri: cim:PowerTransformerEnd.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Zero sequence series reactance of the transformer end.
+    is_a: TransformerEnd
+    description: 'A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.
+
+      The impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a
+      star equivalent as follows.
+
+      1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1)
+      PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage
+      (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0,
+      x, and x0.  Parameters are always provided, even if the PowerTransformerEnds
+      have the same rated voltage.  In this case, the parameters are provided at the
+      PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.
+
+      2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent
+      a star equivalent with each leg in the star represented by r, r0, x, and x0
+      values.
+
+      3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0,
+      b and b0 values corresponding to the no load losses distributed on the three
+      PowerTransformerEnds. The total no load loss shunt impedances may also be placed
+      at one of the PowerTransformerEnds, preferably the end numbered 1, having the
+      shunt values on end 1.  This is the preferred way.
+
+      4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd
+      impedance values cannot be used. Instead use the TransformerMeshImpedance or
+      split the transformer into multiple PowerTransformers.
+
+      Each PowerTransformerEnd must be contained by a PowerTransformer. Because a
+      PowerTransformerEnd (or any other object) can not be contained by more than
+      one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer
+      (Substation, VoltageLevel, etc).'
+  RegulatingCondEq:
+    class_uri: cim:RegulatingCondEq
+    is_a: EnergyConnection
+    description: A type of conducting equipment that can regulate a quantity (i.e.
+      voltage or flow) at a specific point in the network.
+  RotatingMachine:
+    class_uri: cim:RotatingMachine
+    is_a: RegulatingCondEq
+    description: A rotating machine which may be used as a generator or motor.
+  SeriesCompensator:
+    class_uri: cim:SeriesCompensator
+    attributes:
+      r0:
+        slot_uri: cim:SeriesCompensator.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Zero sequence resistance.
+      x0:
+        slot_uri: cim:SeriesCompensator.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Zero sequence reactance.
+      varistorPresent:
+        slot_uri: cim:SeriesCompensator.varistorPresent
+        range: boolean
+        multivalued: false
+        required: true
+        description: Describe if a metal oxide varistor (mov) for over voltage protection
+          is configured in parallel with the series compensator. It is used for short
+          circuit calculations.
+      varistorRatedCurrent:
+        slot_uri: cim:SeriesCompensator.varistorRatedCurrent
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: 'The maximum current the varistor is designed to handle at specified
+          duration. It is used for short circuit calculations and exchanged only if
+          SeriesCompensator.varistorPresent is true.
+
+          The attribute shall be a positive value.'
+      varistorVoltageThreshold:
+        slot_uri: cim:SeriesCompensator.varistorVoltageThreshold
+        range: Voltage
+        multivalued: false
+        required: false
+        description: The dc voltage at which the varistor starts conducting. It is
+          used for short circuit calculations and exchanged only if SeriesCompensator.varistorPresent
+          is true.
+    is_a: ConductingEquipment
+    description: A Series Compensator is a series capacitor or reactor or an AC transmission
+      line without charging susceptance.  It is a two terminal device.
+  ShuntCompensator:
+    class_uri: cim:ShuntCompensator
+    is_a: RegulatingCondEq
+    description: A shunt capacitor or reactor or switchable bank of shunt capacitors
+      or reactors. A section of a shunt compensator is an individual capacitor or
+      reactor. A negative value for bPerSection indicates that the compensator is
+      a reactor. ShuntCompensator is a single terminal device.  Ground is implied.
+  SynchronousMachine:
+    class_uri: cim:SynchronousMachine
+    attributes:
+      earthing:
+        slot_uri: cim:SynchronousMachine.earthing
+        range: boolean
+        multivalued: false
+        required: true
+        description: Indicates whether or not the generator is earthed. Used for short
+          circuit data exchange according to IEC 60909.
+      earthingStarPointR:
+        slot_uri: cim:SynchronousMachine.earthingStarPointR
+        range: Resistance
+        multivalued: false
+        required: false
+        description: Generator star point earthing resistance (Re). Used for short
+          circuit data exchange according to IEC 60909.
+      earthingStarPointX:
+        slot_uri: cim:SynchronousMachine.earthingStarPointX
+        range: Reactance
+        multivalued: false
+        required: false
+        description: Generator star point earthing reactance (Xe). Used for short
+          circuit data exchange according to IEC 60909.
+      ikk:
+        slot_uri: cim:SynchronousMachine.ikk
+        range: CurrentFlow
+        multivalued: false
+        required: false
+        description: 'Steady-state short-circuit current (in A for the profile) of
+          generator with compound excitation during 3-phase short circuit.
+
+          - Ikk=0: Generator with no compound excitation.
+
+          - Ikk&lt;&gt;0: Generator with compound excitation.
+
+          Ikk is used to calculate the minimum steady-state short-circuit current
+          for generators with compound excitation.
+
+          (4.6.1.2 in IEC 60909-0:2001).
+
+          Used only for single fed short circuit on a generator. (4.3.4.2. in IEC
+          60909-0:2001).'
+      mu:
+        slot_uri: cim:SynchronousMachine.mu
+        range: float
+        multivalued: false
+        required: false
+        description: 'Factor to calculate the breaking current (Section 4.5.2.1 in
+          IEC 60909-0).
+
+          Used only for single fed short circuit on a generator (Section 4.3.4.2.
+          in IEC 60909-0).'
+      x0:
+        slot_uri: cim:SynchronousMachine.x0
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Zero sequence reactance of the synchronous machine.
+      r0:
+        slot_uri: cim:SynchronousMachine.r0
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Zero sequence resistance of the synchronous machine.
+      x2:
+        slot_uri: cim:SynchronousMachine.x2
+        range: Reactance
+        multivalued: false
+        required: true
+        description: Negative sequence reactance.
+      r2:
+        slot_uri: cim:SynchronousMachine.r2
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Negative sequence resistance.
+      r:
+        slot_uri: cim:SynchronousMachine.r
+        range: Resistance
+        multivalued: false
+        required: true
+        description: Equivalent resistance (RG) of generator. RG is considered for
+          the calculation of all currents, except for the calculation of the peak
+          current ip. Used for short circuit data exchange according to IEC 60909.
+      satDirectSubtransX:
+        slot_uri: cim:SynchronousMachine.satDirectSubtransX
+        range: PU
+        multivalued: false
+        required: true
+        description: Direct-axis subtransient reactance saturated, also known as Xd"sat.
+      satDirectSyncX:
+        slot_uri: cim:SynchronousMachine.satDirectSyncX
+        range: PU
+        multivalued: false
+        required: false
+        description: Direct-axes saturated synchronous reactance (xdsat); reciprocal
+          of short-circuit ration. Used for short circuit data exchange, only for
+          single fed short circuit on a generator. (4.3.4.2. in IEC 60909-0:2001).
+      satDirectTransX:
+        slot_uri: cim:SynchronousMachine.satDirectTransX
+        range: PU
+        multivalued: false
+        required: false
+        description: Saturated Direct-axis transient reactance. The attribute is primarily
+          used for short circuit calculations according to ANSI.
+      shortCircuitRotorType:
+        slot_uri: cim:SynchronousMachine.shortCircuitRotorType
+        range: ShortCircuitRotorKind
+        multivalued: false
+        required: false
+        description: Type of rotor, used by short circuit applications, only for single
+          fed short circuit according to IEC 60909.
+      voltageRegulationRange:
+        slot_uri: cim:SynchronousMachine.voltageRegulationRange
+        range: PerCent
+        multivalued: false
+        required: false
+        description: 'Range of generator voltage regulation (PG in IEC 60909-0) used
+          for calculation of the impedance correction factor KG defined in IEC 60909-0.
+
+          This attribute is used to describe the operating voltage of the generating
+          unit.'
+    is_a: RotatingMachine
+    description: An electromechanical device that operates with shaft rotating synchronously
+      with the network. It is a single machine operating either as a generator or
+      synchronous condenser or pump.
+  Terminal:
+    class_uri: cim:Terminal
+    attributes:
+      HasSecondMutualCoupling:
+        slot_uri: cim:Terminal.HasSecondMutualCoupling
+        range: MutualCoupling
+        multivalued: true
+        required: false
+        description: Mutual couplings with the branch associated as the first branch.
+      HasFirstMutualCoupling:
+        slot_uri: cim:Terminal.HasFirstMutualCoupling
+        range: MutualCoupling
+        multivalued: true
+        required: false
+        description: Mutual couplings associated with the branch as the first branch.
+    is_a: ACDCTerminal
+    description: An AC electrical connection point to a piece of conducting equipment.
+      Terminals are connected at physical connection points called connectivity nodes.
+  TransformerEnd:
+    class_uri: cim:TransformerEnd
+    attributes:
+      rground:
+        slot_uri: cim:TransformerEnd.rground
+        range: Resistance
+        multivalued: false
+        required: false
+        description: (for Yn and Zn connections) Resistance part of neutral impedance
+          where 'grounded' is true.
+      grounded:
+        slot_uri: cim:TransformerEnd.grounded
+        range: boolean
+        multivalued: false
+        required: true
+        description: (for Yn and Zn connections) True if the neutral is solidly grounded.
+      xground:
+        slot_uri: cim:TransformerEnd.xground
+        range: Reactance
+        multivalued: false
+        required: false
+        description: (for Yn and Zn connections) Reactive part of neutral impedance
+          where 'grounded' is true.
+    is_a: IdentifiedObject
+    description: A conducting connection point of a power transformer. It corresponds
+      to a physical transformer winding terminal.  In earlier CIM versions, the TransformerWinding
+      class served a similar purpose, but this class is more flexible because it associates
+      to terminal but is not a specialization of ConductingEquipment.
+enums:
+  UnitSymbol:
+    permissible_values:
+      none:
+        meaning: cim:UnitSymbol.none
+      m:
+        meaning: cim:UnitSymbol.m
+      kg:
+        meaning: cim:UnitSymbol.kg
+      s:
+        meaning: cim:UnitSymbol.s
+      A:
+        meaning: cim:UnitSymbol.A
+      K:
+        meaning: cim:UnitSymbol.K
+      mol:
+        meaning: cim:UnitSymbol.mol
+      cd:
+        meaning: cim:UnitSymbol.cd
+      deg:
+        meaning: cim:UnitSymbol.deg
+      rad:
+        meaning: cim:UnitSymbol.rad
+      sr:
+        meaning: cim:UnitSymbol.sr
+      Gy:
+        meaning: cim:UnitSymbol.Gy
+      Bq:
+        meaning: cim:UnitSymbol.Bq
+      degC:
+        meaning: cim:UnitSymbol.degC
+      Sv:
+        meaning: cim:UnitSymbol.Sv
+      F:
+        meaning: cim:UnitSymbol.F
+      C:
+        meaning: cim:UnitSymbol.C
+      S:
+        meaning: cim:UnitSymbol.S
+      H:
+        meaning: cim:UnitSymbol.H
+      V:
+        meaning: cim:UnitSymbol.V
+      ohm:
+        meaning: cim:UnitSymbol.ohm
+      J:
+        meaning: cim:UnitSymbol.J
+      N:
+        meaning: cim:UnitSymbol.N
+      Hz:
+        meaning: cim:UnitSymbol.Hz
+      lx:
+        meaning: cim:UnitSymbol.lx
+      lm:
+        meaning: cim:UnitSymbol.lm
+      Wb:
+        meaning: cim:UnitSymbol.Wb
+      T:
+        meaning: cim:UnitSymbol.T
+      W:
+        meaning: cim:UnitSymbol.W
+      Pa:
+        meaning: cim:UnitSymbol.Pa
+      m2:
+        meaning: cim:UnitSymbol.m2
+      m3:
+        meaning: cim:UnitSymbol.m3
+      mPers:
+        meaning: cim:UnitSymbol.mPers
+      mPers2:
+        meaning: cim:UnitSymbol.mPers2
+      m3Pers:
+        meaning: cim:UnitSymbol.m3Pers
+      mPerm3:
+        meaning: cim:UnitSymbol.mPerm3
+      kgm:
+        meaning: cim:UnitSymbol.kgm
+      kgPerm3:
+        meaning: cim:UnitSymbol.kgPerm3
+      m2Pers:
+        meaning: cim:UnitSymbol.m2Pers
+      WPermK:
+        meaning: cim:UnitSymbol.WPermK
+      JPerK:
+        meaning: cim:UnitSymbol.JPerK
+      ppm:
+        meaning: cim:UnitSymbol.ppm
+      rotPers:
+        meaning: cim:UnitSymbol.rotPers
+      radPers:
+        meaning: cim:UnitSymbol.radPers
+      WPerm2:
+        meaning: cim:UnitSymbol.WPerm2
+      JPerm2:
+        meaning: cim:UnitSymbol.JPerm2
+      SPerm:
+        meaning: cim:UnitSymbol.SPerm
+      KPers:
+        meaning: cim:UnitSymbol.KPers
+      PaPers:
+        meaning: cim:UnitSymbol.PaPers
+      JPerkgK:
+        meaning: cim:UnitSymbol.JPerkgK
+      VA:
+        meaning: cim:UnitSymbol.VA
+      VAr:
+        meaning: cim:UnitSymbol.VAr
+      cosPhi:
+        meaning: cim:UnitSymbol.cosPhi
+      Vs:
+        meaning: cim:UnitSymbol.Vs
+      V2:
+        meaning: cim:UnitSymbol.V2
+      As:
+        meaning: cim:UnitSymbol.As
+      A2:
+        meaning: cim:UnitSymbol.A2
+      A2s:
+        meaning: cim:UnitSymbol.A2s
+      VAh:
+        meaning: cim:UnitSymbol.VAh
+      Wh:
+        meaning: cim:UnitSymbol.Wh
+      VArh:
+        meaning: cim:UnitSymbol.VArh
+      VPerHz:
+        meaning: cim:UnitSymbol.VPerHz
+      HzPers:
+        meaning: cim:UnitSymbol.HzPers
+      character:
+        meaning: cim:UnitSymbol.character
+      charPers:
+        meaning: cim:UnitSymbol.charPers
+      kgm2:
+        meaning: cim:UnitSymbol.kgm2
+      dB:
+        meaning: cim:UnitSymbol.dB
+      WPers:
+        meaning: cim:UnitSymbol.WPers
+      lPers:
+        meaning: cim:UnitSymbol.lPers
+      dBm:
+        meaning: cim:UnitSymbol.dBm
+      h:
+        meaning: cim:UnitSymbol.h
+      min:
+        meaning: cim:UnitSymbol.min
+      Q:
+        meaning: cim:UnitSymbol.Q
+      Qh:
+        meaning: cim:UnitSymbol.Qh
+      ohmm:
+        meaning: cim:UnitSymbol.ohmm
+      APerm:
+        meaning: cim:UnitSymbol.APerm
+      V2h:
+        meaning: cim:UnitSymbol.V2h
+      A2h:
+        meaning: cim:UnitSymbol.A2h
+      Ah:
+        meaning: cim:UnitSymbol.Ah
+      count:
+        meaning: cim:UnitSymbol.count
+      ft3:
+        meaning: cim:UnitSymbol.ft3
+      m3Perh:
+        meaning: cim:UnitSymbol.m3Perh
+      gal:
+        meaning: cim:UnitSymbol.gal
+      Btu:
+        meaning: cim:UnitSymbol.Btu
+      l:
+        meaning: cim:UnitSymbol.l
+      lPerh:
+        meaning: cim:UnitSymbol.lPerh
+      lPerl:
+        meaning: cim:UnitSymbol.lPerl
+      gPerg:
+        meaning: cim:UnitSymbol.gPerg
+      molPerm3:
+        meaning: cim:UnitSymbol.molPerm3
+      molPermol:
+        meaning: cim:UnitSymbol.molPermol
+      molPerkg:
+        meaning: cim:UnitSymbol.molPerkg
+      sPers:
+        meaning: cim:UnitSymbol.sPers
+      HzPerHz:
+        meaning: cim:UnitSymbol.HzPerHz
+      VPerV:
+        meaning: cim:UnitSymbol.VPerV
+      APerA:
+        meaning: cim:UnitSymbol.APerA
+      VPerVA:
+        meaning: cim:UnitSymbol.VPerVA
+      rev:
+        meaning: cim:UnitSymbol.rev
+      kat:
+        meaning: cim:UnitSymbol.kat
+      JPerkg:
+        meaning: cim:UnitSymbol.JPerkg
+      m3Uncompensated:
+        meaning: cim:UnitSymbol.m3Uncompensated
+      m3Compensated:
+        meaning: cim:UnitSymbol.m3Compensated
+      WPerW:
+        meaning: cim:UnitSymbol.WPerW
+      therm:
+        meaning: cim:UnitSymbol.therm
+      onePerm:
+        meaning: cim:UnitSymbol.onePerm
+      m3Perkg:
+        meaning: cim:UnitSymbol.m3Perkg
+      Pas:
+        meaning: cim:UnitSymbol.Pas
+      Nm:
+        meaning: cim:UnitSymbol.Nm
+      NPerm:
+        meaning: cim:UnitSymbol.NPerm
+      radPers2:
+        meaning: cim:UnitSymbol.radPers2
+      JPerm3:
+        meaning: cim:UnitSymbol.JPerm3
+      VPerm:
+        meaning: cim:UnitSymbol.VPerm
+      CPerm3:
+        meaning: cim:UnitSymbol.CPerm3
+      CPerm2:
+        meaning: cim:UnitSymbol.CPerm2
+      FPerm:
+        meaning: cim:UnitSymbol.FPerm
+      HPerm:
+        meaning: cim:UnitSymbol.HPerm
+      JPermol:
+        meaning: cim:UnitSymbol.JPermol
+      JPermolK:
+        meaning: cim:UnitSymbol.JPermolK
+      CPerkg:
+        meaning: cim:UnitSymbol.CPerkg
+      GyPers:
+        meaning: cim:UnitSymbol.GyPers
+      WPersr:
+        meaning: cim:UnitSymbol.WPersr
+      WPerm2sr:
+        meaning: cim:UnitSymbol.WPerm2sr
+      katPerm3:
+        meaning: cim:UnitSymbol.katPerm3
+      d:
+        meaning: cim:UnitSymbol.d
+      anglemin:
+        meaning: cim:UnitSymbol.anglemin
+      anglesec:
+        meaning: cim:UnitSymbol.anglesec
+      ha:
+        meaning: cim:UnitSymbol.ha
+      tonne:
+        meaning: cim:UnitSymbol.tonne
+      bar:
+        meaning: cim:UnitSymbol.bar
+      mmHg:
+        meaning: cim:UnitSymbol.mmHg
+      M:
+        meaning: cim:UnitSymbol.M
+      kn:
+        meaning: cim:UnitSymbol.kn
+      Mx:
+        meaning: cim:UnitSymbol.Mx
+      G:
+        meaning: cim:UnitSymbol.G
+      Oe:
+        meaning: cim:UnitSymbol.Oe
+      Vh:
+        meaning: cim:UnitSymbol.Vh
+      WPerA:
+        meaning: cim:UnitSymbol.WPerA
+      onePerHz:
+        meaning: cim:UnitSymbol.onePerHz
+      VPerVAr:
+        meaning: cim:UnitSymbol.VPerVAr
+      ohmPerm:
+        meaning: cim:UnitSymbol.ohmPerm
+      kgPerJ:
+        meaning: cim:UnitSymbol.kgPerJ
+      JPers:
+        meaning: cim:UnitSymbol.JPers
+    enum_uri: http://iec.ch/TC57/CIM100#UnitSymbol
+  UnitMultiplier:
+    permissible_values:
+      y:
+        meaning: cim:UnitMultiplier.y
+      z:
+        meaning: cim:UnitMultiplier.z
+      a:
+        meaning: cim:UnitMultiplier.a
+      f:
+        meaning: cim:UnitMultiplier.f
+      p:
+        meaning: cim:UnitMultiplier.p
+      n:
+        meaning: cim:UnitMultiplier.n
+      micro:
+        meaning: cim:UnitMultiplier.micro
+      m:
+        meaning: cim:UnitMultiplier.m
+      c:
+        meaning: cim:UnitMultiplier.c
+      d:
+        meaning: cim:UnitMultiplier.d
+      none:
+        meaning: cim:UnitMultiplier.none
+      da:
+        meaning: cim:UnitMultiplier.da
+      h:
+        meaning: cim:UnitMultiplier.h
+      k:
+        meaning: cim:UnitMultiplier.k
+      M:
+        meaning: cim:UnitMultiplier.M
+      G:
+        meaning: cim:UnitMultiplier.G
+      T:
+        meaning: cim:UnitMultiplier.T
+      P:
+        meaning: cim:UnitMultiplier.P
+      E:
+        meaning: cim:UnitMultiplier.E
+      Z:
+        meaning: cim:UnitMultiplier.Z
+      Y:
+        meaning: cim:UnitMultiplier.Y
+    enum_uri: http://iec.ch/TC57/CIM100#UnitMultiplier
+  PetersenCoilModeKind:
+    permissible_values:
+      fixed:
+        meaning: cim:PetersenCoilModeKind.fixed
+      manual:
+        meaning: cim:PetersenCoilModeKind.manual
+      automaticPositioning:
+        meaning: cim:PetersenCoilModeKind.automaticPositioning
+    enum_uri: http://iec.ch/TC57/CIM100#PetersenCoilModeKind
+  ShortCircuitRotorKind:
+    permissible_values:
+      salientPole1:
+        meaning: cim:ShortCircuitRotorKind.salientPole1
+      salientPole2:
+        meaning: cim:ShortCircuitRotorKind.salientPole2
+      turboSeries1:
+        meaning: cim:ShortCircuitRotorKind.turboSeries1
+      turboSeries2:
+        meaning: cim:ShortCircuitRotorKind.turboSeries2
+    enum_uri: http://iec.ch/TC57/CIM100#ShortCircuitRotorKind

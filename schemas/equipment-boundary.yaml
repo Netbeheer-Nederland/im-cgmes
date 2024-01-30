@@ -1,0 +1,789 @@
+id: http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU#Package_EquipmentBoundaryProfile
+name: EquipmentBoundaryProfile
+description: This vocabulary is describing the equipment boundary profile from IEC
+  61970-600-2.
+title: Equipment Boundary Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  eqbd: http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU#
+  this: http://iec.ch/TC57/ns/CIM/EquipmentBoundary-EU#Package_EquipmentBoundaryProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  ACDCTerminal:
+    class_uri: cim:ACDCTerminal
+    is_a: IdentifiedObject
+    description: An electrical connection point (AC or DC) to a piece of conducting
+      equipment. Terminals are connected at physical connection points called connectivity
+      nodes.
+  BaseVoltage:
+    class_uri: cim:BaseVoltage
+    attributes:
+      nominalVoltage:
+        slot_uri: cim:BaseVoltage.nominalVoltage
+        range: Voltage
+        multivalued: false
+        required: true
+        description: The power system resource's base voltage.  Shall be a positive
+          value and not zero.
+      VoltageLevel:
+        slot_uri: cim:BaseVoltage.VoltageLevel
+        range: VoltageLevel
+        multivalued: true
+        required: false
+        description: The voltage levels having this base voltage.
+    is_a: IdentifiedObject
+    description: Defines a system base voltage which is referenced.
+  Voltage:
+    class_uri: cim:Voltage
+    attributes:
+      value:
+        slot_uri: cim:Voltage.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Voltage.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Voltage.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: Electrical voltage, can be both AC and DC.
+  Bay:
+    class_uri: cim:Bay
+    attributes:
+      VoltageLevel:
+        slot_uri: cim:Bay.VoltageLevel
+        range: VoltageLevel
+        multivalued: false
+        required: true
+        description: The voltage level containing this bay.
+    is_a: EquipmentContainer
+    description: A collection of power system resources (within a given substation)
+      including conducting equipment, protection relays, measurements, and telemetry.  A
+      bay typically represents a physical grouping related to modularization of equipment.
+  BoundaryPoint:
+    class_uri: eu:BoundaryPoint
+    attributes:
+      fromEndIsoCode:
+        slot_uri: eu:BoundaryPoint.fromEndIsoCode
+        range: string
+        multivalued: false
+        required: true
+        description: 'The ISO code of the region which the "From" side of the Boundary
+          point belongs to or it is connected to.
+
+          The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
+          The length of the string is 2 characters maximum.'
+      fromEndName:
+        slot_uri: eu:BoundaryPoint.fromEndName
+        range: string
+        multivalued: false
+        required: true
+        description: 'A human readable name with length of the string 64 characters
+          maximum. It covers the following two cases:
+
+          -if the Boundary point is placed on a tie-line, it is the name (IdentifiedObject.name)
+          of the substation at which the "From" side of the tie-line is connected
+          to.
+
+          -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
+          of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
+          the "From" side of the Boundary point is connected to.'
+      fromEndNameTso:
+        slot_uri: eu:BoundaryPoint.fromEndNameTso
+        range: string
+        multivalued: false
+        required: true
+        description: Identifies the name of the transmission system operator, distribution
+          system operator or other entity at which the "From" side of the interconnection
+          is connected to. The length of the string is 64 characters maximum.
+      toEndIsoCode:
+        slot_uri: eu:BoundaryPoint.toEndIsoCode
+        range: string
+        multivalued: false
+        required: true
+        description: 'The ISO code of the region which the "To" side of the Boundary
+          point belongs to or is connected to.
+
+          The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
+          The length of the string is 2 characters maximum.'
+      toEndName:
+        slot_uri: eu:BoundaryPoint.toEndName
+        range: string
+        multivalued: false
+        required: true
+        description: 'A human readable name with length of the string 64 characters
+          maximum. It covers the following two cases:
+
+          -if the Boundary point is placed on a tie-line, it is the name (IdentifiedObject.name)
+          of the substation at which the "To" side of the tie-line is connected to.
+
+          -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
+          of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
+          the "To" side of the Boundary point is connected to.'
+      toEndNameTso:
+        slot_uri: eu:BoundaryPoint.toEndNameTso
+        range: string
+        multivalued: false
+        required: true
+        description: Identifies the name of the transmission system operator, distribution
+          system operator or other entity at which the "To" side of the interconnection
+          is connected to. The length of the string is 64 characters maximum.
+      isDirectCurrent:
+        slot_uri: eu:BoundaryPoint.isDirectCurrent
+        range: boolean
+        multivalued: false
+        required: false
+        description: If true, this boundary point is a point of common coupling (PCC)
+          of a direct current (DC) interconnection, otherwise the interconnection
+          is AC (default).
+      isExcludedFromAreaInterchange:
+        slot_uri: eu:BoundaryPoint.isExcludedFromAreaInterchange
+        range: boolean
+        multivalued: false
+        required: false
+        description: If true, this boundary point is on the interconnection that is
+          excluded from control area interchange calculation and consequently has
+          no related tie flows. Otherwise, the interconnection is included in control
+          area interchange and a TieFlow is required at all sides of the boundary
+          point (default).
+      ConnectivityNode:
+        slot_uri: eu:BoundaryPoint.ConnectivityNode
+        range: ConnectivityNode
+        multivalued: false
+        required: true
+        description: The connectivity node that is designated as a boundary point.
+    is_a: PowerSystemResource
+    description: Designates a connection point at which one or more model authority
+      sets shall connect to. The location of the connection point as well as other
+      properties are agreed between organisations responsible for the interconnection,
+      hence all attributes of the class represent this agreement.  It is primarily
+      used in a boundary model authority set which can contain one or many BoundaryPoint-s
+      among other Equipment-s and their connections.
+  ConductingEquipment:
+    class_uri: cim:ConductingEquipment
+    attributes:
+      Terminals:
+        slot_uri: cim:ConductingEquipment.Terminals
+        range: Terminal
+        multivalued: true
+        required: false
+        description: Conducting equipment have terminals that may be connected to
+          other conducting equipment terminals via connectivity nodes or topological
+          nodes.
+    is_a: Equipment
+    description: The parts of the AC power system that are designed to carry current
+      or that are conductively connected through terminals.
+  ConnectivityNode:
+    class_uri: cim:ConnectivityNode
+    attributes:
+      BoundaryPoint:
+        slot_uri: eu:ConnectivityNode.BoundaryPoint
+        range: BoundaryPoint
+        multivalued: false
+        required: false
+        description: The boundary point associated with the connectivity node.
+      Terminals:
+        slot_uri: cim:ConnectivityNode.Terminals
+        range: Terminal
+        multivalued: true
+        required: false
+        description: Terminals interconnected with zero impedance at a this connectivity
+          node.
+      ConnectivityNodeContainer:
+        slot_uri: cim:ConnectivityNode.ConnectivityNodeContainer
+        range: ConnectivityNodeContainer
+        multivalued: false
+        required: true
+        description: Container of this connectivity node.
+    is_a: IdentifiedObject
+    description: Connectivity nodes are points where terminals of AC conducting equipment
+      are connected together with zero impedance.
+  ConnectivityNodeContainer:
+    class_uri: cim:ConnectivityNodeContainer
+    attributes:
+      ConnectivityNodes:
+        slot_uri: cim:ConnectivityNodeContainer.ConnectivityNodes
+        range: ConnectivityNode
+        multivalued: true
+        required: false
+        description: Connectivity nodes which belong to this connectivity node container.
+    is_a: PowerSystemResource
+    description: A base class for all objects that may contain connectivity nodes
+      or topological nodes.
+  Connector:
+    class_uri: cim:Connector
+    is_a: ConductingEquipment
+    description: A conductor, or group of conductors, with negligible impedance, that
+      serve to connect other conducting equipment within a single substation and are
+      modelled with a single logical terminal.
+  EnergySchedulingType:
+    class_uri: cim:EnergySchedulingType
+    is_a: IdentifiedObject
+    description: Used to define the type of generation for scheduling purposes.
+  Equipment:
+    class_uri: cim:Equipment
+    attributes:
+      EquipmentContainer:
+        slot_uri: cim:Equipment.EquipmentContainer
+        range: EquipmentContainer
+        multivalued: false
+        required: false
+        description: Container of this equipment.
+    is_a: PowerSystemResource
+    description: The parts of a power system that are physical devices, electronic
+      or mechanical.
+  EquipmentContainer:
+    class_uri: cim:EquipmentContainer
+    attributes:
+      Equipments:
+        slot_uri: cim:EquipmentContainer.Equipments
+        range: Equipment
+        multivalued: true
+        required: false
+        description: Contained equipment.
+    is_a: ConnectivityNodeContainer
+    description: A modelling construct to provide a root class for containing equipment.
+  GeographicalRegion:
+    class_uri: cim:GeographicalRegion
+    attributes:
+      Regions:
+        slot_uri: cim:GeographicalRegion.Regions
+        range: SubGeographicalRegion
+        multivalued: true
+        required: false
+        description: All sub-geographical regions within this geographical region.
+    is_a: IdentifiedObject
+    description: A geographical region of a power system network model.
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      description:
+        slot_uri: cim:IdentifiedObject.description
+        range: string
+        multivalued: false
+        required: false
+        description: The description is a free human readable text describing or naming
+          the object. It may be non unique and may not correlate to a naming hierarchy.
+      energyIdentCodeEic:
+        slot_uri: eu:IdentifiedObject.energyIdentCodeEic
+        range: string
+        multivalued: false
+        required: false
+        description: The attribute is used for an exchange of the EIC code (Energy
+          identification Code). The length of the string is 16 characters as defined
+          by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+      name:
+        slot_uri: cim:IdentifiedObject.name
+        range: string
+        multivalued: false
+        required: true
+        description: The name is any free human readable and possibly non unique text
+          naming the object.
+      shortName:
+        slot_uri: eu:IdentifiedObject.shortName
+        range: string
+        multivalued: false
+        required: false
+        description: The attribute is used for an exchange of a human readable short
+          name with length of the string 12 characters maximum.
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  Junction:
+    class_uri: cim:Junction
+    is_a: Connector
+    description: A point where one or more conducting equipments are connected with
+      zero resistance.
+  Line:
+    class_uri: cim:Line
+    attributes:
+      Region:
+        slot_uri: cim:Line.Region
+        range: SubGeographicalRegion
+        multivalued: false
+        required: false
+        description: The sub-geographical region of the line.
+    is_a: EquipmentContainer
+    description: Contains equipment beyond a substation belonging to a power transmission
+      line.
+  PowerSystemResource:
+    class_uri: cim:PowerSystemResource
+    is_a: IdentifiedObject
+    description: A power system resource (PSR) can be an item of equipment such as
+      a switch, an equipment container containing many individual items of equipment
+      such as a substation, or an organisational entity such as sub-control area.
+      Power system resources can have measurements associated.
+  SubGeographicalRegion:
+    class_uri: cim:SubGeographicalRegion
+    attributes:
+      Region:
+        slot_uri: cim:SubGeographicalRegion.Region
+        range: GeographicalRegion
+        multivalued: false
+        required: true
+        description: The geographical region which this sub-geographical region is
+          within.
+      Lines:
+        slot_uri: cim:SubGeographicalRegion.Lines
+        range: Line
+        multivalued: true
+        required: false
+        description: The lines within the sub-geographical region.
+      Substations:
+        slot_uri: cim:SubGeographicalRegion.Substations
+        range: Substation
+        multivalued: true
+        required: false
+        description: The substations in this sub-geographical region.
+    is_a: IdentifiedObject
+    description: A subset of a geographical region of a power system network model.
+  Substation:
+    class_uri: cim:Substation
+    attributes:
+      Region:
+        slot_uri: cim:Substation.Region
+        range: SubGeographicalRegion
+        multivalued: false
+        required: true
+        description: The SubGeographicalRegion containing the substation.
+      VoltageLevels:
+        slot_uri: cim:Substation.VoltageLevels
+        range: VoltageLevel
+        multivalued: true
+        required: false
+        description: The voltage levels within this substation.
+    is_a: EquipmentContainer
+    description: A collection of equipment for purposes other than generation or utilization,
+      through which electric energy in bulk is passed for the purposes of switching
+      or modifying its characteristics.
+  Terminal:
+    class_uri: cim:Terminal
+    attributes:
+      ConductingEquipment:
+        slot_uri: cim:Terminal.ConductingEquipment
+        range: ConductingEquipment
+        multivalued: false
+        required: true
+        description: The conducting equipment of the terminal.  Conducting equipment
+          have  terminals that may be connected to other conducting equipment terminals
+          via connectivity nodes or topological nodes.
+      ConnectivityNode:
+        slot_uri: cim:Terminal.ConnectivityNode
+        range: ConnectivityNode
+        multivalued: false
+        required: false
+        description: The connectivity node to which this terminal connects with zero
+          impedance.
+    is_a: ACDCTerminal
+    description: An AC electrical connection point to a piece of conducting equipment.
+      Terminals are connected at physical connection points called connectivity nodes.
+  VoltageLevel:
+    class_uri: cim:VoltageLevel
+    attributes:
+      BaseVoltage:
+        slot_uri: cim:VoltageLevel.BaseVoltage
+        range: BaseVoltage
+        multivalued: false
+        required: true
+        description: The base voltage used for all equipment within the voltage level.
+      Bays:
+        slot_uri: cim:VoltageLevel.Bays
+        range: Bay
+        multivalued: true
+        required: false
+        description: The bays within this voltage level.
+      Substation:
+        slot_uri: cim:VoltageLevel.Substation
+        range: Substation
+        multivalued: false
+        required: true
+        description: The substation of the voltage level.
+      highVoltageLimit:
+        slot_uri: cim:VoltageLevel.highVoltageLimit
+        range: Voltage
+        multivalued: false
+        required: false
+        description: 'The bus bar''s high voltage limit.
+
+          The limit applies to all equipment and nodes contained in a given VoltageLevel.
+          It is not required that it is exchanged in pair with lowVoltageLimit. It
+          is preferable to use operational VoltageLimit, which prevails, if present.'
+      lowVoltageLimit:
+        slot_uri: cim:VoltageLevel.lowVoltageLimit
+        range: Voltage
+        multivalued: false
+        required: false
+        description: 'The bus bar''s low voltage limit.
+
+          The limit applies to all equipment and nodes contained in a given VoltageLevel.
+          It is not required that it is exchanged in pair with highVoltageLimit. It
+          is preferable to use operational VoltageLimit, which prevails, if present.'
+    is_a: EquipmentContainer
+    description: A collection of equipment at one common system voltage forming a
+      switchgear. The equipment typically consists of breakers, busbars, instrumentation,
+      control, regulation and protection devices as well as assemblies of all these.
+enums:
+  UnitMultiplier:
+    permissible_values:
+      y:
+        meaning: cim:UnitMultiplier.y
+      z:
+        meaning: cim:UnitMultiplier.z
+      a:
+        meaning: cim:UnitMultiplier.a
+      f:
+        meaning: cim:UnitMultiplier.f
+      p:
+        meaning: cim:UnitMultiplier.p
+      n:
+        meaning: cim:UnitMultiplier.n
+      micro:
+        meaning: cim:UnitMultiplier.micro
+      m:
+        meaning: cim:UnitMultiplier.m
+      c:
+        meaning: cim:UnitMultiplier.c
+      d:
+        meaning: cim:UnitMultiplier.d
+      none:
+        meaning: cim:UnitMultiplier.none
+      da:
+        meaning: cim:UnitMultiplier.da
+      h:
+        meaning: cim:UnitMultiplier.h
+      k:
+        meaning: cim:UnitMultiplier.k
+      M:
+        meaning: cim:UnitMultiplier.M
+      G:
+        meaning: cim:UnitMultiplier.G
+      T:
+        meaning: cim:UnitMultiplier.T
+      P:
+        meaning: cim:UnitMultiplier.P
+      E:
+        meaning: cim:UnitMultiplier.E
+      Z:
+        meaning: cim:UnitMultiplier.Z
+      Y:
+        meaning: cim:UnitMultiplier.Y
+    enum_uri: http://iec.ch/TC57/CIM100#UnitMultiplier
+  UnitSymbol:
+    permissible_values:
+      none:
+        meaning: cim:UnitSymbol.none
+      m:
+        meaning: cim:UnitSymbol.m
+      kg:
+        meaning: cim:UnitSymbol.kg
+      s:
+        meaning: cim:UnitSymbol.s
+      A:
+        meaning: cim:UnitSymbol.A
+      K:
+        meaning: cim:UnitSymbol.K
+      mol:
+        meaning: cim:UnitSymbol.mol
+      cd:
+        meaning: cim:UnitSymbol.cd
+      deg:
+        meaning: cim:UnitSymbol.deg
+      rad:
+        meaning: cim:UnitSymbol.rad
+      sr:
+        meaning: cim:UnitSymbol.sr
+      Gy:
+        meaning: cim:UnitSymbol.Gy
+      Bq:
+        meaning: cim:UnitSymbol.Bq
+      degC:
+        meaning: cim:UnitSymbol.degC
+      Sv:
+        meaning: cim:UnitSymbol.Sv
+      F:
+        meaning: cim:UnitSymbol.F
+      C:
+        meaning: cim:UnitSymbol.C
+      S:
+        meaning: cim:UnitSymbol.S
+      H:
+        meaning: cim:UnitSymbol.H
+      V:
+        meaning: cim:UnitSymbol.V
+      ohm:
+        meaning: cim:UnitSymbol.ohm
+      J:
+        meaning: cim:UnitSymbol.J
+      N:
+        meaning: cim:UnitSymbol.N
+      Hz:
+        meaning: cim:UnitSymbol.Hz
+      lx:
+        meaning: cim:UnitSymbol.lx
+      lm:
+        meaning: cim:UnitSymbol.lm
+      Wb:
+        meaning: cim:UnitSymbol.Wb
+      T:
+        meaning: cim:UnitSymbol.T
+      W:
+        meaning: cim:UnitSymbol.W
+      Pa:
+        meaning: cim:UnitSymbol.Pa
+      m2:
+        meaning: cim:UnitSymbol.m2
+      m3:
+        meaning: cim:UnitSymbol.m3
+      mPers:
+        meaning: cim:UnitSymbol.mPers
+      mPers2:
+        meaning: cim:UnitSymbol.mPers2
+      m3Pers:
+        meaning: cim:UnitSymbol.m3Pers
+      mPerm3:
+        meaning: cim:UnitSymbol.mPerm3
+      kgm:
+        meaning: cim:UnitSymbol.kgm
+      kgPerm3:
+        meaning: cim:UnitSymbol.kgPerm3
+      m2Pers:
+        meaning: cim:UnitSymbol.m2Pers
+      WPermK:
+        meaning: cim:UnitSymbol.WPermK
+      JPerK:
+        meaning: cim:UnitSymbol.JPerK
+      ppm:
+        meaning: cim:UnitSymbol.ppm
+      rotPers:
+        meaning: cim:UnitSymbol.rotPers
+      radPers:
+        meaning: cim:UnitSymbol.radPers
+      WPerm2:
+        meaning: cim:UnitSymbol.WPerm2
+      JPerm2:
+        meaning: cim:UnitSymbol.JPerm2
+      SPerm:
+        meaning: cim:UnitSymbol.SPerm
+      KPers:
+        meaning: cim:UnitSymbol.KPers
+      PaPers:
+        meaning: cim:UnitSymbol.PaPers
+      JPerkgK:
+        meaning: cim:UnitSymbol.JPerkgK
+      VA:
+        meaning: cim:UnitSymbol.VA
+      VAr:
+        meaning: cim:UnitSymbol.VAr
+      cosPhi:
+        meaning: cim:UnitSymbol.cosPhi
+      Vs:
+        meaning: cim:UnitSymbol.Vs
+      V2:
+        meaning: cim:UnitSymbol.V2
+      As:
+        meaning: cim:UnitSymbol.As
+      A2:
+        meaning: cim:UnitSymbol.A2
+      A2s:
+        meaning: cim:UnitSymbol.A2s
+      VAh:
+        meaning: cim:UnitSymbol.VAh
+      Wh:
+        meaning: cim:UnitSymbol.Wh
+      VArh:
+        meaning: cim:UnitSymbol.VArh
+      VPerHz:
+        meaning: cim:UnitSymbol.VPerHz
+      HzPers:
+        meaning: cim:UnitSymbol.HzPers
+      character:
+        meaning: cim:UnitSymbol.character
+      charPers:
+        meaning: cim:UnitSymbol.charPers
+      kgm2:
+        meaning: cim:UnitSymbol.kgm2
+      dB:
+        meaning: cim:UnitSymbol.dB
+      WPers:
+        meaning: cim:UnitSymbol.WPers
+      lPers:
+        meaning: cim:UnitSymbol.lPers
+      dBm:
+        meaning: cim:UnitSymbol.dBm
+      h:
+        meaning: cim:UnitSymbol.h
+      min:
+        meaning: cim:UnitSymbol.min
+      Q:
+        meaning: cim:UnitSymbol.Q
+      Qh:
+        meaning: cim:UnitSymbol.Qh
+      ohmm:
+        meaning: cim:UnitSymbol.ohmm
+      APerm:
+        meaning: cim:UnitSymbol.APerm
+      V2h:
+        meaning: cim:UnitSymbol.V2h
+      A2h:
+        meaning: cim:UnitSymbol.A2h
+      Ah:
+        meaning: cim:UnitSymbol.Ah
+      count:
+        meaning: cim:UnitSymbol.count
+      ft3:
+        meaning: cim:UnitSymbol.ft3
+      m3Perh:
+        meaning: cim:UnitSymbol.m3Perh
+      gal:
+        meaning: cim:UnitSymbol.gal
+      Btu:
+        meaning: cim:UnitSymbol.Btu
+      l:
+        meaning: cim:UnitSymbol.l
+      lPerh:
+        meaning: cim:UnitSymbol.lPerh
+      lPerl:
+        meaning: cim:UnitSymbol.lPerl
+      gPerg:
+        meaning: cim:UnitSymbol.gPerg
+      molPerm3:
+        meaning: cim:UnitSymbol.molPerm3
+      molPermol:
+        meaning: cim:UnitSymbol.molPermol
+      molPerkg:
+        meaning: cim:UnitSymbol.molPerkg
+      sPers:
+        meaning: cim:UnitSymbol.sPers
+      HzPerHz:
+        meaning: cim:UnitSymbol.HzPerHz
+      VPerV:
+        meaning: cim:UnitSymbol.VPerV
+      APerA:
+        meaning: cim:UnitSymbol.APerA
+      VPerVA:
+        meaning: cim:UnitSymbol.VPerVA
+      rev:
+        meaning: cim:UnitSymbol.rev
+      kat:
+        meaning: cim:UnitSymbol.kat
+      JPerkg:
+        meaning: cim:UnitSymbol.JPerkg
+      m3Uncompensated:
+        meaning: cim:UnitSymbol.m3Uncompensated
+      m3Compensated:
+        meaning: cim:UnitSymbol.m3Compensated
+      WPerW:
+        meaning: cim:UnitSymbol.WPerW
+      therm:
+        meaning: cim:UnitSymbol.therm
+      onePerm:
+        meaning: cim:UnitSymbol.onePerm
+      m3Perkg:
+        meaning: cim:UnitSymbol.m3Perkg
+      Pas:
+        meaning: cim:UnitSymbol.Pas
+      Nm:
+        meaning: cim:UnitSymbol.Nm
+      NPerm:
+        meaning: cim:UnitSymbol.NPerm
+      radPers2:
+        meaning: cim:UnitSymbol.radPers2
+      JPerm3:
+        meaning: cim:UnitSymbol.JPerm3
+      VPerm:
+        meaning: cim:UnitSymbol.VPerm
+      CPerm3:
+        meaning: cim:UnitSymbol.CPerm3
+      CPerm2:
+        meaning: cim:UnitSymbol.CPerm2
+      FPerm:
+        meaning: cim:UnitSymbol.FPerm
+      HPerm:
+        meaning: cim:UnitSymbol.HPerm
+      JPermol:
+        meaning: cim:UnitSymbol.JPermol
+      JPermolK:
+        meaning: cim:UnitSymbol.JPermolK
+      CPerkg:
+        meaning: cim:UnitSymbol.CPerkg
+      GyPers:
+        meaning: cim:UnitSymbol.GyPers
+      WPersr:
+        meaning: cim:UnitSymbol.WPersr
+      WPerm2sr:
+        meaning: cim:UnitSymbol.WPerm2sr
+      katPerm3:
+        meaning: cim:UnitSymbol.katPerm3
+      d:
+        meaning: cim:UnitSymbol.d
+      anglemin:
+        meaning: cim:UnitSymbol.anglemin
+      anglesec:
+        meaning: cim:UnitSymbol.anglesec
+      ha:
+        meaning: cim:UnitSymbol.ha
+      tonne:
+        meaning: cim:UnitSymbol.tonne
+      bar:
+        meaning: cim:UnitSymbol.bar
+      mmHg:
+        meaning: cim:UnitSymbol.mmHg
+      M:
+        meaning: cim:UnitSymbol.M
+      kn:
+        meaning: cim:UnitSymbol.kn
+      Mx:
+        meaning: cim:UnitSymbol.Mx
+      G:
+        meaning: cim:UnitSymbol.G
+      Oe:
+        meaning: cim:UnitSymbol.Oe
+      Vh:
+        meaning: cim:UnitSymbol.Vh
+      WPerA:
+        meaning: cim:UnitSymbol.WPerA
+      onePerHz:
+        meaning: cim:UnitSymbol.onePerHz
+      VPerVAr:
+        meaning: cim:UnitSymbol.VPerVAr
+      ohmPerm:
+        meaning: cim:UnitSymbol.ohmPerm
+      kgPerJ:
+        meaning: cim:UnitSymbol.kgPerJ
+      JPers:
+        meaning: cim:UnitSymbol.JPers
+    enum_uri: http://iec.ch/TC57/CIM100#UnitSymbol

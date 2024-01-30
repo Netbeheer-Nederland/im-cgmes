@@ -1,0 +1,379 @@
+id: http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU#Package_GeographicalLocationProfile
+name: GeographicalLocationProfile
+description: This vocabulary is describing the geographical location profile from
+  IEC 61970-600-2.
+title: Geographical Location Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  gl: http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU#
+  this: http://iec.ch/TC57/ns/CIM/GeographicalLocation-EU#Package_GeographicalLocationProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+      name:
+        slot_uri: cim:IdentifiedObject.name
+        range: string
+        multivalued: false
+        required: false
+        description: The name is any free human readable and possibly non unique text
+          naming the object.
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  ServiceLocation:
+    class_uri: cim:ServiceLocation
+    is_a: WorkLocation
+    description: A real estate location, commonly referred to as premises.
+  WorkLocation:
+    class_uri: cim:WorkLocation
+    is_a: Location
+    description: Information about a particular location for various forms of work.
+  CoordinateSystem:
+    class_uri: cim:CoordinateSystem
+    attributes:
+      crsUrn:
+        slot_uri: cim:CoordinateSystem.crsUrn
+        range: string
+        multivalued: false
+        required: true
+        description: 'A Uniform Resource Name (URN) for the coordinate reference system
+          (crs) used to define ''Location.PositionPoints''.
+
+          An example would be the European Petroleum Survey Group (EPSG) code for
+          a coordinate reference system, defined in URN under the Open Geospatial
+          Consortium (OGC) namespace as: urn:ogc:def:crs:EPSG::XXXX, where XXXX is
+          an EPSG code (a full list of codes can be found at the EPSG Registry web
+          site http://www.epsg-registry.org/). To define the coordinate system as
+          being WGS84 (latitude, longitude) using an EPSG OGC, this attribute would
+          be urn:ogc:def:crs:EPSG::4236.
+
+          A profile should limit this code to a set of allowed URNs agreed to by all
+          sending and receiving parties.'
+      Locations:
+        slot_uri: cim:CoordinateSystem.Locations
+        range: Location
+        multivalued: true
+        required: false
+        description: All locations described with position points in this coordinate
+          system.
+    is_a: IdentifiedObject
+    description: Coordinate reference system.
+  Location:
+    class_uri: cim:Location
+    attributes:
+      CoordinateSystem:
+        slot_uri: cim:Location.CoordinateSystem
+        range: CoordinateSystem
+        multivalued: false
+        required: true
+        description: Coordinate system used to describe position points of this location.
+      mainAddress:
+        slot_uri: cim:Location.mainAddress
+        range: StreetAddress
+        multivalued: false
+        required: false
+        description: Main address of the location.
+      PowerSystemResources:
+        slot_uri: cim:Location.PowerSystemResources
+        range: PowerSystemResource
+        multivalued: false
+        required: true
+        description: All power system resources at this location.
+      PositionPoints:
+        slot_uri: cim:Location.PositionPoints
+        range: PositionPoint
+        multivalued: true
+        required: false
+        description: Sequence of position points describing this location, expressed
+          in coordinate system 'Location.CoordinateSystem'.
+    is_a: IdentifiedObject
+    description: The place, scene, or point of something where someone or something
+      has been, is, and/or will be at a given moment in time. It can be defined with
+      one or more position points (coordinates) in a given coordinate system.
+  StreetAddress:
+    class_uri: cim:StreetAddress
+    attributes:
+      streetDetail:
+        slot_uri: cim:StreetAddress.streetDetail
+        range: StreetDetail
+        multivalued: false
+        required: false
+        description: Street detail.
+      townDetail:
+        slot_uri: cim:StreetAddress.townDetail
+        range: TownDetail
+        multivalued: false
+        required: false
+        description: Town detail.
+      status:
+        slot_uri: cim:StreetAddress.status
+        range: Status
+        multivalued: false
+        required: false
+        description: Status of this address.
+      postalCode:
+        slot_uri: cim:StreetAddress.postalCode
+        range: string
+        multivalued: false
+        required: false
+        description: Postal code for the address.
+      poBox:
+        slot_uri: cim:StreetAddress.poBox
+        range: string
+        multivalued: false
+        required: false
+        description: Post office box.
+      language:
+        slot_uri: cim:StreetAddress.language
+        range: string
+        multivalued: false
+        required: false
+        description: The language in which the address is specified, using ISO 639-1
+          two digit language code.
+    description: General purpose street and postal address information.
+  StreetDetail:
+    class_uri: cim:StreetDetail
+    attributes:
+      number:
+        slot_uri: cim:StreetDetail.number
+        range: string
+        multivalued: false
+        required: false
+        description: Designator of the specific location on the street.
+      name:
+        slot_uri: cim:StreetDetail.name
+        range: string
+        multivalued: false
+        required: false
+        description: Name of the street.
+      suffix:
+        slot_uri: cim:StreetDetail.suffix
+        range: string
+        multivalued: false
+        required: false
+        description: 'Suffix to the street name. For example: North, South, East,
+          West.'
+      prefix:
+        slot_uri: cim:StreetDetail.prefix
+        range: string
+        multivalued: false
+        required: false
+        description: 'Prefix to the street name. For example: North, South, East,
+          West.'
+      type:
+        slot_uri: cim:StreetDetail.type
+        range: string
+        multivalued: false
+        required: false
+        description: 'Type of street. Examples include: street, circle, boulevard,
+          avenue, road, drive, etc.'
+      code:
+        slot_uri: cim:StreetDetail.code
+        range: string
+        multivalued: false
+        required: false
+        description: (if applicable) Utilities often make use of external reference
+          systems, such as those of the town-planner's department or surveyor general's
+          mapping system, that allocate global reference codes to streets.
+      buildingName:
+        slot_uri: cim:StreetDetail.buildingName
+        range: string
+        multivalued: false
+        required: false
+        description: (if applicable) In certain cases the physical location of the
+          place of interest does not have a direct point of entry from the street,
+          but may be located inside a larger structure such as a building, complex,
+          office block, apartment, etc.
+      suiteNumber:
+        slot_uri: cim:StreetDetail.suiteNumber
+        range: string
+        multivalued: false
+        required: false
+        description: Number of the apartment or suite.
+      addressGeneral:
+        slot_uri: cim:StreetDetail.addressGeneral
+        range: string
+        multivalued: false
+        required: false
+        description: First line of a free form address or some additional address
+          information (for example a mail stop).
+      addressGeneral2:
+        slot_uri: cim:StreetDetail.addressGeneral2
+        range: string
+        multivalued: false
+        required: false
+        description: (if applicable) Second line of a free form address.
+      addressGeneral3:
+        slot_uri: cim:StreetDetail.addressGeneral3
+        range: string
+        multivalued: false
+        required: false
+        description: (if applicable) Third line of a free form address.
+      withinTownLimits:
+        slot_uri: cim:StreetDetail.withinTownLimits
+        range: boolean
+        multivalued: false
+        required: false
+        description: True if this street is within the legal geographical boundaries
+          of the specified town (default).
+      floorIdentification:
+        slot_uri: cim:StreetDetail.floorIdentification
+        range: string
+        multivalued: false
+        required: false
+        description: The identification by name or number, expressed as text, of the
+          floor in the building as part of this address.
+    description: Street details, in the context of address.
+  TownDetail:
+    class_uri: cim:TownDetail
+    attributes:
+      code:
+        slot_uri: cim:TownDetail.code
+        range: string
+        multivalued: false
+        required: false
+        description: Town code.
+      section:
+        slot_uri: cim:TownDetail.section
+        range: string
+        multivalued: false
+        required: false
+        description: Town section. For example, it is common for there to be 36 sections
+          per township.
+      name:
+        slot_uri: cim:TownDetail.name
+        range: string
+        multivalued: false
+        required: false
+        description: Town name.
+      stateOrProvince:
+        slot_uri: cim:TownDetail.stateOrProvince
+        range: string
+        multivalued: false
+        required: false
+        description: Name of the state or province.
+      country:
+        slot_uri: cim:TownDetail.country
+        range: string
+        multivalued: false
+        required: false
+        description: Name of the country.
+    description: Town details, in the context of address.
+  Status:
+    class_uri: cim:Status
+    attributes:
+      value:
+        slot_uri: cim:Status.value
+        range: string
+        multivalued: false
+        required: false
+        description: Status value at 'dateTime'; prior status changes may have been
+          kept in instances of activity records associated with the object to which
+          this status applies.
+      dateTime:
+        slot_uri: cim:Status.dateTime
+        range: date
+        multivalued: false
+        required: false
+        description: Date and time for which status 'value' applies.
+      remark:
+        slot_uri: cim:Status.remark
+        range: string
+        multivalued: false
+        required: false
+        description: Pertinent information regarding the current 'value', as free
+          form text.
+      reason:
+        slot_uri: cim:Status.reason
+        range: string
+        multivalued: false
+        required: false
+        description: Reason code or explanation for why an object went to the current
+          status 'value'.
+    description: Current status information relevant to an entity.
+  PositionPoint:
+    class_uri: cim:PositionPoint
+    attributes:
+      Location:
+        slot_uri: cim:PositionPoint.Location
+        range: Location
+        multivalued: false
+        required: true
+        description: Location described by this position point.
+      sequenceNumber:
+        slot_uri: cim:PositionPoint.sequenceNumber
+        range: integer
+        multivalued: false
+        required: false
+        description: Zero-relative sequence number of this point within a series of
+          points.
+      xPosition:
+        slot_uri: cim:PositionPoint.xPosition
+        range: string
+        multivalued: false
+        required: true
+        description: X axis position.
+      yPosition:
+        slot_uri: cim:PositionPoint.yPosition
+        range: string
+        multivalued: false
+        required: true
+        description: Y axis position.
+      zPosition:
+        slot_uri: cim:PositionPoint.zPosition
+        range: string
+        multivalued: false
+        required: false
+        description: (if applicable) Z axis position.
+    description: Set of spatial coordinates that determine a point, defined in the
+      coordinate system specified in 'Location.CoordinateSystem'. Use a single position
+      point instance to describe a point-oriented location. Use a sequence of position
+      points to describe a line-oriented object (physical location of non-point oriented
+      objects like cables or lines), or area of an object (like a substation or a
+      geographical zone - in this case, have first and last position point with the
+      same values).
+  PowerSystemResource:
+    class_uri: cim:PowerSystemResource
+    attributes:
+      Location:
+        slot_uri: cim:PowerSystemResource.Location
+        range: Location
+        multivalued: false
+        required: false
+        description: Location of this power system resource.
+    is_a: IdentifiedObject
+    description: A power system resource (PSR) can be an item of equipment such as
+      a switch, an equipment container containing many individual items of equipment
+      such as a substation, or an organisational entity such as sub-control area.
+      Power system resources can have measurements associated.

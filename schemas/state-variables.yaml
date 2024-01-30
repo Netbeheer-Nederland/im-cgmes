@@ -1,0 +1,896 @@
+id: http://iec.ch/TC57/ns/CIM/StateVariables-EU#Package_StateVariablesProfile
+name: StateVariablesProfile
+description: This vocabulary is describing the state variables profile from IEC 61970-600-2.
+title: State Variables Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  sv: http://iec.ch/TC57/ns/CIM/StateVariables-EU#
+  this: http://iec.ch/TC57/ns/CIM/StateVariables-EU#Package_StateVariablesProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  ACDCConverter:
+    class_uri: cim:ACDCConverter
+    attributes:
+      idc:
+        slot_uri: cim:ACDCConverter.idc
+        range: CurrentFlow
+        multivalued: false
+        required: true
+        description: "Converter DC current, also called Id. It is converter\u2019\
+          s state variable, result from power flow."
+      poleLossP:
+        slot_uri: cim:ACDCConverter.poleLossP
+        range: ActivePower
+        multivalued: false
+        required: true
+        description: "The active power loss at a DC Pole \n= idleLoss + switchingLoss*|Idc|\
+          \ + resitiveLoss*Idc^2.\nFor lossless operation Pdc=Pac.\nFor rectifier\
+          \ operation with losses Pdc=Pac-lossP.\nFor inverter operation with losses\
+          \ Pdc=Pac+lossP.\nIt is converter\u2019s state variable used in power flow.\
+          \ The attribute shall be a positive value."
+      uc:
+        slot_uri: cim:ACDCConverter.uc
+        range: Voltage
+        multivalued: false
+        required: true
+        description: "Line-to-line converter voltage, the voltage at the AC side of\
+          \ the valve. It is converter\u2019s state variable, result from power flow.\
+          \ The attribute shall be a positive value."
+      udc:
+        slot_uri: cim:ACDCConverter.udc
+        range: Voltage
+        multivalued: false
+        required: true
+        description: "Converter voltage at the DC side, also called Ud. It is converter\u2019\
+          s state variable, result from power flow. The attribute shall be a positive\
+          \ value."
+    is_a: ConductingEquipment
+    description: A unit with valves for three phases, together with unit control equipment,
+      essential protective and switching devices, DC storage capacitors, phase reactors
+      and auxiliaries, if any, used for conversion.
+  CurrentFlow:
+    class_uri: cim:CurrentFlow
+    attributes:
+      value:
+        slot_uri: cim:CurrentFlow.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:CurrentFlow.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:CurrentFlow.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: 'Electrical current with sign convention: positive flow is out of
+      the conducting equipment into the connectivity node. Can be both AC and DC.'
+  ActivePower:
+    class_uri: cim:ActivePower
+    attributes:
+      value:
+        slot_uri: cim:ActivePower.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:ActivePower.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:ActivePower.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: Product of RMS value of the voltage and the RMS value of the in-phase
+      component of the current.
+  Voltage:
+    class_uri: cim:Voltage
+    attributes:
+      value:
+        slot_uri: cim:Voltage.value
+        range: float
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:Voltage.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:Voltage.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+    description: Electrical voltage, can be both AC and DC.
+  ACDCTerminal:
+    class_uri: cim:ACDCTerminal
+    is_a: IdentifiedObject
+    description: An electrical connection point (AC or DC) to a piece of conducting
+      equipment. Terminals are connected at physical connection points called connectivity
+      nodes.
+  CsConverter:
+    class_uri: cim:CsConverter
+    attributes:
+      alpha:
+        slot_uri: cim:CsConverter.alpha
+        range: AngleDegrees
+        multivalued: false
+        required: true
+        description: "Firing angle that determines the dc voltage at the converter\
+          \ dc terminal. Typical value between 10 degrees and 18 degrees for a rectifier.\
+          \ It is converter\u2019s state variable, result from power flow. The attribute\
+          \ shall be a positive value."
+      gamma:
+        slot_uri: cim:CsConverter.gamma
+        range: AngleDegrees
+        multivalued: false
+        required: true
+        description: "Extinction angle. It is used to limit the dc voltage at the\
+          \ inverter if needed. Typical value between 17 degrees and 20 degrees for\
+          \ an inverter. It is converter\u2019s state variable, result from power\
+          \ flow. The attribute shall be a positive value."
+    is_a: ACDCConverter
+    description: 'DC side of the current source converter (CSC).
+
+      The firing angle controls the dc voltage at the converter, both for rectifier
+      and inverter. The difference between the dc voltages of the rectifier and inverter
+      determines the dc current. The extinction angle is used to limit the dc voltage
+      at the inverter, if needed, and is not used in active power control. The firing
+      angle, transformer tap position and number of connected filters are the primary
+      means to control a current source dc line. Higher level controls are built on
+      top, e.g. dc voltage, dc current and active power. From a steady state perspective
+      it is sufficient to specify the wanted active power transfer (ACDCConverter.targetPpcc)
+      and the control functions will set the dc voltage, dc current, firing angle,
+      transformer tap position and number of connected filters to meet this. Therefore
+      attributes targetAlpha and targetGamma are not applicable in this case.
+
+      The reactive power consumed by the converter is a function of the firing angle,
+      transformer tap position and number of connected filter, which can be approximated
+      with half of the active power. The losses is a function of the dc voltage and
+      dc current.
+
+      The attributes minAlpha and maxAlpha define the range of firing angles for rectifier
+      operation between which no discrete tap changer action takes place. The range
+      is typically 10-18 degrees.
+
+      The attributes minGamma and maxGamma define the range of extinction angles for
+      inverter operation between which no discrete tap changer action takes place.
+      The range is typically 17-20 degrees.'
+  AngleDegrees:
+    class_uri: cim:AngleDegrees
+    attributes:
+      value:
+        slot_uri: cim:AngleDegrees.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:AngleDegrees.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:AngleDegrees.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Measurement of angle in degrees.
+  ConductingEquipment:
+    class_uri: cim:ConductingEquipment
+    attributes:
+      SvStatus:
+        slot_uri: cim:ConductingEquipment.SvStatus
+        range: SvStatus
+        multivalued: false
+        required: false
+        description: The status state variable associated with this conducting equipment.
+    description: The parts of the AC power system that are designed to carry current
+      or that are conductively connected through terminals.
+  DCTopologicalIsland:
+    class_uri: cim:DCTopologicalIsland
+    attributes:
+      DCTopologicalNodes:
+        slot_uri: cim:DCTopologicalIsland.DCTopologicalNodes
+        range: DCTopologicalNode
+        multivalued: true
+        required: true
+        description: The DC topological nodes in a DC topological island.
+    is_a: IdentifiedObject
+    description: "An electrically connected subset of the network. DC topological\
+      \ islands can change as the current network state changes, e.g. due to: \n-\
+      \ disconnect switches or breakers changing state in a SCADA/EMS.\n- manual creation,\
+      \ change or deletion of topological nodes in a planning tool.\nOnly energised\
+      \ TopologicalNode-s shall be part of the topological island."
+  DCTopologicalNode:
+    class_uri: cim:DCTopologicalNode
+    attributes:
+      DCTopologicalIsland:
+        slot_uri: cim:DCTopologicalNode.DCTopologicalIsland
+        range: DCTopologicalIsland
+        multivalued: false
+        required: false
+        description: A DC topological node belongs to a DC topological island.
+    is_a: IdentifiedObject
+    description: DC bus.
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+      name:
+        slot_uri: cim:IdentifiedObject.name
+        range: string
+        multivalued: false
+        required: true
+        description: The name is any free human readable and possibly non unique text
+          naming the object.
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  ShuntCompensator:
+    class_uri: cim:ShuntCompensator
+    attributes:
+      SvShuntCompensatorSections:
+        slot_uri: cim:ShuntCompensator.SvShuntCompensatorSections
+        range: SvShuntCompensatorSections
+        multivalued: false
+        required: false
+        description: The state for the number of shunt compensator sections in service.
+    description: A shunt capacitor or reactor or switchable bank of shunt capacitors
+      or reactors. A section of a shunt compensator is an individual capacitor or
+      reactor. A negative value for bPerSection indicates that the compensator is
+      a reactor. ShuntCompensator is a single terminal device.  Ground is implied.
+  SvInjection:
+    class_uri: cim:SvInjection
+    attributes:
+      pInjection:
+        slot_uri: cim:SvInjection.pInjection
+        range: ActivePower
+        multivalued: false
+        required: true
+        description: The active power mismatch between calculated injection and initial
+          injection.  Positive sign means injection into the TopologicalNode (bus).
+      qInjection:
+        slot_uri: cim:SvInjection.qInjection
+        range: ReactivePower
+        multivalued: false
+        required: false
+        description: The reactive power mismatch between calculated injection and
+          initial injection.  Positive sign means injection into the TopologicalNode
+          (bus).
+      TopologicalNode:
+        slot_uri: cim:SvInjection.TopologicalNode
+        range: TopologicalNode
+        multivalued: false
+        required: true
+        description: The topological node associated with the flow injection state
+          variable.
+    description: The SvInjection reports the calculated bus injection minus the sum
+      of the terminal flows. The terminal flow is positive out from the bus (load
+      sign convention) and bus injection has positive flow into the bus. SvInjection
+      may have the remainder after state estimation or slack after power flow calculation.
+  ReactivePower:
+    class_uri: cim:ReactivePower
+    attributes:
+      value:
+        slot_uri: cim:ReactivePower.value
+        range: float
+        multivalued: false
+        required: false
+      unit:
+        slot_uri: cim:ReactivePower.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:ReactivePower.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Product of RMS value of the voltage and the RMS value of the quadrature
+      component of the current.
+  SvPowerFlow:
+    class_uri: cim:SvPowerFlow
+    attributes:
+      p:
+        slot_uri: cim:SvPowerFlow.p
+        range: ActivePower
+        multivalued: false
+        required: true
+        description: The active power flow. Load sign convention is used, i.e. positive
+          sign means flow out from a TopologicalNode (bus) into the conducting equipment.
+      q:
+        slot_uri: cim:SvPowerFlow.q
+        range: ReactivePower
+        multivalued: false
+        required: true
+        description: The reactive power flow. Load sign convention is used, i.e. positive
+          sign means flow out from a TopologicalNode (bus) into the conducting equipment.
+      Terminal:
+        slot_uri: cim:SvPowerFlow.Terminal
+        range: Terminal
+        multivalued: false
+        required: true
+        description: The terminal associated with the power flow state variable.
+    description: State variable for power flow. Load convention is used for flow direction.
+      This means flow out from the TopologicalNode into the equipment is positive.
+  SvShuntCompensatorSections:
+    class_uri: cim:SvShuntCompensatorSections
+    attributes:
+      ShuntCompensator:
+        slot_uri: cim:SvShuntCompensatorSections.ShuntCompensator
+        range: ShuntCompensator
+        multivalued: false
+        required: true
+        description: The shunt compensator for which the state applies.
+      sections:
+        slot_uri: cim:SvShuntCompensatorSections.sections
+        range: float
+        multivalued: false
+        required: true
+        description: The number of sections in service as a continuous variable. The
+          attribute shall be a positive value or zero. To get integer value scale
+          with ShuntCompensator.bPerSection.
+    description: State variable for the number of sections in service for a shunt
+      compensator.
+  SvStatus:
+    class_uri: cim:SvStatus
+    attributes:
+      ConductingEquipment:
+        slot_uri: cim:SvStatus.ConductingEquipment
+        range: ConductingEquipment
+        multivalued: false
+        required: true
+        description: The conducting equipment associated with the status state variable.
+      inService:
+        slot_uri: cim:SvStatus.inService
+        range: boolean
+        multivalued: false
+        required: true
+        description: The in service status as a result of topology processing.  It
+          indicates if the equipment is considered as energized by the power flow.
+          It reflects if the equipment is connected within a solvable island.  It
+          does not necessarily reflect whether or not the island was solved by the
+          power flow.
+    description: State variable for status.
+  SvSwitch:
+    class_uri: cim:SvSwitch
+    attributes:
+      open:
+        slot_uri: cim:SvSwitch.open
+        range: boolean
+        multivalued: false
+        required: true
+        description: The attribute tells if the computed state of the switch is considered
+          open.
+      Switch:
+        slot_uri: cim:SvSwitch.Switch
+        range: Switch
+        multivalued: false
+        required: true
+        description: The switch associated with the switch state.
+    description: State variable for switch.
+  SvTapStep:
+    class_uri: cim:SvTapStep
+    attributes:
+      position:
+        slot_uri: cim:SvTapStep.position
+        range: float
+        multivalued: false
+        required: true
+        description: The floating point tap position.   This is not the tap ratio,
+          but rather the tap step position as defined by the related tap changer model
+          and normally is constrained to be within the range of minimum and maximum
+          tap positions.
+      TapChanger:
+        slot_uri: cim:SvTapStep.TapChanger
+        range: TapChanger
+        multivalued: false
+        required: true
+        description: The tap changer associated with the tap step state.
+    description: State variable for transformer tap step.
+  SvVoltage:
+    class_uri: cim:SvVoltage
+    attributes:
+      angle:
+        slot_uri: cim:SvVoltage.angle
+        range: AngleDegrees
+        multivalued: false
+        required: true
+        description: The voltage angle of the topological node complex voltage with
+          respect to system reference.
+      v:
+        slot_uri: cim:SvVoltage.v
+        range: Voltage
+        multivalued: false
+        required: true
+        description: The voltage magnitude at the topological node. The attribute
+          shall be a positive value.
+      TopologicalNode:
+        slot_uri: cim:SvVoltage.TopologicalNode
+        range: TopologicalNode
+        multivalued: false
+        required: true
+        description: The topological node associated with the voltage state.
+    description: State variable for voltage.
+  Switch:
+    class_uri: cim:Switch
+    attributes:
+      SvSwitch:
+        slot_uri: cim:Switch.SvSwitch
+        range: SvSwitch
+        multivalued: true
+        required: false
+        description: The switch state associated with the switch.
+    is_a: ConductingEquipment
+    description: A generic device designed to close, or open, or both, one or more
+      electric circuits.  All switches are two terminal devices including grounding
+      switches. The ACDCTerminal.connected at the two sides of the switch shall not
+      be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen
+      and .locked are relevant.
+  TapChanger:
+    class_uri: cim:TapChanger
+    attributes:
+      SvTapStep:
+        slot_uri: cim:TapChanger.SvTapStep
+        range: SvTapStep
+        multivalued: false
+        required: false
+        description: The tap step state associated with the tap changer.
+    description: Mechanism for changing transformer winding tap positions.
+  Terminal:
+    class_uri: cim:Terminal
+    attributes:
+      SvPowerFlow:
+        slot_uri: cim:Terminal.SvPowerFlow
+        range: SvPowerFlow
+        multivalued: false
+        required: false
+        description: The power flow state variable associated with the terminal.
+    is_a: ACDCTerminal
+    description: An AC electrical connection point to a piece of conducting equipment.
+      Terminals are connected at physical connection points called connectivity nodes.
+  TopologicalIsland:
+    class_uri: cim:TopologicalIsland
+    attributes:
+      AngleRefTopologicalNode:
+        slot_uri: cim:TopologicalIsland.AngleRefTopologicalNode
+        range: TopologicalNode
+        multivalued: false
+        required: true
+        description: The angle reference for the island.   Normally there is one TopologicalNode
+          that is selected as the angle reference for each island.   Other reference
+          schemes exist, so the association is typically optional.
+      TopologicalNodes:
+        slot_uri: cim:TopologicalIsland.TopologicalNodes
+        range: TopologicalNode
+        multivalued: true
+        required: true
+        description: A topological node belongs to a topological island.
+    is_a: IdentifiedObject
+    description: "An electrically connected subset of the network. Topological islands\
+      \ can change as the current network state changes, e.g. due to: \n- disconnect\
+      \ switches or breakers changing state in a SCADA/EMS.\n- manual creation, change\
+      \ or deletion of topological nodes in a planning tool.\nOnly energised TopologicalNode-s\
+      \ shall be part of the topological island."
+  TopologicalNode:
+    class_uri: cim:TopologicalNode
+    attributes:
+      SvInjection:
+        slot_uri: cim:TopologicalNode.SvInjection
+        range: SvInjection
+        multivalued: false
+        required: false
+        description: The injection flows state variables associated with the topological
+          node.
+      SvVoltage:
+        slot_uri: cim:TopologicalNode.SvVoltage
+        range: SvVoltage
+        multivalued: false
+        required: false
+        description: The state voltage associated with the topological node.
+      AngleRefTopologicalIsland:
+        slot_uri: cim:TopologicalNode.AngleRefTopologicalIsland
+        range: TopologicalIsland
+        multivalued: false
+        required: false
+        description: The island for which the node is an angle reference.   Normally
+          there is one angle reference node for each island.
+      TopologicalIsland:
+        slot_uri: cim:TopologicalNode.TopologicalIsland
+        range: TopologicalIsland
+        multivalued: false
+        required: false
+        description: A topological node belongs to a topological island.
+    description: 'For a detailed substation model a topological node is a set of connectivity
+      nodes that, in the current network state, are connected together through any
+      type of closed switches, including  jumpers. Topological nodes change as the
+      current network state changes (i.e., switches, breakers, etc. change state).
+
+      For a planning model, switch statuses are not used to form topological nodes.
+      Instead they are manually created or deleted in a model builder tool. Topological
+      nodes maintained this way are also called "busses".'
+  VsConverter:
+    class_uri: cim:VsConverter
+    attributes:
+      delta:
+        slot_uri: cim:VsConverter.delta
+        range: AngleDegrees
+        multivalued: false
+        required: true
+        description: "Angle between VsConverter.uv and ACDCConverter.uc. It is converter\u2019\
+          s state variable used in power flow. The attribute shall be a positive value\
+          \ or zero."
+      uv:
+        slot_uri: cim:VsConverter.uv
+        range: Voltage
+        multivalued: false
+        required: true
+        description: "Line-to-line voltage on the valve side of the converter transformer.\
+          \ It is converter\u2019s state variable, result from power flow. The attribute\
+          \ shall be a positive value."
+    is_a: ACDCConverter
+    description: DC side of the voltage source converter (VSC).
+enums:
+  UnitMultiplier:
+    permissible_values:
+      y:
+        meaning: cim:UnitMultiplier.y
+      z:
+        meaning: cim:UnitMultiplier.z
+      a:
+        meaning: cim:UnitMultiplier.a
+      f:
+        meaning: cim:UnitMultiplier.f
+      p:
+        meaning: cim:UnitMultiplier.p
+      n:
+        meaning: cim:UnitMultiplier.n
+      micro:
+        meaning: cim:UnitMultiplier.micro
+      m:
+        meaning: cim:UnitMultiplier.m
+      c:
+        meaning: cim:UnitMultiplier.c
+      d:
+        meaning: cim:UnitMultiplier.d
+      none:
+        meaning: cim:UnitMultiplier.none
+      da:
+        meaning: cim:UnitMultiplier.da
+      h:
+        meaning: cim:UnitMultiplier.h
+      k:
+        meaning: cim:UnitMultiplier.k
+      M:
+        meaning: cim:UnitMultiplier.M
+      G:
+        meaning: cim:UnitMultiplier.G
+      T:
+        meaning: cim:UnitMultiplier.T
+      P:
+        meaning: cim:UnitMultiplier.P
+      E:
+        meaning: cim:UnitMultiplier.E
+      Z:
+        meaning: cim:UnitMultiplier.Z
+      Y:
+        meaning: cim:UnitMultiplier.Y
+    enum_uri: http://iec.ch/TC57/CIM100#UnitMultiplier
+  UnitSymbol:
+    permissible_values:
+      none:
+        meaning: cim:UnitSymbol.none
+      m:
+        meaning: cim:UnitSymbol.m
+      kg:
+        meaning: cim:UnitSymbol.kg
+      s:
+        meaning: cim:UnitSymbol.s
+      A:
+        meaning: cim:UnitSymbol.A
+      K:
+        meaning: cim:UnitSymbol.K
+      mol:
+        meaning: cim:UnitSymbol.mol
+      cd:
+        meaning: cim:UnitSymbol.cd
+      deg:
+        meaning: cim:UnitSymbol.deg
+      rad:
+        meaning: cim:UnitSymbol.rad
+      sr:
+        meaning: cim:UnitSymbol.sr
+      Gy:
+        meaning: cim:UnitSymbol.Gy
+      Bq:
+        meaning: cim:UnitSymbol.Bq
+      degC:
+        meaning: cim:UnitSymbol.degC
+      Sv:
+        meaning: cim:UnitSymbol.Sv
+      F:
+        meaning: cim:UnitSymbol.F
+      C:
+        meaning: cim:UnitSymbol.C
+      S:
+        meaning: cim:UnitSymbol.S
+      H:
+        meaning: cim:UnitSymbol.H
+      V:
+        meaning: cim:UnitSymbol.V
+      ohm:
+        meaning: cim:UnitSymbol.ohm
+      J:
+        meaning: cim:UnitSymbol.J
+      N:
+        meaning: cim:UnitSymbol.N
+      Hz:
+        meaning: cim:UnitSymbol.Hz
+      lx:
+        meaning: cim:UnitSymbol.lx
+      lm:
+        meaning: cim:UnitSymbol.lm
+      Wb:
+        meaning: cim:UnitSymbol.Wb
+      T:
+        meaning: cim:UnitSymbol.T
+      W:
+        meaning: cim:UnitSymbol.W
+      Pa:
+        meaning: cim:UnitSymbol.Pa
+      m2:
+        meaning: cim:UnitSymbol.m2
+      m3:
+        meaning: cim:UnitSymbol.m3
+      mPers:
+        meaning: cim:UnitSymbol.mPers
+      mPers2:
+        meaning: cim:UnitSymbol.mPers2
+      m3Pers:
+        meaning: cim:UnitSymbol.m3Pers
+      mPerm3:
+        meaning: cim:UnitSymbol.mPerm3
+      kgm:
+        meaning: cim:UnitSymbol.kgm
+      kgPerm3:
+        meaning: cim:UnitSymbol.kgPerm3
+      m2Pers:
+        meaning: cim:UnitSymbol.m2Pers
+      WPermK:
+        meaning: cim:UnitSymbol.WPermK
+      JPerK:
+        meaning: cim:UnitSymbol.JPerK
+      ppm:
+        meaning: cim:UnitSymbol.ppm
+      rotPers:
+        meaning: cim:UnitSymbol.rotPers
+      radPers:
+        meaning: cim:UnitSymbol.radPers
+      WPerm2:
+        meaning: cim:UnitSymbol.WPerm2
+      JPerm2:
+        meaning: cim:UnitSymbol.JPerm2
+      SPerm:
+        meaning: cim:UnitSymbol.SPerm
+      KPers:
+        meaning: cim:UnitSymbol.KPers
+      PaPers:
+        meaning: cim:UnitSymbol.PaPers
+      JPerkgK:
+        meaning: cim:UnitSymbol.JPerkgK
+      VA:
+        meaning: cim:UnitSymbol.VA
+      VAr:
+        meaning: cim:UnitSymbol.VAr
+      cosPhi:
+        meaning: cim:UnitSymbol.cosPhi
+      Vs:
+        meaning: cim:UnitSymbol.Vs
+      V2:
+        meaning: cim:UnitSymbol.V2
+      As:
+        meaning: cim:UnitSymbol.As
+      A2:
+        meaning: cim:UnitSymbol.A2
+      A2s:
+        meaning: cim:UnitSymbol.A2s
+      VAh:
+        meaning: cim:UnitSymbol.VAh
+      Wh:
+        meaning: cim:UnitSymbol.Wh
+      VArh:
+        meaning: cim:UnitSymbol.VArh
+      VPerHz:
+        meaning: cim:UnitSymbol.VPerHz
+      HzPers:
+        meaning: cim:UnitSymbol.HzPers
+      character:
+        meaning: cim:UnitSymbol.character
+      charPers:
+        meaning: cim:UnitSymbol.charPers
+      kgm2:
+        meaning: cim:UnitSymbol.kgm2
+      dB:
+        meaning: cim:UnitSymbol.dB
+      WPers:
+        meaning: cim:UnitSymbol.WPers
+      lPers:
+        meaning: cim:UnitSymbol.lPers
+      dBm:
+        meaning: cim:UnitSymbol.dBm
+      h:
+        meaning: cim:UnitSymbol.h
+      min:
+        meaning: cim:UnitSymbol.min
+      Q:
+        meaning: cim:UnitSymbol.Q
+      Qh:
+        meaning: cim:UnitSymbol.Qh
+      ohmm:
+        meaning: cim:UnitSymbol.ohmm
+      APerm:
+        meaning: cim:UnitSymbol.APerm
+      V2h:
+        meaning: cim:UnitSymbol.V2h
+      A2h:
+        meaning: cim:UnitSymbol.A2h
+      Ah:
+        meaning: cim:UnitSymbol.Ah
+      count:
+        meaning: cim:UnitSymbol.count
+      ft3:
+        meaning: cim:UnitSymbol.ft3
+      m3Perh:
+        meaning: cim:UnitSymbol.m3Perh
+      gal:
+        meaning: cim:UnitSymbol.gal
+      Btu:
+        meaning: cim:UnitSymbol.Btu
+      l:
+        meaning: cim:UnitSymbol.l
+      lPerh:
+        meaning: cim:UnitSymbol.lPerh
+      lPerl:
+        meaning: cim:UnitSymbol.lPerl
+      gPerg:
+        meaning: cim:UnitSymbol.gPerg
+      molPerm3:
+        meaning: cim:UnitSymbol.molPerm3
+      molPermol:
+        meaning: cim:UnitSymbol.molPermol
+      molPerkg:
+        meaning: cim:UnitSymbol.molPerkg
+      sPers:
+        meaning: cim:UnitSymbol.sPers
+      HzPerHz:
+        meaning: cim:UnitSymbol.HzPerHz
+      VPerV:
+        meaning: cim:UnitSymbol.VPerV
+      APerA:
+        meaning: cim:UnitSymbol.APerA
+      VPerVA:
+        meaning: cim:UnitSymbol.VPerVA
+      rev:
+        meaning: cim:UnitSymbol.rev
+      kat:
+        meaning: cim:UnitSymbol.kat
+      JPerkg:
+        meaning: cim:UnitSymbol.JPerkg
+      m3Uncompensated:
+        meaning: cim:UnitSymbol.m3Uncompensated
+      m3Compensated:
+        meaning: cim:UnitSymbol.m3Compensated
+      WPerW:
+        meaning: cim:UnitSymbol.WPerW
+      therm:
+        meaning: cim:UnitSymbol.therm
+      onePerm:
+        meaning: cim:UnitSymbol.onePerm
+      m3Perkg:
+        meaning: cim:UnitSymbol.m3Perkg
+      Pas:
+        meaning: cim:UnitSymbol.Pas
+      Nm:
+        meaning: cim:UnitSymbol.Nm
+      NPerm:
+        meaning: cim:UnitSymbol.NPerm
+      radPers2:
+        meaning: cim:UnitSymbol.radPers2
+      JPerm3:
+        meaning: cim:UnitSymbol.JPerm3
+      VPerm:
+        meaning: cim:UnitSymbol.VPerm
+      CPerm3:
+        meaning: cim:UnitSymbol.CPerm3
+      CPerm2:
+        meaning: cim:UnitSymbol.CPerm2
+      FPerm:
+        meaning: cim:UnitSymbol.FPerm
+      HPerm:
+        meaning: cim:UnitSymbol.HPerm
+      JPermol:
+        meaning: cim:UnitSymbol.JPermol
+      JPermolK:
+        meaning: cim:UnitSymbol.JPermolK
+      CPerkg:
+        meaning: cim:UnitSymbol.CPerkg
+      GyPers:
+        meaning: cim:UnitSymbol.GyPers
+      WPersr:
+        meaning: cim:UnitSymbol.WPersr
+      WPerm2sr:
+        meaning: cim:UnitSymbol.WPerm2sr
+      katPerm3:
+        meaning: cim:UnitSymbol.katPerm3
+      d:
+        meaning: cim:UnitSymbol.d
+      anglemin:
+        meaning: cim:UnitSymbol.anglemin
+      anglesec:
+        meaning: cim:UnitSymbol.anglesec
+      ha:
+        meaning: cim:UnitSymbol.ha
+      tonne:
+        meaning: cim:UnitSymbol.tonne
+      bar:
+        meaning: cim:UnitSymbol.bar
+      mmHg:
+        meaning: cim:UnitSymbol.mmHg
+      M:
+        meaning: cim:UnitSymbol.M
+      kn:
+        meaning: cim:UnitSymbol.kn
+      Mx:
+        meaning: cim:UnitSymbol.Mx
+      G:
+        meaning: cim:UnitSymbol.G
+      Oe:
+        meaning: cim:UnitSymbol.Oe
+      Vh:
+        meaning: cim:UnitSymbol.Vh
+      WPerA:
+        meaning: cim:UnitSymbol.WPerA
+      onePerHz:
+        meaning: cim:UnitSymbol.onePerHz
+      VPerVAr:
+        meaning: cim:UnitSymbol.VPerVAr
+      ohmPerm:
+        meaning: cim:UnitSymbol.ohmPerm
+      kgPerJ:
+        meaning: cim:UnitSymbol.kgPerJ
+      JPers:
+        meaning: cim:UnitSymbol.JPers
+    enum_uri: http://iec.ch/TC57/CIM100#UnitSymbol

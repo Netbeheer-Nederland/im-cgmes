@@ -1,0 +1,88 @@
+# ActivePower
+
+
+_Product of RMS value of the voltage and the RMS value of the in-phase component of the current._
+
+
+
+
+
+**URI**: [cim:ActivePower](http://iec.ch/TC57/CIM100#ActivePower)<br />
+**Type**: Class
+
+
+
+
+```mermaid
+ classDiagram
+    class ActivePower
+      ActivePower : ActivePower.multiplier
+        
+          ActivePower --> UnitMultiplier : ActivePower.multiplier
+        
+      ActivePower : ActivePower.unit
+        
+          ActivePower --> UnitSymbol : ActivePower.unit
+        
+      ActivePower : ActivePower.value
+        
+      
+```
+
+
+
+
+<!-- no inheritance hierarchy -->
+
+
+## Attributes
+
+
+| Name | URI | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- | --- |
+| value | [cim:ActivePower.value](http://iec.ch/TC57/CIM100#ActivePower.value) | 0..1 <br />  float  |  | direct |
+| multiplier | [cim:ActivePower.multiplier](http://iec.ch/TC57/CIM100#ActivePower.multiplier) | 0..1 <br />  [UnitMultiplier](UnitMultiplier.md)  |  | direct |
+| unit | [cim:ActivePower.unit](http://iec.ch/TC57/CIM100#ActivePower.unit) | 0..1 <br />  [UnitSymbol](UnitSymbol.md)  |  | direct |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [AsynchronousMachine](AsynchronousMachine.md) | ratedMechanicalPower | range | [ActivePower](ActivePower.md) |
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+
+
+### Schema Source
+
+
+* from schema: http://iec.ch/TC57/ns/CIM/ShortCircuit-EU#Package_ShortCircuitProfile
+
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cim:ActivePower |
+| native | this:ActivePower |
+
+
+
+

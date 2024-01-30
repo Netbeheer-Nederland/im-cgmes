@@ -1,0 +1,1191 @@
+id: http://iec.ch/TC57/ns/CIM/Operation-EU#Package_OperationProfile
+name: OperationProfile
+description: This vocabulary is describing the operation profile from IEC 61970-600-2.
+title: Operation Vocabulary
+prefixes:
+  linkml: https://w3id.org/linkml/
+  cim: http://iec.ch/TC57/CIM100#
+  cims: http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#
+  dc: http://purl.org/dc/elements/1.1/
+  dcat: http://www.w3.org/ns/dcat#
+  dct: http://purl.org/dc/terms/
+  eu: http://iec.ch/TC57/CIM100-European#
+  owl: http://www.w3.org/2002/07/owl#
+  profcim: http://iec.ch/TC57/ns/CIM/prof-cim#
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  sh: http://www.w3.org/ns/shacl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  xsd: http://www.w3.org/2001/XMLSchema#
+  op: http://iec.ch/TC57/ns/CIM/Operation-EU#
+  this: http://iec.ch/TC57/ns/CIM/Operation-EU#Package_OperationProfile
+imports:
+- linkml:types
+default_curi_maps:
+- semweb_context
+default_range: string
+default_prefix: this
+classes:
+  Accumulator:
+    class_uri: cim:Accumulator
+    attributes:
+      AccumulatorValues:
+        slot_uri: cim:Accumulator.AccumulatorValues
+        range: AccumulatorValue
+        multivalued: true
+        required: false
+        description: The values connected to this measurement.
+      LimitSets:
+        slot_uri: cim:Accumulator.LimitSets
+        range: AccumulatorLimitSet
+        multivalued: true
+        required: false
+        description: A measurement may have zero or more limit ranges defined for
+          it.
+    is_a: Measurement
+    description: Accumulator represents an accumulated (counted) Measurement, e.g.
+      an energy value.
+  AccumulatorLimit:
+    class_uri: cim:AccumulatorLimit
+    attributes:
+      value:
+        slot_uri: cim:AccumulatorLimit.value
+        range: integer
+        multivalued: false
+        required: true
+        description: The value to supervise against. The value is positive.
+      LimitSet:
+        slot_uri: cim:AccumulatorLimit.LimitSet
+        range: AccumulatorLimitSet
+        multivalued: false
+        required: true
+        description: The set of limits.
+    is_a: Limit
+    description: Limit values for Accumulator measurements.
+  AccumulatorLimitSet:
+    class_uri: cim:AccumulatorLimitSet
+    attributes:
+      Measurements:
+        slot_uri: cim:AccumulatorLimitSet.Measurements
+        range: Accumulator
+        multivalued: true
+        required: true
+        description: The Measurements using the LimitSet.
+      Limits:
+        slot_uri: cim:AccumulatorLimitSet.Limits
+        range: AccumulatorLimit
+        multivalued: true
+        required: true
+        description: The limit values used for supervision of Measurements.
+    is_a: LimitSet
+    description: An AccumulatorLimitSet specifies a set of Limits that are associated
+      with an Accumulator measurement.
+  AccumulatorReset:
+    class_uri: cim:AccumulatorReset
+    attributes:
+      AccumulatorValue:
+        slot_uri: cim:AccumulatorReset.AccumulatorValue
+        range: AccumulatorValue
+        multivalued: false
+        required: true
+        description: The accumulator value that is reset by the command.
+    is_a: Control
+    description: This command resets the counter value to zero.
+  AccumulatorValue:
+    class_uri: cim:AccumulatorValue
+    attributes:
+      Accumulator:
+        slot_uri: cim:AccumulatorValue.Accumulator
+        range: Accumulator
+        multivalued: false
+        required: true
+        description: Measurement to which this value is connected.
+      AccumulatorReset:
+        slot_uri: cim:AccumulatorValue.AccumulatorReset
+        range: AccumulatorReset
+        multivalued: false
+        required: false
+        description: The command that resets the accumulator value.
+    is_a: MeasurementValue
+    description: AccumulatorValue represents an accumulated (counted) MeasurementValue.
+  ACDCTerminal:
+    class_uri: cim:ACDCTerminal
+    attributes:
+      Measurements:
+        slot_uri: cim:ACDCTerminal.Measurements
+        range: Measurement
+        multivalued: true
+        required: false
+        description: Measurements associated with this terminal defining  where the
+          measurement is placed in the network topology.  It may be used, for instance,
+          to capture the sensor position, such as a voltage transformer (PT) at a
+          busbar or a current transformer (CT) at the bar between a breaker and an
+          isolator.
+    is_a: IdentifiedObject
+    description: An electrical connection point (AC or DC) to a piece of conducting
+      equipment. Terminals are connected at physical connection points called connectivity
+      nodes.
+  Analog:
+    class_uri: cim:Analog
+    attributes:
+      positiveFlowIn:
+        slot_uri: cim:Analog.positiveFlowIn
+        range: boolean
+        multivalued: false
+        required: false
+        description: If true then this measurement is an active power, reactive power
+          or current with the convention that a positive value measured at the Terminal
+          means power is flowing into the related PowerSystemResource.
+      AnalogValues:
+        slot_uri: cim:Analog.AnalogValues
+        range: AnalogValue
+        multivalued: true
+        required: false
+        description: The values connected to this measurement.
+      LimitSets:
+        slot_uri: cim:Analog.LimitSets
+        range: AnalogLimitSet
+        multivalued: true
+        required: false
+        description: A measurement may have zero or more limit ranges defined for
+          it.
+    is_a: Measurement
+    description: Analog represents an analog Measurement.
+  AnalogControl:
+    class_uri: cim:AnalogControl
+    attributes:
+      maxValue:
+        slot_uri: cim:AnalogControl.maxValue
+        range: float
+        multivalued: false
+        required: true
+        description: Normal value range maximum for any of the Control.value. Used
+          for scaling, e.g. in bar graphs.
+      minValue:
+        slot_uri: cim:AnalogControl.minValue
+        range: float
+        multivalued: false
+        required: true
+        description: Normal value range minimum for any of the Control.value. Used
+          for scaling, e.g. in bar graphs.
+      AnalogValue:
+        slot_uri: cim:AnalogControl.AnalogValue
+        range: AnalogValue
+        multivalued: false
+        required: true
+        description: The MeasurementValue that is controlled.
+    is_a: Control
+    description: An analog control used for supervisory control.
+  AnalogLimit:
+    class_uri: cim:AnalogLimit
+    attributes:
+      value:
+        slot_uri: cim:AnalogLimit.value
+        range: float
+        multivalued: false
+        required: true
+        description: The value to supervise against.
+      LimitSet:
+        slot_uri: cim:AnalogLimit.LimitSet
+        range: AnalogLimitSet
+        multivalued: false
+        required: true
+        description: The set of limits.
+    is_a: Limit
+    description: Limit values for Analog measurements.
+  AnalogLimitSet:
+    class_uri: cim:AnalogLimitSet
+    attributes:
+      Measurements:
+        slot_uri: cim:AnalogLimitSet.Measurements
+        range: Analog
+        multivalued: true
+        required: true
+        description: The Measurements using the LimitSet.
+      Limits:
+        slot_uri: cim:AnalogLimitSet.Limits
+        range: AnalogLimit
+        multivalued: true
+        required: false
+        description: The limit values used for supervision of Measurements.
+    is_a: LimitSet
+    description: An AnalogLimitSet specifies a set of Limits that are associated with
+      an Analog measurement.
+  AnalogValue:
+    class_uri: cim:AnalogValue
+    attributes:
+      Analog:
+        slot_uri: cim:AnalogValue.Analog
+        range: Analog
+        multivalued: false
+        required: true
+        description: Measurement to which this value is connected.
+      AnalogControl:
+        slot_uri: cim:AnalogValue.AnalogControl
+        range: AnalogControl
+        multivalued: false
+        required: false
+        description: The Control variable associated with the MeasurementValue.
+    is_a: MeasurementValue
+    description: AnalogValue represents an analog MeasurementValue.
+  Command:
+    class_uri: cim:Command
+    attributes:
+      normalValue:
+        slot_uri: cim:Command.normalValue
+        range: integer
+        multivalued: false
+        required: true
+        description: Normal value for Control.value e.g. used for percentage scaling.
+      value:
+        slot_uri: cim:Command.value
+        range: integer
+        multivalued: false
+        required: true
+        description: The value representing the actuator output.
+      ValueAliasSet:
+        slot_uri: cim:Command.ValueAliasSet
+        range: ValueAliasSet
+        multivalued: false
+        required: false
+        description: The ValueAliasSet used for translation of a Control value to
+          a name.
+      DiscreteValue:
+        slot_uri: cim:Command.DiscreteValue
+        range: DiscreteValue
+        multivalued: false
+        required: true
+        description: The MeasurementValue that is controlled.
+    is_a: Control
+    description: A Command is a discrete control used for supervisory control.
+  Control:
+    class_uri: cim:Control
+    attributes:
+      controlType:
+        slot_uri: cim:Control.controlType
+        range: string
+        multivalued: false
+        required: true
+        description: Specifies the type of Control. For example, this specifies if
+          the Control represents BreakerOpen, BreakerClose, GeneratorVoltageSetPoint,
+          GeneratorRaise, GeneratorLower, etc.
+      operationInProgress:
+        slot_uri: cim:Control.operationInProgress
+        range: boolean
+        multivalued: false
+        required: false
+        description: Indicates that a client is currently sending control commands
+          that has not completed.
+      timeStamp:
+        slot_uri: cim:Control.timeStamp
+        range: date
+        multivalued: false
+        required: false
+        description: The last time a control output was sent.
+      unitMultiplier:
+        slot_uri: cim:Control.unitMultiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+        description: The unit multiplier of the controlled quantity.
+      unitSymbol:
+        slot_uri: cim:Control.unitSymbol
+        range: UnitSymbol
+        multivalued: false
+        required: false
+        description: The unit of measure of the controlled quantity.
+      PowerSystemResource:
+        slot_uri: cim:Control.PowerSystemResource
+        range: PowerSystemResource
+        multivalued: false
+        required: false
+        description: Regulating device governed by this control output.
+    is_a: IOPoint
+    description: Control is used for supervisory/device control. It represents control
+      outputs that are used to change the state in a process, e.g. close or open breaker,
+      a set point value or a raise lower command.
+  Discrete:
+    class_uri: cim:Discrete
+    attributes:
+      DiscreteValues:
+        slot_uri: cim:Discrete.DiscreteValues
+        range: DiscreteValue
+        multivalued: true
+        required: false
+        description: The values connected to this measurement.
+      ValueAliasSet:
+        slot_uri: cim:Discrete.ValueAliasSet
+        range: ValueAliasSet
+        multivalued: false
+        required: false
+        description: The ValueAliasSet used for translation of a MeasurementValue.value
+          to a name.
+    is_a: Measurement
+    description: Discrete represents a discrete Measurement, i.e. a Measurement representing
+      discrete values, e.g. a Breaker position.
+  DiscreteValue:
+    class_uri: cim:DiscreteValue
+    attributes:
+      Command:
+        slot_uri: cim:DiscreteValue.Command
+        range: Command
+        multivalued: false
+        required: false
+        description: The Control variable associated with the MeasurementValue.
+      Discrete:
+        slot_uri: cim:DiscreteValue.Discrete
+        range: Discrete
+        multivalued: false
+        required: true
+        description: Measurement to which this value is connected.
+    is_a: MeasurementValue
+    description: DiscreteValue represents a discrete MeasurementValue.
+  IdentifiedObject:
+    class_uri: cim:IdentifiedObject
+    attributes:
+      description:
+        slot_uri: cim:IdentifiedObject.description
+        range: string
+        multivalued: false
+        required: false
+        description: The description is a free human readable text describing or naming
+          the object. It may be non unique and may not correlate to a naming hierarchy.
+      mRID:
+        slot_uri: cim:IdentifiedObject.mRID
+        range: string
+        multivalued: false
+        required: true
+        description: 'Master resource identifier issued by a model authority. The
+          mRID is unique within an exchange context. Global uniqueness is easily achieved
+          by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID
+          is strongly recommended.
+
+          For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID
+          is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.'
+      name:
+        slot_uri: cim:IdentifiedObject.name
+        range: string
+        multivalued: false
+        required: true
+        description: The name is any free human readable and possibly non unique text
+          naming the object.
+    description: This is a root class to provide common identification for all classes
+      needing identification and naming attributes.
+  IOPoint:
+    class_uri: cim:IOPoint
+    is_a: IdentifiedObject
+    description: The class describe a measurement or control value. The purpose is
+      to enable having attributes and associations common for measurement and control.
+  Limit:
+    class_uri: cim:Limit
+    is_a: IdentifiedObject
+    description: Specifies one limit value for a Measurement. A Measurement typically
+      has several limits that are kept together by the LimitSet class. The actual
+      meaning and use of a Limit instance (i.e., if it is an alarm or warning limit
+      or if it is a high or low limit) is not captured in the Limit class. However
+      the name of a Limit instance may indicate both meaning and use.
+  LimitSet:
+    class_uri: cim:LimitSet
+    attributes:
+      isPercentageLimits:
+        slot_uri: cim:LimitSet.isPercentageLimits
+        range: boolean
+        multivalued: false
+        required: false
+        description: Tells if the limit values are in percentage of normalValue or
+          the specified Unit for Measurements and Controls.
+    is_a: IdentifiedObject
+    description: Specifies a set of Limits that are associated with a Measurement.
+      A Measurement may have several LimitSets corresponding to seasonal or other
+      changing conditions. The condition is captured in the name and description attributes.
+      The same LimitSet may be used for several Measurements. In particular percentage
+      limits are used this way.
+  Measurement:
+    class_uri: cim:Measurement
+    attributes:
+      Terminal:
+        slot_uri: cim:Measurement.Terminal
+        range: ACDCTerminal
+        multivalued: false
+        required: false
+        description: One or more measurements may be associated with a terminal in
+          the network.
+      measurementType:
+        slot_uri: cim:Measurement.measurementType
+        range: string
+        multivalued: false
+        required: true
+        description: 'Specifies the type of measurement.  For example, this specifies
+          if the measurement represents an indoor temperature, outdoor temperature,
+          bus voltage, line flow, etc.
+
+          When the measurementType is set to "Specialization", the type of Measurement
+          is defined in more detail by the specialized class which inherits from Measurement.'
+      phases:
+        slot_uri: cim:Measurement.phases
+        range: PhaseCode
+        multivalued: false
+        required: false
+        description: 'Indicates to which phases the measurement applies and avoids
+          the need to use ''measurementType'' to also encode phase information (which
+          would explode the types). The phase information in Measurement, along with
+          ''measurementType'' and ''phases'' uniquely defines a Measurement for a
+          device, based on normal network phase. Their meaning will not change when
+          the computed energizing phasing is changed due to jumpers or other reasons.
+
+          If the attribute is missing three phases (ABC) shall be assumed.'
+      unitMultiplier:
+        slot_uri: cim:Measurement.unitMultiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: true
+        description: The unit multiplier of the measured quantity.
+      unitSymbol:
+        slot_uri: cim:Measurement.unitSymbol
+        range: UnitSymbol
+        multivalued: false
+        required: true
+        description: The unit of measure of the measured quantity.
+      PowerSystemResource:
+        slot_uri: cim:Measurement.PowerSystemResource
+        range: PowerSystemResource
+        multivalued: false
+        required: true
+        description: The power system resource that contains the measurement.
+    is_a: IdentifiedObject
+    description: "A Measurement represents any measured, calculated or non-measured\
+      \ non-calculated quantity. Any piece of equipment may contain Measurements,\
+      \ e.g. a substation may have temperature measurements and door open indications,\
+      \ a transformer may have oil temperature and tank pressure measurements, a bay\
+      \ may contain a number of power flow measurements and a Breaker may contain\
+      \ a switch status measurement. \nThe PSR - Measurement association is intended\
+      \ to capture this use of Measurement and is included in the naming hierarchy\
+      \ based on EquipmentContainer. The naming hierarchy typically has Measurements\
+      \ as leaves, e.g. Substation-VoltageLevel-Bay-Switch-Measurement.\nSome Measurements\
+      \ represent quantities related to a particular sensor location in the network,\
+      \ e.g. a voltage transformer (VT) or potential transformer (PT) at a busbar\
+      \ or a current transformer (CT) at the bar between a breaker and an isolator.\
+      \ The sensing position is not captured in the PSR - Measurement association.\
+      \ Instead it is captured by the Measurement - Terminal association that is used\
+      \ to define the sensing location in the network topology. The location is defined\
+      \ by the connection of the Terminal to ConductingEquipment. \nIf both a Terminal\
+      \ and PSR are associated, and the PSR is of type ConductingEquipment, the associated\
+      \ Terminal should belong to that ConductingEquipment instance.\nWhen the sensor\
+      \ location is needed both Measurement-PSR and Measurement-Terminal are used.\
+      \ The Measurement-Terminal association is never used alone."
+  MeasurementValue:
+    class_uri: cim:MeasurementValue
+    attributes:
+      timeStamp:
+        slot_uri: cim:MeasurementValue.timeStamp
+        range: date
+        multivalued: false
+        required: false
+        description: The time when the value was last updated.
+      sensorAccuracy:
+        slot_uri: cim:MeasurementValue.sensorAccuracy
+        range: PerCent
+        multivalued: false
+        required: false
+        description: The limit, expressed as a percentage of the sensor maximum, that
+          errors will not exceed when the sensor is used under  reference conditions.
+      MeasurementValueQuality:
+        slot_uri: cim:MeasurementValue.MeasurementValueQuality
+        range: MeasurementValueQuality
+        multivalued: false
+        required: false
+        description: A MeasurementValue has a MeasurementValueQuality associated with
+          it.
+      MeasurementValueSource:
+        slot_uri: cim:MeasurementValue.MeasurementValueSource
+        range: MeasurementValueSource
+        multivalued: false
+        required: true
+        description: A reference to the type of source that updates the MeasurementValue,
+          e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources
+          are contained in the introduction to IEC 61970-301.
+    is_a: IOPoint
+    description: The current state for a measurement. A state value is an instance
+      of a measurement from a specific source. Measurements can be associated with
+      many state values, each representing a different source for the measurement.
+  PerCent:
+    class_uri: cim:PerCent
+    attributes:
+      value:
+        slot_uri: cim:PerCent.value
+        range: float
+        multivalued: false
+        required: false
+        description: Normally 0 to 100 on a defined base.
+      unit:
+        slot_uri: cim:PerCent.unit
+        range: UnitSymbol
+        multivalued: false
+        required: false
+      multiplier:
+        slot_uri: cim:PerCent.multiplier
+        range: UnitMultiplier
+        multivalued: false
+        required: false
+    description: Percentage on a defined base.   For example, specify as 100 to indicate
+      at the defined base.
+  MeasurementValueQuality:
+    class_uri: cim:MeasurementValueQuality
+    attributes:
+      MeasurementValue:
+        slot_uri: cim:MeasurementValueQuality.MeasurementValue
+        range: MeasurementValue
+        multivalued: false
+        required: true
+        description: A MeasurementValue has a MeasurementValueQuality associated with
+          it.
+    is_a: Quality61850
+    description: Measurement quality flags. Bits 0-10 are defined for substation automation
+      in IEC 61850-7-3. Bits 11-15 are reserved for future expansion by that document.
+      Bits 16-31 are reserved for EMS applications.
+  MeasurementValueSource:
+    class_uri: cim:MeasurementValueSource
+    attributes:
+      MeasurementValues:
+        slot_uri: cim:MeasurementValueSource.MeasurementValues
+        range: MeasurementValue
+        multivalued: true
+        required: false
+        description: The MeasurementValues updated by the source.
+    is_a: IdentifiedObject
+    description: MeasurementValueSource describes the alternative sources updating
+      a MeasurementValue. User conventions for how to use the MeasurementValueSource
+      attributes are defined in IEC 61970-301.
+  PowerSystemResource:
+    class_uri: cim:PowerSystemResource
+    attributes:
+      Controls:
+        slot_uri: cim:PowerSystemResource.Controls
+        range: Control
+        multivalued: true
+        required: false
+        description: The controller outputs used to actually govern a regulating device,
+          e.g. the magnetization of a synchronous machine or capacitor bank breaker
+          actuator.
+      Measurements:
+        slot_uri: cim:PowerSystemResource.Measurements
+        range: Measurement
+        multivalued: true
+        required: false
+        description: The measurements associated with this power system resource.
+    is_a: IdentifiedObject
+    description: A power system resource (PSR) can be an item of equipment such as
+      a switch, an equipment container containing many individual items of equipment
+      such as a substation, or an organisational entity such as sub-control area.
+      Power system resources can have measurements associated.
+  Quality61850:
+    class_uri: cim:Quality61850
+    attributes:
+      badReference:
+        slot_uri: cim:Quality61850.badReference
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value may be incorrect due to a reference being out
+          of calibration.
+      estimatorReplaced:
+        slot_uri: cim:Quality61850.estimatorReplaced
+        range: boolean
+        multivalued: false
+        required: false
+        description: Value has been replaced by State Estimator. estimatorReplaced
+          is not an IEC61850 quality bit but has been put in this class for convenience.
+      failure:
+        slot_uri: cim:Quality61850.failure
+        range: boolean
+        multivalued: false
+        required: false
+        description: This identifier indicates that a supervision function has detected
+          an internal or external failure, e.g. communication failure.
+      oldData:
+        slot_uri: cim:Quality61850.oldData
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value is old and possibly invalid, as it has not
+          been successfully updated during a specified time interval.
+      operatorBlocked:
+        slot_uri: cim:Quality61850.operatorBlocked
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value is blocked and hence unavailable for transmission.
+      oscillatory:
+        slot_uri: cim:Quality61850.oscillatory
+        range: boolean
+        multivalued: false
+        required: false
+        description: To prevent some overload of the communication it is sensible
+          to detect and suppress oscillating (fast changing) binary inputs. If a signal
+          changes in a defined time twice in the same direction (from 0 to 1 or from
+          1 to 0) then oscillation is detected and the detail quality identifier "oscillatory"
+          is set. If it is detected a configured numbers of transient changes could
+          be passed by. In this time the validity status "questionable" is set. If
+          after this defined numbers of changes the signal is still in the oscillating
+          state the value shall be set either to the opposite state of the previous
+          stable value or to a defined default value. In this case the validity status
+          "questionable" is reset and "invalid" is set as long as the signal is oscillating.
+          If it is configured such that no transient changes should be passed by then
+          the validity status "invalid" is set immediately in addition to the detail
+          quality identifier "oscillatory" (used for status information only).
+      outOfRange:
+        slot_uri: cim:Quality61850.outOfRange
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value is beyond a predefined range of value.
+      overFlow:
+        slot_uri: cim:Quality61850.overFlow
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value is beyond the capability of being  represented
+          properly. For example, a counter value overflows from maximum count back
+          to a value of zero.
+      source:
+        slot_uri: cim:Quality61850.source
+        range: Source
+        multivalued: false
+        required: false
+        description: Source gives information related to the origin of a value. The
+          value may be acquired from the process, defaulted or substituted.
+      suspect:
+        slot_uri: cim:Quality61850.suspect
+        range: boolean
+        multivalued: false
+        required: false
+        description: A correlation function has detected that the value is not consistent
+          with other values. Typically set by a network State Estimator.
+      test:
+        slot_uri: cim:Quality61850.test
+        range: boolean
+        multivalued: false
+        required: false
+        description: Measurement value is transmitted for test purposes.
+      validity:
+        slot_uri: cim:Quality61850.validity
+        range: Validity
+        multivalued: false
+        required: false
+        description: Validity of the measurement value.
+    description: Quality flags in this class are as defined in IEC 61850, except for
+      estimatorReplaced, which has been included in this class for convenience.
+  RaiseLowerCommand:
+    class_uri: cim:RaiseLowerCommand
+    attributes:
+      ValueAliasSet:
+        slot_uri: cim:RaiseLowerCommand.ValueAliasSet
+        range: ValueAliasSet
+        multivalued: false
+        required: false
+        description: The ValueAliasSet used for translation of a Control value to
+          a name.
+    is_a: AnalogControl
+    description: An analog control that increases or decreases a set point value with
+      pulses. Unless otherwise specified, one pulse moves the set point by one.
+  SetPoint:
+    class_uri: cim:SetPoint
+    attributes:
+      normalValue:
+        slot_uri: cim:SetPoint.normalValue
+        range: float
+        multivalued: false
+        required: true
+        description: Normal value for Control.value e.g. used for percentage scaling.
+      value:
+        slot_uri: cim:SetPoint.value
+        range: float
+        multivalued: false
+        required: true
+        description: The value representing the actuator output.
+    is_a: AnalogControl
+    description: An analog control that issues a set point value.
+  StringMeasurement:
+    class_uri: cim:StringMeasurement
+    attributes:
+      StringMeasurementValues:
+        slot_uri: cim:StringMeasurement.StringMeasurementValues
+        range: StringMeasurementValue
+        multivalued: true
+        required: false
+        description: The values connected to this measurement.
+    is_a: Measurement
+    description: StringMeasurement represents a measurement with values of type string.
+  StringMeasurementValue:
+    class_uri: cim:StringMeasurementValue
+    attributes:
+      StringMeasurement:
+        slot_uri: cim:StringMeasurementValue.StringMeasurement
+        range: StringMeasurement
+        multivalued: false
+        required: true
+        description: Measurement to which this value is connected.
+    is_a: MeasurementValue
+    description: StringMeasurementValue represents a measurement value of type string.
+  Terminal:
+    class_uri: cim:Terminal
+    is_a: ACDCTerminal
+    description: An AC electrical connection point to a piece of conducting equipment.
+      Terminals are connected at physical connection points called connectivity nodes.
+  ValueAliasSet:
+    class_uri: cim:ValueAliasSet
+    attributes:
+      Commands:
+        slot_uri: cim:ValueAliasSet.Commands
+        range: Command
+        multivalued: true
+        required: false
+        description: The Commands using the set for translation.
+      Discretes:
+        slot_uri: cim:ValueAliasSet.Discretes
+        range: Discrete
+        multivalued: true
+        required: false
+        description: The Measurements using the set for translation.
+      RaiseLowerCommands:
+        slot_uri: cim:ValueAliasSet.RaiseLowerCommands
+        range: RaiseLowerCommand
+        multivalued: true
+        required: false
+        description: The Commands using the set for translation.
+      Values:
+        slot_uri: cim:ValueAliasSet.Values
+        range: ValueToAlias
+        multivalued: true
+        required: true
+        description: The ValueToAlias mappings included in the set.
+    is_a: IdentifiedObject
+    description: Describes the translation of a set of values into a name and is intendend
+      to facilitate custom translations. Each ValueAliasSet has a name, description
+      etc. A specific Measurement may represent a discrete state like Open, Closed,
+      Intermediate etc. This requires a translation from the MeasurementValue.value
+      number to a string, e.g. 0-&gt;"Invalid", 1-&gt;"Open", 2-&gt;"Closed", 3-&gt;"Intermediate".
+      Each ValueToAlias member in ValueAliasSet.Value describe a mapping for one particular
+      value to a name.
+  ValueToAlias:
+    class_uri: cim:ValueToAlias
+    attributes:
+      ValueAliasSet:
+        slot_uri: cim:ValueToAlias.ValueAliasSet
+        range: ValueAliasSet
+        multivalued: false
+        required: true
+        description: The ValueAliasSet having the ValueToAlias mappings.
+      value:
+        slot_uri: cim:ValueToAlias.value
+        range: integer
+        multivalued: false
+        required: true
+        description: The value that is mapped.
+    is_a: IdentifiedObject
+    description: Describes the translation of one particular value into a name, e.g.
+      1 as "Open".
+enums:
+  UnitMultiplier:
+    permissible_values:
+      y:
+        meaning: cim:UnitMultiplier.y
+      z:
+        meaning: cim:UnitMultiplier.z
+      a:
+        meaning: cim:UnitMultiplier.a
+      f:
+        meaning: cim:UnitMultiplier.f
+      p:
+        meaning: cim:UnitMultiplier.p
+      n:
+        meaning: cim:UnitMultiplier.n
+      micro:
+        meaning: cim:UnitMultiplier.micro
+      m:
+        meaning: cim:UnitMultiplier.m
+      c:
+        meaning: cim:UnitMultiplier.c
+      d:
+        meaning: cim:UnitMultiplier.d
+      none:
+        meaning: cim:UnitMultiplier.none
+      da:
+        meaning: cim:UnitMultiplier.da
+      h:
+        meaning: cim:UnitMultiplier.h
+      k:
+        meaning: cim:UnitMultiplier.k
+      M:
+        meaning: cim:UnitMultiplier.M
+      G:
+        meaning: cim:UnitMultiplier.G
+      T:
+        meaning: cim:UnitMultiplier.T
+      P:
+        meaning: cim:UnitMultiplier.P
+      E:
+        meaning: cim:UnitMultiplier.E
+      Z:
+        meaning: cim:UnitMultiplier.Z
+      Y:
+        meaning: cim:UnitMultiplier.Y
+    enum_uri: http://iec.ch/TC57/CIM100#UnitMultiplier
+  UnitSymbol:
+    permissible_values:
+      none:
+        meaning: cim:UnitSymbol.none
+      m:
+        meaning: cim:UnitSymbol.m
+      kg:
+        meaning: cim:UnitSymbol.kg
+      s:
+        meaning: cim:UnitSymbol.s
+      A:
+        meaning: cim:UnitSymbol.A
+      K:
+        meaning: cim:UnitSymbol.K
+      mol:
+        meaning: cim:UnitSymbol.mol
+      cd:
+        meaning: cim:UnitSymbol.cd
+      deg:
+        meaning: cim:UnitSymbol.deg
+      rad:
+        meaning: cim:UnitSymbol.rad
+      sr:
+        meaning: cim:UnitSymbol.sr
+      Gy:
+        meaning: cim:UnitSymbol.Gy
+      Bq:
+        meaning: cim:UnitSymbol.Bq
+      degC:
+        meaning: cim:UnitSymbol.degC
+      Sv:
+        meaning: cim:UnitSymbol.Sv
+      F:
+        meaning: cim:UnitSymbol.F
+      C:
+        meaning: cim:UnitSymbol.C
+      S:
+        meaning: cim:UnitSymbol.S
+      H:
+        meaning: cim:UnitSymbol.H
+      V:
+        meaning: cim:UnitSymbol.V
+      ohm:
+        meaning: cim:UnitSymbol.ohm
+      J:
+        meaning: cim:UnitSymbol.J
+      N:
+        meaning: cim:UnitSymbol.N
+      Hz:
+        meaning: cim:UnitSymbol.Hz
+      lx:
+        meaning: cim:UnitSymbol.lx
+      lm:
+        meaning: cim:UnitSymbol.lm
+      Wb:
+        meaning: cim:UnitSymbol.Wb
+      T:
+        meaning: cim:UnitSymbol.T
+      W:
+        meaning: cim:UnitSymbol.W
+      Pa:
+        meaning: cim:UnitSymbol.Pa
+      m2:
+        meaning: cim:UnitSymbol.m2
+      m3:
+        meaning: cim:UnitSymbol.m3
+      mPers:
+        meaning: cim:UnitSymbol.mPers
+      mPers2:
+        meaning: cim:UnitSymbol.mPers2
+      m3Pers:
+        meaning: cim:UnitSymbol.m3Pers
+      mPerm3:
+        meaning: cim:UnitSymbol.mPerm3
+      kgm:
+        meaning: cim:UnitSymbol.kgm
+      kgPerm3:
+        meaning: cim:UnitSymbol.kgPerm3
+      m2Pers:
+        meaning: cim:UnitSymbol.m2Pers
+      WPermK:
+        meaning: cim:UnitSymbol.WPermK
+      JPerK:
+        meaning: cim:UnitSymbol.JPerK
+      ppm:
+        meaning: cim:UnitSymbol.ppm
+      rotPers:
+        meaning: cim:UnitSymbol.rotPers
+      radPers:
+        meaning: cim:UnitSymbol.radPers
+      WPerm2:
+        meaning: cim:UnitSymbol.WPerm2
+      JPerm2:
+        meaning: cim:UnitSymbol.JPerm2
+      SPerm:
+        meaning: cim:UnitSymbol.SPerm
+      KPers:
+        meaning: cim:UnitSymbol.KPers
+      PaPers:
+        meaning: cim:UnitSymbol.PaPers
+      JPerkgK:
+        meaning: cim:UnitSymbol.JPerkgK
+      VA:
+        meaning: cim:UnitSymbol.VA
+      VAr:
+        meaning: cim:UnitSymbol.VAr
+      cosPhi:
+        meaning: cim:UnitSymbol.cosPhi
+      Vs:
+        meaning: cim:UnitSymbol.Vs
+      V2:
+        meaning: cim:UnitSymbol.V2
+      As:
+        meaning: cim:UnitSymbol.As
+      A2:
+        meaning: cim:UnitSymbol.A2
+      A2s:
+        meaning: cim:UnitSymbol.A2s
+      VAh:
+        meaning: cim:UnitSymbol.VAh
+      Wh:
+        meaning: cim:UnitSymbol.Wh
+      VArh:
+        meaning: cim:UnitSymbol.VArh
+      VPerHz:
+        meaning: cim:UnitSymbol.VPerHz
+      HzPers:
+        meaning: cim:UnitSymbol.HzPers
+      character:
+        meaning: cim:UnitSymbol.character
+      charPers:
+        meaning: cim:UnitSymbol.charPers
+      kgm2:
+        meaning: cim:UnitSymbol.kgm2
+      dB:
+        meaning: cim:UnitSymbol.dB
+      WPers:
+        meaning: cim:UnitSymbol.WPers
+      lPers:
+        meaning: cim:UnitSymbol.lPers
+      dBm:
+        meaning: cim:UnitSymbol.dBm
+      h:
+        meaning: cim:UnitSymbol.h
+      min:
+        meaning: cim:UnitSymbol.min
+      Q:
+        meaning: cim:UnitSymbol.Q
+      Qh:
+        meaning: cim:UnitSymbol.Qh
+      ohmm:
+        meaning: cim:UnitSymbol.ohmm
+      APerm:
+        meaning: cim:UnitSymbol.APerm
+      V2h:
+        meaning: cim:UnitSymbol.V2h
+      A2h:
+        meaning: cim:UnitSymbol.A2h
+      Ah:
+        meaning: cim:UnitSymbol.Ah
+      count:
+        meaning: cim:UnitSymbol.count
+      ft3:
+        meaning: cim:UnitSymbol.ft3
+      m3Perh:
+        meaning: cim:UnitSymbol.m3Perh
+      gal:
+        meaning: cim:UnitSymbol.gal
+      Btu:
+        meaning: cim:UnitSymbol.Btu
+      l:
+        meaning: cim:UnitSymbol.l
+      lPerh:
+        meaning: cim:UnitSymbol.lPerh
+      lPerl:
+        meaning: cim:UnitSymbol.lPerl
+      gPerg:
+        meaning: cim:UnitSymbol.gPerg
+      molPerm3:
+        meaning: cim:UnitSymbol.molPerm3
+      molPermol:
+        meaning: cim:UnitSymbol.molPermol
+      molPerkg:
+        meaning: cim:UnitSymbol.molPerkg
+      sPers:
+        meaning: cim:UnitSymbol.sPers
+      HzPerHz:
+        meaning: cim:UnitSymbol.HzPerHz
+      VPerV:
+        meaning: cim:UnitSymbol.VPerV
+      APerA:
+        meaning: cim:UnitSymbol.APerA
+      VPerVA:
+        meaning: cim:UnitSymbol.VPerVA
+      rev:
+        meaning: cim:UnitSymbol.rev
+      kat:
+        meaning: cim:UnitSymbol.kat
+      JPerkg:
+        meaning: cim:UnitSymbol.JPerkg
+      m3Uncompensated:
+        meaning: cim:UnitSymbol.m3Uncompensated
+      m3Compensated:
+        meaning: cim:UnitSymbol.m3Compensated
+      WPerW:
+        meaning: cim:UnitSymbol.WPerW
+      therm:
+        meaning: cim:UnitSymbol.therm
+      onePerm:
+        meaning: cim:UnitSymbol.onePerm
+      m3Perkg:
+        meaning: cim:UnitSymbol.m3Perkg
+      Pas:
+        meaning: cim:UnitSymbol.Pas
+      Nm:
+        meaning: cim:UnitSymbol.Nm
+      NPerm:
+        meaning: cim:UnitSymbol.NPerm
+      radPers2:
+        meaning: cim:UnitSymbol.radPers2
+      JPerm3:
+        meaning: cim:UnitSymbol.JPerm3
+      VPerm:
+        meaning: cim:UnitSymbol.VPerm
+      CPerm3:
+        meaning: cim:UnitSymbol.CPerm3
+      CPerm2:
+        meaning: cim:UnitSymbol.CPerm2
+      FPerm:
+        meaning: cim:UnitSymbol.FPerm
+      HPerm:
+        meaning: cim:UnitSymbol.HPerm
+      JPermol:
+        meaning: cim:UnitSymbol.JPermol
+      JPermolK:
+        meaning: cim:UnitSymbol.JPermolK
+      CPerkg:
+        meaning: cim:UnitSymbol.CPerkg
+      GyPers:
+        meaning: cim:UnitSymbol.GyPers
+      WPersr:
+        meaning: cim:UnitSymbol.WPersr
+      WPerm2sr:
+        meaning: cim:UnitSymbol.WPerm2sr
+      katPerm3:
+        meaning: cim:UnitSymbol.katPerm3
+      d:
+        meaning: cim:UnitSymbol.d
+      anglemin:
+        meaning: cim:UnitSymbol.anglemin
+      anglesec:
+        meaning: cim:UnitSymbol.anglesec
+      ha:
+        meaning: cim:UnitSymbol.ha
+      tonne:
+        meaning: cim:UnitSymbol.tonne
+      bar:
+        meaning: cim:UnitSymbol.bar
+      mmHg:
+        meaning: cim:UnitSymbol.mmHg
+      M:
+        meaning: cim:UnitSymbol.M
+      kn:
+        meaning: cim:UnitSymbol.kn
+      Mx:
+        meaning: cim:UnitSymbol.Mx
+      G:
+        meaning: cim:UnitSymbol.G
+      Oe:
+        meaning: cim:UnitSymbol.Oe
+      Vh:
+        meaning: cim:UnitSymbol.Vh
+      WPerA:
+        meaning: cim:UnitSymbol.WPerA
+      onePerHz:
+        meaning: cim:UnitSymbol.onePerHz
+      VPerVAr:
+        meaning: cim:UnitSymbol.VPerVAr
+      ohmPerm:
+        meaning: cim:UnitSymbol.ohmPerm
+      kgPerJ:
+        meaning: cim:UnitSymbol.kgPerJ
+      JPers:
+        meaning: cim:UnitSymbol.JPers
+    enum_uri: http://iec.ch/TC57/CIM100#UnitSymbol
+  PhaseCode:
+    permissible_values:
+      ABCN:
+        meaning: cim:PhaseCode.ABCN
+      ABC:
+        meaning: cim:PhaseCode.ABC
+      ABN:
+        meaning: cim:PhaseCode.ABN
+      ACN:
+        meaning: cim:PhaseCode.ACN
+      BCN:
+        meaning: cim:PhaseCode.BCN
+      AB:
+        meaning: cim:PhaseCode.AB
+      AC:
+        meaning: cim:PhaseCode.AC
+      BC:
+        meaning: cim:PhaseCode.BC
+      AN:
+        meaning: cim:PhaseCode.AN
+      BN:
+        meaning: cim:PhaseCode.BN
+      CN:
+        meaning: cim:PhaseCode.CN
+      A:
+        meaning: cim:PhaseCode.A
+      B:
+        meaning: cim:PhaseCode.B
+      C:
+        meaning: cim:PhaseCode.C
+      N:
+        meaning: cim:PhaseCode.N
+      s1N:
+        meaning: cim:PhaseCode.s1N
+      s2N:
+        meaning: cim:PhaseCode.s2N
+      s12N:
+        meaning: cim:PhaseCode.s12N
+      s1:
+        meaning: cim:PhaseCode.s1
+      s2:
+        meaning: cim:PhaseCode.s2
+      s12:
+        meaning: cim:PhaseCode.s12
+      none:
+        meaning: cim:PhaseCode.none
+      X:
+        meaning: cim:PhaseCode.X
+      XY:
+        meaning: cim:PhaseCode.XY
+      XN:
+        meaning: cim:PhaseCode.XN
+      XYN:
+        meaning: cim:PhaseCode.XYN
+    enum_uri: http://iec.ch/TC57/CIM100#PhaseCode
+  Source:
+    permissible_values:
+      PROCESS:
+        meaning: cim:Source.PROCESS
+      DEFAULTED:
+        meaning: cim:Source.DEFAULTED
+      SUBSTITUTED:
+        meaning: cim:Source.SUBSTITUTED
+    enum_uri: http://iec.ch/TC57/CIM100#Source
+  Validity:
+    permissible_values:
+      GOOD:
+        meaning: cim:Validity.GOOD
+      QUESTIONABLE:
+        meaning: cim:Validity.QUESTIONABLE
+      INVALID:
+        meaning: cim:Validity.INVALID
+    enum_uri: http://iec.ch/TC57/CIM100#Validity
