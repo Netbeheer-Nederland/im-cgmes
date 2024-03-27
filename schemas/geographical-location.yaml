@@ -30,7 +30,7 @@ classes:
   IdentifiedObject:
     class_uri: cim:IdentifiedObject
     attributes:
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -62,7 +62,7 @@ classes:
   CoordinateSystem:
     class_uri: cim:CoordinateSystem
     attributes:
-      crsUrn:
+      crs_urn:
         slot_uri: cim:CoordinateSystem.crsUrn
         range: string
         multivalued: false
@@ -80,7 +80,7 @@ classes:
 
           A profile should limit this code to a set of allowed URNs agreed to by all
           sending and receiving parties.'
-      Locations:
+      locations:
         slot_uri: cim:CoordinateSystem.Locations
         range: Location
         multivalued: true
@@ -92,25 +92,25 @@ classes:
   Location:
     class_uri: cim:Location
     attributes:
-      CoordinateSystem:
+      coordinate_system:
         slot_uri: cim:Location.CoordinateSystem
         range: CoordinateSystem
         multivalued: false
         required: true
         description: Coordinate system used to describe position points of this location.
-      mainAddress:
+      main_address:
         slot_uri: cim:Location.mainAddress
         range: StreetAddress
         multivalued: false
         required: false
         description: Main address of the location.
-      PowerSystemResources:
+      power_system_resources:
         slot_uri: cim:Location.PowerSystemResources
         range: PowerSystemResource
         multivalued: false
         required: true
         description: All power system resources at this location.
-      PositionPoints:
+      position_points:
         slot_uri: cim:Location.PositionPoints
         range: PositionPoint
         multivalued: true
@@ -124,13 +124,13 @@ classes:
   StreetAddress:
     class_uri: cim:StreetAddress
     attributes:
-      streetDetail:
+      street_detail:
         slot_uri: cim:StreetAddress.streetDetail
         range: StreetDetail
         multivalued: false
         required: false
         description: Street detail.
-      townDetail:
+      town_detail:
         slot_uri: cim:StreetAddress.townDetail
         range: TownDetail
         multivalued: false
@@ -142,13 +142,13 @@ classes:
         multivalued: false
         required: false
         description: Status of this address.
-      postalCode:
+      postal_code:
         slot_uri: cim:StreetAddress.postalCode
         range: string
         multivalued: false
         required: false
         description: Postal code for the address.
-      poBox:
+      po_box:
         slot_uri: cim:StreetAddress.poBox
         range: string
         multivalued: false
@@ -206,7 +206,7 @@ classes:
         description: (if applicable) Utilities often make use of external reference
           systems, such as those of the town-planner's department or surveyor general's
           mapping system, that allocate global reference codes to streets.
-      buildingName:
+      building_name:
         slot_uri: cim:StreetDetail.buildingName
         range: string
         multivalued: false
@@ -215,39 +215,39 @@ classes:
           place of interest does not have a direct point of entry from the street,
           but may be located inside a larger structure such as a building, complex,
           office block, apartment, etc.
-      suiteNumber:
+      suite_number:
         slot_uri: cim:StreetDetail.suiteNumber
         range: string
         multivalued: false
         required: false
         description: Number of the apartment or suite.
-      addressGeneral:
+      address_general:
         slot_uri: cim:StreetDetail.addressGeneral
         range: string
         multivalued: false
         required: false
         description: First line of a free form address or some additional address
           information (for example a mail stop).
-      addressGeneral2:
+      address_general2:
         slot_uri: cim:StreetDetail.addressGeneral2
         range: string
         multivalued: false
         required: false
         description: (if applicable) Second line of a free form address.
-      addressGeneral3:
+      address_general3:
         slot_uri: cim:StreetDetail.addressGeneral3
         range: string
         multivalued: false
         required: false
         description: (if applicable) Third line of a free form address.
-      withinTownLimits:
+      within_town_limits:
         slot_uri: cim:StreetDetail.withinTownLimits
         range: boolean
         multivalued: false
         required: false
         description: True if this street is within the legal geographical boundaries
           of the specified town (default).
-      floorIdentification:
+      floor_identification:
         slot_uri: cim:StreetDetail.floorIdentification
         range: string
         multivalued: false
@@ -277,7 +277,7 @@ classes:
         multivalued: false
         required: false
         description: Town name.
-      stateOrProvince:
+      state_or_province:
         slot_uri: cim:TownDetail.stateOrProvince
         range: string
         multivalued: false
@@ -301,7 +301,7 @@ classes:
         description: Status value at 'dateTime'; prior status changes may have been
           kept in instances of activity records associated with the object to which
           this status applies.
-      dateTime:
+      date_time:
         slot_uri: cim:Status.dateTime
         range: date
         multivalued: false
@@ -325,32 +325,32 @@ classes:
   PositionPoint:
     class_uri: cim:PositionPoint
     attributes:
-      Location:
+      location:
         slot_uri: cim:PositionPoint.Location
         range: Location
         multivalued: false
         required: true
         description: Location described by this position point.
-      sequenceNumber:
+      sequence_number:
         slot_uri: cim:PositionPoint.sequenceNumber
         range: integer
         multivalued: false
         required: false
         description: Zero-relative sequence number of this point within a series of
           points.
-      xPosition:
+      x_position:
         slot_uri: cim:PositionPoint.xPosition
         range: string
         multivalued: false
         required: true
         description: X axis position.
-      yPosition:
+      y_position:
         slot_uri: cim:PositionPoint.yPosition
         range: string
         multivalued: false
         required: true
         description: Y axis position.
-      zPosition:
+      z_position:
         slot_uri: cim:PositionPoint.zPosition
         range: string
         multivalued: false
@@ -366,7 +366,7 @@ classes:
   PowerSystemResource:
     class_uri: cim:PowerSystemResource
     attributes:
-      Location:
+      location:
         slot_uri: cim:PowerSystemResource.Location
         range: Location
         multivalued: false

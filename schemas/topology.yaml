@@ -44,7 +44,7 @@ classes:
   BaseVoltage:
     class_uri: cim:BaseVoltage
     attributes:
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:BaseVoltage.TopologicalNode
         range: TopologicalNode
         multivalued: true
@@ -54,7 +54,7 @@ classes:
   ConnectivityNode:
     class_uri: cim:ConnectivityNode
     attributes:
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:ConnectivityNode.TopologicalNode
         range: TopologicalNode
         multivalued: false
@@ -66,7 +66,7 @@ classes:
   ConnectivityNodeContainer:
     class_uri: cim:ConnectivityNodeContainer
     attributes:
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:ConnectivityNodeContainer.TopologicalNode
         range: TopologicalNode
         multivalued: true
@@ -78,7 +78,7 @@ classes:
   DCBaseTerminal:
     class_uri: cim:DCBaseTerminal
     attributes:
-      DCTopologicalNode:
+      d_c_topological_node:
         slot_uri: cim:DCBaseTerminal.DCTopologicalNode
         range: DCTopologicalNode
         multivalued: false
@@ -92,7 +92,7 @@ classes:
   DCEquipmentContainer:
     class_uri: cim:DCEquipmentContainer
     attributes:
-      DCTopologicalNode:
+      d_c_topological_node:
         slot_uri: cim:DCEquipmentContainer.DCTopologicalNode
         range: DCTopologicalNode
         multivalued: true
@@ -106,7 +106,7 @@ classes:
   DCNode:
     class_uri: cim:DCNode
     attributes:
-      DCTopologicalNode:
+      d_c_topological_node:
         slot_uri: cim:DCNode.DCTopologicalNode
         range: DCTopologicalNode
         multivalued: false
@@ -123,20 +123,20 @@ classes:
   DCTopologicalNode:
     class_uri: cim:DCTopologicalNode
     attributes:
-      DCTerminals:
+      d_c_terminals:
         slot_uri: cim:DCTopologicalNode.DCTerminals
         range: DCBaseTerminal
         multivalued: true
         required: false
         description: See association end TopologicalNode.Terminal.
-      DCEquipmentContainer:
+      d_c_equipment_container:
         slot_uri: cim:DCTopologicalNode.DCEquipmentContainer
         range: DCEquipmentContainer
         multivalued: false
         required: true
         description: The connectivity node container to which the topological node
           belongs.
-      DCNodes:
+      d_c_nodes:
         slot_uri: cim:DCTopologicalNode.DCNodes
         range: DCNode
         multivalued: true
@@ -155,7 +155,7 @@ classes:
         required: false
         description: The description is a free human readable text describing or naming
           the object. It may be non unique and may not correlate to a naming hierarchy.
-      energyIdentCodeEic:
+      energy_ident_code_eic:
         slot_uri: eu:IdentifiedObject.energyIdentCodeEic
         range: string
         multivalued: false
@@ -163,7 +163,7 @@ classes:
         description: The attribute is used for an exchange of the EIC code (Energy
           identification Code). The length of the string is 16 characters as defined
           by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -182,7 +182,7 @@ classes:
         required: false
         description: The name is any free human readable and possibly non unique text
           naming the object.
-      shortName:
+      short_name:
         slot_uri: eu:IdentifiedObject.shortName
         range: string
         multivalued: false
@@ -194,7 +194,7 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:Terminal.TopologicalNode
         range: TopologicalNode
         multivalued: false
@@ -210,27 +210,27 @@ classes:
   TopologicalNode:
     class_uri: cim:TopologicalNode
     attributes:
-      BaseVoltage:
+      base_voltage:
         slot_uri: cim:TopologicalNode.BaseVoltage
         range: BaseVoltage
         multivalued: false
         required: true
         description: The base voltage of the topological node.
-      ConnectivityNodes:
+      connectivity_nodes:
         slot_uri: cim:TopologicalNode.ConnectivityNodes
         range: ConnectivityNode
         multivalued: true
         required: false
         description: The connectivity nodes combine together to form this topological
           node.  May depend on the current state of switches in the network.
-      ConnectivityNodeContainer:
+      connectivity_node_container:
         slot_uri: cim:TopologicalNode.ConnectivityNodeContainer
         range: ConnectivityNodeContainer
         multivalued: false
         required: true
         description: The connectivity node container to which the topological node
           belongs.
-      Terminal:
+      terminal:
         slot_uri: cim:TopologicalNode.Terminal
         range: Terminal
         multivalued: true
@@ -240,7 +240,7 @@ classes:
           making it unnecessary to model connectivity nodes in some cases.   Note
           that if connectivity nodes are in the model, this association would probably
           not be used as an input specification.
-      ReportingGroup:
+      reporting_group:
         slot_uri: cim:TopologicalNode.ReportingGroup
         range: ReportingGroup
         multivalued: false
@@ -258,7 +258,7 @@ classes:
   ReportingGroup:
     class_uri: cim:ReportingGroup
     attributes:
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:ReportingGroup.TopologicalNode
         range: TopologicalNode
         multivalued: true

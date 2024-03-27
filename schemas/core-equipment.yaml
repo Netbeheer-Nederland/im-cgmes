@@ -29,14 +29,14 @@ classes:
   ACDCConverter:
     class_uri: cim:ACDCConverter
     attributes:
-      baseS:
+      base_s:
         slot_uri: cim:ACDCConverter.baseS
         range: ApparentPower
         multivalued: false
         required: false
         description: Base apparent power of the converter pole. The attribute shall
           be a positive value.
-      idleLoss:
+      idle_loss:
         slot_uri: cim:ACDCConverter.idleLoss
         range: ActivePower
         multivalued: false
@@ -44,7 +44,7 @@ classes:
         description: "Active power loss in pole at no power transfer. It is converter\u2019\
           s configuration data used in power flow. The attribute shall be a positive\
           \ value."
-      maxUdc:
+      max_udc:
         slot_uri: cim:ACDCConverter.maxUdc
         range: Voltage
         multivalued: false
@@ -52,7 +52,7 @@ classes:
         description: "The maximum voltage on the DC side at which the converter should\
           \ operate. It is converter\u2019s configuration data used in power flow.\
           \ The attribute shall be a positive value."
-      minUdc:
+      min_udc:
         slot_uri: cim:ACDCConverter.minUdc
         range: Voltage
         multivalued: false
@@ -60,13 +60,13 @@ classes:
         description: "The minimum voltage on the DC side at which the converter should\
           \ operate. It is converter\u2019s configuration data used in power flow.\
           \ The attribute shall be a positive value."
-      numberOfValves:
+      number_of_valves:
         slot_uri: cim:ACDCConverter.numberOfValves
         range: integer
         multivalued: false
         required: false
         description: Number of valves in the converter. Used in loss calculations.
-      ratedUdc:
+      rated_udc:
         slot_uri: cim:ACDCConverter.ratedUdc
         range: Voltage
         multivalued: false
@@ -75,21 +75,21 @@ classes:
           \ be a positive value. It is converter\u2019s configuration data used in\
           \ power flow. For instance a bipolar HVDC link with value  200 kV has a\
           \ 400kV difference between the dc lines."
-      resistiveLoss:
+      resistive_loss:
         slot_uri: cim:ACDCConverter.resistiveLoss
         range: Resistance
         multivalued: false
         required: false
         description: "It is converter\u2019s configuration data used in power flow.\
           \ Refer to poleLossP. The attribute shall be a positive value."
-      switchingLoss:
+      switching_loss:
         slot_uri: cim:ACDCConverter.switchingLoss
         range: ActivePowerPerCurrentFlow
         multivalued: false
         required: false
         description: Switching losses, relative to the base apparent power 'baseS'.
           Refer to poleLossP. The attribute shall be a positive value.
-      valveU0:
+      valve_u0:
         slot_uri: cim:ACDCConverter.valveU0
         range: Voltage
         multivalued: false
@@ -97,21 +97,21 @@ classes:
         description: Valve threshold voltage, also called Uvalve. Forward voltage
           drop when the valve is conducting. Used in loss calculations, i.e. the switchLoss
           depend on numberOfValves * valveU0.
-      maxP:
+      max_p:
         slot_uri: cim:ACDCConverter.maxP
         range: ActivePower
         multivalued: false
         required: false
         description: Maximum active power limit. The value is overwritten by values
           of VsCapabilityCurve, if present.
-      minP:
+      min_p:
         slot_uri: cim:ACDCConverter.minP
         range: ActivePower
         multivalued: false
         required: false
         description: Minimum active power limit. The value is overwritten by values
           of VsCapabilityCurve, if present.
-      PccTerminal:
+      pcc_terminal:
         slot_uri: cim:ACDCConverter.PccTerminal
         range: Terminal
         multivalued: false
@@ -119,7 +119,7 @@ classes:
         description: Point of common coupling terminal for this converter DC side.
           It is typically the terminal on the power transformer (or switch) closest
           to the AC network.
-      DCTerminals:
+      d_c_terminals:
         slot_uri: cim:ACDCConverter.DCTerminals
         range: ACDCConverterDCTerminal
         multivalued: true
@@ -150,9 +150,6 @@ classes:
         required: false
     description: Product of the RMS value of the voltage and the RMS value of the
       current.
-  Float:
-    class_uri: cim:Float
-    description: A floating point number. The range is unspecified and not limited.
   ActivePower:
     class_uri: cim:ActivePower
     attributes:
@@ -192,9 +189,6 @@ classes:
         multivalued: false
         required: false
     description: Electrical voltage, can be both AC and DC.
-  Integer:
-    class_uri: cim:Integer
-    description: An integer number. The range is unspecified and not limited.
   Resistance:
     class_uri: cim:Resistance
     attributes:
@@ -236,7 +230,7 @@ classes:
   ACDCConverterDCTerminal:
     class_uri: cim:ACDCConverterDCTerminal
     attributes:
-      DCConductingEquipment:
+      d_c_conducting_equipment:
         slot_uri: cim:ACDCConverterDCTerminal.DCConductingEquipment
         range: ACDCConverter
         multivalued: false
@@ -263,7 +257,7 @@ classes:
   ACDCTerminal:
     class_uri: cim:ACDCTerminal
     attributes:
-      sequenceNumber:
+      sequence_number:
         slot_uri: cim:ACDCTerminal.sequenceNumber
         range: integer
         multivalued: false
@@ -272,13 +266,13 @@ classes:
           conducting equipment.  The sequence numbering starts with 1 and additional
           terminals should follow in increasing order.   The first terminal is the
           "starting point" for a two terminal branch.
-      OperationalLimitSet:
+      operational_limit_set:
         slot_uri: cim:ACDCTerminal.OperationalLimitSet
         range: OperationalLimitSet
         multivalued: true
         required: false
         description: The operational limit sets at the terminal.
-      BusNameMarker:
+      bus_name_marker:
         slot_uri: cim:ACDCTerminal.BusNameMarker
         range: BusNameMarker
         multivalued: false
@@ -318,13 +312,13 @@ classes:
         multivalued: false
         required: true
         description: Positive sequence series reactance of the entire line section.
-      Clamp:
+      clamp:
         slot_uri: cim:ACLineSegment.Clamp
         range: Clamp
         multivalued: true
         required: false
         description: The clamps connected to the line segment.
-      Cut:
+      cut:
         slot_uri: cim:ACLineSegment.Cut
         range: Cut
         multivalued: true
@@ -405,7 +399,7 @@ classes:
   ActivePowerLimit:
     class_uri: cim:ActivePowerLimit
     attributes:
-      normalValue:
+      normal_value:
         slot_uri: cim:ActivePowerLimit.normalValue
         range: ActivePower
         multivalued: false
@@ -417,7 +411,7 @@ classes:
   ApparentPowerLimit:
     class_uri: cim:ApparentPowerLimit
     attributes:
-      normalValue:
+      normal_value:
         slot_uri: cim:ApparentPowerLimit.normalValue
         range: ApparentPower
         multivalued: false
@@ -429,13 +423,13 @@ classes:
   AsynchronousMachine:
     class_uri: cim:AsynchronousMachine
     attributes:
-      nominalFrequency:
+      nominal_frequency:
         slot_uri: cim:AsynchronousMachine.nominalFrequency
         range: Frequency
         multivalued: false
         required: false
         description: Nameplate data indicates if the machine is 50 Hz or 60 Hz.
-      nominalSpeed:
+      nominal_speed:
         slot_uri: cim:AsynchronousMachine.nominalSpeed
         range: RotationSpeed
         multivalued: false
@@ -486,7 +480,7 @@ classes:
   AuxiliaryEquipment:
     class_uri: cim:AuxiliaryEquipment
     attributes:
-      Terminal:
+      terminal:
         slot_uri: cim:AuxiliaryEquipment.Terminal
         range: Terminal
         multivalued: false
@@ -502,14 +496,14 @@ classes:
   BaseVoltage:
     class_uri: cim:BaseVoltage
     attributes:
-      nominalVoltage:
+      nominal_voltage:
         slot_uri: cim:BaseVoltage.nominalVoltage
         range: Voltage
         multivalued: false
         required: true
         description: The power system resource's base voltage.  Shall be a positive
           value and not zero.
-      ConductingEquipment:
+      conducting_equipment:
         slot_uri: cim:BaseVoltage.ConductingEquipment
         range: ConductingEquipment
         multivalued: true
@@ -517,13 +511,13 @@ classes:
         description: All conducting equipment with this base voltage.  Use only when
           there is no voltage level container used and only one base voltage applies.  For
           example, not used for transformers.
-      VoltageLevel:
+      voltage_level:
         slot_uri: cim:BaseVoltage.VoltageLevel
         range: VoltageLevel
         multivalued: true
         required: false
         description: The voltage levels having this base voltage.
-      TransformerEnds:
+      transformer_ends:
         slot_uri: cim:BaseVoltage.TransformerEnds
         range: TransformerEnd
         multivalued: true
@@ -535,20 +529,20 @@ classes:
   BasicIntervalSchedule:
     class_uri: cim:BasicIntervalSchedule
     attributes:
-      startTime:
+      start_time:
         slot_uri: cim:BasicIntervalSchedule.startTime
         range: date
         multivalued: false
         required: true
         description: The time for the first time point.  The value can be a time of
           day, not a specific date.
-      value1Unit:
+      value1_unit:
         slot_uri: cim:BasicIntervalSchedule.value1Unit
         range: UnitSymbol
         multivalued: false
         required: true
         description: Value1 units of measure.
-      value2Unit:
+      value2_unit:
         slot_uri: cim:BasicIntervalSchedule.value2Unit
         range: UnitSymbol
         multivalued: false
@@ -556,17 +550,10 @@ classes:
         description: Value2 units of measure.
     is_a: IdentifiedObject
     description: Schedule of values at points in time.
-  DateTime:
-    class_uri: cim:DateTime
-    description: Date and time as "yyyy-mm-ddThh:mm:ss.sss", which conforms with ISO
-      8601. UTC time zone is specified as "yyyy-mm-ddThh:mm:ss.sssZ". A local timezone
-      relative UTC is specified as "yyyy-mm-ddThh:mm:ss.sss-hh:mm". The second component
-      (shown here as "ss.sss") could have any number of digits in its fractional part
-      to allow any kind of precision beyond seconds.
   BatteryUnit:
     class_uri: cim:BatteryUnit
     attributes:
-      ratedE:
+      rated_e:
         slot_uri: cim:BatteryUnit.ratedE
         range: RealEnergy
         multivalued: false
@@ -597,7 +584,7 @@ classes:
   Bay:
     class_uri: cim:Bay
     attributes:
-      VoltageLevel:
+      voltage_level:
         slot_uri: cim:Bay.VoltageLevel
         range: VoltageLevel
         multivalued: false
@@ -610,7 +597,7 @@ classes:
   BoundaryPoint:
     class_uri: eu:BoundaryPoint
     attributes:
-      fromEndIsoCode:
+      from_end_iso_code:
         slot_uri: eu:BoundaryPoint.fromEndIsoCode
         range: string
         multivalued: false
@@ -620,7 +607,7 @@ classes:
 
           The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
           The length of the string is 2 characters maximum.'
-      fromEndName:
+      from_end_name:
         slot_uri: eu:BoundaryPoint.fromEndName
         range: string
         multivalued: false
@@ -635,7 +622,7 @@ classes:
           -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
           of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
           the "From" side of the Boundary point is connected to.'
-      fromEndNameTso:
+      from_end_name_tso:
         slot_uri: eu:BoundaryPoint.fromEndNameTso
         range: string
         multivalued: false
@@ -643,7 +630,7 @@ classes:
         description: Identifies the name of the transmission system operator, distribution
           system operator or other entity at which the "From" side of the interconnection
           is connected to. The length of the string is 64 characters maximum.
-      toEndIsoCode:
+      to_end_iso_code:
         slot_uri: eu:BoundaryPoint.toEndIsoCode
         range: string
         multivalued: false
@@ -653,7 +640,7 @@ classes:
 
           The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
           The length of the string is 2 characters maximum.'
-      toEndName:
+      to_end_name:
         slot_uri: eu:BoundaryPoint.toEndName
         range: string
         multivalued: false
@@ -667,7 +654,7 @@ classes:
           -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
           of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
           the "To" side of the Boundary point is connected to.'
-      toEndNameTso:
+      to_end_name_tso:
         slot_uri: eu:BoundaryPoint.toEndNameTso
         range: string
         multivalued: false
@@ -675,7 +662,7 @@ classes:
         description: Identifies the name of the transmission system operator, distribution
           system operator or other entity at which the "To" side of the interconnection
           is connected to. The length of the string is 64 characters maximum.
-      isDirectCurrent:
+      is_direct_current:
         slot_uri: eu:BoundaryPoint.isDirectCurrent
         range: boolean
         multivalued: false
@@ -683,7 +670,7 @@ classes:
         description: If true, this boundary point is a point of common coupling (PCC)
           of a direct current (DC) interconnection, otherwise the interconnection
           is AC (default).
-      isExcludedFromAreaInterchange:
+      is_excluded_from_area_interchange:
         slot_uri: eu:BoundaryPoint.isExcludedFromAreaInterchange
         range: boolean
         multivalued: false
@@ -693,7 +680,7 @@ classes:
           no related tie flows. Otherwise, the interconnection is included in control
           area interchange and a TieFlow is required at all sides of the boundary
           point (default).
-      ConnectivityNode:
+      connectivity_node:
         slot_uri: eu:BoundaryPoint.ConnectivityNode
         range: ConnectivityNode
         multivalued: false
@@ -706,13 +693,6 @@ classes:
       hence all attributes of the class represent this agreement.  It is primarily
       used in a boundary model authority set which can contain one or many BoundaryPoint-s
       among other Equipment-s and their connections.
-  String:
-    class_uri: cim:String
-    description: A string consisting of a sequence of characters. The character encoding
-      is UTF-8. The string length is unspecified and unlimited.
-  Boolean:
-    class_uri: cim:Boolean
-    description: A type with the value space "true" and "false".
   Breaker:
     class_uri: cim:Breaker
     is_a: ProtectedSwitch
@@ -731,7 +711,7 @@ classes:
   BusNameMarker:
     class_uri: cim:BusNameMarker
     attributes:
-      Terminal:
+      terminal:
         slot_uri: cim:BusNameMarker.Terminal
         range: ACDCTerminal
         multivalued: true
@@ -745,7 +725,7 @@ classes:
         description: Priority of bus name marker for use as topology bus name.  Use
           0 for do not care.  Use 1 for highest priority.  Use 2 as priority is less
           than 1 and so on.
-      ReportingGroup:
+      reporting_group:
         slot_uri: cim:BusNameMarker.ReportingGroup
         range: ReportingGroup
         multivalued: false
@@ -763,7 +743,7 @@ classes:
   CAESPlant:
     class_uri: cim:CAESPlant
     attributes:
-      ThermalGeneratingUnit:
+      thermal_generating_unit:
         slot_uri: cim:CAESPlant.ThermalGeneratingUnit
         range: ThermalGeneratingUnit
         multivalued: false
@@ -775,13 +755,13 @@ classes:
   Clamp:
     class_uri: cim:Clamp
     attributes:
-      ACLineSegment:
+      a_c_line_segment:
         slot_uri: cim:Clamp.ACLineSegment
         range: ACLineSegment
         multivalued: false
         required: true
         description: The line segment to which the clamp is connected.
-      lengthFromTerminal1:
+      length_from_terminal1:
         slot_uri: cim:Clamp.lengthFromTerminal1
         range: Length
         multivalued: false
@@ -816,7 +796,7 @@ classes:
   ConformLoadSchedule:
     class_uri: cim:ConformLoadSchedule
     attributes:
-      ConformLoadGroup:
+      conform_load_group:
         slot_uri: cim:ConformLoadSchedule.ConformLoadGroup
         range: ConformLoadGroup
         multivalued: false
@@ -830,7 +810,7 @@ classes:
   CogenerationPlant:
     class_uri: cim:CogenerationPlant
     attributes:
-      ThermalGeneratingUnits:
+      thermal_generating_units:
         slot_uri: cim:CogenerationPlant.ThermalGeneratingUnits
         range: ThermalGeneratingUnit
         multivalued: true
@@ -844,7 +824,7 @@ classes:
   CombinedCyclePlant:
     class_uri: cim:CombinedCyclePlant
     attributes:
-      ThermalGeneratingUnits:
+      thermal_generating_units:
         slot_uri: cim:CombinedCyclePlant.ThermalGeneratingUnits
         range: ThermalGeneratingUnit
         multivalued: true
@@ -858,7 +838,7 @@ classes:
   ConductingEquipment:
     class_uri: cim:ConductingEquipment
     attributes:
-      BaseVoltage:
+      base_voltage:
         slot_uri: cim:ConductingEquipment.BaseVoltage
         range: BaseVoltage
         multivalued: false
@@ -866,7 +846,7 @@ classes:
         description: Base voltage of this conducting equipment.  Use only when there
           is no voltage level container used and only one base voltage applies.  For
           example, not used for transformers.
-      Terminals:
+      terminals:
         slot_uri: cim:ConductingEquipment.Terminals
         range: Terminal
         multivalued: true
@@ -893,7 +873,7 @@ classes:
   ConformLoad:
     class_uri: cim:ConformLoad
     attributes:
-      LoadGroup:
+      load_group:
         slot_uri: cim:ConformLoad.LoadGroup
         range: ConformLoadGroup
         multivalued: false
@@ -905,13 +885,13 @@ classes:
   ConformLoadGroup:
     class_uri: cim:ConformLoadGroup
     attributes:
-      ConformLoadSchedules:
+      conform_load_schedules:
         slot_uri: cim:ConformLoadGroup.ConformLoadSchedules
         range: ConformLoadSchedule
         multivalued: true
         required: false
         description: The ConformLoadSchedules in the ConformLoadGroup.
-      EnergyConsumers:
+      energy_consumers:
         slot_uri: cim:ConformLoadGroup.EnergyConsumers
         range: ConformLoad
         multivalued: true
@@ -922,20 +902,20 @@ classes:
   ConnectivityNode:
     class_uri: cim:ConnectivityNode
     attributes:
-      BoundaryPoint:
+      boundary_point:
         slot_uri: eu:ConnectivityNode.BoundaryPoint
         range: BoundaryPoint
         multivalued: false
         required: false
         description: The boundary point associated with the connectivity node.
-      Terminals:
+      terminals:
         slot_uri: cim:ConnectivityNode.Terminals
         range: Terminal
         multivalued: true
         required: false
         description: Terminals interconnected with zero impedance at a this connectivity
           node.
-      ConnectivityNodeContainer:
+      connectivity_node_container:
         slot_uri: cim:ConnectivityNode.ConnectivityNodeContainer
         range: ConnectivityNodeContainer
         multivalued: false
@@ -947,7 +927,7 @@ classes:
   ConnectivityNodeContainer:
     class_uri: cim:ConnectivityNodeContainer
     attributes:
-      ConnectivityNodes:
+      connectivity_nodes:
         slot_uri: cim:ConnectivityNodeContainer.ConnectivityNodes
         range: ConnectivityNode
         multivalued: true
@@ -975,19 +955,19 @@ classes:
           control, or other purposes.   A control area specified with primary type
           of automatic generation control could still be forecast and used as an interchange
           area in power flow analysis.
-      TieFlow:
+      tie_flow:
         slot_uri: cim:ControlArea.TieFlow
         range: TieFlow
         multivalued: true
         required: false
         description: The tie flows associated with the control area.
-      ControlAreaGeneratingUnit:
+      control_area_generating_unit:
         slot_uri: cim:ControlArea.ControlAreaGeneratingUnit
         range: ControlAreaGeneratingUnit
         multivalued: true
         required: false
         description: The generating unit specifications for the control area.
-      EnergyArea:
+      energy_area:
         slot_uri: cim:ControlArea.EnergyArea
         range: EnergyArea
         multivalued: false
@@ -1025,13 +1005,13 @@ classes:
   ControlAreaGeneratingUnit:
     class_uri: cim:ControlAreaGeneratingUnit
     attributes:
-      ControlArea:
+      control_area:
         slot_uri: cim:ControlAreaGeneratingUnit.ControlArea
         range: ControlArea
         multivalued: false
         required: true
         description: The parent control area for the generating unit specifications.
-      GeneratingUnit:
+      generating_unit:
         slot_uri: cim:ControlAreaGeneratingUnit.GeneratingUnit
         range: GeneratingUnit
         multivalued: false
@@ -1046,21 +1026,21 @@ classes:
   CsConverter:
     class_uri: cim:CsConverter
     attributes:
-      maxAlpha:
+      max_alpha:
         slot_uri: cim:CsConverter.maxAlpha
         range: AngleDegrees
         multivalued: false
         required: false
         description: "Maximum firing angle. It is converter\u2019s configuration data\
           \ used in power flow. The attribute shall be a positive value."
-      maxGamma:
+      max_gamma:
         slot_uri: cim:CsConverter.maxGamma
         range: AngleDegrees
         multivalued: false
         required: false
         description: "Maximum extinction angle. It is converter\u2019s configuration\
           \ data used in power flow. The attribute shall be a positive value."
-      maxIdc:
+      max_idc:
         slot_uri: cim:CsConverter.maxIdc
         range: CurrentFlow
         multivalued: false
@@ -1068,21 +1048,21 @@ classes:
         description: "The maximum direct current (Id) on the DC side at which the\
           \ converter should operate. It is converter\u2019s configuration data use\
           \ in power flow. The attribute shall be a positive value."
-      minAlpha:
+      min_alpha:
         slot_uri: cim:CsConverter.minAlpha
         range: AngleDegrees
         multivalued: false
         required: false
         description: "Minimum firing angle. It is converter\u2019s configuration data\
           \ used in power flow. The attribute shall be a positive value."
-      minGamma:
+      min_gamma:
         slot_uri: cim:CsConverter.minGamma
         range: AngleDegrees
         multivalued: false
         required: false
         description: "Minimum extinction angle. It is converter\u2019s configuration\
           \ data used in power flow. The attribute shall be a positive value."
-      minIdc:
+      min_idc:
         slot_uri: cim:CsConverter.minIdc
         range: CurrentFlow
         multivalued: false
@@ -1090,7 +1070,7 @@ classes:
         description: "The minimum direct current (Id) on the DC side at which the\
           \ converter should operate. It is converter\u2019s configuration data used\
           \ in power flow. The attribute shall be a positive value."
-      ratedIdc:
+      rated_idc:
         slot_uri: cim:CsConverter.ratedIdc
         range: CurrentFlow
         multivalued: false
@@ -1167,7 +1147,7 @@ classes:
   CurrentLimit:
     class_uri: cim:CurrentLimit
     attributes:
-      normalValue:
+      normal_value:
         slot_uri: cim:CurrentLimit.normalValue
         range: CurrentFlow
         multivalued: false
@@ -1186,31 +1166,31 @@ classes:
   Curve:
     class_uri: cim:Curve
     attributes:
-      curveStyle:
+      curve_style:
         slot_uri: cim:Curve.curveStyle
         range: CurveStyle
         multivalued: false
         required: true
         description: The style or shape of the curve.
-      xUnit:
+      x_unit:
         slot_uri: cim:Curve.xUnit
         range: UnitSymbol
         multivalued: false
         required: true
         description: The X-axis units of measure.
-      y1Unit:
+      y1_unit:
         slot_uri: cim:Curve.y1Unit
         range: UnitSymbol
         multivalued: false
         required: true
         description: The Y1-axis units of measure.
-      y2Unit:
+      y2_unit:
         slot_uri: cim:Curve.y2Unit
         range: UnitSymbol
         multivalued: false
         required: false
         description: The Y2-axis units of measure.
-      CurveDatas:
+      curve_datas:
         slot_uri: cim:Curve.CurveDatas
         range: CurveData
         multivalued: true
@@ -1222,7 +1202,7 @@ classes:
   CurveData:
     class_uri: cim:CurveData
     attributes:
-      Curve:
+      curve:
         slot_uri: cim:CurveData.Curve
         range: Curve
         multivalued: false
@@ -1255,13 +1235,13 @@ classes:
   Cut:
     class_uri: cim:Cut
     attributes:
-      ACLineSegment:
+      a_c_line_segment:
         slot_uri: cim:Cut.ACLineSegment
         range: ACLineSegment
         multivalued: false
         required: true
         description: The line segment to which the cut is applied.
-      lengthFromTerminal1:
+      length_from_terminal1:
         slot_uri: cim:Cut.lengthFromTerminal1
         range: Length
         multivalued: false
@@ -1286,7 +1266,7 @@ classes:
   DayType:
     class_uri: cim:DayType
     attributes:
-      SeasonDayTypeSchedules:
+      season_day_type_schedules:
         slot_uri: cim:DayType.SeasonDayTypeSchedules
         range: SeasonDayTypeSchedule
         multivalued: true
@@ -1298,7 +1278,7 @@ classes:
   DCBaseTerminal:
     class_uri: cim:DCBaseTerminal
     attributes:
-      DCNode:
+      d_c_node:
         slot_uri: cim:DCBaseTerminal.DCNode
         range: DCNode
         multivalued: false
@@ -1326,14 +1306,14 @@ classes:
   DCConductingEquipment:
     class_uri: cim:DCConductingEquipment
     attributes:
-      ratedUdc:
+      rated_udc:
         slot_uri: cim:DCConductingEquipment.ratedUdc
         range: Voltage
         multivalued: false
         required: true
         description: Rated DC device voltage. The attribute shall be a positive value.
           It is configuration data used in power flow.
-      DCTerminals:
+      d_c_terminals:
         slot_uri: cim:DCConductingEquipment.DCTerminals
         range: DCTerminal
         multivalued: true
@@ -1345,14 +1325,14 @@ classes:
   DCConverterUnit:
     class_uri: cim:DCConverterUnit
     attributes:
-      operationMode:
+      operation_mode:
         slot_uri: cim:DCConverterUnit.operationMode
         range: DCConverterOperatingModeKind
         multivalued: false
         required: true
         description: The operating mode of an HVDC bipole (bipolar, monopolar metallic
           return, etc).
-      Substation:
+      substation:
         slot_uri: cim:DCConverterUnit.Substation
         range: Substation
         multivalued: false
@@ -1371,7 +1351,7 @@ classes:
   DCEquipmentContainer:
     class_uri: cim:DCEquipmentContainer
     attributes:
-      DCNodes:
+      d_c_nodes:
         slot_uri: cim:DCEquipmentContainer.DCNodes
         range: DCNode
         multivalued: true
@@ -1422,7 +1402,7 @@ classes:
   DCLine:
     class_uri: cim:DCLine
     attributes:
-      Region:
+      region:
         slot_uri: cim:DCLine.Region
         range: SubGeographicalRegion
         multivalued: false
@@ -1485,14 +1465,14 @@ classes:
   DCNode:
     class_uri: cim:DCNode
     attributes:
-      DCTerminals:
+      d_c_terminals:
         slot_uri: cim:DCNode.DCTerminals
         range: DCBaseTerminal
         multivalued: true
         required: false
         description: DC base terminals interconnected with zero impedance at a this
           DC connectivity node.
-      DCEquipmentContainer:
+      d_c_equipment_container:
         slot_uri: cim:DCNode.DCEquipmentContainer
         range: DCEquipmentContainer
         multivalued: false
@@ -1504,7 +1484,7 @@ classes:
   RegulationSchedule:
     class_uri: cim:RegulationSchedule
     attributes:
-      RegulatingControl:
+      regulating_control:
         slot_uri: cim:RegulationSchedule.RegulatingControl
         range: RegulatingControl
         multivalued: false
@@ -1556,7 +1536,7 @@ classes:
   DCTerminal:
     class_uri: cim:DCTerminal
     attributes:
-      DCConductingEquipment:
+      d_c_conducting_equipment:
         slot_uri: cim:DCTerminal.DCConductingEquipment
         range: DCConductingEquipment
         multivalued: false
@@ -1587,7 +1567,7 @@ classes:
   EnergyArea:
     class_uri: cim:EnergyArea
     attributes:
-      ControlArea:
+      control_area:
         slot_uri: cim:EnergyArea.ControlArea
         range: ControlArea
         multivalued: false
@@ -1615,7 +1595,7 @@ classes:
         description: Active power of the load that is a fixed quantity and does not
           vary as load group value varies. Load sign convention is used, i.e. positive
           sign means flow out from a node.
-      pfixedPct:
+      pfixed_pct:
         slot_uri: cim:EnergyConsumer.pfixedPct
         range: PerCent
         multivalued: false
@@ -1631,7 +1611,7 @@ classes:
         description: Reactive power of the load that is a fixed quantity and does
           not vary as load group value varies. Load sign convention is used, i.e.
           positive sign means flow out from a node.
-      qfixedPct:
+      qfixed_pct:
         slot_uri: cim:EnergyConsumer.qfixedPct
         range: PerCent
         multivalued: false
@@ -1639,7 +1619,7 @@ classes:
         description: Fixed reactive power as a percentage of load group fixed reactive
           power. Used to represent the time-varying components.  Load sign convention
           is used, i.e. positive sign means flow out from a node.
-      LoadResponse:
+      load_response:
         slot_uri: cim:EnergyConsumer.LoadResponse
         range: LoadResponseCharacteristic
         multivalued: false
@@ -1697,7 +1677,7 @@ classes:
   EnergySchedulingType:
     class_uri: cim:EnergySchedulingType
     attributes:
-      EnergySource:
+      energy_source:
         slot_uri: cim:EnergySchedulingType.EnergySource
         range: EnergySource
         multivalued: true
@@ -1708,7 +1688,7 @@ classes:
   TapSchedule:
     class_uri: cim:TapSchedule
     attributes:
-      TapChanger:
+      tap_changer:
         slot_uri: cim:TapSchedule.TapChanger
         range: TapChanger
         multivalued: false
@@ -1719,19 +1699,19 @@ classes:
   EnergySource:
     class_uri: cim:EnergySource
     attributes:
-      EnergySchedulingType:
+      energy_scheduling_type:
         slot_uri: cim:EnergySource.EnergySchedulingType
         range: EnergySchedulingType
         multivalued: false
         required: false
         description: Energy Scheduling Type of an Energy Source.
-      nominalVoltage:
+      nominal_voltage:
         slot_uri: cim:EnergySource.nominalVoltage
         range: Voltage
         multivalued: false
         required: false
         description: Phase-to-phase nominal voltage.
-      pMin:
+      p_min:
         slot_uri: cim:EnergySource.pMin
         range: ActivePower
         multivalued: false
@@ -1739,7 +1719,7 @@ classes:
         description: This is the minimum active power that can be produced by the
           source. Load sign convention is used, i.e. positive sign means flow out
           from a TopologicalNode (bus) into the conducting equipment.
-      pMax:
+      p_max:
         slot_uri: cim:EnergySource.pMax
         range: ActivePower
         multivalued: false
@@ -1769,7 +1749,7 @@ classes:
           \ as a single aggregate power transformer or aggregate synchronous machine.\
           \  \nThe attribute is not used for EquivalentBranch, EquivalentShunt and\
           \ EquivalentInjection."
-      normallyInService:
+      normally_in_service:
         slot_uri: cim:Equipment.normallyInService
         range: boolean
         multivalued: false
@@ -1779,13 +1759,13 @@ classes:
           which determines if the equipment is energized or not. False means that
           the equipment is treated by network applications as if it is not in the
           model.
-      EquipmentContainer:
+      equipment_container:
         slot_uri: cim:Equipment.EquipmentContainer
         range: EquipmentContainer
         multivalued: false
         required: false
         description: Container of this equipment.
-      OperationalLimitSet:
+      operational_limit_set:
         slot_uri: cim:Equipment.OperationalLimitSet
         range: OperationalLimitSet
         multivalued: true
@@ -1797,7 +1777,7 @@ classes:
   EquipmentContainer:
     class_uri: cim:EquipmentContainer
     attributes:
-      Equipments:
+      equipments:
         slot_uri: cim:EquipmentContainer.Equipments
         range: Equipment
         multivalued: true
@@ -1852,7 +1832,7 @@ classes:
   EquivalentEquipment:
     class_uri: cim:EquivalentEquipment
     attributes:
-      EquivalentNetwork:
+      equivalent_network:
         slot_uri: cim:EquivalentEquipment.EquivalentNetwork
         range: EquivalentNetwork
         multivalued: false
@@ -1865,13 +1845,13 @@ classes:
   EquivalentInjection:
     class_uri: cim:EquivalentInjection
     attributes:
-      maxP:
+      max_p:
         slot_uri: cim:EquivalentInjection.maxP
         range: ActivePower
         multivalued: false
         required: false
         description: Maximum active power of the injection.
-      maxQ:
+      max_q:
         slot_uri: cim:EquivalentInjection.maxQ
         range: ReactivePower
         multivalued: false
@@ -1879,13 +1859,13 @@ classes:
         description: Maximum reactive power of the injection.  Used for modelling
           of infeed for load flow exchange. Not used for short circuit modelling.  If
           maxQ and minQ are not used ReactiveCapabilityCurve can be used.
-      minP:
+      min_p:
         slot_uri: cim:EquivalentInjection.minP
         range: ActivePower
         multivalued: false
         required: false
         description: Minimum active power of the injection.
-      minQ:
+      min_q:
         slot_uri: cim:EquivalentInjection.minQ
         range: ReactivePower
         multivalued: false
@@ -1893,7 +1873,7 @@ classes:
         description: Minimum reactive power of the injection.  Used for modelling
           of infeed for load flow exchange. Not used for short circuit modelling.  If
           maxQ and minQ are not used ReactiveCapabilityCurve can be used.
-      regulationCapability:
+      regulation_capability:
         slot_uri: cim:EquivalentInjection.regulationCapability
         range: boolean
         multivalued: false
@@ -1902,7 +1882,7 @@ classes:
           to regulate the local voltage. If true the EquivalentInjection can regulate.
           If false the EquivalentInjection cannot regulate. ReactiveCapabilityCurve
           can only be associated with EquivalentInjection  if the flag is true.
-      ReactiveCapabilityCurve:
+      reactive_capability_curve:
         slot_uri: cim:EquivalentInjection.ReactiveCapabilityCurve
         range: ReactiveCapabilityCurve
         multivalued: false
@@ -1914,7 +1894,7 @@ classes:
   EquivalentNetwork:
     class_uri: cim:EquivalentNetwork
     attributes:
-      EquivalentEquipments:
+      equivalent_equipments:
         slot_uri: cim:EquivalentNetwork.EquivalentEquipments
         range: EquivalentEquipment
         multivalued: true
@@ -1946,7 +1926,7 @@ classes:
   ExternalNetworkInjection:
     class_uri: cim:ExternalNetworkInjection
     attributes:
-      governorSCD:
+      governor_s_c_d:
         slot_uri: cim:ExternalNetworkInjection.governorSCD
         range: ActivePowerPerFrequency
         multivalued: false
@@ -1954,26 +1934,26 @@ classes:
         description: Power Frequency Bias. This is the change in power injection divided
           by the change in frequency and negated.  A positive value of the power frequency
           bias provides additional power injection upon a drop in frequency.
-      maxP:
+      max_p:
         slot_uri: cim:ExternalNetworkInjection.maxP
         range: ActivePower
         multivalued: false
         required: true
         description: Maximum active power of the injection.
-      maxQ:
+      max_q:
         slot_uri: cim:ExternalNetworkInjection.maxQ
         range: ReactivePower
         multivalued: false
         required: true
         description: Maximum reactive power limit. It is used for modelling of infeed
           for load flow exchange and not for short circuit modelling.
-      minP:
+      min_p:
         slot_uri: cim:ExternalNetworkInjection.minP
         range: ActivePower
         multivalued: false
         required: true
         description: Minimum active power of the injection.
-      minQ:
+      min_q:
         slot_uri: cim:ExternalNetworkInjection.minQ
         range: ReactivePower
         multivalued: false
@@ -2014,13 +1994,13 @@ classes:
   FossilFuel:
     class_uri: cim:FossilFuel
     attributes:
-      fossilFuelType:
+      fossil_fuel_type:
         slot_uri: cim:FossilFuel.fossilFuelType
         range: FuelType
         multivalued: false
         required: true
         description: The type of fossil fuel, such as coal, oil, or gas.
-      ThermalGeneratingUnit:
+      thermal_generating_unit:
         slot_uri: cim:FossilFuel.ThermalGeneratingUnit
         range: ThermalGeneratingUnit
         multivalued: false
@@ -2039,20 +2019,20 @@ classes:
   GeneratingUnit:
     class_uri: cim:GeneratingUnit
     attributes:
-      ControlAreaGeneratingUnit:
+      control_area_generating_unit:
         slot_uri: cim:GeneratingUnit.ControlAreaGeneratingUnit
         range: ControlAreaGeneratingUnit
         multivalued: true
         required: false
         description: ControlArea specifications for this generating unit.
-      genControlSource:
+      gen_control_source:
         slot_uri: cim:GeneratingUnit.genControlSource
         range: GeneratorControlSource
         multivalued: false
         required: false
         description: The source of controls for a generating unit.  Defines the control
           status of the generating unit.
-      governorSCD:
+      governor_s_c_d:
         slot_uri: cim:GeneratingUnit.governorSCD
         range: PerCent
         multivalued: false
@@ -2062,13 +2042,13 @@ classes:
           power of the generator and the nominal frequency and expressed in percent
           and negated. A positive value of speed change droop provides additional
           generator output upon a drop in frequency.
-      longPF:
+      long_p_f:
         slot_uri: cim:GeneratingUnit.longPF
         range: float
         multivalued: false
         required: false
         description: Generating unit long term economic participation factor.
-      maximumAllowableSpinningReserve:
+      maximum_allowable_spinning_reserve:
         slot_uri: cim:GeneratingUnit.maximumAllowableSpinningReserve
         range: ActivePower
         multivalued: false
@@ -2076,21 +2056,21 @@ classes:
         description: Maximum allowable spinning reserve. Spinning reserve will never
           be considered greater than this value regardless of the current operating
           point.
-      maxOperatingP:
+      max_operating_p:
         slot_uri: cim:GeneratingUnit.maxOperatingP
         range: ActivePower
         multivalued: false
         required: true
         description: This is the maximum operating active power limit the dispatcher
           can enter for this unit.
-      minOperatingP:
+      min_operating_p:
         slot_uri: cim:GeneratingUnit.minOperatingP
         range: ActivePower
         multivalued: false
         required: true
         description: This is the minimum operating active power limit the dispatcher
           can enter for this unit.
-      nominalP:
+      nominal_p:
         slot_uri: cim:GeneratingUnit.nominalP
         range: ActivePower
         multivalued: false
@@ -2100,7 +2080,7 @@ classes:
           droop (governorSCD attribute).
 
           The attribute shall be a positive value equal to or less than RotatingMachine.ratedS.'
-      ratedGrossMaxP:
+      rated_gross_max_p:
         slot_uri: cim:GeneratingUnit.ratedGrossMaxP
         range: ActivePower
         multivalued: false
@@ -2108,7 +2088,7 @@ classes:
         description: 'The unit''s gross rated maximum capacity (book value).
 
           The attribute shall be a positive value.'
-      ratedGrossMinP:
+      rated_gross_min_p:
         slot_uri: cim:GeneratingUnit.ratedGrossMinP
         range: ActivePower
         multivalued: false
@@ -2117,7 +2097,7 @@ classes:
           safely operate at while delivering power to the transmission grid.
 
           The attribute shall be a positive value.'
-      ratedNetMaxP:
+      rated_net_max_p:
         slot_uri: cim:GeneratingUnit.ratedNetMaxP
         range: ActivePower
         multivalued: false
@@ -2127,39 +2107,39 @@ classes:
           gross maximum capacity.
 
           The attribute shall be a positive value.'
-      shortPF:
+      short_p_f:
         slot_uri: cim:GeneratingUnit.shortPF
         range: float
         multivalued: false
         required: false
         description: Generating unit short term economic participation factor.
-      startupCost:
+      startup_cost:
         slot_uri: cim:GeneratingUnit.startupCost
         range: Money
         multivalued: false
         required: false
         description: The initial startup cost incurred for each start of the GeneratingUnit.
-      variableCost:
+      variable_cost:
         slot_uri: cim:GeneratingUnit.variableCost
         range: Money
         multivalued: false
         required: false
         description: The variable cost component of production per unit of ActivePower.
-      startupTime:
+      startup_time:
         slot_uri: cim:GeneratingUnit.startupTime
         range: Seconds
         multivalued: false
         required: false
         description: Time it takes to get the unit on-line, from the time that the
           prime mover mechanical power is applied.
-      totalEfficiency:
+      total_efficiency:
         slot_uri: cim:GeneratingUnit.totalEfficiency
         range: PerCent
         multivalued: false
         required: false
         description: The efficiency of the unit in converting the fuel into electrical
           energy.
-      GrossToNetActivePowerCurves:
+      gross_to_net_active_power_curves:
         slot_uri: cim:GeneratingUnit.GrossToNetActivePowerCurves
         range: GrossToNetActivePowerCurve
         multivalued: true
@@ -2167,7 +2147,7 @@ classes:
         description: A generating unit may have a gross active power to net active
           power curve, describing the losses and auxiliary power requirements of the
           unit.
-      RotatingMachine:
+      rotating_machine:
         slot_uri: cim:GeneratingUnit.RotatingMachine
         range: RotatingMachine
         multivalued: true
@@ -2199,9 +2179,6 @@ classes:
         multivalued: false
         required: false
     description: Amount of money.
-  Decimal:
-    class_uri: cim:Decimal
-    description: Decimal is the base-10 notational system for representing real numbers.
   Seconds:
     class_uri: cim:Seconds
     attributes:
@@ -2225,7 +2202,7 @@ classes:
   GeographicalRegion:
     class_uri: cim:GeographicalRegion
     attributes:
-      Regions:
+      regions:
         slot_uri: cim:GeographicalRegion.Regions
         range: SubGeographicalRegion
         multivalued: true
@@ -2236,7 +2213,7 @@ classes:
   GrossToNetActivePowerCurve:
     class_uri: cim:GrossToNetActivePowerCurve
     attributes:
-      GeneratingUnit:
+      generating_unit:
         slot_uri: cim:GrossToNetActivePowerCurve.GeneratingUnit
         range: GeneratingUnit
         multivalued: false
@@ -2268,25 +2245,25 @@ classes:
   HydroGeneratingUnit:
     class_uri: cim:HydroGeneratingUnit
     attributes:
-      energyConversionCapability:
+      energy_conversion_capability:
         slot_uri: cim:HydroGeneratingUnit.energyConversionCapability
         range: HydroEnergyConversionKind
         multivalued: false
         required: false
         description: Energy conversion capability for generating.
-      dropHeight:
+      drop_height:
         slot_uri: cim:HydroGeneratingUnit.dropHeight
         range: Length
         multivalued: false
         required: false
         description: The height water drops from the reservoir mid-point to the turbine.
-      turbineType:
+      turbine_type:
         slot_uri: cim:HydroGeneratingUnit.turbineType
         range: HydroTurbineKind
         multivalued: false
         required: false
         description: Type of turbine.
-      HydroPowerPlant:
+      hydro_power_plant:
         slot_uri: cim:HydroGeneratingUnit.HydroPowerPlant
         range: HydroPowerPlant
         multivalued: false
@@ -2298,19 +2275,19 @@ classes:
   HydroPowerPlant:
     class_uri: cim:HydroPowerPlant
     attributes:
-      HydroGeneratingUnits:
+      hydro_generating_units:
         slot_uri: cim:HydroPowerPlant.HydroGeneratingUnits
         range: HydroGeneratingUnit
         multivalued: true
         required: false
         description: The hydro generating unit belongs to a hydro power plant.
-      hydroPlantStorageType:
+      hydro_plant_storage_type:
         slot_uri: cim:HydroPowerPlant.hydroPlantStorageType
         range: HydroPlantStorageKind
         multivalued: false
         required: true
         description: The type of hydro power plant water storage.
-      HydroPumps:
+      hydro_pumps:
         slot_uri: cim:HydroPowerPlant.HydroPumps
         range: HydroPump
         multivalued: true
@@ -2324,14 +2301,14 @@ classes:
   HydroPump:
     class_uri: cim:HydroPump
     attributes:
-      HydroPowerPlant:
+      hydro_power_plant:
         slot_uri: cim:HydroPump.HydroPowerPlant
         range: HydroPowerPlant
         multivalued: false
         required: false
         description: The hydro pump may be a member of a pumped storage plant or a
           pump for distributing water.
-      RotatingMachine:
+      rotating_machine:
         slot_uri: cim:HydroPump.RotatingMachine
         range: RotatingMachine
         multivalued: false
@@ -2352,7 +2329,7 @@ classes:
         required: false
         description: The description is a free human readable text describing or naming
           the object. It may be non unique and may not correlate to a naming hierarchy.
-      energyIdentCodeEic:
+      energy_ident_code_eic:
         slot_uri: eu:IdentifiedObject.energyIdentCodeEic
         range: string
         multivalued: false
@@ -2360,7 +2337,7 @@ classes:
         description: The attribute is used for an exchange of the EIC code (Energy
           identification Code). The length of the string is 16 characters as defined
           by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -2379,7 +2356,7 @@ classes:
         required: true
         description: The name is any free human readable and possibly non unique text
           naming the object.
-      shortName:
+      short_name:
         slot_uri: eu:IdentifiedObject.shortName
         range: string
         multivalued: false
@@ -2402,7 +2379,7 @@ classes:
   Line:
     class_uri: cim:Line
     attributes:
-      Region:
+      region:
         slot_uri: cim:Line.Region
         range: SubGeographicalRegion
         multivalued: false
@@ -2414,13 +2391,13 @@ classes:
   LinearShuntCompensator:
     class_uri: cim:LinearShuntCompensator
     attributes:
-      bPerSection:
+      b_per_section:
         slot_uri: cim:LinearShuntCompensator.bPerSection
         range: Susceptance
         multivalued: false
         required: true
         description: Positive sequence shunt (charging) susceptance per section.
-      gPerSection:
+      g_per_section:
         slot_uri: cim:LinearShuntCompensator.gPerSection
         range: Conductance
         multivalued: false
@@ -2432,7 +2409,7 @@ classes:
   LoadArea:
     class_uri: cim:LoadArea
     attributes:
-      SubLoadAreas:
+      sub_load_areas:
         slot_uri: cim:LoadArea.SubLoadAreas
         range: SubLoadArea
         multivalued: true
@@ -2449,7 +2426,7 @@ classes:
   LoadGroup:
     class_uri: cim:LoadGroup
     attributes:
-      SubLoadArea:
+      sub_load_area:
         slot_uri: cim:LoadGroup.SubLoadArea
         range: SubLoadArea
         multivalued: false
@@ -2461,13 +2438,13 @@ classes:
   LoadResponseCharacteristic:
     class_uri: cim:LoadResponseCharacteristic
     attributes:
-      EnergyConsumer:
+      energy_consumer:
         slot_uri: cim:LoadResponseCharacteristic.EnergyConsumer
         range: EnergyConsumer
         multivalued: true
         required: false
         description: The set of loads that have the response characteristics.
-      exponentModel:
+      exponent_model:
         slot_uri: cim:LoadResponseCharacteristic.exponentModel
         range: boolean
         multivalued: false
@@ -2504,61 +2481,61 @@ classes:
 
           The sum of qConstantImpedance, qConstantCurrent and qConstantPower shall
           equal 1.'
-      pConstantCurrent:
+      p_constant_current:
         slot_uri: cim:LoadResponseCharacteristic.pConstantCurrent
         range: float
         multivalued: false
         required: false
         description: Portion of active power load modelled as constant current.
-      pConstantImpedance:
+      p_constant_impedance:
         slot_uri: cim:LoadResponseCharacteristic.pConstantImpedance
         range: float
         multivalued: false
         required: false
         description: Portion of active power load modelled as constant impedance.
-      pConstantPower:
+      p_constant_power:
         slot_uri: cim:LoadResponseCharacteristic.pConstantPower
         range: float
         multivalued: false
         required: false
         description: Portion of active power load modelled as constant power.
-      pFrequencyExponent:
+      p_frequency_exponent:
         slot_uri: cim:LoadResponseCharacteristic.pFrequencyExponent
         range: float
         multivalued: false
         required: false
         description: Exponent of per unit frequency effecting active power.
-      pVoltageExponent:
+      p_voltage_exponent:
         slot_uri: cim:LoadResponseCharacteristic.pVoltageExponent
         range: float
         multivalued: false
         required: false
         description: Exponent of per unit voltage effecting real power.
-      qConstantCurrent:
+      q_constant_current:
         slot_uri: cim:LoadResponseCharacteristic.qConstantCurrent
         range: float
         multivalued: false
         required: false
         description: Portion of reactive power load modelled as constant current.
-      qConstantImpedance:
+      q_constant_impedance:
         slot_uri: cim:LoadResponseCharacteristic.qConstantImpedance
         range: float
         multivalued: false
         required: false
         description: Portion of reactive power load modelled as constant impedance.
-      qConstantPower:
+      q_constant_power:
         slot_uri: cim:LoadResponseCharacteristic.qConstantPower
         range: float
         multivalued: false
         required: false
         description: Portion of reactive power load modelled as constant power.
-      qFrequencyExponent:
+      q_frequency_exponent:
         slot_uri: cim:LoadResponseCharacteristic.qFrequencyExponent
         range: float
         multivalued: false
         required: false
         description: Exponent of per unit frequency effecting reactive power.
-      qVoltageExponent:
+      q_voltage_exponent:
         slot_uri: cim:LoadResponseCharacteristic.qVoltageExponent
         range: float
         multivalued: false
@@ -2586,7 +2563,7 @@ classes:
   NonConformLoad:
     class_uri: cim:NonConformLoad
     attributes:
-      LoadGroup:
+      load_group:
         slot_uri: cim:NonConformLoad.LoadGroup
         range: NonConformLoadGroup
         multivalued: false
@@ -2598,13 +2575,13 @@ classes:
   NonConformLoadGroup:
     class_uri: cim:NonConformLoadGroup
     attributes:
-      EnergyConsumers:
+      energy_consumers:
         slot_uri: cim:NonConformLoadGroup.EnergyConsumers
         range: NonConformLoad
         multivalued: true
         required: true
         description: Conform loads assigned to this ConformLoadGroup.
-      NonConformLoadSchedules:
+      non_conform_load_schedules:
         slot_uri: cim:NonConformLoadGroup.NonConformLoadSchedules
         range: NonConformLoadSchedule
         multivalued: true
@@ -2615,7 +2592,7 @@ classes:
   NonConformLoadSchedule:
     class_uri: cim:NonConformLoadSchedule
     attributes:
-      NonConformLoadGroup:
+      non_conform_load_group:
         slot_uri: cim:NonConformLoadSchedule.NonConformLoadGroup
         range: NonConformLoadGroup
         multivalued: false
@@ -2628,7 +2605,7 @@ classes:
   NonlinearShuntCompensator:
     class_uri: cim:NonlinearShuntCompensator
     attributes:
-      NonlinearShuntCompensatorPoints:
+      nonlinear_shunt_compensator_points:
         slot_uri: cim:NonlinearShuntCompensator.NonlinearShuntCompensatorPoints
         range: NonlinearShuntCompensatorPoint
         multivalued: true
@@ -2642,7 +2619,7 @@ classes:
   NonlinearShuntCompensatorPoint:
     class_uri: cim:NonlinearShuntCompensatorPoint
     attributes:
-      NonlinearShuntCompensator:
+      nonlinear_shunt_compensator:
         slot_uri: cim:NonlinearShuntCompensatorPoint.NonlinearShuntCompensator
         range: NonlinearShuntCompensator
         multivalued: false
@@ -2660,7 +2637,7 @@ classes:
         multivalued: false
         required: true
         description: Positive sequence shunt (charging) conductance per section.
-      sectionNumber:
+      section_number:
         slot_uri: cim:NonlinearShuntCompensatorPoint.sectionNumber
         range: integer
         multivalued: false
@@ -2678,13 +2655,13 @@ classes:
   OperationalLimit:
     class_uri: cim:OperationalLimit
     attributes:
-      OperationalLimitSet:
+      operational_limit_set:
         slot_uri: cim:OperationalLimit.OperationalLimitSet
         range: OperationalLimitSet
         multivalued: false
         required: true
         description: The limit set to which the limit values belong.
-      OperationalLimitType:
+      operational_limit_type:
         slot_uri: cim:OperationalLimit.OperationalLimitType
         range: OperationalLimitType
         multivalued: false
@@ -2703,19 +2680,19 @@ classes:
   OperationalLimitSet:
     class_uri: cim:OperationalLimitSet
     attributes:
-      Terminal:
+      terminal:
         slot_uri: cim:OperationalLimitSet.Terminal
         range: ACDCTerminal
         multivalued: false
         required: true
         description: The terminal where the operational limit set apply.
-      Equipment:
+      equipment:
         slot_uri: cim:OperationalLimitSet.Equipment
         range: Equipment
         multivalued: false
         required: false
         description: The equipment to which the limit set applies.
-      OperationalLimitValue:
+      operational_limit_value:
         slot_uri: cim:OperationalLimitSet.OperationalLimitValue
         range: OperationalLimit
         multivalued: true
@@ -2731,13 +2708,13 @@ classes:
   OperationalLimitType:
     class_uri: cim:OperationalLimitType
     attributes:
-      OperationalLimit:
+      operational_limit:
         slot_uri: cim:OperationalLimitType.OperationalLimit
         range: OperationalLimit
         multivalued: true
         required: false
         description: The operational limits associated with this type of limit.
-      acceptableDuration:
+      acceptable_duration:
         slot_uri: cim:OperationalLimitType.acceptableDuration
         range: Seconds
         multivalued: false
@@ -2754,7 +2731,7 @@ classes:
         multivalued: false
         required: true
         description: The direction of the limit.
-      isInfiniteDuration:
+      is_infinite_duration:
         slot_uri: cim:OperationalLimitType.isInfiniteDuration
         range: boolean
         multivalued: false
@@ -2779,7 +2756,7 @@ classes:
   PhaseTapChanger:
     class_uri: cim:PhaseTapChanger
     attributes:
-      TransformerEnd:
+      transformer_end:
         slot_uri: cim:PhaseTapChanger.TransformerEnd
         range: TransformerEnd
         multivalued: false
@@ -2793,7 +2770,7 @@ classes:
   PhaseTapChangerAsymmetrical:
     class_uri: cim:PhaseTapChangerAsymmetrical
     attributes:
-      windingConnectionAngle:
+      winding_connection_angle:
         slot_uri: cim:PhaseTapChangerAsymmetrical.windingConnectionAngle
         range: AngleDegrees
         multivalued: false
@@ -2814,7 +2791,7 @@ classes:
   PhaseTapChangerLinear:
     class_uri: cim:PhaseTapChangerLinear
     attributes:
-      stepPhaseShiftIncrement:
+      step_phase_shift_increment:
         slot_uri: cim:PhaseTapChangerLinear.stepPhaseShiftIncrement
         range: AngleDegrees
         multivalued: false
@@ -2826,7 +2803,7 @@ classes:
           The actual phase shift increment might be more accurately computed from
           the symmetrical or asymmetrical models or a tap step table lookup if those
           are available.'
-      xMax:
+      x_max:
         slot_uri: cim:PhaseTapChangerLinear.xMax
         range: Reactance
         multivalued: false
@@ -2835,7 +2812,7 @@ classes:
           u\" shaped curve. The maximum reactance (xMax) appears at the low and high\
           \ tap positions. Depending on the \u201Cu\u201D curve the attribute can\
           \ be either higher or lower than PowerTransformerEnd.x."
-      xMin:
+      x_min:
         slot_uri: cim:PhaseTapChangerLinear.xMin
         range: Reactance
         multivalued: false
@@ -2855,7 +2832,7 @@ classes:
   PhaseTapChangerNonLinear:
     class_uri: cim:PhaseTapChangerNonLinear
     attributes:
-      voltageStepIncrement:
+      voltage_step_increment:
         slot_uri: cim:PhaseTapChangerNonLinear.voltageStepIncrement
         range: PerCent
         multivalued: false
@@ -2868,7 +2845,7 @@ classes:
 
           When the increment is negative, the voltage decreases when the tap step
           increases.'
-      xMax:
+      x_max:
         slot_uri: cim:PhaseTapChangerNonLinear.xMax
         range: Reactance
         multivalued: false
@@ -2877,7 +2854,7 @@ classes:
           u\" shaped curve. The maximum reactance (xMax) appears at the low and high\
           \ tap positions. Depending on the \u201Cu\u201D curve the attribute can\
           \ be either higher or lower than PowerTransformerEnd.x."
-      xMin:
+      x_min:
         slot_uri: cim:PhaseTapChangerNonLinear.xMin
         range: Reactance
         multivalued: false
@@ -2901,13 +2878,13 @@ classes:
   PhaseTapChangerTable:
     class_uri: cim:PhaseTapChangerTable
     attributes:
-      PhaseTapChangerTablePoint:
+      phase_tap_changer_table_point:
         slot_uri: cim:PhaseTapChangerTable.PhaseTapChangerTablePoint
         range: PhaseTapChangerTablePoint
         multivalued: true
         required: true
         description: The points of this table.
-      PhaseTapChangerTabular:
+      phase_tap_changer_tabular:
         slot_uri: cim:PhaseTapChangerTable.PhaseTapChangerTabular
         range: PhaseTapChangerTabular
         multivalued: true
@@ -2919,7 +2896,7 @@ classes:
   PhaseTapChangerTablePoint:
     class_uri: cim:PhaseTapChangerTablePoint
     attributes:
-      PhaseTapChangerTable:
+      phase_tap_changer_table:
         slot_uri: cim:PhaseTapChangerTablePoint.PhaseTapChangerTable
         range: PhaseTapChangerTable
         multivalued: false
@@ -2938,7 +2915,7 @@ classes:
   PhaseTapChangerTabular:
     class_uri: cim:PhaseTapChangerTabular
     attributes:
-      PhaseTapChangerTable:
+      phase_tap_changer_table:
         slot_uri: cim:PhaseTapChangerTabular.PhaseTapChangerTable
         range: PhaseTapChangerTable
         multivalued: false
@@ -2967,21 +2944,21 @@ classes:
   PowerElectronicsConnection:
     class_uri: cim:PowerElectronicsConnection
     attributes:
-      maxQ:
+      max_q:
         slot_uri: cim:PowerElectronicsConnection.maxQ
         range: ReactivePower
         multivalued: false
         required: false
         description: Maximum reactive power limit. This is the maximum (nameplate)
           limit for the unit.
-      minQ:
+      min_q:
         slot_uri: cim:PowerElectronicsConnection.minQ
         range: ReactivePower
         multivalued: false
         required: false
         description: Minimum reactive power limit for the unit. This is the minimum
           (nameplate) limit for the unit.
-      ratedS:
+      rated_s:
         slot_uri: cim:PowerElectronicsConnection.ratedS
         range: ApparentPower
         multivalued: false
@@ -2989,7 +2966,7 @@ classes:
         description: 'Nameplate apparent power rating for the unit.
 
           The attribute shall have a positive value.'
-      ratedU:
+      rated_u:
         slot_uri: cim:PowerElectronicsConnection.ratedU
         range: Voltage
         multivalued: false
@@ -2998,7 +2975,7 @@ classes:
           used for short circuit data exchange according to IEC 60909.
 
           The attribute shall be a positive value.'
-      PowerElectronicsUnit:
+      power_electronics_unit:
         slot_uri: cim:PowerElectronicsConnection.PowerElectronicsUnit
         range: PowerElectronicsUnit
         multivalued: false
@@ -3011,20 +2988,20 @@ classes:
   PowerElectronicsUnit:
     class_uri: cim:PowerElectronicsUnit
     attributes:
-      PowerElectronicsConnection:
+      power_electronics_connection:
         slot_uri: cim:PowerElectronicsUnit.PowerElectronicsConnection
         range: PowerElectronicsConnection
         multivalued: false
         required: true
         description: A power electronics unit has a connection to the AC network.
-      maxP:
+      max_p:
         slot_uri: cim:PowerElectronicsUnit.maxP
         range: ActivePower
         multivalued: false
         required: false
         description: Maximum active power limit. This is the maximum (nameplate) limit
           for the unit.
-      minP:
+      min_p:
         slot_uri: cim:PowerElectronicsUnit.minP
         range: ActivePower
         multivalued: false
@@ -3049,7 +3026,7 @@ classes:
   PowerTransformer:
     class_uri: cim:PowerTransformer
     attributes:
-      PowerTransformerEnd:
+      power_transformer_end:
         slot_uri: cim:PowerTransformer.PowerTransformerEnd
         range: PowerTransformerEnd
         multivalued: true
@@ -3073,7 +3050,7 @@ classes:
   PowerTransformerEnd:
     class_uri: cim:PowerTransformerEnd
     attributes:
-      PowerTransformer:
+      power_transformer:
         slot_uri: cim:PowerTransformerEnd.PowerTransformer
         range: PowerTransformer
         multivalued: false
@@ -3086,13 +3063,13 @@ classes:
         required: true
         description: Magnetizing branch susceptance (B mag).  The value can be positive
           or negative.
-      connectionKind:
+      connection_kind:
         slot_uri: cim:PowerTransformerEnd.connectionKind
         range: WindingConnection
         multivalued: false
         required: false
         description: Kind of connection.
-      ratedS:
+      rated_s:
         slot_uri: cim:PowerTransformerEnd.ratedS
         range: ApparentPower
         multivalued: false
@@ -3107,7 +3084,7 @@ classes:
         multivalued: false
         required: false
         description: Magnetizing branch conductance.
-      ratedU:
+      rated_u:
         slot_uri: cim:PowerTransformerEnd.ratedU
         range: Voltage
         multivalued: false
@@ -3173,7 +3150,7 @@ classes:
   RatioTapChanger:
     class_uri: cim:RatioTapChanger
     attributes:
-      stepVoltageIncrement:
+      step_voltage_increment:
         slot_uri: cim:RatioTapChanger.stepVoltageIncrement
         range: PerCent
         multivalued: false
@@ -3183,13 +3160,13 @@ classes:
 
           When the increment is negative, the voltage decreases when the tap step
           increases.'
-      RatioTapChangerTable:
+      ratio_tap_changer_table:
         slot_uri: cim:RatioTapChanger.RatioTapChangerTable
         range: RatioTapChangerTable
         multivalued: false
         required: false
         description: The tap ratio table for this ratio  tap changer.
-      TransformerEnd:
+      transformer_end:
         slot_uri: cim:RatioTapChanger.TransformerEnd
         range: TransformerEnd
         multivalued: false
@@ -3206,13 +3183,13 @@ classes:
   RatioTapChangerTable:
     class_uri: cim:RatioTapChangerTable
     attributes:
-      RatioTapChanger:
+      ratio_tap_changer:
         slot_uri: cim:RatioTapChangerTable.RatioTapChanger
         range: RatioTapChanger
         multivalued: true
         required: false
         description: The ratio tap changer of this tap ratio table.
-      RatioTapChangerTablePoint:
+      ratio_tap_changer_table_point:
         slot_uri: cim:RatioTapChangerTable.RatioTapChangerTablePoint
         range: RatioTapChangerTablePoint
         multivalued: true
@@ -3224,7 +3201,7 @@ classes:
   RatioTapChangerTablePoint:
     class_uri: cim:RatioTapChangerTablePoint
     attributes:
-      RatioTapChangerTable:
+      ratio_tap_changer_table:
         slot_uri: cim:RatioTapChangerTablePoint.RatioTapChangerTable
         range: RatioTapChangerTable
         multivalued: false
@@ -3235,13 +3212,13 @@ classes:
   ReactiveCapabilityCurve:
     class_uri: cim:ReactiveCapabilityCurve
     attributes:
-      EquivalentInjection:
+      equivalent_injection:
         slot_uri: cim:ReactiveCapabilityCurve.EquivalentInjection
         range: EquivalentInjection
         multivalued: true
         required: false
         description: The equivalent injection using this reactive capability curve.
-      InitiallyUsedBySynchronousMachines:
+      initially_used_by_synchronous_machines:
         slot_uri: cim:ReactiveCapabilityCurve.InitiallyUsedBySynchronousMachines
         range: SynchronousMachine
         multivalued: true
@@ -3257,7 +3234,7 @@ classes:
   RegulatingCondEq:
     class_uri: cim:RegulatingCondEq
     attributes:
-      RegulatingControl:
+      regulating_control:
         slot_uri: cim:RegulatingCondEq.RegulatingControl
         range: RegulatingControl
         multivalued: false
@@ -3269,13 +3246,13 @@ classes:
   RegulatingControl:
     class_uri: cim:RegulatingControl
     attributes:
-      RegulationSchedule:
+      regulation_schedule:
         slot_uri: cim:RegulatingControl.RegulationSchedule
         range: RegulationSchedule
         multivalued: true
         required: false
         description: Schedule for this regulating control.
-      RegulatingCondEq:
+      regulating_cond_eq:
         slot_uri: cim:RegulatingControl.RegulatingCondEq
         range: RegulatingCondEq
         multivalued: true
@@ -3289,7 +3266,7 @@ classes:
         description: The regulating control mode presently available.  This specification
           allows for determining the kind of regulation without need for obtaining
           the units from a schedule.
-      Terminal:
+      terminal:
         slot_uri: cim:RegulatingControl.Terminal
         range: Terminal
         multivalued: false
@@ -3327,7 +3304,7 @@ classes:
   RegularTimePoint:
     class_uri: cim:RegularTimePoint
     attributes:
-      sequenceNumber:
+      sequence_number:
         slot_uri: cim:RegularTimePoint.sequenceNumber
         range: integer
         multivalued: false
@@ -3353,7 +3330,7 @@ classes:
         required: false
         description: The second value at the time. The meaning of the value is defined
           by the derived type of the associated schedule.
-      IntervalSchedule:
+      interval_schedule:
         slot_uri: cim:RegularTimePoint.IntervalSchedule
         range: RegularIntervalSchedule
         multivalued: false
@@ -3364,21 +3341,21 @@ classes:
   RegularIntervalSchedule:
     class_uri: cim:RegularIntervalSchedule
     attributes:
-      TimePoints:
+      time_points:
         slot_uri: cim:RegularIntervalSchedule.TimePoints
         range: RegularTimePoint
         multivalued: true
         required: true
         description: The regular interval time point data values that define this
           schedule.
-      timeStep:
+      time_step:
         slot_uri: cim:RegularIntervalSchedule.timeStep
         range: Seconds
         multivalued: false
         required: true
         description: The time between each pair of subsequent regular time points
           in sequence order.
-      endTime:
+      end_time:
         slot_uri: cim:RegularIntervalSchedule.endTime
         range: date
         multivalued: false
@@ -3390,7 +3367,7 @@ classes:
   ReportingGroup:
     class_uri: cim:ReportingGroup
     attributes:
-      BusNameMarker:
+      bus_name_marker:
         slot_uri: cim:ReportingGroup.BusNameMarker
         range: BusNameMarker
         multivalued: true
@@ -3401,14 +3378,14 @@ classes:
   RotatingMachine:
     class_uri: cim:RotatingMachine
     attributes:
-      GeneratingUnit:
+      generating_unit:
         slot_uri: cim:RotatingMachine.GeneratingUnit
         range: GeneratingUnit
         multivalued: false
         required: false
         description: A synchronous machine may operate as a generator and as such
           becomes a member of a generating unit.
-      HydroPump:
+      hydro_pump:
         slot_uri: cim:RotatingMachine.HydroPump
         range: HydroPump
         multivalued: false
@@ -3416,7 +3393,7 @@ classes:
         description: The synchronous machine drives the turbine which moves the water
           from a low elevation to a higher elevation. The direction of machine rotation
           for pumping may or may not be the same as for generating.
-      ratedPowerFactor:
+      rated_power_factor:
         slot_uri: cim:RotatingMachine.ratedPowerFactor
         range: float
         multivalued: false
@@ -3424,7 +3401,7 @@ classes:
         description: Power factor (nameplate data). It is primarily used for short
           circuit data exchange according to IEC 60909. The attribute cannot be a
           negative value.
-      ratedS:
+      rated_s:
         slot_uri: cim:RotatingMachine.ratedS
         range: ApparentPower
         multivalued: false
@@ -3432,7 +3409,7 @@ classes:
         description: 'Nameplate apparent power rating for the unit.
 
           The attribute shall have a positive value.'
-      ratedU:
+      rated_u:
         slot_uri: cim:RotatingMachine.ratedU
         range: Voltage
         multivalued: false
@@ -3446,19 +3423,19 @@ classes:
   Season:
     class_uri: cim:Season
     attributes:
-      endDate:
+      end_date:
         slot_uri: cim:Season.endDate
         range: date
         multivalued: false
         required: true
         description: Date season ends.
-      startDate:
+      start_date:
         slot_uri: cim:Season.startDate
         range: date
         multivalued: false
         required: true
         description: Date season starts.
-      SeasonDayTypeSchedules:
+      season_day_type_schedules:
         slot_uri: cim:Season.SeasonDayTypeSchedules
         range: SeasonDayTypeSchedule
         multivalued: true
@@ -3466,9 +3443,6 @@ classes:
         description: Schedules that use this Season.
     is_a: IdentifiedObject
     description: A specified time period of the year.
-  MonthDay:
-    class_uri: cim:MonthDay
-    description: MonthDay format as "--mm-dd", which conforms with XSD data type gMonthDay.
   Sensor:
     class_uri: cim:Sensor
     is_a: AuxiliaryEquipment
@@ -3477,13 +3451,13 @@ classes:
   SeasonDayTypeSchedule:
     class_uri: cim:SeasonDayTypeSchedule
     attributes:
-      DayType:
+      day_type:
         slot_uri: cim:SeasonDayTypeSchedule.DayType
         range: DayType
         multivalued: false
         required: true
         description: DayType for the Schedule.
-      Season:
+      season:
         slot_uri: cim:SeasonDayTypeSchedule.Season
         range: Season
         multivalued: false
@@ -3513,7 +3487,7 @@ classes:
   ShuntCompensator:
     class_uri: cim:ShuntCompensator
     attributes:
-      aVRDelay:
+      a_v_r_delay:
         slot_uri: cim:ShuntCompensator.aVRDelay
         range: Seconds
         multivalued: false
@@ -3528,13 +3502,13 @@ classes:
         required: false
         description: Used for Yn and Zn connections. True if the neutral is solidly
           grounded.
-      maximumSections:
+      maximum_sections:
         slot_uri: cim:ShuntCompensator.maximumSections
         range: integer
         multivalued: false
         required: true
         description: The maximum number of sections that may be switched in.
-      nomU:
+      nom_u:
         slot_uri: cim:ShuntCompensator.nomU
         range: Voltage
         multivalued: false
@@ -3542,14 +3516,14 @@ classes:
         description: The voltage at which the nominal reactive power may be calculated.
           This should normally be within 10% of the voltage at which the capacitor
           is connected to the network.
-      normalSections:
+      normal_sections:
         slot_uri: cim:ShuntCompensator.normalSections
         range: integer
         multivalued: false
         required: true
         description: The normal number of sections switched in. The value shall be
           between zero and ShuntCompensator.maximumSections.
-      voltageSensitivity:
+      voltage_sensitivity:
         slot_uri: cim:ShuntCompensator.voltageSensitivity
         range: VoltagePerReactivePower
         multivalued: false
@@ -3583,7 +3557,7 @@ classes:
   SolarGeneratingUnit:
     class_uri: cim:SolarGeneratingUnit
     attributes:
-      SolarPowerPlant:
+      solar_power_plant:
         slot_uri: eu:SolarGeneratingUnit.SolarPowerPlant
         range: SolarPowerPlant
         multivalued: false
@@ -3595,7 +3569,7 @@ classes:
   SolarPowerPlant:
     class_uri: eu:SolarPowerPlant
     attributes:
-      SolarGeneratingUnits:
+      solar_generating_units:
         slot_uri: eu:SolarPowerPlant.SolarGeneratingUnits
         range: SolarGeneratingUnit
         multivalued: true
@@ -3607,14 +3581,14 @@ classes:
   StaticVarCompensator:
     class_uri: cim:StaticVarCompensator
     attributes:
-      capacitiveRating:
+      capacitive_rating:
         slot_uri: cim:StaticVarCompensator.capacitiveRating
         range: Reactance
         multivalued: false
         required: true
         description: Capacitive reactance at maximum capacitive reactive power.  Shall
           always be positive.
-      inductiveRating:
+      inductive_rating:
         slot_uri: cim:StaticVarCompensator.inductiveRating
         range: Reactance
         multivalued: false
@@ -3631,13 +3605,13 @@ classes:
           bus voltage and the voltage setpoint.
 
           The attribute shall be a positive value or zero.'
-      sVCControlMode:
+      s_v_c_control_mode:
         slot_uri: cim:StaticVarCompensator.sVCControlMode
         range: SVCControlMode
         multivalued: false
         required: false
         description: SVC control mode.
-      voltageSetPoint:
+      voltage_set_point:
         slot_uri: cim:StaticVarCompensator.voltageSetPoint
         range: Voltage
         multivalued: false
@@ -3664,26 +3638,26 @@ classes:
   SubGeographicalRegion:
     class_uri: cim:SubGeographicalRegion
     attributes:
-      DCLines:
+      d_c_lines:
         slot_uri: cim:SubGeographicalRegion.DCLines
         range: DCLine
         multivalued: true
         required: false
         description: The DC lines in this sub-geographical region.
-      Region:
+      region:
         slot_uri: cim:SubGeographicalRegion.Region
         range: GeographicalRegion
         multivalued: false
         required: true
         description: The geographical region which this sub-geographical region is
           within.
-      Lines:
+      lines:
         slot_uri: cim:SubGeographicalRegion.Lines
         range: Line
         multivalued: true
         required: false
         description: The lines within the sub-geographical region.
-      Substations:
+      substations:
         slot_uri: cim:SubGeographicalRegion.Substations
         range: Substation
         multivalued: true
@@ -3694,13 +3668,13 @@ classes:
   SubLoadArea:
     class_uri: cim:SubLoadArea
     attributes:
-      LoadArea:
+      load_area:
         slot_uri: cim:SubLoadArea.LoadArea
         range: LoadArea
         multivalued: false
         required: true
         description: The LoadArea where the SubLoadArea belongs.
-      LoadGroups:
+      load_groups:
         slot_uri: cim:SubLoadArea.LoadGroups
         range: LoadGroup
         multivalued: true
@@ -3712,19 +3686,19 @@ classes:
   Substation:
     class_uri: cim:Substation
     attributes:
-      DCConverterUnit:
+      d_c_converter_unit:
         slot_uri: cim:Substation.DCConverterUnit
         range: DCConverterUnit
         multivalued: true
         required: false
         description: The DC converter unit belonging of the substation.
-      Region:
+      region:
         slot_uri: cim:Substation.Region
         range: SubGeographicalRegion
         multivalued: false
         required: true
         description: The SubGeographicalRegion containing the substation.
-      VoltageLevels:
+      voltage_levels:
         slot_uri: cim:Substation.VoltageLevels
         range: VoltageLevel
         multivalued: true
@@ -3743,7 +3717,7 @@ classes:
   Switch:
     class_uri: cim:Switch
     attributes:
-      normalOpen:
+      normal_open:
         slot_uri: cim:Switch.normalOpen
         range: boolean
         multivalued: false
@@ -3751,7 +3725,7 @@ classes:
         description: The attribute is used in cases when no Measurement for the status
           value is present. If the Switch has a status measurement the Discrete.normalValue
           is expected to match with the Switch.normalOpen.
-      ratedCurrent:
+      rated_current:
         slot_uri: cim:Switch.ratedCurrent
         range: CurrentFlow
         multivalued: false
@@ -3767,7 +3741,7 @@ classes:
         required: true
         description: Branch is retained in the topological solution.  The flow through
           retained switches will normally be calculated in power flow.
-      SwitchSchedules:
+      switch_schedules:
         slot_uri: cim:Switch.SwitchSchedules
         range: SwitchSchedule
         multivalued: true
@@ -3782,7 +3756,7 @@ classes:
   SwitchSchedule:
     class_uri: cim:SwitchSchedule
     attributes:
-      Switch:
+      switch:
         slot_uri: cim:SwitchSchedule.Switch
         range: Switch
         multivalued: false
@@ -3794,27 +3768,27 @@ classes:
   SynchronousMachine:
     class_uri: cim:SynchronousMachine
     attributes:
-      InitialReactiveCapabilityCurve:
+      initial_reactive_capability_curve:
         slot_uri: cim:SynchronousMachine.InitialReactiveCapabilityCurve
         range: ReactiveCapabilityCurve
         multivalued: false
         required: false
         description: The default reactive capability curve for use by a synchronous
           machine.
-      maxQ:
+      max_q:
         slot_uri: cim:SynchronousMachine.maxQ
         range: ReactivePower
         multivalued: false
         required: false
         description: Maximum reactive power limit. This is the maximum (nameplate)
           limit for the unit.
-      minQ:
+      min_q:
         slot_uri: cim:SynchronousMachine.minQ
         range: ReactivePower
         multivalued: false
         required: false
         description: Minimum reactive power limit for the unit.
-      qPercent:
+      q_percent:
         slot_uri: cim:SynchronousMachine.qPercent
         range: PerCent
         multivalued: false
@@ -3835,13 +3809,13 @@ classes:
   TapChanger:
     class_uri: cim:TapChanger
     attributes:
-      TapSchedules:
+      tap_schedules:
         slot_uri: cim:TapChanger.TapSchedules
         range: TapSchedule
         multivalued: true
         required: false
         description: A TapChanger can have TapSchedules.
-      highStep:
+      high_step:
         slot_uri: cim:TapChanger.highStep
         range: integer
         multivalued: false
@@ -3849,19 +3823,19 @@ classes:
         description: 'Highest possible tap step position, advance from neutral.
 
           The attribute shall be greater than lowStep.'
-      lowStep:
+      low_step:
         slot_uri: cim:TapChanger.lowStep
         range: integer
         multivalued: false
         required: true
         description: Lowest possible tap step position, retard from neutral.
-      ltcFlag:
+      ltc_flag:
         slot_uri: cim:TapChanger.ltcFlag
         range: boolean
         multivalued: false
         required: true
         description: Specifies whether or not a TapChanger has load tap changing capabilities.
-      neutralStep:
+      neutral_step:
         slot_uri: cim:TapChanger.neutralStep
         range: integer
         multivalued: false
@@ -3874,7 +3848,7 @@ classes:
           It is the step position where the voltage is neutralU when the other terminals
           of the transformer are at the ratedU.  If there are other tap changers on
           the transformer those taps are kept constant at their neutralStep.'
-      neutralU:
+      neutral_u:
         slot_uri: cim:TapChanger.neutralU
         range: Voltage
         multivalued: false
@@ -3889,7 +3863,7 @@ classes:
 
           This attribute is not relevant for PhaseTapChangerAsymmetrical, PhaseTapChangerSymmetrical
           and PhaseTapChangerLinear.'
-      normalStep:
+      normal_step:
         slot_uri: cim:TapChanger.normalStep
         range: integer
         multivalued: false
@@ -3900,7 +3874,7 @@ classes:
 
           The attribute shall be equal to or greater than lowStep and equal to or
           less than highStep.'
-      TapChangerControl:
+      tap_changer_control:
         slot_uri: cim:TapChanger.TapChangerControl
         range: TapChangerControl
         multivalued: false
@@ -3911,7 +3885,7 @@ classes:
   TapChangerControl:
     class_uri: cim:TapChangerControl
     attributes:
-      TapChanger:
+      tap_changer:
         slot_uri: cim:TapChangerControl.TapChanger
         range: TapChanger
         multivalued: true
@@ -3993,20 +3967,20 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      ConverterDCSides:
+      converter_d_c_sides:
         slot_uri: cim:Terminal.ConverterDCSides
         range: ACDCConverter
         multivalued: true
         required: false
         description: All converters' DC sides linked to this point of common coupling
           terminal.
-      AuxiliaryEquipment:
+      auxiliary_equipment:
         slot_uri: cim:Terminal.AuxiliaryEquipment
         range: AuxiliaryEquipment
         multivalued: true
         required: false
         description: The auxiliary equipment connected to the terminal.
-      ConductingEquipment:
+      conducting_equipment:
         slot_uri: cim:Terminal.ConductingEquipment
         range: ConductingEquipment
         multivalued: false
@@ -4014,14 +3988,14 @@ classes:
         description: The conducting equipment of the terminal.  Conducting equipment
           have  terminals that may be connected to other conducting equipment terminals
           via connectivity nodes or topological nodes.
-      ConnectivityNode:
+      connectivity_node:
         slot_uri: cim:Terminal.ConnectivityNode
         range: ConnectivityNode
         multivalued: false
         required: false
         description: The connectivity node to which this terminal connects with zero
           impedance.
-      RegulatingControl:
+      regulating_control:
         slot_uri: cim:Terminal.RegulatingControl
         range: RegulatingControl
         multivalued: true
@@ -4040,13 +4014,13 @@ classes:
 
           The phase code on terminals connecting same ConnectivityNode or same TopologicalNode
           as well as for equipment between two terminals shall be consistent.'
-      TransformerEnd:
+      transformer_end:
         slot_uri: cim:Terminal.TransformerEnd
         range: TransformerEnd
         multivalued: true
         required: false
         description: All transformer ends connected at this terminal.
-      TieFlow:
+      tie_flow:
         slot_uri: cim:Terminal.TieFlow
         range: TieFlow
         multivalued: true
@@ -4058,27 +4032,27 @@ classes:
   ThermalGeneratingUnit:
     class_uri: cim:ThermalGeneratingUnit
     attributes:
-      CAESPlant:
+      c_a_e_s_plant:
         slot_uri: cim:ThermalGeneratingUnit.CAESPlant
         range: CAESPlant
         multivalued: false
         required: false
         description: A thermal generating unit may be a member of a compressed air
           energy storage plant.
-      CogenerationPlant:
+      cogeneration_plant:
         slot_uri: cim:ThermalGeneratingUnit.CogenerationPlant
         range: CogenerationPlant
         multivalued: false
         required: false
         description: A thermal generating unit may be a member of a cogeneration plant.
-      CombinedCyclePlant:
+      combined_cycle_plant:
         slot_uri: cim:ThermalGeneratingUnit.CombinedCyclePlant
         range: CombinedCyclePlant
         multivalued: false
         required: false
         description: A thermal generating unit may be a member of a combined cycle
           plant.
-      FossilFuels:
+      fossil_fuels:
         slot_uri: cim:ThermalGeneratingUnit.FossilFuels
         range: FossilFuel
         multivalued: true
@@ -4090,19 +4064,19 @@ classes:
   TieFlow:
     class_uri: cim:TieFlow
     attributes:
-      ControlArea:
+      control_area:
         slot_uri: cim:TieFlow.ControlArea
         range: ControlArea
         multivalued: false
         required: true
         description: The control area of the tie flows.
-      Terminal:
+      terminal:
         slot_uri: cim:TieFlow.Terminal
         range: Terminal
         multivalued: false
         required: true
         description: The terminal to which this tie flow belongs.
-      positiveFlowIn:
+      positive_flow_in:
         slot_uri: cim:TieFlow.positiveFlowIn
         range: boolean
         multivalued: false
@@ -4118,33 +4092,33 @@ classes:
   TransformerEnd:
     class_uri: cim:TransformerEnd
     attributes:
-      BaseVoltage:
+      base_voltage:
         slot_uri: cim:TransformerEnd.BaseVoltage
         range: BaseVoltage
         multivalued: false
         required: true
         description: Base voltage of the transformer end.  This is essential for PU
           calculation.
-      PhaseTapChanger:
+      phase_tap_changer:
         slot_uri: cim:TransformerEnd.PhaseTapChanger
         range: PhaseTapChanger
         multivalued: false
         required: false
         description: Phase tap changer associated with this transformer end.
-      RatioTapChanger:
+      ratio_tap_changer:
         slot_uri: cim:TransformerEnd.RatioTapChanger
         range: RatioTapChanger
         multivalued: false
         required: false
         description: Ratio tap changer associated with this transformer end.
-      Terminal:
+      terminal:
         slot_uri: cim:TransformerEnd.Terminal
         range: Terminal
         multivalued: false
         required: true
         description: Terminal of the power transformer to which this transformer end
           belongs.
-      endNumber:
+      end_number:
         slot_uri: cim:TransformerEnd.endNumber
         range: integer
         multivalued: false
@@ -4162,25 +4136,25 @@ classes:
   VoltageLevel:
     class_uri: cim:VoltageLevel
     attributes:
-      BaseVoltage:
+      base_voltage:
         slot_uri: cim:VoltageLevel.BaseVoltage
         range: BaseVoltage
         multivalued: false
         required: true
         description: The base voltage used for all equipment within the voltage level.
-      Bays:
+      bays:
         slot_uri: cim:VoltageLevel.Bays
         range: Bay
         multivalued: true
         required: false
         description: The bays within this voltage level.
-      Substation:
+      substation:
         slot_uri: cim:VoltageLevel.Substation
         range: Substation
         multivalued: false
         required: true
         description: The substation of the voltage level.
-      highVoltageLimit:
+      high_voltage_limit:
         slot_uri: cim:VoltageLevel.highVoltageLimit
         range: Voltage
         multivalued: false
@@ -4190,7 +4164,7 @@ classes:
           The limit applies to all equipment and nodes contained in a given VoltageLevel.
           It is not required that it is exchanged in pair with lowVoltageLimit. It
           is preferable to use operational VoltageLimit, which prevails, if present.'
-      lowVoltageLimit:
+      low_voltage_limit:
         slot_uri: cim:VoltageLevel.lowVoltageLimit
         range: Voltage
         multivalued: false
@@ -4207,7 +4181,7 @@ classes:
   VoltageLimit:
     class_uri: cim:VoltageLimit
     attributes:
-      normalValue:
+      normal_value:
         slot_uri: cim:VoltageLimit.normalValue
         range: Voltage
         multivalued: false
@@ -4223,7 +4197,7 @@ classes:
   VsCapabilityCurve:
     class_uri: cim:VsCapabilityCurve
     attributes:
-      VsConverterDCSides:
+      vs_converter_d_c_sides:
         slot_uri: cim:VsCapabilityCurve.VsConverterDCSides
         range: VsConverter
         multivalued: true
@@ -4235,13 +4209,13 @@ classes:
   VsConverter:
     class_uri: cim:VsConverter
     attributes:
-      CapabilityCurve:
+      capability_curve:
         slot_uri: cim:VsConverter.CapabilityCurve
         range: VsCapabilityCurve
         multivalued: false
         required: false
         description: Capability curve of this converter.
-      maxModulationIndex:
+      max_modulation_index:
         slot_uri: cim:VsConverter.maxModulationIndex
         range: float
         multivalued: false
@@ -4259,13 +4233,13 @@ classes:
   WindGeneratingUnit:
     class_uri: cim:WindGeneratingUnit
     attributes:
-      windGenUnitType:
+      wind_gen_unit_type:
         slot_uri: cim:WindGeneratingUnit.windGenUnitType
         range: WindGenUnitKind
         multivalued: false
         required: true
         description: The kind of wind generating unit.
-      WindPowerPlant:
+      wind_power_plant:
         slot_uri: eu:WindGeneratingUnit.WindPowerPlant
         range: WindPowerPlant
         multivalued: false
@@ -4277,7 +4251,7 @@ classes:
   WindPowerPlant:
     class_uri: eu:WindPowerPlant
     attributes:
-      WindGeneratingUnits:
+      wind_generating_units:
         slot_uri: eu:WindPowerPlant.WindGeneratingUnits
         range: WindGeneratingUnit
         multivalued: true
@@ -4286,11 +4260,6 @@ classes:
           plant.
     is_a: PowerSystemResource
     description: Wind power plant.
-  Date:
-    class_uri: cim:Date
-    description: Date as "yyyy-mm-dd", which conforms with ISO 8601. UTC time zone
-      is specified as "yyyy-mm-ddZ". A local timezone relative UTC is specified as
-      "yyyy-mm-dd(+/-)hh:mm".
 enums:
   UnitMultiplier:
     permissible_values:

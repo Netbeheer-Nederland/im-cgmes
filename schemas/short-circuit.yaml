@@ -55,7 +55,7 @@ classes:
         multivalued: false
         required: true
         description: Zero sequence series resistance of the entire line section.
-      shortCircuitEndTemperature:
+      short_circuit_end_temperature:
         slot_uri: cim:ACLineSegment.shortCircuitEndTemperature
         range: Temperature
         multivalued: false
@@ -182,7 +182,7 @@ classes:
   AsynchronousMachine:
     class_uri: cim:AsynchronousMachine
     attributes:
-      converterFedDrive:
+      converter_fed_drive:
         slot_uri: cim:AsynchronousMachine.converterFedDrive
         range: boolean
         multivalued: false
@@ -197,21 +197,21 @@ classes:
         description: Efficiency of the asynchronous machine at nominal operation as
           a percentage. Indicator for converter drive motors. Used for short circuit
           data exchange according to IEC 60909.
-      iaIrRatio:
+      ia_ir_ratio:
         slot_uri: cim:AsynchronousMachine.iaIrRatio
         range: float
         multivalued: false
         required: true
         description: Ratio of locked-rotor current to the rated current of the motor
           (Ia/Ir). Used for short circuit data exchange according to IEC 60909.
-      polePairNumber:
+      pole_pair_number:
         slot_uri: cim:AsynchronousMachine.polePairNumber
         range: integer
         multivalued: false
         required: true
         description: Number of pole pairs of stator. Used for short circuit data exchange
           according to IEC 60909.
-      ratedMechanicalPower:
+      rated_mechanical_power:
         slot_uri: cim:AsynchronousMachine.ratedMechanicalPower
         range: ActivePower
         multivalued: false
@@ -225,7 +225,7 @@ classes:
         required: true
         description: Indicates for converter drive motors if the power can be reversible.
           Used for short circuit data exchange according to IEC 60909.
-      rxLockedRotorRatio:
+      rx_locked_rotor_ratio:
         slot_uri: cim:AsynchronousMachine.rxLockedRotorRatio
         range: float
         multivalued: false
@@ -280,7 +280,7 @@ classes:
   BusbarSection:
     class_uri: cim:BusbarSection
     attributes:
-      ipMax:
+      ip_max:
         slot_uri: cim:BusbarSection.ipMax
         range: CurrentFlow
         multivalued: false
@@ -401,7 +401,7 @@ classes:
   EquivalentBranch:
     class_uri: cim:EquivalentBranch
     attributes:
-      negativeR12:
+      negative_r12:
         slot_uri: cim:EquivalentBranch.negativeR12
         range: Resistance
         multivalued: false
@@ -411,7 +411,7 @@ classes:
           IEC 60909.
 
           EquivalentBranch is a result of network reduction prior to the data exchange.'
-      negativeR21:
+      negative_r21:
         slot_uri: cim:EquivalentBranch.negativeR21
         range: Resistance
         multivalued: false
@@ -421,7 +421,7 @@ classes:
           IEC 60909.
 
           EquivalentBranch is a result of network reduction prior to the data exchange.'
-      negativeX12:
+      negative_x12:
         slot_uri: cim:EquivalentBranch.negativeX12
         range: Reactance
         multivalued: false
@@ -432,7 +432,7 @@ classes:
 
           Usage : EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      negativeX21:
+      negative_x21:
         slot_uri: cim:EquivalentBranch.negativeX21
         range: Reactance
         multivalued: false
@@ -443,7 +443,7 @@ classes:
 
           Usage: EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      positiveR12:
+      positive_r12:
         slot_uri: cim:EquivalentBranch.positiveR12
         range: Resistance
         multivalued: false
@@ -452,7 +452,7 @@ classes:
           \ 1 to terminal sequence 2 . Used for short circuit data exchange according\
           \ to IEC 60909. \nEquivalentBranch is a result of network reduction prior\
           \ to the data exchange."
-      positiveR21:
+      positive_r21:
         slot_uri: cim:EquivalentBranch.positiveR21
         range: Resistance
         multivalued: false
@@ -462,7 +462,7 @@ classes:
           IEC 60909.
 
           EquivalentBranch is a result of network reduction prior to the data exchange.'
-      positiveX12:
+      positive_x12:
         slot_uri: cim:EquivalentBranch.positiveX12
         range: Reactance
         multivalued: false
@@ -473,7 +473,7 @@ classes:
 
           Usage : EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      positiveX21:
+      positive_x21:
         slot_uri: cim:EquivalentBranch.positiveX21
         range: Reactance
         multivalued: false
@@ -484,7 +484,7 @@ classes:
 
           Usage : EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      zeroR12:
+      zero_r12:
         slot_uri: cim:EquivalentBranch.zeroR12
         range: Resistance
         multivalued: false
@@ -494,7 +494,7 @@ classes:
           60909.
 
           EquivalentBranch is a result of network reduction prior to the data exchange.'
-      zeroR21:
+      zero_r21:
         slot_uri: cim:EquivalentBranch.zeroR21
         range: Resistance
         multivalued: false
@@ -505,7 +505,7 @@ classes:
 
           Usage : EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      zeroX12:
+      zero_x12:
         slot_uri: cim:EquivalentBranch.zeroX12
         range: Reactance
         multivalued: false
@@ -516,7 +516,7 @@ classes:
 
           Usage : EquivalentBranch is a result of network reduction prior to the data
           exchange.'
-      zeroX21:
+      zero_x21:
         slot_uri: cim:EquivalentBranch.zeroX21
         range: Reactance
         multivalued: false
@@ -606,7 +606,7 @@ classes:
   ExternalNetworkInjection:
     class_uri: cim:ExternalNetworkInjection
     attributes:
-      ikSecond:
+      ik_second:
         slot_uri: cim:ExternalNetworkInjection.ikSecond
         range: boolean
         multivalued: false
@@ -614,7 +614,7 @@ classes:
         description: Indicates whether initial symmetrical short-circuit current and
           power have been calculated according to IEC (Ik").  Used only if short circuit
           calculations are done according to superposition method.
-      maxInitialSymShCCurrent:
+      max_initial_sym_sh_c_current:
         slot_uri: cim:ExternalNetworkInjection.maxInitialSymShCCurrent
         range: CurrentFlow
         multivalued: false
@@ -622,7 +622,7 @@ classes:
         description: Maximum initial symmetrical short-circuit currents (Ik" max)
           in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according
           to IEC 60909.
-      maxR0ToX0Ratio:
+      max_r0_to_x0_ratio:
         slot_uri: cim:ExternalNetworkInjection.maxR0ToX0Ratio
         range: float
         multivalued: false
@@ -630,7 +630,7 @@ classes:
         description: Maximum ratio of zero sequence resistance of Network Feeder to
           its zero sequence reactance (R(0)/X(0) max). Used for short circuit data
           exchange according to IEC 60909.
-      maxR1ToX1Ratio:
+      max_r1_to_x1_ratio:
         slot_uri: cim:ExternalNetworkInjection.maxR1ToX1Ratio
         range: float
         multivalued: false
@@ -638,7 +638,7 @@ classes:
         description: Maximum ratio of positive sequence resistance of Network Feeder
           to its positive sequence reactance (R(1)/X(1) max). Used for short circuit
           data exchange according to IEC 60909.
-      maxZ0ToZ1Ratio:
+      max_z0_to_z1_ratio:
         slot_uri: cim:ExternalNetworkInjection.maxZ0ToZ1Ratio
         range: float
         multivalued: false
@@ -646,7 +646,7 @@ classes:
         description: Maximum ratio of zero sequence impedance to its positive sequence
           impedance (Z(0)/Z(1) max). Used for short circuit data exchange according
           to IEC 60909.
-      minInitialSymShCCurrent:
+      min_initial_sym_sh_c_current:
         slot_uri: cim:ExternalNetworkInjection.minInitialSymShCCurrent
         range: CurrentFlow
         multivalued: false
@@ -654,7 +654,7 @@ classes:
         description: Minimum initial symmetrical short-circuit currents (Ik" min)
           in A (Ik" = Sk"/(SQRT(3) Un)). Used for short circuit data exchange according
           to IEC 60909.
-      minR0ToX0Ratio:
+      min_r0_to_x0_ratio:
         slot_uri: cim:ExternalNetworkInjection.minR0ToX0Ratio
         range: float
         multivalued: false
@@ -662,7 +662,7 @@ classes:
         description: Indicates whether initial symmetrical short-circuit current and
           power have been calculated according to IEC (Ik"). Used for short circuit
           data exchange according to IEC 6090.
-      minR1ToX1Ratio:
+      min_r1_to_x1_ratio:
         slot_uri: cim:ExternalNetworkInjection.minR1ToX1Ratio
         range: float
         multivalued: false
@@ -670,7 +670,7 @@ classes:
         description: Minimum ratio of positive sequence resistance of Network Feeder
           to its positive sequence reactance (R(1)/X(1) min). Used for short circuit
           data exchange according to IEC 60909.
-      minZ0ToZ1Ratio:
+      min_z0_to_z1_ratio:
         slot_uri: cim:ExternalNetworkInjection.minZ0ToZ1Ratio
         range: float
         multivalued: false
@@ -678,7 +678,7 @@ classes:
         description: Minimum ratio of zero sequence impedance to its positive sequence
           impedance (Z(0)/Z(1) min). Used for short circuit data exchange according
           to IEC 60909.
-      voltageFactor:
+      voltage_factor:
         slot_uri: cim:ExternalNetworkInjection.voltageFactor
         range: PU
         multivalued: false
@@ -723,7 +723,7 @@ classes:
   IdentifiedObject:
     class_uri: cim:IdentifiedObject
     attributes:
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -740,13 +740,13 @@ classes:
   LinearShuntCompensator:
     class_uri: cim:LinearShuntCompensator
     attributes:
-      b0PerSection:
+      b0_per_section:
         slot_uri: cim:LinearShuntCompensator.b0PerSection
         range: Susceptance
         multivalued: false
         required: true
         description: Zero sequence shunt (charging) susceptance per section.
-      g0PerSection:
+      g0_per_section:
         slot_uri: cim:LinearShuntCompensator.g0PerSection
         range: Conductance
         multivalued: false
@@ -812,14 +812,14 @@ classes:
         multivalued: false
         required: true
         description: Zero sequence branch-to-branch mutual impedance coupling, reactance.
-      Second_Terminal:
+      second__terminal:
         slot_uri: cim:MutualCoupling.Second_Terminal
         range: Terminal
         multivalued: false
         required: true
         description: The starting terminal for the calculation of distances along
           the second branch of the mutual coupling.
-      First_Terminal:
+      first__terminal:
         slot_uri: cim:MutualCoupling.First_Terminal
         range: Terminal
         multivalued: false
@@ -878,13 +878,13 @@ classes:
         multivalued: false
         required: true
         description: The mode of operation of the Petersen coil.
-      nominalU:
+      nominal_u:
         slot_uri: cim:PetersenCoil.nominalU
         range: Voltage
         multivalued: false
         required: true
         description: The nominal voltage for which the coil is designed.
-      offsetCurrent:
+      offset_current:
         slot_uri: cim:PetersenCoil.offsetCurrent
         range: CurrentFlow
         multivalued: false
@@ -893,26 +893,26 @@ classes:
           from the resonant point.  This is normally a fixed amount for which the
           controller is configured and could be positive or negative.  Typically 0
           to 60 A depending on voltage and resonance conditions.
-      positionCurrent:
+      position_current:
         slot_uri: cim:PetersenCoil.positionCurrent
         range: CurrentFlow
         multivalued: false
         required: false
         description: The control current used to control the Petersen coil also known
           as the position current.  Typically in the range of 20 mA to 200 mA.
-      xGroundMax:
+      x_ground_max:
         slot_uri: cim:PetersenCoil.xGroundMax
         range: Reactance
         multivalued: false
         required: true
         description: The maximum reactance.
-      xGroundMin:
+      x_ground_min:
         slot_uri: cim:PetersenCoil.xGroundMin
         range: Reactance
         multivalued: false
         required: true
         description: The minimum reactance.
-      xGroundNominal:
+      x_ground_nominal:
         slot_uri: cim:PetersenCoil.xGroundNominal
         range: Reactance
         multivalued: false
@@ -953,7 +953,7 @@ classes:
   PowerTransformer:
     class_uri: cim:PowerTransformer
     attributes:
-      beforeShCircuitHighestOperatingCurrent:
+      before_sh_circuit_highest_operating_current:
         slot_uri: cim:PowerTransformer.beforeShCircuitHighestOperatingCurrent
         range: CurrentFlow
         multivalued: false
@@ -962,7 +962,7 @@ classes:
           circuit (depends on network configuration and relevant reliability philosophy).
           It is used for calculation of the impedance correction factor KT defined
           in IEC 60909-0.
-      beforeShCircuitHighestOperatingVoltage:
+      before_sh_circuit_highest_operating_voltage:
         slot_uri: cim:PowerTransformer.beforeShCircuitHighestOperatingVoltage
         range: Voltage
         multivalued: false
@@ -971,7 +971,7 @@ classes:
           circuit. It is used for calculation of the impedance correction factor KT
           defined in IEC 60909-0. This is worst case voltage on the low side winding
           (3.7.1 of IEC 60909:2001). Used to define operating conditions.
-      beforeShortCircuitAnglePf:
+      before_short_circuit_angle_pf:
         slot_uri: cim:PowerTransformer.beforeShortCircuitAnglePf
         range: AngleDegrees
         multivalued: false
@@ -980,7 +980,7 @@ classes:
           It is used for calculation of the impedance correction factor KT defined
           in IEC 60909-0. This is the worst case power factor. Used to define operating
           conditions.
-      highSideMinOperatingU:
+      high_side_min_operating_u:
         slot_uri: cim:PowerTransformer.highSideMinOperatingU
         range: Voltage
         multivalued: false
@@ -990,7 +990,7 @@ classes:
           A value well established from long-term operating experience of the system.
           It is used for calculation of the impedance correction factor KG defined
           in IEC 60909-0.
-      isPartOfGeneratorUnit:
+      is_part_of_generator_unit:
         slot_uri: cim:PowerTransformer.isPartOfGeneratorUnit
         range: boolean
         multivalued: false
@@ -1001,7 +1001,7 @@ classes:
           the transformer is not necessarily part of a synchronous machine and generating
           unit. It is not always possible to derive this information from the model.
           This is why the attribute is necessary.
-      operationalValuesConsidered:
+      operational_values_considered:
         slot_uri: cim:PowerTransformer.operationalValuesConsidered
         range: boolean
         multivalued: false
@@ -1052,7 +1052,7 @@ classes:
         multivalued: false
         required: true
         description: Zero sequence magnetizing branch susceptance.
-      phaseAngleClock:
+      phase_angle_clock:
         slot_uri: cim:PowerTransformerEnd.phaseAngleClock
         range: integer
         multivalued: false
@@ -1138,7 +1138,7 @@ classes:
         multivalued: false
         required: true
         description: Zero sequence reactance.
-      varistorPresent:
+      varistor_present:
         slot_uri: cim:SeriesCompensator.varistorPresent
         range: boolean
         multivalued: false
@@ -1146,7 +1146,7 @@ classes:
         description: Describe if a metal oxide varistor (mov) for over voltage protection
           is configured in parallel with the series compensator. It is used for short
           circuit calculations.
-      varistorRatedCurrent:
+      varistor_rated_current:
         slot_uri: cim:SeriesCompensator.varistorRatedCurrent
         range: CurrentFlow
         multivalued: false
@@ -1156,7 +1156,7 @@ classes:
           SeriesCompensator.varistorPresent is true.
 
           The attribute shall be a positive value.'
-      varistorVoltageThreshold:
+      varistor_voltage_threshold:
         slot_uri: cim:SeriesCompensator.varistorVoltageThreshold
         range: Voltage
         multivalued: false
@@ -1184,14 +1184,14 @@ classes:
         required: true
         description: Indicates whether or not the generator is earthed. Used for short
           circuit data exchange according to IEC 60909.
-      earthingStarPointR:
+      earthing_star_point_r:
         slot_uri: cim:SynchronousMachine.earthingStarPointR
         range: Resistance
         multivalued: false
         required: false
         description: Generator star point earthing resistance (Re). Used for short
           circuit data exchange according to IEC 60909.
-      earthingStarPointX:
+      earthing_star_point_x:
         slot_uri: cim:SynchronousMachine.earthingStarPointX
         range: Reactance
         multivalued: false
@@ -1259,13 +1259,13 @@ classes:
         description: Equivalent resistance (RG) of generator. RG is considered for
           the calculation of all currents, except for the calculation of the peak
           current ip. Used for short circuit data exchange according to IEC 60909.
-      satDirectSubtransX:
+      sat_direct_subtrans_x:
         slot_uri: cim:SynchronousMachine.satDirectSubtransX
         range: PU
         multivalued: false
         required: true
         description: Direct-axis subtransient reactance saturated, also known as Xd"sat.
-      satDirectSyncX:
+      sat_direct_sync_x:
         slot_uri: cim:SynchronousMachine.satDirectSyncX
         range: PU
         multivalued: false
@@ -1273,21 +1273,21 @@ classes:
         description: Direct-axes saturated synchronous reactance (xdsat); reciprocal
           of short-circuit ration. Used for short circuit data exchange, only for
           single fed short circuit on a generator. (4.3.4.2. in IEC 60909-0:2001).
-      satDirectTransX:
+      sat_direct_trans_x:
         slot_uri: cim:SynchronousMachine.satDirectTransX
         range: PU
         multivalued: false
         required: false
         description: Saturated Direct-axis transient reactance. The attribute is primarily
           used for short circuit calculations according to ANSI.
-      shortCircuitRotorType:
+      short_circuit_rotor_type:
         slot_uri: cim:SynchronousMachine.shortCircuitRotorType
         range: ShortCircuitRotorKind
         multivalued: false
         required: false
         description: Type of rotor, used by short circuit applications, only for single
           fed short circuit according to IEC 60909.
-      voltageRegulationRange:
+      voltage_regulation_range:
         slot_uri: cim:SynchronousMachine.voltageRegulationRange
         range: PerCent
         multivalued: false
@@ -1304,13 +1304,13 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      HasSecondMutualCoupling:
+      has_second_mutual_coupling:
         slot_uri: cim:Terminal.HasSecondMutualCoupling
         range: MutualCoupling
         multivalued: true
         required: false
         description: Mutual couplings with the branch associated as the first branch.
-      HasFirstMutualCoupling:
+      has_first_mutual_coupling:
         slot_uri: cim:Terminal.HasFirstMutualCoupling
         range: MutualCoupling
         multivalued: true

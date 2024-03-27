@@ -42,37 +42,37 @@ classes:
           \ \u201Cleft-hand\u201D orientation (favoured by computer graphics displays)\
           \ with X values increasing from left to right and Y values increasing from\
           \ top to bottom."
-      x1InitialView:
+      x1_initial_view:
         slot_uri: cim:Diagram.x1InitialView
         range: float
         multivalued: false
         required: false
         description: X coordinate of the first corner of the initial view.
-      x2InitialView:
+      x2_initial_view:
         slot_uri: cim:Diagram.x2InitialView
         range: float
         multivalued: false
         required: false
         description: X coordinate of the second corner of the initial view.
-      y1InitialView:
+      y1_initial_view:
         slot_uri: cim:Diagram.y1InitialView
         range: float
         multivalued: false
         required: false
         description: Y coordinate of the first corner of the initial view.
-      y2InitialView:
+      y2_initial_view:
         slot_uri: cim:Diagram.y2InitialView
         range: float
         multivalued: false
         required: false
         description: Y coordinate of the second corner of the initial view.
-      DiagramElements:
+      diagram_elements:
         slot_uri: cim:Diagram.DiagramElements
         range: DiagramObject
         multivalued: true
         required: false
         description: A diagram is made up of multiple diagram objects.
-      DiagramStyle:
+      diagram_style:
         slot_uri: cim:Diagram.DiagramStyle
         range: DiagramStyle
         multivalued: false
@@ -83,19 +83,16 @@ classes:
       Cartesian coordinate system and the orientation attribute defines the orientation.
       The initial view related attributes can be used to specify an initial view with
       the x,y coordinates of the diagonal points.
-  Float:
-    class_uri: cim:Float
-    description: A floating point number. The range is unspecified and not limited.
   DiagramObject:
     class_uri: cim:DiagramObject
     attributes:
-      Diagram:
+      diagram:
         slot_uri: cim:DiagramObject.Diagram
         range: Diagram
         multivalued: false
         required: true
         description: A diagram object is part of a diagram.
-      drawingOrder:
+      drawing_order:
         slot_uri: cim:DiagramObject.drawingOrder
         range: integer
         multivalued: false
@@ -103,7 +100,7 @@ classes:
         description: The drawing order of this element. The higher the number, the
           later the element is drawn in sequence. This is used to ensure that elements
           that overlap are rendered in the correct order.
-      isPolygon:
+      is_polygon:
         slot_uri: cim:DiagramObject.isPolygon
         range: boolean
         multivalued: false
@@ -112,7 +109,7 @@ classes:
           boundaries of a polygon or the routing of a polyline. If this value is true
           then a receiving application should consider the first and last points to
           be connected.
-      offsetX:
+      offset_x:
         slot_uri: cim:DiagramObject.offsetX
         range: float
         multivalued: false
@@ -125,7 +122,7 @@ classes:
           The offset is in per-unit with 0 indicating there is no offset from the
           horizontal centre of the icon.  -0.5 indicates it is offset by 50% to the
           left and 0.5 indicates an offset of 50% to the right.'
-      offsetY:
+      offset_y:
         slot_uri: cim:DiagramObject.offsetY
         range: float
         multivalued: false
@@ -155,26 +152,26 @@ classes:
           of an element which has one terminal is pointing to the right hand side
           of the diagram. The connection point "From side" of an element which has
           more than one terminal is pointing to the right hand side of the diagram.'
-      IdentifiedObject:
+      identified_object:
         slot_uri: cim:DiagramObject.IdentifiedObject
         range: IdentifiedObject
         multivalued: false
         required: false
         description: The domain object to which this diagram object is associated.
-      DiagramObjectPoints:
+      diagram_object_points:
         slot_uri: cim:DiagramObject.DiagramObjectPoints
         range: DiagramObjectPoint
         multivalued: true
         required: false
         description: A diagram object can have 0 or more points to reflect its layout
           position, routing (for polylines) or boundary (for polygons).
-      VisibilityLayers:
+      visibility_layers:
         slot_uri: cim:DiagramObject.VisibilityLayers
         range: VisibilityLayer
         multivalued: true
         required: false
         description: A diagram object can be part of multiple visibility layers.
-      DiagramObjectStyle:
+      diagram_object_style:
         slot_uri: cim:DiagramObject.DiagramObjectStyle
         range: DiagramObjectStyle
         multivalued: false
@@ -186,12 +183,6 @@ classes:
       object can be associated with anything that specializes IdentifiedObject. For
       single line diagrams such objects typically include such items as analog values,
       breakers, disconnectors, power transformers, and transmission lines.
-  Integer:
-    class_uri: cim:Integer
-    description: An integer number. The range is unspecified and not limited.
-  Boolean:
-    class_uri: cim:Boolean
-    description: A type with the value space "true" and "false".
   AngleDegrees:
     class_uri: cim:AngleDegrees
     attributes:
@@ -214,7 +205,7 @@ classes:
   DiagramObjectGluePoint:
     class_uri: cim:DiagramObjectGluePoint
     attributes:
-      DiagramObjectPoints:
+      diagram_object_points:
         slot_uri: cim:DiagramObjectGluePoint.DiagramObjectPoints
         range: DiagramObjectPoint
         multivalued: true
@@ -227,19 +218,19 @@ classes:
   DiagramObjectPoint:
     class_uri: cim:DiagramObjectPoint
     attributes:
-      DiagramObject:
+      diagram_object:
         slot_uri: cim:DiagramObjectPoint.DiagramObject
         range: DiagramObject
         multivalued: false
         required: true
         description: The diagram object with which the points are associated.
-      DiagramObjectGluePoint:
+      diagram_object_glue_point:
         slot_uri: cim:DiagramObjectPoint.DiagramObjectGluePoint
         range: DiagramObjectGluePoint
         multivalued: false
         required: false
         description: The 'glue' point to which this point is associated.
-      sequenceNumber:
+      sequence_number:
         slot_uri: cim:DiagramObjectPoint.sequenceNumber
         range: integer
         multivalued: false
@@ -247,19 +238,19 @@ classes:
         description: The sequence position of the point, used for defining the order
           of points for diagram objects acting as a polyline or polygon with more
           than one point. The attribute shall be a positive value.
-      xPosition:
+      x_position:
         slot_uri: cim:DiagramObjectPoint.xPosition
         range: float
         multivalued: false
         required: true
         description: The X coordinate of this point.
-      yPosition:
+      y_position:
         slot_uri: cim:DiagramObjectPoint.yPosition
         range: float
         multivalued: false
         required: true
         description: The Y coordinate of this point.
-      zPosition:
+      z_position:
         slot_uri: cim:DiagramObjectPoint.zPosition
         range: float
         multivalued: false
@@ -271,7 +262,7 @@ classes:
   DiagramObjectStyle:
     class_uri: cim:DiagramObjectStyle
     attributes:
-      StyledObjects:
+      styled_objects:
         slot_uri: cim:DiagramObjectStyle.StyledObjects
         range: DiagramObject
         multivalued: true
@@ -284,7 +275,7 @@ classes:
   DiagramStyle:
     class_uri: cim:DiagramStyle
     attributes:
-      Diagram:
+      diagram:
         slot_uri: cim:DiagramStyle.Diagram
         range: Diagram
         multivalued: true
@@ -297,13 +288,13 @@ classes:
   IdentifiedObject:
     class_uri: cim:IdentifiedObject
     attributes:
-      DiagramObjects:
+      diagram_objects:
         slot_uri: cim:IdentifiedObject.DiagramObjects
         range: DiagramObject
         multivalued: true
         required: false
         description: The diagram objects that are associated with the domain object.
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -331,10 +322,6 @@ classes:
           the object. It may be non unique and may not correlate to a naming hierarchy.
     description: This is a root class to provide common identification for all classes
       needing identification and naming attributes.
-  String:
-    class_uri: cim:String
-    description: A string consisting of a sequence of characters. The character encoding
-      is UTF-8. The string length is unspecified and unlimited.
   TextDiagramObject:
     class_uri: cim:TextDiagramObject
     attributes:
@@ -350,13 +337,13 @@ classes:
   VisibilityLayer:
     class_uri: cim:VisibilityLayer
     attributes:
-      VisibleObjects:
+      visible_objects:
         slot_uri: cim:VisibilityLayer.VisibleObjects
         range: DiagramObject
         multivalued: true
         required: true
         description: A visibility layer can contain one or more diagram objects.
-      drawingOrder:
+      drawing_order:
         slot_uri: cim:VisibilityLayer.drawingOrder
         range: integer
         multivalued: false
@@ -373,11 +360,6 @@ classes:
       CIM based graphics exchange supports an m:n relationship between diagram objects
       and layers. The importing system shall convert an m:n case into an appropriate
       1:n representation if the importing system does not support m:n.'
-  Date:
-    class_uri: cim:Date
-    description: Date as "yyyy-mm-dd", which conforms with ISO 8601. UTC time zone
-      is specified as "yyyy-mm-ddZ". A local timezone relative UTC is specified as
-      "yyyy-mm-dd(+/-)hh:mm".
 enums:
   OrientationKind:
     permissible_values:

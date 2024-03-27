@@ -36,7 +36,7 @@ classes:
         required: true
         description: "Converter DC current, also called Id. It is converter\u2019\
           s state variable, result from power flow."
-      poleLossP:
+      pole_loss_p:
         slot_uri: cim:ACDCConverter.poleLossP
         range: ActivePower
         multivalued: false
@@ -201,7 +201,7 @@ classes:
   ConductingEquipment:
     class_uri: cim:ConductingEquipment
     attributes:
-      SvStatus:
+      sv_status:
         slot_uri: cim:ConductingEquipment.SvStatus
         range: SvStatus
         multivalued: false
@@ -212,7 +212,7 @@ classes:
   DCTopologicalIsland:
     class_uri: cim:DCTopologicalIsland
     attributes:
-      DCTopologicalNodes:
+      d_c_topological_nodes:
         slot_uri: cim:DCTopologicalIsland.DCTopologicalNodes
         range: DCTopologicalNode
         multivalued: true
@@ -227,7 +227,7 @@ classes:
   DCTopologicalNode:
     class_uri: cim:DCTopologicalNode
     attributes:
-      DCTopologicalIsland:
+      d_c_topological_island:
         slot_uri: cim:DCTopologicalNode.DCTopologicalIsland
         range: DCTopologicalIsland
         multivalued: false
@@ -238,7 +238,7 @@ classes:
   IdentifiedObject:
     class_uri: cim:IdentifiedObject
     attributes:
-      mRID:
+      m_r_i_d:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -262,7 +262,7 @@ classes:
   ShuntCompensator:
     class_uri: cim:ShuntCompensator
     attributes:
-      SvShuntCompensatorSections:
+      sv_shunt_compensator_sections:
         slot_uri: cim:ShuntCompensator.SvShuntCompensatorSections
         range: SvShuntCompensatorSections
         multivalued: false
@@ -275,14 +275,14 @@ classes:
   SvInjection:
     class_uri: cim:SvInjection
     attributes:
-      pInjection:
+      p_injection:
         slot_uri: cim:SvInjection.pInjection
         range: ActivePower
         multivalued: false
         required: true
         description: The active power mismatch between calculated injection and initial
           injection.  Positive sign means injection into the TopologicalNode (bus).
-      qInjection:
+      q_injection:
         slot_uri: cim:SvInjection.qInjection
         range: ReactivePower
         multivalued: false
@@ -290,7 +290,7 @@ classes:
         description: The reactive power mismatch between calculated injection and
           initial injection.  Positive sign means injection into the TopologicalNode
           (bus).
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:SvInjection.TopologicalNode
         range: TopologicalNode
         multivalued: false
@@ -338,7 +338,7 @@ classes:
         required: true
         description: The reactive power flow. Load sign convention is used, i.e. positive
           sign means flow out from a TopologicalNode (bus) into the conducting equipment.
-      Terminal:
+      terminal:
         slot_uri: cim:SvPowerFlow.Terminal
         range: Terminal
         multivalued: false
@@ -349,7 +349,7 @@ classes:
   SvShuntCompensatorSections:
     class_uri: cim:SvShuntCompensatorSections
     attributes:
-      ShuntCompensator:
+      shunt_compensator:
         slot_uri: cim:SvShuntCompensatorSections.ShuntCompensator
         range: ShuntCompensator
         multivalued: false
@@ -368,13 +368,13 @@ classes:
   SvStatus:
     class_uri: cim:SvStatus
     attributes:
-      ConductingEquipment:
+      conducting_equipment:
         slot_uri: cim:SvStatus.ConductingEquipment
         range: ConductingEquipment
         multivalued: false
         required: true
         description: The conducting equipment associated with the status state variable.
-      inService:
+      in_service:
         slot_uri: cim:SvStatus.inService
         range: boolean
         multivalued: false
@@ -395,7 +395,7 @@ classes:
         required: true
         description: The attribute tells if the computed state of the switch is considered
           open.
-      Switch:
+      switch:
         slot_uri: cim:SvSwitch.Switch
         range: Switch
         multivalued: false
@@ -414,7 +414,7 @@ classes:
           but rather the tap step position as defined by the related tap changer model
           and normally is constrained to be within the range of minimum and maximum
           tap positions.
-      TapChanger:
+      tap_changer:
         slot_uri: cim:SvTapStep.TapChanger
         range: TapChanger
         multivalued: false
@@ -438,7 +438,7 @@ classes:
         required: true
         description: The voltage magnitude at the topological node. The attribute
           shall be a positive value.
-      TopologicalNode:
+      topological_node:
         slot_uri: cim:SvVoltage.TopologicalNode
         range: TopologicalNode
         multivalued: false
@@ -448,7 +448,7 @@ classes:
   Switch:
     class_uri: cim:Switch
     attributes:
-      SvSwitch:
+      sv_switch:
         slot_uri: cim:Switch.SvSwitch
         range: SvSwitch
         multivalued: true
@@ -463,7 +463,7 @@ classes:
   TapChanger:
     class_uri: cim:TapChanger
     attributes:
-      SvTapStep:
+      sv_tap_step:
         slot_uri: cim:TapChanger.SvTapStep
         range: SvTapStep
         multivalued: false
@@ -473,7 +473,7 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      SvPowerFlow:
+      sv_power_flow:
         slot_uri: cim:Terminal.SvPowerFlow
         range: SvPowerFlow
         multivalued: false
@@ -485,7 +485,7 @@ classes:
   TopologicalIsland:
     class_uri: cim:TopologicalIsland
     attributes:
-      AngleRefTopologicalNode:
+      angle_ref_topological_node:
         slot_uri: cim:TopologicalIsland.AngleRefTopologicalNode
         range: TopologicalNode
         multivalued: false
@@ -493,7 +493,7 @@ classes:
         description: The angle reference for the island.   Normally there is one TopologicalNode
           that is selected as the angle reference for each island.   Other reference
           schemes exist, so the association is typically optional.
-      TopologicalNodes:
+      topological_nodes:
         slot_uri: cim:TopologicalIsland.TopologicalNodes
         range: TopologicalNode
         multivalued: true
@@ -508,27 +508,27 @@ classes:
   TopologicalNode:
     class_uri: cim:TopologicalNode
     attributes:
-      SvInjection:
+      sv_injection:
         slot_uri: cim:TopologicalNode.SvInjection
         range: SvInjection
         multivalued: false
         required: false
         description: The injection flows state variables associated with the topological
           node.
-      SvVoltage:
+      sv_voltage:
         slot_uri: cim:TopologicalNode.SvVoltage
         range: SvVoltage
         multivalued: false
         required: false
         description: The state voltage associated with the topological node.
-      AngleRefTopologicalIsland:
+      angle_ref_topological_island:
         slot_uri: cim:TopologicalNode.AngleRefTopologicalIsland
         range: TopologicalIsland
         multivalued: false
         required: false
         description: The island for which the node is an angle reference.   Normally
           there is one angle reference node for each island.
-      TopologicalIsland:
+      topological_island:
         slot_uri: cim:TopologicalNode.TopologicalIsland
         range: TopologicalIsland
         multivalued: false
