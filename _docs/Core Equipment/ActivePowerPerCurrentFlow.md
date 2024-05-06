@@ -16,13 +16,16 @@ _Active power variation with current flow._
 ```mermaid
  classDiagram
     class ActivePowerPerCurrentFlow
+    click ActivePowerPerCurrentFlow href "../ActivePowerPerCurrentFlow"
       ActivePowerPerCurrentFlow : ActivePowerPerCurrentFlow.multiplier
         
           ActivePowerPerCurrentFlow --> UnitMultiplier : ActivePowerPerCurrentFlow.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       ActivePowerPerCurrentFlow : ActivePowerPerCurrentFlow.unit
         
           ActivePowerPerCurrentFlow --> UnitSymbol : ActivePowerPerCurrentFlow.unit
+          click UnitSymbol href "../UnitSymbol"
         
       ActivePowerPerCurrentFlow : ActivePowerPerCurrentFlow.value
         

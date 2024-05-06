@@ -16,11 +16,15 @@ _The parts of the AC power system that are designed to carry current or that are
 ```mermaid
  classDiagram
     class ConductingEquipment
+    click ConductingEquipment href "../ConductingEquipment"
       Equipment <|-- ConductingEquipment
+        click Equipment href "../Equipment"
       
 
       ConductingEquipment <|-- EnergyConnection
+        click EnergyConnection href "../EnergyConnection"
       ConductingEquipment <|-- ACDCConverter
+        click ACDCConverter href "../ACDCConverter"
       
       
       ConductingEquipment : IdentifiedObject.description
@@ -32,6 +36,7 @@ _The parts of the AC power system that are designed to carry current or that are
       ConductingEquipment : ConductingEquipment.Terminals
         
           ConductingEquipment --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -55,9 +60,9 @@ _The parts of the AC power system that are designed to carry current or that are
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | direct |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -28,15 +28,19 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
 ```mermaid
  classDiagram
     class PowerTransformerEnd
+    click PowerTransformerEnd href "../PowerTransformerEnd"
       TransformerEnd <|-- PowerTransformerEnd
+        click TransformerEnd href "../TransformerEnd"
       
       PowerTransformerEnd : PowerTransformerEnd.b0
         
           PowerTransformerEnd --> Susceptance : PowerTransformerEnd.b0
+          click Susceptance href "../Susceptance"
         
       PowerTransformerEnd : PowerTransformerEnd.g0
         
           PowerTransformerEnd --> Conductance : PowerTransformerEnd.g0
+          click Conductance href "../Conductance"
         
       PowerTransformerEnd : TransformerEnd.grounded
         
@@ -47,18 +51,22 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
       PowerTransformerEnd : PowerTransformerEnd.r0
         
           PowerTransformerEnd --> Resistance : PowerTransformerEnd.r0
+          click Resistance href "../Resistance"
         
       PowerTransformerEnd : TransformerEnd.rground
         
           PowerTransformerEnd --> Resistance : TransformerEnd.rground
+          click Resistance href "../Resistance"
         
       PowerTransformerEnd : PowerTransformerEnd.x0
         
           PowerTransformerEnd --> Reactance : PowerTransformerEnd.x0
+          click Reactance href "../Reactance"
         
       PowerTransformerEnd : TransformerEnd.xground
         
           PowerTransformerEnd --> Reactance : TransformerEnd.xground
+          click Reactance href "../Reactance"
         
       
 ```
@@ -79,15 +87,15 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| b0 | [cim:PowerTransformerEnd.b0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.b0) | 1..1 <br />  [Susceptance](Susceptance.md)  | Zero sequence magnetizing branch susceptance | direct |
-| phaseAngleClock | [cim:PowerTransformerEnd.phaseAngleClock](http://iec.ch/TC57/CIM100#PowerTransformerEnd.phaseAngleClock) | 1..1 <br />  integer  | Terminal voltage phase angle displacement where 360 degrees are represented w... | direct |
-| g0 | [cim:PowerTransformerEnd.g0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.g0) | 1..1 <br />  [Conductance](Conductance.md)  | Zero sequence magnetizing branch conductance (star-model) | direct |
-| r0 | [cim:PowerTransformerEnd.r0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.r0) | 1..1 <br />  [Resistance](Resistance.md)  | Zero sequence series resistance (star-model) of the transformer end | direct |
-| x0 | [cim:PowerTransformerEnd.x0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.x0) | 1..1 <br />  [Reactance](Reactance.md)  | Zero sequence series reactance of the transformer end | direct |
+| b0 | [cim:PowerTransformerEnd.b0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.b0) | 1 <br />  [Susceptance](Susceptance.md)  | Zero sequence magnetizing branch susceptance | direct |
+| phaseAngleClock | [cim:PowerTransformerEnd.phaseAngleClock](http://iec.ch/TC57/CIM100#PowerTransformerEnd.phaseAngleClock) | 1 <br />  integer  | Terminal voltage phase angle displacement where 360 degrees are represented w... | direct |
+| g0 | [cim:PowerTransformerEnd.g0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.g0) | 1 <br />  [Conductance](Conductance.md)  | Zero sequence magnetizing branch conductance (star-model) | direct |
+| r0 | [cim:PowerTransformerEnd.r0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.r0) | 1 <br />  [Resistance](Resistance.md)  | Zero sequence series resistance (star-model) of the transformer end | direct |
+| x0 | [cim:PowerTransformerEnd.x0](http://iec.ch/TC57/CIM100#PowerTransformerEnd.x0) | 1 <br />  [Reactance](Reactance.md)  | Zero sequence series reactance of the transformer end | direct |
 | rground | [cim:TransformerEnd.rground](http://iec.ch/TC57/CIM100#TransformerEnd.rground) | 0..1 <br />  [Resistance](Resistance.md)  | (for Yn and Zn connections) Resistance part of neutral impedance where 'groun... | [TransformerEnd](TransformerEnd.md) |
-| grounded | [cim:TransformerEnd.grounded](http://iec.ch/TC57/CIM100#TransformerEnd.grounded) | 1..1 <br />  boolean  | (for Yn and Zn connections) True if the neutral is solidly grounded | [TransformerEnd](TransformerEnd.md) |
+| grounded | [cim:TransformerEnd.grounded](http://iec.ch/TC57/CIM100#TransformerEnd.grounded) | 1 <br />  boolean  | (for Yn and Zn connections) True if the neutral is solidly grounded | [TransformerEnd](TransformerEnd.md) |
 | xground | [cim:TransformerEnd.xground](http://iec.ch/TC57/CIM100#TransformerEnd.xground) | 0..1 <br />  [Reactance](Reactance.md)  | (for Yn and Zn connections) Reactive part of neutral impedance where 'grounde... | [TransformerEnd](TransformerEnd.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

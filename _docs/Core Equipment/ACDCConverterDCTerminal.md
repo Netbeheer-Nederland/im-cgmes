@@ -16,19 +16,24 @@ _A DC electrical connection point at the AC/DC converter. The AC/DC converter is
 ```mermaid
  classDiagram
     class ACDCConverterDCTerminal
+    click ACDCConverterDCTerminal href "../ACDCConverterDCTerminal"
       DCBaseTerminal <|-- ACDCConverterDCTerminal
+        click DCBaseTerminal href "../DCBaseTerminal"
       
       ACDCConverterDCTerminal : ACDCTerminal.BusNameMarker
         
           ACDCConverterDCTerminal --> BusNameMarker : ACDCTerminal.BusNameMarker
+          click BusNameMarker href "../BusNameMarker"
         
       ACDCConverterDCTerminal : ACDCConverterDCTerminal.DCConductingEquipment
         
           ACDCConverterDCTerminal --> ACDCConverter : ACDCConverterDCTerminal.DCConductingEquipment
+          click ACDCConverter href "../ACDCConverter"
         
       ACDCConverterDCTerminal : DCBaseTerminal.DCNode
         
           ACDCConverterDCTerminal --> DCNode : DCBaseTerminal.DCNode
+          click DCNode href "../DCNode"
         
       ACDCConverterDCTerminal : IdentifiedObject.description
         
@@ -41,10 +46,12 @@ _A DC electrical connection point at the AC/DC converter. The AC/DC converter is
       ACDCConverterDCTerminal : ACDCTerminal.OperationalLimitSet
         
           ACDCConverterDCTerminal --> OperationalLimitSet : ACDCTerminal.OperationalLimitSet
+          click OperationalLimitSet href "../OperationalLimitSet"
         
       ACDCConverterDCTerminal : ACDCConverterDCTerminal.polarity
         
           ACDCConverterDCTerminal --> DCPolarityKind : ACDCConverterDCTerminal.polarity
+          click DCPolarityKind href "../DCPolarityKind"
         
       ACDCConverterDCTerminal : ACDCTerminal.sequenceNumber
         
@@ -70,16 +77,16 @@ _A DC electrical connection point at the AC/DC converter. The AC/DC converter is
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| DCConductingEquipment | [cim:ACDCConverterDCTerminal.DCConductingEquipment](http://iec.ch/TC57/CIM100#ACDCConverterDCTerminal.DCConductingEquipment) | 1..1 <br />  [ACDCConverter](ACDCConverter.md)  | A DC converter terminal belong to an DC converter | direct |
-| polarity | [cim:ACDCConverterDCTerminal.polarity](http://iec.ch/TC57/CIM100#ACDCConverterDCTerminal.polarity) | 1..1 <br />  [DCPolarityKind](DCPolarityKind.md)  | Represents the normal network polarity condition | direct |
+| DCConductingEquipment | [cim:ACDCConverterDCTerminal.DCConductingEquipment](http://iec.ch/TC57/CIM100#ACDCConverterDCTerminal.DCConductingEquipment) | 1 <br />  [ACDCConverter](ACDCConverter.md)  | A DC converter terminal belong to an DC converter | direct |
+| polarity | [cim:ACDCConverterDCTerminal.polarity](http://iec.ch/TC57/CIM100#ACDCConverterDCTerminal.polarity) | 1 <br />  [DCPolarityKind](DCPolarityKind.md)  | Represents the normal network polarity condition | direct |
 | DCNode | [cim:DCBaseTerminal.DCNode](http://iec.ch/TC57/CIM100#DCBaseTerminal.DCNode) | 0..1 <br />  [DCNode](DCNode.md)  | The DC connectivity node to which this DC base terminal connects with zero im... | [DCBaseTerminal](DCBaseTerminal.md) |
-| sequenceNumber | [cim:ACDCTerminal.sequenceNumber](http://iec.ch/TC57/CIM100#ACDCTerminal.sequenceNumber) | 1..1 <br />  integer  | The orientation of the terminal connections for a multiple terminal conductin... | [ACDCTerminal](ACDCTerminal.md) |
-| OperationalLimitSet | [cim:ACDCTerminal.OperationalLimitSet](http://iec.ch/TC57/CIM100#ACDCTerminal.OperationalLimitSet) | 0..* <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets at the terminal | [ACDCTerminal](ACDCTerminal.md) |
+| sequenceNumber | [cim:ACDCTerminal.sequenceNumber](http://iec.ch/TC57/CIM100#ACDCTerminal.sequenceNumber) | 1 <br />  integer  | The orientation of the terminal connections for a multiple terminal conductin... | [ACDCTerminal](ACDCTerminal.md) |
+| OperationalLimitSet | [cim:ACDCTerminal.OperationalLimitSet](http://iec.ch/TC57/CIM100#ACDCTerminal.OperationalLimitSet) | * <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets at the terminal | [ACDCTerminal](ACDCTerminal.md) |
 | BusNameMarker | [cim:ACDCTerminal.BusNameMarker](http://iec.ch/TC57/CIM100#ACDCTerminal.BusNameMarker) | 0..1 <br />  [BusNameMarker](BusNameMarker.md)  | The bus name marker used to name the bus (topological node) | [ACDCTerminal](ACDCTerminal.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

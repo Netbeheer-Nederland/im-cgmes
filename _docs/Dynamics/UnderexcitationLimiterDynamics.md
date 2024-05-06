@@ -16,15 +16,23 @@ _Underexcitation limiter function block whose behaviour is described by referenc
 ```mermaid
  classDiagram
     class UnderexcitationLimiterDynamics
+    click UnderexcitationLimiterDynamics href "../UnderexcitationLimiterDynamics"
       DynamicsFunctionBlock <|-- UnderexcitationLimiterDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       UnderexcitationLimiterDynamics <|-- UnderexcitationLimiterUserDefined
+        click UnderexcitationLimiterUserDefined href "../UnderexcitationLimiterUserDefined"
       UnderexcitationLimiterDynamics <|-- UnderexcLimIEEE1
+        click UnderexcLimIEEE1 href "../UnderexcLimIEEE1"
       UnderexcitationLimiterDynamics <|-- UnderexcLimIEEE2
+        click UnderexcLimIEEE2 href "../UnderexcLimIEEE2"
       UnderexcitationLimiterDynamics <|-- UnderexcLim2Simplified
+        click UnderexcLim2Simplified href "../UnderexcLim2Simplified"
       UnderexcitationLimiterDynamics <|-- UnderexcLimX1
+        click UnderexcLimX1 href "../UnderexcLimX1"
       UnderexcitationLimiterDynamics <|-- UnderexcLimX2
+        click UnderexcLimX2 href "../UnderexcLimX2"
       
       
       UnderexcitationLimiterDynamics : IdentifiedObject.description
@@ -34,6 +42,7 @@ _Underexcitation limiter function block whose behaviour is described by referenc
       UnderexcitationLimiterDynamics : UnderexcitationLimiterDynamics.ExcitationSystemDynamics
         
           UnderexcitationLimiterDynamics --> ExcitationSystemDynamics : UnderexcitationLimiterDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       UnderexcitationLimiterDynamics : IdentifiedObject.mRID
         
@@ -42,6 +51,7 @@ _Underexcitation limiter function block whose behaviour is described by referenc
       UnderexcitationLimiterDynamics : UnderexcitationLimiterDynamics.RemoteInputSignal
         
           UnderexcitationLimiterDynamics --> RemoteInputSignal : UnderexcitationLimiterDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -69,10 +79,10 @@ _Underexcitation limiter function block whose behaviour is described by referenc
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:UnderexcitationLimiterDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this underexcitation limiter model | direct |
-| ExcitationSystemDynamics | [cim:UnderexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this underexcitation limiter model is asso... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:UnderexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this underexcitation limiter model is asso... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

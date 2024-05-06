@@ -18,7 +18,9 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.10._
 ```mermaid
  classDiagram
     class WindContQPQULimIEC
+    click WindContQPQULimIEC href "../WindContQPQULimIEC"
       IdentifiedObject <|-- WindContQPQULimIEC
+        click IdentifiedObject href "../IdentifiedObject"
       
       WindContQPQULimIEC : IdentifiedObject.description
         
@@ -29,18 +31,22 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.10._
       WindContQPQULimIEC : WindContQPQULimIEC.tpfiltql
         
           WindContQPQULimIEC --> Seconds : WindContQPQULimIEC.tpfiltql
+          click Seconds href "../Seconds"
         
       WindContQPQULimIEC : WindContQPQULimIEC.tufiltql
         
           WindContQPQULimIEC --> Seconds : WindContQPQULimIEC.tufiltql
+          click Seconds href "../Seconds"
         
       WindContQPQULimIEC : WindContQPQULimIEC.WindDynamicsLookupTable
         
           WindContQPQULimIEC --> WindDynamicsLookupTable : WindContQPQULimIEC.WindDynamicsLookupTable
+          click WindDynamicsLookupTable href "../WindDynamicsLookupTable"
         
       WindContQPQULimIEC : WindContQPQULimIEC.WindTurbineType3or4IEC
         
           WindContQPQULimIEC --> WindTurbineType3or4IEC : WindContQPQULimIEC.WindTurbineType3or4IEC
+          click WindTurbineType3or4IEC href "../WindTurbineType3or4IEC"
         
       
 ```
@@ -60,12 +66,12 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.10._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| tpfiltql | [cim:WindContQPQULimIEC.tpfiltql](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.tpfiltql) | 1..1 <br />  [Seconds](Seconds.md)  | Power measurement filter time constant for Q capacity (<i>T</i><i><sub>pfiltq... | direct |
-| tufiltql | [cim:WindContQPQULimIEC.tufiltql](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.tufiltql) | 1..1 <br />  [Seconds](Seconds.md)  | Voltage measurement filter time constant for Q capacity (<i>T</i><i><sub>ufil... | direct |
+| tpfiltql | [cim:WindContQPQULimIEC.tpfiltql](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.tpfiltql) | 1 <br />  [Seconds](Seconds.md)  | Power measurement filter time constant for Q capacity (<i>T</i><i><sub>pfiltq... | direct |
+| tufiltql | [cim:WindContQPQULimIEC.tufiltql](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.tufiltql) | 1 <br />  [Seconds](Seconds.md)  | Voltage measurement filter time constant for Q capacity (<i>T</i><i><sub>ufil... | direct |
 | WindTurbineType3or4IEC | [cim:WindContQPQULimIEC.WindTurbineType3or4IEC](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.WindTurbineType3or4IEC) | 0..1 <br />  [WindTurbineType3or4IEC](WindTurbineType3or4IEC.md)  | Wind generator type 3 or type 4 model with which this QP and QU limitation mo... | direct |
 | WindDynamicsLookupTable | [cim:WindContQPQULimIEC.WindDynamicsLookupTable](http://iec.ch/TC57/CIM100#WindContQPQULimIEC.WindDynamicsLookupTable) | 1..* <br />  [WindDynamicsLookupTable](WindDynamicsLookupTable.md)  | The wind dynamics lookup table associated with this QP and QU limitation mode... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

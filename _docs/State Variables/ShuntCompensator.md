@@ -16,9 +16,11 @@ _A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors
 ```mermaid
  classDiagram
     class ShuntCompensator
+    click ShuntCompensator href "../ShuntCompensator"
       ShuntCompensator : ShuntCompensator.SvShuntCompensatorSections
         
           ShuntCompensator --> SvShuntCompensatorSections : ShuntCompensator.SvShuntCompensatorSections
+          click SvShuntCompensatorSections href "../SvShuntCompensatorSections"
         
       
 ```

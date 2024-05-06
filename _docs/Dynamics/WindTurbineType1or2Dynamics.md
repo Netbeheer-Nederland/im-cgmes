@@ -16,16 +16,21 @@ _Parent class supporting relationships to wind turbines type 1 and type 2 and th
 ```mermaid
  classDiagram
     class WindTurbineType1or2Dynamics
+    click WindTurbineType1or2Dynamics href "../WindTurbineType1or2Dynamics"
       DynamicsFunctionBlock <|-- WindTurbineType1or2Dynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       WindTurbineType1or2Dynamics <|-- WindType1or2UserDefined
+        click WindType1or2UserDefined href "../WindType1or2UserDefined"
       WindTurbineType1or2Dynamics <|-- WindTurbineType1or2IEC
+        click WindTurbineType1or2IEC href "../WindTurbineType1or2IEC"
       
       
       WindTurbineType1or2Dynamics : WindTurbineType1or2Dynamics.AsynchronousMachineDynamics
         
           WindTurbineType1or2Dynamics --> AsynchronousMachineDynamics : WindTurbineType1or2Dynamics.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       WindTurbineType1or2Dynamics : IdentifiedObject.description
         
@@ -38,6 +43,7 @@ _Parent class supporting relationships to wind turbines type 1 and type 2 and th
       WindTurbineType1or2Dynamics : WindTurbineType1or2Dynamics.RemoteInputSignal
         
           WindTurbineType1or2Dynamics --> RemoteInputSignal : WindTurbineType1or2Dynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -61,10 +67,10 @@ _Parent class supporting relationships to wind turbines type 1 and type 2 and th
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:WindTurbineType1or2Dynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#WindTurbineType1or2Dynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this wind generator type 1 or type 2 model | direct |
-| AsynchronousMachineDynamics | [cim:WindTurbineType1or2Dynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#WindTurbineType1or2Dynamics.AsynchronousMachineDynamics) | 1..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this wind generator type 1 or type 2 mo... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| AsynchronousMachineDynamics | [cim:WindTurbineType1or2Dynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#WindTurbineType1or2Dynamics.AsynchronousMachineDynamics) | 1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this wind generator type 1 or type 2 mo... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

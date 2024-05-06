@@ -16,11 +16,13 @@ _State variable for transformer tap step._
 ```mermaid
  classDiagram
     class SvTapStep
+    click SvTapStep href "../SvTapStep"
       SvTapStep : SvTapStep.position
         
       SvTapStep : SvTapStep.TapChanger
         
           SvTapStep --> TapChanger : SvTapStep.TapChanger
+          click TapChanger href "../TapChanger"
         
       
 ```
@@ -36,8 +38,8 @@ _State variable for transformer tap step._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| position | [cim:SvTapStep.position](http://iec.ch/TC57/CIM100#SvTapStep.position) | 1..1 <br />  float  | The floating point tap position | direct |
-| TapChanger | [cim:SvTapStep.TapChanger](http://iec.ch/TC57/CIM100#SvTapStep.TapChanger) | 1..1 <br />  [TapChanger](TapChanger.md)  | The tap changer associated with the tap step state | direct |
+| position | [cim:SvTapStep.position](http://iec.ch/TC57/CIM100#SvTapStep.position) | 1 <br />  float  | The floating point tap position | direct |
+| TapChanger | [cim:SvTapStep.TapChanger](http://iec.ch/TC57/CIM100#SvTapStep.TapChanger) | 1 <br />  [TapChanger](TapChanger.md)  | The tap changer associated with the tap step state | direct |
 
 
 

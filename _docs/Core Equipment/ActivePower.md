@@ -16,13 +16,16 @@ _Product of RMS value of the voltage and the RMS value of the in-phase component
 ```mermaid
  classDiagram
     class ActivePower
+    click ActivePower href "../ActivePower"
       ActivePower : ActivePower.multiplier
         
           ActivePower --> UnitMultiplier : ActivePower.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       ActivePower : ActivePower.unit
         
           ActivePower --> UnitSymbol : ActivePower.unit
+          click UnitSymbol href "../UnitSymbol"
         
       ActivePower : ActivePower.value
         

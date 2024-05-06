@@ -16,9 +16,11 @@ _State variable for status._
 ```mermaid
  classDiagram
     class SvStatus
+    click SvStatus href "../SvStatus"
       SvStatus : SvStatus.ConductingEquipment
         
           SvStatus --> ConductingEquipment : SvStatus.ConductingEquipment
+          click ConductingEquipment href "../ConductingEquipment"
         
       SvStatus : SvStatus.inService
         
@@ -36,8 +38,8 @@ _State variable for status._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ConductingEquipment | [cim:SvStatus.ConductingEquipment](http://iec.ch/TC57/CIM100#SvStatus.ConductingEquipment) | 1..1 <br />  [ConductingEquipment](ConductingEquipment.md)  | The conducting equipment associated with the status state variable | direct |
-| inService | [cim:SvStatus.inService](http://iec.ch/TC57/CIM100#SvStatus.inService) | 1..1 <br />  boolean  | The in service status as a result of topology processing | direct |
+| ConductingEquipment | [cim:SvStatus.ConductingEquipment](http://iec.ch/TC57/CIM100#SvStatus.ConductingEquipment) | 1 <br />  [ConductingEquipment](ConductingEquipment.md)  | The conducting equipment associated with the status state variable | direct |
+| inService | [cim:SvStatus.inService](http://iec.ch/TC57/CIM100#SvStatus.inService) | 1 <br />  boolean  | The in service status as a result of topology processing | direct |
 
 
 

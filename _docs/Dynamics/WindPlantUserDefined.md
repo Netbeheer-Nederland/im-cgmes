@@ -16,7 +16,9 @@ _Wind plant function block whose dynamic behaviour is described by <font color="
 ```mermaid
  classDiagram
     class WindPlantUserDefined
+    click WindPlantUserDefined href "../WindPlantUserDefined"
       WindPlantDynamics <|-- WindPlantUserDefined
+        click WindPlantDynamics href "../WindPlantDynamics"
       
       WindPlantUserDefined : IdentifiedObject.description
         
@@ -31,14 +33,17 @@ _Wind plant function block whose dynamic behaviour is described by <font color="
       WindPlantUserDefined : WindPlantUserDefined.ProprietaryParameterDynamics
         
           WindPlantUserDefined --> ProprietaryParameterDynamics : WindPlantUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       WindPlantUserDefined : WindPlantDynamics.RemoteInputSignal
         
           WindPlantUserDefined --> RemoteInputSignal : WindPlantDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       WindPlantUserDefined : WindPlantDynamics.WindTurbineType3or4Dynamics
         
           WindPlantUserDefined --> WindTurbineType3or4Dynamics : WindPlantDynamics.WindTurbineType3or4Dynamics
+          click WindTurbineType3or4Dynamics href "../WindTurbineType3or4Dynamics"
         
       
 ```
@@ -60,13 +65,13 @@ _Wind plant function block whose dynamic behaviour is described by <font color="
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:WindPlantUserDefined.proprietary](http://iec.ch/TC57/CIM100#WindPlantUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:WindPlantUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#WindPlantUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| proprietary | [cim:WindPlantUserDefined.proprietary](http://iec.ch/TC57/CIM100#WindPlantUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:WindPlantUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#WindPlantUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
 | RemoteInputSignal | [cim:WindPlantDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#WindPlantDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | The remote signal with which this power plant is associated | [WindPlantDynamics](WindPlantDynamics.md) |
 | WindTurbineType3or4Dynamics | [cim:WindPlantDynamics.WindTurbineType3or4Dynamics](http://iec.ch/TC57/CIM100#WindPlantDynamics.WindTurbineType3or4Dynamics) | 1..* <br />  [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md)  | The wind turbine type 3 or type 4 associated with this wind plant | [WindPlantDynamics](WindPlantDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

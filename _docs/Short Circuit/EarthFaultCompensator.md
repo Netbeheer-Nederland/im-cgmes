@@ -16,11 +16,15 @@ _A conducting equipment used to represent a connection to ground which is typica
 ```mermaid
  classDiagram
     class EarthFaultCompensator
+    click EarthFaultCompensator href "../EarthFaultCompensator"
       ConductingEquipment <|-- EarthFaultCompensator
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       EarthFaultCompensator <|-- GroundingImpedance
+        click GroundingImpedance href "../GroundingImpedance"
       EarthFaultCompensator <|-- PetersenCoil
+        click PetersenCoil href "../PetersenCoil"
       
       
       EarthFaultCompensator : IdentifiedObject.mRID
@@ -28,6 +32,7 @@ _A conducting equipment used to represent a connection to ground which is typica
       EarthFaultCompensator : EarthFaultCompensator.r
         
           EarthFaultCompensator --> Resistance : EarthFaultCompensator.r
+          click Resistance href "../Resistance"
         
       
 ```
@@ -53,7 +58,7 @@ _A conducting equipment used to represent a connection to ground which is typica
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | r | [cim:EarthFaultCompensator.r](http://iec.ch/TC57/CIM100#EarthFaultCompensator.r) | 0..1 <br />  [Resistance](Resistance.md)  | Nominal resistance of device | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

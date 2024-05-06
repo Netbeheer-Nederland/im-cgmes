@@ -16,11 +16,15 @@ _A rotating machine which may be used as a generator or motor._
 ```mermaid
  classDiagram
     class RotatingMachine
+    click RotatingMachine href "../RotatingMachine"
       RegulatingCondEq <|-- RotatingMachine
+        click RegulatingCondEq href "../RegulatingCondEq"
       
 
       RotatingMachine <|-- AsynchronousMachine
+        click AsynchronousMachine href "../AsynchronousMachine"
       RotatingMachine <|-- SynchronousMachine
+        click SynchronousMachine href "../SynchronousMachine"
       
       
       RotatingMachine : IdentifiedObject.mRID
@@ -50,7 +54,7 @@ _A rotating machine which may be used as a generator or motor._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

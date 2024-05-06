@@ -16,7 +16,9 @@ _Group of similar days.   For example it could be used to represent weekdays, we
 ```mermaid
  classDiagram
     class DayType
+    click DayType href "../DayType"
       IdentifiedObject <|-- DayType
+        click IdentifiedObject href "../IdentifiedObject"
       
       DayType : IdentifiedObject.description
         
@@ -29,6 +31,7 @@ _Group of similar days.   For example it could be used to represent weekdays, we
       DayType : DayType.SeasonDayTypeSchedules
         
           DayType --> SeasonDayTypeSchedule : DayType.SeasonDayTypeSchedules
+          click SeasonDayTypeSchedule href "../SeasonDayTypeSchedule"
         
       DayType : IdentifiedObject.shortName
         
@@ -50,11 +53,11 @@ _Group of similar days.   For example it could be used to represent weekdays, we
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| SeasonDayTypeSchedules | [cim:DayType.SeasonDayTypeSchedules](http://iec.ch/TC57/CIM100#DayType.SeasonDayTypeSchedules) | 0..* <br />  [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md)  | Schedules that use this DayType | direct |
+| SeasonDayTypeSchedules | [cim:DayType.SeasonDayTypeSchedules](http://iec.ch/TC57/CIM100#DayType.SeasonDayTypeSchedules) | * <br />  [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md)  | Schedules that use this DayType | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

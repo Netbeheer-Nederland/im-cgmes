@@ -22,11 +22,14 @@ _Only energised TopologicalNode-s shall be part of the topological island._
 ```mermaid
  classDiagram
     class TopologicalIsland
+    click TopologicalIsland href "../TopologicalIsland"
       IdentifiedObject <|-- TopologicalIsland
+        click IdentifiedObject href "../IdentifiedObject"
       
       TopologicalIsland : TopologicalIsland.AngleRefTopologicalNode
         
           TopologicalIsland --> TopologicalNode : TopologicalIsland.AngleRefTopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       TopologicalIsland : IdentifiedObject.mRID
         
@@ -35,6 +38,7 @@ _Only energised TopologicalNode-s shall be part of the topological island._
       TopologicalIsland : TopologicalIsland.TopologicalNodes
         
           TopologicalIsland --> TopologicalNode : TopologicalIsland.TopologicalNodes
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -54,10 +58,10 @@ _Only energised TopologicalNode-s shall be part of the topological island._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| AngleRefTopologicalNode | [cim:TopologicalIsland.AngleRefTopologicalNode](http://iec.ch/TC57/CIM100#TopologicalIsland.AngleRefTopologicalNode) | 1..1 <br />  [TopologicalNode](TopologicalNode.md)  | The angle reference for the island | direct |
+| AngleRefTopologicalNode | [cim:TopologicalIsland.AngleRefTopologicalNode](http://iec.ch/TC57/CIM100#TopologicalIsland.AngleRefTopologicalNode) | 1 <br />  [TopologicalNode](TopologicalNode.md)  | The angle reference for the island | direct |
 | TopologicalNodes | [cim:TopologicalIsland.TopologicalNodes](http://iec.ch/TC57/CIM100#TopologicalIsland.TopologicalNodes) | 1..* <br />  [TopologicalNode](TopologicalNode.md)  | A topological node belongs to a topological island | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

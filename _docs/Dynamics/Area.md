@@ -16,13 +16,16 @@ _Area._
 ```mermaid
  classDiagram
     class Area
+    click Area href "../Area"
       Area : Area.multiplier
         
           Area --> UnitMultiplier : Area.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Area : Area.unit
         
           Area --> UnitSymbol : Area.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Area : Area.value
         

@@ -20,7 +20,9 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
 ```mermaid
  classDiagram
     class StaticVarCompensator
+    click StaticVarCompensator href "../StaticVarCompensator"
       RegulatingCondEq <|-- StaticVarCompensator
+        click RegulatingCondEq href "../RegulatingCondEq"
       
       StaticVarCompensator : RegulatingCondEq.controlEnabled
         
@@ -31,6 +33,7 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
       StaticVarCompensator : StaticVarCompensator.q
         
           StaticVarCompensator --> ReactivePower : StaticVarCompensator.q
+          click ReactivePower href "../ReactivePower"
         
       
 ```
@@ -55,10 +58,10 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| q | [cim:StaticVarCompensator.q](http://iec.ch/TC57/CIM100#StaticVarCompensator.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power injection | direct |
-| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| q | [cim:StaticVarCompensator.q](http://iec.ch/TC57/CIM100#StaticVarCompensator.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power injection | direct |
+| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

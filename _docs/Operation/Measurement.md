@@ -24,13 +24,19 @@ _When the sensor location is needed both Measurement-PSR and Measurement-Termina
 ```mermaid
  classDiagram
     class Measurement
+    click Measurement href "../Measurement"
       IdentifiedObject <|-- Measurement
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       Measurement <|-- Accumulator
+        click Accumulator href "../Accumulator"
       Measurement <|-- Analog
+        click Analog href "../Analog"
       Measurement <|-- Discrete
+        click Discrete href "../Discrete"
       Measurement <|-- StringMeasurement
+        click StringMeasurement href "../StringMeasurement"
       
       
       Measurement : IdentifiedObject.description
@@ -44,22 +50,27 @@ _When the sensor location is needed both Measurement-PSR and Measurement-Termina
       Measurement : Measurement.phases
         
           Measurement --> PhaseCode : Measurement.phases
+          click PhaseCode href "../PhaseCode"
         
       Measurement : Measurement.PowerSystemResource
         
           Measurement --> PowerSystemResource : Measurement.PowerSystemResource
+          click PowerSystemResource href "../PowerSystemResource"
         
       Measurement : Measurement.Terminal
         
           Measurement --> ACDCTerminal : Measurement.Terminal
+          click ACDCTerminal href "../ACDCTerminal"
         
       Measurement : Measurement.unitMultiplier
         
           Measurement --> UnitMultiplier : Measurement.unitMultiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Measurement : Measurement.unitSymbol
         
           Measurement --> UnitSymbol : Measurement.unitSymbol
+          click UnitSymbol href "../UnitSymbol"
         
       
 ```
@@ -84,14 +95,14 @@ _When the sensor location is needed both Measurement-PSR and Measurement-Termina
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | Terminal | [cim:Measurement.Terminal](http://iec.ch/TC57/CIM100#Measurement.Terminal) | 0..1 <br />  [ACDCTerminal](ACDCTerminal.md)  | One or more measurements may be associated with a terminal in the network | direct |
-| measurementType | [cim:Measurement.measurementType](http://iec.ch/TC57/CIM100#Measurement.measurementType) | 1..1 <br />  string  | Specifies the type of measurement | direct |
+| measurementType | [cim:Measurement.measurementType](http://iec.ch/TC57/CIM100#Measurement.measurementType) | 1 <br />  string  | Specifies the type of measurement | direct |
 | phases | [cim:Measurement.phases](http://iec.ch/TC57/CIM100#Measurement.phases) | 0..1 <br />  [PhaseCode](PhaseCode.md)  | Indicates to which phases the measurement applies and avoids the need to use ... | direct |
-| unitMultiplier | [cim:Measurement.unitMultiplier](http://iec.ch/TC57/CIM100#Measurement.unitMultiplier) | 1..1 <br />  [UnitMultiplier](UnitMultiplier.md)  | The unit multiplier of the measured quantity | direct |
-| unitSymbol | [cim:Measurement.unitSymbol](http://iec.ch/TC57/CIM100#Measurement.unitSymbol) | 1..1 <br />  [UnitSymbol](UnitSymbol.md)  | The unit of measure of the measured quantity | direct |
-| PowerSystemResource | [cim:Measurement.PowerSystemResource](http://iec.ch/TC57/CIM100#Measurement.PowerSystemResource) | 1..1 <br />  [PowerSystemResource](PowerSystemResource.md)  | The power system resource that contains the measurement | direct |
+| unitMultiplier | [cim:Measurement.unitMultiplier](http://iec.ch/TC57/CIM100#Measurement.unitMultiplier) | 1 <br />  [UnitMultiplier](UnitMultiplier.md)  | The unit multiplier of the measured quantity | direct |
+| unitSymbol | [cim:Measurement.unitSymbol](http://iec.ch/TC57/CIM100#Measurement.unitSymbol) | 1 <br />  [UnitSymbol](UnitSymbol.md)  | The unit of measure of the measured quantity | direct |
+| PowerSystemResource | [cim:Measurement.PowerSystemResource](http://iec.ch/TC57/CIM100#Measurement.PowerSystemResource) | 1 <br />  [PowerSystemResource](PowerSystemResource.md)  | The power system resource that contains the measurement | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

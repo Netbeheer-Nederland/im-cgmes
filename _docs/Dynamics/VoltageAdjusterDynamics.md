@@ -16,11 +16,15 @@ _Voltage adjuster function block whose behaviour is described by reference to a 
 ```mermaid
  classDiagram
     class VoltageAdjusterDynamics
+    click VoltageAdjusterDynamics href "../VoltageAdjusterDynamics"
       DynamicsFunctionBlock <|-- VoltageAdjusterDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       VoltageAdjusterDynamics <|-- VoltageAdjusterUserDefined
+        click VoltageAdjusterUserDefined href "../VoltageAdjusterUserDefined"
       VoltageAdjusterDynamics <|-- VAdjIEEE
+        click VAdjIEEE href "../VAdjIEEE"
       
       
       VoltageAdjusterDynamics : IdentifiedObject.description
@@ -34,6 +38,7 @@ _Voltage adjuster function block whose behaviour is described by reference to a 
       VoltageAdjusterDynamics : VoltageAdjusterDynamics.PFVArControllerType1Dynamics
         
           VoltageAdjusterDynamics --> PFVArControllerType1Dynamics : VoltageAdjusterDynamics.PFVArControllerType1Dynamics
+          click PFVArControllerType1Dynamics href "../PFVArControllerType1Dynamics"
         
       
 ```
@@ -56,10 +61,10 @@ _Voltage adjuster function block whose behaviour is described by reference to a 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| PFVArControllerType1Dynamics | [cim:VoltageAdjusterDynamics.PFVArControllerType1Dynamics](http://iec.ch/TC57/CIM100#VoltageAdjusterDynamics.PFVArControllerType1Dynamics) | 1..1 <br />  [PFVArControllerType1Dynamics](PFVArControllerType1Dynamics.md)  | Power factor or VAr controller type 1 model with which this voltage adjuster ... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| PFVArControllerType1Dynamics | [cim:VoltageAdjusterDynamics.PFVArControllerType1Dynamics](http://iec.ch/TC57/CIM100#VoltageAdjusterDynamics.PFVArControllerType1Dynamics) | 1 <br />  [PFVArControllerType1Dynamics](PFVArControllerType1Dynamics.md)  | Power factor or VAr controller type 1 model with which this voltage adjuster ... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

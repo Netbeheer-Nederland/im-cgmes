@@ -16,10 +16,13 @@ _A conducting connection point of a power transformer. It corresponds to a physi
 ```mermaid
  classDiagram
     class TransformerEnd
+    click TransformerEnd href "../TransformerEnd"
       IdentifiedObject <|-- TransformerEnd
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       TransformerEnd <|-- PowerTransformerEnd
+        click PowerTransformerEnd href "../PowerTransformerEnd"
       
       
       TransformerEnd : TransformerEnd.grounded
@@ -29,10 +32,12 @@ _A conducting connection point of a power transformer. It corresponds to a physi
       TransformerEnd : TransformerEnd.rground
         
           TransformerEnd --> Resistance : TransformerEnd.rground
+          click Resistance href "../Resistance"
         
       TransformerEnd : TransformerEnd.xground
         
           TransformerEnd --> Reactance : TransformerEnd.xground
+          click Reactance href "../Reactance"
         
       
 ```
@@ -54,9 +59,9 @@ _A conducting connection point of a power transformer. It corresponds to a physi
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | rground | [cim:TransformerEnd.rground](http://iec.ch/TC57/CIM100#TransformerEnd.rground) | 0..1 <br />  [Resistance](Resistance.md)  | (for Yn and Zn connections) Resistance part of neutral impedance where 'groun... | direct |
-| grounded | [cim:TransformerEnd.grounded](http://iec.ch/TC57/CIM100#TransformerEnd.grounded) | 1..1 <br />  boolean  | (for Yn and Zn connections) True if the neutral is solidly grounded | direct |
+| grounded | [cim:TransformerEnd.grounded](http://iec.ch/TC57/CIM100#TransformerEnd.grounded) | 1 <br />  boolean  | (for Yn and Zn connections) True if the neutral is solidly grounded | direct |
 | xground | [cim:TransformerEnd.xground](http://iec.ch/TC57/CIM100#TransformerEnd.xground) | 0..1 <br />  [Reactance](Reactance.md)  | (for Yn and Zn connections) Reactive part of neutral impedance where 'grounde... | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

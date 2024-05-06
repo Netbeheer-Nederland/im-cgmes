@@ -16,6 +16,7 @@ _Street details, in the context of address._
 ```mermaid
  classDiagram
     class StreetDetail
+    click StreetDetail href "../StreetDetail"
       StreetDetail : StreetDetail.addressGeneral
         
       StreetDetail : StreetDetail.addressGeneral2

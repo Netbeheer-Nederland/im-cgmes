@@ -16,13 +16,16 @@ _Resistance (real part of impedance)._
 ```mermaid
  classDiagram
     class Resistance
+    click Resistance href "../Resistance"
       Resistance : Resistance.multiplier
         
           Resistance --> UnitMultiplier : Resistance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Resistance : Resistance.unit
         
           Resistance --> UnitSymbol : Resistance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Resistance : Resistance.value
         

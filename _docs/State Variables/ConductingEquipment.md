@@ -16,12 +16,16 @@ _The parts of the AC power system that are designed to carry current or that are
 ```mermaid
  classDiagram
     class ConductingEquipment
+    click ConductingEquipment href "../ConductingEquipment"
       ConductingEquipment <|-- ACDCConverter
+        click ACDCConverter href "../ACDCConverter"
       ConductingEquipment <|-- Switch
+        click Switch href "../Switch"
       
       ConductingEquipment : ConductingEquipment.SvStatus
         
           ConductingEquipment --> SvStatus : ConductingEquipment.SvStatus
+          click SvStatus href "../SvStatus"
         
       
 ```

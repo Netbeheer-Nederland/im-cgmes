@@ -28,7 +28,9 @@ _<font color="#0f0f0f">Reference: IEEE 421.5-2005, 4.</font>_
 ```mermaid
  classDiagram
     class VCompIEEEType2
+    click VCompIEEEType2 href "../VCompIEEEType2"
       VoltageCompensatorDynamics <|-- VCompIEEEType2
+        click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
       
       VCompIEEEType2 : IdentifiedObject.description
         
@@ -37,10 +39,12 @@ _<font color="#0f0f0f">Reference: IEEE 421.5-2005, 4.</font>_
       VCompIEEEType2 : VoltageCompensatorDynamics.ExcitationSystemDynamics
         
           VCompIEEEType2 --> ExcitationSystemDynamics : VoltageCompensatorDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       VCompIEEEType2 : VCompIEEEType2.GenICompensationForGenJ
         
           VCompIEEEType2 --> GenICompensationForGenJ : VCompIEEEType2.GenICompensationForGenJ
+          click GenICompensationForGenJ href "../GenICompensationForGenJ"
         
       VCompIEEEType2 : IdentifiedObject.mRID
         
@@ -49,10 +53,12 @@ _<font color="#0f0f0f">Reference: IEEE 421.5-2005, 4.</font>_
       VCompIEEEType2 : VoltageCompensatorDynamics.RemoteInputSignal
         
           VCompIEEEType2 --> RemoteInputSignal : VoltageCompensatorDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       VCompIEEEType2 : VCompIEEEType2.tr
         
           VCompIEEEType2 --> Seconds : VCompIEEEType2.tr
+          click Seconds href "../Seconds"
         
       
 ```
@@ -74,13 +80,13 @@ _<font color="#0f0f0f">Reference: IEEE 421.5-2005, 4.</font>_
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| tr | [cim:VCompIEEEType2.tr](http://iec.ch/TC57/CIM100#VCompIEEEType2.tr) | 1..1 <br />  [Seconds](Seconds.md)  | <font color="#0f0f0f">Time constant which is used for the combined voltage se... | direct |
+| tr | [cim:VCompIEEEType2.tr](http://iec.ch/TC57/CIM100#VCompIEEEType2.tr) | 1 <br />  [Seconds](Seconds.md)  | <font color="#0f0f0f">Time constant which is used for the combined voltage se... | direct |
 | GenICompensationForGenJ | [cim:VCompIEEEType2.GenICompensationForGenJ](http://iec.ch/TC57/CIM100#VCompIEEEType2.GenICompensationForGenJ) | 1..* <br />  [GenICompensationForGenJ](GenICompensationForGenJ.md)  | Compensation of this voltage compensator's generator for current flow out of ... | direct |
 | RemoteInputSignal | [cim:VoltageCompensatorDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this voltage compensator model | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
-| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -16,7 +16,9 @@ _A connection to the AC network for energy production or consumption that uses p
 ```mermaid
  classDiagram
     class PowerElectronicsConnection
+    click PowerElectronicsConnection href "../PowerElectronicsConnection"
       RegulatingCondEq <|-- PowerElectronicsConnection
+        click RegulatingCondEq href "../RegulatingCondEq"
       
       PowerElectronicsConnection : RegulatingCondEq.controlEnabled
         
@@ -27,10 +29,12 @@ _A connection to the AC network for energy production or consumption that uses p
       PowerElectronicsConnection : PowerElectronicsConnection.p
         
           PowerElectronicsConnection --> ActivePower : PowerElectronicsConnection.p
+          click ActivePower href "../ActivePower"
         
       PowerElectronicsConnection : PowerElectronicsConnection.q
         
           PowerElectronicsConnection --> ReactivePower : PowerElectronicsConnection.q
+          click ReactivePower href "../ReactivePower"
         
       
 ```
@@ -55,11 +59,11 @@ _A connection to the AC network for energy production or consumption that uses p
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| p | [cim:PowerElectronicsConnection.p](http://iec.ch/TC57/CIM100#PowerElectronicsConnection.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | Active power injection | direct |
-| q | [cim:PowerElectronicsConnection.q](http://iec.ch/TC57/CIM100#PowerElectronicsConnection.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power injection | direct |
-| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| p | [cim:PowerElectronicsConnection.p](http://iec.ch/TC57/CIM100#PowerElectronicsConnection.p) | 1 <br />  [ActivePower](ActivePower.md)  | Active power injection | direct |
+| q | [cim:PowerElectronicsConnection.q](http://iec.ch/TC57/CIM100#PowerElectronicsConnection.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power injection | direct |
+| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

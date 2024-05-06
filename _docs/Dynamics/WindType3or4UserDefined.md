@@ -16,7 +16,9 @@ _Wind type 3 or type 4 function block whose dynamic behaviour is described by <f
 ```mermaid
  classDiagram
     class WindType3or4UserDefined
+    click WindType3or4UserDefined href "../WindType3or4UserDefined"
       WindTurbineType3or4Dynamics <|-- WindType3or4UserDefined
+        click WindTurbineType3or4Dynamics href "../WindTurbineType3or4Dynamics"
       
       WindType3or4UserDefined : IdentifiedObject.description
         
@@ -29,20 +31,24 @@ _Wind type 3 or type 4 function block whose dynamic behaviour is described by <f
       WindType3or4UserDefined : WindTurbineType3or4Dynamics.PowerElectronicsConnection
         
           WindType3or4UserDefined --> PowerElectronicsConnection : WindTurbineType3or4Dynamics.PowerElectronicsConnection
+          click PowerElectronicsConnection href "../PowerElectronicsConnection"
         
       WindType3or4UserDefined : WindType3or4UserDefined.proprietary
         
       WindType3or4UserDefined : WindType3or4UserDefined.ProprietaryParameterDynamics
         
           WindType3or4UserDefined --> ProprietaryParameterDynamics : WindType3or4UserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       WindType3or4UserDefined : WindTurbineType3or4Dynamics.RemoteInputSignal
         
           WindType3or4UserDefined --> RemoteInputSignal : WindTurbineType3or4Dynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       WindType3or4UserDefined : WindTurbineType3or4Dynamics.WindPlantDynamics
         
           WindType3or4UserDefined --> WindPlantDynamics : WindTurbineType3or4Dynamics.WindPlantDynamics
+          click WindPlantDynamics href "../WindPlantDynamics"
         
       
 ```
@@ -64,14 +70,14 @@ _Wind type 3 or type 4 function block whose dynamic behaviour is described by <f
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:WindType3or4UserDefined.proprietary](http://iec.ch/TC57/CIM100#WindType3or4UserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:WindType3or4UserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#WindType3or4UserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| PowerElectronicsConnection | [cim:WindTurbineType3or4Dynamics.PowerElectronicsConnection](http://iec.ch/TC57/CIM100#WindTurbineType3or4Dynamics.PowerElectronicsConnection) | 1..1 <br />  [PowerElectronicsConnection](PowerElectronicsConnection.md)  | The power electronics connection associated with this wind turbine type 3 or ... | [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md) |
+| proprietary | [cim:WindType3or4UserDefined.proprietary](http://iec.ch/TC57/CIM100#WindType3or4UserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:WindType3or4UserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#WindType3or4UserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| PowerElectronicsConnection | [cim:WindTurbineType3or4Dynamics.PowerElectronicsConnection](http://iec.ch/TC57/CIM100#WindTurbineType3or4Dynamics.PowerElectronicsConnection) | 1 <br />  [PowerElectronicsConnection](PowerElectronicsConnection.md)  | The power electronics connection associated with this wind turbine type 3 or ... | [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md) |
 | RemoteInputSignal | [cim:WindTurbineType3or4Dynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#WindTurbineType3or4Dynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by these wind turbine type 3 or type 4 models | [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md) |
 | WindPlantDynamics | [cim:WindTurbineType3or4Dynamics.WindPlantDynamics](http://iec.ch/TC57/CIM100#WindTurbineType3or4Dynamics.WindPlantDynamics) | 0..1 <br />  [WindPlantDynamics](WindPlantDynamics.md)  | The wind plant with which the wind turbines type 3 or type 4 are associated | [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

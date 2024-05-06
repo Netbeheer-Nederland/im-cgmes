@@ -16,13 +16,16 @@ _Imaginary part of admittance._
 ```mermaid
  classDiagram
     class Susceptance
+    click Susceptance href "../Susceptance"
       Susceptance : Susceptance.multiplier
         
           Susceptance --> UnitMultiplier : Susceptance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Susceptance : Susceptance.unit
         
           Susceptance --> UnitSymbol : Susceptance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Susceptance : Susceptance.value
         

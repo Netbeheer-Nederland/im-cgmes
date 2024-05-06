@@ -16,10 +16,13 @@ _Static var compensator whose behaviour is described by reference to a standard 
 ```mermaid
  classDiagram
     class StaticVarCompensatorDynamics
+    click StaticVarCompensatorDynamics href "../StaticVarCompensatorDynamics"
       DynamicsFunctionBlock <|-- StaticVarCompensatorDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       StaticVarCompensatorDynamics <|-- SVCUserDefined
+        click SVCUserDefined href "../SVCUserDefined"
       
       
       StaticVarCompensatorDynamics : IdentifiedObject.description
@@ -33,6 +36,7 @@ _Static var compensator whose behaviour is described by reference to a standard 
       StaticVarCompensatorDynamics : StaticVarCompensatorDynamics.StaticVarCompensator
         
           StaticVarCompensatorDynamics --> StaticVarCompensator : StaticVarCompensatorDynamics.StaticVarCompensator
+          click StaticVarCompensator href "../StaticVarCompensator"
         
       
 ```
@@ -54,10 +58,10 @@ _Static var compensator whose behaviour is described by reference to a standard 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| StaticVarCompensator | [cim:StaticVarCompensatorDynamics.StaticVarCompensator](http://iec.ch/TC57/CIM100#StaticVarCompensatorDynamics.StaticVarCompensator) | 1..1 <br />  [StaticVarCompensator](StaticVarCompensator.md)  | Static Var Compensator to which Static Var Compensator dynamics model applies | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| StaticVarCompensator | [cim:StaticVarCompensatorDynamics.StaticVarCompensator](http://iec.ch/TC57/CIM100#StaticVarCompensatorDynamics.StaticVarCompensator) | 1 <br />  [StaticVarCompensator](StaticVarCompensator.md)  | Static Var Compensator to which Static Var Compensator dynamics model applies | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

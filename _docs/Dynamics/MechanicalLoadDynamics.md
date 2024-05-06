@@ -16,16 +16,21 @@ _Mechanical load function block whose behaviour is described by reference to a s
 ```mermaid
  classDiagram
     class MechanicalLoadDynamics
+    click MechanicalLoadDynamics href "../MechanicalLoadDynamics"
       DynamicsFunctionBlock <|-- MechanicalLoadDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       MechanicalLoadDynamics <|-- MechanicalLoadUserDefined
+        click MechanicalLoadUserDefined href "../MechanicalLoadUserDefined"
       MechanicalLoadDynamics <|-- MechLoad1
+        click MechLoad1 href "../MechLoad1"
       
       
       MechanicalLoadDynamics : MechanicalLoadDynamics.AsynchronousMachineDynamics
         
           MechanicalLoadDynamics --> AsynchronousMachineDynamics : MechanicalLoadDynamics.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       MechanicalLoadDynamics : IdentifiedObject.description
         
@@ -38,6 +43,7 @@ _Mechanical load function block whose behaviour is described by reference to a s
       MechanicalLoadDynamics : MechanicalLoadDynamics.SynchronousMachineDynamics
         
           MechanicalLoadDynamics --> SynchronousMachineDynamics : MechanicalLoadDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       
 ```
@@ -62,9 +68,9 @@ _Mechanical load function block whose behaviour is described by reference to a s
 | ---  | --- | --- | --- | --- |
 | SynchronousMachineDynamics | [cim:MechanicalLoadDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadDynamics.SynchronousMachineDynamics) | 0..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this mechanical load model is associated | direct |
 | AsynchronousMachineDynamics | [cim:MechanicalLoadDynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadDynamics.AsynchronousMachineDynamics) | 0..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this mechanical load model is associate... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

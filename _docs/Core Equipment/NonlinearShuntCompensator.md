@@ -16,17 +16,21 @@ _A non linear shunt compensator has bank or section admittance values that diffe
 ```mermaid
  classDiagram
     class NonlinearShuntCompensator
+    click NonlinearShuntCompensator href "../NonlinearShuntCompensator"
       ShuntCompensator <|-- NonlinearShuntCompensator
+        click ShuntCompensator href "../ShuntCompensator"
       
       NonlinearShuntCompensator : Equipment.aggregate
         
       NonlinearShuntCompensator : ShuntCompensator.aVRDelay
         
           NonlinearShuntCompensator --> Seconds : ShuntCompensator.aVRDelay
+          click Seconds href "../Seconds"
         
       NonlinearShuntCompensator : ConductingEquipment.BaseVoltage
         
           NonlinearShuntCompensator --> BaseVoltage : ConductingEquipment.BaseVoltage
+          click BaseVoltage href "../BaseVoltage"
         
       NonlinearShuntCompensator : IdentifiedObject.description
         
@@ -35,6 +39,7 @@ _A non linear shunt compensator has bank or section admittance values that diffe
       NonlinearShuntCompensator : Equipment.EquipmentContainer
         
           NonlinearShuntCompensator --> EquipmentContainer : Equipment.EquipmentContainer
+          click EquipmentContainer href "../EquipmentContainer"
         
       NonlinearShuntCompensator : ShuntCompensator.grounded
         
@@ -47,10 +52,12 @@ _A non linear shunt compensator has bank or section admittance values that diffe
       NonlinearShuntCompensator : ShuntCompensator.nomU
         
           NonlinearShuntCompensator --> Voltage : ShuntCompensator.nomU
+          click Voltage href "../Voltage"
         
       NonlinearShuntCompensator : NonlinearShuntCompensator.NonlinearShuntCompensatorPoints
         
           NonlinearShuntCompensator --> NonlinearShuntCompensatorPoint : NonlinearShuntCompensator.NonlinearShuntCompensatorPoints
+          click NonlinearShuntCompensatorPoint href "../NonlinearShuntCompensatorPoint"
         
       NonlinearShuntCompensator : Equipment.normallyInService
         
@@ -59,20 +66,24 @@ _A non linear shunt compensator has bank or section admittance values that diffe
       NonlinearShuntCompensator : Equipment.OperationalLimitSet
         
           NonlinearShuntCompensator --> OperationalLimitSet : Equipment.OperationalLimitSet
+          click OperationalLimitSet href "../OperationalLimitSet"
         
       NonlinearShuntCompensator : RegulatingCondEq.RegulatingControl
         
           NonlinearShuntCompensator --> RegulatingControl : RegulatingCondEq.RegulatingControl
+          click RegulatingControl href "../RegulatingControl"
         
       NonlinearShuntCompensator : IdentifiedObject.shortName
         
       NonlinearShuntCompensator : ConductingEquipment.Terminals
         
           NonlinearShuntCompensator --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       NonlinearShuntCompensator : ShuntCompensator.voltageSensitivity
         
           NonlinearShuntCompensator --> VoltagePerReactivePower : ShuntCompensator.voltageSensitivity
+          click VoltagePerReactivePower href "../VoltagePerReactivePower"
         
       
 ```
@@ -101,21 +112,21 @@ _A non linear shunt compensator has bank or section admittance values that diffe
 | NonlinearShuntCompensatorPoints | [cim:NonlinearShuntCompensator.NonlinearShuntCompensatorPoints](http://iec.ch/TC57/CIM100#NonlinearShuntCompensator.NonlinearShuntCompensatorPoints) | 1..* <br />  [NonlinearShuntCompensatorPoint](NonlinearShuntCompensatorPoint.md)  | All points of the non-linear shunt compensator | direct |
 | aVRDelay | [cim:ShuntCompensator.aVRDelay](http://iec.ch/TC57/CIM100#ShuntCompensator.aVRDelay) | 0..1 <br />  [Seconds](Seconds.md)  | An automatic voltage regulation delay (AVRDelay) which is the time delay from... | [ShuntCompensator](ShuntCompensator.md) |
 | grounded | [cim:ShuntCompensator.grounded](http://iec.ch/TC57/CIM100#ShuntCompensator.grounded) | 0..1 <br />  boolean  | Used for Yn and Zn connections | [ShuntCompensator](ShuntCompensator.md) |
-| maximumSections | [cim:ShuntCompensator.maximumSections](http://iec.ch/TC57/CIM100#ShuntCompensator.maximumSections) | 1..1 <br />  integer  | The maximum number of sections that may be switched in | [ShuntCompensator](ShuntCompensator.md) |
-| nomU | [cim:ShuntCompensator.nomU](http://iec.ch/TC57/CIM100#ShuntCompensator.nomU) | 1..1 <br />  [Voltage](Voltage.md)  | The voltage at which the nominal reactive power may be calculated | [ShuntCompensator](ShuntCompensator.md) |
-| normalSections | [cim:ShuntCompensator.normalSections](http://iec.ch/TC57/CIM100#ShuntCompensator.normalSections) | 1..1 <br />  integer  | The normal number of sections switched in | [ShuntCompensator](ShuntCompensator.md) |
+| maximumSections | [cim:ShuntCompensator.maximumSections](http://iec.ch/TC57/CIM100#ShuntCompensator.maximumSections) | 1 <br />  integer  | The maximum number of sections that may be switched in | [ShuntCompensator](ShuntCompensator.md) |
+| nomU | [cim:ShuntCompensator.nomU](http://iec.ch/TC57/CIM100#ShuntCompensator.nomU) | 1 <br />  [Voltage](Voltage.md)  | The voltage at which the nominal reactive power may be calculated | [ShuntCompensator](ShuntCompensator.md) |
+| normalSections | [cim:ShuntCompensator.normalSections](http://iec.ch/TC57/CIM100#ShuntCompensator.normalSections) | 1 <br />  integer  | The normal number of sections switched in | [ShuntCompensator](ShuntCompensator.md) |
 | voltageSensitivity | [cim:ShuntCompensator.voltageSensitivity](http://iec.ch/TC57/CIM100#ShuntCompensator.voltageSensitivity) | 0..1 <br />  [VoltagePerReactivePower](VoltagePerReactivePower.md)  | Voltage sensitivity required for the device to regulate the bus voltage, in v... | [ShuntCompensator](ShuntCompensator.md) |
 | RegulatingControl | [cim:RegulatingCondEq.RegulatingControl](http://iec.ch/TC57/CIM100#RegulatingCondEq.RegulatingControl) | 0..1 <br />  [RegulatingControl](RegulatingControl.md)  | The regulating control scheme in which this equipment participates | [RegulatingCondEq](RegulatingCondEq.md) |
 | BaseVoltage | [cim:ConductingEquipment.BaseVoltage](http://iec.ch/TC57/CIM100#ConductingEquipment.BaseVoltage) | 0..1 <br />  [BaseVoltage](BaseVoltage.md)  | Base voltage of this conducting equipment | [ConductingEquipment](ConductingEquipment.md) |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | aggregate | [cim:Equipment.aggregate](http://iec.ch/TC57/CIM100#Equipment.aggregate) | 0..1 <br />  boolean  | The aggregate flag provides an alternative way of representing an aggregated ... | [Equipment](Equipment.md) |
 | normallyInService | [cim:Equipment.normallyInService](http://iec.ch/TC57/CIM100#Equipment.normallyInService) | 0..1 <br />  boolean  | Specifies the availability of the equipment under normal operating conditions | [Equipment](Equipment.md) |
 | EquipmentContainer | [cim:Equipment.EquipmentContainer](http://iec.ch/TC57/CIM100#Equipment.EquipmentContainer) | 0..1 <br />  [EquipmentContainer](EquipmentContainer.md)  | Container of this equipment | [Equipment](Equipment.md) |
-| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | 0..* <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
+| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | * <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

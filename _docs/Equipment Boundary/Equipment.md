@@ -16,10 +16,13 @@ _The parts of a power system that are physical devices, electronic or mechanical
 ```mermaid
  classDiagram
     class Equipment
+    click Equipment href "../Equipment"
       PowerSystemResource <|-- Equipment
+        click PowerSystemResource href "../PowerSystemResource"
       
 
       Equipment <|-- ConductingEquipment
+        click ConductingEquipment href "../ConductingEquipment"
       
       
       Equipment : IdentifiedObject.description
@@ -29,6 +32,7 @@ _The parts of a power system that are physical devices, electronic or mechanical
       Equipment : Equipment.EquipmentContainer
         
           Equipment --> EquipmentContainer : Equipment.EquipmentContainer
+          click EquipmentContainer href "../EquipmentContainer"
         
       Equipment : IdentifiedObject.mRID
         
@@ -59,8 +63,8 @@ _The parts of a power system that are physical devices, electronic or mechanical
 | EquipmentContainer | [cim:Equipment.EquipmentContainer](http://iec.ch/TC57/CIM100#Equipment.EquipmentContainer) | 0..1 <br />  [EquipmentContainer](EquipmentContainer.md)  | Container of this equipment | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

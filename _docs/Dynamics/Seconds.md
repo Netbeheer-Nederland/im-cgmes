@@ -16,13 +16,16 @@ _Time, in seconds._
 ```mermaid
  classDiagram
     class Seconds
+    click Seconds href "../Seconds"
       Seconds : Seconds.multiplier
         
           Seconds --> UnitMultiplier : Seconds.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Seconds : Seconds.unit
         
           Seconds --> UnitSymbol : Seconds.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Seconds : Seconds.value
         

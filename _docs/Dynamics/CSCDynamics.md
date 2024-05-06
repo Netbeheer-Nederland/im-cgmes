@@ -16,15 +16,19 @@ _CSC function block whose behaviour is described by reference to a standard mode
 ```mermaid
  classDiagram
     class CSCDynamics
+    click CSCDynamics href "../CSCDynamics"
       HVDCDynamics <|-- CSCDynamics
+        click HVDCDynamics href "../HVDCDynamics"
       
 
       CSCDynamics <|-- CSCUserDefined
+        click CSCUserDefined href "../CSCUserDefined"
       
       
       CSCDynamics : CSCDynamics.CSConverter
         
           CSCDynamics --> CsConverter : CSCDynamics.CSConverter
+          click CsConverter href "../CsConverter"
         
       CSCDynamics : IdentifiedObject.description
         
@@ -55,10 +59,10 @@ _CSC function block whose behaviour is described by reference to a standard mode
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| CSConverter | [cim:CSCDynamics.CSConverter](http://iec.ch/TC57/CIM100#CSCDynamics.CSConverter) | 1..1 <br />  [CsConverter](CsConverter.md)  | Current source converter to which current source converter dynamics model app... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| CSConverter | [cim:CSCDynamics.CSConverter](http://iec.ch/TC57/CIM100#CSCDynamics.CSConverter) | 1 <br />  [CsConverter](CsConverter.md)  | Current source converter to which current source converter dynamics model app... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

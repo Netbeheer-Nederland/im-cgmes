@@ -16,6 +16,7 @@ _Town details, in the context of address._
 ```mermaid
  classDiagram
     class TownDetail
+    click TownDetail href "../TownDetail"
       TownDetail : TownDetail.code
         
       TownDetail : TownDetail.country

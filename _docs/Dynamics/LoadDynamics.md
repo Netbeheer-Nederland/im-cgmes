@@ -18,13 +18,19 @@ _A standard feature of dynamic load behaviour modelling is the ability to associ
 ```mermaid
  classDiagram
     class LoadDynamics
+    click LoadDynamics href "../LoadDynamics"
       IdentifiedObject <|-- LoadDynamics
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       LoadDynamics <|-- LoadUserDefined
+        click LoadUserDefined href "../LoadUserDefined"
       LoadDynamics <|-- LoadComposite
+        click LoadComposite href "../LoadComposite"
       LoadDynamics <|-- LoadGenericNonLinear
+        click LoadGenericNonLinear href "../LoadGenericNonLinear"
       LoadDynamics <|-- LoadAggregate
+        click LoadAggregate href "../LoadAggregate"
       
       
       LoadDynamics : IdentifiedObject.description
@@ -32,6 +38,7 @@ _A standard feature of dynamic load behaviour modelling is the ability to associ
       LoadDynamics : LoadDynamics.EnergyConsumer
         
           LoadDynamics --> EnergyConsumer : LoadDynamics.EnergyConsumer
+          click EnergyConsumer href "../EnergyConsumer"
         
       LoadDynamics : IdentifiedObject.mRID
         
@@ -59,9 +66,9 @@ _A standard feature of dynamic load behaviour modelling is the ability to associ
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| EnergyConsumer | [cim:LoadDynamics.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadDynamics.EnergyConsumer) | 0..* <br />  [EnergyConsumer](EnergyConsumer.md)  | Energy consumer to which this dynamics load model applies | direct |
+| EnergyConsumer | [cim:LoadDynamics.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadDynamics.EnergyConsumer) | * <br />  [EnergyConsumer](EnergyConsumer.md)  | Energy consumer to which this dynamics load model applies | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

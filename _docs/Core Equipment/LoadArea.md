@@ -16,11 +16,14 @@ _The class is the root or first level in a hierarchical structure for grouping o
 ```mermaid
  classDiagram
     class LoadArea
+    click LoadArea href "../LoadArea"
       EnergyArea <|-- LoadArea
+        click EnergyArea href "../EnergyArea"
       
       LoadArea : EnergyArea.ControlArea
         
           LoadArea --> ControlArea : EnergyArea.ControlArea
+          click ControlArea href "../ControlArea"
         
       LoadArea : IdentifiedObject.description
         
@@ -35,6 +38,7 @@ _The class is the root or first level in a hierarchical structure for grouping o
       LoadArea : LoadArea.SubLoadAreas
         
           LoadArea --> SubLoadArea : LoadArea.SubLoadAreas
+          click SubLoadArea href "../SubLoadArea"
         
       
 ```
@@ -59,8 +63,8 @@ _The class is the root or first level in a hierarchical structure for grouping o
 | ControlArea | [cim:EnergyArea.ControlArea](http://iec.ch/TC57/CIM100#EnergyArea.ControlArea) | 0..1 <br />  [ControlArea](ControlArea.md)  | The control area specification that is used for the load forecast | [EnergyArea](EnergyArea.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

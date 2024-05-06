@@ -18,7 +18,9 @@ _[Footnote: Basler SCP-250 is an example of a suitable product available commerc
 ```mermaid
  classDiagram
     class PFVArType2Common1
+    click PFVArType2Common1 href "../PFVArType2Common1"
       PFVArControllerType2Dynamics <|-- PFVArType2Common1
+        click PFVArControllerType2Dynamics href "../PFVArControllerType2Dynamics"
       
       PFVArType2Common1 : IdentifiedObject.description
         
@@ -27,20 +29,24 @@ _[Footnote: Basler SCP-250 is an example of a suitable product available commerc
       PFVArType2Common1 : PFVArControllerType2Dynamics.ExcitationSystemDynamics
         
           PFVArType2Common1 --> ExcitationSystemDynamics : PFVArControllerType2Dynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       PFVArType2Common1 : PFVArType2Common1.j
         
       PFVArType2Common1 : PFVArType2Common1.ki
         
           PFVArType2Common1 --> PU : PFVArType2Common1.ki
+          click PU href "../PU"
         
       PFVArType2Common1 : PFVArType2Common1.kp
         
           PFVArType2Common1 --> PU : PFVArType2Common1.kp
+          click PU href "../PU"
         
       PFVArType2Common1 : PFVArType2Common1.max
         
           PFVArType2Common1 --> PU : PFVArType2Common1.max
+          click PU href "../PU"
         
       PFVArType2Common1 : IdentifiedObject.mRID
         
@@ -49,6 +55,7 @@ _[Footnote: Basler SCP-250 is an example of a suitable product available commerc
       PFVArType2Common1 : PFVArType2Common1.ref
         
           PFVArType2Common1 --> PU : PFVArType2Common1.ref
+          click PU href "../PU"
         
       
 ```
@@ -70,15 +77,15 @@ _[Footnote: Basler SCP-250 is an example of a suitable product available commerc
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| j | [cim:PFVArType2Common1.j](http://iec.ch/TC57/CIM100#PFVArType2Common1.j) | 1..1 <br />  boolean  | Selector (<i>J</i>) | direct |
-| kp | [cim:PFVArType2Common1.kp](http://iec.ch/TC57/CIM100#PFVArType2Common1.kp) | 1..1 <br />  [PU](PU.md)  | Proportional gain (<i>Kp</i>) | direct |
-| ki | [cim:PFVArType2Common1.ki](http://iec.ch/TC57/CIM100#PFVArType2Common1.ki) | 1..1 <br />  [PU](PU.md)  | Reset gain (<i>Ki</i>) | direct |
-| max | [cim:PFVArType2Common1.max](http://iec.ch/TC57/CIM100#PFVArType2Common1.max) | 1..1 <br />  [PU](PU.md)  | Output limit (<i>max</i>) | direct |
-| ref | [cim:PFVArType2Common1.ref](http://iec.ch/TC57/CIM100#PFVArType2Common1.ref) | 1..1 <br />  [PU](PU.md)  | Reference value of reactive power or power factor (<i>Ref</i>) | direct |
-| ExcitationSystemDynamics | [cim:PFVArControllerType2Dynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PFVArControllerType2Dynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power factor or VAr controller type 2... | [PFVArControllerType2Dynamics](PFVArControllerType2Dynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| j | [cim:PFVArType2Common1.j](http://iec.ch/TC57/CIM100#PFVArType2Common1.j) | 1 <br />  boolean  | Selector (<i>J</i>) | direct |
+| kp | [cim:PFVArType2Common1.kp](http://iec.ch/TC57/CIM100#PFVArType2Common1.kp) | 1 <br />  [PU](PU.md)  | Proportional gain (<i>Kp</i>) | direct |
+| ki | [cim:PFVArType2Common1.ki](http://iec.ch/TC57/CIM100#PFVArType2Common1.ki) | 1 <br />  [PU](PU.md)  | Reset gain (<i>Ki</i>) | direct |
+| max | [cim:PFVArType2Common1.max](http://iec.ch/TC57/CIM100#PFVArType2Common1.max) | 1 <br />  [PU](PU.md)  | Output limit (<i>max</i>) | direct |
+| ref | [cim:PFVArType2Common1.ref](http://iec.ch/TC57/CIM100#PFVArType2Common1.ref) | 1 <br />  [PU](PU.md)  | Reference value of reactive power or power factor (<i>Ref</i>) | direct |
+| ExcitationSystemDynamics | [cim:PFVArControllerType2Dynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PFVArControllerType2Dynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power factor or VAr controller type 2... | [PFVArControllerType2Dynamics](PFVArControllerType2Dynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -16,13 +16,16 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
 ```mermaid
  classDiagram
     class Terminal
+    click Terminal href "../Terminal"
       ACDCTerminal <|-- Terminal
+        click ACDCTerminal href "../ACDCTerminal"
       
       Terminal : IdentifiedObject.description
         
       Terminal : ACDCTerminal.Measurements
         
           Terminal --> Measurement : ACDCTerminal.Measurements
+          click Measurement href "../Measurement"
         
       Terminal : IdentifiedObject.mRID
         
@@ -47,10 +50,10 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Measurements | [cim:ACDCTerminal.Measurements](http://iec.ch/TC57/CIM100#ACDCTerminal.Measurements) | 0..* <br />  [Measurement](Measurement.md)  | Measurements associated with this terminal defining  where the measurement is... | [ACDCTerminal](ACDCTerminal.md) |
+| Measurements | [cim:ACDCTerminal.Measurements](http://iec.ch/TC57/CIM100#ACDCTerminal.Measurements) | * <br />  [Measurement](Measurement.md)  | Measurements associated with this terminal defining  where the measurement is... | [ACDCTerminal](ACDCTerminal.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

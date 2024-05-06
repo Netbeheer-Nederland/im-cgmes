@@ -16,21 +16,26 @@ _The diagram being exchanged. The coordinate system is a standard Cartesian coor
 ```mermaid
  classDiagram
     class Diagram
+    click Diagram href "../Diagram"
       IdentifiedObject <|-- Diagram
+        click IdentifiedObject href "../IdentifiedObject"
       
       Diagram : IdentifiedObject.description
         
       Diagram : Diagram.DiagramElements
         
           Diagram --> DiagramObject : Diagram.DiagramElements
+          click DiagramObject href "../DiagramObject"
         
       Diagram : IdentifiedObject.DiagramObjects
         
           Diagram --> DiagramObject : IdentifiedObject.DiagramObjects
+          click DiagramObject href "../DiagramObject"
         
       Diagram : Diagram.DiagramStyle
         
           Diagram --> DiagramStyle : Diagram.DiagramStyle
+          click DiagramStyle href "../DiagramStyle"
         
       Diagram : IdentifiedObject.mRID
         
@@ -39,6 +44,7 @@ _The diagram being exchanged. The coordinate system is a standard Cartesian coor
       Diagram : Diagram.orientation
         
           Diagram --> OrientationKind : Diagram.orientation
+          click OrientationKind href "../OrientationKind"
         
       Diagram : Diagram.x1InitialView
         
@@ -66,16 +72,16 @@ _The diagram being exchanged. The coordinate system is a standard Cartesian coor
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| orientation | [cim:Diagram.orientation](http://iec.ch/TC57/CIM100#Diagram.orientation) | 1..1 <br />  [OrientationKind](OrientationKind.md)  | Coordinate system orientation of the diagram | direct |
+| orientation | [cim:Diagram.orientation](http://iec.ch/TC57/CIM100#Diagram.orientation) | 1 <br />  [OrientationKind](OrientationKind.md)  | Coordinate system orientation of the diagram | direct |
 | x1InitialView | [cim:Diagram.x1InitialView](http://iec.ch/TC57/CIM100#Diagram.x1InitialView) | 0..1 <br />  float  | X coordinate of the first corner of the initial view | direct |
 | x2InitialView | [cim:Diagram.x2InitialView](http://iec.ch/TC57/CIM100#Diagram.x2InitialView) | 0..1 <br />  float  | X coordinate of the second corner of the initial view | direct |
 | y1InitialView | [cim:Diagram.y1InitialView](http://iec.ch/TC57/CIM100#Diagram.y1InitialView) | 0..1 <br />  float  | Y coordinate of the first corner of the initial view | direct |
 | y2InitialView | [cim:Diagram.y2InitialView](http://iec.ch/TC57/CIM100#Diagram.y2InitialView) | 0..1 <br />  float  | Y coordinate of the second corner of the initial view | direct |
-| DiagramElements | [cim:Diagram.DiagramElements](http://iec.ch/TC57/CIM100#Diagram.DiagramElements) | 0..* <br />  [DiagramObject](DiagramObject.md)  | A diagram is made up of multiple diagram objects | direct |
+| DiagramElements | [cim:Diagram.DiagramElements](http://iec.ch/TC57/CIM100#Diagram.DiagramElements) | * <br />  [DiagramObject](DiagramObject.md)  | A diagram is made up of multiple diagram objects | direct |
 | DiagramStyle | [cim:Diagram.DiagramStyle](http://iec.ch/TC57/CIM100#Diagram.DiagramStyle) | 0..1 <br />  [DiagramStyle](DiagramStyle.md)  | A Diagram may have a DiagramStyle | direct |
-| DiagramObjects | [cim:IdentifiedObject.DiagramObjects](http://iec.ch/TC57/CIM100#IdentifiedObject.DiagramObjects) | 0..* <br />  [DiagramObject](DiagramObject.md)  | The diagram objects that are associated with the domain object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| DiagramObjects | [cim:IdentifiedObject.DiagramObjects](http://iec.ch/TC57/CIM100#IdentifiedObject.DiagramObjects) | * <br />  [DiagramObject](DiagramObject.md)  | The diagram objects that are associated with the domain object | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 
 

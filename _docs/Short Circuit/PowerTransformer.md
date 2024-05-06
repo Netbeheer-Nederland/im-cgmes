@@ -22,23 +22,29 @@ _The inherited association ConductingEquipment.BaseVoltage should not be used.  
 ```mermaid
  classDiagram
     class PowerTransformer
+    click PowerTransformer href "../PowerTransformer"
       ConductingEquipment <|-- PowerTransformer
+        click ConductingEquipment href "../ConductingEquipment"
       
       PowerTransformer : PowerTransformer.beforeShCircuitHighestOperatingCurrent
         
           PowerTransformer --> CurrentFlow : PowerTransformer.beforeShCircuitHighestOperatingCurrent
+          click CurrentFlow href "../CurrentFlow"
         
       PowerTransformer : PowerTransformer.beforeShCircuitHighestOperatingVoltage
         
           PowerTransformer --> Voltage : PowerTransformer.beforeShCircuitHighestOperatingVoltage
+          click Voltage href "../Voltage"
         
       PowerTransformer : PowerTransformer.beforeShortCircuitAnglePf
         
           PowerTransformer --> AngleDegrees : PowerTransformer.beforeShortCircuitAnglePf
+          click AngleDegrees href "../AngleDegrees"
         
       PowerTransformer : PowerTransformer.highSideMinOperatingU
         
           PowerTransformer --> Voltage : PowerTransformer.highSideMinOperatingU
+          click Voltage href "../Voltage"
         
       PowerTransformer : PowerTransformer.isPartOfGeneratorUnit
         
@@ -71,9 +77,9 @@ _The inherited association ConductingEquipment.BaseVoltage should not be used.  
 | beforeShCircuitHighestOperatingVoltage | [cim:PowerTransformer.beforeShCircuitHighestOperatingVoltage](http://iec.ch/TC57/CIM100#PowerTransformer.beforeShCircuitHighestOperatingVoltage) | 0..1 <br />  [Voltage](Voltage.md)  | The highest operating voltage (Ub in IEC 60909-0) before short circuit | direct |
 | beforeShortCircuitAnglePf | [cim:PowerTransformer.beforeShortCircuitAnglePf](http://iec.ch/TC57/CIM100#PowerTransformer.beforeShortCircuitAnglePf) | 0..1 <br />  [AngleDegrees](AngleDegrees.md)  | The angle of power factor before short circuit (phib in IEC 60909-0) | direct |
 | highSideMinOperatingU | [cim:PowerTransformer.highSideMinOperatingU](http://iec.ch/TC57/CIM100#PowerTransformer.highSideMinOperatingU) | 0..1 <br />  [Voltage](Voltage.md)  | The minimum operating voltage (uQmin in IEC 60909-0) at the high voltage side... | direct |
-| isPartOfGeneratorUnit | [cim:PowerTransformer.isPartOfGeneratorUnit](http://iec.ch/TC57/CIM100#PowerTransformer.isPartOfGeneratorUnit) | 1..1 <br />  boolean  | Indicates whether the machine is part of a power station unit | direct |
+| isPartOfGeneratorUnit | [cim:PowerTransformer.isPartOfGeneratorUnit](http://iec.ch/TC57/CIM100#PowerTransformer.isPartOfGeneratorUnit) | 1 <br />  boolean  | Indicates whether the machine is part of a power station unit | direct |
 | operationalValuesConsidered | [cim:PowerTransformer.operationalValuesConsidered](http://iec.ch/TC57/CIM100#PowerTransformer.operationalValuesConsidered) | 0..1 <br />  boolean  | It is used to define if the data (other attributes related to short circuit d... | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

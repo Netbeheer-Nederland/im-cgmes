@@ -16,13 +16,16 @@ _Active power variation with frequency._
 ```mermaid
  classDiagram
     class ActivePowerPerFrequency
+    click ActivePowerPerFrequency href "../ActivePowerPerFrequency"
       ActivePowerPerFrequency : ActivePowerPerFrequency.multiplier
         
           ActivePowerPerFrequency --> UnitMultiplier : ActivePowerPerFrequency.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       ActivePowerPerFrequency : ActivePowerPerFrequency.unit
         
           ActivePowerPerFrequency --> UnitSymbol : ActivePowerPerFrequency.unit
+          click UnitSymbol href "../UnitSymbol"
         
       ActivePowerPerFrequency : ActivePowerPerFrequency.value
         

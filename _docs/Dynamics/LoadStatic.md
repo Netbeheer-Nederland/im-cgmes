@@ -16,7 +16,9 @@ _General static load. This model represents the sensitivity of the real and reac
 ```mermaid
  classDiagram
     class LoadStatic
+    click LoadStatic href "../LoadStatic"
       IdentifiedObject <|-- LoadStatic
+        click IdentifiedObject href "../IdentifiedObject"
       
       LoadStatic : IdentifiedObject.description
         
@@ -55,6 +57,7 @@ _General static load. This model represents the sensitivity of the real and reac
       LoadStatic : LoadStatic.LoadAggregate
         
           LoadStatic --> LoadAggregate : LoadStatic.LoadAggregate
+          click LoadAggregate href "../LoadAggregate"
         
       LoadStatic : IdentifiedObject.mRID
         
@@ -63,6 +66,7 @@ _General static load. This model represents the sensitivity of the real and reac
       LoadStatic : LoadStatic.staticLoadModelType
         
           LoadStatic --> StaticLoadModelKind : LoadStatic.staticLoadModelType
+          click StaticLoadModelKind href "../StaticLoadModelKind"
         
       
 ```
@@ -82,8 +86,8 @@ _General static load. This model represents the sensitivity of the real and reac
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| LoadAggregate | [cim:LoadStatic.LoadAggregate](http://iec.ch/TC57/CIM100#LoadStatic.LoadAggregate) | 1..1 <br />  [LoadAggregate](LoadAggregate.md)  | Aggregate load to which this aggregate static load belongs | direct |
-| staticLoadModelType | [cim:LoadStatic.staticLoadModelType](http://iec.ch/TC57/CIM100#LoadStatic.staticLoadModelType) | 1..1 <br />  [StaticLoadModelKind](StaticLoadModelKind.md)  | Type of static load model | direct |
+| LoadAggregate | [cim:LoadStatic.LoadAggregate](http://iec.ch/TC57/CIM100#LoadStatic.LoadAggregate) | 1 <br />  [LoadAggregate](LoadAggregate.md)  | Aggregate load to which this aggregate static load belongs | direct |
+| staticLoadModelType | [cim:LoadStatic.staticLoadModelType](http://iec.ch/TC57/CIM100#LoadStatic.staticLoadModelType) | 1 <br />  [StaticLoadModelKind](StaticLoadModelKind.md)  | Type of static load model | direct |
 | kp1 | [cim:LoadStatic.kp1](http://iec.ch/TC57/CIM100#LoadStatic.kp1) | 0..1 <br />  float  | First term voltage coefficient for active power (<i>K</i><i><sub>p1</sub></i>... | direct |
 | kp2 | [cim:LoadStatic.kp2](http://iec.ch/TC57/CIM100#LoadStatic.kp2) | 0..1 <br />  float  | Second term voltage coefficient for active power (<i>K</i><i><sub>p2</sub></i... | direct |
 | kp3 | [cim:LoadStatic.kp3](http://iec.ch/TC57/CIM100#LoadStatic.kp3) | 0..1 <br />  float  | Third term voltage coefficient for active power (<i>K</i><i><sub>p3</sub></i>... | direct |
@@ -101,7 +105,7 @@ _General static load. This model represents the sensitivity of the real and reac
 | eq3 | [cim:LoadStatic.eq3](http://iec.ch/TC57/CIM100#LoadStatic.eq3) | 0..1 <br />  float  | Third term voltage exponent for reactive power (<i>Eq3</i>) | direct |
 | kqf | [cim:LoadStatic.kqf](http://iec.ch/TC57/CIM100#LoadStatic.kqf) | 0..1 <br />  float  | Frequency deviation coefficient for reactive power (<i>K</i><i><sub>qf</sub><... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

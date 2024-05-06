@@ -16,15 +16,19 @@ _Connectivity nodes are points where terminals of AC conducting equipment are co
 ```mermaid
  classDiagram
     class ConnectivityNode
+    click ConnectivityNode href "../ConnectivityNode"
       IdentifiedObject <|-- ConnectivityNode
+        click IdentifiedObject href "../IdentifiedObject"
       
       ConnectivityNode : ConnectivityNode.BoundaryPoint
         
           ConnectivityNode --> BoundaryPoint : ConnectivityNode.BoundaryPoint
+          click BoundaryPoint href "../BoundaryPoint"
         
       ConnectivityNode : ConnectivityNode.ConnectivityNodeContainer
         
           ConnectivityNode --> ConnectivityNodeContainer : ConnectivityNode.ConnectivityNodeContainer
+          click ConnectivityNodeContainer href "../ConnectivityNodeContainer"
         
       ConnectivityNode : IdentifiedObject.description
         
@@ -39,6 +43,7 @@ _Connectivity nodes are points where terminals of AC conducting equipment are co
       ConnectivityNode : ConnectivityNode.Terminals
         
           ConnectivityNode --> Terminal : ConnectivityNode.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -59,12 +64,12 @@ _Connectivity nodes are points where terminals of AC conducting equipment are co
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | BoundaryPoint | [eu:ConnectivityNode.BoundaryPoint](http://iec.ch/TC57/CIM100-European#ConnectivityNode.BoundaryPoint) | 0..1 <br />  [BoundaryPoint](BoundaryPoint.md)  | The boundary point associated with the connectivity node | direct |
-| Terminals | [cim:ConnectivityNode.Terminals](http://iec.ch/TC57/CIM100#ConnectivityNode.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Terminals interconnected with zero impedance at a this connectivity node | direct |
-| ConnectivityNodeContainer | [cim:ConnectivityNode.ConnectivityNodeContainer](http://iec.ch/TC57/CIM100#ConnectivityNode.ConnectivityNodeContainer) | 1..1 <br />  [ConnectivityNodeContainer](ConnectivityNodeContainer.md)  | Container of this connectivity node | direct |
+| Terminals | [cim:ConnectivityNode.Terminals](http://iec.ch/TC57/CIM100#ConnectivityNode.Terminals) | * <br />  [Terminal](Terminal.md)  | Terminals interconnected with zero impedance at a this connectivity node | direct |
+| ConnectivityNodeContainer | [cim:ConnectivityNode.ConnectivityNodeContainer](http://iec.ch/TC57/CIM100#ConnectivityNode.ConnectivityNodeContainer) | 1 <br />  [ConnectivityNodeContainer](ConnectivityNodeContainer.md)  | Container of this connectivity node | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

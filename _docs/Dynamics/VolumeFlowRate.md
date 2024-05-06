@@ -16,13 +16,16 @@ _Volume per time._
 ```mermaid
  classDiagram
     class VolumeFlowRate
+    click VolumeFlowRate href "../VolumeFlowRate"
       VolumeFlowRate : VolumeFlowRate.multiplier
         
           VolumeFlowRate --> UnitMultiplier : VolumeFlowRate.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       VolumeFlowRate : VolumeFlowRate.unit
         
           VolumeFlowRate --> UnitSymbol : VolumeFlowRate.unit
+          click UnitSymbol href "../UnitSymbol"
         
       VolumeFlowRate : VolumeFlowRate.value
         

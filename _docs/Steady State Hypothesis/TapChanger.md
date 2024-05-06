@@ -16,11 +16,15 @@ _Mechanism for changing transformer winding tap positions._
 ```mermaid
  classDiagram
     class TapChanger
+    click TapChanger href "../TapChanger"
       PowerSystemResource <|-- TapChanger
+        click PowerSystemResource href "../PowerSystemResource"
       
 
       TapChanger <|-- PhaseTapChanger
+        click PhaseTapChanger href "../PhaseTapChanger"
       TapChanger <|-- RatioTapChanger
+        click RatioTapChanger href "../RatioTapChanger"
       
       
       TapChanger : TapChanger.controlEnabled
@@ -50,9 +54,9 @@ _Mechanism for changing transformer winding tap positions._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | direct |
-| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1..1 <br />  float  | Tap changer position | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | direct |
+| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1 <br />  float  | Tap changer position | direct |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

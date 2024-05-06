@@ -16,28 +16,49 @@ _Power system stabilizer function block whose behaviour is described by referenc
 ```mermaid
  classDiagram
     class PowerSystemStabilizerDynamics
+    click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
       DynamicsFunctionBlock <|-- PowerSystemStabilizerDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       PowerSystemStabilizerDynamics <|-- PowerSystemStabilizerUserDefined
+        click PowerSystemStabilizerUserDefined href "../PowerSystemStabilizerUserDefined"
       PowerSystemStabilizerDynamics <|-- PssIEEE1A
+        click PssIEEE1A href "../PssIEEE1A"
       PowerSystemStabilizerDynamics <|-- PssIEEE2B
+        click PssIEEE2B href "../PssIEEE2B"
       PowerSystemStabilizerDynamics <|-- PssIEEE3B
+        click PssIEEE3B href "../PssIEEE3B"
       PowerSystemStabilizerDynamics <|-- PssIEEE4B
+        click PssIEEE4B href "../PssIEEE4B"
       PowerSystemStabilizerDynamics <|-- Pss1
+        click Pss1 href "../Pss1"
       PowerSystemStabilizerDynamics <|-- Pss1A
+        click Pss1A href "../Pss1A"
       PowerSystemStabilizerDynamics <|-- Pss2B
+        click Pss2B href "../Pss2B"
       PowerSystemStabilizerDynamics <|-- Pss2ST
+        click Pss2ST href "../Pss2ST"
       PowerSystemStabilizerDynamics <|-- Pss5
+        click Pss5 href "../Pss5"
       PowerSystemStabilizerDynamics <|-- PssELIN2
+        click PssELIN2 href "../PssELIN2"
       PowerSystemStabilizerDynamics <|-- PssPTIST1
+        click PssPTIST1 href "../PssPTIST1"
       PowerSystemStabilizerDynamics <|-- PssPTIST3
+        click PssPTIST3 href "../PssPTIST3"
       PowerSystemStabilizerDynamics <|-- PssRQB
+        click PssRQB href "../PssRQB"
       PowerSystemStabilizerDynamics <|-- PssSB4
+        click PssSB4 href "../PssSB4"
       PowerSystemStabilizerDynamics <|-- PssSH
+        click PssSH href "../PssSH"
       PowerSystemStabilizerDynamics <|-- PssSK
+        click PssSK href "../PssSK"
       PowerSystemStabilizerDynamics <|-- PssSTAB2A
+        click PssSTAB2A href "../PssSTAB2A"
       PowerSystemStabilizerDynamics <|-- PssWECC
+        click PssWECC href "../PssWECC"
       
       
       PowerSystemStabilizerDynamics : IdentifiedObject.description
@@ -47,6 +68,7 @@ _Power system stabilizer function block whose behaviour is described by referenc
       PowerSystemStabilizerDynamics : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
         
           PowerSystemStabilizerDynamics --> ExcitationSystemDynamics : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       PowerSystemStabilizerDynamics : IdentifiedObject.mRID
         
@@ -55,6 +77,7 @@ _Power system stabilizer function block whose behaviour is described by referenc
       PowerSystemStabilizerDynamics : PowerSystemStabilizerDynamics.RemoteInputSignal
         
           PowerSystemStabilizerDynamics --> RemoteInputSignal : PowerSystemStabilizerDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -94,11 +117,11 @@ _Power system stabilizer function block whose behaviour is described by referenc
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | 0..* <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | direct |
-| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | * <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | direct |
+| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

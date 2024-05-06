@@ -16,11 +16,15 @@ _The class represents equivalent objects that are the result of a network reduct
 ```mermaid
  classDiagram
     class EquivalentEquipment
+    click EquivalentEquipment href "../EquivalentEquipment"
       ConductingEquipment <|-- EquivalentEquipment
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       EquivalentEquipment <|-- EquivalentBranch
+        click EquivalentBranch href "../EquivalentBranch"
       EquivalentEquipment <|-- EquivalentInjection
+        click EquivalentInjection href "../EquivalentInjection"
       
       
       EquivalentEquipment : IdentifiedObject.mRID
@@ -48,7 +52,7 @@ _The class represents equivalent objects that are the result of a network reduct
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

@@ -16,17 +16,21 @@ _Describes the translation of a set of values into a name and is intendend to fa
 ```mermaid
  classDiagram
     class ValueAliasSet
+    click ValueAliasSet href "../ValueAliasSet"
       IdentifiedObject <|-- ValueAliasSet
+        click IdentifiedObject href "../IdentifiedObject"
       
       ValueAliasSet : ValueAliasSet.Commands
         
           ValueAliasSet --> Command : ValueAliasSet.Commands
+          click Command href "../Command"
         
       ValueAliasSet : IdentifiedObject.description
         
       ValueAliasSet : ValueAliasSet.Discretes
         
           ValueAliasSet --> Discrete : ValueAliasSet.Discretes
+          click Discrete href "../Discrete"
         
       ValueAliasSet : IdentifiedObject.mRID
         
@@ -35,10 +39,12 @@ _Describes the translation of a set of values into a name and is intendend to fa
       ValueAliasSet : ValueAliasSet.RaiseLowerCommands
         
           ValueAliasSet --> RaiseLowerCommand : ValueAliasSet.RaiseLowerCommands
+          click RaiseLowerCommand href "../RaiseLowerCommand"
         
       ValueAliasSet : ValueAliasSet.Values
         
           ValueAliasSet --> ValueToAlias : ValueAliasSet.Values
+          click ValueToAlias href "../ValueToAlias"
         
       
 ```
@@ -58,13 +64,13 @@ _Describes the translation of a set of values into a name and is intendend to fa
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Commands | [cim:ValueAliasSet.Commands](http://iec.ch/TC57/CIM100#ValueAliasSet.Commands) | 0..* <br />  [Command](Command.md)  | The Commands using the set for translation | direct |
-| Discretes | [cim:ValueAliasSet.Discretes](http://iec.ch/TC57/CIM100#ValueAliasSet.Discretes) | 0..* <br />  [Discrete](Discrete.md)  | The Measurements using the set for translation | direct |
-| RaiseLowerCommands | [cim:ValueAliasSet.RaiseLowerCommands](http://iec.ch/TC57/CIM100#ValueAliasSet.RaiseLowerCommands) | 0..* <br />  [RaiseLowerCommand](RaiseLowerCommand.md)  | The Commands using the set for translation | direct |
+| Commands | [cim:ValueAliasSet.Commands](http://iec.ch/TC57/CIM100#ValueAliasSet.Commands) | * <br />  [Command](Command.md)  | The Commands using the set for translation | direct |
+| Discretes | [cim:ValueAliasSet.Discretes](http://iec.ch/TC57/CIM100#ValueAliasSet.Discretes) | * <br />  [Discrete](Discrete.md)  | The Measurements using the set for translation | direct |
+| RaiseLowerCommands | [cim:ValueAliasSet.RaiseLowerCommands](http://iec.ch/TC57/CIM100#ValueAliasSet.RaiseLowerCommands) | * <br />  [RaiseLowerCommand](RaiseLowerCommand.md)  | The Commands using the set for translation | direct |
 | Values | [cim:ValueAliasSet.Values](http://iec.ch/TC57/CIM100#ValueAliasSet.Values) | 1..* <br />  [ValueToAlias](ValueToAlias.md)  | The ValueToAlias mappings included in the set | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

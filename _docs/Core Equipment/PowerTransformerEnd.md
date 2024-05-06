@@ -28,19 +28,24 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
 ```mermaid
  classDiagram
     class PowerTransformerEnd
+    click PowerTransformerEnd href "../PowerTransformerEnd"
       TransformerEnd <|-- PowerTransformerEnd
+        click TransformerEnd href "../TransformerEnd"
       
       PowerTransformerEnd : PowerTransformerEnd.b
         
           PowerTransformerEnd --> Susceptance : PowerTransformerEnd.b
+          click Susceptance href "../Susceptance"
         
       PowerTransformerEnd : TransformerEnd.BaseVoltage
         
           PowerTransformerEnd --> BaseVoltage : TransformerEnd.BaseVoltage
+          click BaseVoltage href "../BaseVoltage"
         
       PowerTransformerEnd : PowerTransformerEnd.connectionKind
         
           PowerTransformerEnd --> WindingConnection : PowerTransformerEnd.connectionKind
+          click WindingConnection href "../WindingConnection"
         
       PowerTransformerEnd : IdentifiedObject.description
         
@@ -51,6 +56,7 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
       PowerTransformerEnd : PowerTransformerEnd.g
         
           PowerTransformerEnd --> Conductance : PowerTransformerEnd.g
+          click Conductance href "../Conductance"
         
       PowerTransformerEnd : IdentifiedObject.mRID
         
@@ -59,36 +65,44 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
       PowerTransformerEnd : TransformerEnd.PhaseTapChanger
         
           PowerTransformerEnd --> PhaseTapChanger : TransformerEnd.PhaseTapChanger
+          click PhaseTapChanger href "../PhaseTapChanger"
         
       PowerTransformerEnd : PowerTransformerEnd.PowerTransformer
         
           PowerTransformerEnd --> PowerTransformer : PowerTransformerEnd.PowerTransformer
+          click PowerTransformer href "../PowerTransformer"
         
       PowerTransformerEnd : PowerTransformerEnd.r
         
           PowerTransformerEnd --> Resistance : PowerTransformerEnd.r
+          click Resistance href "../Resistance"
         
       PowerTransformerEnd : PowerTransformerEnd.ratedS
         
           PowerTransformerEnd --> ApparentPower : PowerTransformerEnd.ratedS
+          click ApparentPower href "../ApparentPower"
         
       PowerTransformerEnd : PowerTransformerEnd.ratedU
         
           PowerTransformerEnd --> Voltage : PowerTransformerEnd.ratedU
+          click Voltage href "../Voltage"
         
       PowerTransformerEnd : TransformerEnd.RatioTapChanger
         
           PowerTransformerEnd --> RatioTapChanger : TransformerEnd.RatioTapChanger
+          click RatioTapChanger href "../RatioTapChanger"
         
       PowerTransformerEnd : IdentifiedObject.shortName
         
       PowerTransformerEnd : TransformerEnd.Terminal
         
           PowerTransformerEnd --> Terminal : TransformerEnd.Terminal
+          click Terminal href "../Terminal"
         
       PowerTransformerEnd : PowerTransformerEnd.x
         
           PowerTransformerEnd --> Reactance : PowerTransformerEnd.x
+          click Reactance href "../Reactance"
         
       
 ```
@@ -109,23 +123,23 @@ _Each PowerTransformerEnd must be contained by a PowerTransformer. Because a Pow
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| PowerTransformer | [cim:PowerTransformerEnd.PowerTransformer](http://iec.ch/TC57/CIM100#PowerTransformerEnd.PowerTransformer) | 1..1 <br />  [PowerTransformer](PowerTransformer.md)  | The power transformer of this power transformer end | direct |
-| b | [cim:PowerTransformerEnd.b](http://iec.ch/TC57/CIM100#PowerTransformerEnd.b) | 1..1 <br />  [Susceptance](Susceptance.md)  | Magnetizing branch susceptance (B mag) | direct |
+| PowerTransformer | [cim:PowerTransformerEnd.PowerTransformer](http://iec.ch/TC57/CIM100#PowerTransformerEnd.PowerTransformer) | 1 <br />  [PowerTransformer](PowerTransformer.md)  | The power transformer of this power transformer end | direct |
+| b | [cim:PowerTransformerEnd.b](http://iec.ch/TC57/CIM100#PowerTransformerEnd.b) | 1 <br />  [Susceptance](Susceptance.md)  | Magnetizing branch susceptance (B mag) | direct |
 | connectionKind | [cim:PowerTransformerEnd.connectionKind](http://iec.ch/TC57/CIM100#PowerTransformerEnd.connectionKind) | 0..1 <br />  [WindingConnection](WindingConnection.md)  | Kind of connection | direct |
 | ratedS | [cim:PowerTransformerEnd.ratedS](http://iec.ch/TC57/CIM100#PowerTransformerEnd.ratedS) | 0..1 <br />  [ApparentPower](ApparentPower.md)  | Normal apparent power rating | direct |
 | g | [cim:PowerTransformerEnd.g](http://iec.ch/TC57/CIM100#PowerTransformerEnd.g) | 0..1 <br />  [Conductance](Conductance.md)  | Magnetizing branch conductance | direct |
-| ratedU | [cim:PowerTransformerEnd.ratedU](http://iec.ch/TC57/CIM100#PowerTransformerEnd.ratedU) | 1..1 <br />  [Voltage](Voltage.md)  | Rated voltage: phase-phase for three-phase windings, and either phase-phase o... | direct |
-| r | [cim:PowerTransformerEnd.r](http://iec.ch/TC57/CIM100#PowerTransformerEnd.r) | 1..1 <br />  [Resistance](Resistance.md)  | Resistance (star-model) of the transformer end | direct |
-| x | [cim:PowerTransformerEnd.x](http://iec.ch/TC57/CIM100#PowerTransformerEnd.x) | 1..1 <br />  [Reactance](Reactance.md)  | Positive sequence series reactance (star-model) of the transformer end | direct |
-| BaseVoltage | [cim:TransformerEnd.BaseVoltage](http://iec.ch/TC57/CIM100#TransformerEnd.BaseVoltage) | 1..1 <br />  [BaseVoltage](BaseVoltage.md)  | Base voltage of the transformer end | [TransformerEnd](TransformerEnd.md) |
+| ratedU | [cim:PowerTransformerEnd.ratedU](http://iec.ch/TC57/CIM100#PowerTransformerEnd.ratedU) | 1 <br />  [Voltage](Voltage.md)  | Rated voltage: phase-phase for three-phase windings, and either phase-phase o... | direct |
+| r | [cim:PowerTransformerEnd.r](http://iec.ch/TC57/CIM100#PowerTransformerEnd.r) | 1 <br />  [Resistance](Resistance.md)  | Resistance (star-model) of the transformer end | direct |
+| x | [cim:PowerTransformerEnd.x](http://iec.ch/TC57/CIM100#PowerTransformerEnd.x) | 1 <br />  [Reactance](Reactance.md)  | Positive sequence series reactance (star-model) of the transformer end | direct |
+| BaseVoltage | [cim:TransformerEnd.BaseVoltage](http://iec.ch/TC57/CIM100#TransformerEnd.BaseVoltage) | 1 <br />  [BaseVoltage](BaseVoltage.md)  | Base voltage of the transformer end | [TransformerEnd](TransformerEnd.md) |
 | PhaseTapChanger | [cim:TransformerEnd.PhaseTapChanger](http://iec.ch/TC57/CIM100#TransformerEnd.PhaseTapChanger) | 0..1 <br />  [PhaseTapChanger](PhaseTapChanger.md)  | Phase tap changer associated with this transformer end | [TransformerEnd](TransformerEnd.md) |
 | RatioTapChanger | [cim:TransformerEnd.RatioTapChanger](http://iec.ch/TC57/CIM100#TransformerEnd.RatioTapChanger) | 0..1 <br />  [RatioTapChanger](RatioTapChanger.md)  | Ratio tap changer associated with this transformer end | [TransformerEnd](TransformerEnd.md) |
-| Terminal | [cim:TransformerEnd.Terminal](http://iec.ch/TC57/CIM100#TransformerEnd.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | Terminal of the power transformer to which this transformer end belongs | [TransformerEnd](TransformerEnd.md) |
-| endNumber | [cim:TransformerEnd.endNumber](http://iec.ch/TC57/CIM100#TransformerEnd.endNumber) | 1..1 <br />  integer  | Number for this transformer end, corresponding to the end's order in the powe... | [TransformerEnd](TransformerEnd.md) |
+| Terminal | [cim:TransformerEnd.Terminal](http://iec.ch/TC57/CIM100#TransformerEnd.Terminal) | 1 <br />  [Terminal](Terminal.md)  | Terminal of the power transformer to which this transformer end belongs | [TransformerEnd](TransformerEnd.md) |
+| endNumber | [cim:TransformerEnd.endNumber](http://iec.ch/TC57/CIM100#TransformerEnd.endNumber) | 1 <br />  integer  | Number for this transformer end, corresponding to the end's order in the powe... | [TransformerEnd](TransformerEnd.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

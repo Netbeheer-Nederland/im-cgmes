@@ -30,10 +30,13 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
 ```mermaid
  classDiagram
     class RegulatingControl
+    click RegulatingControl href "../RegulatingControl"
       PowerSystemResource <|-- RegulatingControl
+        click PowerSystemResource href "../PowerSystemResource"
       
 
       RegulatingControl <|-- TapChangerControl
+        click TapChangerControl href "../TapChangerControl"
       
       
       RegulatingControl : RegulatingControl.discrete
@@ -53,6 +56,7 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
       RegulatingControl : RegulatingControl.targetValueUnitMultiplier
         
           RegulatingControl --> UnitMultiplier : RegulatingControl.targetValueUnitMultiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       
 ```
@@ -74,14 +78,14 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| discrete | [cim:RegulatingControl.discrete](http://iec.ch/TC57/CIM100#RegulatingControl.discrete) | 1..1 <br />  boolean  | The regulation is performed in a discrete mode | direct |
-| enabled | [cim:RegulatingControl.enabled](http://iec.ch/TC57/CIM100#RegulatingControl.enabled) | 1..1 <br />  boolean  | The flag tells if regulation is enabled | direct |
+| discrete | [cim:RegulatingControl.discrete](http://iec.ch/TC57/CIM100#RegulatingControl.discrete) | 1 <br />  boolean  | The regulation is performed in a discrete mode | direct |
+| enabled | [cim:RegulatingControl.enabled](http://iec.ch/TC57/CIM100#RegulatingControl.enabled) | 1 <br />  boolean  | The flag tells if regulation is enabled | direct |
 | targetDeadband | [cim:RegulatingControl.targetDeadband](http://iec.ch/TC57/CIM100#RegulatingControl.targetDeadband) | 0..1 <br />  float  | This is a deadband used with discrete control to avoid excessive update of co... | direct |
-| targetValue | [cim:RegulatingControl.targetValue](http://iec.ch/TC57/CIM100#RegulatingControl.targetValue) | 1..1 <br />  float  | The target value specified for case input | direct |
-| targetValueUnitMultiplier | [cim:RegulatingControl.targetValueUnitMultiplier](http://iec.ch/TC57/CIM100#RegulatingControl.targetValueUnitMultiplier) | 1..1 <br />  [UnitMultiplier](UnitMultiplier.md)  | Specify the multiplier for used for the targetValue | direct |
+| targetValue | [cim:RegulatingControl.targetValue](http://iec.ch/TC57/CIM100#RegulatingControl.targetValue) | 1 <br />  float  | The target value specified for case input | direct |
+| targetValueUnitMultiplier | [cim:RegulatingControl.targetValueUnitMultiplier](http://iec.ch/TC57/CIM100#RegulatingControl.targetValueUnitMultiplier) | 1 <br />  [UnitMultiplier](UnitMultiplier.md)  | Specify the multiplier for used for the targetValue | direct |
 | maxAllowedTargetValue | [cim:RegulatingControl.maxAllowedTargetValue](http://iec.ch/TC57/CIM100#RegulatingControl.maxAllowedTargetValue) | 0..1 <br />  float  | Maximum allowed target value (RegulatingControl | direct |
 | minAllowedTargetValue | [cim:RegulatingControl.minAllowedTargetValue](http://iec.ch/TC57/CIM100#RegulatingControl.minAllowedTargetValue) | 0..1 <br />  float  | Minimum allowed target value (RegulatingControl | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

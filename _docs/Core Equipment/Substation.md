@@ -16,15 +16,19 @@ _A collection of equipment for purposes other than generation or utilization, th
 ```mermaid
  classDiagram
     class Substation
+    click Substation href "../Substation"
       EquipmentContainer <|-- Substation
+        click EquipmentContainer href "../EquipmentContainer"
       
       Substation : ConnectivityNodeContainer.ConnectivityNodes
         
           Substation --> ConnectivityNode : ConnectivityNodeContainer.ConnectivityNodes
+          click ConnectivityNode href "../ConnectivityNode"
         
       Substation : Substation.DCConverterUnit
         
           Substation --> DCConverterUnit : Substation.DCConverterUnit
+          click DCConverterUnit href "../DCConverterUnit"
         
       Substation : IdentifiedObject.description
         
@@ -33,6 +37,7 @@ _A collection of equipment for purposes other than generation or utilization, th
       Substation : EquipmentContainer.Equipments
         
           Substation --> Equipment : EquipmentContainer.Equipments
+          click Equipment href "../Equipment"
         
       Substation : IdentifiedObject.mRID
         
@@ -41,12 +46,14 @@ _A collection of equipment for purposes other than generation or utilization, th
       Substation : Substation.Region
         
           Substation --> SubGeographicalRegion : Substation.Region
+          click SubGeographicalRegion href "../SubGeographicalRegion"
         
       Substation : IdentifiedObject.shortName
         
       Substation : Substation.VoltageLevels
         
           Substation --> VoltageLevel : Substation.VoltageLevels
+          click VoltageLevel href "../VoltageLevel"
         
       
 ```
@@ -69,15 +76,15 @@ _A collection of equipment for purposes other than generation or utilization, th
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| DCConverterUnit | [cim:Substation.DCConverterUnit](http://iec.ch/TC57/CIM100#Substation.DCConverterUnit) | 0..* <br />  [DCConverterUnit](DCConverterUnit.md)  | The DC converter unit belonging of the substation | direct |
-| Region | [cim:Substation.Region](http://iec.ch/TC57/CIM100#Substation.Region) | 1..1 <br />  [SubGeographicalRegion](SubGeographicalRegion.md)  | The SubGeographicalRegion containing the substation | direct |
-| VoltageLevels | [cim:Substation.VoltageLevels](http://iec.ch/TC57/CIM100#Substation.VoltageLevels) | 0..* <br />  [VoltageLevel](VoltageLevel.md)  | The voltage levels within this substation | direct |
-| Equipments | [cim:EquipmentContainer.Equipments](http://iec.ch/TC57/CIM100#EquipmentContainer.Equipments) | 0..* <br />  [Equipment](Equipment.md)  | Contained equipment | [EquipmentContainer](EquipmentContainer.md) |
-| ConnectivityNodes | [cim:ConnectivityNodeContainer.ConnectivityNodes](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.ConnectivityNodes) | 0..* <br />  [ConnectivityNode](ConnectivityNode.md)  | Connectivity nodes which belong to this connectivity node container | [ConnectivityNodeContainer](ConnectivityNodeContainer.md) |
+| DCConverterUnit | [cim:Substation.DCConverterUnit](http://iec.ch/TC57/CIM100#Substation.DCConverterUnit) | * <br />  [DCConverterUnit](DCConverterUnit.md)  | The DC converter unit belonging of the substation | direct |
+| Region | [cim:Substation.Region](http://iec.ch/TC57/CIM100#Substation.Region) | 1 <br />  [SubGeographicalRegion](SubGeographicalRegion.md)  | The SubGeographicalRegion containing the substation | direct |
+| VoltageLevels | [cim:Substation.VoltageLevels](http://iec.ch/TC57/CIM100#Substation.VoltageLevels) | * <br />  [VoltageLevel](VoltageLevel.md)  | The voltage levels within this substation | direct |
+| Equipments | [cim:EquipmentContainer.Equipments](http://iec.ch/TC57/CIM100#EquipmentContainer.Equipments) | * <br />  [Equipment](Equipment.md)  | Contained equipment | [EquipmentContainer](EquipmentContainer.md) |
+| ConnectivityNodes | [cim:ConnectivityNodeContainer.ConnectivityNodes](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.ConnectivityNodes) | * <br />  [ConnectivityNode](ConnectivityNode.md)  | Connectivity nodes which belong to this connectivity node container | [ConnectivityNodeContainer](ConnectivityNodeContainer.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

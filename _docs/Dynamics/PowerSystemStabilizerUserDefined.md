@@ -16,7 +16,9 @@ _<font color="#0f0f0f">Power system stabilizer</font> function block whose dynam
 ```mermaid
  classDiagram
     class PowerSystemStabilizerUserDefined
+    click PowerSystemStabilizerUserDefined href "../PowerSystemStabilizerUserDefined"
       PowerSystemStabilizerDynamics <|-- PowerSystemStabilizerUserDefined
+        click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
       
       PowerSystemStabilizerUserDefined : IdentifiedObject.description
         
@@ -25,6 +27,7 @@ _<font color="#0f0f0f">Power system stabilizer</font> function block whose dynam
       PowerSystemStabilizerUserDefined : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
         
           PowerSystemStabilizerUserDefined --> ExcitationSystemDynamics : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       PowerSystemStabilizerUserDefined : IdentifiedObject.mRID
         
@@ -35,10 +38,12 @@ _<font color="#0f0f0f">Power system stabilizer</font> function block whose dynam
       PowerSystemStabilizerUserDefined : PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics
         
           PowerSystemStabilizerUserDefined --> ProprietaryParameterDynamics : PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       PowerSystemStabilizerUserDefined : PowerSystemStabilizerDynamics.RemoteInputSignal
         
           PowerSystemStabilizerUserDefined --> RemoteInputSignal : PowerSystemStabilizerDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -60,13 +65,13 @@ _<font color="#0f0f0f">Power system stabilizer</font> function block whose dynam
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:PowerSystemStabilizerUserDefined.proprietary](http://iec.ch/TC57/CIM100#PowerSystemStabilizerUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | 0..* <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
-| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| proprietary | [cim:PowerSystemStabilizerUserDefined.proprietary](http://iec.ch/TC57/CIM100#PowerSystemStabilizerUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | * <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
+| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

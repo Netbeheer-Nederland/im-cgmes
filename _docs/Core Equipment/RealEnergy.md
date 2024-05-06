@@ -16,13 +16,16 @@ _Real electrical energy._
 ```mermaid
  classDiagram
     class RealEnergy
+    click RealEnergy href "../RealEnergy"
       RealEnergy : RealEnergy.multiplier
         
           RealEnergy --> UnitMultiplier : RealEnergy.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       RealEnergy : RealEnergy.unit
         
           RealEnergy --> UnitSymbol : RealEnergy.unit
+          click UnitSymbol href "../UnitSymbol"
         
       RealEnergy : RealEnergy.value
         

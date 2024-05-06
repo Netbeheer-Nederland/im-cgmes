@@ -16,17 +16,21 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 ```mermaid
  classDiagram
     class PowerSystemResource
+    click PowerSystemResource href "../PowerSystemResource"
       IdentifiedObject <|-- PowerSystemResource
+        click IdentifiedObject href "../IdentifiedObject"
       
       PowerSystemResource : PowerSystemResource.Controls
         
           PowerSystemResource --> Control : PowerSystemResource.Controls
+          click Control href "../Control"
         
       PowerSystemResource : IdentifiedObject.description
         
       PowerSystemResource : PowerSystemResource.Measurements
         
           PowerSystemResource --> Measurement : PowerSystemResource.Measurements
+          click Measurement href "../Measurement"
         
       PowerSystemResource : IdentifiedObject.mRID
         
@@ -50,11 +54,11 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Controls | [cim:PowerSystemResource.Controls](http://iec.ch/TC57/CIM100#PowerSystemResource.Controls) | 0..* <br />  [Control](Control.md)  | The controller outputs used to actually govern a regulating device, e | direct |
-| Measurements | [cim:PowerSystemResource.Measurements](http://iec.ch/TC57/CIM100#PowerSystemResource.Measurements) | 0..* <br />  [Measurement](Measurement.md)  | The measurements associated with this power system resource | direct |
+| Controls | [cim:PowerSystemResource.Controls](http://iec.ch/TC57/CIM100#PowerSystemResource.Controls) | * <br />  [Control](Control.md)  | The controller outputs used to actually govern a regulating device, e | direct |
+| Measurements | [cim:PowerSystemResource.Measurements](http://iec.ch/TC57/CIM100#PowerSystemResource.Measurements) | * <br />  [Measurement](Measurement.md)  | The measurements associated with this power system resource | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

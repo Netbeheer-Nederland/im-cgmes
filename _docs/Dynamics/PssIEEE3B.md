@@ -20,39 +20,49 @@ _Reference: IEEE 3B 421.5-2005, 8.3._
 ```mermaid
  classDiagram
     class PssIEEE3B
+    click PssIEEE3B href "../PssIEEE3B"
       PowerSystemStabilizerDynamics <|-- PssIEEE3B
+        click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
       
       PssIEEE3B : PssIEEE3B.a1
         
           PssIEEE3B --> PU : PssIEEE3B.a1
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a2
         
           PssIEEE3B --> PU : PssIEEE3B.a2
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a3
         
           PssIEEE3B --> PU : PssIEEE3B.a3
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a4
         
           PssIEEE3B --> PU : PssIEEE3B.a4
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a5
         
           PssIEEE3B --> PU : PssIEEE3B.a5
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a6
         
           PssIEEE3B --> PU : PssIEEE3B.a6
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a7
         
           PssIEEE3B --> PU : PssIEEE3B.a7
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.a8
         
           PssIEEE3B --> PU : PssIEEE3B.a8
+          click PU href "../PU"
         
       PssIEEE3B : IdentifiedObject.description
         
@@ -61,14 +71,17 @@ _Reference: IEEE 3B 421.5-2005, 8.3._
       PssIEEE3B : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
         
           PssIEEE3B --> ExcitationSystemDynamics : PowerSystemStabilizerDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       PssIEEE3B : PssIEEE3B.ks1
         
           PssIEEE3B --> PU : PssIEEE3B.ks1
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.ks2
         
           PssIEEE3B --> PU : PssIEEE3B.ks2
+          click PU href "../PU"
         
       PssIEEE3B : IdentifiedObject.mRID
         
@@ -77,34 +90,42 @@ _Reference: IEEE 3B 421.5-2005, 8.3._
       PssIEEE3B : PowerSystemStabilizerDynamics.RemoteInputSignal
         
           PssIEEE3B --> RemoteInputSignal : PowerSystemStabilizerDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       PssIEEE3B : PssIEEE3B.t1
         
           PssIEEE3B --> Seconds : PssIEEE3B.t1
+          click Seconds href "../Seconds"
         
       PssIEEE3B : PssIEEE3B.t2
         
           PssIEEE3B --> Seconds : PssIEEE3B.t2
+          click Seconds href "../Seconds"
         
       PssIEEE3B : PssIEEE3B.tw1
         
           PssIEEE3B --> Seconds : PssIEEE3B.tw1
+          click Seconds href "../Seconds"
         
       PssIEEE3B : PssIEEE3B.tw2
         
           PssIEEE3B --> Seconds : PssIEEE3B.tw2
+          click Seconds href "../Seconds"
         
       PssIEEE3B : PssIEEE3B.tw3
         
           PssIEEE3B --> Seconds : PssIEEE3B.tw3
+          click Seconds href "../Seconds"
         
       PssIEEE3B : PssIEEE3B.vstmax
         
           PssIEEE3B --> PU : PssIEEE3B.vstmax
+          click PU href "../PU"
         
       PssIEEE3B : PssIEEE3B.vstmin
         
           PssIEEE3B --> PU : PssIEEE3B.vstmin
+          click PU href "../PU"
         
       
 ```
@@ -126,28 +147,28 @@ _Reference: IEEE 3B 421.5-2005, 8.3._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| t1 | [cim:PssIEEE3B.t1](http://iec.ch/TC57/CIM100#PssIEEE3B.t1) | 1..1 <br />  [Seconds](Seconds.md)  | Transducer time constant (<i>T1</i>) (&gt;= 0) | direct |
-| t2 | [cim:PssIEEE3B.t2](http://iec.ch/TC57/CIM100#PssIEEE3B.t2) | 1..1 <br />  [Seconds](Seconds.md)  | Transducer time constant (<i>T2</i>) (&gt;= 0) | direct |
-| tw1 | [cim:PssIEEE3B.tw1](http://iec.ch/TC57/CIM100#PssIEEE3B.tw1) | 1..1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw1</i>) (&gt;= 0) | direct |
-| tw2 | [cim:PssIEEE3B.tw2](http://iec.ch/TC57/CIM100#PssIEEE3B.tw2) | 1..1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw2</i>) (&gt;= 0) | direct |
-| tw3 | [cim:PssIEEE3B.tw3](http://iec.ch/TC57/CIM100#PssIEEE3B.tw3) | 1..1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw3</i>) (&gt;= 0) | direct |
-| ks1 | [cim:PssIEEE3B.ks1](http://iec.ch/TC57/CIM100#PssIEEE3B.ks1) | 1..1 <br />  [PU](PU.md)  | Gain on signal # 1 (<i>Ks1</i>) | direct |
-| ks2 | [cim:PssIEEE3B.ks2](http://iec.ch/TC57/CIM100#PssIEEE3B.ks2) | 1..1 <br />  [PU](PU.md)  | Gain on signal # 2 (<i>Ks2</i>) | direct |
-| a1 | [cim:PssIEEE3B.a1](http://iec.ch/TC57/CIM100#PssIEEE3B.a1) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A1</i>) | direct |
-| a2 | [cim:PssIEEE3B.a2](http://iec.ch/TC57/CIM100#PssIEEE3B.a2) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A2</i>) | direct |
-| a3 | [cim:PssIEEE3B.a3](http://iec.ch/TC57/CIM100#PssIEEE3B.a3) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A3</i>) | direct |
-| a4 | [cim:PssIEEE3B.a4](http://iec.ch/TC57/CIM100#PssIEEE3B.a4) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A4</i>) | direct |
-| a5 | [cim:PssIEEE3B.a5](http://iec.ch/TC57/CIM100#PssIEEE3B.a5) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A5</i>) | direct |
-| a6 | [cim:PssIEEE3B.a6](http://iec.ch/TC57/CIM100#PssIEEE3B.a6) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A6</i>) | direct |
-| a7 | [cim:PssIEEE3B.a7](http://iec.ch/TC57/CIM100#PssIEEE3B.a7) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A7</i>) | direct |
-| a8 | [cim:PssIEEE3B.a8](http://iec.ch/TC57/CIM100#PssIEEE3B.a8) | 1..1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A8</i>) | direct |
-| vstmax | [cim:PssIEEE3B.vstmax](http://iec.ch/TC57/CIM100#PssIEEE3B.vstmax) | 1..1 <br />  [PU](PU.md)  | Stabilizer output maximum limit (<i>Vstmax</i>) (&gt; PssIEEE3B | direct |
-| vstmin | [cim:PssIEEE3B.vstmin](http://iec.ch/TC57/CIM100#PssIEEE3B.vstmin) | 1..1 <br />  [PU](PU.md)  | Stabilizer output minimum limit (<i>Vstmin</i>) (&lt; PssIEEE3B | direct |
-| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | 0..* <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
-| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| t1 | [cim:PssIEEE3B.t1](http://iec.ch/TC57/CIM100#PssIEEE3B.t1) | 1 <br />  [Seconds](Seconds.md)  | Transducer time constant (<i>T1</i>) (&gt;= 0) | direct |
+| t2 | [cim:PssIEEE3B.t2](http://iec.ch/TC57/CIM100#PssIEEE3B.t2) | 1 <br />  [Seconds](Seconds.md)  | Transducer time constant (<i>T2</i>) (&gt;= 0) | direct |
+| tw1 | [cim:PssIEEE3B.tw1](http://iec.ch/TC57/CIM100#PssIEEE3B.tw1) | 1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw1</i>) (&gt;= 0) | direct |
+| tw2 | [cim:PssIEEE3B.tw2](http://iec.ch/TC57/CIM100#PssIEEE3B.tw2) | 1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw2</i>) (&gt;= 0) | direct |
+| tw3 | [cim:PssIEEE3B.tw3](http://iec.ch/TC57/CIM100#PssIEEE3B.tw3) | 1 <br />  [Seconds](Seconds.md)  | Washout time constant (<i>Tw3</i>) (&gt;= 0) | direct |
+| ks1 | [cim:PssIEEE3B.ks1](http://iec.ch/TC57/CIM100#PssIEEE3B.ks1) | 1 <br />  [PU](PU.md)  | Gain on signal # 1 (<i>Ks1</i>) | direct |
+| ks2 | [cim:PssIEEE3B.ks2](http://iec.ch/TC57/CIM100#PssIEEE3B.ks2) | 1 <br />  [PU](PU.md)  | Gain on signal # 2 (<i>Ks2</i>) | direct |
+| a1 | [cim:PssIEEE3B.a1](http://iec.ch/TC57/CIM100#PssIEEE3B.a1) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A1</i>) | direct |
+| a2 | [cim:PssIEEE3B.a2](http://iec.ch/TC57/CIM100#PssIEEE3B.a2) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A2</i>) | direct |
+| a3 | [cim:PssIEEE3B.a3](http://iec.ch/TC57/CIM100#PssIEEE3B.a3) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A3</i>) | direct |
+| a4 | [cim:PssIEEE3B.a4](http://iec.ch/TC57/CIM100#PssIEEE3B.a4) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A4</i>) | direct |
+| a5 | [cim:PssIEEE3B.a5](http://iec.ch/TC57/CIM100#PssIEEE3B.a5) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A5</i>) | direct |
+| a6 | [cim:PssIEEE3B.a6](http://iec.ch/TC57/CIM100#PssIEEE3B.a6) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A6</i>) | direct |
+| a7 | [cim:PssIEEE3B.a7](http://iec.ch/TC57/CIM100#PssIEEE3B.a7) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A7</i>) | direct |
+| a8 | [cim:PssIEEE3B.a8](http://iec.ch/TC57/CIM100#PssIEEE3B.a8) | 1 <br />  [PU](PU.md)  | Notch filter parameter (<i>A8</i>) | direct |
+| vstmax | [cim:PssIEEE3B.vstmax](http://iec.ch/TC57/CIM100#PssIEEE3B.vstmax) | 1 <br />  [PU](PU.md)  | Stabilizer output maximum limit (<i>Vstmax</i>) (&gt; PssIEEE3B | direct |
+| vstmin | [cim:PssIEEE3B.vstmin](http://iec.ch/TC57/CIM100#PssIEEE3B.vstmin) | 1 <br />  [PU](PU.md)  | Stabilizer output minimum limit (<i>Vstmin</i>) (&lt; PssIEEE3B | direct |
+| RemoteInputSignal | [cim:PowerSystemStabilizerDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.RemoteInputSignal) | * <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power system stabilizer model | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
+| ExcitationSystemDynamics | [cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PowerSystemStabilizerDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power system stabilizer model is asso... | [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

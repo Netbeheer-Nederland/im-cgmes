@@ -2,7 +2,7 @@
 
 ## Generating the Documentation
 1. Have the virtual environment active which has the dependencies in `pyproject.toml` satisfied.
-2. Delete all Markdown files in all the profile subdirectories of `_docs`. Make sure to not touch the `assets` subdirectory, i.e. for each profile subdirectory run something like:
+2. Delete all Markdown files in all the profile subdirectories of `_docs`. Make sure to not touch the `assets` and `stylesheets` subdirectories, as well as the `index.md` file. So, for each profile subdirectory run something like:
 ```shell
 $ rm _docs/'PROFILE_DIR'/*.md
 ```

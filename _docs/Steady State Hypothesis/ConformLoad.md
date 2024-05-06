@@ -16,7 +16,9 @@ _ConformLoad represent loads that follow a daily load change pattern where the p
 ```mermaid
  classDiagram
     class ConformLoad
+    click ConformLoad href "../ConformLoad"
       EnergyConsumer <|-- ConformLoad
+        click EnergyConsumer href "../EnergyConsumer"
       
       ConformLoad : Equipment.inService
         
@@ -25,10 +27,12 @@ _ConformLoad represent loads that follow a daily load change pattern where the p
       ConformLoad : EnergyConsumer.p
         
           ConformLoad --> ActivePower : EnergyConsumer.p
+          click ActivePower href "../ActivePower"
         
       ConformLoad : EnergyConsumer.q
         
           ConformLoad --> ReactivePower : EnergyConsumer.q
+          click ReactivePower href "../ReactivePower"
         
       
 ```
@@ -53,10 +57,10 @@ _ConformLoad represent loads that follow a daily load change pattern where the p
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| p | [cim:EnergyConsumer.p](http://iec.ch/TC57/CIM100#EnergyConsumer.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | Active power of the load | [EnergyConsumer](EnergyConsumer.md) |
-| q | [cim:EnergyConsumer.q](http://iec.ch/TC57/CIM100#EnergyConsumer.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power of the load | [EnergyConsumer](EnergyConsumer.md) |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| p | [cim:EnergyConsumer.p](http://iec.ch/TC57/CIM100#EnergyConsumer.p) | 1 <br />  [ActivePower](ActivePower.md)  | Active power of the load | [EnergyConsumer](EnergyConsumer.md) |
+| q | [cim:EnergyConsumer.q](http://iec.ch/TC57/CIM100#EnergyConsumer.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power of the load | [EnergyConsumer](EnergyConsumer.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

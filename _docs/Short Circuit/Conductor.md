@@ -16,10 +16,13 @@ _Combination of conducting material with consistent electrical characteristics, 
 ```mermaid
  classDiagram
     class Conductor
+    click Conductor href "../Conductor"
       ConductingEquipment <|-- Conductor
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       Conductor <|-- ACLineSegment
+        click ACLineSegment href "../ACLineSegment"
       
       
       Conductor : IdentifiedObject.mRID
@@ -46,7 +49,7 @@ _Combination of conducting material with consistent electrical characteristics, 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

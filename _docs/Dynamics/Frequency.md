@@ -16,13 +16,16 @@ _Cycles per second._
 ```mermaid
  classDiagram
     class Frequency
+    click Frequency href "../Frequency"
       Frequency : Frequency.multiplier
         
           Frequency --> UnitMultiplier : Frequency.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Frequency : Frequency.unit
         
           Frequency --> UnitSymbol : Frequency.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Frequency : Frequency.value
         

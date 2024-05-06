@@ -16,7 +16,9 @@ _A reporting group is used for various ad-hoc groupings used for reporting._
 ```mermaid
  classDiagram
     class ReportingGroup
+    click ReportingGroup href "../ReportingGroup"
       IdentifiedObject <|-- ReportingGroup
+        click IdentifiedObject href "../IdentifiedObject"
       
       ReportingGroup : IdentifiedObject.description
         
@@ -31,6 +33,7 @@ _A reporting group is used for various ad-hoc groupings used for reporting._
       ReportingGroup : ReportingGroup.TopologicalNode
         
           ReportingGroup --> TopologicalNode : ReportingGroup.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -50,10 +53,10 @@ _A reporting group is used for various ad-hoc groupings used for reporting._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| TopologicalNode | [cim:ReportingGroup.TopologicalNode](http://iec.ch/TC57/CIM100#ReportingGroup.TopologicalNode) | 0..* <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes that belong to the reporting group | direct |
+| TopologicalNode | [cim:ReportingGroup.TopologicalNode](http://iec.ch/TC57/CIM100#ReportingGroup.TopologicalNode) | * <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes that belong to the reporting group | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 

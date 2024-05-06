@@ -18,19 +18,24 @@ _For a planning model, switch statuses are not used to form topological nodes. I
 ```mermaid
  classDiagram
     class TopologicalNode
+    click TopologicalNode href "../TopologicalNode"
       IdentifiedObject <|-- TopologicalNode
+        click IdentifiedObject href "../IdentifiedObject"
       
       TopologicalNode : TopologicalNode.BaseVoltage
         
           TopologicalNode --> BaseVoltage : TopologicalNode.BaseVoltage
+          click BaseVoltage href "../BaseVoltage"
         
       TopologicalNode : TopologicalNode.ConnectivityNodeContainer
         
           TopologicalNode --> ConnectivityNodeContainer : TopologicalNode.ConnectivityNodeContainer
+          click ConnectivityNodeContainer href "../ConnectivityNodeContainer"
         
       TopologicalNode : TopologicalNode.ConnectivityNodes
         
           TopologicalNode --> ConnectivityNode : TopologicalNode.ConnectivityNodes
+          click ConnectivityNode href "../ConnectivityNode"
         
       TopologicalNode : IdentifiedObject.description
         
@@ -43,12 +48,14 @@ _For a planning model, switch statuses are not used to form topological nodes. I
       TopologicalNode : TopologicalNode.ReportingGroup
         
           TopologicalNode --> ReportingGroup : TopologicalNode.ReportingGroup
+          click ReportingGroup href "../ReportingGroup"
         
       TopologicalNode : IdentifiedObject.shortName
         
       TopologicalNode : TopologicalNode.Terminal
         
           TopologicalNode --> Terminal : TopologicalNode.Terminal
+          click Terminal href "../Terminal"
         
       
 ```
@@ -68,14 +75,14 @@ _For a planning model, switch statuses are not used to form topological nodes. I
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| BaseVoltage | [cim:TopologicalNode.BaseVoltage](http://iec.ch/TC57/CIM100#TopologicalNode.BaseVoltage) | 1..1 <br />  [BaseVoltage](BaseVoltage.md)  | The base voltage of the topological node | direct |
-| ConnectivityNodes | [cim:TopologicalNode.ConnectivityNodes](http://iec.ch/TC57/CIM100#TopologicalNode.ConnectivityNodes) | 0..* <br />  [ConnectivityNode](ConnectivityNode.md)  | The connectivity nodes combine together to form this topological node | direct |
-| ConnectivityNodeContainer | [cim:TopologicalNode.ConnectivityNodeContainer](http://iec.ch/TC57/CIM100#TopologicalNode.ConnectivityNodeContainer) | 1..1 <br />  [ConnectivityNodeContainer](ConnectivityNodeContainer.md)  | The connectivity node container to which the topological node belongs | direct |
+| BaseVoltage | [cim:TopologicalNode.BaseVoltage](http://iec.ch/TC57/CIM100#TopologicalNode.BaseVoltage) | 1 <br />  [BaseVoltage](BaseVoltage.md)  | The base voltage of the topological node | direct |
+| ConnectivityNodes | [cim:TopologicalNode.ConnectivityNodes](http://iec.ch/TC57/CIM100#TopologicalNode.ConnectivityNodes) | * <br />  [ConnectivityNode](ConnectivityNode.md)  | The connectivity nodes combine together to form this topological node | direct |
+| ConnectivityNodeContainer | [cim:TopologicalNode.ConnectivityNodeContainer](http://iec.ch/TC57/CIM100#TopologicalNode.ConnectivityNodeContainer) | 1 <br />  [ConnectivityNodeContainer](ConnectivityNodeContainer.md)  | The connectivity node container to which the topological node belongs | direct |
 | Terminal | [cim:TopologicalNode.Terminal](http://iec.ch/TC57/CIM100#TopologicalNode.Terminal) | 1..* <br />  [Terminal](Terminal.md)  | The terminals associated with the topological node | direct |
 | ReportingGroup | [cim:TopologicalNode.ReportingGroup](http://iec.ch/TC57/CIM100#TopologicalNode.ReportingGroup) | 0..1 <br />  [ReportingGroup](ReportingGroup.md)  | The reporting group to which the topological node belongs | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 

@@ -16,9 +16,11 @@ _A base class for all objects that may contain connectivity nodes or topological
 ```mermaid
  classDiagram
     class ConnectivityNodeContainer
+    click ConnectivityNodeContainer href "../ConnectivityNodeContainer"
       ConnectivityNodeContainer : ConnectivityNodeContainer.TopologicalNode
         
           ConnectivityNodeContainer --> TopologicalNode : ConnectivityNodeContainer.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -34,7 +36,7 @@ _A base class for all objects that may contain connectivity nodes or topological
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| TopologicalNode | [cim:ConnectivityNodeContainer.TopologicalNode](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.TopologicalNode) | 0..* <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes which belong to this connectivity node container | direct |
+| TopologicalNode | [cim:ConnectivityNodeContainer.TopologicalNode](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.TopologicalNode) | * <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes which belong to this connectivity node container | direct |
 
 
 

@@ -24,35 +24,44 @@ _The attributes minGamma and maxGamma define the range of extinction angles for 
 ```mermaid
  classDiagram
     class CsConverter
+    click CsConverter href "../CsConverter"
       ACDCConverter <|-- CsConverter
+        click ACDCConverter href "../ACDCConverter"
       
       CsConverter : CsConverter.alpha
         
           CsConverter --> AngleDegrees : CsConverter.alpha
+          click AngleDegrees href "../AngleDegrees"
         
       CsConverter : CsConverter.gamma
         
           CsConverter --> AngleDegrees : CsConverter.gamma
+          click AngleDegrees href "../AngleDegrees"
         
       CsConverter : ACDCConverter.idc
         
           CsConverter --> CurrentFlow : ACDCConverter.idc
+          click CurrentFlow href "../CurrentFlow"
         
       CsConverter : ACDCConverter.poleLossP
         
           CsConverter --> ActivePower : ACDCConverter.poleLossP
+          click ActivePower href "../ActivePower"
         
       CsConverter : ConductingEquipment.SvStatus
         
           CsConverter --> SvStatus : ConductingEquipment.SvStatus
+          click SvStatus href "../SvStatus"
         
       CsConverter : ACDCConverter.uc
         
           CsConverter --> Voltage : ACDCConverter.uc
+          click Voltage href "../Voltage"
         
       CsConverter : ACDCConverter.udc
         
           CsConverter --> Voltage : ACDCConverter.udc
+          click Voltage href "../Voltage"
         
       
 ```
@@ -73,12 +82,12 @@ _The attributes minGamma and maxGamma define the range of extinction angles for 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| alpha | [cim:CsConverter.alpha](http://iec.ch/TC57/CIM100#CsConverter.alpha) | 1..1 <br />  [AngleDegrees](AngleDegrees.md)  | Firing angle that determines the dc voltage at the converter dc terminal | direct |
-| gamma | [cim:CsConverter.gamma](http://iec.ch/TC57/CIM100#CsConverter.gamma) | 1..1 <br />  [AngleDegrees](AngleDegrees.md)  | Extinction angle | direct |
-| idc | [cim:ACDCConverter.idc](http://iec.ch/TC57/CIM100#ACDCConverter.idc) | 1..1 <br />  [CurrentFlow](CurrentFlow.md)  | Converter DC current, also called Id | [ACDCConverter](ACDCConverter.md) |
-| poleLossP | [cim:ACDCConverter.poleLossP](http://iec.ch/TC57/CIM100#ACDCConverter.poleLossP) | 1..1 <br />  [ActivePower](ActivePower.md)  | The active power loss at a DC Pole  | [ACDCConverter](ACDCConverter.md) |
-| uc | [cim:ACDCConverter.uc](http://iec.ch/TC57/CIM100#ACDCConverter.uc) | 1..1 <br />  [Voltage](Voltage.md)  | Line-to-line converter voltage, the voltage at the AC side of the valve | [ACDCConverter](ACDCConverter.md) |
-| udc | [cim:ACDCConverter.udc](http://iec.ch/TC57/CIM100#ACDCConverter.udc) | 1..1 <br />  [Voltage](Voltage.md)  | Converter voltage at the DC side, also called Ud | [ACDCConverter](ACDCConverter.md) |
+| alpha | [cim:CsConverter.alpha](http://iec.ch/TC57/CIM100#CsConverter.alpha) | 1 <br />  [AngleDegrees](AngleDegrees.md)  | Firing angle that determines the dc voltage at the converter dc terminal | direct |
+| gamma | [cim:CsConverter.gamma](http://iec.ch/TC57/CIM100#CsConverter.gamma) | 1 <br />  [AngleDegrees](AngleDegrees.md)  | Extinction angle | direct |
+| idc | [cim:ACDCConverter.idc](http://iec.ch/TC57/CIM100#ACDCConverter.idc) | 1 <br />  [CurrentFlow](CurrentFlow.md)  | Converter DC current, also called Id | [ACDCConverter](ACDCConverter.md) |
+| poleLossP | [cim:ACDCConverter.poleLossP](http://iec.ch/TC57/CIM100#ACDCConverter.poleLossP) | 1 <br />  [ActivePower](ActivePower.md)  | The active power loss at a DC Pole  | [ACDCConverter](ACDCConverter.md) |
+| uc | [cim:ACDCConverter.uc](http://iec.ch/TC57/CIM100#ACDCConverter.uc) | 1 <br />  [Voltage](Voltage.md)  | Line-to-line converter voltage, the voltage at the AC side of the valve | [ACDCConverter](ACDCConverter.md) |
+| udc | [cim:ACDCConverter.udc](http://iec.ch/TC57/CIM100#ACDCConverter.udc) | 1 <br />  [Voltage](Voltage.md)  | Converter voltage at the DC side, also called Ud | [ACDCConverter](ACDCConverter.md) |
 | SvStatus | [cim:ConductingEquipment.SvStatus](http://iec.ch/TC57/CIM100#ConductingEquipment.SvStatus) | 0..1 <br />  [SvStatus](SvStatus.md)  | The status state variable associated with this conducting equipment | [ConductingEquipment](ConductingEquipment.md) |
 
 

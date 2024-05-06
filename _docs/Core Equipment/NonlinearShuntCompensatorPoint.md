@@ -16,17 +16,21 @@ _A non linear shunt compensator bank or section admittance value. The number of 
 ```mermaid
  classDiagram
     class NonlinearShuntCompensatorPoint
+    click NonlinearShuntCompensatorPoint href "../NonlinearShuntCompensatorPoint"
       NonlinearShuntCompensatorPoint : NonlinearShuntCompensatorPoint.b
         
           NonlinearShuntCompensatorPoint --> Susceptance : NonlinearShuntCompensatorPoint.b
+          click Susceptance href "../Susceptance"
         
       NonlinearShuntCompensatorPoint : NonlinearShuntCompensatorPoint.g
         
           NonlinearShuntCompensatorPoint --> Conductance : NonlinearShuntCompensatorPoint.g
+          click Conductance href "../Conductance"
         
       NonlinearShuntCompensatorPoint : NonlinearShuntCompensatorPoint.NonlinearShuntCompensator
         
           NonlinearShuntCompensatorPoint --> NonlinearShuntCompensator : NonlinearShuntCompensatorPoint.NonlinearShuntCompensator
+          click NonlinearShuntCompensator href "../NonlinearShuntCompensator"
         
       NonlinearShuntCompensatorPoint : NonlinearShuntCompensatorPoint.sectionNumber
         
@@ -44,10 +48,10 @@ _A non linear shunt compensator bank or section admittance value. The number of 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| NonlinearShuntCompensator | [cim:NonlinearShuntCompensatorPoint.NonlinearShuntCompensator](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.NonlinearShuntCompensator) | 1..1 <br />  [NonlinearShuntCompensator](NonlinearShuntCompensator.md)  | Non-linear shunt compensator owning this point | direct |
-| b | [cim:NonlinearShuntCompensatorPoint.b](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.b) | 1..1 <br />  [Susceptance](Susceptance.md)  | Positive sequence shunt (charging) susceptance per section | direct |
-| g | [cim:NonlinearShuntCompensatorPoint.g](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.g) | 1..1 <br />  [Conductance](Conductance.md)  | Positive sequence shunt (charging) conductance per section | direct |
-| sectionNumber | [cim:NonlinearShuntCompensatorPoint.sectionNumber](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.sectionNumber) | 1..1 <br />  integer  | The number of the section | direct |
+| NonlinearShuntCompensator | [cim:NonlinearShuntCompensatorPoint.NonlinearShuntCompensator](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.NonlinearShuntCompensator) | 1 <br />  [NonlinearShuntCompensator](NonlinearShuntCompensator.md)  | Non-linear shunt compensator owning this point | direct |
+| b | [cim:NonlinearShuntCompensatorPoint.b](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.b) | 1 <br />  [Susceptance](Susceptance.md)  | Positive sequence shunt (charging) susceptance per section | direct |
+| g | [cim:NonlinearShuntCompensatorPoint.g](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.g) | 1 <br />  [Conductance](Conductance.md)  | Positive sequence shunt (charging) conductance per section | direct |
+| sectionNumber | [cim:NonlinearShuntCompensatorPoint.sectionNumber](http://iec.ch/TC57/CIM100#NonlinearShuntCompensatorPoint.sectionNumber) | 1 <br />  integer  | The number of the section | direct |
 
 
 

@@ -16,17 +16,21 @@ _The SvInjection reports the calculated bus injection minus the sum of the termi
 ```mermaid
  classDiagram
     class SvInjection
+    click SvInjection href "../SvInjection"
       SvInjection : SvInjection.pInjection
         
           SvInjection --> ActivePower : SvInjection.pInjection
+          click ActivePower href "../ActivePower"
         
       SvInjection : SvInjection.qInjection
         
           SvInjection --> ReactivePower : SvInjection.qInjection
+          click ReactivePower href "../ReactivePower"
         
       SvInjection : SvInjection.TopologicalNode
         
           SvInjection --> TopologicalNode : SvInjection.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -42,9 +46,9 @@ _The SvInjection reports the calculated bus injection minus the sum of the termi
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| pInjection | [cim:SvInjection.pInjection](http://iec.ch/TC57/CIM100#SvInjection.pInjection) | 1..1 <br />  [ActivePower](ActivePower.md)  | The active power mismatch between calculated injection and initial injection | direct |
+| pInjection | [cim:SvInjection.pInjection](http://iec.ch/TC57/CIM100#SvInjection.pInjection) | 1 <br />  [ActivePower](ActivePower.md)  | The active power mismatch between calculated injection and initial injection | direct |
 | qInjection | [cim:SvInjection.qInjection](http://iec.ch/TC57/CIM100#SvInjection.qInjection) | 0..1 <br />  [ReactivePower](ReactivePower.md)  | The reactive power mismatch between calculated injection and initial injectio... | direct |
-| TopologicalNode | [cim:SvInjection.TopologicalNode](http://iec.ch/TC57/CIM100#SvInjection.TopologicalNode) | 1..1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node associated with the flow injection state variable | direct |
+| TopologicalNode | [cim:SvInjection.TopologicalNode](http://iec.ch/TC57/CIM100#SvInjection.TopologicalNode) | 1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node associated with the flow injection state variable | direct |
 
 
 

@@ -16,7 +16,9 @@ _An AccumulatorLimitSet specifies a set of Limits that are associated with an Ac
 ```mermaid
  classDiagram
     class AccumulatorLimitSet
+    click AccumulatorLimitSet href "../AccumulatorLimitSet"
       LimitSet <|-- AccumulatorLimitSet
+        click LimitSet href "../LimitSet"
       
       AccumulatorLimitSet : IdentifiedObject.description
         
@@ -25,10 +27,12 @@ _An AccumulatorLimitSet specifies a set of Limits that are associated with an Ac
       AccumulatorLimitSet : AccumulatorLimitSet.Limits
         
           AccumulatorLimitSet --> AccumulatorLimit : AccumulatorLimitSet.Limits
+          click AccumulatorLimit href "../AccumulatorLimit"
         
       AccumulatorLimitSet : AccumulatorLimitSet.Measurements
         
           AccumulatorLimitSet --> Accumulator : AccumulatorLimitSet.Measurements
+          click Accumulator href "../Accumulator"
         
       AccumulatorLimitSet : IdentifiedObject.mRID
         
@@ -57,8 +61,8 @@ _An AccumulatorLimitSet specifies a set of Limits that are associated with an Ac
 | Limits | [cim:AccumulatorLimitSet.Limits](http://iec.ch/TC57/CIM100#AccumulatorLimitSet.Limits) | 1..* <br />  [AccumulatorLimit](AccumulatorLimit.md)  | The limit values used for supervision of Measurements | direct |
 | isPercentageLimits | [cim:LimitSet.isPercentageLimits](http://iec.ch/TC57/CIM100#LimitSet.isPercentageLimits) | 0..1 <br />  boolean  | Tells if the limit values are in percentage of normalValue or the specified U... | [LimitSet](LimitSet.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

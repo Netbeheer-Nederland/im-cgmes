@@ -16,13 +16,16 @@ _Value of temperature in degrees Celsius._
 ```mermaid
  classDiagram
     class Temperature
+    click Temperature href "../Temperature"
       Temperature : Temperature.multiplier
         
           Temperature --> UnitMultiplier : Temperature.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Temperature : Temperature.unit
         
           Temperature --> UnitSymbol : Temperature.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Temperature : Temperature.value
         

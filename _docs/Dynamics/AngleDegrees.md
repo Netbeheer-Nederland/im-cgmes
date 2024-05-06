@@ -16,13 +16,16 @@ _Measurement of angle in degrees._
 ```mermaid
  classDiagram
     class AngleDegrees
+    click AngleDegrees href "../AngleDegrees"
       AngleDegrees : AngleDegrees.multiplier
         
           AngleDegrees --> UnitMultiplier : AngleDegrees.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       AngleDegrees : AngleDegrees.unit
         
           AngleDegrees --> UnitSymbol : AngleDegrees.unit
+          click UnitSymbol href "../UnitSymbol"
         
       AngleDegrees : AngleDegrees.value
         

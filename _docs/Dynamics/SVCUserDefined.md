@@ -16,7 +16,9 @@ _Static var compensator (SVC) function block whose dynamic behaviour is describe
 ```mermaid
  classDiagram
     class SVCUserDefined
+    click SVCUserDefined href "../SVCUserDefined"
       StaticVarCompensatorDynamics <|-- SVCUserDefined
+        click StaticVarCompensatorDynamics href "../StaticVarCompensatorDynamics"
       
       SVCUserDefined : IdentifiedObject.description
         
@@ -31,10 +33,12 @@ _Static var compensator (SVC) function block whose dynamic behaviour is describe
       SVCUserDefined : SVCUserDefined.ProprietaryParameterDynamics
         
           SVCUserDefined --> ProprietaryParameterDynamics : SVCUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       SVCUserDefined : StaticVarCompensatorDynamics.StaticVarCompensator
         
           SVCUserDefined --> StaticVarCompensator : StaticVarCompensatorDynamics.StaticVarCompensator
+          click StaticVarCompensator href "../StaticVarCompensator"
         
       
 ```
@@ -56,12 +60,12 @@ _Static var compensator (SVC) function block whose dynamic behaviour is describe
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:SVCUserDefined.proprietary](http://iec.ch/TC57/CIM100#SVCUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:SVCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#SVCUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| StaticVarCompensator | [cim:StaticVarCompensatorDynamics.StaticVarCompensator](http://iec.ch/TC57/CIM100#StaticVarCompensatorDynamics.StaticVarCompensator) | 1..1 <br />  [StaticVarCompensator](StaticVarCompensator.md)  | Static Var Compensator to which Static Var Compensator dynamics model applies | [StaticVarCompensatorDynamics](StaticVarCompensatorDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| proprietary | [cim:SVCUserDefined.proprietary](http://iec.ch/TC57/CIM100#SVCUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:SVCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#SVCUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| StaticVarCompensator | [cim:StaticVarCompensatorDynamics.StaticVarCompensator](http://iec.ch/TC57/CIM100#StaticVarCompensatorDynamics.StaticVarCompensator) | 1 <br />  [StaticVarCompensator](StaticVarCompensator.md)  | Static Var Compensator to which Static Var Compensator dynamics model applies | [StaticVarCompensatorDynamics](StaticVarCompensatorDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

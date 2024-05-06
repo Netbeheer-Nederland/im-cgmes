@@ -24,17 +24,23 @@ _</ol>_
 ```mermaid
  classDiagram
     class AsynchronousMachineDynamics
+    click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
       RotatingMachineDynamics <|-- AsynchronousMachineDynamics
+        click RotatingMachineDynamics href "../RotatingMachineDynamics"
       
 
       AsynchronousMachineDynamics <|-- AsynchronousMachineUserDefined
+        click AsynchronousMachineUserDefined href "../AsynchronousMachineUserDefined"
       AsynchronousMachineDynamics <|-- AsynchronousMachineTimeConstantReactance
+        click AsynchronousMachineTimeConstantReactance href "../AsynchronousMachineTimeConstantReactance"
       AsynchronousMachineDynamics <|-- AsynchronousMachineEquivalentCircuit
+        click AsynchronousMachineEquivalentCircuit href "../AsynchronousMachineEquivalentCircuit"
       
       
       AsynchronousMachineDynamics : AsynchronousMachineDynamics.AsynchronousMachine
         
           AsynchronousMachineDynamics --> AsynchronousMachine : AsynchronousMachineDynamics.AsynchronousMachine
+          click AsynchronousMachine href "../AsynchronousMachine"
         
       AsynchronousMachineDynamics : RotatingMachineDynamics.damping
         
@@ -45,10 +51,12 @@ _</ol>_
       AsynchronousMachineDynamics : RotatingMachineDynamics.inertia
         
           AsynchronousMachineDynamics --> Seconds : RotatingMachineDynamics.inertia
+          click Seconds href "../Seconds"
         
       AsynchronousMachineDynamics : AsynchronousMachineDynamics.MechanicalLoadDynamics
         
           AsynchronousMachineDynamics --> MechanicalLoadDynamics : AsynchronousMachineDynamics.MechanicalLoadDynamics
+          click MechanicalLoadDynamics href "../MechanicalLoadDynamics"
         
       AsynchronousMachineDynamics : IdentifiedObject.mRID
         
@@ -61,18 +69,22 @@ _</ol>_
       AsynchronousMachineDynamics : RotatingMachineDynamics.statorLeakageReactance
         
           AsynchronousMachineDynamics --> PU : RotatingMachineDynamics.statorLeakageReactance
+          click PU href "../PU"
         
       AsynchronousMachineDynamics : RotatingMachineDynamics.statorResistance
         
           AsynchronousMachineDynamics --> PU : RotatingMachineDynamics.statorResistance
+          click PU href "../PU"
         
       AsynchronousMachineDynamics : AsynchronousMachineDynamics.TurbineGovernorDynamics
         
           AsynchronousMachineDynamics --> TurbineGovernorDynamics : AsynchronousMachineDynamics.TurbineGovernorDynamics
+          click TurbineGovernorDynamics href "../TurbineGovernorDynamics"
         
       AsynchronousMachineDynamics : AsynchronousMachineDynamics.WindTurbineType1or2Dynamics
         
           AsynchronousMachineDynamics --> WindTurbineType1or2Dynamics : AsynchronousMachineDynamics.WindTurbineType1or2Dynamics
+          click WindTurbineType1or2Dynamics href "../WindTurbineType1or2Dynamics"
         
       
 ```
@@ -97,19 +109,19 @@ _</ol>_
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| AsynchronousMachine | [cim:AsynchronousMachineDynamics.AsynchronousMachine](http://iec.ch/TC57/CIM100#AsynchronousMachineDynamics.AsynchronousMachine) | 1..1 <br />  [AsynchronousMachine](AsynchronousMachine.md)  | Asynchronous machine to which this asynchronous machine dynamics model applie... | direct |
+| AsynchronousMachine | [cim:AsynchronousMachineDynamics.AsynchronousMachine](http://iec.ch/TC57/CIM100#AsynchronousMachineDynamics.AsynchronousMachine) | 1 <br />  [AsynchronousMachine](AsynchronousMachine.md)  | Asynchronous machine to which this asynchronous machine dynamics model applie... | direct |
 | TurbineGovernorDynamics | [cim:AsynchronousMachineDynamics.TurbineGovernorDynamics](http://iec.ch/TC57/CIM100#AsynchronousMachineDynamics.TurbineGovernorDynamics) | 0..1 <br />  [TurbineGovernorDynamics](TurbineGovernorDynamics.md)  | Turbine-governor model associated with this asynchronous machine model | direct |
 | MechanicalLoadDynamics | [cim:AsynchronousMachineDynamics.MechanicalLoadDynamics](http://iec.ch/TC57/CIM100#AsynchronousMachineDynamics.MechanicalLoadDynamics) | 0..1 <br />  [MechanicalLoadDynamics](MechanicalLoadDynamics.md)  | Mechanical load model associated with this asynchronous machine model | direct |
 | WindTurbineType1or2Dynamics | [cim:AsynchronousMachineDynamics.WindTurbineType1or2Dynamics](http://iec.ch/TC57/CIM100#AsynchronousMachineDynamics.WindTurbineType1or2Dynamics) | 0..1 <br />  [WindTurbineType1or2Dynamics](WindTurbineType1or2Dynamics.md)  | Wind generator type 1 or type 2 model associated with this asynchronous machi... | direct |
-| damping | [cim:RotatingMachineDynamics.damping](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.damping) | 1..1 <br />  float  | Damping torque coefficient (<i>D</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
-| inertia | [cim:RotatingMachineDynamics.inertia](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.inertia) | 1..1 <br />  [Seconds](Seconds.md)  | Inertia constant of generator or motor and mechanical load (<i>H</i>) (&gt; 0... | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
+| damping | [cim:RotatingMachineDynamics.damping](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.damping) | 1 <br />  float  | Damping torque coefficient (<i>D</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
+| inertia | [cim:RotatingMachineDynamics.inertia](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.inertia) | 1 <br />  [Seconds](Seconds.md)  | Inertia constant of generator or motor and mechanical load (<i>H</i>) (&gt; 0... | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
 | saturationFactor | [cim:RotatingMachineDynamics.saturationFactor](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.saturationFactor) | 0..1 <br />  float  | Saturation factor at rated terminal voltage (<i>S1</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
 | saturationFactor120 | [cim:RotatingMachineDynamics.saturationFactor120](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.saturationFactor120) | 0..1 <br />  float  | Saturation factor at 120% of rated terminal voltage (<i>S12</i>) (&gt;= Rotat... | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
-| statorLeakageReactance | [cim:RotatingMachineDynamics.statorLeakageReactance](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.statorLeakageReactance) | 1..1 <br />  [PU](PU.md)  | Stator leakage reactance (<i>Xl</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
-| statorResistance | [cim:RotatingMachineDynamics.statorResistance](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.statorResistance) | 1..1 <br />  [PU](PU.md)  | Stator (armature) resistance (<i>Rs</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| statorLeakageReactance | [cim:RotatingMachineDynamics.statorLeakageReactance](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.statorLeakageReactance) | 1 <br />  [PU](PU.md)  | Stator leakage reactance (<i>Xl</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
+| statorResistance | [cim:RotatingMachineDynamics.statorResistance](http://iec.ch/TC57/CIM100#RotatingMachineDynamics.statorResistance) | 1 <br />  [PU](PU.md)  | Stator (armature) resistance (<i>Rs</i>) (&gt;= 0) | [RotatingMachineDynamics](RotatingMachineDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

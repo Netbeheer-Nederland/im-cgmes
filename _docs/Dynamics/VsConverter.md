@@ -16,7 +16,9 @@ _DC side of the voltage source converter (VSC)._
 ```mermaid
  classDiagram
     class VsConverter
+    click VsConverter href "../VsConverter"
       ACDCConverter <|-- VsConverter
+        click ACDCConverter href "../ACDCConverter"
       
       VsConverter : IdentifiedObject.description
         
@@ -27,10 +29,12 @@ _DC side of the voltage source converter (VSC)._
       VsConverter : ConductingEquipment.Terminals
         
           VsConverter --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       VsConverter : VsConverter.VSCDynamics
         
           VsConverter --> VSCDynamics : VsConverter.VSCDynamics
+          click VSCDynamics href "../VSCDynamics"
         
       
 ```
@@ -55,9 +59,9 @@ _DC side of the voltage source converter (VSC)._
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | VSCDynamics | [cim:VsConverter.VSCDynamics](http://iec.ch/TC57/CIM100#VsConverter.VSCDynamics) | 0..1 <br />  [VSCDynamics](VSCDynamics.md)  | Voltage source converter dynamics model used to describe dynamic behaviour of... | direct |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

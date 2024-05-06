@@ -16,9 +16,11 @@ _Connectivity nodes are points where terminals of AC conducting equipment are co
 ```mermaid
  classDiagram
     class ConnectivityNode
+    click ConnectivityNode href "../ConnectivityNode"
       ConnectivityNode : ConnectivityNode.TopologicalNode
         
           ConnectivityNode --> TopologicalNode : ConnectivityNode.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -34,7 +36,7 @@ _Connectivity nodes are points where terminals of AC conducting equipment are co
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| TopologicalNode | [cim:ConnectivityNode.TopologicalNode](http://iec.ch/TC57/CIM100#ConnectivityNode.TopologicalNode) | 1..1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node to which this connectivity node is assigned | direct |
+| TopologicalNode | [cim:ConnectivityNode.TopologicalNode](http://iec.ch/TC57/CIM100#ConnectivityNode.TopologicalNode) | 1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node to which this connectivity node is assigned | direct |
 
 
 

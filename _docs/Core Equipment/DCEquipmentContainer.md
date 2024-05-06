@@ -16,20 +16,26 @@ _A modelling construct to provide a root class for containment of DC as well as 
 ```mermaid
  classDiagram
     class DCEquipmentContainer
+    click DCEquipmentContainer href "../DCEquipmentContainer"
       EquipmentContainer <|-- DCEquipmentContainer
+        click EquipmentContainer href "../EquipmentContainer"
       
 
       DCEquipmentContainer <|-- DCConverterUnit
+        click DCConverterUnit href "../DCConverterUnit"
       DCEquipmentContainer <|-- DCLine
+        click DCLine href "../DCLine"
       
       
       DCEquipmentContainer : ConnectivityNodeContainer.ConnectivityNodes
         
           DCEquipmentContainer --> ConnectivityNode : ConnectivityNodeContainer.ConnectivityNodes
+          click ConnectivityNode href "../ConnectivityNode"
         
       DCEquipmentContainer : DCEquipmentContainer.DCNodes
         
           DCEquipmentContainer --> DCNode : DCEquipmentContainer.DCNodes
+          click DCNode href "../DCNode"
         
       DCEquipmentContainer : IdentifiedObject.description
         
@@ -38,6 +44,7 @@ _A modelling construct to provide a root class for containment of DC as well as 
       DCEquipmentContainer : EquipmentContainer.Equipments
         
           DCEquipmentContainer --> Equipment : EquipmentContainer.Equipments
+          click Equipment href "../Equipment"
         
       DCEquipmentContainer : IdentifiedObject.mRID
         
@@ -68,13 +75,13 @@ _A modelling construct to provide a root class for containment of DC as well as 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| DCNodes | [cim:DCEquipmentContainer.DCNodes](http://iec.ch/TC57/CIM100#DCEquipmentContainer.DCNodes) | 0..* <br />  [DCNode](DCNode.md)  | The DC nodes contained in the DC equipment container | direct |
-| Equipments | [cim:EquipmentContainer.Equipments](http://iec.ch/TC57/CIM100#EquipmentContainer.Equipments) | 0..* <br />  [Equipment](Equipment.md)  | Contained equipment | [EquipmentContainer](EquipmentContainer.md) |
-| ConnectivityNodes | [cim:ConnectivityNodeContainer.ConnectivityNodes](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.ConnectivityNodes) | 0..* <br />  [ConnectivityNode](ConnectivityNode.md)  | Connectivity nodes which belong to this connectivity node container | [ConnectivityNodeContainer](ConnectivityNodeContainer.md) |
+| DCNodes | [cim:DCEquipmentContainer.DCNodes](http://iec.ch/TC57/CIM100#DCEquipmentContainer.DCNodes) | * <br />  [DCNode](DCNode.md)  | The DC nodes contained in the DC equipment container | direct |
+| Equipments | [cim:EquipmentContainer.Equipments](http://iec.ch/TC57/CIM100#EquipmentContainer.Equipments) | * <br />  [Equipment](Equipment.md)  | Contained equipment | [EquipmentContainer](EquipmentContainer.md) |
+| ConnectivityNodes | [cim:ConnectivityNodeContainer.ConnectivityNodes](http://iec.ch/TC57/CIM100#ConnectivityNodeContainer.ConnectivityNodes) | * <br />  [ConnectivityNode](ConnectivityNode.md)  | Connectivity nodes which belong to this connectivity node container | [ConnectivityNodeContainer](ConnectivityNodeContainer.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -20,7 +20,9 @@ _Angle sign convention (general): Positive value indicates a positive phase shif
 ```mermaid
  classDiagram
     class RatioTapChanger
+    click RatioTapChanger href "../RatioTapChanger"
       TapChanger <|-- RatioTapChanger
+        click TapChanger href "../TapChanger"
       
       RatioTapChanger : TapChanger.controlEnabled
         
@@ -48,9 +50,9 @@ _Angle sign convention (general): Positive value indicates a positive phase shif
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
-| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1..1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
+| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

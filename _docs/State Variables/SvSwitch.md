@@ -16,11 +16,13 @@ _State variable for switch._
 ```mermaid
  classDiagram
     class SvSwitch
+    click SvSwitch href "../SvSwitch"
       SvSwitch : SvSwitch.open
         
       SvSwitch : SvSwitch.Switch
         
           SvSwitch --> Switch : SvSwitch.Switch
+          click Switch href "../Switch"
         
       
 ```
@@ -36,8 +38,8 @@ _State variable for switch._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| open | [cim:SvSwitch.open](http://iec.ch/TC57/CIM100#SvSwitch.open) | 1..1 <br />  boolean  | The attribute tells if the computed state of the switch is considered open | direct |
-| Switch | [cim:SvSwitch.Switch](http://iec.ch/TC57/CIM100#SvSwitch.Switch) | 1..1 <br />  [Switch](Switch.md)  | The switch associated with the switch state | direct |
+| open | [cim:SvSwitch.open](http://iec.ch/TC57/CIM100#SvSwitch.open) | 1 <br />  boolean  | The attribute tells if the computed state of the switch is considered open | direct |
+| Switch | [cim:SvSwitch.Switch](http://iec.ch/TC57/CIM100#SvSwitch.Switch) | 1 <br />  [Switch](Switch.md)  | The switch associated with the switch state | direct |
 
 
 

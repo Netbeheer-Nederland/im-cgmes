@@ -16,11 +16,13 @@ _State variable for the number of sections in service for a shunt compensator._
 ```mermaid
  classDiagram
     class SvShuntCompensatorSections
+    click SvShuntCompensatorSections href "../SvShuntCompensatorSections"
       SvShuntCompensatorSections : SvShuntCompensatorSections.sections
         
       SvShuntCompensatorSections : SvShuntCompensatorSections.ShuntCompensator
         
           SvShuntCompensatorSections --> ShuntCompensator : SvShuntCompensatorSections.ShuntCompensator
+          click ShuntCompensator href "../ShuntCompensator"
         
       
 ```
@@ -36,8 +38,8 @@ _State variable for the number of sections in service for a shunt compensator._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ShuntCompensator | [cim:SvShuntCompensatorSections.ShuntCompensator](http://iec.ch/TC57/CIM100#SvShuntCompensatorSections.ShuntCompensator) | 1..1 <br />  [ShuntCompensator](ShuntCompensator.md)  | The shunt compensator for which the state applies | direct |
-| sections | [cim:SvShuntCompensatorSections.sections](http://iec.ch/TC57/CIM100#SvShuntCompensatorSections.sections) | 1..1 <br />  float  | The number of sections in service as a continuous variable | direct |
+| ShuntCompensator | [cim:SvShuntCompensatorSections.ShuntCompensator](http://iec.ch/TC57/CIM100#SvShuntCompensatorSections.ShuntCompensator) | 1 <br />  [ShuntCompensator](ShuntCompensator.md)  | The shunt compensator for which the state applies | direct |
+| sections | [cim:SvShuntCompensatorSections.sections](http://iec.ch/TC57/CIM100#SvShuntCompensatorSections.sections) | 1 <br />  float  | The number of sections in service as a continuous variable | direct |
 
 
 

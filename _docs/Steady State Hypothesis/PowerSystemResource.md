@@ -16,13 +16,19 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 ```mermaid
  classDiagram
     class PowerSystemResource
+    click PowerSystemResource href "../PowerSystemResource"
       IdentifiedObject <|-- PowerSystemResource
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       PowerSystemResource <|-- ControlArea
+        click ControlArea href "../ControlArea"
       PowerSystemResource <|-- Equipment
+        click Equipment href "../Equipment"
       PowerSystemResource <|-- RegulatingControl
+        click RegulatingControl href "../RegulatingControl"
       PowerSystemResource <|-- TapChanger
+        click TapChanger href "../TapChanger"
       
       
       PowerSystemResource : IdentifiedObject.mRID
@@ -49,7 +55,7 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

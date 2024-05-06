@@ -16,13 +16,16 @@ _Percentage on a defined base.   For example, specify as 100 to indicate at the 
 ```mermaid
  classDiagram
     class PerCent
+    click PerCent href "../PerCent"
       PerCent : PerCent.multiplier
         
           PerCent --> UnitMultiplier : PerCent.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       PerCent : PerCent.unit
         
           PerCent --> UnitSymbol : PerCent.unit
+          click UnitSymbol href "../UnitSymbol"
         
       PerCent : PerCent.value
         

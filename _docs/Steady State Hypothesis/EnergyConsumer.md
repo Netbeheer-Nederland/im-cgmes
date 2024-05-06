@@ -18,12 +18,17 @@ _EnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if 
 ```mermaid
  classDiagram
     class EnergyConsumer
+    click EnergyConsumer href "../EnergyConsumer"
       EnergyConnection <|-- EnergyConsumer
+        click EnergyConnection href "../EnergyConnection"
       
 
       EnergyConsumer <|-- ConformLoad
+        click ConformLoad href "../ConformLoad"
       EnergyConsumer <|-- NonConformLoad
+        click NonConformLoad href "../NonConformLoad"
       EnergyConsumer <|-- StationSupply
+        click StationSupply href "../StationSupply"
       
       
       EnergyConsumer : Equipment.inService
@@ -33,10 +38,12 @@ _EnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if 
       EnergyConsumer : EnergyConsumer.p
         
           EnergyConsumer --> ActivePower : EnergyConsumer.p
+          click ActivePower href "../ActivePower"
         
       EnergyConsumer : EnergyConsumer.q
         
           EnergyConsumer --> ReactivePower : EnergyConsumer.q
+          click ReactivePower href "../ReactivePower"
         
       
 ```
@@ -63,10 +70,10 @@ _EnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| p | [cim:EnergyConsumer.p](http://iec.ch/TC57/CIM100#EnergyConsumer.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | Active power of the load | direct |
-| q | [cim:EnergyConsumer.q](http://iec.ch/TC57/CIM100#EnergyConsumer.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power of the load | direct |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| p | [cim:EnergyConsumer.p](http://iec.ch/TC57/CIM100#EnergyConsumer.p) | 1 <br />  [ActivePower](ActivePower.md)  | Active power of the load | direct |
+| q | [cim:EnergyConsumer.q](http://iec.ch/TC57/CIM100#EnergyConsumer.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power of the load | direct |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

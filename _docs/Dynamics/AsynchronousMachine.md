@@ -16,11 +16,14 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
 ```mermaid
  classDiagram
     class AsynchronousMachine
+    click AsynchronousMachine href "../AsynchronousMachine"
       RotatingMachine <|-- AsynchronousMachine
+        click RotatingMachine href "../RotatingMachine"
       
       AsynchronousMachine : AsynchronousMachine.AsynchronousMachineDynamics
         
           AsynchronousMachine --> AsynchronousMachineDynamics : AsynchronousMachine.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       AsynchronousMachine : IdentifiedObject.description
         
@@ -31,6 +34,7 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
       AsynchronousMachine : ConductingEquipment.Terminals
         
           AsynchronousMachine --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -57,9 +61,9 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | AsynchronousMachineDynamics | [cim:AsynchronousMachine.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#AsynchronousMachine.AsynchronousMachineDynamics) | 0..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine dynamics model used to describe dynamic behaviour of thi... | direct |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

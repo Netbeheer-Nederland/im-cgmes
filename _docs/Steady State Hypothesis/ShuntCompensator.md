@@ -16,11 +16,15 @@ _A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors
 ```mermaid
  classDiagram
     class ShuntCompensator
+    click ShuntCompensator href "../ShuntCompensator"
       RegulatingCondEq <|-- ShuntCompensator
+        click RegulatingCondEq href "../RegulatingCondEq"
       
 
       ShuntCompensator <|-- LinearShuntCompensator
+        click LinearShuntCompensator href "../LinearShuntCompensator"
       ShuntCompensator <|-- NonlinearShuntCompensator
+        click NonlinearShuntCompensator href "../NonlinearShuntCompensator"
       
       
       ShuntCompensator : RegulatingCondEq.controlEnabled
@@ -56,10 +60,10 @@ _A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| sections | [cim:ShuntCompensator.sections](http://iec.ch/TC57/CIM100#ShuntCompensator.sections) | 1..1 <br />  float  | Shunt compensator sections in use | direct |
-| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| sections | [cim:ShuntCompensator.sections](http://iec.ch/TC57/CIM100#ShuntCompensator.sections) | 1 <br />  float  | Shunt compensator sections in use | direct |
+| controlEnabled | [cim:RegulatingCondEq.controlEnabled](http://iec.ch/TC57/CIM100#RegulatingCondEq.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [RegulatingCondEq](RegulatingCondEq.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

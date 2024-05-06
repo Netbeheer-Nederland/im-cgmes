@@ -16,11 +16,15 @@ _A unit with valves for three phases, together with unit control equipment, esse
 ```mermaid
  classDiagram
     class ACDCConverter
+    click ACDCConverter href "../ACDCConverter"
       ConductingEquipment <|-- ACDCConverter
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       ACDCConverter <|-- CsConverter
+        click CsConverter href "../CsConverter"
       ACDCConverter <|-- VsConverter
+        click VsConverter href "../VsConverter"
       
       
       ACDCConverter : IdentifiedObject.description
@@ -32,6 +36,7 @@ _A unit with valves for three phases, together with unit control equipment, esse
       ACDCConverter : ConductingEquipment.Terminals
         
           ACDCConverter --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -56,9 +61,9 @@ _A unit with valves for three phases, together with unit control equipment, esse
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

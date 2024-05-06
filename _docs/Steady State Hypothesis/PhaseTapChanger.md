@@ -16,12 +16,17 @@ _A transformer phase shifting tap model that controls the phase angle difference
 ```mermaid
  classDiagram
     class PhaseTapChanger
+    click PhaseTapChanger href "../PhaseTapChanger"
       TapChanger <|-- PhaseTapChanger
+        click TapChanger href "../TapChanger"
       
 
       PhaseTapChanger <|-- PhaseTapChangerLinear
+        click PhaseTapChangerLinear href "../PhaseTapChangerLinear"
       PhaseTapChanger <|-- PhaseTapChangerNonLinear
+        click PhaseTapChangerNonLinear href "../PhaseTapChangerNonLinear"
       PhaseTapChanger <|-- PhaseTapChangerTabular
+        click PhaseTapChangerTabular href "../PhaseTapChangerTabular"
       
       
       PhaseTapChanger : TapChanger.controlEnabled
@@ -53,9 +58,9 @@ _A transformer phase shifting tap model that controls the phase angle difference
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
-| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1..1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
+| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

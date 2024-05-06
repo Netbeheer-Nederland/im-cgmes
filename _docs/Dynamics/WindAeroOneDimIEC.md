@@ -18,7 +18,9 @@ _Reference: IEC 61400-27-1:2015, 5.6.1.2._
 ```mermaid
  classDiagram
     class WindAeroOneDimIEC
+    click WindAeroOneDimIEC href "../WindAeroOneDimIEC"
       IdentifiedObject <|-- WindAeroOneDimIEC
+        click IdentifiedObject href "../IdentifiedObject"
       
       WindAeroOneDimIEC : IdentifiedObject.description
         
@@ -31,10 +33,12 @@ _Reference: IEC 61400-27-1:2015, 5.6.1.2._
       WindAeroOneDimIEC : WindAeroOneDimIEC.thetaomega
         
           WindAeroOneDimIEC --> AngleDegrees : WindAeroOneDimIEC.thetaomega
+          click AngleDegrees href "../AngleDegrees"
         
       WindAeroOneDimIEC : WindAeroOneDimIEC.WindTurbineType3IEC
         
           WindAeroOneDimIEC --> WindTurbineType3IEC : WindAeroOneDimIEC.WindTurbineType3IEC
+          click WindTurbineType3IEC href "../WindTurbineType3IEC"
         
       
 ```
@@ -54,11 +58,11 @@ _Reference: IEC 61400-27-1:2015, 5.6.1.2._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ka | [cim:WindAeroOneDimIEC.ka](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.ka) | 1..1 <br />  float  | Aerodynamic gain (<i>k</i><i><sub>a</sub></i>) | direct |
-| thetaomega | [cim:WindAeroOneDimIEC.thetaomega](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.thetaomega) | 1..1 <br />  [AngleDegrees](AngleDegrees.md)  | Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>) | direct |
-| WindTurbineType3IEC | [cim:WindAeroOneDimIEC.WindTurbineType3IEC](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.WindTurbineType3IEC) | 1..1 <br />  [WindTurbineType3IEC](WindTurbineType3IEC.md)  | Wind turbine type 3 model with which this wind aerodynamic model is associate... | direct |
+| ka | [cim:WindAeroOneDimIEC.ka](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.ka) | 1 <br />  float  | Aerodynamic gain (<i>k</i><i><sub>a</sub></i>) | direct |
+| thetaomega | [cim:WindAeroOneDimIEC.thetaomega](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.thetaomega) | 1 <br />  [AngleDegrees](AngleDegrees.md)  | Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>) | direct |
+| WindTurbineType3IEC | [cim:WindAeroOneDimIEC.WindTurbineType3IEC](http://iec.ch/TC57/CIM100#WindAeroOneDimIEC.WindTurbineType3IEC) | 1 <br />  [WindTurbineType3IEC](WindTurbineType3IEC.md)  | Wind turbine type 3 model with which this wind aerodynamic model is associate... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

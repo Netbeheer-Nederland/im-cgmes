@@ -16,17 +16,21 @@ _State variable for voltage._
 ```mermaid
  classDiagram
     class SvVoltage
+    click SvVoltage href "../SvVoltage"
       SvVoltage : SvVoltage.angle
         
           SvVoltage --> AngleDegrees : SvVoltage.angle
+          click AngleDegrees href "../AngleDegrees"
         
       SvVoltage : SvVoltage.TopologicalNode
         
           SvVoltage --> TopologicalNode : SvVoltage.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       SvVoltage : SvVoltage.v
         
           SvVoltage --> Voltage : SvVoltage.v
+          click Voltage href "../Voltage"
         
       
 ```
@@ -42,9 +46,9 @@ _State variable for voltage._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| angle | [cim:SvVoltage.angle](http://iec.ch/TC57/CIM100#SvVoltage.angle) | 1..1 <br />  [AngleDegrees](AngleDegrees.md)  | The voltage angle of the topological node complex voltage with respect to sys... | direct |
-| v | [cim:SvVoltage.v](http://iec.ch/TC57/CIM100#SvVoltage.v) | 1..1 <br />  [Voltage](Voltage.md)  | The voltage magnitude at the topological node | direct |
-| TopologicalNode | [cim:SvVoltage.TopologicalNode](http://iec.ch/TC57/CIM100#SvVoltage.TopologicalNode) | 1..1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node associated with the voltage state | direct |
+| angle | [cim:SvVoltage.angle](http://iec.ch/TC57/CIM100#SvVoltage.angle) | 1 <br />  [AngleDegrees](AngleDegrees.md)  | The voltage angle of the topological node complex voltage with respect to sys... | direct |
+| v | [cim:SvVoltage.v](http://iec.ch/TC57/CIM100#SvVoltage.v) | 1 <br />  [Voltage](Voltage.md)  | The voltage magnitude at the topological node | direct |
+| TopologicalNode | [cim:SvVoltage.TopologicalNode](http://iec.ch/TC57/CIM100#SvVoltage.TopologicalNode) | 1 <br />  [TopologicalNode](TopologicalNode.md)  | The topological node associated with the voltage state | direct |
 
 
 

@@ -16,13 +16,16 @@ _Phase angle in radians._
 ```mermaid
  classDiagram
     class AngleRadians
+    click AngleRadians href "../AngleRadians"
       AngleRadians : AngleRadians.multiplier
         
           AngleRadians --> UnitMultiplier : AngleRadians.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       AngleRadians : AngleRadians.unit
         
           AngleRadians --> UnitSymbol : AngleRadians.unit
+          click UnitSymbol href "../UnitSymbol"
         
       AngleRadians : AngleRadians.value
         

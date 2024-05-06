@@ -16,11 +16,14 @@ _The class is the second level in a hierarchical structure for grouping of loads
 ```mermaid
  classDiagram
     class SubLoadArea
+    click SubLoadArea href "../SubLoadArea"
       EnergyArea <|-- SubLoadArea
+        click EnergyArea href "../EnergyArea"
       
       SubLoadArea : EnergyArea.ControlArea
         
           SubLoadArea --> ControlArea : EnergyArea.ControlArea
+          click ControlArea href "../ControlArea"
         
       SubLoadArea : IdentifiedObject.description
         
@@ -29,10 +32,12 @@ _The class is the second level in a hierarchical structure for grouping of loads
       SubLoadArea : SubLoadArea.LoadArea
         
           SubLoadArea --> LoadArea : SubLoadArea.LoadArea
+          click LoadArea href "../LoadArea"
         
       SubLoadArea : SubLoadArea.LoadGroups
         
           SubLoadArea --> LoadGroup : SubLoadArea.LoadGroups
+          click LoadGroup href "../LoadGroup"
         
       SubLoadArea : IdentifiedObject.mRID
         
@@ -59,13 +64,13 @@ _The class is the second level in a hierarchical structure for grouping of loads
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| LoadArea | [cim:SubLoadArea.LoadArea](http://iec.ch/TC57/CIM100#SubLoadArea.LoadArea) | 1..1 <br />  [LoadArea](LoadArea.md)  | The LoadArea where the SubLoadArea belongs | direct |
+| LoadArea | [cim:SubLoadArea.LoadArea](http://iec.ch/TC57/CIM100#SubLoadArea.LoadArea) | 1 <br />  [LoadArea](LoadArea.md)  | The LoadArea where the SubLoadArea belongs | direct |
 | LoadGroups | [cim:SubLoadArea.LoadGroups](http://iec.ch/TC57/CIM100#SubLoadArea.LoadGroups) | 1..* <br />  [LoadGroup](LoadGroup.md)  | The Loadgroups in the SubLoadArea | direct |
 | ControlArea | [cim:EnergyArea.ControlArea](http://iec.ch/TC57/CIM100#EnergyArea.ControlArea) | 0..1 <br />  [ControlArea](ControlArea.md)  | The control area specification that is used for the load forecast | [EnergyArea](EnergyArea.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

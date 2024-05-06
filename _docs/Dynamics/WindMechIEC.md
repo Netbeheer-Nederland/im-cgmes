@@ -18,25 +18,31 @@ _Reference: IEC 61400-27-1:2015, 5.6.2.1._
 ```mermaid
  classDiagram
     class WindMechIEC
+    click WindMechIEC href "../WindMechIEC"
       IdentifiedObject <|-- WindMechIEC
+        click IdentifiedObject href "../IdentifiedObject"
       
       WindMechIEC : WindMechIEC.cdrt
         
           WindMechIEC --> PU : WindMechIEC.cdrt
+          click PU href "../PU"
         
       WindMechIEC : IdentifiedObject.description
         
       WindMechIEC : WindMechIEC.hgen
         
           WindMechIEC --> Seconds : WindMechIEC.hgen
+          click Seconds href "../Seconds"
         
       WindMechIEC : WindMechIEC.hwtr
         
           WindMechIEC --> Seconds : WindMechIEC.hwtr
+          click Seconds href "../Seconds"
         
       WindMechIEC : WindMechIEC.kdrt
         
           WindMechIEC --> PU : WindMechIEC.kdrt
+          click PU href "../PU"
         
       WindMechIEC : IdentifiedObject.mRID
         
@@ -45,14 +51,17 @@ _Reference: IEC 61400-27-1:2015, 5.6.2.1._
       WindMechIEC : WindMechIEC.WindTurbineType1or2IEC
         
           WindMechIEC --> WindTurbineType1or2IEC : WindMechIEC.WindTurbineType1or2IEC
+          click WindTurbineType1or2IEC href "../WindTurbineType1or2IEC"
         
       WindMechIEC : WindMechIEC.WindTurbineType3IEC
         
           WindMechIEC --> WindTurbineType3IEC : WindMechIEC.WindTurbineType3IEC
+          click WindTurbineType3IEC href "../WindTurbineType3IEC"
         
       WindMechIEC : WindMechIEC.WindTurbineType4bIEC
         
           WindMechIEC --> WindTurbineType4bIEC : WindMechIEC.WindTurbineType4bIEC
+          click WindTurbineType4bIEC href "../WindTurbineType4bIEC"
         
       
 ```
@@ -72,15 +81,15 @@ _Reference: IEC 61400-27-1:2015, 5.6.2.1._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| cdrt | [cim:WindMechIEC.cdrt](http://iec.ch/TC57/CIM100#WindMechIEC.cdrt) | 1..1 <br />  [PU](PU.md)  | Drive train damping (<i>c</i><i><sub>drt</sub></i><i>)</i> | direct |
-| hgen | [cim:WindMechIEC.hgen](http://iec.ch/TC57/CIM100#WindMechIEC.hgen) | 1..1 <br />  [Seconds](Seconds.md)  | Inertia constant of generator (<i>H</i><i><sub>gen</sub></i>) (&gt;= 0) | direct |
-| hwtr | [cim:WindMechIEC.hwtr](http://iec.ch/TC57/CIM100#WindMechIEC.hwtr) | 1..1 <br />  [Seconds](Seconds.md)  | Inertia constant of wind turbine rotor (<i>H</i><i><sub>WTR</sub></i>) (&gt;=... | direct |
-| kdrt | [cim:WindMechIEC.kdrt](http://iec.ch/TC57/CIM100#WindMechIEC.kdrt) | 1..1 <br />  [PU](PU.md)  | Drive train stiffness (<i>k</i><i><sub>drt</sub></i>) | direct |
+| cdrt | [cim:WindMechIEC.cdrt](http://iec.ch/TC57/CIM100#WindMechIEC.cdrt) | 1 <br />  [PU](PU.md)  | Drive train damping (<i>c</i><i><sub>drt</sub></i><i>)</i> | direct |
+| hgen | [cim:WindMechIEC.hgen](http://iec.ch/TC57/CIM100#WindMechIEC.hgen) | 1 <br />  [Seconds](Seconds.md)  | Inertia constant of generator (<i>H</i><i><sub>gen</sub></i>) (&gt;= 0) | direct |
+| hwtr | [cim:WindMechIEC.hwtr](http://iec.ch/TC57/CIM100#WindMechIEC.hwtr) | 1 <br />  [Seconds](Seconds.md)  | Inertia constant of wind turbine rotor (<i>H</i><i><sub>WTR</sub></i>) (&gt;=... | direct |
+| kdrt | [cim:WindMechIEC.kdrt](http://iec.ch/TC57/CIM100#WindMechIEC.kdrt) | 1 <br />  [PU](PU.md)  | Drive train stiffness (<i>k</i><i><sub>drt</sub></i>) | direct |
 | WindTurbineType3IEC | [cim:WindMechIEC.WindTurbineType3IEC](http://iec.ch/TC57/CIM100#WindMechIEC.WindTurbineType3IEC) | 0..1 <br />  [WindTurbineType3IEC](WindTurbineType3IEC.md)  | Wind turbine type 3 model with which this wind mechanical model is associated | direct |
 | WindTurbineType1or2IEC | [cim:WindMechIEC.WindTurbineType1or2IEC](http://iec.ch/TC57/CIM100#WindMechIEC.WindTurbineType1or2IEC) | 0..1 <br />  [WindTurbineType1or2IEC](WindTurbineType1or2IEC.md)  | Wind generator type 1 or type 2 model with which this wind mechanical model i... | direct |
 | WindTurbineType4bIEC | [cim:WindMechIEC.WindTurbineType4bIEC](http://iec.ch/TC57/CIM100#WindMechIEC.WindTurbineType4bIEC) | 0..1 <br />  [WindTurbineType4bIEC](WindTurbineType4bIEC.md)  | Wind turbine type 4B model with which this wind mechanical model is associate... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

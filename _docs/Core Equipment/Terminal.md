@@ -16,27 +16,34 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
 ```mermaid
  classDiagram
     class Terminal
+    click Terminal href "../Terminal"
       ACDCTerminal <|-- Terminal
+        click ACDCTerminal href "../ACDCTerminal"
       
       Terminal : Terminal.AuxiliaryEquipment
         
           Terminal --> AuxiliaryEquipment : Terminal.AuxiliaryEquipment
+          click AuxiliaryEquipment href "../AuxiliaryEquipment"
         
       Terminal : ACDCTerminal.BusNameMarker
         
           Terminal --> BusNameMarker : ACDCTerminal.BusNameMarker
+          click BusNameMarker href "../BusNameMarker"
         
       Terminal : Terminal.ConductingEquipment
         
           Terminal --> ConductingEquipment : Terminal.ConductingEquipment
+          click ConductingEquipment href "../ConductingEquipment"
         
       Terminal : Terminal.ConnectivityNode
         
           Terminal --> ConnectivityNode : Terminal.ConnectivityNode
+          click ConnectivityNode href "../ConnectivityNode"
         
       Terminal : Terminal.ConverterDCSides
         
           Terminal --> ACDCConverter : Terminal.ConverterDCSides
+          click ACDCConverter href "../ACDCConverter"
         
       Terminal : IdentifiedObject.description
         
@@ -49,14 +56,17 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
       Terminal : ACDCTerminal.OperationalLimitSet
         
           Terminal --> OperationalLimitSet : ACDCTerminal.OperationalLimitSet
+          click OperationalLimitSet href "../OperationalLimitSet"
         
       Terminal : Terminal.phases
         
           Terminal --> PhaseCode : Terminal.phases
+          click PhaseCode href "../PhaseCode"
         
       Terminal : Terminal.RegulatingControl
         
           Terminal --> RegulatingControl : Terminal.RegulatingControl
+          click RegulatingControl href "../RegulatingControl"
         
       Terminal : ACDCTerminal.sequenceNumber
         
@@ -65,10 +75,12 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
       Terminal : Terminal.TieFlow
         
           Terminal --> TieFlow : Terminal.TieFlow
+          click TieFlow href "../TieFlow"
         
       Terminal : Terminal.TransformerEnd
         
           Terminal --> TransformerEnd : Terminal.TransformerEnd
+          click TransformerEnd href "../TransformerEnd"
         
       
 ```
@@ -89,21 +101,21 @@ _An AC electrical connection point to a piece of conducting equipment. Terminals
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ConverterDCSides | [cim:Terminal.ConverterDCSides](http://iec.ch/TC57/CIM100#Terminal.ConverterDCSides) | 0..* <br />  [ACDCConverter](ACDCConverter.md)  | All converters' DC sides linked to this point of common coupling terminal | direct |
-| AuxiliaryEquipment | [cim:Terminal.AuxiliaryEquipment](http://iec.ch/TC57/CIM100#Terminal.AuxiliaryEquipment) | 0..* <br />  [AuxiliaryEquipment](AuxiliaryEquipment.md)  | The auxiliary equipment connected to the terminal | direct |
-| ConductingEquipment | [cim:Terminal.ConductingEquipment](http://iec.ch/TC57/CIM100#Terminal.ConductingEquipment) | 1..1 <br />  [ConductingEquipment](ConductingEquipment.md)  | The conducting equipment of the terminal | direct |
+| ConverterDCSides | [cim:Terminal.ConverterDCSides](http://iec.ch/TC57/CIM100#Terminal.ConverterDCSides) | * <br />  [ACDCConverter](ACDCConverter.md)  | All converters' DC sides linked to this point of common coupling terminal | direct |
+| AuxiliaryEquipment | [cim:Terminal.AuxiliaryEquipment](http://iec.ch/TC57/CIM100#Terminal.AuxiliaryEquipment) | * <br />  [AuxiliaryEquipment](AuxiliaryEquipment.md)  | The auxiliary equipment connected to the terminal | direct |
+| ConductingEquipment | [cim:Terminal.ConductingEquipment](http://iec.ch/TC57/CIM100#Terminal.ConductingEquipment) | 1 <br />  [ConductingEquipment](ConductingEquipment.md)  | The conducting equipment of the terminal | direct |
 | ConnectivityNode | [cim:Terminal.ConnectivityNode](http://iec.ch/TC57/CIM100#Terminal.ConnectivityNode) | 0..1 <br />  [ConnectivityNode](ConnectivityNode.md)  | The connectivity node to which this terminal connects with zero impedance | direct |
-| RegulatingControl | [cim:Terminal.RegulatingControl](http://iec.ch/TC57/CIM100#Terminal.RegulatingControl) | 0..* <br />  [RegulatingControl](RegulatingControl.md)  | The controls regulating this terminal | direct |
+| RegulatingControl | [cim:Terminal.RegulatingControl](http://iec.ch/TC57/CIM100#Terminal.RegulatingControl) | * <br />  [RegulatingControl](RegulatingControl.md)  | The controls regulating this terminal | direct |
 | phases | [cim:Terminal.phases](http://iec.ch/TC57/CIM100#Terminal.phases) | 0..1 <br />  [PhaseCode](PhaseCode.md)  | Represents the normal network phasing condition | direct |
-| TransformerEnd | [cim:Terminal.TransformerEnd](http://iec.ch/TC57/CIM100#Terminal.TransformerEnd) | 0..* <br />  [TransformerEnd](TransformerEnd.md)  | All transformer ends connected at this terminal | direct |
-| TieFlow | [cim:Terminal.TieFlow](http://iec.ch/TC57/CIM100#Terminal.TieFlow) | 0..* <br />  [TieFlow](TieFlow.md)  | The control area tie flows to which this terminal associates | direct |
-| sequenceNumber | [cim:ACDCTerminal.sequenceNumber](http://iec.ch/TC57/CIM100#ACDCTerminal.sequenceNumber) | 1..1 <br />  integer  | The orientation of the terminal connections for a multiple terminal conductin... | [ACDCTerminal](ACDCTerminal.md) |
-| OperationalLimitSet | [cim:ACDCTerminal.OperationalLimitSet](http://iec.ch/TC57/CIM100#ACDCTerminal.OperationalLimitSet) | 0..* <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets at the terminal | [ACDCTerminal](ACDCTerminal.md) |
+| TransformerEnd | [cim:Terminal.TransformerEnd](http://iec.ch/TC57/CIM100#Terminal.TransformerEnd) | * <br />  [TransformerEnd](TransformerEnd.md)  | All transformer ends connected at this terminal | direct |
+| TieFlow | [cim:Terminal.TieFlow](http://iec.ch/TC57/CIM100#Terminal.TieFlow) | * <br />  [TieFlow](TieFlow.md)  | The control area tie flows to which this terminal associates | direct |
+| sequenceNumber | [cim:ACDCTerminal.sequenceNumber](http://iec.ch/TC57/CIM100#ACDCTerminal.sequenceNumber) | 1 <br />  integer  | The orientation of the terminal connections for a multiple terminal conductin... | [ACDCTerminal](ACDCTerminal.md) |
+| OperationalLimitSet | [cim:ACDCTerminal.OperationalLimitSet](http://iec.ch/TC57/CIM100#ACDCTerminal.OperationalLimitSet) | * <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets at the terminal | [ACDCTerminal](ACDCTerminal.md) |
 | BusNameMarker | [cim:ACDCTerminal.BusNameMarker](http://iec.ch/TC57/CIM100#ACDCTerminal.BusNameMarker) | 0..1 <br />  [BusNameMarker](BusNameMarker.md)  | The bus name marker used to name the bus (topological node) | [ACDCTerminal](ACDCTerminal.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

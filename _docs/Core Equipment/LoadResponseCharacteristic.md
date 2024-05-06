@@ -38,13 +38,16 @@ _- Voltage corresponds to SvVoltage.v at the TopologicalNode where the load is c
 ```mermaid
  classDiagram
     class LoadResponseCharacteristic
+    click LoadResponseCharacteristic href "../LoadResponseCharacteristic"
       IdentifiedObject <|-- LoadResponseCharacteristic
+        click IdentifiedObject href "../IdentifiedObject"
       
       LoadResponseCharacteristic : IdentifiedObject.description
         
       LoadResponseCharacteristic : LoadResponseCharacteristic.EnergyConsumer
         
           LoadResponseCharacteristic --> EnergyConsumer : LoadResponseCharacteristic.EnergyConsumer
+          click EnergyConsumer href "../EnergyConsumer"
         
       LoadResponseCharacteristic : IdentifiedObject.energyIdentCodeEic
         
@@ -94,8 +97,8 @@ _- Voltage corresponds to SvVoltage.v at the TopologicalNode where the load is c
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| EnergyConsumer | [cim:LoadResponseCharacteristic.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.EnergyConsumer) | 0..* <br />  [EnergyConsumer](EnergyConsumer.md)  | The set of loads that have the response characteristics | direct |
-| exponentModel | [cim:LoadResponseCharacteristic.exponentModel](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.exponentModel) | 1..1 <br />  boolean  | Indicates the exponential voltage dependency model is to be used | direct |
+| EnergyConsumer | [cim:LoadResponseCharacteristic.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.EnergyConsumer) | * <br />  [EnergyConsumer](EnergyConsumer.md)  | The set of loads that have the response characteristics | direct |
+| exponentModel | [cim:LoadResponseCharacteristic.exponentModel](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.exponentModel) | 1 <br />  boolean  | Indicates the exponential voltage dependency model is to be used | direct |
 | pConstantCurrent | [cim:LoadResponseCharacteristic.pConstantCurrent](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.pConstantCurrent) | 0..1 <br />  float  | Portion of active power load modelled as constant current | direct |
 | pConstantImpedance | [cim:LoadResponseCharacteristic.pConstantImpedance](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.pConstantImpedance) | 0..1 <br />  float  | Portion of active power load modelled as constant impedance | direct |
 | pConstantPower | [cim:LoadResponseCharacteristic.pConstantPower](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.pConstantPower) | 0..1 <br />  float  | Portion of active power load modelled as constant power | direct |
@@ -108,8 +111,8 @@ _- Voltage corresponds to SvVoltage.v at the TopologicalNode where the load is c
 | qVoltageExponent | [cim:LoadResponseCharacteristic.qVoltageExponent](http://iec.ch/TC57/CIM100#LoadResponseCharacteristic.qVoltageExponent) | 0..1 <br />  float  | Exponent of per unit voltage effecting reactive power | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

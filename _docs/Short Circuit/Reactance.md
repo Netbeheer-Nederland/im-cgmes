@@ -16,13 +16,16 @@ _Reactance (imaginary part of impedance), at rated frequency._
 ```mermaid
  classDiagram
     class Reactance
+    click Reactance href "../Reactance"
       Reactance : Reactance.multiplier
         
           Reactance --> UnitMultiplier : Reactance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Reactance : Reactance.unit
         
           Reactance --> UnitSymbol : Reactance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Reactance : Reactance.value
         

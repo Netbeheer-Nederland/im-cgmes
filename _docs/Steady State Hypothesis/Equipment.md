@@ -16,12 +16,17 @@ _The parts of a power system that are physical devices, electronic or mechanical
 ```mermaid
  classDiagram
     class Equipment
+    click Equipment href "../Equipment"
       PowerSystemResource <|-- Equipment
+        click PowerSystemResource href "../PowerSystemResource"
       
 
       Equipment <|-- ConductingEquipment
+        click ConductingEquipment href "../ConductingEquipment"
       Equipment <|-- GeneratingUnit
+        click GeneratingUnit href "../GeneratingUnit"
       Equipment <|-- PowerElectronicsUnit
+        click PowerElectronicsUnit href "../PowerElectronicsUnit"
       
       
       Equipment : Equipment.inService
@@ -50,8 +55,8 @@ _The parts of a power system that are physical devices, electronic or mechanical
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | direct |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

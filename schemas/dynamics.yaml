@@ -229,7 +229,7 @@ classes:
   ConductingEquipment:
     class_uri: cim:ConductingEquipment
     attributes:
-      terminals:
+      Terminals:
         slot_uri: cim:ConductingEquipment.Terminals
         range: Terminal
         multivalued: true
@@ -255,7 +255,7 @@ classes:
         required: false
         description: The description is a free human readable text describing or naming
           the object. It may be non unique and may not correlate to a naming hierarchy.
-      m_r_i_d:
+      mRID:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -286,7 +286,7 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      conducting_equipment:
+      ConductingEquipment:
         slot_uri: cim:Terminal.ConductingEquipment
         range: ConductingEquipment
         multivalued: false
@@ -294,7 +294,7 @@ classes:
         description: The conducting equipment of the terminal.  Conducting equipment
           have  terminals that may be connected to other conducting equipment terminals
           via connectivity nodes or topological nodes.
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:Terminal.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: true
@@ -306,7 +306,7 @@ classes:
   AsynchronousMachine:
     class_uri: cim:AsynchronousMachine
     attributes:
-      asynchronous_machine_dynamics:
+      AsynchronousMachineDynamics:
         slot_uri: cim:AsynchronousMachine.AsynchronousMachineDynamics
         range: AsynchronousMachineDynamics
         multivalued: false
@@ -325,7 +325,7 @@ classes:
   EnergyConsumer:
     class_uri: cim:EnergyConsumer
     attributes:
-      load_dynamics:
+      LoadDynamics:
         slot_uri: cim:EnergyConsumer.LoadDynamics
         range: LoadDynamics
         multivalued: false
@@ -342,7 +342,7 @@ classes:
   PowerElectronicsConnection:
     class_uri: cim:PowerElectronicsConnection
     attributes:
-      wind_turbine_type3or4_dynamics:
+      WindTurbineType3or4Dynamics:
         slot_uri: cim:PowerElectronicsConnection.WindTurbineType3or4Dynamics
         range: WindTurbineType3or4Dynamics
         multivalued: false
@@ -364,7 +364,7 @@ classes:
   StaticVarCompensator:
     class_uri: cim:StaticVarCompensator
     attributes:
-      static_var_compensator_dynamics:
+      StaticVarCompensatorDynamics:
         slot_uri: cim:StaticVarCompensator.StaticVarCompensatorDynamics
         range: StaticVarCompensatorDynamics
         multivalued: false
@@ -385,7 +385,7 @@ classes:
   SynchronousMachine:
     class_uri: cim:SynchronousMachine
     attributes:
-      synchronous_machine_dynamics:
+      SynchronousMachineDynamics:
         slot_uri: cim:SynchronousMachine.SynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
@@ -405,7 +405,7 @@ classes:
   CsConverter:
     class_uri: cim:CsConverter
     attributes:
-      c_s_c_dynamics:
+      CSCDynamics:
         slot_uri: cim:CsConverter.CSCDynamics
         range: CSCDynamics
         multivalued: false
@@ -442,7 +442,7 @@ classes:
   VsConverter:
     class_uri: cim:VsConverter
     attributes:
-      v_s_c_dynamics:
+      VSCDynamics:
         slot_uri: cim:VsConverter.VSCDynamics
         range: VSCDynamics
         multivalued: false
@@ -454,64 +454,64 @@ classes:
   RemoteInputSignal:
     class_uri: cim:RemoteInputSignal
     attributes:
-      terminal:
+      Terminal:
         slot_uri: cim:RemoteInputSignal.Terminal
         range: Terminal
         multivalued: false
         required: true
         description: Remote terminal with which this input signal is associated.
-      remote_signal_type:
+      remoteSignalType:
         slot_uri: cim:RemoteInputSignal.remoteSignalType
         range: RemoteSignalKind
         multivalued: false
         required: true
         description: Type of input signal.
-      discontinuous_excitation_control_dynamics:
+      DiscontinuousExcitationControlDynamics:
         slot_uri: cim:RemoteInputSignal.DiscontinuousExcitationControlDynamics
         range: DiscontinuousExcitationControlDynamics
         multivalued: false
         required: false
         description: Discontinuous excitation control model using this remote input
           signal.
-      wind_turbine_type1or2_dynamics:
+      WindTurbineType1or2Dynamics:
         slot_uri: cim:RemoteInputSignal.WindTurbineType1or2Dynamics
         range: WindTurbineType1or2Dynamics
         multivalued: false
         required: false
         description: Wind generator type 1 or type 2 model using this remote input
           signal.
-      power_system_stabilizer_dynamics:
+      PowerSystemStabilizerDynamics:
         slot_uri: cim:RemoteInputSignal.PowerSystemStabilizerDynamics
         range: PowerSystemStabilizerDynamics
         multivalued: false
         required: false
         description: Power system stabilizer model using this remote input signal.
-      underexcitation_limiter_dynamics:
+      UnderexcitationLimiterDynamics:
         slot_uri: cim:RemoteInputSignal.UnderexcitationLimiterDynamics
         range: UnderexcitationLimiterDynamics
         multivalued: false
         required: false
         description: Underexcitation limiter model using this remote input signal.
-      p_f_v_ar_controller_type1_dynamics:
+      PFVArControllerType1Dynamics:
         slot_uri: cim:RemoteInputSignal.PFVArControllerType1Dynamics
         range: PFVArControllerType1Dynamics
         multivalued: false
         required: false
         description: Power factor or VAr controller type 1 model using this remote
           input signal.
-      voltage_compensator_dynamics:
+      VoltageCompensatorDynamics:
         slot_uri: cim:RemoteInputSignal.VoltageCompensatorDynamics
         range: VoltageCompensatorDynamics
         multivalued: false
         required: false
         description: Voltage compensator model using this remote input signal.
-      wind_plant_dynamics:
+      WindPlantDynamics:
         slot_uri: cim:RemoteInputSignal.WindPlantDynamics
         range: WindPlantDynamics
         multivalued: false
         required: false
         description: The wind plant using the remote signal.
-      wind_turbine_type3or4_dynamics:
+      WindTurbineType3or4Dynamics:
         slot_uri: cim:RemoteInputSignal.WindTurbineType3or4Dynamics
         range: WindTurbineType3or4Dynamics
         multivalued: false
@@ -564,7 +564,7 @@ classes:
           as MW x s / MVA or just s. This value is used in the accelerating power
           reference frame for operator training simulator solutions.  Typical value
           = 3.
-      saturation_factor:
+      saturationFactor:
         slot_uri: cim:RotatingMachineDynamics.saturationFactor
         range: float
         multivalued: false
@@ -573,7 +573,7 @@ classes:
           0).  Not used by simplified model.  Defined by defined by <i>S</i>(<i>E1</i>)
           in the SynchronousMachineSaturationParameters diagram.  Typical value =
           0,02.
-      saturation_factor120:
+      saturationFactor120:
         slot_uri: cim:RotatingMachineDynamics.saturationFactor120
         range: float
         multivalued: false
@@ -582,14 +582,14 @@ classes:
           (&gt;= RotatingMachineDynamics.saturationFactor). Not used by the simplified
           model, defined by <i>S</i>(<i>E2</i>) in the SynchronousMachineSaturationParameters
           diagram.  Typical value = 0,12.
-      stator_leakage_reactance:
+      statorLeakageReactance:
         slot_uri: cim:RotatingMachineDynamics.statorLeakageReactance
         range: PU
         multivalued: false
         required: true
         description: Stator leakage reactance (<i>Xl</i>) (&gt;= 0). Typical value
           = 0,15.
-      stator_resistance:
+      statorResistance:
         slot_uri: cim:RotatingMachineDynamics.statorResistance
         range: PU
         multivalued: false
@@ -615,7 +615,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:CSCUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -640,7 +640,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:SVCUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -665,7 +665,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:VSCUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -690,7 +690,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:WindPlantUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -715,7 +715,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:WindType1or2UserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -740,7 +740,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:WindType3or4UserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -765,7 +765,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:SynchronousMachineUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -790,7 +790,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:AsynchronousMachineUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -815,7 +815,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:TurbineGovernorUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -840,7 +840,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:TurbineLoadControllerUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -865,7 +865,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:MechanicalLoadUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -890,7 +890,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:ExcitationSystemUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -915,7 +915,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:OverexcitationLimiterUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -940,7 +940,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -965,7 +965,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:PowerSystemStabilizerUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -991,7 +991,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:DiscontinuousExcitationControlUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1016,7 +1016,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:PFVArControllerType1UserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1041,7 +1041,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:VoltageAdjusterUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1066,7 +1066,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:PFVArControllerType2UserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1091,7 +1091,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:VoltageCompensatorUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1116,7 +1116,7 @@ classes:
 
           false = user-defined model is explicitly defined in terms of control blocks
           and their input and output signals.'
-      proprietary_parameter_dynamics:
+      ProprietaryParameterDynamics:
         slot_uri: cim:LoadUserDefined.ProprietaryParameterDynamics
         range: ProprietaryParameterDynamics
         multivalued: true
@@ -1127,154 +1127,154 @@ classes:
   ProprietaryParameterDynamics:
     class_uri: cim:ProprietaryParameterDynamics
     attributes:
-      c_s_c_user_defined:
+      CSCUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.CSCUserDefined
         range: CSCUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      s_v_c_user_defined:
+      SVCUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.SVCUserDefined
         range: SVCUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      v_s_c_user_defined:
+      VSCUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.VSCUserDefined
         range: VSCUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      wind_plant_user_defined:
+      WindPlantUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.WindPlantUserDefined
         range: WindPlantUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      wind_type1or2_user_defined:
+      WindType1or2UserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.WindType1or2UserDefined
         range: WindType1or2UserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      wind_type3or4_user_defined:
+      WindType3or4UserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.WindType3or4UserDefined
         range: WindType3or4UserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      synchronous_machine_user_defined:
+      SynchronousMachineUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.SynchronousMachineUserDefined
         range: SynchronousMachineUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      asynchronous_machine_user_defined:
+      AsynchronousMachineUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.AsynchronousMachineUserDefined
         range: AsynchronousMachineUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      turbine_governor_user_defined:
+      TurbineGovernorUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.TurbineGovernorUserDefined
         range: TurbineGovernorUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      turbine_load_controller_user_defined:
+      TurbineLoadControllerUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.TurbineLoadControllerUserDefined
         range: TurbineLoadControllerUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      mechanical_load_user_defined:
+      MechanicalLoadUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.MechanicalLoadUserDefined
         range: MechanicalLoadUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      excitation_system_user_defined:
+      ExcitationSystemUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.ExcitationSystemUserDefined
         range: ExcitationSystemUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      overexcitation_limiter_user_defined:
+      OverexcitationLimiterUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.OverexcitationLimiterUserDefined
         range: OverexcitationLimiterUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      underexcitation_limiter_user_defined:
+      UnderexcitationLimiterUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.UnderexcitationLimiterUserDefined
         range: UnderexcitationLimiterUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      power_system_stabilizer_user_defined:
+      PowerSystemStabilizerUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.PowerSystemStabilizerUserDefined
         range: PowerSystemStabilizerUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      discontinuous_excitation_control_user_defined:
+      DiscontinuousExcitationControlUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.DiscontinuousExcitationControlUserDefined
         range: DiscontinuousExcitationControlUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      p_f_v_ar_controller_type1_user_defined:
+      PFVArControllerType1UserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.PFVArControllerType1UserDefined
         range: PFVArControllerType1UserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      voltage_adjuster_user_defined:
+      VoltageAdjusterUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.VoltageAdjusterUserDefined
         range: VoltageAdjusterUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      p_f_v_ar_controller_type2_user_defined:
+      PFVArControllerType2UserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.PFVArControllerType2UserDefined
         range: PFVArControllerType2UserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      voltage_compensator_user_defined:
+      VoltageCompensatorUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.VoltageCompensatorUserDefined
         range: VoltageCompensatorUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      load_user_defined:
+      LoadUserDefined:
         slot_uri: cim:ProprietaryParameterDynamics.LoadUserDefined
         range: LoadUserDefined
         multivalued: false
         required: false
         description: Proprietary user-defined model with which this parameter is associated.
-      parameter_number:
+      parameterNumber:
         slot_uri: cim:ProprietaryParameterDynamics.parameterNumber
         range: integer
         multivalued: false
         required: true
         description: Sequence number of the parameter among the set of parameters
           associated with the related proprietary user-defined model.
-      boolean_parameter_value:
+      booleanParameterValue:
         slot_uri: cim:ProprietaryParameterDynamics.booleanParameterValue
         range: boolean
         multivalued: false
         required: false
         description: Boolean parameter value. If this attribute is populated, integerParameterValue
           and floatParameterValue will not be.
-      integer_parameter_value:
+      integerParameterValue:
         slot_uri: cim:ProprietaryParameterDynamics.integerParameterValue
         range: integer
         multivalued: false
         required: false
         description: Integer parameter value.  If this attribute is populated, booleanParameterValue
           and floatParameterValue will not be.
-      float_parameter_value:
+      floatParameterValue:
         slot_uri: cim:ProprietaryParameterDynamics.floatParameterValue
         range: float
         multivalued: false
@@ -1301,42 +1301,42 @@ classes:
   SynchronousMachineDynamics:
     class_uri: cim:SynchronousMachineDynamics
     attributes:
-      synchronous_machine:
+      SynchronousMachine:
         slot_uri: cim:SynchronousMachineDynamics.SynchronousMachine
         range: SynchronousMachine
         multivalued: false
         required: true
         description: Synchronous machine to which synchronous machine dynamics model
           applies.
-      cross_compound_turbine_governor_dyanmics:
+      CrossCompoundTurbineGovernorDyanmics:
         slot_uri: cim:SynchronousMachineDynamics.CrossCompoundTurbineGovernorDyanmics
         range: CrossCompoundTurbineGovernorDynamics
         multivalued: false
         required: false
         description: The cross-compound turbine governor with which this high-pressure
           synchronous machine is associated.
-      cross_compound_turbine_governor_dynamics:
+      CrossCompoundTurbineGovernorDynamics:
         slot_uri: cim:SynchronousMachineDynamics.CrossCompoundTurbineGovernorDynamics
         range: CrossCompoundTurbineGovernorDynamics
         multivalued: false
         required: false
         description: The cross-compound turbine governor with which this low-pressure
           synchronous machine is associated.
-      mechanical_load_dynamics:
+      MechanicalLoadDynamics:
         slot_uri: cim:SynchronousMachineDynamics.MechanicalLoadDynamics
         range: MechanicalLoadDynamics
         multivalued: false
         required: false
         description: Mechanical load model associated with this synchronous machine
           model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:SynchronousMachineDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
         required: false
         description: Excitation system model associated with this synchronous machine
           model.
-      turbine_governor_dynamics:
+      TurbineGovernorDynamics:
         slot_uri: cim:SynchronousMachineDynamics.TurbineGovernorDynamics
         range: TurbineGovernorDynamics
         multivalued: true
@@ -1344,7 +1344,7 @@ classes:
         description: Turbine-governor model associated with this synchronous machine
           model. Multiplicity of greater than one is intended to support hydro units
           that have multiple turbines on one generator.
-      gen_i_compensation_for_gen_j:
+      GenICompensationForGenJ:
         slot_uri: cim:SynchronousMachineDynamics.GenICompensationForGenJ
         range: GenICompensationForGenJ
         multivalued: true
@@ -1370,14 +1370,14 @@ classes:
   SynchronousMachineDetailed:
     class_uri: cim:SynchronousMachineDetailed
     attributes:
-      saturation_factor_q_axis:
+      saturationFactorQAxis:
         slot_uri: cim:SynchronousMachineDetailed.saturationFactorQAxis
         range: float
         multivalued: false
         required: false
         description: Quadrature-axis saturation factor at rated terminal voltage (<i>S1q</i>)
           (&gt;= 0). Typical value = 0,02.
-      saturation_factor120_q_axis:
+      saturationFactor120QAxis:
         slot_uri: cim:SynchronousMachineDetailed.saturationFactor120QAxis
         range: float
         multivalued: false
@@ -1385,14 +1385,14 @@ classes:
         description: Quadrature-axis saturation factor at 120% of rated terminal voltage
           (<i>S12q</i>) (&gt;= SynchonousMachineDetailed.saturationFactorQAxis).  Typical
           value = 0,12.
-      efd_base_ratio:
+      efdBaseRatio:
         slot_uri: cim:SynchronousMachineDetailed.efdBaseRatio
         range: float
         multivalued: false
         required: true
         description: Ratio (exciter voltage/generator voltage) of <i>Efd</i> bases
           of exciter and generator models (&gt; 0). Typical value = 1.
-      ifd_base_type:
+      ifdBaseType:
         slot_uri: cim:SynchronousMachineDetailed.ifdBaseType
         range: IfdBaseKind
         multivalued: false
@@ -1415,13 +1415,13 @@ classes:
   SynchronousMachineTimeConstantReactance:
     class_uri: cim:SynchronousMachineTimeConstantReactance
     attributes:
-      rotor_type:
+      rotorType:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.rotorType
         range: RotorKind
         multivalued: false
         required: false
         description: Type of rotor on physical machine.
-      model_type:
+      modelType:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.modelType
         range: SynchronousMachineModelKind
         multivalued: false
@@ -1435,7 +1435,7 @@ classes:
         required: true
         description: Saturation loading correction factor (<i>Ks</i>) (&gt;= 0).  Used
           only by type J model.  Typical value = 0.
-      x_direct_sync:
+      xDirectSync:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xDirectSync
         range: PU
         multivalued: false
@@ -1445,7 +1445,7 @@ classes:
           that is produced by the total direct-axis flux due to direct-axis armature
           current and the value of the AC component of this current, the machine running
           at rated speed.  Typical value = 1,8.
-      x_direct_trans:
+      xDirectTrans:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xDirectTrans
         range: PU
         multivalued: false
@@ -1453,7 +1453,7 @@ classes:
         description: Direct-axis transient reactance (unsaturated) (<i>X'd</i>) (&gt;=
           SynchronousMachineTimeConstantReactance.xDirectSubtrans).  Typical value
           = 0,5.
-      x_direct_subtrans:
+      xDirectSubtrans:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xDirectSubtrans
         range: PU
         multivalued: false
@@ -1461,7 +1461,7 @@ classes:
         description: Direct-axis subtransient reactance (unsaturated) (<i>X''d</i>)
           (&gt; RotatingMachineDynamics.statorLeakageReactance).  Typical value =
           0,2.
-      x_quad_sync:
+      xQuadSync:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xQuadSync
         range: PU
         multivalued: false
@@ -1471,14 +1471,14 @@ classes:
           The ratio of the component of reactive armature voltage, due to the quadrature-axis
           component of armature current, to this component of current, under steady
           state conditions and at rated frequency.  Typical value = 1,6.'
-      x_quad_trans:
+      xQuadTrans:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xQuadTrans
         range: PU
         multivalued: false
         required: false
         description: Quadrature-axis transient reactance (<i>X'q</i>) (&gt;= SynchronousMachineTimeConstantReactance.xQuadSubtrans).  Typical
           value = 0,3.
-      x_quad_subtrans:
+      xQuadSubtrans:
         slot_uri: cim:SynchronousMachineTimeConstantReactance.xQuadSubtrans
         range: PU
         multivalued: false
@@ -1642,28 +1642,28 @@ classes:
   AsynchronousMachineDynamics:
     class_uri: cim:AsynchronousMachineDynamics
     attributes:
-      asynchronous_machine:
+      AsynchronousMachine:
         slot_uri: cim:AsynchronousMachineDynamics.AsynchronousMachine
         range: AsynchronousMachine
         multivalued: false
         required: true
         description: Asynchronous machine to which this asynchronous machine dynamics
           model applies.
-      turbine_governor_dynamics:
+      TurbineGovernorDynamics:
         slot_uri: cim:AsynchronousMachineDynamics.TurbineGovernorDynamics
         range: TurbineGovernorDynamics
         multivalued: false
         required: false
         description: Turbine-governor model associated with this asynchronous machine
           model.
-      mechanical_load_dynamics:
+      MechanicalLoadDynamics:
         slot_uri: cim:AsynchronousMachineDynamics.MechanicalLoadDynamics
         range: MechanicalLoadDynamics
         multivalued: false
         required: false
         description: Mechanical load model associated with this asynchronous machine
           model.
-      wind_turbine_type1or2_dynamics:
+      WindTurbineType1or2Dynamics:
         slot_uri: cim:AsynchronousMachineDynamics.WindTurbineType1or2Dynamics
         range: WindTurbineType1or2Dynamics
         multivalued: false
@@ -1784,14 +1784,14 @@ classes:
   CrossCompoundTurbineGovernorDynamics:
     class_uri: cim:CrossCompoundTurbineGovernorDynamics
     attributes:
-      high_pressure_synchronous_machine_dynamics:
+      HighPressureSynchronousMachineDynamics:
         slot_uri: cim:CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
         required: true
         description: High-pressure synchronous machine with which this cross-compound
           turbine governor is associated.
-      low_pressure_synchronous_machine_dynamics:
+      LowPressureSynchronousMachineDynamics:
         slot_uri: cim:CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
@@ -1805,7 +1805,7 @@ classes:
   TurbineGovernorDynamics:
     class_uri: cim:TurbineGovernorDynamics
     attributes:
-      synchronous_machine_dynamics:
+      SynchronousMachineDynamics:
         slot_uri: cim:TurbineGovernorDynamics.SynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
@@ -1813,7 +1813,7 @@ classes:
         description: Synchronous machine model with which this turbine-governor model
           is associated. TurbineGovernorDynamics shall have either an association
           to SynchronousMachineDynamics or to AsynchronousMachineDynamics.
-      asynchronous_machine_dynamics:
+      AsynchronousMachineDynamics:
         slot_uri: cim:TurbineGovernorDynamics.AsynchronousMachineDynamics
         range: AsynchronousMachineDynamics
         multivalued: false
@@ -1821,7 +1821,7 @@ classes:
         description: Asynchronous machine model with which this turbine-governor model
           is associated. TurbineGovernorDynamics shall have either an association
           to SynchronousMachineDynamics or to AsynchronousMachineDynamics.
-      turbine_load_controller_dynamics:
+      TurbineLoadControllerDynamics:
         slot_uri: cim:TurbineGovernorDynamics.TurbineLoadControllerDynamics
         range: TurbineLoadControllerDynamics
         multivalued: false
@@ -4204,7 +4204,7 @@ classes:
         required: true
         description: Minimum gate opening, PU of <i>MWbase</i> (<i>Pmin</i>) (&lt;
           GovHydro3.pmax).  Typical value = 0.
-      governor_control:
+      governorControl:
         slot_uri: cim:GovHydro3.governorControl
         range: boolean
         multivalued: false
@@ -4958,7 +4958,7 @@ classes:
         required: true
         description: Minimum gate opening (<i>Gmin</i>) (&lt; GovHydroDD.gmax).  Typical
           value = 0.
-      input_signal:
+      inputSignal:
         slot_uri: cim:GovHydroDD.inputSignal
         range: boolean
         multivalued: false
@@ -5013,7 +5013,7 @@ classes:
         multivalued: false
         required: true
         description: Maximum efficiency (<i>EtaMax</i>).  Typical value = 1,05.
-      governor_control:
+      governorControl:
         slot_uri: cim:GovHydroFrancis.governorControl
         range: FrancisGovernorControlKind
         multivalued: false
@@ -5144,7 +5144,7 @@ classes:
         required: true
         description: Maximum gate closing velocity (<i>Vc</i>).  Unit = PU / s.  Typical
           value = -0,06.
-      water_tunnel_surge_chamber_simulation:
+      waterTunnelSurgeChamberSimulation:
         slot_uri: cim:GovHydroFrancis.waterTunnelSurgeChamberSimulation
         range: boolean
         multivalued: false
@@ -5256,7 +5256,7 @@ classes:
         required: true
         description: Rated flow (<i>Q</i><i><sub>n</sub></i>). Unit = m<sup>3</sup>/s.
           Typical value = 250.
-      simplified_pelton:
+      simplifiedPelton:
         slot_uri: cim:GovHydroPelton.simplifiedPelton
         range: boolean
         multivalued: false
@@ -5268,7 +5268,7 @@ classes:
           false = enable of complete Pelton model simulation (non-linear gain).
 
           Typical value = true.'
-      static_compensating:
+      staticCompensating:
         slot_uri: cim:GovHydroPelton.staticCompensating
         range: boolean
         multivalued: false
@@ -5361,7 +5361,7 @@ classes:
         required: true
         description: Maximum servomotor valve closing velocity (<i>Vcv</i>).  Typical
           value = -0,1.
-      water_tunnel_surge_chamber_simulation:
+      waterTunnelSurgeChamberSimulation:
         slot_uri: cim:GovHydroPelton.waterTunnelSurgeChamberSimulation
         range: boolean
         multivalued: false
@@ -5510,7 +5510,7 @@ classes:
         required: true
         description: Intentional dead-band width (<i>db1</i>).  Unit = Hz.  Typical
           value = 0.
-      input_signal:
+      inputSignal:
         slot_uri: cim:GovHydroPID.inputSignal
         range: boolean
         multivalued: false
@@ -5758,7 +5758,7 @@ classes:
         multivalued: false
         required: true
         description: Factor multiplying <i>Tw</i> (<i>Atw</i>).  Typical value = 0.
-      feedback_signal:
+      feedbackSignal:
         slot_uri: cim:GovHydroPID2.feedbackSignal
         range: boolean
         multivalued: false
@@ -5918,7 +5918,7 @@ classes:
         required: true
         description: Power feedback time constant (<i>Tt</i>) (&gt;= 0).  Typical
           value = 0.
-      input_signal:
+      inputSignal:
         slot_uri: cim:GovHydroR.inputSignal
         range: boolean
         multivalued: false
@@ -6197,7 +6197,7 @@ classes:
         required: true
         description: Value to allow the integral controller to advance beyond the
           gate limits (<i>Dicn</i>).
-      feedback_signal:
+      feedbackSignal:
         slot_uri: cim:GovHydroWEH.feedbackSignal
         range: boolean
         multivalued: false
@@ -8239,7 +8239,7 @@ classes:
   TurbineLoadControllerDynamics:
     class_uri: cim:TurbineLoadControllerDynamics
     attributes:
-      turbine_governor_dynamics:
+      TurbineGovernorDynamics:
         slot_uri: cim:TurbineLoadControllerDynamics.TurbineGovernorDynamics
         range: TurbineGovernorDynamics
         multivalued: false
@@ -8258,7 +8258,7 @@ classes:
         multivalued: false
         required: true
         description: Base for power values (<i>MWbase</i>) (&gt; 0).  Unit = MW.
-      speed_reference_governor:
+      speedReferenceGovernor:
         slot_uri: cim:TurbLCFB1.speedReferenceGovernor
         range: boolean
         multivalued: false
@@ -8355,7 +8355,7 @@ classes:
   MechanicalLoadDynamics:
     class_uri: cim:MechanicalLoadDynamics
     attributes:
-      synchronous_machine_dynamics:
+      SynchronousMachineDynamics:
         slot_uri: cim:MechanicalLoadDynamics.SynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
@@ -8363,7 +8363,7 @@ classes:
         description: Synchronous machine model with which this mechanical load model
           is associated. MechanicalLoadDynamics shall have either an association to
           SynchronousMachineDynamics or AsynchronousMachineDyanmics.
-      asynchronous_machine_dynamics:
+      AsynchronousMachineDynamics:
         slot_uri: cim:MechanicalLoadDynamics.AsynchronousMachineDynamics
         range: AsynchronousMachineDynamics
         multivalued: false
@@ -8407,56 +8407,56 @@ classes:
   ExcitationSystemDynamics:
     class_uri: cim:ExcitationSystemDynamics
     attributes:
-      synchronous_machine_dynamics:
+      SynchronousMachineDynamics:
         slot_uri: cim:ExcitationSystemDynamics.SynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
         required: true
         description: Synchronous machine model with which this excitation system model
           is associated.
-      voltage_compensator_dynamics:
+      VoltageCompensatorDynamics:
         slot_uri: cim:ExcitationSystemDynamics.VoltageCompensatorDynamics
         range: VoltageCompensatorDynamics
         multivalued: false
         required: true
         description: Voltage compensator model associated with this excitation system
           model.
-      overexcitation_limiter_dynamics:
+      OverexcitationLimiterDynamics:
         slot_uri: cim:ExcitationSystemDynamics.OverexcitationLimiterDynamics
         range: OverexcitationLimiterDynamics
         multivalued: false
         required: false
         description: Overexcitation limiter model associated with this excitation
           system model.
-      p_f_v_ar_controller_type2_dynamics:
+      PFVArControllerType2Dynamics:
         slot_uri: cim:ExcitationSystemDynamics.PFVArControllerType2Dynamics
         range: PFVArControllerType2Dynamics
         multivalued: false
         required: false
         description: Power factor or VAr controller type 2 model associated with this
           excitation system model.
-      discontinuous_excitation_control_dynamics:
+      DiscontinuousExcitationControlDynamics:
         slot_uri: cim:ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics
         range: DiscontinuousExcitationControlDynamics
         multivalued: false
         required: false
         description: Discontinuous excitation control model associated with this excitation
           system model.
-      power_system_stabilizer_dynamics:
+      PowerSystemStabilizerDynamics:
         slot_uri: cim:ExcitationSystemDynamics.PowerSystemStabilizerDynamics
         range: PowerSystemStabilizerDynamics
         multivalued: false
         required: false
         description: Power system stabilizer model associated with this excitation
           system model.
-      underexcitation_limiter_dynamics:
+      UnderexcitationLimiterDynamics:
         slot_uri: cim:ExcitationSystemDynamics.UnderexcitationLimiterDynamics
         range: UnderexcitationLimiterDynamics
         multivalued: false
         required: false
         description: Undrexcitation limiter model associated with this excitation
           system model.
-      p_f_v_ar_controller_type1_dynamics:
+      PFVArControllerType1Dynamics:
         slot_uri: cim:ExcitationSystemDynamics.PFVArControllerType1Dynamics
         range: PFVArControllerType1Dynamics
         multivalued: false
@@ -13966,7 +13966,7 @@ classes:
   ExcNI:
     class_uri: cim:ExcNI
     attributes:
-      bus_fed_selector:
+      busFedSelector:
         slot_uri: cim:ExcNI.busFedSelector
         range: boolean
         multivalued: false
@@ -15869,7 +15869,7 @@ classes:
   OverexcitationLimiterDynamics:
     class_uri: cim:OverexcitationLimiterDynamics
     attributes:
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:OverexcitationLimiterDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -16139,13 +16139,13 @@ classes:
   UnderexcitationLimiterDynamics:
     class_uri: cim:UnderexcitationLimiterDynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:UnderexcitationLimiterDynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by this underexcitation limiter model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:UnderexcitationLimiterDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -16700,13 +16700,13 @@ classes:
   PowerSystemStabilizerDynamics:
     class_uri: cim:PowerSystemStabilizerDynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:PowerSystemStabilizerDynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: true
         required: false
         description: Remote input signal used by this power system stabilizer model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:PowerSystemStabilizerDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -16720,7 +16720,7 @@ classes:
   PssIEEE1A:
     class_uri: cim:PssIEEE1A
     attributes:
-      input_signal_type:
+      inputSignalType:
         slot_uri: cim:PssIEEE1A.inputSignalType
         range: InputSignalKind
         multivalued: false
@@ -16810,14 +16810,14 @@ classes:
   PssIEEE2B:
     class_uri: cim:PssIEEE2B
     attributes:
-      input_signal1_type:
+      inputSignal1Type:
         slot_uri: cim:PssIEEE2B.inputSignal1Type
         range: InputSignalKind
         multivalued: false
         required: true
         description: 'Type of input signal #1 (rotorAngularFrequencyDeviation, busFrequencyDeviation).  Typical
           value = rotorAngularFrequencyDeviation.'
-      input_signal2_type:
+      inputSignal2Type:
         slot_uri: cim:PssIEEE2B.inputSignal2Type
         range: InputSignalKind
         multivalued: false
@@ -17715,7 +17715,7 @@ classes:
   Pss1A:
     class_uri: cim:Pss1A
     attributes:
-      input_signal_type:
+      inputSignalType:
         slot_uri: cim:Pss1A.inputSignalType
         range: InputSignalKind
         multivalued: false
@@ -18062,7 +18062,7 @@ classes:
   Pss2ST:
     class_uri: cim:Pss2ST
     attributes:
-      input_signal1_type:
+      inputSignal1Type:
         slot_uri: cim:Pss2ST.inputSignal1Type
         range: InputSignalKind
         multivalued: false
@@ -18070,7 +18070,7 @@ classes:
         description: 'Type of input signal #1 (rotorAngularFrequencyDeviation, busFrequencyDeviation,
           generatorElectricalPower, generatorAcceleratingPower, busVoltage, or busVoltageDerivative
           - shall be different than Pss2ST.inputSignal2Type).  Typical value = rotorAngularFrequencyDeviation.'
-      input_signal2_type:
+      inputSignal2Type:
         slot_uri: cim:Pss2ST.inputSignal2Type
         range: InputSignalKind
         multivalued: false
@@ -19057,7 +19057,7 @@ classes:
   PssWECC:
     class_uri: cim:PssWECC
     attributes:
-      input_signal1_type:
+      inputSignal1Type:
         slot_uri: cim:PssWECC.inputSignal1Type
         range: InputSignalKind
         multivalued: false
@@ -19065,7 +19065,7 @@ classes:
         description: 'Type of input signal #1 (rotorAngularFrequencyDeviation, busFrequencyDeviation,
           generatorElectricalPower, generatorAcceleratingPower, busVoltage, or busVoltageDerivative
           - shall be different than PssWECC.inputSignal2Type).  Typical value = rotorAngularFrequencyDeviation.'
-      input_signal2_type:
+      inputSignal2Type:
         slot_uri: cim:PssWECC.inputSignal2Type
         range: InputSignalKind
         multivalued: false
@@ -19191,14 +19191,14 @@ classes:
   DiscontinuousExcitationControlDynamics:
     class_uri: cim:DiscontinuousExcitationControlDynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:DiscontinuousExcitationControlDynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by this discontinuous excitation control
           system model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -19409,21 +19409,21 @@ classes:
   PFVArControllerType1Dynamics:
     class_uri: cim:PFVArControllerType1Dynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:PFVArControllerType1Dynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by this power factor or VAr controller
           type 1 model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:PFVArControllerType1Dynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
         required: true
         description: Excitation system model with which this power actor or VAr controller
           type 1 model is associated.
-      voltage_adjuster_dynamics:
+      VoltageAdjusterDynamics:
         slot_uri: cim:PFVArControllerType1Dynamics.VoltageAdjusterDynamics
         range: VoltageAdjusterDynamics
         multivalued: false
@@ -19550,7 +19550,7 @@ classes:
   VoltageAdjusterDynamics:
     class_uri: cim:VoltageAdjusterDynamics
     attributes:
-      p_f_v_ar_controller_type1_dynamics:
+      PFVArControllerType1Dynamics:
         slot_uri: cim:VoltageAdjusterDynamics.PFVArControllerType1Dynamics
         range: PFVArControllerType1Dynamics
         multivalued: false
@@ -19613,7 +19613,7 @@ classes:
   PFVArControllerType2Dynamics:
     class_uri: cim:PFVArControllerType2Dynamics
     attributes:
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:PFVArControllerType2Dynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -19796,13 +19796,13 @@ classes:
   VoltageCompensatorDynamics:
     class_uri: cim:VoltageCompensatorDynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:VoltageCompensatorDynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by this voltage compensator model.
-      excitation_system_dynamics:
+      ExcitationSystemDynamics:
         slot_uri: cim:VoltageCompensatorDynamics.ExcitationSystemDynamics
         range: ExcitationSystemDynamics
         multivalued: false
@@ -19856,7 +19856,7 @@ classes:
         required: true
         description: <font color="#0f0f0f">Time constant which is used for the combined
           voltage sensing and compensation signal (<i>Tr</i>) (&gt;= 0).</font>
-      gen_i_compensation_for_gen_j:
+      GenICompensationForGenJ:
         slot_uri: cim:VCompIEEEType2.GenICompensationForGenJ
         range: GenICompensationForGenJ
         multivalued: true
@@ -19874,14 +19874,14 @@ classes:
   GenICompensationForGenJ:
     class_uri: cim:GenICompensationForGenJ
     attributes:
-      synchronous_machine_dynamics:
+      SynchronousMachineDynamics:
         slot_uri: cim:GenICompensationForGenJ.SynchronousMachineDynamics
         range: SynchronousMachineDynamics
         multivalued: false
         required: true
         description: Standard synchronous machine out of which current flow is being
           compensated for.
-      vcomp_i_e_e_e_type2:
+      VcompIEEEType2:
         slot_uri: cim:GenICompensationForGenJ.VcompIEEEType2
         range: VCompIEEEType2
         multivalued: false
@@ -19910,7 +19910,7 @@ classes:
   WindAeroConstIEC:
     class_uri: cim:WindAeroConstIEC
     attributes:
-      wind_gen_turbine_type1a_i_e_c:
+      WindGenTurbineType1aIEC:
         slot_uri: cim:WindAeroConstIEC.WindGenTurbineType1aIEC
         range: WindGenTurbineType1aIEC
         multivalued: false
@@ -19939,7 +19939,7 @@ classes:
         required: true
         description: Initial pitch angle (<i>theta</i><i><sub>omega0</sub></i>). It
           is a case-dependent parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindAeroOneDimIEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
@@ -20003,7 +20003,7 @@ classes:
         required: true
         description: Blade angle at twice rated wind speed (<i>theta</i><i><sub>v2</sub></i>).
           It is a type-dependent parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindAeroTwoDimIEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
@@ -20075,14 +20075,14 @@ classes:
         description: Wind turbine voltage in the operation point where zero reactive
           current can be delivered (<i>u</i><i><sub>pqumax</sub></i>). It is a type-dependent
           parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindContCurrLimIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
         required: true
         description: Wind turbine type 3 or type 4 model with which this wind control
           current limitation model is associated.
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindContCurrLimIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -20169,7 +20169,7 @@ classes:
         required: true
         description: Pitch time constant (<i>ttheta</i>) (&gt;= 0). It is a type-dependent
           parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindContPitchAngleIEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
@@ -20351,14 +20351,14 @@ classes:
         required: true
         description: Coefficient for active drive train damping (<i>zeta</i>). It
           is a type-dependent parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindContPType3IEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
         required: true
         description: Wind turbine type 3 model with which this wind control P type
           3 model is associated.
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindContPType3IEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -20393,7 +20393,7 @@ classes:
         required: true
         description: Voltage measurement filter time constant (<i>T</i><i><sub>ufiltp4A</sub></i>)
           (&gt;= 0). It is a type-dependent parameter.
-      wind_turbine_type4a_i_e_c:
+      WindTurbineType4aIEC:
         slot_uri: cim:WindContPType4aIEC.WindTurbineType4aIEC
         range: WindTurbineType4aIEC
         multivalued: false
@@ -20435,7 +20435,7 @@ classes:
         required: true
         description: Voltage measurement filter time constant (<i>T</i><i><sub>ufiltp4B</sub></i>)
           (&gt;= 0). It is a type-dependent parameter.
-      wind_turbine_type4b_i_e_c:
+      WindTurbineType4bIEC:
         slot_uri: cim:WindContPType4bIEC.WindTurbineType4bIEC
         range: WindTurbineType4bIEC
         multivalued: false
@@ -20589,14 +20589,14 @@ classes:
         required: true
         description: User-defined bias in voltage reference (<i>u</i><i><sub>ref0</sub></i>).
           It is a case-dependent parameter.
-      wind_qcontrol_modes_type:
+      windQcontrolModesType:
         slot_uri: cim:WindContQIEC.windQcontrolModesType
         range: WindQcontrolModeKind
         multivalued: false
         required: true
         description: Types of general wind turbine Q control modes (<i>M</i><i><sub>qG</sub></i>).  It
           is a project-dependent parameter.
-      wind_u_v_r_t_qcontrol_modes_type:
+      windUVRTQcontrolModesType:
         slot_uri: cim:WindContQIEC.windUVRTQcontrolModesType
         range: WindUVRTQcontrolModeKind
         multivalued: false
@@ -20610,7 +20610,7 @@ classes:
         required: true
         description: Inductive component of voltage drop impedance (<i>x</i><i><sub>droop</sub></i>)
           (&gt;= 0). It is a project-dependent parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindContQIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
@@ -20638,7 +20638,7 @@ classes:
         required: true
         description: Minimum reactive power (<i>q</i><i><sub>min</sub></i>) (&lt;
           WindContQLimIEC.qmax). It is a type-dependent parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindContQLimIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
@@ -20666,14 +20666,14 @@ classes:
         required: true
         description: Voltage measurement filter time constant for Q capacity (<i>T</i><i><sub>ufiltql</sub></i>)
           (&gt;= 0). It is a type-dependent parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindContQPQULimIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
         required: false
         description: Wind generator type 3 or type 4 model with which this QP and
           QU limitation model is associated.
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindContQPQULimIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -20743,14 +20743,14 @@ classes:
         required: true
         description: Filter time constant for power measurement (<i>T</i><i><sub>pfiltrr</sub></i>)
           (&gt;= 0). It is a type-dependent parameter.
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindContRotorRIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
         required: true
         description: The wind dynamics lookup table associated with this rotor resistance
           control model.
-      wind_gen_turbine_type2_i_e_c:
+      WindGenTurbineType2IEC:
         slot_uri: cim:WindContRotorRIEC.WindGenTurbineType2IEC
         range: WindGenTurbineType2IEC
         multivalued: false
@@ -20764,28 +20764,28 @@ classes:
   WindDynamicsLookupTable:
     class_uri: cim:WindDynamicsLookupTable
     attributes:
-      wind_cont_curr_lim_i_e_c:
+      WindContCurrLimIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindContCurrLimIEC
         range: WindContCurrLimIEC
         multivalued: false
         required: false
         description: The current control limitation model with which this wind dynamics
           lookup table is associated.
-      wind_cont_p_type3_i_e_c:
+      WindContPType3IEC:
         slot_uri: cim:WindDynamicsLookupTable.WindContPType3IEC
         range: WindContPType3IEC
         multivalued: false
         required: false
         description: The P control type 3 model with which this wind dynamics lookup
           table is associated.
-      wind_cont_q_p_q_u_lim_i_e_c:
+      WindContQPQULimIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindContQPQULimIEC
         range: WindContQPQULimIEC
         multivalued: false
         required: false
         description: The QP and QU limitation model with which this wind dynamics
           lookup table is associated.
-      wind_cont_rotor_r_i_e_c:
+      WindContRotorRIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindContRotorRIEC
         range: WindContRotorRIEC
         multivalued: false
@@ -20798,7 +20798,7 @@ classes:
         multivalued: false
         required: true
         description: Input value (<i>x</i>) for the lookup table function.
-      lookup_table_function_type:
+      lookupTableFunctionType:
         slot_uri: cim:WindDynamicsLookupTable.lookupTableFunctionType
         range: WindLookupTableFunctionKind
         multivalued: false
@@ -20817,35 +20817,35 @@ classes:
         required: true
         description: Sequence numbers of the pairs of the input (<i>x</i>) and the
           output (<i>y</i>) of the lookup table function.
-      wind_plant_freq_pcontrol_i_e_c:
+      WindPlantFreqPcontrolIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindPlantFreqPcontrolIEC
         range: WindPlantFreqPcontrolIEC
         multivalued: false
         required: false
         description: The frequency and active power wind plant control model with
           which this wind dynamics lookup table is associated.
-      wind_protection_i_e_c:
+      WindProtectionIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindProtectionIEC
         range: WindProtectionIEC
         multivalued: false
         required: false
         description: The grid protection model with which this wind dynamics lookup
           table is associated.
-      wind_plant_reactive_control_i_e_c:
+      WindPlantReactiveControlIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindPlantReactiveControlIEC
         range: WindPlantReactiveControlIEC
         multivalued: false
         required: false
         description: The voltage and reactive power wind plant control model with
           which this wind dynamics lookup table is associated.
-      wind_gen_type3b_i_e_c:
+      WindGenType3bIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindGenType3bIEC
         range: WindGenType3bIEC
         multivalued: false
         required: false
         description: The generator type 3B model with which this wind dynamics lookup
           table is associated.
-      wind_pitch_cont_power_i_e_c:
+      WindPitchContPowerIEC:
         slot_uri: cim:WindDynamicsLookupTable.WindPitchContPowerIEC
         range: WindPitchContPowerIEC
         multivalued: false
@@ -20857,7 +20857,7 @@ classes:
   WindGenTurbineType1aIEC:
     class_uri: cim:WindGenTurbineType1aIEC
     attributes:
-      wind_aero_const_i_e_c:
+      WindAeroConstIEC:
         slot_uri: cim:WindGenTurbineType1aIEC.WindAeroConstIEC
         range: WindAeroConstIEC
         multivalued: false
@@ -20871,7 +20871,7 @@ classes:
   WindGenTurbineType1bIEC:
     class_uri: cim:WindGenTurbineType1bIEC
     attributes:
-      wind_pitch_cont_power_i_e_c:
+      WindPitchContPowerIEC:
         slot_uri: cim:WindGenTurbineType1bIEC.WindPitchContPowerIEC
         range: WindPitchContPowerIEC
         multivalued: false
@@ -20886,14 +20886,14 @@ classes:
   WindGenTurbineType2IEC:
     class_uri: cim:WindGenTurbineType2IEC
     attributes:
-      wind_cont_rotor_r_i_e_c:
+      WindContRotorRIEC:
         slot_uri: cim:WindGenTurbineType2IEC.WindContRotorRIEC
         range: WindContRotorRIEC
         multivalued: false
         required: true
         description: Wind control rotor resistance model associated with wind turbine
           type 2 model.
-      wind_pitch_cont_power_i_e_c:
+      WindPitchContPowerIEC:
         slot_uri: cim:WindGenTurbineType2IEC.WindPitchContPowerIEC
         range: WindPitchContPowerIEC
         multivalued: false
@@ -20922,7 +20922,7 @@ classes:
         required: true
         description: Current PI controller integration time constant (<i>T</i><i><sub>Ic</sub></i>)
           (&gt;= 0). It is a type-dependent parameter.
-      wind_turbine_type4_i_e_c:
+      WindTurbineType4IEC:
         slot_uri: cim:WindGenType3aIEC.WindTurbineType4IEC
         range: WindTurbineType4IEC
         multivalued: false
@@ -20936,7 +20936,7 @@ classes:
   WindGenType3bIEC:
     class_uri: cim:WindGenType3bIEC
     attributes:
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindGenType3bIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -20996,7 +20996,7 @@ classes:
         required: true
         description: Electromagnetic transient reactance (<i>x</i><i><sub>S</sub></i>).
           It is a type-dependent parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindGenType3IEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
@@ -21037,14 +21037,14 @@ classes:
         required: true
         description: Time constant (<i>T</i><i><sub>g</sub></i>) (&gt;= 0). It is
           a type-dependent parameter.
-      wind_turbine_type4a_i_e_c:
+      WindTurbineType4aIEC:
         slot_uri: cim:WindGenType4IEC.WindTurbineType4aIEC
         range: WindTurbineType4aIEC
         multivalued: false
         required: false
         description: Wind turbine type 4A model with which this wind generator type
           4 model is associated.
-      wind_turbine_type4b_i_e_c:
+      WindTurbineType4bIEC:
         slot_uri: cim:WindGenType4IEC.WindTurbineType4bIEC
         range: WindTurbineType4bIEC
         multivalued: false
@@ -21086,21 +21086,21 @@ classes:
         required: true
         description: Drive train stiffness (<i>k</i><i><sub>drt</sub></i>). It is
           a type-dependent parameter.
-      wind_turbine_type3_i_e_c:
+      WindTurbineType3IEC:
         slot_uri: cim:WindMechIEC.WindTurbineType3IEC
         range: WindTurbineType3IEC
         multivalued: false
         required: false
         description: Wind turbine type 3 model with which this wind mechanical model
           is associated.
-      wind_turbine_type1or2_i_e_c:
+      WindTurbineType1or2IEC:
         slot_uri: cim:WindMechIEC.WindTurbineType1or2IEC
         range: WindTurbineType1or2IEC
         multivalued: false
         required: false
         description: Wind generator type 1 or type 2 model with which this wind mechanical
           model is associated.
-      wind_turbine_type4b_i_e_c:
+      WindTurbineType4bIEC:
         slot_uri: cim:WindMechIEC.WindTurbineType4bIEC
         range: WindTurbineType4bIEC
         multivalued: false
@@ -21114,21 +21114,21 @@ classes:
   WindPitchContPowerIEC:
     class_uri: cim:WindPitchContPowerIEC
     attributes:
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindPitchContPowerIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
         required: true
         description: The wind dynamics lookup table associated with this pitch control
           power model.
-      wind_gen_turbine_type1b_i_e_c:
+      WindGenTurbineType1bIEC:
         slot_uri: cim:WindPitchContPowerIEC.WindGenTurbineType1bIEC
         range: WindGenTurbineType1bIEC
         multivalued: false
         required: false
         description: Wind turbine type 1B model with which this pitch control power
           model is associated.
-      wind_gen_turbine_type2_i_e_c:
+      WindGenTurbineType2IEC:
         slot_uri: cim:WindPitchContPowerIEC.WindGenTurbineType2IEC
         range: WindGenTurbineType2IEC
         multivalued: false
@@ -21193,13 +21193,13 @@ classes:
   WindPlantDynamics:
     class_uri: cim:WindPlantDynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:WindPlantDynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: The remote signal with which this power plant is associated.
-      wind_turbine_type3or4_dynamics:
+      WindTurbineType3or4Dynamics:
         slot_uri: cim:WindPlantDynamics.WindTurbineType3or4Dynamics
         range: WindTurbineType3or4Dynamics
         multivalued: true
@@ -21212,7 +21212,7 @@ classes:
   WindPlantFreqPcontrolIEC:
     class_uri: cim:WindPlantFreqPcontrolIEC
     attributes:
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindPlantFreqPcontrolIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -21328,7 +21328,7 @@ classes:
         required: true
         description: Filter time constant for active power measurement (<i>T</i><i><sub>WPpfiltp</sub></i>)
           (&gt;= 0). It is a project-dependent parameter.
-      wind_plant_i_e_c:
+      WindPlantIEC:
         slot_uri: cim:WindPlantFreqPcontrolIEC.WindPlantIEC
         range: WindPlantIEC
         multivalued: false
@@ -21342,14 +21342,14 @@ classes:
   WindPlantIEC:
     class_uri: cim:WindPlantIEC
     attributes:
-      wind_plant_freq_pcontrol_i_e_c:
+      WindPlantFreqPcontrolIEC:
         slot_uri: cim:WindPlantIEC.WindPlantFreqPcontrolIEC
         range: WindPlantFreqPcontrolIEC
         multivalued: false
         required: true
         description: Wind plant frequency and active power control model associated
           with this wind plant.
-      wind_plant_reactive_control_i_e_c:
+      WindPlantReactiveControlIEC:
         slot_uri: cim:WindPlantIEC.WindPlantReactiveControlIEC
         range: WindPlantReactiveControlIEC
         multivalued: false
@@ -21361,14 +21361,14 @@ classes:
   WindPlantReactiveControlIEC:
     class_uri: cim:WindPlantReactiveControlIEC
     attributes:
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindPlantReactiveControlIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
         required: true
         description: The wind dynamics lookup table associated with this voltage and
           reactive power wind plant model.
-      wind_plant_i_e_c:
+      WindPlantIEC:
         slot_uri: cim:WindPlantReactiveControlIEC.WindPlantIEC
         range: WindPlantIEC
         multivalued: false
@@ -21481,7 +21481,7 @@ classes:
         required: true
         description: Voltage threshold for UVRT detection in Q control (<i>u</i><i><sub>WPqdip</sub></i>).
           It is a project-dependent parameter.
-      wind_plant_qcontrol_modes_type:
+      windPlantQcontrolModesType:
         slot_uri: cim:WindPlantReactiveControlIEC.windPlantQcontrolModesType
         range: WindPlantQcontrolModeKind
         multivalued: false
@@ -21514,7 +21514,7 @@ classes:
   WindProtectionIEC:
     class_uri: cim:WindProtectionIEC
     attributes:
-      wind_dynamics_lookup_table:
+      WindDynamicsLookupTable:
         slot_uri: cim:WindProtectionIEC.WindDynamicsLookupTable
         range: WindDynamicsLookupTable
         multivalued: true
@@ -21572,14 +21572,14 @@ classes:
         required: true
         description: Wind turbine under voltage protection activation threshold (<i>u</i><i><sub>under</sub></i>).
           It is a project-dependent parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindProtectionIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
         required: false
         description: Wind generator type 3 or type 4 model with which this wind turbine
           protection model is associated.
-      wind_turbine_type1or2_i_e_c:
+      WindTurbineType1or2IEC:
         slot_uri: cim:WindProtectionIEC.WindTurbineType1or2IEC
         range: WindTurbineType1or2IEC
         multivalued: false
@@ -21618,7 +21618,7 @@ classes:
           of the voltage is frozen if <i>u</i><i><sub>PLL2</sub></i><sub> </sub>is
           smaller or equal to <i>u</i><i><sub>PLL1</sub></i> . It is a type-dependent
           parameter.
-      wind_turbine_type3or4_i_e_c:
+      WindTurbineType3or4IEC:
         slot_uri: cim:WindRefFrameRotIEC.WindTurbineType3or4IEC
         range: WindTurbineType3or4IEC
         multivalued: false
@@ -21632,14 +21632,14 @@ classes:
   WindTurbineType1or2Dynamics:
     class_uri: cim:WindTurbineType1or2Dynamics
     attributes:
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:WindTurbineType1or2Dynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by this wind generator type 1 or type
           2 model.
-      asynchronous_machine_dynamics:
+      AsynchronousMachineDynamics:
         slot_uri: cim:WindTurbineType1or2Dynamics.AsynchronousMachineDynamics
         range: AsynchronousMachineDynamics
         multivalued: false
@@ -21653,14 +21653,14 @@ classes:
   WindTurbineType1or2IEC:
     class_uri: cim:WindTurbineType1or2IEC
     attributes:
-      wind_mech_i_e_c:
+      WindMechIEC:
         slot_uri: cim:WindTurbineType1or2IEC.WindMechIEC
         range: WindMechIEC
         multivalued: false
         required: true
         description: Wind mechanical model associated with this wind generator type
           1 or type 2 model.
-      wind_protection_i_e_c:
+      WindProtectionIEC:
         slot_uri: cim:WindTurbineType1or2IEC.WindProtectionIEC
         range: WindProtectionIEC
         multivalued: false
@@ -21678,42 +21678,42 @@ classes:
   WindTurbineType3IEC:
     class_uri: cim:WindTurbineType3IEC
     attributes:
-      wind_aero_one_dim_i_e_c:
+      WindAeroOneDimIEC:
         slot_uri: cim:WindTurbineType3IEC.WindAeroOneDimIEC
         range: WindAeroOneDimIEC
         multivalued: false
         required: false
         description: Wind aerodynamic model associated with this wind generator type
           3 model.
-      wind_aero_two_dim_i_e_c:
+      WindAeroTwoDimIEC:
         slot_uri: cim:WindTurbineType3IEC.WindAeroTwoDimIEC
         range: WindAeroTwoDimIEC
         multivalued: false
         required: false
         description: Wind aerodynamic model associated with this wind turbine type
           3 model.
-      wind_cont_pitch_angle_i_e_c:
+      WindContPitchAngleIEC:
         slot_uri: cim:WindTurbineType3IEC.WindContPitchAngleIEC
         range: WindContPitchAngleIEC
         multivalued: false
         required: true
         description: Wind control pitch angle model associated with this wind turbine
           type 3.
-      wind_cont_p_type3_i_e_c:
+      WindContPType3IEC:
         slot_uri: cim:WindTurbineType3IEC.WindContPType3IEC
         range: WindContPType3IEC
         multivalued: false
         required: true
         description: Wind control P type 3 model associated with this wind turbine
           type 3 model.
-      wind_gen_type3_i_e_c:
+      WindGenType3IEC:
         slot_uri: cim:WindTurbineType3IEC.WindGenType3IEC
         range: WindGenType3IEC
         multivalued: false
         required: false
         description: Wind generator type 3 model associated with this wind turbine
           type 3 model.
-      wind_mech_i_e_c:
+      WindMechIEC:
         slot_uri: cim:WindTurbineType3IEC.WindMechIEC
         range: WindMechIEC
         multivalued: false
@@ -21726,21 +21726,21 @@ classes:
   WindTurbineType3or4Dynamics:
     class_uri: cim:WindTurbineType3or4Dynamics
     attributes:
-      power_electronics_connection:
+      PowerElectronicsConnection:
         slot_uri: cim:WindTurbineType3or4Dynamics.PowerElectronicsConnection
         range: PowerElectronicsConnection
         multivalued: false
         required: true
         description: The power electronics connection associated with this wind turbine
           type 3 or type 4 dynamics model.
-      remote_input_signal:
+      RemoteInputSignal:
         slot_uri: cim:WindTurbineType3or4Dynamics.RemoteInputSignal
         range: RemoteInputSignal
         multivalued: false
         required: false
         description: Remote input signal used by these wind turbine type 3 or type
           4 models.
-      wind_plant_dynamics:
+      WindPlantDynamics:
         slot_uri: cim:WindTurbineType3or4Dynamics.WindPlantDynamics
         range: WindPlantDynamics
         multivalued: false
@@ -21753,42 +21753,42 @@ classes:
   WindTurbineType3or4IEC:
     class_uri: cim:WindTurbineType3or4IEC
     attributes:
-      wind_cont_curr_lim_i_e_c:
+      WindContCurrLimIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WindContCurrLimIEC
         range: WindContCurrLimIEC
         multivalued: false
         required: true
         description: Wind control current limitation model associated with this wind
           turbine type 3 or type 4 model.
-      w_ind_cont_q_i_e_c:
+      WIndContQIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WIndContQIEC
         range: WindContQIEC
         multivalued: false
         required: true
         description: Wind control Q model associated with this wind turbine type 3
           or type 4 model.
-      wind_cont_q_lim_i_e_c:
+      WindContQLimIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WindContQLimIEC
         range: WindContQLimIEC
         multivalued: false
         required: false
         description: Constant Q limitation model associated with this wind generator
           type 3 or type 4 model.
-      wind_cont_q_p_q_u_lim_i_e_c:
+      WindContQPQULimIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WindContQPQULimIEC
         range: WindContQPQULimIEC
         multivalued: false
         required: false
         description: QP and QU limitation model associated with this wind generator
           type 3 or type 4 model.
-      wind_protection_i_e_c:
+      WindProtectionIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WindProtectionIEC
         range: WindProtectionIEC
         multivalued: false
         required: true
         description: Wind turbune protection model associated with this wind generator
           type 3 or type 4 model.
-      wind_ref_frame_rot_i_e_c:
+      WindRefFrameRotIEC:
         slot_uri: cim:WindTurbineType3or4IEC.WindRefFrameRotIEC
         range: WindRefFrameRotIEC
         multivalued: false
@@ -21801,14 +21801,14 @@ classes:
   WindTurbineType4aIEC:
     class_uri: cim:WindTurbineType4aIEC
     attributes:
-      wind_cont_p_type4a_i_e_c:
+      WindContPType4aIEC:
         slot_uri: cim:WindTurbineType4aIEC.WindContPType4aIEC
         range: WindContPType4aIEC
         multivalued: false
         required: true
         description: Wind control P type 4A model associated with this wind turbine
           type 4A model.
-      wind_gen_type4_i_e_c:
+      WindGenType4IEC:
         slot_uri: cim:WindTurbineType4aIEC.WindGenType4IEC
         range: WindGenType4IEC
         multivalued: false
@@ -21822,21 +21822,21 @@ classes:
   WindTurbineType4bIEC:
     class_uri: cim:WindTurbineType4bIEC
     attributes:
-      wind_cont_p_type4b_i_e_c:
+      WindContPType4bIEC:
         slot_uri: cim:WindTurbineType4bIEC.WindContPType4bIEC
         range: WindContPType4bIEC
         multivalued: false
         required: true
         description: Wind control P type 4B model associated with this wind turbine
           type 4B model.
-      wind_gen_type4_i_e_c:
+      WindGenType4IEC:
         slot_uri: cim:WindTurbineType4bIEC.WindGenType4IEC
         range: WindGenType4IEC
         multivalued: false
         required: false
         description: Wind generator type 4 model associated with this wind turbine
           type 4B model.
-      wind_mech_i_e_c:
+      WindMechIEC:
         slot_uri: cim:WindTurbineType4bIEC.WindMechIEC
         range: WindMechIEC
         multivalued: false
@@ -21850,7 +21850,7 @@ classes:
   WindTurbineType4IEC:
     class_uri: cim:WindTurbineType4IEC
     attributes:
-      wind_gen_type3a_i_e_c:
+      WindGenType3aIEC:
         slot_uri: cim:WindTurbineType4IEC.WindGenType3aIEC
         range: WindGenType3aIEC
         multivalued: false
@@ -21948,7 +21948,7 @@ classes:
   LoadGenericNonLinear:
     class_uri: cim:LoadGenericNonLinear
     attributes:
-      generic_non_linear_load_model_type:
+      genericNonLinearLoadModelType:
         slot_uri: cim:LoadGenericNonLinear.genericNonLinearLoadModelType
         range: GenericNonLinearLoadModelKind
         multivalued: false
@@ -22000,7 +22000,7 @@ classes:
   LoadDynamics:
     class_uri: cim:LoadDynamics
     attributes:
-      energy_consumer:
+      EnergyConsumer:
         slot_uri: cim:LoadDynamics.EnergyConsumer
         range: EnergyConsumer
         multivalued: true
@@ -22016,14 +22016,14 @@ classes:
   LoadAggregate:
     class_uri: cim:LoadAggregate
     attributes:
-      load_motor:
+      LoadMotor:
         slot_uri: cim:LoadAggregate.LoadMotor
         range: LoadMotor
         multivalued: false
         required: false
         description: Aggregate motor (dynamic) load associated with this aggregate
           load.
-      load_static:
+      LoadStatic:
         slot_uri: cim:LoadAggregate.LoadStatic
         range: LoadStatic
         multivalued: false
@@ -22044,13 +22044,13 @@ classes:
   LoadStatic:
     class_uri: cim:LoadStatic
     attributes:
-      load_aggregate:
+      LoadAggregate:
         slot_uri: cim:LoadStatic.LoadAggregate
         range: LoadAggregate
         multivalued: false
         required: true
         description: Aggregate load to which this aggregate static load belongs.
-      static_load_model_type:
+      staticLoadModelType:
         slot_uri: cim:LoadStatic.staticLoadModelType
         range: StaticLoadModelKind
         multivalued: false
@@ -22177,7 +22177,7 @@ classes:
   LoadMotor:
     class_uri: cim:LoadMotor
     attributes:
-      load_aggregate:
+      LoadAggregate:
         slot_uri: cim:LoadMotor.LoadAggregate
         range: LoadAggregate
         multivalued: false
@@ -22295,7 +22295,7 @@ classes:
   CSCDynamics:
     class_uri: cim:CSCDynamics
     attributes:
-      c_s_converter:
+      CSConverter:
         slot_uri: cim:CSCDynamics.CSConverter
         range: CsConverter
         multivalued: false
@@ -22313,7 +22313,7 @@ classes:
   VSCDynamics:
     class_uri: cim:VSCDynamics
     attributes:
-      vs_converter:
+      VsConverter:
         slot_uri: cim:VSCDynamics.VsConverter
         range: VsConverter
         multivalued: false
@@ -22326,7 +22326,7 @@ classes:
   StaticVarCompensatorDynamics:
     class_uri: cim:StaticVarCompensatorDynamics
     attributes:
-      static_var_compensator:
+      StaticVarCompensator:
         slot_uri: cim:StaticVarCompensatorDynamics.StaticVarCompensator
         range: StaticVarCompensator
         multivalued: false

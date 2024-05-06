@@ -16,13 +16,16 @@ _Inductive part of reactance (imaginary part of impedance), at rated frequency._
 ```mermaid
  classDiagram
     class Inductance
+    click Inductance href "../Inductance"
       Inductance : Inductance.multiplier
         
           Inductance --> UnitMultiplier : Inductance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Inductance : Inductance.unit
         
           Inductance --> UnitSymbol : Inductance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Inductance : Inductance.value
         

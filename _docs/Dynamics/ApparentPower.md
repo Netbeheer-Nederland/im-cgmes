@@ -16,13 +16,16 @@ _Product of the RMS value of the voltage and the RMS value of the current._
 ```mermaid
  classDiagram
     class ApparentPower
+    click ApparentPower href "../ApparentPower"
       ApparentPower : ApparentPower.multiplier
         
           ApparentPower --> UnitMultiplier : ApparentPower.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       ApparentPower : ApparentPower.unit
         
           ApparentPower --> UnitSymbol : ApparentPower.unit
+          click UnitSymbol href "../UnitSymbol"
         
       ApparentPower : ApparentPower.value
         

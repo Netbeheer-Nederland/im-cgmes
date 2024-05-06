@@ -16,7 +16,9 @@ _A DC electrical connection point at the AC/DC converter. The AC/DC converter is
 ```mermaid
  classDiagram
     class ACDCConverterDCTerminal
+    click ACDCConverterDCTerminal href "../ACDCConverterDCTerminal"
       DCBaseTerminal <|-- ACDCConverterDCTerminal
+        click DCBaseTerminal href "../DCBaseTerminal"
       
       ACDCConverterDCTerminal : ACDCTerminal.connected
         
@@ -42,8 +44,8 @@ _A DC electrical connection point at the AC/DC converter. The AC/DC converter is
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| connected | [cim:ACDCTerminal.connected](http://iec.ch/TC57/CIM100#ACDCTerminal.connected) | 1..1 <br />  boolean  | The connected status is related to a bus-branch model and the topological nod... | [ACDCTerminal](ACDCTerminal.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| connected | [cim:ACDCTerminal.connected](http://iec.ch/TC57/CIM100#ACDCTerminal.connected) | 1 <br />  boolean  | The connected status is related to a bus-branch model and the topological nod... | [ACDCTerminal](ACDCTerminal.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

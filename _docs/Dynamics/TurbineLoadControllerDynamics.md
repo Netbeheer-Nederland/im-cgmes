@@ -16,11 +16,15 @@ _Turbine load controller function block whose behaviour is described by referenc
 ```mermaid
  classDiagram
     class TurbineLoadControllerDynamics
+    click TurbineLoadControllerDynamics href "../TurbineLoadControllerDynamics"
       DynamicsFunctionBlock <|-- TurbineLoadControllerDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       TurbineLoadControllerDynamics <|-- TurbineLoadControllerUserDefined
+        click TurbineLoadControllerUserDefined href "../TurbineLoadControllerUserDefined"
       TurbineLoadControllerDynamics <|-- TurbLCFB1
+        click TurbLCFB1 href "../TurbLCFB1"
       
       
       TurbineLoadControllerDynamics : IdentifiedObject.description
@@ -34,6 +38,7 @@ _Turbine load controller function block whose behaviour is described by referenc
       TurbineLoadControllerDynamics : TurbineLoadControllerDynamics.TurbineGovernorDynamics
         
           TurbineLoadControllerDynamics --> TurbineGovernorDynamics : TurbineLoadControllerDynamics.TurbineGovernorDynamics
+          click TurbineGovernorDynamics href "../TurbineGovernorDynamics"
         
       
 ```
@@ -56,10 +61,10 @@ _Turbine load controller function block whose behaviour is described by referenc
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| TurbineGovernorDynamics | [cim:TurbineLoadControllerDynamics.TurbineGovernorDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerDynamics.TurbineGovernorDynamics) | 1..1 <br />  [TurbineGovernorDynamics](TurbineGovernorDynamics.md)  | Turbine-governor controlled by this turbine load controller | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| TurbineGovernorDynamics | [cim:TurbineLoadControllerDynamics.TurbineGovernorDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerDynamics.TurbineGovernorDynamics) | 1 <br />  [TurbineGovernorDynamics](TurbineGovernorDynamics.md)  | Turbine-governor controlled by this turbine load controller | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

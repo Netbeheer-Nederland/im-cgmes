@@ -16,10 +16,13 @@ _Turbine-governor cross-compound function block whose behaviour is described by 
 ```mermaid
  classDiagram
     class CrossCompoundTurbineGovernorDynamics
+    click CrossCompoundTurbineGovernorDynamics href "../CrossCompoundTurbineGovernorDynamics"
       DynamicsFunctionBlock <|-- CrossCompoundTurbineGovernorDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       CrossCompoundTurbineGovernorDynamics <|-- GovSteamCC
+        click GovSteamCC href "../GovSteamCC"
       
       
       CrossCompoundTurbineGovernorDynamics : IdentifiedObject.description
@@ -29,10 +32,12 @@ _Turbine-governor cross-compound function block whose behaviour is described by 
       CrossCompoundTurbineGovernorDynamics : CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics
         
           CrossCompoundTurbineGovernorDynamics --> SynchronousMachineDynamics : CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       CrossCompoundTurbineGovernorDynamics : CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics
         
           CrossCompoundTurbineGovernorDynamics --> SynchronousMachineDynamics : CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       CrossCompoundTurbineGovernorDynamics : IdentifiedObject.mRID
         
@@ -58,11 +63,11 @@ _Turbine-governor cross-compound function block whose behaviour is described by 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| HighPressureSynchronousMachineDynamics | [cim:CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics](http://iec.ch/TC57/CIM100#CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics) | 1..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | High-pressure synchronous machine with which this cross-compound turbine gove... | direct |
-| LowPressureSynchronousMachineDynamics | [cim:CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics](http://iec.ch/TC57/CIM100#CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics) | 1..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Low-pressure synchronous machine with which this cross-compound turbine gover... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| HighPressureSynchronousMachineDynamics | [cim:CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics](http://iec.ch/TC57/CIM100#CrossCompoundTurbineGovernorDynamics.HighPressureSynchronousMachineDynamics) | 1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | High-pressure synchronous machine with which this cross-compound turbine gove... | direct |
+| LowPressureSynchronousMachineDynamics | [cim:CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics](http://iec.ch/TC57/CIM100#CrossCompoundTurbineGovernorDynamics.LowPressureSynchronousMachineDynamics) | 1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Low-pressure synchronous machine with which this cross-compound turbine gover... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -16,13 +16,16 @@ _A point in a given space defined by 3 coordinates and associated to a diagram o
 ```mermaid
  classDiagram
     class DiagramObjectPoint
+    click DiagramObjectPoint href "../DiagramObjectPoint"
       DiagramObjectPoint : DiagramObjectPoint.DiagramObject
         
           DiagramObjectPoint --> DiagramObject : DiagramObjectPoint.DiagramObject
+          click DiagramObject href "../DiagramObject"
         
       DiagramObjectPoint : DiagramObjectPoint.DiagramObjectGluePoint
         
           DiagramObjectPoint --> DiagramObjectGluePoint : DiagramObjectPoint.DiagramObjectGluePoint
+          click DiagramObjectGluePoint href "../DiagramObjectGluePoint"
         
       DiagramObjectPoint : DiagramObjectPoint.sequenceNumber
         
@@ -46,11 +49,11 @@ _A point in a given space defined by 3 coordinates and associated to a diagram o
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| DiagramObject | [cim:DiagramObjectPoint.DiagramObject](http://iec.ch/TC57/CIM100#DiagramObjectPoint.DiagramObject) | 1..1 <br />  [DiagramObject](DiagramObject.md)  | The diagram object with which the points are associated | direct |
+| DiagramObject | [cim:DiagramObjectPoint.DiagramObject](http://iec.ch/TC57/CIM100#DiagramObjectPoint.DiagramObject) | 1 <br />  [DiagramObject](DiagramObject.md)  | The diagram object with which the points are associated | direct |
 | DiagramObjectGluePoint | [cim:DiagramObjectPoint.DiagramObjectGluePoint](http://iec.ch/TC57/CIM100#DiagramObjectPoint.DiagramObjectGluePoint) | 0..1 <br />  [DiagramObjectGluePoint](DiagramObjectGluePoint.md)  | The 'glue' point to which this point is associated | direct |
 | sequenceNumber | [cim:DiagramObjectPoint.sequenceNumber](http://iec.ch/TC57/CIM100#DiagramObjectPoint.sequenceNumber) | 0..1 <br />  integer  | The sequence position of the point, used for defining the order of points for... | direct |
-| xPosition | [cim:DiagramObjectPoint.xPosition](http://iec.ch/TC57/CIM100#DiagramObjectPoint.xPosition) | 1..1 <br />  float  | The X coordinate of this point | direct |
-| yPosition | [cim:DiagramObjectPoint.yPosition](http://iec.ch/TC57/CIM100#DiagramObjectPoint.yPosition) | 1..1 <br />  float  | The Y coordinate of this point | direct |
+| xPosition | [cim:DiagramObjectPoint.xPosition](http://iec.ch/TC57/CIM100#DiagramObjectPoint.xPosition) | 1 <br />  float  | The X coordinate of this point | direct |
+| yPosition | [cim:DiagramObjectPoint.yPosition](http://iec.ch/TC57/CIM100#DiagramObjectPoint.yPosition) | 1 <br />  float  | The Y coordinate of this point | direct |
 | zPosition | [cim:DiagramObjectPoint.zPosition](http://iec.ch/TC57/CIM100#DiagramObjectPoint.zPosition) | 0..1 <br />  float  | The Z coordinate of this point | direct |
 
 

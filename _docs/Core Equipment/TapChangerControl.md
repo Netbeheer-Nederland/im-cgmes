@@ -16,7 +16,9 @@ _Describes behaviour specific to tap changers, e.g. how the voltage at the end o
 ```mermaid
  classDiagram
     class TapChangerControl
+    click TapChangerControl href "../TapChangerControl"
       RegulatingControl <|-- TapChangerControl
+        click RegulatingControl href "../RegulatingControl"
       
       TapChangerControl : IdentifiedObject.description
         
@@ -25,6 +27,7 @@ _Describes behaviour specific to tap changers, e.g. how the voltage at the end o
       TapChangerControl : RegulatingControl.mode
         
           TapChangerControl --> RegulatingControlModeKind : RegulatingControl.mode
+          click RegulatingControlModeKind href "../RegulatingControlModeKind"
         
       TapChangerControl : IdentifiedObject.mRID
         
@@ -33,20 +36,24 @@ _Describes behaviour specific to tap changers, e.g. how the voltage at the end o
       TapChangerControl : RegulatingControl.RegulatingCondEq
         
           TapChangerControl --> RegulatingCondEq : RegulatingControl.RegulatingCondEq
+          click RegulatingCondEq href "../RegulatingCondEq"
         
       TapChangerControl : RegulatingControl.RegulationSchedule
         
           TapChangerControl --> RegulationSchedule : RegulatingControl.RegulationSchedule
+          click RegulationSchedule href "../RegulationSchedule"
         
       TapChangerControl : IdentifiedObject.shortName
         
       TapChangerControl : TapChangerControl.TapChanger
         
           TapChangerControl --> TapChanger : TapChangerControl.TapChanger
+          click TapChanger href "../TapChanger"
         
       TapChangerControl : RegulatingControl.Terminal
         
           TapChangerControl --> Terminal : RegulatingControl.Terminal
+          click Terminal href "../Terminal"
         
       
 ```
@@ -69,14 +76,14 @@ _Describes behaviour specific to tap changers, e.g. how the voltage at the end o
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | TapChanger | [cim:TapChangerControl.TapChanger](http://iec.ch/TC57/CIM100#TapChangerControl.TapChanger) | 1..* <br />  [TapChanger](TapChanger.md)  | The tap changers that participates in this regulating tap control scheme | direct |
-| RegulationSchedule | [cim:RegulatingControl.RegulationSchedule](http://iec.ch/TC57/CIM100#RegulatingControl.RegulationSchedule) | 0..* <br />  [RegulationSchedule](RegulationSchedule.md)  | Schedule for this regulating control | [RegulatingControl](RegulatingControl.md) |
-| RegulatingCondEq | [cim:RegulatingControl.RegulatingCondEq](http://iec.ch/TC57/CIM100#RegulatingControl.RegulatingCondEq) | 0..* <br />  [RegulatingCondEq](RegulatingCondEq.md)  | The equipment that participates in this regulating control scheme | [RegulatingControl](RegulatingControl.md) |
-| mode | [cim:RegulatingControl.mode](http://iec.ch/TC57/CIM100#RegulatingControl.mode) | 1..1 <br />  [RegulatingControlModeKind](RegulatingControlModeKind.md)  | The regulating control mode presently available | [RegulatingControl](RegulatingControl.md) |
-| Terminal | [cim:RegulatingControl.Terminal](http://iec.ch/TC57/CIM100#RegulatingControl.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | The terminal associated with this regulating control | [RegulatingControl](RegulatingControl.md) |
+| RegulationSchedule | [cim:RegulatingControl.RegulationSchedule](http://iec.ch/TC57/CIM100#RegulatingControl.RegulationSchedule) | * <br />  [RegulationSchedule](RegulationSchedule.md)  | Schedule for this regulating control | [RegulatingControl](RegulatingControl.md) |
+| RegulatingCondEq | [cim:RegulatingControl.RegulatingCondEq](http://iec.ch/TC57/CIM100#RegulatingControl.RegulatingCondEq) | * <br />  [RegulatingCondEq](RegulatingCondEq.md)  | The equipment that participates in this regulating control scheme | [RegulatingControl](RegulatingControl.md) |
+| mode | [cim:RegulatingControl.mode](http://iec.ch/TC57/CIM100#RegulatingControl.mode) | 1 <br />  [RegulatingControlModeKind](RegulatingControlModeKind.md)  | The regulating control mode presently available | [RegulatingControl](RegulatingControl.md) |
+| Terminal | [cim:RegulatingControl.Terminal](http://iec.ch/TC57/CIM100#RegulatingControl.Terminal) | 1 <br />  [Terminal](Terminal.md)  | The terminal associated with this regulating control | [RegulatingControl](RegulatingControl.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

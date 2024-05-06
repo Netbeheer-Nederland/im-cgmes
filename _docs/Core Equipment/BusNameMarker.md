@@ -16,7 +16,9 @@ _Used to apply user standard names to TopologicalNodes. Associated with one or m
 ```mermaid
  classDiagram
     class BusNameMarker
+    click BusNameMarker href "../BusNameMarker"
       IdentifiedObject <|-- BusNameMarker
+        click IdentifiedObject href "../IdentifiedObject"
       
       BusNameMarker : IdentifiedObject.description
         
@@ -31,12 +33,14 @@ _Used to apply user standard names to TopologicalNodes. Associated with one or m
       BusNameMarker : BusNameMarker.ReportingGroup
         
           BusNameMarker --> ReportingGroup : BusNameMarker.ReportingGroup
+          click ReportingGroup href "../ReportingGroup"
         
       BusNameMarker : IdentifiedObject.shortName
         
       BusNameMarker : BusNameMarker.Terminal
         
           BusNameMarker --> ACDCTerminal : BusNameMarker.Terminal
+          click ACDCTerminal href "../ACDCTerminal"
         
       
 ```
@@ -61,8 +65,8 @@ _Used to apply user standard names to TopologicalNodes. Associated with one or m
 | ReportingGroup | [cim:BusNameMarker.ReportingGroup](http://iec.ch/TC57/CIM100#BusNameMarker.ReportingGroup) | 0..1 <br />  [ReportingGroup](ReportingGroup.md)  | The reporting group to which this bus name marker belongs | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

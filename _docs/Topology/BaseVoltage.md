@@ -16,9 +16,11 @@ _Defines a system base voltage which is referenced._
 ```mermaid
  classDiagram
     class BaseVoltage
+    click BaseVoltage href "../BaseVoltage"
       BaseVoltage : BaseVoltage.TopologicalNode
         
           BaseVoltage --> TopologicalNode : BaseVoltage.TopologicalNode
+          click TopologicalNode href "../TopologicalNode"
         
       
 ```
@@ -34,7 +36,7 @@ _Defines a system base voltage which is referenced._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| TopologicalNode | [cim:BaseVoltage.TopologicalNode](http://iec.ch/TC57/CIM100#BaseVoltage.TopologicalNode) | 0..* <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes at the base voltage | direct |
+| TopologicalNode | [cim:BaseVoltage.TopologicalNode](http://iec.ch/TC57/CIM100#BaseVoltage.TopologicalNode) | * <br />  [TopologicalNode](TopologicalNode.md)  | The topological nodes at the base voltage | direct |
 
 
 

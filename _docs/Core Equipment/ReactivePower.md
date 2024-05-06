@@ -16,13 +16,16 @@ _Product of RMS value of the voltage and the RMS value of the quadrature compone
 ```mermaid
  classDiagram
     class ReactivePower
+    click ReactivePower href "../ReactivePower"
       ReactivePower : ReactivePower.multiplier
         
           ReactivePower --> UnitMultiplier : ReactivePower.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       ReactivePower : ReactivePower.unit
         
           ReactivePower --> UnitSymbol : ReactivePower.unit
+          click UnitSymbol href "../UnitSymbol"
         
       ReactivePower : ReactivePower.value
         

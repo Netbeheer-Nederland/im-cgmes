@@ -16,9 +16,11 @@ _Mechanism for changing transformer winding tap positions._
 ```mermaid
  classDiagram
     class TapChanger
+    click TapChanger href "../TapChanger"
       TapChanger : TapChanger.SvTapStep
         
           TapChanger --> SvTapStep : TapChanger.SvTapStep
+          click SvTapStep href "../SvTapStep"
         
       
 ```

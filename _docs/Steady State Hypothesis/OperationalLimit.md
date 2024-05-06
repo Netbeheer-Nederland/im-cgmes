@@ -20,13 +20,19 @@ _If a particular piece of equipment has multiple operational limits of the same 
 ```mermaid
  classDiagram
     class OperationalLimit
+    click OperationalLimit href "../OperationalLimit"
       IdentifiedObject <|-- OperationalLimit
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       OperationalLimit <|-- ActivePowerLimit
+        click ActivePowerLimit href "../ActivePowerLimit"
       OperationalLimit <|-- ApparentPowerLimit
+        click ApparentPowerLimit href "../ApparentPowerLimit"
       OperationalLimit <|-- CurrentLimit
+        click CurrentLimit href "../CurrentLimit"
       OperationalLimit <|-- VoltageLimit
+        click VoltageLimit href "../VoltageLimit"
       
       
       OperationalLimit : IdentifiedObject.mRID
@@ -53,7 +59,7 @@ _If a particular piece of equipment has multiple operational limits of the same 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

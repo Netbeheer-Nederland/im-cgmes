@@ -30,10 +30,13 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
 ```mermaid
  classDiagram
     class RegulatingControl
+    click RegulatingControl href "../RegulatingControl"
       PowerSystemResource <|-- RegulatingControl
+        click PowerSystemResource href "../PowerSystemResource"
       
 
       RegulatingControl <|-- TapChangerControl
+        click TapChangerControl href "../TapChangerControl"
       
       
       RegulatingControl : IdentifiedObject.description
@@ -43,6 +46,7 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
       RegulatingControl : RegulatingControl.mode
         
           RegulatingControl --> RegulatingControlModeKind : RegulatingControl.mode
+          click RegulatingControlModeKind href "../RegulatingControlModeKind"
         
       RegulatingControl : IdentifiedObject.mRID
         
@@ -51,16 +55,19 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
       RegulatingControl : RegulatingControl.RegulatingCondEq
         
           RegulatingControl --> RegulatingCondEq : RegulatingControl.RegulatingCondEq
+          click RegulatingCondEq href "../RegulatingCondEq"
         
       RegulatingControl : RegulatingControl.RegulationSchedule
         
           RegulatingControl --> RegulationSchedule : RegulatingControl.RegulationSchedule
+          click RegulationSchedule href "../RegulationSchedule"
         
       RegulatingControl : IdentifiedObject.shortName
         
       RegulatingControl : RegulatingControl.Terminal
         
           RegulatingControl --> Terminal : RegulatingControl.Terminal
+          click Terminal href "../Terminal"
         
       
 ```
@@ -82,14 +89,14 @@ _The attributes minAllowedTargetValue and maxAllowedTargetValue are not related 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| RegulationSchedule | [cim:RegulatingControl.RegulationSchedule](http://iec.ch/TC57/CIM100#RegulatingControl.RegulationSchedule) | 0..* <br />  [RegulationSchedule](RegulationSchedule.md)  | Schedule for this regulating control | direct |
-| RegulatingCondEq | [cim:RegulatingControl.RegulatingCondEq](http://iec.ch/TC57/CIM100#RegulatingControl.RegulatingCondEq) | 0..* <br />  [RegulatingCondEq](RegulatingCondEq.md)  | The equipment that participates in this regulating control scheme | direct |
-| mode | [cim:RegulatingControl.mode](http://iec.ch/TC57/CIM100#RegulatingControl.mode) | 1..1 <br />  [RegulatingControlModeKind](RegulatingControlModeKind.md)  | The regulating control mode presently available | direct |
-| Terminal | [cim:RegulatingControl.Terminal](http://iec.ch/TC57/CIM100#RegulatingControl.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | The terminal associated with this regulating control | direct |
+| RegulationSchedule | [cim:RegulatingControl.RegulationSchedule](http://iec.ch/TC57/CIM100#RegulatingControl.RegulationSchedule) | * <br />  [RegulationSchedule](RegulationSchedule.md)  | Schedule for this regulating control | direct |
+| RegulatingCondEq | [cim:RegulatingControl.RegulatingCondEq](http://iec.ch/TC57/CIM100#RegulatingControl.RegulatingCondEq) | * <br />  [RegulatingCondEq](RegulatingCondEq.md)  | The equipment that participates in this regulating control scheme | direct |
+| mode | [cim:RegulatingControl.mode](http://iec.ch/TC57/CIM100#RegulatingControl.mode) | 1 <br />  [RegulatingControlModeKind](RegulatingControlModeKind.md)  | The regulating control mode presently available | direct |
+| Terminal | [cim:RegulatingControl.Terminal](http://iec.ch/TC57/CIM100#RegulatingControl.Terminal) | 1 <br />  [Terminal](Terminal.md)  | The terminal associated with this regulating control | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

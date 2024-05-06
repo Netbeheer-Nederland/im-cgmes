@@ -16,13 +16,16 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
 ```mermaid
  classDiagram
     class AsynchronousMachine
+    click AsynchronousMachine href "../AsynchronousMachine"
       RotatingMachine <|-- AsynchronousMachine
+        click RotatingMachine href "../RotatingMachine"
       
       AsynchronousMachine : Equipment.aggregate
         
       AsynchronousMachine : ConductingEquipment.BaseVoltage
         
           AsynchronousMachine --> BaseVoltage : ConductingEquipment.BaseVoltage
+          click BaseVoltage href "../BaseVoltage"
         
       AsynchronousMachine : IdentifiedObject.description
         
@@ -31,14 +34,17 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
       AsynchronousMachine : Equipment.EquipmentContainer
         
           AsynchronousMachine --> EquipmentContainer : Equipment.EquipmentContainer
+          click EquipmentContainer href "../EquipmentContainer"
         
       AsynchronousMachine : RotatingMachine.GeneratingUnit
         
           AsynchronousMachine --> GeneratingUnit : RotatingMachine.GeneratingUnit
+          click GeneratingUnit href "../GeneratingUnit"
         
       AsynchronousMachine : RotatingMachine.HydroPump
         
           AsynchronousMachine --> HydroPump : RotatingMachine.HydroPump
+          click HydroPump href "../HydroPump"
         
       AsynchronousMachine : IdentifiedObject.mRID
         
@@ -47,36 +53,43 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
       AsynchronousMachine : AsynchronousMachine.nominalFrequency
         
           AsynchronousMachine --> Frequency : AsynchronousMachine.nominalFrequency
+          click Frequency href "../Frequency"
         
       AsynchronousMachine : AsynchronousMachine.nominalSpeed
         
           AsynchronousMachine --> RotationSpeed : AsynchronousMachine.nominalSpeed
+          click RotationSpeed href "../RotationSpeed"
         
       AsynchronousMachine : Equipment.normallyInService
         
       AsynchronousMachine : Equipment.OperationalLimitSet
         
           AsynchronousMachine --> OperationalLimitSet : Equipment.OperationalLimitSet
+          click OperationalLimitSet href "../OperationalLimitSet"
         
       AsynchronousMachine : RotatingMachine.ratedPowerFactor
         
       AsynchronousMachine : RotatingMachine.ratedS
         
           AsynchronousMachine --> ApparentPower : RotatingMachine.ratedS
+          click ApparentPower href "../ApparentPower"
         
       AsynchronousMachine : RotatingMachine.ratedU
         
           AsynchronousMachine --> Voltage : RotatingMachine.ratedU
+          click Voltage href "../Voltage"
         
       AsynchronousMachine : RegulatingCondEq.RegulatingControl
         
           AsynchronousMachine --> RegulatingControl : RegulatingCondEq.RegulatingControl
+          click RegulatingControl href "../RegulatingControl"
         
       AsynchronousMachine : IdentifiedObject.shortName
         
       AsynchronousMachine : ConductingEquipment.Terminals
         
           AsynchronousMachine --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -111,15 +124,15 @@ _A rotating machine whose shaft rotates asynchronously with the electrical field
 | ratedU | [cim:RotatingMachine.ratedU](http://iec.ch/TC57/CIM100#RotatingMachine.ratedU) | 0..1 <br />  [Voltage](Voltage.md)  | Rated voltage (nameplate data, Ur in IEC 60909-0) | [RotatingMachine](RotatingMachine.md) |
 | RegulatingControl | [cim:RegulatingCondEq.RegulatingControl](http://iec.ch/TC57/CIM100#RegulatingCondEq.RegulatingControl) | 0..1 <br />  [RegulatingControl](RegulatingControl.md)  | The regulating control scheme in which this equipment participates | [RegulatingCondEq](RegulatingCondEq.md) |
 | BaseVoltage | [cim:ConductingEquipment.BaseVoltage](http://iec.ch/TC57/CIM100#ConductingEquipment.BaseVoltage) | 0..1 <br />  [BaseVoltage](BaseVoltage.md)  | Base voltage of this conducting equipment | [ConductingEquipment](ConductingEquipment.md) |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | aggregate | [cim:Equipment.aggregate](http://iec.ch/TC57/CIM100#Equipment.aggregate) | 0..1 <br />  boolean  | The aggregate flag provides an alternative way of representing an aggregated ... | [Equipment](Equipment.md) |
 | normallyInService | [cim:Equipment.normallyInService](http://iec.ch/TC57/CIM100#Equipment.normallyInService) | 0..1 <br />  boolean  | Specifies the availability of the equipment under normal operating conditions | [Equipment](Equipment.md) |
 | EquipmentContainer | [cim:Equipment.EquipmentContainer](http://iec.ch/TC57/CIM100#Equipment.EquipmentContainer) | 0..1 <br />  [EquipmentContainer](EquipmentContainer.md)  | Container of this equipment | [Equipment](Equipment.md) |
-| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | 0..* <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
+| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | * <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

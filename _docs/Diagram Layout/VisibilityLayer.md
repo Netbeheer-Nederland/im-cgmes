@@ -18,13 +18,16 @@ _CIM based graphics exchange supports an m:n relationship between diagram object
 ```mermaid
  classDiagram
     class VisibilityLayer
+    click VisibilityLayer href "../VisibilityLayer"
       IdentifiedObject <|-- VisibilityLayer
+        click IdentifiedObject href "../IdentifiedObject"
       
       VisibilityLayer : IdentifiedObject.description
         
       VisibilityLayer : IdentifiedObject.DiagramObjects
         
           VisibilityLayer --> DiagramObject : IdentifiedObject.DiagramObjects
+          click DiagramObject href "../DiagramObject"
         
       VisibilityLayer : VisibilityLayer.drawingOrder
         
@@ -35,6 +38,7 @@ _CIM based graphics exchange supports an m:n relationship between diagram object
       VisibilityLayer : VisibilityLayer.VisibleObjects
         
           VisibilityLayer --> DiagramObject : VisibilityLayer.VisibleObjects
+          click DiagramObject href "../DiagramObject"
         
       
 ```
@@ -56,9 +60,9 @@ _CIM based graphics exchange supports an m:n relationship between diagram object
 | ---  | --- | --- | --- | --- |
 | VisibleObjects | [cim:VisibilityLayer.VisibleObjects](http://iec.ch/TC57/CIM100#VisibilityLayer.VisibleObjects) | 1..* <br />  [DiagramObject](DiagramObject.md)  | A visibility layer can contain one or more diagram objects | direct |
 | drawingOrder | [cim:VisibilityLayer.drawingOrder](http://iec.ch/TC57/CIM100#VisibilityLayer.drawingOrder) | 0..1 <br />  integer  | The drawing order for this layer | direct |
-| DiagramObjects | [cim:IdentifiedObject.DiagramObjects](http://iec.ch/TC57/CIM100#IdentifiedObject.DiagramObjects) | 0..* <br />  [DiagramObject](DiagramObject.md)  | The diagram objects that are associated with the domain object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| DiagramObjects | [cim:IdentifiedObject.DiagramObjects](http://iec.ch/TC57/CIM100#IdentifiedObject.DiagramObjects) | * <br />  [DiagramObject](DiagramObject.md)  | The diagram objects that are associated with the domain object | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -16,13 +16,19 @@ _Discontinuous excitation control function block whose behaviour is described by
 ```mermaid
  classDiagram
     class DiscontinuousExcitationControlDynamics
+    click DiscontinuousExcitationControlDynamics href "../DiscontinuousExcitationControlDynamics"
       DynamicsFunctionBlock <|-- DiscontinuousExcitationControlDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       DiscontinuousExcitationControlDynamics <|-- DiscontinuousExcitationControlUserDefined
+        click DiscontinuousExcitationControlUserDefined href "../DiscontinuousExcitationControlUserDefined"
       DiscontinuousExcitationControlDynamics <|-- DiscExcContIEEEDEC1A
+        click DiscExcContIEEEDEC1A href "../DiscExcContIEEEDEC1A"
       DiscontinuousExcitationControlDynamics <|-- DiscExcContIEEEDEC2A
+        click DiscExcContIEEEDEC2A href "../DiscExcContIEEEDEC2A"
       DiscontinuousExcitationControlDynamics <|-- DiscExcContIEEEDEC3A
+        click DiscExcContIEEEDEC3A href "../DiscExcContIEEEDEC3A"
       
       
       DiscontinuousExcitationControlDynamics : IdentifiedObject.description
@@ -32,6 +38,7 @@ _Discontinuous excitation control function block whose behaviour is described by
       DiscontinuousExcitationControlDynamics : DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics
         
           DiscontinuousExcitationControlDynamics --> ExcitationSystemDynamics : DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       DiscontinuousExcitationControlDynamics : IdentifiedObject.mRID
         
@@ -40,6 +47,7 @@ _Discontinuous excitation control function block whose behaviour is described by
       DiscontinuousExcitationControlDynamics : DiscontinuousExcitationControlDynamics.RemoteInputSignal
         
           DiscontinuousExcitationControlDynamics --> RemoteInputSignal : DiscontinuousExcitationControlDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -65,10 +73,10 @@ _Discontinuous excitation control function block whose behaviour is described by
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:DiscontinuousExcitationControlDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#DiscontinuousExcitationControlDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this discontinuous excitation control system mode... | direct |
-| ExcitationSystemDynamics | [cim:DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this discontinuous excitation control mode... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#DiscontinuousExcitationControlDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this discontinuous excitation control mode... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -18,23 +18,28 @@ _This class does not inherit from IdentifiedObject since it is not intended that
 ```mermaid
  classDiagram
     class ProprietaryParameterDynamics
+    click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.AsynchronousMachineUserDefined
         
           ProprietaryParameterDynamics --> AsynchronousMachineUserDefined : ProprietaryParameterDynamics.AsynchronousMachineUserDefined
+          click AsynchronousMachineUserDefined href "../AsynchronousMachineUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.booleanParameterValue
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.CSCUserDefined
         
           ProprietaryParameterDynamics --> CSCUserDefined : ProprietaryParameterDynamics.CSCUserDefined
+          click CSCUserDefined href "../CSCUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.DiscontinuousExcitationControlUserDefined
         
           ProprietaryParameterDynamics --> DiscontinuousExcitationControlUserDefined : ProprietaryParameterDynamics.DiscontinuousExcitationControlUserDefined
+          click DiscontinuousExcitationControlUserDefined href "../DiscontinuousExcitationControlUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.ExcitationSystemUserDefined
         
           ProprietaryParameterDynamics --> ExcitationSystemUserDefined : ProprietaryParameterDynamics.ExcitationSystemUserDefined
+          click ExcitationSystemUserDefined href "../ExcitationSystemUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.floatParameterValue
         
@@ -43,72 +48,89 @@ _This class does not inherit from IdentifiedObject since it is not intended that
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.LoadUserDefined
         
           ProprietaryParameterDynamics --> LoadUserDefined : ProprietaryParameterDynamics.LoadUserDefined
+          click LoadUserDefined href "../LoadUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.MechanicalLoadUserDefined
         
           ProprietaryParameterDynamics --> MechanicalLoadUserDefined : ProprietaryParameterDynamics.MechanicalLoadUserDefined
+          click MechanicalLoadUserDefined href "../MechanicalLoadUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.OverexcitationLimiterUserDefined
         
           ProprietaryParameterDynamics --> OverexcitationLimiterUserDefined : ProprietaryParameterDynamics.OverexcitationLimiterUserDefined
+          click OverexcitationLimiterUserDefined href "../OverexcitationLimiterUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.parameterNumber
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.PFVArControllerType1UserDefined
         
           ProprietaryParameterDynamics --> PFVArControllerType1UserDefined : ProprietaryParameterDynamics.PFVArControllerType1UserDefined
+          click PFVArControllerType1UserDefined href "../PFVArControllerType1UserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.PFVArControllerType2UserDefined
         
           ProprietaryParameterDynamics --> PFVArControllerType2UserDefined : ProprietaryParameterDynamics.PFVArControllerType2UserDefined
+          click PFVArControllerType2UserDefined href "../PFVArControllerType2UserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.PowerSystemStabilizerUserDefined
         
           ProprietaryParameterDynamics --> PowerSystemStabilizerUserDefined : ProprietaryParameterDynamics.PowerSystemStabilizerUserDefined
+          click PowerSystemStabilizerUserDefined href "../PowerSystemStabilizerUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.SVCUserDefined
         
           ProprietaryParameterDynamics --> SVCUserDefined : ProprietaryParameterDynamics.SVCUserDefined
+          click SVCUserDefined href "../SVCUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.SynchronousMachineUserDefined
         
           ProprietaryParameterDynamics --> SynchronousMachineUserDefined : ProprietaryParameterDynamics.SynchronousMachineUserDefined
+          click SynchronousMachineUserDefined href "../SynchronousMachineUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.TurbineGovernorUserDefined
         
           ProprietaryParameterDynamics --> TurbineGovernorUserDefined : ProprietaryParameterDynamics.TurbineGovernorUserDefined
+          click TurbineGovernorUserDefined href "../TurbineGovernorUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.TurbineLoadControllerUserDefined
         
           ProprietaryParameterDynamics --> TurbineLoadControllerUserDefined : ProprietaryParameterDynamics.TurbineLoadControllerUserDefined
+          click TurbineLoadControllerUserDefined href "../TurbineLoadControllerUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.UnderexcitationLimiterUserDefined
         
           ProprietaryParameterDynamics --> UnderexcitationLimiterUserDefined : ProprietaryParameterDynamics.UnderexcitationLimiterUserDefined
+          click UnderexcitationLimiterUserDefined href "../UnderexcitationLimiterUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.VoltageAdjusterUserDefined
         
           ProprietaryParameterDynamics --> VoltageAdjusterUserDefined : ProprietaryParameterDynamics.VoltageAdjusterUserDefined
+          click VoltageAdjusterUserDefined href "../VoltageAdjusterUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.VoltageCompensatorUserDefined
         
           ProprietaryParameterDynamics --> VoltageCompensatorUserDefined : ProprietaryParameterDynamics.VoltageCompensatorUserDefined
+          click VoltageCompensatorUserDefined href "../VoltageCompensatorUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.VSCUserDefined
         
           ProprietaryParameterDynamics --> VSCUserDefined : ProprietaryParameterDynamics.VSCUserDefined
+          click VSCUserDefined href "../VSCUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.WindPlantUserDefined
         
           ProprietaryParameterDynamics --> WindPlantUserDefined : ProprietaryParameterDynamics.WindPlantUserDefined
+          click WindPlantUserDefined href "../WindPlantUserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.WindType1or2UserDefined
         
           ProprietaryParameterDynamics --> WindType1or2UserDefined : ProprietaryParameterDynamics.WindType1or2UserDefined
+          click WindType1or2UserDefined href "../WindType1or2UserDefined"
         
       ProprietaryParameterDynamics : ProprietaryParameterDynamics.WindType3or4UserDefined
         
           ProprietaryParameterDynamics --> WindType3or4UserDefined : ProprietaryParameterDynamics.WindType3or4UserDefined
+          click WindType3or4UserDefined href "../WindType3or4UserDefined"
         
       
 ```
@@ -145,7 +167,7 @@ _This class does not inherit from IdentifiedObject since it is not intended that
 | PFVArControllerType2UserDefined | [cim:ProprietaryParameterDynamics.PFVArControllerType2UserDefined](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.PFVArControllerType2UserDefined) | 0..1 <br />  [PFVArControllerType2UserDefined](PFVArControllerType2UserDefined.md)  | Proprietary user-defined model with which this parameter is associated | direct |
 | VoltageCompensatorUserDefined | [cim:ProprietaryParameterDynamics.VoltageCompensatorUserDefined](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.VoltageCompensatorUserDefined) | 0..1 <br />  [VoltageCompensatorUserDefined](VoltageCompensatorUserDefined.md)  | Proprietary user-defined model with which this parameter is associated | direct |
 | LoadUserDefined | [cim:ProprietaryParameterDynamics.LoadUserDefined](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.LoadUserDefined) | 0..1 <br />  [LoadUserDefined](LoadUserDefined.md)  | Proprietary user-defined model with which this parameter is associated | direct |
-| parameterNumber | [cim:ProprietaryParameterDynamics.parameterNumber](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.parameterNumber) | 1..1 <br />  integer  | Sequence number of the parameter among the set of parameters associated with ... | direct |
+| parameterNumber | [cim:ProprietaryParameterDynamics.parameterNumber](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.parameterNumber) | 1 <br />  integer  | Sequence number of the parameter among the set of parameters associated with ... | direct |
 | booleanParameterValue | [cim:ProprietaryParameterDynamics.booleanParameterValue](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.booleanParameterValue) | 0..1 <br />  boolean  | Boolean parameter value | direct |
 | integerParameterValue | [cim:ProprietaryParameterDynamics.integerParameterValue](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.integerParameterValue) | 0..1 <br />  integer  | Integer parameter value | direct |
 | floatParameterValue | [cim:ProprietaryParameterDynamics.floatParameterValue](http://iec.ch/TC57/CIM100#ProprietaryParameterDynamics.floatParameterValue) | 0..1 <br />  float  | Floating point parameter value | direct |

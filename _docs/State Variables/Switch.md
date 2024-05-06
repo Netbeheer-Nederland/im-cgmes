@@ -16,15 +16,19 @@ _A generic device designed to close, or open, or both, one or more electric circ
 ```mermaid
  classDiagram
     class Switch
+    click Switch href "../Switch"
       ConductingEquipment <|-- Switch
+        click ConductingEquipment href "../ConductingEquipment"
       
       Switch : ConductingEquipment.SvStatus
         
           Switch --> SvStatus : ConductingEquipment.SvStatus
+          click SvStatus href "../SvStatus"
         
       Switch : Switch.SvSwitch
         
           Switch --> SvSwitch : Switch.SvSwitch
+          click SvSwitch href "../SvSwitch"
         
       
 ```
@@ -44,7 +48,7 @@ _A generic device designed to close, or open, or both, one or more electric circ
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| SvSwitch | [cim:Switch.SvSwitch](http://iec.ch/TC57/CIM100#Switch.SvSwitch) | 0..* <br />  [SvSwitch](SvSwitch.md)  | The switch state associated with the switch | direct |
+| SvSwitch | [cim:Switch.SvSwitch](http://iec.ch/TC57/CIM100#Switch.SvSwitch) | * <br />  [SvSwitch](SvSwitch.md)  | The switch state associated with the switch | direct |
 | SvStatus | [cim:ConductingEquipment.SvStatus](http://iec.ch/TC57/CIM100#ConductingEquipment.SvStatus) | 0..1 <br />  [SvStatus](SvStatus.md)  | The status state variable associated with this conducting equipment | [ConductingEquipment](ConductingEquipment.md) |
 
 

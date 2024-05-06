@@ -16,11 +16,17 @@ _This is a root class to provide common identification for all classes needing i
 ```mermaid
  classDiagram
     class IdentifiedObject
+    click IdentifiedObject href "../IdentifiedObject"
       IdentifiedObject <|-- ACDCTerminal
+        click ACDCTerminal href "../ACDCTerminal"
       IdentifiedObject <|-- DCNode
+        click DCNode href "../DCNode"
       IdentifiedObject <|-- DCTopologicalNode
+        click DCTopologicalNode href "../DCTopologicalNode"
       IdentifiedObject <|-- TopologicalNode
+        click TopologicalNode href "../TopologicalNode"
       IdentifiedObject <|-- ReportingGroup
+        click ReportingGroup href "../ReportingGroup"
       
       IdentifiedObject : IdentifiedObject.description
         
@@ -56,7 +62,7 @@ _This is a root class to provide common identification for all classes needing i
 | ---  | --- | --- | --- | --- |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | direct |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | direct |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | direct |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | direct |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | direct |
 

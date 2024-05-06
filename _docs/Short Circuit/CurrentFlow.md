@@ -16,13 +16,16 @@ _Electrical current with sign convention: positive flow is out of the conducting
 ```mermaid
  classDiagram
     class CurrentFlow
+    click CurrentFlow href "../CurrentFlow"
       CurrentFlow : CurrentFlow.multiplier
         
           CurrentFlow --> UnitMultiplier : CurrentFlow.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       CurrentFlow : CurrentFlow.unit
         
           CurrentFlow --> UnitSymbol : CurrentFlow.unit
+          click UnitSymbol href "../UnitSymbol"
         
       CurrentFlow : CurrentFlow.value
         

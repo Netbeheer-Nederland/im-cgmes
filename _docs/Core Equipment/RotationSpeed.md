@@ -16,13 +16,16 @@ _Number of revolutions per second._
 ```mermaid
  classDiagram
     class RotationSpeed
+    click RotationSpeed href "../RotationSpeed"
       RotationSpeed : RotationSpeed.multiplier
         
           RotationSpeed --> UnitMultiplier : RotationSpeed.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       RotationSpeed : RotationSpeed.unit
         
           RotationSpeed --> UnitSymbol : RotationSpeed.unit
+          click UnitSymbol href "../UnitSymbol"
         
       RotationSpeed : RotationSpeed.value
         

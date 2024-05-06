@@ -16,11 +16,14 @@ _Defines the structure (in terms of location and direction) of the net interchan
 ```mermaid
  classDiagram
     class TieFlow
+    click TieFlow href "../TieFlow"
       IdentifiedObject <|-- TieFlow
+        click IdentifiedObject href "../IdentifiedObject"
       
       TieFlow : TieFlow.ControlArea
         
           TieFlow --> ControlArea : TieFlow.ControlArea
+          click ControlArea href "../ControlArea"
         
       TieFlow : IdentifiedObject.description
         
@@ -37,6 +40,7 @@ _Defines the structure (in terms of location and direction) of the net interchan
       TieFlow : TieFlow.Terminal
         
           TieFlow --> Terminal : TieFlow.Terminal
+          click Terminal href "../Terminal"
         
       
 ```
@@ -56,13 +60,13 @@ _Defines the structure (in terms of location and direction) of the net interchan
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ControlArea | [cim:TieFlow.ControlArea](http://iec.ch/TC57/CIM100#TieFlow.ControlArea) | 1..1 <br />  [ControlArea](ControlArea.md)  | The control area of the tie flows | direct |
-| Terminal | [cim:TieFlow.Terminal](http://iec.ch/TC57/CIM100#TieFlow.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | The terminal to which this tie flow belongs | direct |
-| positiveFlowIn | [cim:TieFlow.positiveFlowIn](http://iec.ch/TC57/CIM100#TieFlow.positiveFlowIn) | 1..1 <br />  boolean  | Specifies the sign of the tie flow associated with a control area | direct |
+| ControlArea | [cim:TieFlow.ControlArea](http://iec.ch/TC57/CIM100#TieFlow.ControlArea) | 1 <br />  [ControlArea](ControlArea.md)  | The control area of the tie flows | direct |
+| Terminal | [cim:TieFlow.Terminal](http://iec.ch/TC57/CIM100#TieFlow.Terminal) | 1 <br />  [Terminal](Terminal.md)  | The terminal to which this tie flow belongs | direct |
+| positiveFlowIn | [cim:TieFlow.positiveFlowIn](http://iec.ch/TC57/CIM100#TieFlow.positiveFlowIn) | 1 <br />  boolean  | Specifies the sign of the tie flow associated with a control area | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

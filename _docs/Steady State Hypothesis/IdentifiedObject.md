@@ -16,9 +16,13 @@ _This is a root class to provide common identification for all classes needing i
 ```mermaid
  classDiagram
     class IdentifiedObject
+    click IdentifiedObject href "../IdentifiedObject"
       IdentifiedObject <|-- ACDCTerminal
+        click ACDCTerminal href "../ACDCTerminal"
       IdentifiedObject <|-- OperationalLimit
+        click OperationalLimit href "../OperationalLimit"
       IdentifiedObject <|-- PowerSystemResource
+        click PowerSystemResource href "../PowerSystemResource"
       
       IdentifiedObject : IdentifiedObject.mRID
         
@@ -42,7 +46,7 @@ _This is a root class to provide common identification for all classes needing i
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | direct |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | direct |
 
 
 

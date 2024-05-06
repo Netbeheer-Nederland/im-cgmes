@@ -16,66 +16,125 @@ _Excitation system function block whose behaviour is described by reference to a
 ```mermaid
  classDiagram
     class ExcitationSystemDynamics
+    click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
       DynamicsFunctionBlock <|-- ExcitationSystemDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       ExcitationSystemDynamics <|-- ExcitationSystemUserDefined
+        click ExcitationSystemUserDefined href "../ExcitationSystemUserDefined"
       ExcitationSystemDynamics <|-- ExcIEEEAC1A
+        click ExcIEEEAC1A href "../ExcIEEEAC1A"
       ExcitationSystemDynamics <|-- ExcIEEEAC2A
+        click ExcIEEEAC2A href "../ExcIEEEAC2A"
       ExcitationSystemDynamics <|-- ExcIEEEAC3A
+        click ExcIEEEAC3A href "../ExcIEEEAC3A"
       ExcitationSystemDynamics <|-- ExcIEEEAC4A
+        click ExcIEEEAC4A href "../ExcIEEEAC4A"
       ExcitationSystemDynamics <|-- ExcIEEEAC5A
+        click ExcIEEEAC5A href "../ExcIEEEAC5A"
       ExcitationSystemDynamics <|-- ExcIEEEAC6A
+        click ExcIEEEAC6A href "../ExcIEEEAC6A"
       ExcitationSystemDynamics <|-- ExcIEEEAC7B
+        click ExcIEEEAC7B href "../ExcIEEEAC7B"
       ExcitationSystemDynamics <|-- ExcIEEEAC8B
+        click ExcIEEEAC8B href "../ExcIEEEAC8B"
       ExcitationSystemDynamics <|-- ExcIEEEDC1A
+        click ExcIEEEDC1A href "../ExcIEEEDC1A"
       ExcitationSystemDynamics <|-- ExcIEEEDC2A
+        click ExcIEEEDC2A href "../ExcIEEEDC2A"
       ExcitationSystemDynamics <|-- ExcIEEEDC3A
+        click ExcIEEEDC3A href "../ExcIEEEDC3A"
       ExcitationSystemDynamics <|-- ExcIEEEDC4B
+        click ExcIEEEDC4B href "../ExcIEEEDC4B"
       ExcitationSystemDynamics <|-- ExcIEEEST1A
+        click ExcIEEEST1A href "../ExcIEEEST1A"
       ExcitationSystemDynamics <|-- ExcIEEEST2A
+        click ExcIEEEST2A href "../ExcIEEEST2A"
       ExcitationSystemDynamics <|-- ExcIEEEST3A
+        click ExcIEEEST3A href "../ExcIEEEST3A"
       ExcitationSystemDynamics <|-- ExcIEEEST4B
+        click ExcIEEEST4B href "../ExcIEEEST4B"
       ExcitationSystemDynamics <|-- ExcIEEEST5B
+        click ExcIEEEST5B href "../ExcIEEEST5B"
       ExcitationSystemDynamics <|-- ExcIEEEST6B
+        click ExcIEEEST6B href "../ExcIEEEST6B"
       ExcitationSystemDynamics <|-- ExcIEEEST7B
+        click ExcIEEEST7B href "../ExcIEEEST7B"
       ExcitationSystemDynamics <|-- ExcAC1A
+        click ExcAC1A href "../ExcAC1A"
       ExcitationSystemDynamics <|-- ExcAC2A
+        click ExcAC2A href "../ExcAC2A"
       ExcitationSystemDynamics <|-- ExcAC3A
+        click ExcAC3A href "../ExcAC3A"
       ExcitationSystemDynamics <|-- ExcAC4A
+        click ExcAC4A href "../ExcAC4A"
       ExcitationSystemDynamics <|-- ExcAC5A
+        click ExcAC5A href "../ExcAC5A"
       ExcitationSystemDynamics <|-- ExcAC6A
+        click ExcAC6A href "../ExcAC6A"
       ExcitationSystemDynamics <|-- ExcAC8B
+        click ExcAC8B href "../ExcAC8B"
       ExcitationSystemDynamics <|-- ExcANS
+        click ExcANS href "../ExcANS"
       ExcitationSystemDynamics <|-- ExcAVR1
+        click ExcAVR1 href "../ExcAVR1"
       ExcitationSystemDynamics <|-- ExcAVR2
+        click ExcAVR2 href "../ExcAVR2"
       ExcitationSystemDynamics <|-- ExcAVR3
+        click ExcAVR3 href "../ExcAVR3"
       ExcitationSystemDynamics <|-- ExcAVR4
+        click ExcAVR4 href "../ExcAVR4"
       ExcitationSystemDynamics <|-- ExcAVR5
+        click ExcAVR5 href "../ExcAVR5"
       ExcitationSystemDynamics <|-- ExcAVR7
+        click ExcAVR7 href "../ExcAVR7"
       ExcitationSystemDynamics <|-- ExcBBC
+        click ExcBBC href "../ExcBBC"
       ExcitationSystemDynamics <|-- ExcCZ
+        click ExcCZ href "../ExcCZ"
       ExcitationSystemDynamics <|-- ExcDC1A
+        click ExcDC1A href "../ExcDC1A"
       ExcitationSystemDynamics <|-- ExcDC2A
+        click ExcDC2A href "../ExcDC2A"
       ExcitationSystemDynamics <|-- ExcDC3A
+        click ExcDC3A href "../ExcDC3A"
       ExcitationSystemDynamics <|-- ExcDC3A1
+        click ExcDC3A1 href "../ExcDC3A1"
       ExcitationSystemDynamics <|-- ExcELIN1
+        click ExcELIN1 href "../ExcELIN1"
       ExcitationSystemDynamics <|-- ExcELIN2
+        click ExcELIN2 href "../ExcELIN2"
       ExcitationSystemDynamics <|-- ExcHU
+        click ExcHU href "../ExcHU"
       ExcitationSystemDynamics <|-- ExcNI
+        click ExcNI href "../ExcNI"
       ExcitationSystemDynamics <|-- ExcOEX3T
+        click ExcOEX3T href "../ExcOEX3T"
       ExcitationSystemDynamics <|-- ExcPIC
+        click ExcPIC href "../ExcPIC"
       ExcitationSystemDynamics <|-- ExcREXS
+        click ExcREXS href "../ExcREXS"
       ExcitationSystemDynamics <|-- ExcRQB
+        click ExcRQB href "../ExcRQB"
       ExcitationSystemDynamics <|-- ExcSCRX
+        click ExcSCRX href "../ExcSCRX"
       ExcitationSystemDynamics <|-- ExcSEXS
+        click ExcSEXS href "../ExcSEXS"
       ExcitationSystemDynamics <|-- ExcSK
+        click ExcSK href "../ExcSK"
       ExcitationSystemDynamics <|-- ExcST1A
+        click ExcST1A href "../ExcST1A"
       ExcitationSystemDynamics <|-- ExcST2A
+        click ExcST2A href "../ExcST2A"
       ExcitationSystemDynamics <|-- ExcST3A
+        click ExcST3A href "../ExcST3A"
       ExcitationSystemDynamics <|-- ExcST4B
+        click ExcST4B href "../ExcST4B"
       ExcitationSystemDynamics <|-- ExcST6B
+        click ExcST6B href "../ExcST6B"
       ExcitationSystemDynamics <|-- ExcST7B
+        click ExcST7B href "../ExcST7B"
       
       
       ExcitationSystemDynamics : IdentifiedObject.description
@@ -83,6 +142,7 @@ _Excitation system function block whose behaviour is described by reference to a
       ExcitationSystemDynamics : ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics
         
           ExcitationSystemDynamics --> DiscontinuousExcitationControlDynamics : ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics
+          click DiscontinuousExcitationControlDynamics href "../DiscontinuousExcitationControlDynamics"
         
       ExcitationSystemDynamics : DynamicsFunctionBlock.enabled
         
@@ -93,30 +153,37 @@ _Excitation system function block whose behaviour is described by reference to a
       ExcitationSystemDynamics : ExcitationSystemDynamics.OverexcitationLimiterDynamics
         
           ExcitationSystemDynamics --> OverexcitationLimiterDynamics : ExcitationSystemDynamics.OverexcitationLimiterDynamics
+          click OverexcitationLimiterDynamics href "../OverexcitationLimiterDynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.PFVArControllerType1Dynamics
         
           ExcitationSystemDynamics --> PFVArControllerType1Dynamics : ExcitationSystemDynamics.PFVArControllerType1Dynamics
+          click PFVArControllerType1Dynamics href "../PFVArControllerType1Dynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.PFVArControllerType2Dynamics
         
           ExcitationSystemDynamics --> PFVArControllerType2Dynamics : ExcitationSystemDynamics.PFVArControllerType2Dynamics
+          click PFVArControllerType2Dynamics href "../PFVArControllerType2Dynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.PowerSystemStabilizerDynamics
         
           ExcitationSystemDynamics --> PowerSystemStabilizerDynamics : ExcitationSystemDynamics.PowerSystemStabilizerDynamics
+          click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.SynchronousMachineDynamics
         
           ExcitationSystemDynamics --> SynchronousMachineDynamics : ExcitationSystemDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.UnderexcitationLimiterDynamics
         
           ExcitationSystemDynamics --> UnderexcitationLimiterDynamics : ExcitationSystemDynamics.UnderexcitationLimiterDynamics
+          click UnderexcitationLimiterDynamics href "../UnderexcitationLimiterDynamics"
         
       ExcitationSystemDynamics : ExcitationSystemDynamics.VoltageCompensatorDynamics
         
           ExcitationSystemDynamics --> VoltageCompensatorDynamics : ExcitationSystemDynamics.VoltageCompensatorDynamics
+          click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
         
       
 ```
@@ -194,17 +261,17 @@ _Excitation system function block whose behaviour is described by reference to a
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| SynchronousMachineDynamics | [cim:ExcitationSystemDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.SynchronousMachineDynamics) | 1..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this excitation system model is associat... | direct |
-| VoltageCompensatorDynamics | [cim:ExcitationSystemDynamics.VoltageCompensatorDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.VoltageCompensatorDynamics) | 1..1 <br />  [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md)  | Voltage compensator model associated with this excitation system model | direct |
+| SynchronousMachineDynamics | [cim:ExcitationSystemDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.SynchronousMachineDynamics) | 1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this excitation system model is associat... | direct |
+| VoltageCompensatorDynamics | [cim:ExcitationSystemDynamics.VoltageCompensatorDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.VoltageCompensatorDynamics) | 1 <br />  [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md)  | Voltage compensator model associated with this excitation system model | direct |
 | OverexcitationLimiterDynamics | [cim:ExcitationSystemDynamics.OverexcitationLimiterDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.OverexcitationLimiterDynamics) | 0..1 <br />  [OverexcitationLimiterDynamics](OverexcitationLimiterDynamics.md)  | Overexcitation limiter model associated with this excitation system model | direct |
 | PFVArControllerType2Dynamics | [cim:ExcitationSystemDynamics.PFVArControllerType2Dynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PFVArControllerType2Dynamics) | 0..1 <br />  [PFVArControllerType2Dynamics](PFVArControllerType2Dynamics.md)  | Power factor or VAr controller type 2 model associated with this excitation s... | direct |
 | DiscontinuousExcitationControlDynamics | [cim:ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics) | 0..1 <br />  [DiscontinuousExcitationControlDynamics](DiscontinuousExcitationControlDynamics.md)  | Discontinuous excitation control model associated with this excitation system... | direct |
 | PowerSystemStabilizerDynamics | [cim:ExcitationSystemDynamics.PowerSystemStabilizerDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PowerSystemStabilizerDynamics) | 0..1 <br />  [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md)  | Power system stabilizer model associated with this excitation system model | direct |
 | UnderexcitationLimiterDynamics | [cim:ExcitationSystemDynamics.UnderexcitationLimiterDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.UnderexcitationLimiterDynamics) | 0..1 <br />  [UnderexcitationLimiterDynamics](UnderexcitationLimiterDynamics.md)  | Undrexcitation limiter model associated with this excitation system model | direct |
 | PFVArControllerType1Dynamics | [cim:ExcitationSystemDynamics.PFVArControllerType1Dynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PFVArControllerType1Dynamics) | 0..1 <br />  [PFVArControllerType1Dynamics](PFVArControllerType1Dynamics.md)  | Power factor or VAr controller type 1 model associated with this excitation s... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

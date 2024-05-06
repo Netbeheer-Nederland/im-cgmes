@@ -16,7 +16,9 @@ _Defines a system base voltage which is referenced._
 ```mermaid
  classDiagram
     class BaseVoltage
+    click BaseVoltage href "../BaseVoltage"
       IdentifiedObject <|-- BaseVoltage
+        click IdentifiedObject href "../IdentifiedObject"
       
       BaseVoltage : IdentifiedObject.description
         
@@ -29,12 +31,14 @@ _Defines a system base voltage which is referenced._
       BaseVoltage : BaseVoltage.nominalVoltage
         
           BaseVoltage --> Voltage : BaseVoltage.nominalVoltage
+          click Voltage href "../Voltage"
         
       BaseVoltage : IdentifiedObject.shortName
         
       BaseVoltage : BaseVoltage.VoltageLevel
         
           BaseVoltage --> VoltageLevel : BaseVoltage.VoltageLevel
+          click VoltageLevel href "../VoltageLevel"
         
       
 ```
@@ -54,12 +58,12 @@ _Defines a system base voltage which is referenced._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| nominalVoltage | [cim:BaseVoltage.nominalVoltage](http://iec.ch/TC57/CIM100#BaseVoltage.nominalVoltage) | 1..1 <br />  [Voltage](Voltage.md)  | The power system resource's base voltage | direct |
-| VoltageLevel | [cim:BaseVoltage.VoltageLevel](http://iec.ch/TC57/CIM100#BaseVoltage.VoltageLevel) | 0..* <br />  [VoltageLevel](VoltageLevel.md)  | The voltage levels having this base voltage | direct |
+| nominalVoltage | [cim:BaseVoltage.nominalVoltage](http://iec.ch/TC57/CIM100#BaseVoltage.nominalVoltage) | 1 <br />  [Voltage](Voltage.md)  | The power system resource's base voltage | direct |
+| VoltageLevel | [cim:BaseVoltage.VoltageLevel](http://iec.ch/TC57/CIM100#BaseVoltage.VoltageLevel) | * <br />  [VoltageLevel](VoltageLevel.md)  | The voltage levels having this base voltage | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

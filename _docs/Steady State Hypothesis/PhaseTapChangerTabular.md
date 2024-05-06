@@ -16,7 +16,9 @@ _Describes a tap changer with a table defining the relation between the tap step
 ```mermaid
  classDiagram
     class PhaseTapChangerTabular
+    click PhaseTapChangerTabular href "../PhaseTapChangerTabular"
       PhaseTapChanger <|-- PhaseTapChangerTabular
+        click PhaseTapChanger href "../PhaseTapChanger"
       
       PhaseTapChangerTabular : TapChanger.controlEnabled
         
@@ -45,9 +47,9 @@ _Describes a tap changer with a table defining the relation between the tap step
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1..1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
-| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1..1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| controlEnabled | [cim:TapChanger.controlEnabled](http://iec.ch/TC57/CIM100#TapChanger.controlEnabled) | 1 <br />  boolean  | Specifies the regulation status of the equipment | [TapChanger](TapChanger.md) |
+| step | [cim:TapChanger.step](http://iec.ch/TC57/CIM100#TapChanger.step) | 1 <br />  float  | Tap changer position | [TapChanger](TapChanger.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

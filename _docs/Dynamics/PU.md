@@ -16,13 +16,16 @@ _Per Unit - a positive or negative value referred to a defined base. Values typi
 ```mermaid
  classDiagram
     class PU
+    click PU href "../PU"
       PU : PU.multiplier
         
           PU --> UnitMultiplier : PU.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       PU : PU.unit
         
           PU --> UnitSymbol : PU.unit
+          click UnitSymbol href "../UnitSymbol"
         
       PU : PU.value
         

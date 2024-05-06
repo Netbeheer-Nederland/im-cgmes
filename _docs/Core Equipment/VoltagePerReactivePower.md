@@ -16,13 +16,16 @@ _Voltage variation with reactive power._
 ```mermaid
  classDiagram
     class VoltagePerReactivePower
+    click VoltagePerReactivePower href "../VoltagePerReactivePower"
       VoltagePerReactivePower : VoltagePerReactivePower.multiplier
         
           VoltagePerReactivePower --> UnitMultiplier : VoltagePerReactivePower.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       VoltagePerReactivePower : VoltagePerReactivePower.unit
         
           VoltagePerReactivePower --> UnitSymbol : VoltagePerReactivePower.unit
+          click UnitSymbol href "../UnitSymbol"
         
       VoltagePerReactivePower : VoltagePerReactivePower.value
         

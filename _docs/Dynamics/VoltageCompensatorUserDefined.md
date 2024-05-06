@@ -16,7 +16,9 @@ _Voltage compensator function block whose dynamic behaviour is described by <fon
 ```mermaid
  classDiagram
     class VoltageCompensatorUserDefined
+    click VoltageCompensatorUserDefined href "../VoltageCompensatorUserDefined"
       VoltageCompensatorDynamics <|-- VoltageCompensatorUserDefined
+        click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
       
       VoltageCompensatorUserDefined : IdentifiedObject.description
         
@@ -25,6 +27,7 @@ _Voltage compensator function block whose dynamic behaviour is described by <fon
       VoltageCompensatorUserDefined : VoltageCompensatorDynamics.ExcitationSystemDynamics
         
           VoltageCompensatorUserDefined --> ExcitationSystemDynamics : VoltageCompensatorDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       VoltageCompensatorUserDefined : IdentifiedObject.mRID
         
@@ -35,10 +38,12 @@ _Voltage compensator function block whose dynamic behaviour is described by <fon
       VoltageCompensatorUserDefined : VoltageCompensatorUserDefined.ProprietaryParameterDynamics
         
           VoltageCompensatorUserDefined --> ProprietaryParameterDynamics : VoltageCompensatorUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       VoltageCompensatorUserDefined : VoltageCompensatorDynamics.RemoteInputSignal
         
           VoltageCompensatorUserDefined --> RemoteInputSignal : VoltageCompensatorDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -60,13 +65,13 @@ _Voltage compensator function block whose dynamic behaviour is described by <fon
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:VoltageCompensatorUserDefined.proprietary](http://iec.ch/TC57/CIM100#VoltageCompensatorUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:VoltageCompensatorUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| proprietary | [cim:VoltageCompensatorUserDefined.proprietary](http://iec.ch/TC57/CIM100#VoltageCompensatorUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:VoltageCompensatorUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
 | RemoteInputSignal | [cim:VoltageCompensatorDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this voltage compensator model | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
-| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

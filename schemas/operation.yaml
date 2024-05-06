@@ -29,13 +29,13 @@ classes:
   Accumulator:
     class_uri: cim:Accumulator
     attributes:
-      accumulator_values:
+      AccumulatorValues:
         slot_uri: cim:Accumulator.AccumulatorValues
         range: AccumulatorValue
         multivalued: true
         required: false
         description: The values connected to this measurement.
-      limit_sets:
+      LimitSets:
         slot_uri: cim:Accumulator.LimitSets
         range: AccumulatorLimitSet
         multivalued: true
@@ -54,7 +54,7 @@ classes:
         multivalued: false
         required: true
         description: The value to supervise against. The value is positive.
-      limit_set:
+      LimitSet:
         slot_uri: cim:AccumulatorLimit.LimitSet
         range: AccumulatorLimitSet
         multivalued: false
@@ -65,13 +65,13 @@ classes:
   AccumulatorLimitSet:
     class_uri: cim:AccumulatorLimitSet
     attributes:
-      measurements:
+      Measurements:
         slot_uri: cim:AccumulatorLimitSet.Measurements
         range: Accumulator
         multivalued: true
         required: true
         description: The Measurements using the LimitSet.
-      limits:
+      Limits:
         slot_uri: cim:AccumulatorLimitSet.Limits
         range: AccumulatorLimit
         multivalued: true
@@ -83,7 +83,7 @@ classes:
   AccumulatorReset:
     class_uri: cim:AccumulatorReset
     attributes:
-      accumulator_value:
+      AccumulatorValue:
         slot_uri: cim:AccumulatorReset.AccumulatorValue
         range: AccumulatorValue
         multivalued: false
@@ -94,13 +94,13 @@ classes:
   AccumulatorValue:
     class_uri: cim:AccumulatorValue
     attributes:
-      accumulator:
+      Accumulator:
         slot_uri: cim:AccumulatorValue.Accumulator
         range: Accumulator
         multivalued: false
         required: true
         description: Measurement to which this value is connected.
-      accumulator_reset:
+      AccumulatorReset:
         slot_uri: cim:AccumulatorValue.AccumulatorReset
         range: AccumulatorReset
         multivalued: false
@@ -111,7 +111,7 @@ classes:
   ACDCTerminal:
     class_uri: cim:ACDCTerminal
     attributes:
-      measurements:
+      Measurements:
         slot_uri: cim:ACDCTerminal.Measurements
         range: Measurement
         multivalued: true
@@ -128,7 +128,7 @@ classes:
   Analog:
     class_uri: cim:Analog
     attributes:
-      positive_flow_in:
+      positiveFlowIn:
         slot_uri: cim:Analog.positiveFlowIn
         range: boolean
         multivalued: false
@@ -136,13 +136,13 @@ classes:
         description: If true then this measurement is an active power, reactive power
           or current with the convention that a positive value measured at the Terminal
           means power is flowing into the related PowerSystemResource.
-      analog_values:
+      AnalogValues:
         slot_uri: cim:Analog.AnalogValues
         range: AnalogValue
         multivalued: true
         required: false
         description: The values connected to this measurement.
-      limit_sets:
+      LimitSets:
         slot_uri: cim:Analog.LimitSets
         range: AnalogLimitSet
         multivalued: true
@@ -154,21 +154,21 @@ classes:
   AnalogControl:
     class_uri: cim:AnalogControl
     attributes:
-      max_value:
+      maxValue:
         slot_uri: cim:AnalogControl.maxValue
         range: float
         multivalued: false
         required: true
         description: Normal value range maximum for any of the Control.value. Used
           for scaling, e.g. in bar graphs.
-      min_value:
+      minValue:
         slot_uri: cim:AnalogControl.minValue
         range: float
         multivalued: false
         required: true
         description: Normal value range minimum for any of the Control.value. Used
           for scaling, e.g. in bar graphs.
-      analog_value:
+      AnalogValue:
         slot_uri: cim:AnalogControl.AnalogValue
         range: AnalogValue
         multivalued: false
@@ -185,7 +185,7 @@ classes:
         multivalued: false
         required: true
         description: The value to supervise against.
-      limit_set:
+      LimitSet:
         slot_uri: cim:AnalogLimit.LimitSet
         range: AnalogLimitSet
         multivalued: false
@@ -196,13 +196,13 @@ classes:
   AnalogLimitSet:
     class_uri: cim:AnalogLimitSet
     attributes:
-      measurements:
+      Measurements:
         slot_uri: cim:AnalogLimitSet.Measurements
         range: Analog
         multivalued: true
         required: true
         description: The Measurements using the LimitSet.
-      limits:
+      Limits:
         slot_uri: cim:AnalogLimitSet.Limits
         range: AnalogLimit
         multivalued: true
@@ -214,13 +214,13 @@ classes:
   AnalogValue:
     class_uri: cim:AnalogValue
     attributes:
-      analog:
+      Analog:
         slot_uri: cim:AnalogValue.Analog
         range: Analog
         multivalued: false
         required: true
         description: Measurement to which this value is connected.
-      analog_control:
+      AnalogControl:
         slot_uri: cim:AnalogValue.AnalogControl
         range: AnalogControl
         multivalued: false
@@ -231,7 +231,7 @@ classes:
   Command:
     class_uri: cim:Command
     attributes:
-      normal_value:
+      normalValue:
         slot_uri: cim:Command.normalValue
         range: integer
         multivalued: false
@@ -243,14 +243,14 @@ classes:
         multivalued: false
         required: true
         description: The value representing the actuator output.
-      value_alias_set:
+      ValueAliasSet:
         slot_uri: cim:Command.ValueAliasSet
         range: ValueAliasSet
         multivalued: false
         required: false
         description: The ValueAliasSet used for translation of a Control value to
           a name.
-      discrete_value:
+      DiscreteValue:
         slot_uri: cim:Command.DiscreteValue
         range: DiscreteValue
         multivalued: false
@@ -261,7 +261,7 @@ classes:
   Control:
     class_uri: cim:Control
     attributes:
-      control_type:
+      controlType:
         slot_uri: cim:Control.controlType
         range: string
         multivalued: false
@@ -269,32 +269,32 @@ classes:
         description: Specifies the type of Control. For example, this specifies if
           the Control represents BreakerOpen, BreakerClose, GeneratorVoltageSetPoint,
           GeneratorRaise, GeneratorLower, etc.
-      operation_in_progress:
+      operationInProgress:
         slot_uri: cim:Control.operationInProgress
         range: boolean
         multivalued: false
         required: false
         description: Indicates that a client is currently sending control commands
           that has not completed.
-      time_stamp:
+      timeStamp:
         slot_uri: cim:Control.timeStamp
         range: date
         multivalued: false
         required: false
         description: The last time a control output was sent.
-      unit_multiplier:
+      unitMultiplier:
         slot_uri: cim:Control.unitMultiplier
         range: UnitMultiplier
         multivalued: false
         required: false
         description: The unit multiplier of the controlled quantity.
-      unit_symbol:
+      unitSymbol:
         slot_uri: cim:Control.unitSymbol
         range: UnitSymbol
         multivalued: false
         required: false
         description: The unit of measure of the controlled quantity.
-      power_system_resource:
+      PowerSystemResource:
         slot_uri: cim:Control.PowerSystemResource
         range: PowerSystemResource
         multivalued: false
@@ -307,13 +307,13 @@ classes:
   Discrete:
     class_uri: cim:Discrete
     attributes:
-      discrete_values:
+      DiscreteValues:
         slot_uri: cim:Discrete.DiscreteValues
         range: DiscreteValue
         multivalued: true
         required: false
         description: The values connected to this measurement.
-      value_alias_set:
+      ValueAliasSet:
         slot_uri: cim:Discrete.ValueAliasSet
         range: ValueAliasSet
         multivalued: false
@@ -326,13 +326,13 @@ classes:
   DiscreteValue:
     class_uri: cim:DiscreteValue
     attributes:
-      command:
+      Command:
         slot_uri: cim:DiscreteValue.Command
         range: Command
         multivalued: false
         required: false
         description: The Control variable associated with the MeasurementValue.
-      discrete:
+      Discrete:
         slot_uri: cim:DiscreteValue.Discrete
         range: Discrete
         multivalued: false
@@ -350,7 +350,7 @@ classes:
         required: false
         description: The description is a free human readable text describing or naming
           the object. It may be non unique and may not correlate to a naming hierarchy.
-      m_r_i_d:
+      mRID:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -387,7 +387,7 @@ classes:
   LimitSet:
     class_uri: cim:LimitSet
     attributes:
-      is_percentage_limits:
+      isPercentageLimits:
         slot_uri: cim:LimitSet.isPercentageLimits
         range: boolean
         multivalued: false
@@ -403,14 +403,14 @@ classes:
   Measurement:
     class_uri: cim:Measurement
     attributes:
-      terminal:
+      Terminal:
         slot_uri: cim:Measurement.Terminal
         range: ACDCTerminal
         multivalued: false
         required: false
         description: One or more measurements may be associated with a terminal in
           the network.
-      measurement_type:
+      measurementType:
         slot_uri: cim:Measurement.measurementType
         range: string
         multivalued: false
@@ -434,19 +434,19 @@ classes:
           the computed energizing phasing is changed due to jumpers or other reasons.
 
           If the attribute is missing three phases (ABC) shall be assumed.'
-      unit_multiplier:
+      unitMultiplier:
         slot_uri: cim:Measurement.unitMultiplier
         range: UnitMultiplier
         multivalued: false
         required: true
         description: The unit multiplier of the measured quantity.
-      unit_symbol:
+      unitSymbol:
         slot_uri: cim:Measurement.unitSymbol
         range: UnitSymbol
         multivalued: false
         required: true
         description: The unit of measure of the measured quantity.
-      power_system_resource:
+      PowerSystemResource:
         slot_uri: cim:Measurement.PowerSystemResource
         range: PowerSystemResource
         multivalued: false
@@ -476,27 +476,27 @@ classes:
   MeasurementValue:
     class_uri: cim:MeasurementValue
     attributes:
-      time_stamp:
+      timeStamp:
         slot_uri: cim:MeasurementValue.timeStamp
         range: date
         multivalued: false
         required: false
         description: The time when the value was last updated.
-      sensor_accuracy:
+      sensorAccuracy:
         slot_uri: cim:MeasurementValue.sensorAccuracy
         range: PerCent
         multivalued: false
         required: false
         description: The limit, expressed as a percentage of the sensor maximum, that
           errors will not exceed when the sensor is used under  reference conditions.
-      measurement_value_quality:
+      MeasurementValueQuality:
         slot_uri: cim:MeasurementValue.MeasurementValueQuality
         range: MeasurementValueQuality
         multivalued: false
         required: false
         description: A MeasurementValue has a MeasurementValueQuality associated with
           it.
-      measurement_value_source:
+      MeasurementValueSource:
         slot_uri: cim:MeasurementValue.MeasurementValueSource
         range: MeasurementValueSource
         multivalued: false
@@ -532,7 +532,7 @@ classes:
   MeasurementValueQuality:
     class_uri: cim:MeasurementValueQuality
     attributes:
-      measurement_value:
+      MeasurementValue:
         slot_uri: cim:MeasurementValueQuality.MeasurementValue
         range: MeasurementValue
         multivalued: false
@@ -546,7 +546,7 @@ classes:
   MeasurementValueSource:
     class_uri: cim:MeasurementValueSource
     attributes:
-      measurement_values:
+      MeasurementValues:
         slot_uri: cim:MeasurementValueSource.MeasurementValues
         range: MeasurementValue
         multivalued: true
@@ -559,7 +559,7 @@ classes:
   PowerSystemResource:
     class_uri: cim:PowerSystemResource
     attributes:
-      controls:
+      Controls:
         slot_uri: cim:PowerSystemResource.Controls
         range: Control
         multivalued: true
@@ -567,7 +567,7 @@ classes:
         description: The controller outputs used to actually govern a regulating device,
           e.g. the magnetization of a synchronous machine or capacitor bank breaker
           actuator.
-      measurements:
+      Measurements:
         slot_uri: cim:PowerSystemResource.Measurements
         range: Measurement
         multivalued: true
@@ -581,14 +581,14 @@ classes:
   Quality61850:
     class_uri: cim:Quality61850
     attributes:
-      bad_reference:
+      badReference:
         slot_uri: cim:Quality61850.badReference
         range: boolean
         multivalued: false
         required: false
         description: Measurement value may be incorrect due to a reference being out
           of calibration.
-      estimator_replaced:
+      estimatorReplaced:
         slot_uri: cim:Quality61850.estimatorReplaced
         range: boolean
         multivalued: false
@@ -602,14 +602,14 @@ classes:
         required: false
         description: This identifier indicates that a supervision function has detected
           an internal or external failure, e.g. communication failure.
-      old_data:
+      oldData:
         slot_uri: cim:Quality61850.oldData
         range: boolean
         multivalued: false
         required: false
         description: Measurement value is old and possibly invalid, as it has not
           been successfully updated during a specified time interval.
-      operator_blocked:
+      operatorBlocked:
         slot_uri: cim:Quality61850.operatorBlocked
         range: boolean
         multivalued: false
@@ -633,13 +633,13 @@ classes:
           If it is configured such that no transient changes should be passed by then
           the validity status "invalid" is set immediately in addition to the detail
           quality identifier "oscillatory" (used for status information only).
-      out_of_range:
+      outOfRange:
         slot_uri: cim:Quality61850.outOfRange
         range: boolean
         multivalued: false
         required: false
         description: Measurement value is beyond a predefined range of value.
-      over_flow:
+      overFlow:
         slot_uri: cim:Quality61850.overFlow
         range: boolean
         multivalued: false
@@ -678,7 +678,7 @@ classes:
   RaiseLowerCommand:
     class_uri: cim:RaiseLowerCommand
     attributes:
-      value_alias_set:
+      ValueAliasSet:
         slot_uri: cim:RaiseLowerCommand.ValueAliasSet
         range: ValueAliasSet
         multivalued: false
@@ -691,7 +691,7 @@ classes:
   SetPoint:
     class_uri: cim:SetPoint
     attributes:
-      normal_value:
+      normalValue:
         slot_uri: cim:SetPoint.normalValue
         range: float
         multivalued: false
@@ -708,7 +708,7 @@ classes:
   StringMeasurement:
     class_uri: cim:StringMeasurement
     attributes:
-      string_measurement_values:
+      StringMeasurementValues:
         slot_uri: cim:StringMeasurement.StringMeasurementValues
         range: StringMeasurementValue
         multivalued: true
@@ -719,7 +719,7 @@ classes:
   StringMeasurementValue:
     class_uri: cim:StringMeasurementValue
     attributes:
-      string_measurement:
+      StringMeasurement:
         slot_uri: cim:StringMeasurementValue.StringMeasurement
         range: StringMeasurement
         multivalued: false
@@ -735,25 +735,25 @@ classes:
   ValueAliasSet:
     class_uri: cim:ValueAliasSet
     attributes:
-      commands:
+      Commands:
         slot_uri: cim:ValueAliasSet.Commands
         range: Command
         multivalued: true
         required: false
         description: The Commands using the set for translation.
-      discretes:
+      Discretes:
         slot_uri: cim:ValueAliasSet.Discretes
         range: Discrete
         multivalued: true
         required: false
         description: The Measurements using the set for translation.
-      raise_lower_commands:
+      RaiseLowerCommands:
         slot_uri: cim:ValueAliasSet.RaiseLowerCommands
         range: RaiseLowerCommand
         multivalued: true
         required: false
         description: The Commands using the set for translation.
-      values:
+      Values:
         slot_uri: cim:ValueAliasSet.Values
         range: ValueToAlias
         multivalued: true
@@ -770,7 +770,7 @@ classes:
   ValueToAlias:
     class_uri: cim:ValueToAlias
     attributes:
-      value_alias_set:
+      ValueAliasSet:
         slot_uri: cim:ValueToAlias.ValueAliasSet
         range: ValueAliasSet
         multivalued: false

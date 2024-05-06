@@ -16,10 +16,13 @@ _A generating unit or battery or aggregation that connects to the AC network usi
 ```mermaid
  classDiagram
     class PowerElectronicsUnit
+    click PowerElectronicsUnit href "../PowerElectronicsUnit"
       Equipment <|-- PowerElectronicsUnit
+        click Equipment href "../Equipment"
       
 
       PowerElectronicsUnit <|-- BatteryUnit
+        click BatteryUnit href "../BatteryUnit"
       
       
       PowerElectronicsUnit : Equipment.inService
@@ -47,8 +50,8 @@ _A generating unit or battery or aggregation that connects to the AC network usi
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

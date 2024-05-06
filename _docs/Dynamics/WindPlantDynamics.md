@@ -16,11 +16,15 @@ _Parent class supporting relationships to wind turbines type 3 and type 4 and wi
 ```mermaid
  classDiagram
     class WindPlantDynamics
+    click WindPlantDynamics href "../WindPlantDynamics"
       DynamicsFunctionBlock <|-- WindPlantDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       WindPlantDynamics <|-- WindPlantUserDefined
+        click WindPlantUserDefined href "../WindPlantUserDefined"
       WindPlantDynamics <|-- WindPlantIEC
+        click WindPlantIEC href "../WindPlantIEC"
       
       
       WindPlantDynamics : IdentifiedObject.description
@@ -34,10 +38,12 @@ _Parent class supporting relationships to wind turbines type 3 and type 4 and wi
       WindPlantDynamics : WindPlantDynamics.RemoteInputSignal
         
           WindPlantDynamics --> RemoteInputSignal : WindPlantDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       WindPlantDynamics : WindPlantDynamics.WindTurbineType3or4Dynamics
         
           WindPlantDynamics --> WindTurbineType3or4Dynamics : WindPlantDynamics.WindTurbineType3or4Dynamics
+          click WindTurbineType3or4Dynamics href "../WindTurbineType3or4Dynamics"
         
       
 ```
@@ -62,9 +68,9 @@ _Parent class supporting relationships to wind turbines type 3 and type 4 and wi
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:WindPlantDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#WindPlantDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | The remote signal with which this power plant is associated | direct |
 | WindTurbineType3or4Dynamics | [cim:WindPlantDynamics.WindTurbineType3or4Dynamics](http://iec.ch/TC57/CIM100#WindPlantDynamics.WindTurbineType3or4Dynamics) | 1..* <br />  [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md)  | The wind turbine type 3 or type 4 associated with this wind plant | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

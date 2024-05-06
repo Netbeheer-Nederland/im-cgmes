@@ -16,10 +16,13 @@ _VSC function block whose behaviour is described by reference to a standard mode
 ```mermaid
  classDiagram
     class VSCDynamics
+    click VSCDynamics href "../VSCDynamics"
       HVDCDynamics <|-- VSCDynamics
+        click HVDCDynamics href "../HVDCDynamics"
       
 
       VSCDynamics <|-- VSCUserDefined
+        click VSCUserDefined href "../VSCUserDefined"
       
       
       VSCDynamics : IdentifiedObject.description
@@ -33,6 +36,7 @@ _VSC function block whose behaviour is described by reference to a standard mode
       VSCDynamics : VSCDynamics.VsConverter
         
           VSCDynamics --> VsConverter : VSCDynamics.VsConverter
+          click VsConverter href "../VsConverter"
         
       
 ```
@@ -55,10 +59,10 @@ _VSC function block whose behaviour is described by reference to a standard mode
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| VsConverter | [cim:VSCDynamics.VsConverter](http://iec.ch/TC57/CIM100#VSCDynamics.VsConverter) | 1..1 <br />  [VsConverter](VsConverter.md)  | Voltage source converter to which voltage source converter dynamics model app... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| VsConverter | [cim:VSCDynamics.VsConverter](http://iec.ch/TC57/CIM100#VSCDynamics.VsConverter) | 1 <br />  [VsConverter](VsConverter.md)  | Voltage source converter to which voltage source converter dynamics model app... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

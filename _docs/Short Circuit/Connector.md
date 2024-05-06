@@ -16,10 +16,13 @@ _A conductor, or group of conductors, with negligible impedance, that serve to c
 ```mermaid
  classDiagram
     class Connector
+    click Connector href "../Connector"
       ConductingEquipment <|-- Connector
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       Connector <|-- BusbarSection
+        click BusbarSection href "../BusbarSection"
       
       
       Connector : IdentifiedObject.mRID
@@ -46,7 +49,7 @@ _A conductor, or group of conductors, with negligible impedance, that serve to c
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

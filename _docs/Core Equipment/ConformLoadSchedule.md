@@ -16,15 +16,19 @@ _A curve of load  versus time (X-axis) showing the active power values (Y1-axis)
 ```mermaid
  classDiagram
     class ConformLoadSchedule
+    click ConformLoadSchedule href "../ConformLoadSchedule"
       SeasonDayTypeSchedule <|-- ConformLoadSchedule
+        click SeasonDayTypeSchedule href "../SeasonDayTypeSchedule"
       
       ConformLoadSchedule : ConformLoadSchedule.ConformLoadGroup
         
           ConformLoadSchedule --> ConformLoadGroup : ConformLoadSchedule.ConformLoadGroup
+          click ConformLoadGroup href "../ConformLoadGroup"
         
       ConformLoadSchedule : SeasonDayTypeSchedule.DayType
         
           ConformLoadSchedule --> DayType : SeasonDayTypeSchedule.DayType
+          click DayType href "../DayType"
         
       ConformLoadSchedule : IdentifiedObject.description
         
@@ -39,6 +43,7 @@ _A curve of load  versus time (X-axis) showing the active power values (Y1-axis)
       ConformLoadSchedule : SeasonDayTypeSchedule.Season
         
           ConformLoadSchedule --> Season : SeasonDayTypeSchedule.Season
+          click Season href "../Season"
         
       ConformLoadSchedule : IdentifiedObject.shortName
         
@@ -47,18 +52,22 @@ _A curve of load  versus time (X-axis) showing the active power values (Y1-axis)
       ConformLoadSchedule : RegularIntervalSchedule.TimePoints
         
           ConformLoadSchedule --> RegularTimePoint : RegularIntervalSchedule.TimePoints
+          click RegularTimePoint href "../RegularTimePoint"
         
       ConformLoadSchedule : RegularIntervalSchedule.timeStep
         
           ConformLoadSchedule --> Seconds : RegularIntervalSchedule.timeStep
+          click Seconds href "../Seconds"
         
       ConformLoadSchedule : BasicIntervalSchedule.value1Unit
         
           ConformLoadSchedule --> UnitSymbol : BasicIntervalSchedule.value1Unit
+          click UnitSymbol href "../UnitSymbol"
         
       ConformLoadSchedule : BasicIntervalSchedule.value2Unit
         
           ConformLoadSchedule --> UnitSymbol : BasicIntervalSchedule.value2Unit
+          click UnitSymbol href "../UnitSymbol"
         
       
 ```
@@ -81,19 +90,19 @@ _A curve of load  versus time (X-axis) showing the active power values (Y1-axis)
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ConformLoadGroup | [cim:ConformLoadSchedule.ConformLoadGroup](http://iec.ch/TC57/CIM100#ConformLoadSchedule.ConformLoadGroup) | 1..1 <br />  [ConformLoadGroup](ConformLoadGroup.md)  | The ConformLoadGroup where the ConformLoadSchedule belongs | direct |
-| DayType | [cim:SeasonDayTypeSchedule.DayType](http://iec.ch/TC57/CIM100#SeasonDayTypeSchedule.DayType) | 1..1 <br />  [DayType](DayType.md)  | DayType for the Schedule | [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md) |
-| Season | [cim:SeasonDayTypeSchedule.Season](http://iec.ch/TC57/CIM100#SeasonDayTypeSchedule.Season) | 1..1 <br />  [Season](Season.md)  | Season for the Schedule | [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md) |
+| ConformLoadGroup | [cim:ConformLoadSchedule.ConformLoadGroup](http://iec.ch/TC57/CIM100#ConformLoadSchedule.ConformLoadGroup) | 1 <br />  [ConformLoadGroup](ConformLoadGroup.md)  | The ConformLoadGroup where the ConformLoadSchedule belongs | direct |
+| DayType | [cim:SeasonDayTypeSchedule.DayType](http://iec.ch/TC57/CIM100#SeasonDayTypeSchedule.DayType) | 1 <br />  [DayType](DayType.md)  | DayType for the Schedule | [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md) |
+| Season | [cim:SeasonDayTypeSchedule.Season](http://iec.ch/TC57/CIM100#SeasonDayTypeSchedule.Season) | 1 <br />  [Season](Season.md)  | Season for the Schedule | [SeasonDayTypeSchedule](SeasonDayTypeSchedule.md) |
 | TimePoints | [cim:RegularIntervalSchedule.TimePoints](http://iec.ch/TC57/CIM100#RegularIntervalSchedule.TimePoints) | 1..* <br />  [RegularTimePoint](RegularTimePoint.md)  | The regular interval time point data values that define this schedule | [RegularIntervalSchedule](RegularIntervalSchedule.md) |
-| timeStep | [cim:RegularIntervalSchedule.timeStep](http://iec.ch/TC57/CIM100#RegularIntervalSchedule.timeStep) | 1..1 <br />  [Seconds](Seconds.md)  | The time between each pair of subsequent regular time points in sequence orde... | [RegularIntervalSchedule](RegularIntervalSchedule.md) |
-| endTime | [cim:RegularIntervalSchedule.endTime](http://iec.ch/TC57/CIM100#RegularIntervalSchedule.endTime) | 1..1 <br />  date  | The time for the last time point | [RegularIntervalSchedule](RegularIntervalSchedule.md) |
-| startTime | [cim:BasicIntervalSchedule.startTime](http://iec.ch/TC57/CIM100#BasicIntervalSchedule.startTime) | 1..1 <br />  date  | The time for the first time point | [BasicIntervalSchedule](BasicIntervalSchedule.md) |
-| value1Unit | [cim:BasicIntervalSchedule.value1Unit](http://iec.ch/TC57/CIM100#BasicIntervalSchedule.value1Unit) | 1..1 <br />  [UnitSymbol](UnitSymbol.md)  | Value1 units of measure | [BasicIntervalSchedule](BasicIntervalSchedule.md) |
+| timeStep | [cim:RegularIntervalSchedule.timeStep](http://iec.ch/TC57/CIM100#RegularIntervalSchedule.timeStep) | 1 <br />  [Seconds](Seconds.md)  | The time between each pair of subsequent regular time points in sequence orde... | [RegularIntervalSchedule](RegularIntervalSchedule.md) |
+| endTime | [cim:RegularIntervalSchedule.endTime](http://iec.ch/TC57/CIM100#RegularIntervalSchedule.endTime) | 1 <br />  date  | The time for the last time point | [RegularIntervalSchedule](RegularIntervalSchedule.md) |
+| startTime | [cim:BasicIntervalSchedule.startTime](http://iec.ch/TC57/CIM100#BasicIntervalSchedule.startTime) | 1 <br />  date  | The time for the first time point | [BasicIntervalSchedule](BasicIntervalSchedule.md) |
+| value1Unit | [cim:BasicIntervalSchedule.value1Unit](http://iec.ch/TC57/CIM100#BasicIntervalSchedule.value1Unit) | 1 <br />  [UnitSymbol](UnitSymbol.md)  | Value1 units of measure | [BasicIntervalSchedule](BasicIntervalSchedule.md) |
 | value2Unit | [cim:BasicIntervalSchedule.value2Unit](http://iec.ch/TC57/CIM100#BasicIntervalSchedule.value2Unit) | 0..1 <br />  [UnitSymbol](UnitSymbol.md)  | Value2 units of measure | [BasicIntervalSchedule](BasicIntervalSchedule.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

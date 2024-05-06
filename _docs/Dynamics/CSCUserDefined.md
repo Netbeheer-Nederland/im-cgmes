@@ -16,11 +16,14 @@ _Current source converter (CSC) function block whose dynamic behaviour is descri
 ```mermaid
  classDiagram
     class CSCUserDefined
+    click CSCUserDefined href "../CSCUserDefined"
       CSCDynamics <|-- CSCUserDefined
+        click CSCDynamics href "../CSCDynamics"
       
       CSCUserDefined : CSCDynamics.CSConverter
         
           CSCUserDefined --> CsConverter : CSCDynamics.CSConverter
+          click CsConverter href "../CsConverter"
         
       CSCUserDefined : IdentifiedObject.description
         
@@ -35,6 +38,7 @@ _Current source converter (CSC) function block whose dynamic behaviour is descri
       CSCUserDefined : CSCUserDefined.ProprietaryParameterDynamics
         
           CSCUserDefined --> ProprietaryParameterDynamics : CSCUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       
 ```
@@ -57,12 +61,12 @@ _Current source converter (CSC) function block whose dynamic behaviour is descri
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:CSCUserDefined.proprietary](http://iec.ch/TC57/CIM100#CSCUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:CSCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#CSCUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| CSConverter | [cim:CSCDynamics.CSConverter](http://iec.ch/TC57/CIM100#CSCDynamics.CSConverter) | 1..1 <br />  [CsConverter](CsConverter.md)  | Current source converter to which current source converter dynamics model app... | [CSCDynamics](CSCDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| proprietary | [cim:CSCUserDefined.proprietary](http://iec.ch/TC57/CIM100#CSCUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:CSCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#CSCUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| CSConverter | [cim:CSCDynamics.CSConverter](http://iec.ch/TC57/CIM100#CSCDynamics.CSConverter) | 1 <br />  [CsConverter](CsConverter.md)  | Current source converter to which current source converter dynamics model app... | [CSCDynamics](CSCDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

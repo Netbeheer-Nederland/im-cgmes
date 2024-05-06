@@ -16,11 +16,15 @@ _A rotating machine which may be used as a generator or motor._
 ```mermaid
  classDiagram
     class RotatingMachine
+    click RotatingMachine href "../RotatingMachine"
       RegulatingCondEq <|-- RotatingMachine
+        click RegulatingCondEq href "../RegulatingCondEq"
       
 
       RotatingMachine <|-- AsynchronousMachine
+        click AsynchronousMachine href "../AsynchronousMachine"
       RotatingMachine <|-- SynchronousMachine
+        click SynchronousMachine href "../SynchronousMachine"
       
       
       RotatingMachine : IdentifiedObject.description
@@ -32,6 +36,7 @@ _A rotating machine which may be used as a generator or motor._
       RotatingMachine : ConductingEquipment.Terminals
         
           RotatingMachine --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -58,9 +63,9 @@ _A rotating machine which may be used as a generator or motor._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

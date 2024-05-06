@@ -16,11 +16,15 @@ _A unit with valves for three phases, together with unit control equipment, esse
 ```mermaid
  classDiagram
     class ACDCConverter
+    click ACDCConverter href "../ACDCConverter"
       ConductingEquipment <|-- ACDCConverter
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       ACDCConverter <|-- CsConverter
+        click CsConverter href "../CsConverter"
       ACDCConverter <|-- VsConverter
+        click VsConverter href "../VsConverter"
       
       
       ACDCConverter : Equipment.inService
@@ -30,18 +34,22 @@ _A unit with valves for three phases, together with unit control equipment, esse
       ACDCConverter : ACDCConverter.p
         
           ACDCConverter --> ActivePower : ACDCConverter.p
+          click ActivePower href "../ActivePower"
         
       ACDCConverter : ACDCConverter.q
         
           ACDCConverter --> ReactivePower : ACDCConverter.q
+          click ReactivePower href "../ReactivePower"
         
       ACDCConverter : ACDCConverter.targetPpcc
         
           ACDCConverter --> ActivePower : ACDCConverter.targetPpcc
+          click ActivePower href "../ActivePower"
         
       ACDCConverter : ACDCConverter.targetUdc
         
           ACDCConverter --> Voltage : ACDCConverter.targetUdc
+          click Voltage href "../Voltage"
         
       
 ```
@@ -66,12 +74,12 @@ _A unit with valves for three phases, together with unit control equipment, esse
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| p | [cim:ACDCConverter.p](http://iec.ch/TC57/CIM100#ACDCConverter.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | Active power at the point of common coupling | direct |
-| q | [cim:ACDCConverter.q](http://iec.ch/TC57/CIM100#ACDCConverter.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power at the point of common coupling | direct |
+| p | [cim:ACDCConverter.p](http://iec.ch/TC57/CIM100#ACDCConverter.p) | 1 <br />  [ActivePower](ActivePower.md)  | Active power at the point of common coupling | direct |
+| q | [cim:ACDCConverter.q](http://iec.ch/TC57/CIM100#ACDCConverter.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power at the point of common coupling | direct |
 | targetPpcc | [cim:ACDCConverter.targetPpcc](http://iec.ch/TC57/CIM100#ACDCConverter.targetPpcc) | 0..1 <br />  [ActivePower](ActivePower.md)  | Real power injection target in AC grid, at point of common coupling | direct |
 | targetUdc | [cim:ACDCConverter.targetUdc](http://iec.ch/TC57/CIM100#ACDCConverter.targetUdc) | 0..1 <br />  [Voltage](Voltage.md)  | Target value for DC voltage magnitude | direct |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

@@ -16,27 +16,33 @@ _A Series Compensator is a series capacitor or reactor or an AC transmission lin
 ```mermaid
  classDiagram
     class SeriesCompensator
+    click SeriesCompensator href "../SeriesCompensator"
       ConductingEquipment <|-- SeriesCompensator
+        click ConductingEquipment href "../ConductingEquipment"
       
       SeriesCompensator : IdentifiedObject.mRID
         
       SeriesCompensator : SeriesCompensator.r0
         
           SeriesCompensator --> Resistance : SeriesCompensator.r0
+          click Resistance href "../Resistance"
         
       SeriesCompensator : SeriesCompensator.varistorPresent
         
       SeriesCompensator : SeriesCompensator.varistorRatedCurrent
         
           SeriesCompensator --> CurrentFlow : SeriesCompensator.varistorRatedCurrent
+          click CurrentFlow href "../CurrentFlow"
         
       SeriesCompensator : SeriesCompensator.varistorVoltageThreshold
         
           SeriesCompensator --> Voltage : SeriesCompensator.varistorVoltageThreshold
+          click Voltage href "../Voltage"
         
       SeriesCompensator : SeriesCompensator.x0
         
           SeriesCompensator --> Reactance : SeriesCompensator.x0
+          click Reactance href "../Reactance"
         
       
 ```
@@ -59,12 +65,12 @@ _A Series Compensator is a series capacitor or reactor or an AC transmission lin
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| r0 | [cim:SeriesCompensator.r0](http://iec.ch/TC57/CIM100#SeriesCompensator.r0) | 1..1 <br />  [Resistance](Resistance.md)  | Zero sequence resistance | direct |
-| x0 | [cim:SeriesCompensator.x0](http://iec.ch/TC57/CIM100#SeriesCompensator.x0) | 1..1 <br />  [Reactance](Reactance.md)  | Zero sequence reactance | direct |
-| varistorPresent | [cim:SeriesCompensator.varistorPresent](http://iec.ch/TC57/CIM100#SeriesCompensator.varistorPresent) | 1..1 <br />  boolean  | Describe if a metal oxide varistor (mov) for over voltage protection is confi... | direct |
+| r0 | [cim:SeriesCompensator.r0](http://iec.ch/TC57/CIM100#SeriesCompensator.r0) | 1 <br />  [Resistance](Resistance.md)  | Zero sequence resistance | direct |
+| x0 | [cim:SeriesCompensator.x0](http://iec.ch/TC57/CIM100#SeriesCompensator.x0) | 1 <br />  [Reactance](Reactance.md)  | Zero sequence reactance | direct |
+| varistorPresent | [cim:SeriesCompensator.varistorPresent](http://iec.ch/TC57/CIM100#SeriesCompensator.varistorPresent) | 1 <br />  boolean  | Describe if a metal oxide varistor (mov) for over voltage protection is confi... | direct |
 | varistorRatedCurrent | [cim:SeriesCompensator.varistorRatedCurrent](http://iec.ch/TC57/CIM100#SeriesCompensator.varistorRatedCurrent) | 0..1 <br />  [CurrentFlow](CurrentFlow.md)  | The maximum current the varistor is designed to handle at specified duration | direct |
 | varistorVoltageThreshold | [cim:SeriesCompensator.varistorVoltageThreshold](http://iec.ch/TC57/CIM100#SeriesCompensator.varistorVoltageThreshold) | 0..1 <br />  [Voltage](Voltage.md)  | The dc voltage at which the varistor starts conducting | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

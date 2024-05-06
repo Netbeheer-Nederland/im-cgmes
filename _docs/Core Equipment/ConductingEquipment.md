@@ -16,20 +16,33 @@ _The parts of the AC power system that are designed to carry current or that are
 ```mermaid
  classDiagram
     class ConductingEquipment
+    click ConductingEquipment href "../ConductingEquipment"
       Equipment <|-- ConductingEquipment
+        click Equipment href "../Equipment"
       
 
       ConductingEquipment <|-- ACDCConverter
+        click ACDCConverter href "../ACDCConverter"
       ConductingEquipment <|-- Clamp
+        click Clamp href "../Clamp"
       ConductingEquipment <|-- Conductor
+        click Conductor href "../Conductor"
       ConductingEquipment <|-- Connector
+        click Connector href "../Connector"
       ConductingEquipment <|-- EarthFaultCompensator
+        click EarthFaultCompensator href "../EarthFaultCompensator"
       ConductingEquipment <|-- EnergyConnection
+        click EnergyConnection href "../EnergyConnection"
       ConductingEquipment <|-- EquivalentEquipment
+        click EquivalentEquipment href "../EquivalentEquipment"
       ConductingEquipment <|-- Ground
+        click Ground href "../Ground"
       ConductingEquipment <|-- PowerTransformer
+        click PowerTransformer href "../PowerTransformer"
       ConductingEquipment <|-- SeriesCompensator
+        click SeriesCompensator href "../SeriesCompensator"
       ConductingEquipment <|-- Switch
+        click Switch href "../Switch"
       
       
       ConductingEquipment : Equipment.aggregate
@@ -37,6 +50,7 @@ _The parts of the AC power system that are designed to carry current or that are
       ConductingEquipment : ConductingEquipment.BaseVoltage
         
           ConductingEquipment --> BaseVoltage : ConductingEquipment.BaseVoltage
+          click BaseVoltage href "../BaseVoltage"
         
       ConductingEquipment : IdentifiedObject.description
         
@@ -45,6 +59,7 @@ _The parts of the AC power system that are designed to carry current or that are
       ConductingEquipment : Equipment.EquipmentContainer
         
           ConductingEquipment --> EquipmentContainer : Equipment.EquipmentContainer
+          click EquipmentContainer href "../EquipmentContainer"
         
       ConductingEquipment : IdentifiedObject.mRID
         
@@ -55,12 +70,14 @@ _The parts of the AC power system that are designed to carry current or that are
       ConductingEquipment : Equipment.OperationalLimitSet
         
           ConductingEquipment --> OperationalLimitSet : Equipment.OperationalLimitSet
+          click OperationalLimitSet href "../OperationalLimitSet"
         
       ConductingEquipment : IdentifiedObject.shortName
         
       ConductingEquipment : ConductingEquipment.Terminals
         
           ConductingEquipment --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -94,15 +111,15 @@ _The parts of the AC power system that are designed to carry current or that are
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | BaseVoltage | [cim:ConductingEquipment.BaseVoltage](http://iec.ch/TC57/CIM100#ConductingEquipment.BaseVoltage) | 0..1 <br />  [BaseVoltage](BaseVoltage.md)  | Base voltage of this conducting equipment | direct |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | direct |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | direct |
 | aggregate | [cim:Equipment.aggregate](http://iec.ch/TC57/CIM100#Equipment.aggregate) | 0..1 <br />  boolean  | The aggregate flag provides an alternative way of representing an aggregated ... | [Equipment](Equipment.md) |
 | normallyInService | [cim:Equipment.normallyInService](http://iec.ch/TC57/CIM100#Equipment.normallyInService) | 0..1 <br />  boolean  | Specifies the availability of the equipment under normal operating conditions | [Equipment](Equipment.md) |
 | EquipmentContainer | [cim:Equipment.EquipmentContainer](http://iec.ch/TC57/CIM100#Equipment.EquipmentContainer) | 0..1 <br />  [EquipmentContainer](EquipmentContainer.md)  | Container of this equipment | [Equipment](Equipment.md) |
-| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | 0..* <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
+| OperationalLimitSet | [cim:Equipment.OperationalLimitSet](http://iec.ch/TC57/CIM100#Equipment.OperationalLimitSet) | * <br />  [OperationalLimitSet](OperationalLimitSet.md)  | The operational limit sets associated with this equipment | [Equipment](Equipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

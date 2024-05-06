@@ -18,11 +18,14 @@ _Voltage measurements are typically obtained from voltage transformers that are 
 ```mermaid
  classDiagram
     class BusbarSection
+    click BusbarSection href "../BusbarSection"
       Connector <|-- BusbarSection
+        click Connector href "../Connector"
       
       BusbarSection : BusbarSection.ipMax
         
           BusbarSection --> CurrentFlow : BusbarSection.ipMax
+          click CurrentFlow href "../CurrentFlow"
         
       BusbarSection : IdentifiedObject.mRID
         
@@ -49,7 +52,7 @@ _Voltage measurements are typically obtained from voltage transformers that are 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | ipMax | [cim:BusbarSection.ipMax](http://iec.ch/TC57/CIM100#BusbarSection.ipMax) | 0..1 <br />  [CurrentFlow](CurrentFlow.md)  | Maximum allowable peak short-circuit current of busbar (Ipmax in IEC 60909-0) | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

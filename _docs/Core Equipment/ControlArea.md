@@ -24,17 +24,21 @@ _4.  The normal orientation of Terminal flow is positive for flow into the condu
 ```mermaid
  classDiagram
     class ControlArea
+    click ControlArea href "../ControlArea"
       PowerSystemResource <|-- ControlArea
+        click PowerSystemResource href "../PowerSystemResource"
       
       ControlArea : ControlArea.ControlAreaGeneratingUnit
         
           ControlArea --> ControlAreaGeneratingUnit : ControlArea.ControlAreaGeneratingUnit
+          click ControlAreaGeneratingUnit href "../ControlAreaGeneratingUnit"
         
       ControlArea : IdentifiedObject.description
         
       ControlArea : ControlArea.EnergyArea
         
           ControlArea --> EnergyArea : ControlArea.EnergyArea
+          click EnergyArea href "../EnergyArea"
         
       ControlArea : IdentifiedObject.energyIdentCodeEic
         
@@ -47,10 +51,12 @@ _4.  The normal orientation of Terminal flow is positive for flow into the condu
       ControlArea : ControlArea.TieFlow
         
           ControlArea --> TieFlow : ControlArea.TieFlow
+          click TieFlow href "../TieFlow"
         
       ControlArea : ControlArea.type
         
           ControlArea --> ControlAreaTypeKind : ControlArea.type
+          click ControlAreaTypeKind href "../ControlAreaTypeKind"
         
       
 ```
@@ -71,14 +77,14 @@ _4.  The normal orientation of Terminal flow is positive for flow into the condu
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| type | [cim:ControlArea.type](http://iec.ch/TC57/CIM100#ControlArea.type) | 1..1 <br />  [ControlAreaTypeKind](ControlAreaTypeKind.md)  | The primary type of control area definition used to determine if this is used... | direct |
-| TieFlow | [cim:ControlArea.TieFlow](http://iec.ch/TC57/CIM100#ControlArea.TieFlow) | 0..* <br />  [TieFlow](TieFlow.md)  | The tie flows associated with the control area | direct |
-| ControlAreaGeneratingUnit | [cim:ControlArea.ControlAreaGeneratingUnit](http://iec.ch/TC57/CIM100#ControlArea.ControlAreaGeneratingUnit) | 0..* <br />  [ControlAreaGeneratingUnit](ControlAreaGeneratingUnit.md)  | The generating unit specifications for the control area | direct |
-| EnergyArea | [cim:ControlArea.EnergyArea](http://iec.ch/TC57/CIM100#ControlArea.EnergyArea) | 1..1 <br />  [EnergyArea](EnergyArea.md)  | The energy area that is forecast from this control area specification | direct |
+| type | [cim:ControlArea.type](http://iec.ch/TC57/CIM100#ControlArea.type) | 1 <br />  [ControlAreaTypeKind](ControlAreaTypeKind.md)  | The primary type of control area definition used to determine if this is used... | direct |
+| TieFlow | [cim:ControlArea.TieFlow](http://iec.ch/TC57/CIM100#ControlArea.TieFlow) | * <br />  [TieFlow](TieFlow.md)  | The tie flows associated with the control area | direct |
+| ControlAreaGeneratingUnit | [cim:ControlArea.ControlAreaGeneratingUnit](http://iec.ch/TC57/CIM100#ControlArea.ControlAreaGeneratingUnit) | * <br />  [ControlAreaGeneratingUnit](ControlAreaGeneratingUnit.md)  | The generating unit specifications for the control area | direct |
+| EnergyArea | [cim:ControlArea.EnergyArea](http://iec.ch/TC57/CIM100#ControlArea.EnergyArea) | 1 <br />  [EnergyArea](EnergyArea.md)  | The energy area that is forecast from this control area specification | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

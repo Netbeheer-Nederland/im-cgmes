@@ -18,21 +18,26 @@ _Standard aggregate load model comprised of static and/or dynamic components.  A
 ```mermaid
  classDiagram
     class LoadAggregate
+    click LoadAggregate href "../LoadAggregate"
       LoadDynamics <|-- LoadAggregate
+        click LoadDynamics href "../LoadDynamics"
       
       LoadAggregate : IdentifiedObject.description
         
       LoadAggregate : LoadDynamics.EnergyConsumer
         
           LoadAggregate --> EnergyConsumer : LoadDynamics.EnergyConsumer
+          click EnergyConsumer href "../EnergyConsumer"
         
       LoadAggregate : LoadAggregate.LoadMotor
         
           LoadAggregate --> LoadMotor : LoadAggregate.LoadMotor
+          click LoadMotor href "../LoadMotor"
         
       LoadAggregate : LoadAggregate.LoadStatic
         
           LoadAggregate --> LoadStatic : LoadAggregate.LoadStatic
+          click LoadStatic href "../LoadStatic"
         
       LoadAggregate : IdentifiedObject.mRID
         
@@ -59,9 +64,9 @@ _Standard aggregate load model comprised of static and/or dynamic components.  A
 | ---  | --- | --- | --- | --- |
 | LoadMotor | [cim:LoadAggregate.LoadMotor](http://iec.ch/TC57/CIM100#LoadAggregate.LoadMotor) | 0..1 <br />  [LoadMotor](LoadMotor.md)  | Aggregate motor (dynamic) load associated with this aggregate load | direct |
 | LoadStatic | [cim:LoadAggregate.LoadStatic](http://iec.ch/TC57/CIM100#LoadAggregate.LoadStatic) | 0..1 <br />  [LoadStatic](LoadStatic.md)  | Aggregate static load associated with this aggregate load | direct |
-| EnergyConsumer | [cim:LoadDynamics.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadDynamics.EnergyConsumer) | 0..* <br />  [EnergyConsumer](EnergyConsumer.md)  | Energy consumer to which this dynamics load model applies | [LoadDynamics](LoadDynamics.md) |
+| EnergyConsumer | [cim:LoadDynamics.EnergyConsumer](http://iec.ch/TC57/CIM100#LoadDynamics.EnergyConsumer) | * <br />  [EnergyConsumer](EnergyConsumer.md)  | Energy consumer to which this dynamics load model applies | [LoadDynamics](LoadDynamics.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

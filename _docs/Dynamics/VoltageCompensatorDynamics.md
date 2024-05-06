@@ -16,12 +16,17 @@ _Voltage compensator function block whose behaviour is described by reference to
 ```mermaid
  classDiagram
     class VoltageCompensatorDynamics
+    click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
       DynamicsFunctionBlock <|-- VoltageCompensatorDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       VoltageCompensatorDynamics <|-- VoltageCompensatorUserDefined
+        click VoltageCompensatorUserDefined href "../VoltageCompensatorUserDefined"
       VoltageCompensatorDynamics <|-- VCompIEEEType1
+        click VCompIEEEType1 href "../VCompIEEEType1"
       VoltageCompensatorDynamics <|-- VCompIEEEType2
+        click VCompIEEEType2 href "../VCompIEEEType2"
       
       
       VoltageCompensatorDynamics : IdentifiedObject.description
@@ -31,6 +36,7 @@ _Voltage compensator function block whose behaviour is described by reference to
       VoltageCompensatorDynamics : VoltageCompensatorDynamics.ExcitationSystemDynamics
         
           VoltageCompensatorDynamics --> ExcitationSystemDynamics : VoltageCompensatorDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       VoltageCompensatorDynamics : IdentifiedObject.mRID
         
@@ -39,6 +45,7 @@ _Voltage compensator function block whose behaviour is described by reference to
       VoltageCompensatorDynamics : VoltageCompensatorDynamics.RemoteInputSignal
         
           VoltageCompensatorDynamics --> RemoteInputSignal : VoltageCompensatorDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -63,10 +70,10 @@ _Voltage compensator function block whose behaviour is described by reference to
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:VoltageCompensatorDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this voltage compensator model | direct |
-| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:VoltageCompensatorDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#VoltageCompensatorDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this voltage compensator is associated | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

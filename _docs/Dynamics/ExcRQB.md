@@ -16,13 +16,16 @@ _Excitation system type RQB (four-loop regulator, r?gulateur quatre boucles, dev
 ```mermaid
  classDiagram
     class ExcRQB
+    click ExcRQB href "../ExcRQB"
       ExcitationSystemDynamics <|-- ExcRQB
+        click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
       
       ExcRQB : IdentifiedObject.description
         
       ExcRQB : ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics
         
           ExcRQB --> DiscontinuousExcitationControlDynamics : ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics
+          click DiscontinuousExcitationControlDynamics href "../DiscontinuousExcitationControlDynamics"
         
       ExcRQB : DynamicsFunctionBlock.enabled
         
@@ -37,14 +40,17 @@ _Excitation system type RQB (four-loop regulator, r?gulateur quatre boucles, dev
       ExcRQB : ExcRQB.lsat
         
           ExcRQB --> PU : ExcRQB.lsat
+          click PU href "../PU"
         
       ExcRQB : ExcRQB.lus
         
           ExcRQB --> PU : ExcRQB.lus
+          click PU href "../PU"
         
       ExcRQB : ExcRQB.mesu
         
           ExcRQB --> Seconds : ExcRQB.mesu
+          click Seconds href "../Seconds"
         
       ExcRQB : IdentifiedObject.mRID
         
@@ -53,54 +59,67 @@ _Excitation system type RQB (four-loop regulator, r?gulateur quatre boucles, dev
       ExcRQB : ExcitationSystemDynamics.OverexcitationLimiterDynamics
         
           ExcRQB --> OverexcitationLimiterDynamics : ExcitationSystemDynamics.OverexcitationLimiterDynamics
+          click OverexcitationLimiterDynamics href "../OverexcitationLimiterDynamics"
         
       ExcRQB : ExcitationSystemDynamics.PFVArControllerType1Dynamics
         
           ExcRQB --> PFVArControllerType1Dynamics : ExcitationSystemDynamics.PFVArControllerType1Dynamics
+          click PFVArControllerType1Dynamics href "../PFVArControllerType1Dynamics"
         
       ExcRQB : ExcitationSystemDynamics.PFVArControllerType2Dynamics
         
           ExcRQB --> PFVArControllerType2Dynamics : ExcitationSystemDynamics.PFVArControllerType2Dynamics
+          click PFVArControllerType2Dynamics href "../PFVArControllerType2Dynamics"
         
       ExcRQB : ExcitationSystemDynamics.PowerSystemStabilizerDynamics
         
           ExcRQB --> PowerSystemStabilizerDynamics : ExcitationSystemDynamics.PowerSystemStabilizerDynamics
+          click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
         
       ExcRQB : ExcitationSystemDynamics.SynchronousMachineDynamics
         
           ExcRQB --> SynchronousMachineDynamics : ExcitationSystemDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       ExcRQB : ExcRQB.t4m
         
           ExcRQB --> Seconds : ExcRQB.t4m
+          click Seconds href "../Seconds"
         
       ExcRQB : ExcRQB.tc
         
           ExcRQB --> Seconds : ExcRQB.tc
+          click Seconds href "../Seconds"
         
       ExcRQB : ExcRQB.te
         
           ExcRQB --> Seconds : ExcRQB.te
+          click Seconds href "../Seconds"
         
       ExcRQB : ExcRQB.tf
         
           ExcRQB --> Seconds : ExcRQB.tf
+          click Seconds href "../Seconds"
         
       ExcRQB : ExcRQB.ucmax
         
           ExcRQB --> PU : ExcRQB.ucmax
+          click PU href "../PU"
         
       ExcRQB : ExcRQB.ucmin
         
           ExcRQB --> PU : ExcRQB.ucmin
+          click PU href "../PU"
         
       ExcRQB : ExcitationSystemDynamics.UnderexcitationLimiterDynamics
         
           ExcRQB --> UnderexcitationLimiterDynamics : ExcitationSystemDynamics.UnderexcitationLimiterDynamics
+          click UnderexcitationLimiterDynamics href "../UnderexcitationLimiterDynamics"
         
       ExcRQB : ExcitationSystemDynamics.VoltageCompensatorDynamics
         
           ExcRQB --> VoltageCompensatorDynamics : ExcitationSystemDynamics.VoltageCompensatorDynamics
+          click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
         
       
 ```
@@ -122,30 +141,30 @@ _Excitation system type RQB (four-loop regulator, r?gulateur quatre boucles, dev
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ki0 | [cim:ExcRQB.ki0](http://iec.ch/TC57/CIM100#ExcRQB.ki0) | 1..1 <br />  float  | Voltage reference input gain (<i>Ki0</i>) | direct |
-| ki1 | [cim:ExcRQB.ki1](http://iec.ch/TC57/CIM100#ExcRQB.ki1) | 1..1 <br />  float  | Voltage input gain (<i>Ki1</i>) | direct |
-| te | [cim:ExcRQB.te](http://iec.ch/TC57/CIM100#ExcRQB.te) | 1..1 <br />  [Seconds](Seconds.md)  | Lead lag time constant (<i>TE</i>) (&gt;= 0) | direct |
-| tc | [cim:ExcRQB.tc](http://iec.ch/TC57/CIM100#ExcRQB.tc) | 1..1 <br />  [Seconds](Seconds.md)  | Lead lag time constant (<i>TC</i>) (&gt;= 0) | direct |
-| klir | [cim:ExcRQB.klir](http://iec.ch/TC57/CIM100#ExcRQB.klir) | 1..1 <br />  float  | OEL input gain (<i>KLIR</i>) | direct |
-| ucmin | [cim:ExcRQB.ucmin](http://iec.ch/TC57/CIM100#ExcRQB.ucmin) | 1..1 <br />  [PU](PU.md)  | Minimum voltage reference limit (<i>UCMIN</i>) (&lt; ExcRQB | direct |
-| ucmax | [cim:ExcRQB.ucmax](http://iec.ch/TC57/CIM100#ExcRQB.ucmax) | 1..1 <br />  [PU](PU.md)  | Maximum voltage reference limit (<i>UCMAX</i>) (&gt; ExcRQB | direct |
-| lus | [cim:ExcRQB.lus](http://iec.ch/TC57/CIM100#ExcRQB.lus) | 1..1 <br />  [PU](PU.md)  | Setpoint (<i>LUS</i>) | direct |
-| klus | [cim:ExcRQB.klus](http://iec.ch/TC57/CIM100#ExcRQB.klus) | 1..1 <br />  float  | Limiter gain (<i>KLUS</i>) | direct |
-| mesu | [cim:ExcRQB.mesu](http://iec.ch/TC57/CIM100#ExcRQB.mesu) | 1..1 <br />  [Seconds](Seconds.md)  | Voltage input time constant (<i>MESU</i>) (&gt;= 0) | direct |
-| t4m | [cim:ExcRQB.t4m](http://iec.ch/TC57/CIM100#ExcRQB.t4m) | 1..1 <br />  [Seconds](Seconds.md)  | Input time constant (<i>T4M</i>) (&gt;= 0) | direct |
-| lsat | [cim:ExcRQB.lsat](http://iec.ch/TC57/CIM100#ExcRQB.lsat) | 1..1 <br />  [PU](PU.md)  | Integrator limiter (<i>LSAT</i>) | direct |
-| tf | [cim:ExcRQB.tf](http://iec.ch/TC57/CIM100#ExcRQB.tf) | 1..1 <br />  [Seconds](Seconds.md)  | Exciter time constant (<i>TF</i>) (&gt;= 0) | direct |
-| SynchronousMachineDynamics | [cim:ExcitationSystemDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.SynchronousMachineDynamics) | 1..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this excitation system model is associat... | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
-| VoltageCompensatorDynamics | [cim:ExcitationSystemDynamics.VoltageCompensatorDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.VoltageCompensatorDynamics) | 1..1 <br />  [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md)  | Voltage compensator model associated with this excitation system model | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
+| ki0 | [cim:ExcRQB.ki0](http://iec.ch/TC57/CIM100#ExcRQB.ki0) | 1 <br />  float  | Voltage reference input gain (<i>Ki0</i>) | direct |
+| ki1 | [cim:ExcRQB.ki1](http://iec.ch/TC57/CIM100#ExcRQB.ki1) | 1 <br />  float  | Voltage input gain (<i>Ki1</i>) | direct |
+| te | [cim:ExcRQB.te](http://iec.ch/TC57/CIM100#ExcRQB.te) | 1 <br />  [Seconds](Seconds.md)  | Lead lag time constant (<i>TE</i>) (&gt;= 0) | direct |
+| tc | [cim:ExcRQB.tc](http://iec.ch/TC57/CIM100#ExcRQB.tc) | 1 <br />  [Seconds](Seconds.md)  | Lead lag time constant (<i>TC</i>) (&gt;= 0) | direct |
+| klir | [cim:ExcRQB.klir](http://iec.ch/TC57/CIM100#ExcRQB.klir) | 1 <br />  float  | OEL input gain (<i>KLIR</i>) | direct |
+| ucmin | [cim:ExcRQB.ucmin](http://iec.ch/TC57/CIM100#ExcRQB.ucmin) | 1 <br />  [PU](PU.md)  | Minimum voltage reference limit (<i>UCMIN</i>) (&lt; ExcRQB | direct |
+| ucmax | [cim:ExcRQB.ucmax](http://iec.ch/TC57/CIM100#ExcRQB.ucmax) | 1 <br />  [PU](PU.md)  | Maximum voltage reference limit (<i>UCMAX</i>) (&gt; ExcRQB | direct |
+| lus | [cim:ExcRQB.lus](http://iec.ch/TC57/CIM100#ExcRQB.lus) | 1 <br />  [PU](PU.md)  | Setpoint (<i>LUS</i>) | direct |
+| klus | [cim:ExcRQB.klus](http://iec.ch/TC57/CIM100#ExcRQB.klus) | 1 <br />  float  | Limiter gain (<i>KLUS</i>) | direct |
+| mesu | [cim:ExcRQB.mesu](http://iec.ch/TC57/CIM100#ExcRQB.mesu) | 1 <br />  [Seconds](Seconds.md)  | Voltage input time constant (<i>MESU</i>) (&gt;= 0) | direct |
+| t4m | [cim:ExcRQB.t4m](http://iec.ch/TC57/CIM100#ExcRQB.t4m) | 1 <br />  [Seconds](Seconds.md)  | Input time constant (<i>T4M</i>) (&gt;= 0) | direct |
+| lsat | [cim:ExcRQB.lsat](http://iec.ch/TC57/CIM100#ExcRQB.lsat) | 1 <br />  [PU](PU.md)  | Integrator limiter (<i>LSAT</i>) | direct |
+| tf | [cim:ExcRQB.tf](http://iec.ch/TC57/CIM100#ExcRQB.tf) | 1 <br />  [Seconds](Seconds.md)  | Exciter time constant (<i>TF</i>) (&gt;= 0) | direct |
+| SynchronousMachineDynamics | [cim:ExcitationSystemDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.SynchronousMachineDynamics) | 1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this excitation system model is associat... | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
+| VoltageCompensatorDynamics | [cim:ExcitationSystemDynamics.VoltageCompensatorDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.VoltageCompensatorDynamics) | 1 <br />  [VoltageCompensatorDynamics](VoltageCompensatorDynamics.md)  | Voltage compensator model associated with this excitation system model | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | OverexcitationLimiterDynamics | [cim:ExcitationSystemDynamics.OverexcitationLimiterDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.OverexcitationLimiterDynamics) | 0..1 <br />  [OverexcitationLimiterDynamics](OverexcitationLimiterDynamics.md)  | Overexcitation limiter model associated with this excitation system model | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | PFVArControllerType2Dynamics | [cim:ExcitationSystemDynamics.PFVArControllerType2Dynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PFVArControllerType2Dynamics) | 0..1 <br />  [PFVArControllerType2Dynamics](PFVArControllerType2Dynamics.md)  | Power factor or VAr controller type 2 model associated with this excitation s... | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | DiscontinuousExcitationControlDynamics | [cim:ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.DiscontinuousExcitationControlDynamics) | 0..1 <br />  [DiscontinuousExcitationControlDynamics](DiscontinuousExcitationControlDynamics.md)  | Discontinuous excitation control model associated with this excitation system... | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | PowerSystemStabilizerDynamics | [cim:ExcitationSystemDynamics.PowerSystemStabilizerDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PowerSystemStabilizerDynamics) | 0..1 <br />  [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md)  | Power system stabilizer model associated with this excitation system model | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | UnderexcitationLimiterDynamics | [cim:ExcitationSystemDynamics.UnderexcitationLimiterDynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.UnderexcitationLimiterDynamics) | 0..1 <br />  [UnderexcitationLimiterDynamics](UnderexcitationLimiterDynamics.md)  | Undrexcitation limiter model associated with this excitation system model | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
 | PFVArControllerType1Dynamics | [cim:ExcitationSystemDynamics.PFVArControllerType1Dynamics](http://iec.ch/TC57/CIM100#ExcitationSystemDynamics.PFVArControllerType1Dynamics) | 0..1 <br />  [PFVArControllerType1Dynamics](PFVArControllerType1Dynamics.md)  | Power factor or VAr controller type 1 model associated with this excitation s... | [ExcitationSystemDynamics](ExcitationSystemDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

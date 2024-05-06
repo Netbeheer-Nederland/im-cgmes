@@ -18,11 +18,14 @@ _Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Syste
 ```mermaid
  classDiagram
     class GovHydroIEEE0
+    click GovHydroIEEE0 href "../GovHydroIEEE0"
       TurbineGovernorDynamics <|-- GovHydroIEEE0
+        click TurbineGovernorDynamics href "../TurbineGovernorDynamics"
       
       GovHydroIEEE0 : TurbineGovernorDynamics.AsynchronousMachineDynamics
         
           GovHydroIEEE0 --> AsynchronousMachineDynamics : TurbineGovernorDynamics.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       GovHydroIEEE0 : IdentifiedObject.description
         
@@ -31,46 +34,56 @@ _Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Syste
       GovHydroIEEE0 : GovHydroIEEE0.k
         
           GovHydroIEEE0 --> PU : GovHydroIEEE0.k
+          click PU href "../PU"
         
       GovHydroIEEE0 : IdentifiedObject.mRID
         
       GovHydroIEEE0 : GovHydroIEEE0.mwbase
         
           GovHydroIEEE0 --> ActivePower : GovHydroIEEE0.mwbase
+          click ActivePower href "../ActivePower"
         
       GovHydroIEEE0 : IdentifiedObject.name
         
       GovHydroIEEE0 : GovHydroIEEE0.pmax
         
           GovHydroIEEE0 --> PU : GovHydroIEEE0.pmax
+          click PU href "../PU"
         
       GovHydroIEEE0 : GovHydroIEEE0.pmin
         
           GovHydroIEEE0 --> PU : GovHydroIEEE0.pmin
+          click PU href "../PU"
         
       GovHydroIEEE0 : TurbineGovernorDynamics.SynchronousMachineDynamics
         
           GovHydroIEEE0 --> SynchronousMachineDynamics : TurbineGovernorDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       GovHydroIEEE0 : GovHydroIEEE0.t1
         
           GovHydroIEEE0 --> Seconds : GovHydroIEEE0.t1
+          click Seconds href "../Seconds"
         
       GovHydroIEEE0 : GovHydroIEEE0.t2
         
           GovHydroIEEE0 --> Seconds : GovHydroIEEE0.t2
+          click Seconds href "../Seconds"
         
       GovHydroIEEE0 : GovHydroIEEE0.t3
         
           GovHydroIEEE0 --> Seconds : GovHydroIEEE0.t3
+          click Seconds href "../Seconds"
         
       GovHydroIEEE0 : GovHydroIEEE0.t4
         
           GovHydroIEEE0 --> Seconds : GovHydroIEEE0.t4
+          click Seconds href "../Seconds"
         
       GovHydroIEEE0 : TurbineGovernorDynamics.TurbineLoadControllerDynamics
         
           GovHydroIEEE0 --> TurbineLoadControllerDynamics : TurbineGovernorDynamics.TurbineLoadControllerDynamics
+          click TurbineLoadControllerDynamics href "../TurbineLoadControllerDynamics"
         
       
 ```
@@ -92,20 +105,20 @@ _Ref<font color="#0f0f0f">erence: IEEE Transactions on Power Apparatus and Syste
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mwbase | [cim:GovHydroIEEE0.mwbase](http://iec.ch/TC57/CIM100#GovHydroIEEE0.mwbase) | 1..1 <br />  [ActivePower](ActivePower.md)  | Base for power values (<i>MWbase</i>) (&gt; 0) | direct |
-| k | [cim:GovHydroIEEE0.k](http://iec.ch/TC57/CIM100#GovHydroIEEE0.k) | 1..1 <br />  [PU](PU.md)  | Governor gain (<i>K)</i> | direct |
-| t1 | [cim:GovHydroIEEE0.t1](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t1) | 1..1 <br />  [Seconds](Seconds.md)  | Governor lag time constant (<i>T1</i>) (&gt;= 0) | direct |
-| t2 | [cim:GovHydroIEEE0.t2](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t2) | 1..1 <br />  [Seconds](Seconds.md)  | Governor lead time constant (<i>T2)</i> (&gt;= 0) | direct |
-| t3 | [cim:GovHydroIEEE0.t3](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t3) | 1..1 <br />  [Seconds](Seconds.md)  | Gate actuator time constant (<i>T3</i>) (&gt;= 0) | direct |
-| t4 | [cim:GovHydroIEEE0.t4](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t4) | 1..1 <br />  [Seconds](Seconds.md)  | Water starting time (<i>T4</i>) (&gt;= 0) | direct |
-| pmax | [cim:GovHydroIEEE0.pmax](http://iec.ch/TC57/CIM100#GovHydroIEEE0.pmax) | 1..1 <br />  [PU](PU.md)  | Gate maximum (<i>Pmax</i>) (&gt; GovHydroIEEE0 | direct |
-| pmin | [cim:GovHydroIEEE0.pmin](http://iec.ch/TC57/CIM100#GovHydroIEEE0.pmin) | 1..1 <br />  [PU](PU.md)  | Gate minimum (<i>Pmin</i>) (&lt; GovHydroIEEE | direct |
+| mwbase | [cim:GovHydroIEEE0.mwbase](http://iec.ch/TC57/CIM100#GovHydroIEEE0.mwbase) | 1 <br />  [ActivePower](ActivePower.md)  | Base for power values (<i>MWbase</i>) (&gt; 0) | direct |
+| k | [cim:GovHydroIEEE0.k](http://iec.ch/TC57/CIM100#GovHydroIEEE0.k) | 1 <br />  [PU](PU.md)  | Governor gain (<i>K)</i> | direct |
+| t1 | [cim:GovHydroIEEE0.t1](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t1) | 1 <br />  [Seconds](Seconds.md)  | Governor lag time constant (<i>T1</i>) (&gt;= 0) | direct |
+| t2 | [cim:GovHydroIEEE0.t2](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t2) | 1 <br />  [Seconds](Seconds.md)  | Governor lead time constant (<i>T2)</i> (&gt;= 0) | direct |
+| t3 | [cim:GovHydroIEEE0.t3](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t3) | 1 <br />  [Seconds](Seconds.md)  | Gate actuator time constant (<i>T3</i>) (&gt;= 0) | direct |
+| t4 | [cim:GovHydroIEEE0.t4](http://iec.ch/TC57/CIM100#GovHydroIEEE0.t4) | 1 <br />  [Seconds](Seconds.md)  | Water starting time (<i>T4</i>) (&gt;= 0) | direct |
+| pmax | [cim:GovHydroIEEE0.pmax](http://iec.ch/TC57/CIM100#GovHydroIEEE0.pmax) | 1 <br />  [PU](PU.md)  | Gate maximum (<i>Pmax</i>) (&gt; GovHydroIEEE0 | direct |
+| pmin | [cim:GovHydroIEEE0.pmin](http://iec.ch/TC57/CIM100#GovHydroIEEE0.pmin) | 1 <br />  [PU](PU.md)  | Gate minimum (<i>Pmin</i>) (&lt; GovHydroIEEE | direct |
 | SynchronousMachineDynamics | [cim:TurbineGovernorDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.SynchronousMachineDynamics) | 0..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this turbine-governor model is associate... | [TurbineGovernorDynamics](TurbineGovernorDynamics.md) |
 | AsynchronousMachineDynamics | [cim:TurbineGovernorDynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.AsynchronousMachineDynamics) | 0..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this turbine-governor model is associat... | [TurbineGovernorDynamics](TurbineGovernorDynamics.md) |
 | TurbineLoadControllerDynamics | [cim:TurbineGovernorDynamics.TurbineLoadControllerDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.TurbineLoadControllerDynamics) | 0..1 <br />  [TurbineLoadControllerDynamics](TurbineLoadControllerDynamics.md)  | Turbine load controller providing input to this turbine-governor | [TurbineGovernorDynamics](TurbineGovernorDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

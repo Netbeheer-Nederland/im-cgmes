@@ -16,12 +16,17 @@ _A connection of energy generation or consumption on the power system model._
 ```mermaid
  classDiagram
     class EnergyConnection
+    click EnergyConnection href "../EnergyConnection"
       ConductingEquipment <|-- EnergyConnection
+        click ConductingEquipment href "../ConductingEquipment"
       
 
       EnergyConnection <|-- EnergyConsumer
+        click EnergyConsumer href "../EnergyConsumer"
       EnergyConnection <|-- EnergySource
+        click EnergySource href "../EnergySource"
       EnergyConnection <|-- RegulatingCondEq
+        click RegulatingCondEq href "../RegulatingCondEq"
       
       
       EnergyConnection : Equipment.inService
@@ -52,8 +57,8 @@ _A connection of energy generation or consumption on the power system model._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

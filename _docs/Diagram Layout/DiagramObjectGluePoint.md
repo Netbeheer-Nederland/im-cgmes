@@ -16,9 +16,11 @@ _This is used for grouping diagram object points from different diagram objects 
 ```mermaid
  classDiagram
     class DiagramObjectGluePoint
+    click DiagramObjectGluePoint href "../DiagramObjectGluePoint"
       DiagramObjectGluePoint : DiagramObjectGluePoint.DiagramObjectPoints
         
           DiagramObjectGluePoint --> DiagramObjectPoint : DiagramObjectGluePoint.DiagramObjectPoints
+          click DiagramObjectPoint href "../DiagramObjectPoint"
         
       
 ```

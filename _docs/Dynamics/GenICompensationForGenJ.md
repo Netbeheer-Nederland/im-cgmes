@@ -16,7 +16,9 @@ _Resistive and reactive components of compensation for generator associated with
 ```mermaid
  classDiagram
     class GenICompensationForGenJ
+    click GenICompensationForGenJ href "../GenICompensationForGenJ"
       IdentifiedObject <|-- GenICompensationForGenJ
+        click IdentifiedObject href "../IdentifiedObject"
       
       GenICompensationForGenJ : IdentifiedObject.description
         
@@ -27,18 +29,22 @@ _Resistive and reactive components of compensation for generator associated with
       GenICompensationForGenJ : GenICompensationForGenJ.rcij
         
           GenICompensationForGenJ --> PU : GenICompensationForGenJ.rcij
+          click PU href "../PU"
         
       GenICompensationForGenJ : GenICompensationForGenJ.SynchronousMachineDynamics
         
           GenICompensationForGenJ --> SynchronousMachineDynamics : GenICompensationForGenJ.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       GenICompensationForGenJ : GenICompensationForGenJ.VcompIEEEType2
         
           GenICompensationForGenJ --> VCompIEEEType2 : GenICompensationForGenJ.VcompIEEEType2
+          click VCompIEEEType2 href "../VCompIEEEType2"
         
       GenICompensationForGenJ : GenICompensationForGenJ.xcij
         
           GenICompensationForGenJ --> PU : GenICompensationForGenJ.xcij
+          click PU href "../PU"
         
       
 ```
@@ -58,12 +64,12 @@ _Resistive and reactive components of compensation for generator associated with
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| SynchronousMachineDynamics | [cim:GenICompensationForGenJ.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.SynchronousMachineDynamics) | 1..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Standard synchronous machine out of which current flow is being compensated f... | direct |
-| VcompIEEEType2 | [cim:GenICompensationForGenJ.VcompIEEEType2](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.VcompIEEEType2) | 1..1 <br />  [VCompIEEEType2](VCompIEEEType2.md)  | The standard IEEE type 2 voltage compensator of this compensation | direct |
-| rcij | [cim:GenICompensationForGenJ.rcij](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.rcij) | 1..1 <br />  [PU](PU.md)  | <font color="#0f0f0f">Resistive component of compensation of generator associ... | direct |
-| xcij | [cim:GenICompensationForGenJ.xcij](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.xcij) | 1..1 <br />  [PU](PU.md)  | <font color="#0f0f0f">Reactive component of compensation of generator associa... | direct |
+| SynchronousMachineDynamics | [cim:GenICompensationForGenJ.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.SynchronousMachineDynamics) | 1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Standard synchronous machine out of which current flow is being compensated f... | direct |
+| VcompIEEEType2 | [cim:GenICompensationForGenJ.VcompIEEEType2](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.VcompIEEEType2) | 1 <br />  [VCompIEEEType2](VCompIEEEType2.md)  | The standard IEEE type 2 voltage compensator of this compensation | direct |
+| rcij | [cim:GenICompensationForGenJ.rcij](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.rcij) | 1 <br />  [PU](PU.md)  | <font color="#0f0f0f">Resistive component of compensation of generator associ... | direct |
+| xcij | [cim:GenICompensationForGenJ.xcij](http://iec.ch/TC57/CIM100#GenICompensationForGenJ.xcij) | 1 <br />  [PU](PU.md)  | <font color="#0f0f0f">Reactive component of compensation of generator associa... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

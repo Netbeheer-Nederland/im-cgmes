@@ -16,7 +16,9 @@ _A set of limits associated with equipment.  Sets of limits might apply to a spe
 ```mermaid
  classDiagram
     class OperationalLimitSet
+    click OperationalLimitSet href "../OperationalLimitSet"
       IdentifiedObject <|-- OperationalLimitSet
+        click IdentifiedObject href "../IdentifiedObject"
       
       OperationalLimitSet : IdentifiedObject.description
         
@@ -25,6 +27,7 @@ _A set of limits associated with equipment.  Sets of limits might apply to a spe
       OperationalLimitSet : OperationalLimitSet.Equipment
         
           OperationalLimitSet --> Equipment : OperationalLimitSet.Equipment
+          click Equipment href "../Equipment"
         
       OperationalLimitSet : IdentifiedObject.mRID
         
@@ -33,12 +36,14 @@ _A set of limits associated with equipment.  Sets of limits might apply to a spe
       OperationalLimitSet : OperationalLimitSet.OperationalLimitValue
         
           OperationalLimitSet --> OperationalLimit : OperationalLimitSet.OperationalLimitValue
+          click OperationalLimit href "../OperationalLimit"
         
       OperationalLimitSet : IdentifiedObject.shortName
         
       OperationalLimitSet : OperationalLimitSet.Terminal
         
           OperationalLimitSet --> ACDCTerminal : OperationalLimitSet.Terminal
+          click ACDCTerminal href "../ACDCTerminal"
         
       
 ```
@@ -58,13 +63,13 @@ _A set of limits associated with equipment.  Sets of limits might apply to a spe
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Terminal | [cim:OperationalLimitSet.Terminal](http://iec.ch/TC57/CIM100#OperationalLimitSet.Terminal) | 1..1 <br />  [ACDCTerminal](ACDCTerminal.md)  | The terminal where the operational limit set apply | direct |
+| Terminal | [cim:OperationalLimitSet.Terminal](http://iec.ch/TC57/CIM100#OperationalLimitSet.Terminal) | 1 <br />  [ACDCTerminal](ACDCTerminal.md)  | The terminal where the operational limit set apply | direct |
 | Equipment | [cim:OperationalLimitSet.Equipment](http://iec.ch/TC57/CIM100#OperationalLimitSet.Equipment) | 0..1 <br />  [Equipment](Equipment.md)  | The equipment to which the limit set applies | direct |
-| OperationalLimitValue | [cim:OperationalLimitSet.OperationalLimitValue](http://iec.ch/TC57/CIM100#OperationalLimitSet.OperationalLimitValue) | 0..* <br />  [OperationalLimit](OperationalLimit.md)  | Values of equipment limits | direct |
+| OperationalLimitValue | [cim:OperationalLimitSet.OperationalLimitValue](http://iec.ch/TC57/CIM100#OperationalLimitSet.OperationalLimitValue) | * <br />  [OperationalLimit](OperationalLimit.md)  | Values of equipment limits | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
 | energyIdentCodeEic | [eu:IdentifiedObject.energyIdentCodeEic](http://iec.ch/TC57/CIM100-European#IdentifiedObject.energyIdentCodeEic) | 0..1 <br />  string  | The attribute is used for an exchange of the EIC code (Energy identification ... | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 | shortName | [eu:IdentifiedObject.shortName](http://iec.ch/TC57/CIM100-European#IdentifiedObject.shortName) | 0..1 <br />  string  | The attribute is used for an exchange of a human readable short name with len... | [IdentifiedObject](IdentifiedObject.md) |
 
 

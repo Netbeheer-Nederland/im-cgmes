@@ -16,13 +16,16 @@ _Electrical voltage, can be both AC and DC._
 ```mermaid
  classDiagram
     class Voltage
+    click Voltage href "../Voltage"
       Voltage : Voltage.multiplier
         
           Voltage --> UnitMultiplier : Voltage.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Voltage : Voltage.unit
         
           Voltage --> UnitSymbol : Voltage.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Voltage : Voltage.value
         

@@ -16,6 +16,7 @@ _General purpose street and postal address information._
 ```mermaid
  classDiagram
     class StreetAddress
+    click StreetAddress href "../StreetAddress"
       StreetAddress : StreetAddress.language
         
       StreetAddress : StreetAddress.poBox
@@ -25,14 +26,17 @@ _General purpose street and postal address information._
       StreetAddress : StreetAddress.status
         
           StreetAddress --> Status : StreetAddress.status
+          click Status href "../Status"
         
       StreetAddress : StreetAddress.streetDetail
         
           StreetAddress --> StreetDetail : StreetAddress.streetDetail
+          click StreetDetail href "../StreetDetail"
         
       StreetAddress : StreetAddress.townDetail
         
           StreetAddress --> TownDetail : StreetAddress.townDetail
+          click TownDetail href "../TownDetail"
         
       
 ```

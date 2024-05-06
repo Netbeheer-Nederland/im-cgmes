@@ -16,16 +16,25 @@ _The parts of the AC power system that are designed to carry current or that are
 ```mermaid
  classDiagram
     class ConductingEquipment
+    click ConductingEquipment href "../ConductingEquipment"
       Equipment <|-- ConductingEquipment
+        click Equipment href "../Equipment"
       
 
       ConductingEquipment <|-- Conductor
+        click Conductor href "../Conductor"
       ConductingEquipment <|-- Connector
+        click Connector href "../Connector"
       ConductingEquipment <|-- EarthFaultCompensator
+        click EarthFaultCompensator href "../EarthFaultCompensator"
       ConductingEquipment <|-- EnergyConnection
+        click EnergyConnection href "../EnergyConnection"
       ConductingEquipment <|-- EquivalentEquipment
+        click EquivalentEquipment href "../EquivalentEquipment"
       ConductingEquipment <|-- PowerTransformer
+        click PowerTransformer href "../PowerTransformer"
       ConductingEquipment <|-- SeriesCompensator
+        click SeriesCompensator href "../SeriesCompensator"
       
       
       ConductingEquipment : IdentifiedObject.mRID
@@ -57,7 +66,7 @@ _The parts of the AC power system that are designed to carry current or that are
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

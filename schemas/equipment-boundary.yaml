@@ -36,14 +36,14 @@ classes:
   BaseVoltage:
     class_uri: cim:BaseVoltage
     attributes:
-      nominal_voltage:
+      nominalVoltage:
         slot_uri: cim:BaseVoltage.nominalVoltage
         range: Voltage
         multivalued: false
         required: true
         description: The power system resource's base voltage.  Shall be a positive
           value and not zero.
-      voltage_level:
+      VoltageLevel:
         slot_uri: cim:BaseVoltage.VoltageLevel
         range: VoltageLevel
         multivalued: true
@@ -73,7 +73,7 @@ classes:
   Bay:
     class_uri: cim:Bay
     attributes:
-      voltage_level:
+      VoltageLevel:
         slot_uri: cim:Bay.VoltageLevel
         range: VoltageLevel
         multivalued: false
@@ -86,7 +86,7 @@ classes:
   BoundaryPoint:
     class_uri: eu:BoundaryPoint
     attributes:
-      from_end_iso_code:
+      fromEndIsoCode:
         slot_uri: eu:BoundaryPoint.fromEndIsoCode
         range: string
         multivalued: false
@@ -96,7 +96,7 @@ classes:
 
           The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
           The length of the string is 2 characters maximum.'
-      from_end_name:
+      fromEndName:
         slot_uri: eu:BoundaryPoint.fromEndName
         range: string
         multivalued: false
@@ -111,7 +111,7 @@ classes:
           -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
           of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
           the "From" side of the Boundary point is connected to.'
-      from_end_name_tso:
+      fromEndNameTso:
         slot_uri: eu:BoundaryPoint.fromEndNameTso
         range: string
         multivalued: false
@@ -119,7 +119,7 @@ classes:
         description: Identifies the name of the transmission system operator, distribution
           system operator or other entity at which the "From" side of the interconnection
           is connected to. The length of the string is 64 characters maximum.
-      to_end_iso_code:
+      toEndIsoCode:
         slot_uri: eu:BoundaryPoint.toEndIsoCode
         range: string
         multivalued: false
@@ -129,7 +129,7 @@ classes:
 
           The ISO code is a two-character country code as defined by ISO 3166 (http://www.iso.org/iso/country_codes).
           The length of the string is 2 characters maximum.'
-      to_end_name:
+      toEndName:
         slot_uri: eu:BoundaryPoint.toEndName
         range: string
         multivalued: false
@@ -143,7 +143,7 @@ classes:
           -if the Boundary point is placed in a substation, it is the name (IdentifiedObject.name)
           of the element (e.g. PowerTransformer, ACLineSegment, Switch, etc.) at which
           the "To" side of the Boundary point is connected to.'
-      to_end_name_tso:
+      toEndNameTso:
         slot_uri: eu:BoundaryPoint.toEndNameTso
         range: string
         multivalued: false
@@ -151,7 +151,7 @@ classes:
         description: Identifies the name of the transmission system operator, distribution
           system operator or other entity at which the "To" side of the interconnection
           is connected to. The length of the string is 64 characters maximum.
-      is_direct_current:
+      isDirectCurrent:
         slot_uri: eu:BoundaryPoint.isDirectCurrent
         range: boolean
         multivalued: false
@@ -159,7 +159,7 @@ classes:
         description: If true, this boundary point is a point of common coupling (PCC)
           of a direct current (DC) interconnection, otherwise the interconnection
           is AC (default).
-      is_excluded_from_area_interchange:
+      isExcludedFromAreaInterchange:
         slot_uri: eu:BoundaryPoint.isExcludedFromAreaInterchange
         range: boolean
         multivalued: false
@@ -169,7 +169,7 @@ classes:
           no related tie flows. Otherwise, the interconnection is included in control
           area interchange and a TieFlow is required at all sides of the boundary
           point (default).
-      connectivity_node:
+      ConnectivityNode:
         slot_uri: eu:BoundaryPoint.ConnectivityNode
         range: ConnectivityNode
         multivalued: false
@@ -185,7 +185,7 @@ classes:
   ConductingEquipment:
     class_uri: cim:ConductingEquipment
     attributes:
-      terminals:
+      Terminals:
         slot_uri: cim:ConductingEquipment.Terminals
         range: Terminal
         multivalued: true
@@ -199,20 +199,20 @@ classes:
   ConnectivityNode:
     class_uri: cim:ConnectivityNode
     attributes:
-      boundary_point:
+      BoundaryPoint:
         slot_uri: eu:ConnectivityNode.BoundaryPoint
         range: BoundaryPoint
         multivalued: false
         required: false
         description: The boundary point associated with the connectivity node.
-      terminals:
+      Terminals:
         slot_uri: cim:ConnectivityNode.Terminals
         range: Terminal
         multivalued: true
         required: false
         description: Terminals interconnected with zero impedance at a this connectivity
           node.
-      connectivity_node_container:
+      ConnectivityNodeContainer:
         slot_uri: cim:ConnectivityNode.ConnectivityNodeContainer
         range: ConnectivityNodeContainer
         multivalued: false
@@ -224,7 +224,7 @@ classes:
   ConnectivityNodeContainer:
     class_uri: cim:ConnectivityNodeContainer
     attributes:
-      connectivity_nodes:
+      ConnectivityNodes:
         slot_uri: cim:ConnectivityNodeContainer.ConnectivityNodes
         range: ConnectivityNode
         multivalued: true
@@ -246,7 +246,7 @@ classes:
   Equipment:
     class_uri: cim:Equipment
     attributes:
-      equipment_container:
+      EquipmentContainer:
         slot_uri: cim:Equipment.EquipmentContainer
         range: EquipmentContainer
         multivalued: false
@@ -258,7 +258,7 @@ classes:
   EquipmentContainer:
     class_uri: cim:EquipmentContainer
     attributes:
-      equipments:
+      Equipments:
         slot_uri: cim:EquipmentContainer.Equipments
         range: Equipment
         multivalued: true
@@ -269,7 +269,7 @@ classes:
   GeographicalRegion:
     class_uri: cim:GeographicalRegion
     attributes:
-      regions:
+      Regions:
         slot_uri: cim:GeographicalRegion.Regions
         range: SubGeographicalRegion
         multivalued: true
@@ -287,7 +287,7 @@ classes:
         required: false
         description: The description is a free human readable text describing or naming
           the object. It may be non unique and may not correlate to a naming hierarchy.
-      energy_ident_code_eic:
+      energyIdentCodeEic:
         slot_uri: eu:IdentifiedObject.energyIdentCodeEic
         range: string
         multivalued: false
@@ -295,7 +295,7 @@ classes:
         description: The attribute is used for an exchange of the EIC code (Energy
           identification Code). The length of the string is 16 characters as defined
           by the EIC code. For details on EIC scheme please refer to ENTSO-E web site.
-      m_r_i_d:
+      mRID:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -314,7 +314,7 @@ classes:
         required: true
         description: The name is any free human readable and possibly non unique text
           naming the object.
-      short_name:
+      shortName:
         slot_uri: eu:IdentifiedObject.shortName
         range: string
         multivalued: false
@@ -331,7 +331,7 @@ classes:
   Line:
     class_uri: cim:Line
     attributes:
-      region:
+      Region:
         slot_uri: cim:Line.Region
         range: SubGeographicalRegion
         multivalued: false
@@ -350,20 +350,20 @@ classes:
   SubGeographicalRegion:
     class_uri: cim:SubGeographicalRegion
     attributes:
-      region:
+      Region:
         slot_uri: cim:SubGeographicalRegion.Region
         range: GeographicalRegion
         multivalued: false
         required: true
         description: The geographical region which this sub-geographical region is
           within.
-      lines:
+      Lines:
         slot_uri: cim:SubGeographicalRegion.Lines
         range: Line
         multivalued: true
         required: false
         description: The lines within the sub-geographical region.
-      substations:
+      Substations:
         slot_uri: cim:SubGeographicalRegion.Substations
         range: Substation
         multivalued: true
@@ -374,13 +374,13 @@ classes:
   Substation:
     class_uri: cim:Substation
     attributes:
-      region:
+      Region:
         slot_uri: cim:Substation.Region
         range: SubGeographicalRegion
         multivalued: false
         required: true
         description: The SubGeographicalRegion containing the substation.
-      voltage_levels:
+      VoltageLevels:
         slot_uri: cim:Substation.VoltageLevels
         range: VoltageLevel
         multivalued: true
@@ -393,7 +393,7 @@ classes:
   Terminal:
     class_uri: cim:Terminal
     attributes:
-      conducting_equipment:
+      ConductingEquipment:
         slot_uri: cim:Terminal.ConductingEquipment
         range: ConductingEquipment
         multivalued: false
@@ -401,7 +401,7 @@ classes:
         description: The conducting equipment of the terminal.  Conducting equipment
           have  terminals that may be connected to other conducting equipment terminals
           via connectivity nodes or topological nodes.
-      connectivity_node:
+      ConnectivityNode:
         slot_uri: cim:Terminal.ConnectivityNode
         range: ConnectivityNode
         multivalued: false
@@ -414,25 +414,25 @@ classes:
   VoltageLevel:
     class_uri: cim:VoltageLevel
     attributes:
-      base_voltage:
+      BaseVoltage:
         slot_uri: cim:VoltageLevel.BaseVoltage
         range: BaseVoltage
         multivalued: false
         required: true
         description: The base voltage used for all equipment within the voltage level.
-      bays:
+      Bays:
         slot_uri: cim:VoltageLevel.Bays
         range: Bay
         multivalued: true
         required: false
         description: The bays within this voltage level.
-      substation:
+      Substation:
         slot_uri: cim:VoltageLevel.Substation
         range: Substation
         multivalued: false
         required: true
         description: The substation of the voltage level.
-      high_voltage_limit:
+      highVoltageLimit:
         slot_uri: cim:VoltageLevel.highVoltageLimit
         range: Voltage
         multivalued: false
@@ -442,7 +442,7 @@ classes:
           The limit applies to all equipment and nodes contained in a given VoltageLevel.
           It is not required that it is exchanged in pair with lowVoltageLimit. It
           is preferable to use operational VoltageLimit, which prevails, if present.'
-      low_voltage_limit:
+      lowVoltageLimit:
         slot_uri: cim:VoltageLevel.lowVoltageLimit
         range: Voltage
         multivalued: false

@@ -18,21 +18,26 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.8._
 ```mermaid
  classDiagram
     class WindContCurrLimIEC
+    click WindContCurrLimIEC href "../WindContCurrLimIEC"
       IdentifiedObject <|-- WindContCurrLimIEC
+        click IdentifiedObject href "../IdentifiedObject"
       
       WindContCurrLimIEC : IdentifiedObject.description
         
       WindContCurrLimIEC : WindContCurrLimIEC.imax
         
           WindContCurrLimIEC --> PU : WindContCurrLimIEC.imax
+          click PU href "../PU"
         
       WindContCurrLimIEC : WindContCurrLimIEC.imaxdip
         
           WindContCurrLimIEC --> PU : WindContCurrLimIEC.imaxdip
+          click PU href "../PU"
         
       WindContCurrLimIEC : WindContCurrLimIEC.kpqu
         
           WindContCurrLimIEC --> PU : WindContCurrLimIEC.kpqu
+          click PU href "../PU"
         
       WindContCurrLimIEC : WindContCurrLimIEC.mdfslim
         
@@ -45,18 +50,22 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.8._
       WindContCurrLimIEC : WindContCurrLimIEC.tufiltcl
         
           WindContCurrLimIEC --> Seconds : WindContCurrLimIEC.tufiltcl
+          click Seconds href "../Seconds"
         
       WindContCurrLimIEC : WindContCurrLimIEC.upqumax
         
           WindContCurrLimIEC --> PU : WindContCurrLimIEC.upqumax
+          click PU href "../PU"
         
       WindContCurrLimIEC : WindContCurrLimIEC.WindDynamicsLookupTable
         
           WindContCurrLimIEC --> WindDynamicsLookupTable : WindContCurrLimIEC.WindDynamicsLookupTable
+          click WindDynamicsLookupTable href "../WindDynamicsLookupTable"
         
       WindContCurrLimIEC : WindContCurrLimIEC.WindTurbineType3or4IEC
         
           WindContCurrLimIEC --> WindTurbineType3or4IEC : WindContCurrLimIEC.WindTurbineType3or4IEC
+          click WindTurbineType3or4IEC href "../WindTurbineType3or4IEC"
         
       
 ```
@@ -76,17 +85,17 @@ _Reference: IEC 61400-27-1:2015, 5.6.5.8._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| imax | [cim:WindContCurrLimIEC.imax](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.imax) | 1..1 <br />  [PU](PU.md)  | Maximum continuous current at the wind turbine terminals (<i>i</i><i><sub>max... | direct |
-| imaxdip | [cim:WindContCurrLimIEC.imaxdip](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.imaxdip) | 1..1 <br />  [PU](PU.md)  | Maximum current during voltage dip at the wind turbine terminals (<i>i</i><i>... | direct |
-| kpqu | [cim:WindContCurrLimIEC.kpqu](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.kpqu) | 1..1 <br />  [PU](PU.md)  | Partial derivative of reactive current limit (<i>K</i><i><sub>pqu</sub></i>) ... | direct |
-| mdfslim | [cim:WindContCurrLimIEC.mdfslim](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.mdfslim) | 1..1 <br />  boolean  | Limitation of type 3 stator current (<i>M</i><i><sub>DFSLim</sub></i>) | direct |
-| mqpri | [cim:WindContCurrLimIEC.mqpri](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.mqpri) | 1..1 <br />  boolean  | Prioritisation of Q control during UVRT (<i>M</i><i><sub>qpri</sub></i>) | direct |
-| tufiltcl | [cim:WindContCurrLimIEC.tufiltcl](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.tufiltcl) | 1..1 <br />  [Seconds](Seconds.md)  | Voltage measurement filter time constant (<i>T</i><i><sub>ufiltcl</sub></i>) ... | direct |
-| upqumax | [cim:WindContCurrLimIEC.upqumax](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.upqumax) | 1..1 <br />  [PU](PU.md)  | Wind turbine voltage in the operation point where zero reactive current can b... | direct |
-| WindTurbineType3or4IEC | [cim:WindContCurrLimIEC.WindTurbineType3or4IEC](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.WindTurbineType3or4IEC) | 1..1 <br />  [WindTurbineType3or4IEC](WindTurbineType3or4IEC.md)  | Wind turbine type 3 or type 4 model with which this wind control current limi... | direct |
+| imax | [cim:WindContCurrLimIEC.imax](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.imax) | 1 <br />  [PU](PU.md)  | Maximum continuous current at the wind turbine terminals (<i>i</i><i><sub>max... | direct |
+| imaxdip | [cim:WindContCurrLimIEC.imaxdip](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.imaxdip) | 1 <br />  [PU](PU.md)  | Maximum current during voltage dip at the wind turbine terminals (<i>i</i><i>... | direct |
+| kpqu | [cim:WindContCurrLimIEC.kpqu](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.kpqu) | 1 <br />  [PU](PU.md)  | Partial derivative of reactive current limit (<i>K</i><i><sub>pqu</sub></i>) ... | direct |
+| mdfslim | [cim:WindContCurrLimIEC.mdfslim](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.mdfslim) | 1 <br />  boolean  | Limitation of type 3 stator current (<i>M</i><i><sub>DFSLim</sub></i>) | direct |
+| mqpri | [cim:WindContCurrLimIEC.mqpri](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.mqpri) | 1 <br />  boolean  | Prioritisation of Q control during UVRT (<i>M</i><i><sub>qpri</sub></i>) | direct |
+| tufiltcl | [cim:WindContCurrLimIEC.tufiltcl](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.tufiltcl) | 1 <br />  [Seconds](Seconds.md)  | Voltage measurement filter time constant (<i>T</i><i><sub>ufiltcl</sub></i>) ... | direct |
+| upqumax | [cim:WindContCurrLimIEC.upqumax](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.upqumax) | 1 <br />  [PU](PU.md)  | Wind turbine voltage in the operation point where zero reactive current can b... | direct |
+| WindTurbineType3or4IEC | [cim:WindContCurrLimIEC.WindTurbineType3or4IEC](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.WindTurbineType3or4IEC) | 1 <br />  [WindTurbineType3or4IEC](WindTurbineType3or4IEC.md)  | Wind turbine type 3 or type 4 model with which this wind control current limi... | direct |
 | WindDynamicsLookupTable | [cim:WindContCurrLimIEC.WindDynamicsLookupTable](http://iec.ch/TC57/CIM100#WindContCurrLimIEC.WindDynamicsLookupTable) | 1..* <br />  [WindDynamicsLookupTable](WindDynamicsLookupTable.md)  | The wind dynamics lookup table associated with this current control limitatio... | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

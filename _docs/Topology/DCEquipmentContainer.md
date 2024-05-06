@@ -16,9 +16,11 @@ _A modelling construct to provide a root class for containment of DC as well as 
 ```mermaid
  classDiagram
     class DCEquipmentContainer
+    click DCEquipmentContainer href "../DCEquipmentContainer"
       DCEquipmentContainer : DCEquipmentContainer.DCTopologicalNode
         
           DCEquipmentContainer --> DCTopologicalNode : DCEquipmentContainer.DCTopologicalNode
+          click DCTopologicalNode href "../DCTopologicalNode"
         
       
 ```
@@ -34,7 +36,7 @@ _A modelling construct to provide a root class for containment of DC as well as 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| DCTopologicalNode | [cim:DCEquipmentContainer.DCTopologicalNode](http://iec.ch/TC57/CIM100#DCEquipmentContainer.DCTopologicalNode) | 0..* <br />  [DCTopologicalNode](DCTopologicalNode.md)  | The topological nodes which belong to this connectivity node container | direct |
+| DCTopologicalNode | [cim:DCEquipmentContainer.DCTopologicalNode](http://iec.ch/TC57/CIM100#DCEquipmentContainer.DCTopologicalNode) | * <br />  [DCTopologicalNode](DCTopologicalNode.md)  | The topological nodes which belong to this connectivity node container | direct |
 
 
 

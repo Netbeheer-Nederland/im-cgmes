@@ -16,13 +16,19 @@ _The current state for a measurement. A state value is an instance of a measurem
 ```mermaid
  classDiagram
     class MeasurementValue
+    click MeasurementValue href "../MeasurementValue"
       IOPoint <|-- MeasurementValue
+        click IOPoint href "../IOPoint"
       
 
       MeasurementValue <|-- AccumulatorValue
+        click AccumulatorValue href "../AccumulatorValue"
       MeasurementValue <|-- AnalogValue
+        click AnalogValue href "../AnalogValue"
       MeasurementValue <|-- DiscreteValue
+        click DiscreteValue href "../DiscreteValue"
       MeasurementValue <|-- StringMeasurementValue
+        click StringMeasurementValue href "../StringMeasurementValue"
       
       
       MeasurementValue : IdentifiedObject.description
@@ -30,10 +36,12 @@ _The current state for a measurement. A state value is an instance of a measurem
       MeasurementValue : MeasurementValue.MeasurementValueQuality
         
           MeasurementValue --> MeasurementValueQuality : MeasurementValue.MeasurementValueQuality
+          click MeasurementValueQuality href "../MeasurementValueQuality"
         
       MeasurementValue : MeasurementValue.MeasurementValueSource
         
           MeasurementValue --> MeasurementValueSource : MeasurementValue.MeasurementValueSource
+          click MeasurementValueSource href "../MeasurementValueSource"
         
       MeasurementValue : IdentifiedObject.mRID
         
@@ -42,6 +50,7 @@ _The current state for a measurement. A state value is an instance of a measurem
       MeasurementValue : MeasurementValue.sensorAccuracy
         
           MeasurementValue --> PerCent : MeasurementValue.sensorAccuracy
+          click PerCent href "../PerCent"
         
       MeasurementValue : MeasurementValue.timeStamp
         
@@ -71,10 +80,10 @@ _The current state for a measurement. A state value is an instance of a measurem
 | timeStamp | [cim:MeasurementValue.timeStamp](http://iec.ch/TC57/CIM100#MeasurementValue.timeStamp) | 0..1 <br />  date  | The time when the value was last updated | direct |
 | sensorAccuracy | [cim:MeasurementValue.sensorAccuracy](http://iec.ch/TC57/CIM100#MeasurementValue.sensorAccuracy) | 0..1 <br />  [PerCent](PerCent.md)  | The limit, expressed as a percentage of the sensor maximum, that errors will ... | direct |
 | MeasurementValueQuality | [cim:MeasurementValue.MeasurementValueQuality](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueQuality) | 0..1 <br />  [MeasurementValueQuality](MeasurementValueQuality.md)  | A MeasurementValue has a MeasurementValueQuality associated with it | direct |
-| MeasurementValueSource | [cim:MeasurementValue.MeasurementValueSource](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueSource) | 1..1 <br />  [MeasurementValueSource](MeasurementValueSource.md)  | A reference to the type of source that updates the MeasurementValue, e | direct |
+| MeasurementValueSource | [cim:MeasurementValue.MeasurementValueSource](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueSource) | 1 <br />  [MeasurementValueSource](MeasurementValueSource.md)  | A reference to the type of source that updates the MeasurementValue, e | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

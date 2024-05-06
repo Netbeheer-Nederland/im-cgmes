@@ -16,11 +16,14 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 ```mermaid
  classDiagram
     class PowerSystemResource
+    click PowerSystemResource href "../PowerSystemResource"
       IdentifiedObject <|-- PowerSystemResource
+        click IdentifiedObject href "../IdentifiedObject"
       
       PowerSystemResource : PowerSystemResource.Location
         
           PowerSystemResource --> Location : PowerSystemResource.Location
+          click Location href "../Location"
         
       PowerSystemResource : IdentifiedObject.mRID
         
@@ -45,7 +48,7 @@ _A power system resource (PSR) can be an item of equipment such as a switch, an 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | Location | [cim:PowerSystemResource.Location](http://iec.ch/TC57/CIM100#PowerSystemResource.Location) | 0..1 <br />  [Location](Location.md)  | Location of this power system resource | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

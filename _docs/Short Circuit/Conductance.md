@@ -16,13 +16,16 @@ _Factor by which voltage must be multiplied to give corresponding power lost fro
 ```mermaid
  classDiagram
     class Conductance
+    click Conductance href "../Conductance"
       Conductance : Conductance.multiplier
         
           Conductance --> UnitMultiplier : Conductance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Conductance : Conductance.unit
         
           Conductance --> UnitSymbol : Conductance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Conductance : Conductance.value
         

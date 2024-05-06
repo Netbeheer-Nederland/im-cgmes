@@ -24,17 +24,21 @@ _4.  The normal orientation of Terminal flow is positive for flow into the condu
 ```mermaid
  classDiagram
     class ControlArea
+    click ControlArea href "../ControlArea"
       PowerSystemResource <|-- ControlArea
+        click PowerSystemResource href "../PowerSystemResource"
       
       ControlArea : IdentifiedObject.mRID
         
       ControlArea : ControlArea.netInterchange
         
           ControlArea --> ActivePower : ControlArea.netInterchange
+          click ActivePower href "../ActivePower"
         
       ControlArea : ControlArea.pTolerance
         
           ControlArea --> ActivePower : ControlArea.pTolerance
+          click ActivePower href "../ActivePower"
         
       
 ```
@@ -55,9 +59,9 @@ _4.  The normal orientation of Terminal flow is positive for flow into the condu
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| netInterchange | [cim:ControlArea.netInterchange](http://iec.ch/TC57/CIM100#ControlArea.netInterchange) | 1..1 <br />  [ActivePower](ActivePower.md)  | The specified positive net interchange into the control area, i | direct |
+| netInterchange | [cim:ControlArea.netInterchange](http://iec.ch/TC57/CIM100#ControlArea.netInterchange) | 1 <br />  [ActivePower](ActivePower.md)  | The specified positive net interchange into the control area, i | direct |
 | pTolerance | [cim:ControlArea.pTolerance](http://iec.ch/TC57/CIM100#ControlArea.pTolerance) | 0..1 <br />  [ActivePower](ActivePower.md)  | Active power net interchange tolerance | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

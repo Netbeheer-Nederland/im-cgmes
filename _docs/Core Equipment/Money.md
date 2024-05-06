@@ -16,13 +16,16 @@ _Amount of money._
 ```mermaid
  classDiagram
     class Money
+    click Money href "../Money"
       Money : Money.multiplier
         
           Money --> UnitMultiplier : Money.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Money : Money.unit
         
           Money --> Currency : Money.unit
+          click Currency href "../Currency"
         
       Money : Money.value
         

@@ -16,13 +16,16 @@ _Supports connection to a terminal associated with a remote bus from which an in
 ```mermaid
  classDiagram
     class RemoteInputSignal
+    click RemoteInputSignal href "../RemoteInputSignal"
       IdentifiedObject <|-- RemoteInputSignal
+        click IdentifiedObject href "../IdentifiedObject"
       
       RemoteInputSignal : IdentifiedObject.description
         
       RemoteInputSignal : RemoteInputSignal.DiscontinuousExcitationControlDynamics
         
           RemoteInputSignal --> DiscontinuousExcitationControlDynamics : RemoteInputSignal.DiscontinuousExcitationControlDynamics
+          click DiscontinuousExcitationControlDynamics href "../DiscontinuousExcitationControlDynamics"
         
       RemoteInputSignal : IdentifiedObject.mRID
         
@@ -31,38 +34,47 @@ _Supports connection to a terminal associated with a remote bus from which an in
       RemoteInputSignal : RemoteInputSignal.PFVArControllerType1Dynamics
         
           RemoteInputSignal --> PFVArControllerType1Dynamics : RemoteInputSignal.PFVArControllerType1Dynamics
+          click PFVArControllerType1Dynamics href "../PFVArControllerType1Dynamics"
         
       RemoteInputSignal : RemoteInputSignal.PowerSystemStabilizerDynamics
         
           RemoteInputSignal --> PowerSystemStabilizerDynamics : RemoteInputSignal.PowerSystemStabilizerDynamics
+          click PowerSystemStabilizerDynamics href "../PowerSystemStabilizerDynamics"
         
       RemoteInputSignal : RemoteInputSignal.remoteSignalType
         
           RemoteInputSignal --> RemoteSignalKind : RemoteInputSignal.remoteSignalType
+          click RemoteSignalKind href "../RemoteSignalKind"
         
       RemoteInputSignal : RemoteInputSignal.Terminal
         
           RemoteInputSignal --> Terminal : RemoteInputSignal.Terminal
+          click Terminal href "../Terminal"
         
       RemoteInputSignal : RemoteInputSignal.UnderexcitationLimiterDynamics
         
           RemoteInputSignal --> UnderexcitationLimiterDynamics : RemoteInputSignal.UnderexcitationLimiterDynamics
+          click UnderexcitationLimiterDynamics href "../UnderexcitationLimiterDynamics"
         
       RemoteInputSignal : RemoteInputSignal.VoltageCompensatorDynamics
         
           RemoteInputSignal --> VoltageCompensatorDynamics : RemoteInputSignal.VoltageCompensatorDynamics
+          click VoltageCompensatorDynamics href "../VoltageCompensatorDynamics"
         
       RemoteInputSignal : RemoteInputSignal.WindPlantDynamics
         
           RemoteInputSignal --> WindPlantDynamics : RemoteInputSignal.WindPlantDynamics
+          click WindPlantDynamics href "../WindPlantDynamics"
         
       RemoteInputSignal : RemoteInputSignal.WindTurbineType1or2Dynamics
         
           RemoteInputSignal --> WindTurbineType1or2Dynamics : RemoteInputSignal.WindTurbineType1or2Dynamics
+          click WindTurbineType1or2Dynamics href "../WindTurbineType1or2Dynamics"
         
       RemoteInputSignal : RemoteInputSignal.WindTurbineType3or4Dynamics
         
           RemoteInputSignal --> WindTurbineType3or4Dynamics : RemoteInputSignal.WindTurbineType3or4Dynamics
+          click WindTurbineType3or4Dynamics href "../WindTurbineType3or4Dynamics"
         
       
 ```
@@ -82,8 +94,8 @@ _Supports connection to a terminal associated with a remote bus from which an in
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Terminal | [cim:RemoteInputSignal.Terminal](http://iec.ch/TC57/CIM100#RemoteInputSignal.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | Remote terminal with which this input signal is associated | direct |
-| remoteSignalType | [cim:RemoteInputSignal.remoteSignalType](http://iec.ch/TC57/CIM100#RemoteInputSignal.remoteSignalType) | 1..1 <br />  [RemoteSignalKind](RemoteSignalKind.md)  | Type of input signal | direct |
+| Terminal | [cim:RemoteInputSignal.Terminal](http://iec.ch/TC57/CIM100#RemoteInputSignal.Terminal) | 1 <br />  [Terminal](Terminal.md)  | Remote terminal with which this input signal is associated | direct |
+| remoteSignalType | [cim:RemoteInputSignal.remoteSignalType](http://iec.ch/TC57/CIM100#RemoteInputSignal.remoteSignalType) | 1 <br />  [RemoteSignalKind](RemoteSignalKind.md)  | Type of input signal | direct |
 | DiscontinuousExcitationControlDynamics | [cim:RemoteInputSignal.DiscontinuousExcitationControlDynamics](http://iec.ch/TC57/CIM100#RemoteInputSignal.DiscontinuousExcitationControlDynamics) | 0..1 <br />  [DiscontinuousExcitationControlDynamics](DiscontinuousExcitationControlDynamics.md)  | Discontinuous excitation control model using this remote input signal | direct |
 | WindTurbineType1or2Dynamics | [cim:RemoteInputSignal.WindTurbineType1or2Dynamics](http://iec.ch/TC57/CIM100#RemoteInputSignal.WindTurbineType1or2Dynamics) | 0..1 <br />  [WindTurbineType1or2Dynamics](WindTurbineType1or2Dynamics.md)  | Wind generator type 1 or type 2 model using this remote input signal | direct |
 | PowerSystemStabilizerDynamics | [cim:RemoteInputSignal.PowerSystemStabilizerDynamics](http://iec.ch/TC57/CIM100#RemoteInputSignal.PowerSystemStabilizerDynamics) | 0..1 <br />  [PowerSystemStabilizerDynamics](PowerSystemStabilizerDynamics.md)  | Power system stabilizer model using this remote input signal | direct |
@@ -93,7 +105,7 @@ _Supports connection to a terminal associated with a remote bus from which an in
 | WindPlantDynamics | [cim:RemoteInputSignal.WindPlantDynamics](http://iec.ch/TC57/CIM100#RemoteInputSignal.WindPlantDynamics) | 0..1 <br />  [WindPlantDynamics](WindPlantDynamics.md)  | The wind plant using the remote signal | direct |
 | WindTurbineType3or4Dynamics | [cim:RemoteInputSignal.WindTurbineType3or4Dynamics](http://iec.ch/TC57/CIM100#RemoteInputSignal.WindTurbineType3or4Dynamics) | 0..1 <br />  [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md)  | Wind turbine type 3 or type 4 models using this remote input signal | direct |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

@@ -16,7 +16,9 @@ _Underexcitation limiter function block whose dynamic behaviour is described by 
 ```mermaid
  classDiagram
     class UnderexcitationLimiterUserDefined
+    click UnderexcitationLimiterUserDefined href "../UnderexcitationLimiterUserDefined"
       UnderexcitationLimiterDynamics <|-- UnderexcitationLimiterUserDefined
+        click UnderexcitationLimiterDynamics href "../UnderexcitationLimiterDynamics"
       
       UnderexcitationLimiterUserDefined : IdentifiedObject.description
         
@@ -25,6 +27,7 @@ _Underexcitation limiter function block whose dynamic behaviour is described by 
       UnderexcitationLimiterUserDefined : UnderexcitationLimiterDynamics.ExcitationSystemDynamics
         
           UnderexcitationLimiterUserDefined --> ExcitationSystemDynamics : UnderexcitationLimiterDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       UnderexcitationLimiterUserDefined : IdentifiedObject.mRID
         
@@ -35,10 +38,12 @@ _Underexcitation limiter function block whose dynamic behaviour is described by 
       UnderexcitationLimiterUserDefined : UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics
         
           UnderexcitationLimiterUserDefined --> ProprietaryParameterDynamics : UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       UnderexcitationLimiterUserDefined : UnderexcitationLimiterDynamics.RemoteInputSignal
         
           UnderexcitationLimiterUserDefined --> RemoteInputSignal : UnderexcitationLimiterDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       
 ```
@@ -60,13 +65,13 @@ _Underexcitation limiter function block whose dynamic behaviour is described by 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:UnderexcitationLimiterUserDefined.proprietary](http://iec.ch/TC57/CIM100#UnderexcitationLimiterUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| proprietary | [cim:UnderexcitationLimiterUserDefined.proprietary](http://iec.ch/TC57/CIM100#UnderexcitationLimiterUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
 | RemoteInputSignal | [cim:UnderexcitationLimiterDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this underexcitation limiter model | [UnderexcitationLimiterDynamics](UnderexcitationLimiterDynamics.md) |
-| ExcitationSystemDynamics | [cim:UnderexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this underexcitation limiter model is asso... | [UnderexcitationLimiterDynamics](UnderexcitationLimiterDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:UnderexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#UnderexcitationLimiterDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this underexcitation limiter model is asso... | [UnderexcitationLimiterDynamics](UnderexcitationLimiterDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

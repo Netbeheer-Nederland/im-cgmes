@@ -16,11 +16,14 @@ _Mechanical load function block whose dynamic behaviour is described by <font co
 ```mermaid
  classDiagram
     class MechanicalLoadUserDefined
+    click MechanicalLoadUserDefined href "../MechanicalLoadUserDefined"
       MechanicalLoadDynamics <|-- MechanicalLoadUserDefined
+        click MechanicalLoadDynamics href "../MechanicalLoadDynamics"
       
       MechanicalLoadUserDefined : MechanicalLoadDynamics.AsynchronousMachineDynamics
         
           MechanicalLoadUserDefined --> AsynchronousMachineDynamics : MechanicalLoadDynamics.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       MechanicalLoadUserDefined : IdentifiedObject.description
         
@@ -35,10 +38,12 @@ _Mechanical load function block whose dynamic behaviour is described by <font co
       MechanicalLoadUserDefined : MechanicalLoadUserDefined.ProprietaryParameterDynamics
         
           MechanicalLoadUserDefined --> ProprietaryParameterDynamics : MechanicalLoadUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       MechanicalLoadUserDefined : MechanicalLoadDynamics.SynchronousMachineDynamics
         
           MechanicalLoadUserDefined --> SynchronousMachineDynamics : MechanicalLoadDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       
 ```
@@ -60,13 +65,13 @@ _Mechanical load function block whose dynamic behaviour is described by <font co
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:MechanicalLoadUserDefined.proprietary](http://iec.ch/TC57/CIM100#MechanicalLoadUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:MechanicalLoadUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| proprietary | [cim:MechanicalLoadUserDefined.proprietary](http://iec.ch/TC57/CIM100#MechanicalLoadUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:MechanicalLoadUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
 | SynchronousMachineDynamics | [cim:MechanicalLoadDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadDynamics.SynchronousMachineDynamics) | 0..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this mechanical load model is associated | [MechanicalLoadDynamics](MechanicalLoadDynamics.md) |
 | AsynchronousMachineDynamics | [cim:MechanicalLoadDynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#MechanicalLoadDynamics.AsynchronousMachineDynamics) | 0..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this mechanical load model is associate... | [MechanicalLoadDynamics](MechanicalLoadDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

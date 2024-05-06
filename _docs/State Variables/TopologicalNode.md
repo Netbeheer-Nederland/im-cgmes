@@ -18,21 +18,26 @@ _For a planning model, switch statuses are not used to form topological nodes. I
 ```mermaid
  classDiagram
     class TopologicalNode
+    click TopologicalNode href "../TopologicalNode"
       TopologicalNode : TopologicalNode.AngleRefTopologicalIsland
         
           TopologicalNode --> TopologicalIsland : TopologicalNode.AngleRefTopologicalIsland
+          click TopologicalIsland href "../TopologicalIsland"
         
       TopologicalNode : TopologicalNode.SvInjection
         
           TopologicalNode --> SvInjection : TopologicalNode.SvInjection
+          click SvInjection href "../SvInjection"
         
       TopologicalNode : TopologicalNode.SvVoltage
         
           TopologicalNode --> SvVoltage : TopologicalNode.SvVoltage
+          click SvVoltage href "../SvVoltage"
         
       TopologicalNode : TopologicalNode.TopologicalIsland
         
           TopologicalNode --> TopologicalIsland : TopologicalNode.TopologicalIsland
+          click TopologicalIsland href "../TopologicalIsland"
         
       
 ```

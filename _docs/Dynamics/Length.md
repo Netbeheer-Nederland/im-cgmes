@@ -16,13 +16,16 @@ _Unit of length. It shall be a positive value or zero._
 ```mermaid
  classDiagram
     class Length
+    click Length href "../Length"
       Length : Length.multiplier
         
           Length --> UnitMultiplier : Length.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Length : Length.unit
         
           Length --> UnitSymbol : Length.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Length : Length.value
         

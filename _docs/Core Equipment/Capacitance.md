@@ -16,13 +16,16 @@ _Capacitive part of reactance (imaginary part of impedance), at rated frequency.
 ```mermaid
  classDiagram
     class Capacitance
+    click Capacitance href "../Capacitance"
       Capacitance : Capacitance.multiplier
         
           Capacitance --> UnitMultiplier : Capacitance.multiplier
+          click UnitMultiplier href "../UnitMultiplier"
         
       Capacitance : Capacitance.unit
         
           Capacitance --> UnitSymbol : Capacitance.unit
+          click UnitSymbol href "../UnitSymbol"
         
       Capacitance : Capacitance.value
         

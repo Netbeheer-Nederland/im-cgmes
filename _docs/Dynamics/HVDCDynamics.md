@@ -16,11 +16,15 @@ _HVDC whose behaviour is described by reference to a standard model <font color=
 ```mermaid
  classDiagram
     class HVDCDynamics
+    click HVDCDynamics href "../HVDCDynamics"
       DynamicsFunctionBlock <|-- HVDCDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       HVDCDynamics <|-- CSCDynamics
+        click CSCDynamics href "../CSCDynamics"
       HVDCDynamics <|-- VSCDynamics
+        click VSCDynamics href "../VSCDynamics"
       
       
       HVDCDynamics : IdentifiedObject.description
@@ -52,9 +56,9 @@ _HVDC whose behaviour is described by reference to a standard model <font color=
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

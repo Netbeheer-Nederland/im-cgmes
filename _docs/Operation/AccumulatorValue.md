@@ -16,25 +16,31 @@ _AccumulatorValue represents an accumulated (counted) MeasurementValue._
 ```mermaid
  classDiagram
     class AccumulatorValue
+    click AccumulatorValue href "../AccumulatorValue"
       MeasurementValue <|-- AccumulatorValue
+        click MeasurementValue href "../MeasurementValue"
       
       AccumulatorValue : AccumulatorValue.Accumulator
         
           AccumulatorValue --> Accumulator : AccumulatorValue.Accumulator
+          click Accumulator href "../Accumulator"
         
       AccumulatorValue : AccumulatorValue.AccumulatorReset
         
           AccumulatorValue --> AccumulatorReset : AccumulatorValue.AccumulatorReset
+          click AccumulatorReset href "../AccumulatorReset"
         
       AccumulatorValue : IdentifiedObject.description
         
       AccumulatorValue : MeasurementValue.MeasurementValueQuality
         
           AccumulatorValue --> MeasurementValueQuality : MeasurementValue.MeasurementValueQuality
+          click MeasurementValueQuality href "../MeasurementValueQuality"
         
       AccumulatorValue : MeasurementValue.MeasurementValueSource
         
           AccumulatorValue --> MeasurementValueSource : MeasurementValue.MeasurementValueSource
+          click MeasurementValueSource href "../MeasurementValueSource"
         
       AccumulatorValue : IdentifiedObject.mRID
         
@@ -43,6 +49,7 @@ _AccumulatorValue represents an accumulated (counted) MeasurementValue._
       AccumulatorValue : MeasurementValue.sensorAccuracy
         
           AccumulatorValue --> PerCent : MeasurementValue.sensorAccuracy
+          click PerCent href "../PerCent"
         
       AccumulatorValue : MeasurementValue.timeStamp
         
@@ -66,15 +73,15 @@ _AccumulatorValue represents an accumulated (counted) MeasurementValue._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| Accumulator | [cim:AccumulatorValue.Accumulator](http://iec.ch/TC57/CIM100#AccumulatorValue.Accumulator) | 1..1 <br />  [Accumulator](Accumulator.md)  | Measurement to which this value is connected | direct |
+| Accumulator | [cim:AccumulatorValue.Accumulator](http://iec.ch/TC57/CIM100#AccumulatorValue.Accumulator) | 1 <br />  [Accumulator](Accumulator.md)  | Measurement to which this value is connected | direct |
 | AccumulatorReset | [cim:AccumulatorValue.AccumulatorReset](http://iec.ch/TC57/CIM100#AccumulatorValue.AccumulatorReset) | 0..1 <br />  [AccumulatorReset](AccumulatorReset.md)  | The command that resets the accumulator value | direct |
 | timeStamp | [cim:MeasurementValue.timeStamp](http://iec.ch/TC57/CIM100#MeasurementValue.timeStamp) | 0..1 <br />  date  | The time when the value was last updated | [MeasurementValue](MeasurementValue.md) |
 | sensorAccuracy | [cim:MeasurementValue.sensorAccuracy](http://iec.ch/TC57/CIM100#MeasurementValue.sensorAccuracy) | 0..1 <br />  [PerCent](PerCent.md)  | The limit, expressed as a percentage of the sensor maximum, that errors will ... | [MeasurementValue](MeasurementValue.md) |
 | MeasurementValueQuality | [cim:MeasurementValue.MeasurementValueQuality](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueQuality) | 0..1 <br />  [MeasurementValueQuality](MeasurementValueQuality.md)  | A MeasurementValue has a MeasurementValueQuality associated with it | [MeasurementValue](MeasurementValue.md) |
-| MeasurementValueSource | [cim:MeasurementValue.MeasurementValueSource](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueSource) | 1..1 <br />  [MeasurementValueSource](MeasurementValueSource.md)  | A reference to the type of source that updates the MeasurementValue, e | [MeasurementValue](MeasurementValue.md) |
+| MeasurementValueSource | [cim:MeasurementValue.MeasurementValueSource](http://iec.ch/TC57/CIM100#MeasurementValue.MeasurementValueSource) | 1 <br />  [MeasurementValueSource](MeasurementValueSource.md)  | A reference to the type of source that updates the MeasurementValue, e | [MeasurementValue](MeasurementValue.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
-| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

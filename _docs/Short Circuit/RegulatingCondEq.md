@@ -16,12 +16,17 @@ _A type of conducting equipment that can regulate a quantity (i.e. voltage or fl
 ```mermaid
  classDiagram
     class RegulatingCondEq
+    click RegulatingCondEq href "../RegulatingCondEq"
       EnergyConnection <|-- RegulatingCondEq
+        click EnergyConnection href "../EnergyConnection"
       
 
       RegulatingCondEq <|-- ExternalNetworkInjection
+        click ExternalNetworkInjection href "../ExternalNetworkInjection"
       RegulatingCondEq <|-- RotatingMachine
+        click RotatingMachine href "../RotatingMachine"
       RegulatingCondEq <|-- ShuntCompensator
+        click ShuntCompensator href "../ShuntCompensator"
       
       
       RegulatingCondEq : IdentifiedObject.mRID
@@ -51,7 +56,7 @@ _A type of conducting equipment that can regulate a quantity (i.e. voltage or fl
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

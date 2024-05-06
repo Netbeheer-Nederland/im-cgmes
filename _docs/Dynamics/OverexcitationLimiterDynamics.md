@@ -16,14 +16,21 @@ _Overexcitation limiter function block whose behaviour is described by reference
 ```mermaid
  classDiagram
     class OverexcitationLimiterDynamics
+    click OverexcitationLimiterDynamics href "../OverexcitationLimiterDynamics"
       DynamicsFunctionBlock <|-- OverexcitationLimiterDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       OverexcitationLimiterDynamics <|-- OverexcitationLimiterUserDefined
+        click OverexcitationLimiterUserDefined href "../OverexcitationLimiterUserDefined"
       OverexcitationLimiterDynamics <|-- OverexcLimIEEE
+        click OverexcLimIEEE href "../OverexcLimIEEE"
       OverexcitationLimiterDynamics <|-- OverexcLim2
+        click OverexcLim2 href "../OverexcLim2"
       OverexcitationLimiterDynamics <|-- OverexcLimX1
+        click OverexcLimX1 href "../OverexcLimX1"
       OverexcitationLimiterDynamics <|-- OverexcLimX2
+        click OverexcLimX2 href "../OverexcLimX2"
       
       
       OverexcitationLimiterDynamics : IdentifiedObject.description
@@ -33,6 +40,7 @@ _Overexcitation limiter function block whose behaviour is described by reference
       OverexcitationLimiterDynamics : OverexcitationLimiterDynamics.ExcitationSystemDynamics
         
           OverexcitationLimiterDynamics --> ExcitationSystemDynamics : OverexcitationLimiterDynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       OverexcitationLimiterDynamics : IdentifiedObject.mRID
         
@@ -62,10 +70,10 @@ _Overexcitation limiter function block whose behaviour is described by reference
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| ExcitationSystemDynamics | [cim:OverexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#OverexcitationLimiterDynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this overexcitation limiter model is assoc... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| ExcitationSystemDynamics | [cim:OverexcitationLimiterDynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#OverexcitationLimiterDynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this overexcitation limiter model is assoc... | direct |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

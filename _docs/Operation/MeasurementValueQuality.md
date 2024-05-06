@@ -16,7 +16,9 @@ _Measurement quality flags. Bits 0-10 are defined for substation automation in I
 ```mermaid
  classDiagram
     class MeasurementValueQuality
+    click MeasurementValueQuality href "../MeasurementValueQuality"
       Quality61850 <|-- MeasurementValueQuality
+        click Quality61850 href "../Quality61850"
       
       MeasurementValueQuality : Quality61850.badReference
         
@@ -27,6 +29,7 @@ _Measurement quality flags. Bits 0-10 are defined for substation automation in I
       MeasurementValueQuality : MeasurementValueQuality.MeasurementValue
         
           MeasurementValueQuality --> MeasurementValue : MeasurementValueQuality.MeasurementValue
+          click MeasurementValue href "../MeasurementValue"
         
       MeasurementValueQuality : Quality61850.oldData
         
@@ -41,6 +44,7 @@ _Measurement quality flags. Bits 0-10 are defined for substation automation in I
       MeasurementValueQuality : Quality61850.source
         
           MeasurementValueQuality --> Source : Quality61850.source
+          click Source href "../Source"
         
       MeasurementValueQuality : Quality61850.suspect
         
@@ -49,6 +53,7 @@ _Measurement quality flags. Bits 0-10 are defined for substation automation in I
       MeasurementValueQuality : Quality61850.validity
         
           MeasurementValueQuality --> Validity : Quality61850.validity
+          click Validity href "../Validity"
         
       
 ```
@@ -68,7 +73,7 @@ _Measurement quality flags. Bits 0-10 are defined for substation automation in I
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| MeasurementValue | [cim:MeasurementValueQuality.MeasurementValue](http://iec.ch/TC57/CIM100#MeasurementValueQuality.MeasurementValue) | 1..1 <br />  [MeasurementValue](MeasurementValue.md)  | A MeasurementValue has a MeasurementValueQuality associated with it | direct |
+| MeasurementValue | [cim:MeasurementValueQuality.MeasurementValue](http://iec.ch/TC57/CIM100#MeasurementValueQuality.MeasurementValue) | 1 <br />  [MeasurementValue](MeasurementValue.md)  | A MeasurementValue has a MeasurementValueQuality associated with it | direct |
 | badReference | [cim:Quality61850.badReference](http://iec.ch/TC57/CIM100#Quality61850.badReference) | 0..1 <br />  boolean  | Measurement value may be incorrect due to a reference being out of calibratio... | [Quality61850](Quality61850.md) |
 | estimatorReplaced | [cim:Quality61850.estimatorReplaced](http://iec.ch/TC57/CIM100#Quality61850.estimatorReplaced) | 0..1 <br />  boolean  | Value has been replaced by State Estimator | [Quality61850](Quality61850.md) |
 | failure | [cim:Quality61850.failure](http://iec.ch/TC57/CIM100#Quality61850.failure) | 0..1 <br />  boolean  | This identifier indicates that a supervision function has detected an interna... | [Quality61850](Quality61850.md) |

@@ -18,7 +18,9 @@ _Reference: IEC 61400-27-1:2015, Annex D._
 ```mermaid
  classDiagram
     class WindPlantIEC
+    click WindPlantIEC href "../WindPlantIEC"
       WindPlantDynamics <|-- WindPlantIEC
+        click WindPlantDynamics href "../WindPlantDynamics"
       
       WindPlantIEC : IdentifiedObject.description
         
@@ -31,18 +33,22 @@ _Reference: IEC 61400-27-1:2015, Annex D._
       WindPlantIEC : WindPlantDynamics.RemoteInputSignal
         
           WindPlantIEC --> RemoteInputSignal : WindPlantDynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       WindPlantIEC : WindPlantIEC.WindPlantFreqPcontrolIEC
         
           WindPlantIEC --> WindPlantFreqPcontrolIEC : WindPlantIEC.WindPlantFreqPcontrolIEC
+          click WindPlantFreqPcontrolIEC href "../WindPlantFreqPcontrolIEC"
         
       WindPlantIEC : WindPlantIEC.WindPlantReactiveControlIEC
         
           WindPlantIEC --> WindPlantReactiveControlIEC : WindPlantIEC.WindPlantReactiveControlIEC
+          click WindPlantReactiveControlIEC href "../WindPlantReactiveControlIEC"
         
       WindPlantIEC : WindPlantDynamics.WindTurbineType3or4Dynamics
         
           WindPlantIEC --> WindTurbineType3or4Dynamics : WindPlantDynamics.WindTurbineType3or4Dynamics
+          click WindTurbineType3or4Dynamics href "../WindTurbineType3or4Dynamics"
         
       
 ```
@@ -64,13 +70,13 @@ _Reference: IEC 61400-27-1:2015, Annex D._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| WindPlantFreqPcontrolIEC | [cim:WindPlantIEC.WindPlantFreqPcontrolIEC](http://iec.ch/TC57/CIM100#WindPlantIEC.WindPlantFreqPcontrolIEC) | 1..1 <br />  [WindPlantFreqPcontrolIEC](WindPlantFreqPcontrolIEC.md)  | Wind plant frequency and active power control model associated with this wind... | direct |
-| WindPlantReactiveControlIEC | [cim:WindPlantIEC.WindPlantReactiveControlIEC](http://iec.ch/TC57/CIM100#WindPlantIEC.WindPlantReactiveControlIEC) | 1..1 <br />  [WindPlantReactiveControlIEC](WindPlantReactiveControlIEC.md)  | Wind plant model with which this wind reactive control is associated | direct |
+| WindPlantFreqPcontrolIEC | [cim:WindPlantIEC.WindPlantFreqPcontrolIEC](http://iec.ch/TC57/CIM100#WindPlantIEC.WindPlantFreqPcontrolIEC) | 1 <br />  [WindPlantFreqPcontrolIEC](WindPlantFreqPcontrolIEC.md)  | Wind plant frequency and active power control model associated with this wind... | direct |
+| WindPlantReactiveControlIEC | [cim:WindPlantIEC.WindPlantReactiveControlIEC](http://iec.ch/TC57/CIM100#WindPlantIEC.WindPlantReactiveControlIEC) | 1 <br />  [WindPlantReactiveControlIEC](WindPlantReactiveControlIEC.md)  | Wind plant model with which this wind reactive control is associated | direct |
 | RemoteInputSignal | [cim:WindPlantDynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#WindPlantDynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | The remote signal with which this power plant is associated | [WindPlantDynamics](WindPlantDynamics.md) |
 | WindTurbineType3or4Dynamics | [cim:WindPlantDynamics.WindTurbineType3or4Dynamics](http://iec.ch/TC57/CIM100#WindPlantDynamics.WindTurbineType3or4Dynamics) | 1..* <br />  [WindTurbineType3or4Dynamics](WindTurbineType3or4Dynamics.md)  | The wind turbine type 3 or type 4 associated with this wind plant | [WindPlantDynamics](WindPlantDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

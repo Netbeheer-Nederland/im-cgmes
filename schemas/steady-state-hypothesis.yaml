@@ -50,14 +50,14 @@ classes:
 
           Starting value for a steady state solution in the case a simplified power
           flow model is used.'
-      target_ppcc:
+      targetPpcc:
         slot_uri: cim:ACDCConverter.targetPpcc
         range: ActivePower
         multivalued: false
         required: false
         description: Real power injection target in AC grid, at point of common coupling.  Load
           sign convention is used, i.e. positive sign means flow out from a node.
-      target_udc:
+      targetUdc:
         slot_uri: cim:ACDCConverter.targetUdc
         range: Voltage
         multivalued: false
@@ -204,7 +204,7 @@ classes:
   AsynchronousMachine:
     class_uri: cim:AsynchronousMachine
     attributes:
-      asynchronous_machine_type:
+      asynchronousMachineType:
         slot_uri: cim:AsynchronousMachine.asynchronousMachineType
         range: AsynchronousMachineKind
         multivalued: false
@@ -217,13 +217,13 @@ classes:
   BatteryUnit:
     class_uri: cim:BatteryUnit
     attributes:
-      battery_state:
+      batteryState:
         slot_uri: cim:BatteryUnit.batteryState
         range: BatteryStateKind
         multivalued: false
         required: true
         description: The current state of the battery (charging, full, etc.).
-      stored_e:
+      storedE:
         slot_uri: cim:BatteryUnit.storedE
         range: RealEnergy
         multivalued: false
@@ -271,14 +271,14 @@ classes:
   ControlArea:
     class_uri: cim:ControlArea
     attributes:
-      net_interchange:
+      netInterchange:
         slot_uri: cim:ControlArea.netInterchange
         range: ActivePower
         multivalued: false
         required: true
         description: The specified positive net interchange into the control area,
           i.e. positive sign means flow into the area.
-      p_tolerance:
+      pTolerance:
         slot_uri: cim:ControlArea.pTolerance
         range: ActivePower
         multivalued: false
@@ -317,7 +317,7 @@ classes:
   CsConverter:
     class_uri: cim:CsConverter
     attributes:
-      operating_mode:
+      operatingMode:
         slot_uri: cim:CsConverter.operatingMode
         range: CsOperatingModeKind
         multivalued: false
@@ -325,13 +325,13 @@ classes:
         description: "Indicates whether the DC pole is operating as an inverter or\
           \ as a rectifier. It is converter\u2019s control variable used in power\
           \ flow."
-      p_pcc_control:
+      pPccControl:
         slot_uri: cim:CsConverter.pPccControl
         range: CsPpccControlKind
         multivalued: false
         required: true
         description: Kind of active power control.
-      target_alpha:
+      targetAlpha:
         slot_uri: cim:CsConverter.targetAlpha
         range: AngleDegrees
         multivalued: false
@@ -340,7 +340,7 @@ classes:
           \ used in power flow. It is only applicable for rectifier if continuous\
           \ tap changer control is used. Allowed values are within the range minAlpha&lt;=targetAlpha&lt;=maxAlpha.\
           \ The attribute shall be a positive value."
-      target_gamma:
+      targetGamma:
         slot_uri: cim:CsConverter.targetGamma
         range: AngleDegrees
         multivalued: false
@@ -349,7 +349,7 @@ classes:
           \ used in power flow. It is only applicable for inverter if continuous tap\
           \ changer control is used. Allowed values are within the range minGamma&lt;=targetGamma&lt;=maxGamma.\
           \ The attribute shall be a positive value."
-      target_idc:
+      targetIdc:
         slot_uri: cim:CsConverter.targetIdc
         range: CurrentFlow
         multivalued: false
@@ -497,7 +497,7 @@ classes:
   EnergySource:
     class_uri: cim:EnergySource
     attributes:
-      active_power:
+      activePower:
         slot_uri: cim:EnergySource.activePower
         range: ActivePower
         multivalued: false
@@ -506,7 +506,7 @@ classes:
           used, i.e. positive sign means flow out from a node.
 
           Starting value for steady state solutions.'
-      reactive_power:
+      reactivePower:
         slot_uri: cim:EnergySource.reactivePower
         range: ReactivePower
         multivalued: false
@@ -515,7 +515,7 @@ classes:
           is used, i.e. positive sign means flow out from a node.
 
           Starting value for steady state solutions.'
-      voltage_angle:
+      voltageAngle:
         slot_uri: cim:EnergySource.voltageAngle
         range: AngleRadians
         multivalued: false
@@ -525,7 +525,7 @@ classes:
           source, such as when voltages and angles from the transmission level are
           used as input to the distribution network. The attribute shall be a positive
           value or zero.
-      voltage_magnitude:
+      voltageMagnitude:
         slot_uri: cim:EnergySource.voltageMagnitude
         range: Voltage
         multivalued: false
@@ -560,7 +560,7 @@ classes:
   Equipment:
     class_uri: cim:Equipment
     attributes:
-      in_service:
+      inService:
         slot_uri: cim:Equipment.inService
         range: boolean
         multivalued: false
@@ -581,14 +581,14 @@ classes:
   EquivalentInjection:
     class_uri: cim:EquivalentInjection
     attributes:
-      regulation_status:
+      regulationStatus:
         slot_uri: cim:EquivalentInjection.regulationStatus
         range: boolean
         multivalued: false
         required: false
         description: Specifies the regulation status of the EquivalentInjection.  True
           is regulating.  False is not regulating.
-      regulation_target:
+      regulationTarget:
         slot_uri: cim:EquivalentInjection.regulationTarget
         range: Voltage
         multivalued: false
@@ -619,7 +619,7 @@ classes:
   ExternalNetworkInjection:
     class_uri: cim:ExternalNetworkInjection
     attributes:
-      reference_priority:
+      referencePriority:
         slot_uri: cim:ExternalNetworkInjection.referencePriority
         range: integer
         multivalued: false
@@ -657,7 +657,7 @@ classes:
   GeneratingUnit:
     class_uri: cim:GeneratingUnit
     attributes:
-      normal_p_f:
+      normalPF:
         slot_uri: cim:GeneratingUnit.normalPF
         range: float
         multivalued: false
@@ -685,7 +685,7 @@ classes:
   IdentifiedObject:
     class_uri: cim:IdentifiedObject
     attributes:
-      m_r_i_d:
+      mRID:
         slot_uri: cim:IdentifiedObject.mRID
         range: string
         multivalued: false
@@ -841,7 +841,7 @@ classes:
   RegulatingCondEq:
     class_uri: cim:RegulatingCondEq
     attributes:
-      control_enabled:
+      controlEnabled:
         slot_uri: cim:RegulatingCondEq.controlEnabled
         range: boolean
         multivalued: false
@@ -867,7 +867,7 @@ classes:
         multivalued: false
         required: true
         description: The flag tells if regulation is enabled.
-      target_deadband:
+      targetDeadband:
         slot_uri: cim:RegulatingControl.targetDeadband
         range: float
         multivalued: false
@@ -880,7 +880,7 @@ classes:
 
           Note that for instance, if the targetValue is 100 kV and the targetDeadband
           is 2 kV the range is from 99 to 101 kV.'
-      target_value:
+      targetValue:
         slot_uri: cim:RegulatingControl.targetValue
         range: float
         multivalued: false
@@ -888,19 +888,19 @@ classes:
         description: The target value specified for case input.   This value can be
           used for the target value without the use of schedules. The value has the
           units appropriate to the mode attribute.
-      target_value_unit_multiplier:
+      targetValueUnitMultiplier:
         slot_uri: cim:RegulatingControl.targetValueUnitMultiplier
         range: UnitMultiplier
         multivalued: false
         required: true
         description: Specify the multiplier for used for the targetValue.
-      max_allowed_target_value:
+      maxAllowedTargetValue:
         slot_uri: cim:RegulatingControl.maxAllowedTargetValue
         range: float
         multivalued: false
         required: false
         description: Maximum allowed target value (RegulatingControl.targetValue).
-      min_allowed_target_value:
+      minAllowedTargetValue:
         slot_uri: cim:RegulatingControl.minAllowedTargetValue
         range: float
         multivalued: false
@@ -1042,13 +1042,13 @@ classes:
   SynchronousMachine:
     class_uri: cim:SynchronousMachine
     attributes:
-      operating_mode:
+      operatingMode:
         slot_uri: cim:SynchronousMachine.operatingMode
         range: SynchronousMachineOperatingMode
         multivalued: false
         required: true
         description: Current mode of operation.
-      reference_priority:
+      referencePriority:
         slot_uri: cim:SynchronousMachine.referencePriority
         range: integer
         multivalued: false
@@ -1063,7 +1063,7 @@ classes:
   TapChanger:
     class_uri: cim:TapChanger
     attributes:
-      control_enabled:
+      controlEnabled:
         slot_uri: cim:TapChanger.controlEnabled
         range: boolean
         multivalued: false
@@ -1129,7 +1129,7 @@ classes:
         required: false
         description: Droop constant. The pu value is obtained as D [kV/MW] x Sb /
           Ubdc. The attribute shall be a positive value.
-      droop_compensation:
+      droopCompensation:
         slot_uri: cim:VsConverter.droopCompensation
         range: Resistance
         multivalued: false
@@ -1137,26 +1137,26 @@ classes:
         description: Compensation constant. Used to compensate for voltage drop when
           controlling voltage at a distant bus. The attribute shall be a positive
           value.
-      p_pcc_control:
+      pPccControl:
         slot_uri: cim:VsConverter.pPccControl
         range: VsPpccControlKind
         multivalued: false
         required: true
         description: Kind of control of real power and/or DC voltage.
-      q_pcc_control:
+      qPccControl:
         slot_uri: cim:VsConverter.qPccControl
         range: VsQpccControlKind
         multivalued: false
         required: true
         description: Kind of reactive power control.
-      q_share:
+      qShare:
         slot_uri: cim:VsConverter.qShare
         range: PerCent
         multivalued: false
         required: false
         description: Reactive power sharing factor among parallel converters on Uac
           control. The attribute shall be a positive value or zero.
-      target_qpcc:
+      targetQpcc:
         slot_uri: cim:VsConverter.targetQpcc
         range: ReactivePower
         multivalued: false
@@ -1164,28 +1164,28 @@ classes:
         description: Reactive power injection target in AC grid, at point of common
           coupling.  Load sign convention is used, i.e. positive sign means flow out
           from a node.
-      target_upcc:
+      targetUpcc:
         slot_uri: cim:VsConverter.targetUpcc
         range: Voltage
         multivalued: false
         required: false
         description: Voltage target in AC grid, at point of common coupling. The attribute
           shall be a positive value.
-      target_power_factor_pcc:
+      targetPowerFactorPcc:
         slot_uri: cim:VsConverter.targetPowerFactorPcc
         range: float
         multivalued: false
         required: false
         description: Power factor target at the AC side, at point of common coupling.
           The attribute shall be a positive value.
-      target_phase_pcc:
+      targetPhasePcc:
         slot_uri: cim:VsConverter.targetPhasePcc
         range: AngleDegrees
         multivalued: false
         required: false
         description: Phase target at AC side, at point of common coupling. The attribute
           shall be a positive value.
-      target_p_w_mfactor:
+      targetPWMfactor:
         slot_uri: cim:VsConverter.targetPWMfactor
         range: float
         multivalued: false

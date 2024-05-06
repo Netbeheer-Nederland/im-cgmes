@@ -16,14 +16,21 @@ _A single or set of synchronous machines for converting mechanical power into al
 ```mermaid
  classDiagram
     class GeneratingUnit
+    click GeneratingUnit href "../GeneratingUnit"
       Equipment <|-- GeneratingUnit
+        click Equipment href "../Equipment"
       
 
       GeneratingUnit <|-- HydroGeneratingUnit
+        click HydroGeneratingUnit href "../HydroGeneratingUnit"
       GeneratingUnit <|-- NuclearGeneratingUnit
+        click NuclearGeneratingUnit href "../NuclearGeneratingUnit"
       GeneratingUnit <|-- SolarGeneratingUnit
+        click SolarGeneratingUnit href "../SolarGeneratingUnit"
       GeneratingUnit <|-- ThermalGeneratingUnit
+        click ThermalGeneratingUnit href "../ThermalGeneratingUnit"
       GeneratingUnit <|-- WindGeneratingUnit
+        click WindGeneratingUnit href "../WindGeneratingUnit"
       
       
       GeneratingUnit : Equipment.inService
@@ -57,9 +64,9 @@ _A single or set of synchronous machines for converting mechanical power into al
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| normalPF | [cim:GeneratingUnit.normalPF](http://iec.ch/TC57/CIM100#GeneratingUnit.normalPF) | 1..1 <br />  float  | Generating unit economic participation factor | direct |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| normalPF | [cim:GeneratingUnit.normalPF](http://iec.ch/TC57/CIM100#GeneratingUnit.normalPF) | 1 <br />  float  | Generating unit economic participation factor | direct |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

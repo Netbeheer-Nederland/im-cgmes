@@ -16,13 +16,16 @@ _Operational limit on current._
 ```mermaid
  classDiagram
     class CurrentLimit
+    click CurrentLimit href "../CurrentLimit"
       OperationalLimit <|-- CurrentLimit
+        click OperationalLimit href "../OperationalLimit"
       
       CurrentLimit : IdentifiedObject.mRID
         
       CurrentLimit : CurrentLimit.value
         
           CurrentLimit --> CurrentFlow : CurrentLimit.value
+          click CurrentFlow href "../CurrentFlow"
         
       
 ```
@@ -43,8 +46,8 @@ _Operational limit on current._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| value | [cim:CurrentLimit.value](http://iec.ch/TC57/CIM100#CurrentLimit.value) | 1..1 <br />  [CurrentFlow](CurrentFlow.md)  | Limit on current flow | direct |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| value | [cim:CurrentLimit.value](http://iec.ch/TC57/CIM100#CurrentLimit.value) | 1 <br />  [CurrentFlow](CurrentFlow.md)  | Limit on current flow | direct |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

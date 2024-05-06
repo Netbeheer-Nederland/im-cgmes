@@ -24,7 +24,9 @@ _The attributes minGamma and maxGamma define the range of extinction angles for 
 ```mermaid
  classDiagram
     class CsConverter
+    click CsConverter href "../CsConverter"
       ACDCConverter <|-- CsConverter
+        click ACDCConverter href "../ACDCConverter"
       
       CsConverter : Equipment.inService
         
@@ -33,38 +35,47 @@ _The attributes minGamma and maxGamma define the range of extinction angles for 
       CsConverter : CsConverter.operatingMode
         
           CsConverter --> CsOperatingModeKind : CsConverter.operatingMode
+          click CsOperatingModeKind href "../CsOperatingModeKind"
         
       CsConverter : ACDCConverter.p
         
           CsConverter --> ActivePower : ACDCConverter.p
+          click ActivePower href "../ActivePower"
         
       CsConverter : CsConverter.pPccControl
         
           CsConverter --> CsPpccControlKind : CsConverter.pPccControl
+          click CsPpccControlKind href "../CsPpccControlKind"
         
       CsConverter : ACDCConverter.q
         
           CsConverter --> ReactivePower : ACDCConverter.q
+          click ReactivePower href "../ReactivePower"
         
       CsConverter : CsConverter.targetAlpha
         
           CsConverter --> AngleDegrees : CsConverter.targetAlpha
+          click AngleDegrees href "../AngleDegrees"
         
       CsConverter : CsConverter.targetGamma
         
           CsConverter --> AngleDegrees : CsConverter.targetGamma
+          click AngleDegrees href "../AngleDegrees"
         
       CsConverter : CsConverter.targetIdc
         
           CsConverter --> CurrentFlow : CsConverter.targetIdc
+          click CurrentFlow href "../CurrentFlow"
         
       CsConverter : ACDCConverter.targetPpcc
         
           CsConverter --> ActivePower : ACDCConverter.targetPpcc
+          click ActivePower href "../ActivePower"
         
       CsConverter : ACDCConverter.targetUdc
         
           CsConverter --> Voltage : ACDCConverter.targetUdc
+          click Voltage href "../Voltage"
         
       
 ```
@@ -88,17 +99,17 @@ _The attributes minGamma and maxGamma define the range of extinction angles for 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| operatingMode | [cim:CsConverter.operatingMode](http://iec.ch/TC57/CIM100#CsConverter.operatingMode) | 1..1 <br />  [CsOperatingModeKind](CsOperatingModeKind.md)  | Indicates whether the DC pole is operating as an inverter or as a rectifier | direct |
-| pPccControl | [cim:CsConverter.pPccControl](http://iec.ch/TC57/CIM100#CsConverter.pPccControl) | 1..1 <br />  [CsPpccControlKind](CsPpccControlKind.md)  | Kind of active power control | direct |
+| operatingMode | [cim:CsConverter.operatingMode](http://iec.ch/TC57/CIM100#CsConverter.operatingMode) | 1 <br />  [CsOperatingModeKind](CsOperatingModeKind.md)  | Indicates whether the DC pole is operating as an inverter or as a rectifier | direct |
+| pPccControl | [cim:CsConverter.pPccControl](http://iec.ch/TC57/CIM100#CsConverter.pPccControl) | 1 <br />  [CsPpccControlKind](CsPpccControlKind.md)  | Kind of active power control | direct |
 | targetAlpha | [cim:CsConverter.targetAlpha](http://iec.ch/TC57/CIM100#CsConverter.targetAlpha) | 0..1 <br />  [AngleDegrees](AngleDegrees.md)  | Target firing angle | direct |
 | targetGamma | [cim:CsConverter.targetGamma](http://iec.ch/TC57/CIM100#CsConverter.targetGamma) | 0..1 <br />  [AngleDegrees](AngleDegrees.md)  | Target extinction angle | direct |
 | targetIdc | [cim:CsConverter.targetIdc](http://iec.ch/TC57/CIM100#CsConverter.targetIdc) | 0..1 <br />  [CurrentFlow](CurrentFlow.md)  | DC current target value | direct |
-| p | [cim:ACDCConverter.p](http://iec.ch/TC57/CIM100#ACDCConverter.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | Active power at the point of common coupling | [ACDCConverter](ACDCConverter.md) |
-| q | [cim:ACDCConverter.q](http://iec.ch/TC57/CIM100#ACDCConverter.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power at the point of common coupling | [ACDCConverter](ACDCConverter.md) |
+| p | [cim:ACDCConverter.p](http://iec.ch/TC57/CIM100#ACDCConverter.p) | 1 <br />  [ActivePower](ActivePower.md)  | Active power at the point of common coupling | [ACDCConverter](ACDCConverter.md) |
+| q | [cim:ACDCConverter.q](http://iec.ch/TC57/CIM100#ACDCConverter.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | Reactive power at the point of common coupling | [ACDCConverter](ACDCConverter.md) |
 | targetPpcc | [cim:ACDCConverter.targetPpcc](http://iec.ch/TC57/CIM100#ACDCConverter.targetPpcc) | 0..1 <br />  [ActivePower](ActivePower.md)  | Real power injection target in AC grid, at point of common coupling | [ACDCConverter](ACDCConverter.md) |
 | targetUdc | [cim:ACDCConverter.targetUdc](http://iec.ch/TC57/CIM100#ACDCConverter.targetUdc) | 0..1 <br />  [Voltage](Voltage.md)  | Target value for DC voltage magnitude | [ACDCConverter](ACDCConverter.md) |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

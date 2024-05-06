@@ -16,6 +16,7 @@ _Current status information relevant to an entity._
 ```mermaid
  classDiagram
     class Status
+    click Status href "../Status"
       Status : Status.dateTime
         
       Status : Status.reason

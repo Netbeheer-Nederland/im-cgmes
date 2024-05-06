@@ -16,10 +16,13 @@ _An electrical connection point (AC or DC) to a piece of conducting equipment. T
 ```mermaid
  classDiagram
     class ACDCTerminal
+    click ACDCTerminal href "../ACDCTerminal"
       IdentifiedObject <|-- ACDCTerminal
+        click IdentifiedObject href "../IdentifiedObject"
       
 
       ACDCTerminal <|-- Terminal
+        click Terminal href "../Terminal"
       
       
       ACDCTerminal : IdentifiedObject.mRID
@@ -43,7 +46,7 @@ _An electrical connection point (AC or DC) to a piece of conducting equipment. T
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

@@ -16,7 +16,9 @@ _Voltage source converter (VSC) function block whose dynamic behaviour is descri
 ```mermaid
  classDiagram
     class VSCUserDefined
+    click VSCUserDefined href "../VSCUserDefined"
       VSCDynamics <|-- VSCUserDefined
+        click VSCDynamics href "../VSCDynamics"
       
       VSCUserDefined : IdentifiedObject.description
         
@@ -31,10 +33,12 @@ _Voltage source converter (VSC) function block whose dynamic behaviour is descri
       VSCUserDefined : VSCUserDefined.ProprietaryParameterDynamics
         
           VSCUserDefined --> ProprietaryParameterDynamics : VSCUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       VSCUserDefined : VSCDynamics.VsConverter
         
           VSCUserDefined --> VsConverter : VSCDynamics.VsConverter
+          click VsConverter href "../VsConverter"
         
       
 ```
@@ -57,12 +61,12 @@ _Voltage source converter (VSC) function block whose dynamic behaviour is descri
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:VSCUserDefined.proprietary](http://iec.ch/TC57/CIM100#VSCUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:VSCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#VSCUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| VsConverter | [cim:VSCDynamics.VsConverter](http://iec.ch/TC57/CIM100#VSCDynamics.VsConverter) | 1..1 <br />  [VsConverter](VsConverter.md)  | Voltage source converter to which voltage source converter dynamics model app... | [VSCDynamics](VSCDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| proprietary | [cim:VSCUserDefined.proprietary](http://iec.ch/TC57/CIM100#VSCUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:VSCUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#VSCUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| VsConverter | [cim:VSCDynamics.VsConverter](http://iec.ch/TC57/CIM100#VSCDynamics.VsConverter) | 1 <br />  [VsConverter](VsConverter.md)  | Voltage source converter to which voltage source converter dynamics model app... | [VSCDynamics](VSCDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

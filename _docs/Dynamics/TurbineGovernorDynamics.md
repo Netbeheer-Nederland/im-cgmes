@@ -16,47 +16,83 @@ _Turbine-governor function block whose behaviour is described by reference to a 
 ```mermaid
  classDiagram
     class TurbineGovernorDynamics
+    click TurbineGovernorDynamics href "../TurbineGovernorDynamics"
       DynamicsFunctionBlock <|-- TurbineGovernorDynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       TurbineGovernorDynamics <|-- TurbineGovernorUserDefined
+        click TurbineGovernorUserDefined href "../TurbineGovernorUserDefined"
       TurbineGovernorDynamics <|-- GovHydroIEEE0
+        click GovHydroIEEE0 href "../GovHydroIEEE0"
       TurbineGovernorDynamics <|-- GovHydroIEEE2
+        click GovHydroIEEE2 href "../GovHydroIEEE2"
       TurbineGovernorDynamics <|-- GovSteamIEEE1
+        click GovSteamIEEE1 href "../GovSteamIEEE1"
       TurbineGovernorDynamics <|-- GovCT1
+        click GovCT1 href "../GovCT1"
       TurbineGovernorDynamics <|-- GovCT2
+        click GovCT2 href "../GovCT2"
       TurbineGovernorDynamics <|-- GovGAST
+        click GovGAST href "../GovGAST"
       TurbineGovernorDynamics <|-- GovGAST1
+        click GovGAST1 href "../GovGAST1"
       TurbineGovernorDynamics <|-- GovGAST2
+        click GovGAST2 href "../GovGAST2"
       TurbineGovernorDynamics <|-- GovGAST3
+        click GovGAST3 href "../GovGAST3"
       TurbineGovernorDynamics <|-- GovGAST4
+        click GovGAST4 href "../GovGAST4"
       TurbineGovernorDynamics <|-- GovGASTWD
+        click GovGASTWD href "../GovGASTWD"
       TurbineGovernorDynamics <|-- GovHydro1
+        click GovHydro1 href "../GovHydro1"
       TurbineGovernorDynamics <|-- GovHydro2
+        click GovHydro2 href "../GovHydro2"
       TurbineGovernorDynamics <|-- GovHydro3
+        click GovHydro3 href "../GovHydro3"
       TurbineGovernorDynamics <|-- GovHydro4
+        click GovHydro4 href "../GovHydro4"
       TurbineGovernorDynamics <|-- GovHydroDD
+        click GovHydroDD href "../GovHydroDD"
       TurbineGovernorDynamics <|-- GovHydroFrancis
+        click GovHydroFrancis href "../GovHydroFrancis"
       TurbineGovernorDynamics <|-- GovHydroPelton
+        click GovHydroPelton href "../GovHydroPelton"
       TurbineGovernorDynamics <|-- GovHydroPID
+        click GovHydroPID href "../GovHydroPID"
       TurbineGovernorDynamics <|-- GovHydroPID2
+        click GovHydroPID2 href "../GovHydroPID2"
       TurbineGovernorDynamics <|-- GovHydroR
+        click GovHydroR href "../GovHydroR"
       TurbineGovernorDynamics <|-- GovHydroWEH
+        click GovHydroWEH href "../GovHydroWEH"
       TurbineGovernorDynamics <|-- GovHydroWPID
+        click GovHydroWPID href "../GovHydroWPID"
       TurbineGovernorDynamics <|-- GovSteam0
+        click GovSteam0 href "../GovSteam0"
       TurbineGovernorDynamics <|-- GovSteam1
+        click GovSteam1 href "../GovSteam1"
       TurbineGovernorDynamics <|-- GovSteam2
+        click GovSteam2 href "../GovSteam2"
       TurbineGovernorDynamics <|-- GovSteamBB
+        click GovSteamBB href "../GovSteamBB"
       TurbineGovernorDynamics <|-- GovSteamEU
+        click GovSteamEU href "../GovSteamEU"
       TurbineGovernorDynamics <|-- GovSteamFV2
+        click GovSteamFV2 href "../GovSteamFV2"
       TurbineGovernorDynamics <|-- GovSteamFV3
+        click GovSteamFV3 href "../GovSteamFV3"
       TurbineGovernorDynamics <|-- GovSteamFV4
+        click GovSteamFV4 href "../GovSteamFV4"
       TurbineGovernorDynamics <|-- GovSteamSGO
+        click GovSteamSGO href "../GovSteamSGO"
       
       
       TurbineGovernorDynamics : TurbineGovernorDynamics.AsynchronousMachineDynamics
         
           TurbineGovernorDynamics --> AsynchronousMachineDynamics : TurbineGovernorDynamics.AsynchronousMachineDynamics
+          click AsynchronousMachineDynamics href "../AsynchronousMachineDynamics"
         
       TurbineGovernorDynamics : IdentifiedObject.description
         
@@ -69,10 +105,12 @@ _Turbine-governor function block whose behaviour is described by reference to a 
       TurbineGovernorDynamics : TurbineGovernorDynamics.SynchronousMachineDynamics
         
           TurbineGovernorDynamics --> SynchronousMachineDynamics : TurbineGovernorDynamics.SynchronousMachineDynamics
+          click SynchronousMachineDynamics href "../SynchronousMachineDynamics"
         
       TurbineGovernorDynamics : TurbineGovernorDynamics.TurbineLoadControllerDynamics
         
           TurbineGovernorDynamics --> TurbineLoadControllerDynamics : TurbineGovernorDynamics.TurbineLoadControllerDynamics
+          click TurbineLoadControllerDynamics href "../TurbineLoadControllerDynamics"
         
       
 ```
@@ -129,9 +167,9 @@ _Turbine-governor function block whose behaviour is described by reference to a 
 | SynchronousMachineDynamics | [cim:TurbineGovernorDynamics.SynchronousMachineDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.SynchronousMachineDynamics) | 0..1 <br />  [SynchronousMachineDynamics](SynchronousMachineDynamics.md)  | Synchronous machine model with which this turbine-governor model is associate... | direct |
 | AsynchronousMachineDynamics | [cim:TurbineGovernorDynamics.AsynchronousMachineDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.AsynchronousMachineDynamics) | 0..1 <br />  [AsynchronousMachineDynamics](AsynchronousMachineDynamics.md)  | Asynchronous machine model with which this turbine-governor model is associat... | direct |
 | TurbineLoadControllerDynamics | [cim:TurbineGovernorDynamics.TurbineLoadControllerDynamics](http://iec.ch/TC57/CIM100#TurbineGovernorDynamics.TurbineLoadControllerDynamics) | 0..1 <br />  [TurbineLoadControllerDynamics](TurbineLoadControllerDynamics.md)  | Turbine load controller providing input to this turbine-governor | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

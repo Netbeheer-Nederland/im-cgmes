@@ -16,7 +16,9 @@ _Turbine load controller function block whose dynamic behaviour is described by 
 ```mermaid
  classDiagram
     class TurbineLoadControllerUserDefined
+    click TurbineLoadControllerUserDefined href "../TurbineLoadControllerUserDefined"
       TurbineLoadControllerDynamics <|-- TurbineLoadControllerUserDefined
+        click TurbineLoadControllerDynamics href "../TurbineLoadControllerDynamics"
       
       TurbineLoadControllerUserDefined : IdentifiedObject.description
         
@@ -31,10 +33,12 @@ _Turbine load controller function block whose dynamic behaviour is described by 
       TurbineLoadControllerUserDefined : TurbineLoadControllerUserDefined.ProprietaryParameterDynamics
         
           TurbineLoadControllerUserDefined --> ProprietaryParameterDynamics : TurbineLoadControllerUserDefined.ProprietaryParameterDynamics
+          click ProprietaryParameterDynamics href "../ProprietaryParameterDynamics"
         
       TurbineLoadControllerUserDefined : TurbineLoadControllerDynamics.TurbineGovernorDynamics
         
           TurbineLoadControllerUserDefined --> TurbineGovernorDynamics : TurbineLoadControllerDynamics.TurbineGovernorDynamics
+          click TurbineGovernorDynamics href "../TurbineGovernorDynamics"
         
       
 ```
@@ -56,12 +60,12 @@ _Turbine load controller function block whose dynamic behaviour is described by 
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| proprietary | [cim:TurbineLoadControllerUserDefined.proprietary](http://iec.ch/TC57/CIM100#TurbineLoadControllerUserDefined.proprietary) | 1..1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
-| ProprietaryParameterDynamics | [cim:TurbineLoadControllerUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerUserDefined.ProprietaryParameterDynamics) | 0..* <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
-| TurbineGovernorDynamics | [cim:TurbineLoadControllerDynamics.TurbineGovernorDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerDynamics.TurbineGovernorDynamics) | 1..1 <br />  [TurbineGovernorDynamics](TurbineGovernorDynamics.md)  | Turbine-governor controlled by this turbine load controller | [TurbineLoadControllerDynamics](TurbineLoadControllerDynamics.md) |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| proprietary | [cim:TurbineLoadControllerUserDefined.proprietary](http://iec.ch/TC57/CIM100#TurbineLoadControllerUserDefined.proprietary) | 1 <br />  boolean  | Behaviour is based on a proprietary model as opposed to a detailed model | direct |
+| ProprietaryParameterDynamics | [cim:TurbineLoadControllerUserDefined.ProprietaryParameterDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerUserDefined.ProprietaryParameterDynamics) | * <br />  [ProprietaryParameterDynamics](ProprietaryParameterDynamics.md)  | Parameter of this proprietary user-defined model | direct |
+| TurbineGovernorDynamics | [cim:TurbineLoadControllerDynamics.TurbineGovernorDynamics](http://iec.ch/TC57/CIM100#TurbineLoadControllerDynamics.TurbineGovernorDynamics) | 1 <br />  [TurbineGovernorDynamics](TurbineGovernorDynamics.md)  | Turbine-governor controlled by this turbine load controller | [TurbineLoadControllerDynamics](TurbineLoadControllerDynamics.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

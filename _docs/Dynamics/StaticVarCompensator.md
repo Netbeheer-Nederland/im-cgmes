@@ -20,7 +20,9 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
 ```mermaid
  classDiagram
     class StaticVarCompensator
+    click StaticVarCompensator href "../StaticVarCompensator"
       RegulatingCondEq <|-- StaticVarCompensator
+        click RegulatingCondEq href "../RegulatingCondEq"
       
       StaticVarCompensator : IdentifiedObject.description
         
@@ -31,10 +33,12 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
       StaticVarCompensator : StaticVarCompensator.StaticVarCompensatorDynamics
         
           StaticVarCompensator --> StaticVarCompensatorDynamics : StaticVarCompensator.StaticVarCompensatorDynamics
+          click StaticVarCompensatorDynamics href "../StaticVarCompensatorDynamics"
         
       StaticVarCompensator : ConductingEquipment.Terminals
         
           StaticVarCompensator --> Terminal : ConductingEquipment.Terminals
+          click Terminal href "../Terminal"
         
       
 ```
@@ -60,9 +64,9 @@ _The SVC may operate in fixed MVar output mode or in voltage control mode. When 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | StaticVarCompensatorDynamics | [cim:StaticVarCompensator.StaticVarCompensatorDynamics](http://iec.ch/TC57/CIM100#StaticVarCompensator.StaticVarCompensatorDynamics) | 0..1 <br />  [StaticVarCompensatorDynamics](StaticVarCompensatorDynamics.md)  | Static Var Compensator dynamics model used to describe dynamic behaviour of t... | direct |
-| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | 0..* <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
+| Terminals | [cim:ConductingEquipment.Terminals](http://iec.ch/TC57/CIM100#ConductingEquipment.Terminals) | * <br />  [Terminal](Terminal.md)  | Conducting equipment have terminals that may be connected to other conducting... | [ConductingEquipment](ConductingEquipment.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

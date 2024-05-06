@@ -16,12 +16,17 @@ _Power factor or VAr controller type 1 function block whose behaviour is describ
 ```mermaid
  classDiagram
     class PFVArControllerType1Dynamics
+    click PFVArControllerType1Dynamics href "../PFVArControllerType1Dynamics"
       DynamicsFunctionBlock <|-- PFVArControllerType1Dynamics
+        click DynamicsFunctionBlock href "../DynamicsFunctionBlock"
       
 
       PFVArControllerType1Dynamics <|-- PFVArControllerType1UserDefined
+        click PFVArControllerType1UserDefined href "../PFVArControllerType1UserDefined"
       PFVArControllerType1Dynamics <|-- PFVArType1IEEEPFController
+        click PFVArType1IEEEPFController href "../PFVArType1IEEEPFController"
       PFVArControllerType1Dynamics <|-- PFVArType1IEEEVArController
+        click PFVArType1IEEEVArController href "../PFVArType1IEEEVArController"
       
       
       PFVArControllerType1Dynamics : IdentifiedObject.description
@@ -31,6 +36,7 @@ _Power factor or VAr controller type 1 function block whose behaviour is describ
       PFVArControllerType1Dynamics : PFVArControllerType1Dynamics.ExcitationSystemDynamics
         
           PFVArControllerType1Dynamics --> ExcitationSystemDynamics : PFVArControllerType1Dynamics.ExcitationSystemDynamics
+          click ExcitationSystemDynamics href "../ExcitationSystemDynamics"
         
       PFVArControllerType1Dynamics : IdentifiedObject.mRID
         
@@ -39,10 +45,12 @@ _Power factor or VAr controller type 1 function block whose behaviour is describ
       PFVArControllerType1Dynamics : PFVArControllerType1Dynamics.RemoteInputSignal
         
           PFVArControllerType1Dynamics --> RemoteInputSignal : PFVArControllerType1Dynamics.RemoteInputSignal
+          click RemoteInputSignal href "../RemoteInputSignal"
         
       PFVArControllerType1Dynamics : PFVArControllerType1Dynamics.VoltageAdjusterDynamics
         
           PFVArControllerType1Dynamics --> VoltageAdjusterDynamics : PFVArControllerType1Dynamics.VoltageAdjusterDynamics
+          click VoltageAdjusterDynamics href "../VoltageAdjusterDynamics"
         
       
 ```
@@ -67,11 +75,11 @@ _Power factor or VAr controller type 1 function block whose behaviour is describ
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
 | RemoteInputSignal | [cim:PFVArControllerType1Dynamics.RemoteInputSignal](http://iec.ch/TC57/CIM100#PFVArControllerType1Dynamics.RemoteInputSignal) | 0..1 <br />  [RemoteInputSignal](RemoteInputSignal.md)  | Remote input signal used by this power factor or VAr controller type 1 model | direct |
-| ExcitationSystemDynamics | [cim:PFVArControllerType1Dynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PFVArControllerType1Dynamics.ExcitationSystemDynamics) | 1..1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power actor or VAr controller type 1 ... | direct |
+| ExcitationSystemDynamics | [cim:PFVArControllerType1Dynamics.ExcitationSystemDynamics](http://iec.ch/TC57/CIM100#PFVArControllerType1Dynamics.ExcitationSystemDynamics) | 1 <br />  [ExcitationSystemDynamics](ExcitationSystemDynamics.md)  | Excitation system model with which this power actor or VAr controller type 1 ... | direct |
 | VoltageAdjusterDynamics | [cim:PFVArControllerType1Dynamics.VoltageAdjusterDynamics](http://iec.ch/TC57/CIM100#PFVArControllerType1Dynamics.VoltageAdjusterDynamics) | 0..1 <br />  [VoltageAdjusterDynamics](VoltageAdjusterDynamics.md)  | Voltage adjuster model associated with this power factor or VAr controller ty... | direct |
-| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1..1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
+| enabled | [cim:DynamicsFunctionBlock.enabled](http://iec.ch/TC57/CIM100#DynamicsFunctionBlock.enabled) | 1 <br />  boolean  | Function block used indicator | [DynamicsFunctionBlock](DynamicsFunctionBlock.md) |
 | description | [cim:IdentifiedObject.description](http://iec.ch/TC57/CIM100#IdentifiedObject.description) | 0..1 <br />  string  | The description is a free human readable text describing or naming the object | [IdentifiedObject](IdentifiedObject.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 | name | [cim:IdentifiedObject.name](http://iec.ch/TC57/CIM100#IdentifiedObject.name) | 0..1 <br />  string  | The name is any free human readable and possibly non unique text naming the o... | [IdentifiedObject](IdentifiedObject.md) |
 
 

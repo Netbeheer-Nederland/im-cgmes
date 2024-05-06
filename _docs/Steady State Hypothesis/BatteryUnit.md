@@ -16,11 +16,14 @@ _An electrochemical energy storage device._
 ```mermaid
  classDiagram
     class BatteryUnit
+    click BatteryUnit href "../BatteryUnit"
       PowerElectronicsUnit <|-- BatteryUnit
+        click PowerElectronicsUnit href "../PowerElectronicsUnit"
       
       BatteryUnit : BatteryUnit.batteryState
         
           BatteryUnit --> BatteryStateKind : BatteryUnit.batteryState
+          click BatteryStateKind href "../BatteryStateKind"
         
       BatteryUnit : Equipment.inService
         
@@ -29,6 +32,7 @@ _An electrochemical energy storage device._
       BatteryUnit : BatteryUnit.storedE
         
           BatteryUnit --> RealEnergy : BatteryUnit.storedE
+          click RealEnergy href "../RealEnergy"
         
       
 ```
@@ -51,10 +55,10 @@ _An electrochemical energy storage device._
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| batteryState | [cim:BatteryUnit.batteryState](http://iec.ch/TC57/CIM100#BatteryUnit.batteryState) | 1..1 <br />  [BatteryStateKind](BatteryStateKind.md)  | The current state of the battery (charging, full, etc | direct |
-| storedE | [cim:BatteryUnit.storedE](http://iec.ch/TC57/CIM100#BatteryUnit.storedE) | 1..1 <br />  [RealEnergy](RealEnergy.md)  | Amount of energy currently stored | direct |
-| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1..1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| batteryState | [cim:BatteryUnit.batteryState](http://iec.ch/TC57/CIM100#BatteryUnit.batteryState) | 1 <br />  [BatteryStateKind](BatteryStateKind.md)  | The current state of the battery (charging, full, etc | direct |
+| storedE | [cim:BatteryUnit.storedE](http://iec.ch/TC57/CIM100#BatteryUnit.storedE) | 1 <br />  [RealEnergy](RealEnergy.md)  | Amount of energy currently stored | direct |
+| inService | [cim:Equipment.inService](http://iec.ch/TC57/CIM100#Equipment.inService) | 1 <br />  boolean  | Specifies the availability of the equipment | [Equipment](Equipment.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 

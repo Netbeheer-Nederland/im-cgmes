@@ -16,17 +16,21 @@ _State variable for power flow. Load convention is used for flow direction. This
 ```mermaid
  classDiagram
     class SvPowerFlow
+    click SvPowerFlow href "../SvPowerFlow"
       SvPowerFlow : SvPowerFlow.p
         
           SvPowerFlow --> ActivePower : SvPowerFlow.p
+          click ActivePower href "../ActivePower"
         
       SvPowerFlow : SvPowerFlow.q
         
           SvPowerFlow --> ReactivePower : SvPowerFlow.q
+          click ReactivePower href "../ReactivePower"
         
       SvPowerFlow : SvPowerFlow.Terminal
         
           SvPowerFlow --> Terminal : SvPowerFlow.Terminal
+          click Terminal href "../Terminal"
         
       
 ```
@@ -42,9 +46,9 @@ _State variable for power flow. Load convention is used for flow direction. This
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| p | [cim:SvPowerFlow.p](http://iec.ch/TC57/CIM100#SvPowerFlow.p) | 1..1 <br />  [ActivePower](ActivePower.md)  | The active power flow | direct |
-| q | [cim:SvPowerFlow.q](http://iec.ch/TC57/CIM100#SvPowerFlow.q) | 1..1 <br />  [ReactivePower](ReactivePower.md)  | The reactive power flow | direct |
-| Terminal | [cim:SvPowerFlow.Terminal](http://iec.ch/TC57/CIM100#SvPowerFlow.Terminal) | 1..1 <br />  [Terminal](Terminal.md)  | The terminal associated with the power flow state variable | direct |
+| p | [cim:SvPowerFlow.p](http://iec.ch/TC57/CIM100#SvPowerFlow.p) | 1 <br />  [ActivePower](ActivePower.md)  | The active power flow | direct |
+| q | [cim:SvPowerFlow.q](http://iec.ch/TC57/CIM100#SvPowerFlow.q) | 1 <br />  [ReactivePower](ReactivePower.md)  | The reactive power flow | direct |
+| Terminal | [cim:SvPowerFlow.Terminal](http://iec.ch/TC57/CIM100#SvPowerFlow.Terminal) | 1 <br />  [Terminal](Terminal.md)  | The terminal associated with the power flow state variable | direct |
 
 
 

@@ -16,7 +16,9 @@ _Quality flags in this class are as defined in IEC 61850, except for estimatorRe
 ```mermaid
  classDiagram
     class Quality61850
+    click Quality61850 href "../Quality61850"
       Quality61850 <|-- MeasurementValueQuality
+        click MeasurementValueQuality href "../MeasurementValueQuality"
       
       Quality61850 : Quality61850.badReference
         
@@ -37,6 +39,7 @@ _Quality flags in this class are as defined in IEC 61850, except for estimatorRe
       Quality61850 : Quality61850.source
         
           Quality61850 --> Source : Quality61850.source
+          click Source href "../Source"
         
       Quality61850 : Quality61850.suspect
         
@@ -45,6 +48,7 @@ _Quality flags in this class are as defined in IEC 61850, except for estimatorRe
       Quality61850 : Quality61850.validity
         
           Quality61850 --> Validity : Quality61850.validity
+          click Validity href "../Validity"
         
       
 ```

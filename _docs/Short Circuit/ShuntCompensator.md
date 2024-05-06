@@ -16,10 +16,13 @@ _A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors
 ```mermaid
  classDiagram
     class ShuntCompensator
+    click ShuntCompensator href "../ShuntCompensator"
       RegulatingCondEq <|-- ShuntCompensator
+        click RegulatingCondEq href "../RegulatingCondEq"
       
 
       ShuntCompensator <|-- LinearShuntCompensator
+        click LinearShuntCompensator href "../LinearShuntCompensator"
       
       
       ShuntCompensator : IdentifiedObject.mRID
@@ -48,7 +51,7 @@ _A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors
 
 | Name | URI | Cardinality and Range | Description | Inheritance |
 | ---  | --- | --- | --- | --- |
-| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1..1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
+| mRID | [cim:IdentifiedObject.mRID](http://iec.ch/TC57/CIM100#IdentifiedObject.mRID) | 1 <br />  string  | Master resource identifier issued by a model authority | [IdentifiedObject](IdentifiedObject.md) |
 
 
 
